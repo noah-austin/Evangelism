@@ -40,7 +40,10 @@ Other options:
         body: `Most people say yes. Don't argue — just ask if you can test it:
 
 “Can I ask you a few questions to see if you'd pass God's standard?”`,
-        branches: [{ if: "“Yes, I'm a good person”", go: "objections/good-person" }],
+        branches: [
+          { if: "“Yes, I'm pretty good” / “Sure, ask away”", go: "step:3" },
+          { if: "They argue about being good", go: "objections/good-person" },
+        ],
       },
       {
         heading: "The Law",
@@ -56,6 +59,7 @@ Other options:
 On blasphemy: “You used the name of the God who gave you life as a cuss word. That's serious.”
 
 Optional: hatred is murder in God's eyes ([[1 John 3:15]]).`,
+        branches: [{ if: "They admit breaking them", go: "step:4" }],
       },
       {
         heading: "Judgment",
@@ -67,8 +71,9 @@ Optional: hatred is murder in God's eyes ([[1 John 3:15]]).`,
         verses: ["Hebrews 9:27", "Revelation 21:8", "Romans 3:20"],
         body: `Say it gently and without a smug tone. You're not condemning them — the Law is.`,
         branches: [
-          { if: "“God is forgiving / good”", go: "step:5" },
-          { if: "“I don't believe in hell”", go: "step:5" },
+          { if: "“Guilty” / “Hell”", go: "step:5" },
+          { if: "“God is good, He'll forgive me”", go: "objections/god-will-forgive" },
+          { if: "“I don't believe in hell” / “Hell isn't fair”", go: "objections/hell-unfair" },
         ],
       },
       {
@@ -81,6 +86,10 @@ Optional: hatred is murder in God's eyes ([[1 John 3:15]]).`,
 **If they don't believe in hell:** “Your conscience still says lying and stealing are wrong. That's God's Law written on your heart.” ([[Romans 2:15]])
 
 **If they're not concerned:** “You could die today. You have no promise of tomorrow.” ([[Proverbs 27:1]])`,
+        branches: [
+          { if: "“Yes, it concerns me”", go: "step:6" },
+          { if: "“I'll think about it later”", go: "objections/think-later" },
+        ],
       },
       {
         heading: "The cross",
@@ -101,6 +110,11 @@ Optional: hatred is murder in God's eyes ([[1 John 3:15]]).`,
         verses: ["Mark 1:15", "Acts 17:30-31", "Ephesians 2:8-9", "Proverbs 28:13"],
         ask: "Is there anything stopping you from repenting and trusting Jesus today?",
         body: `Don't pressure them into a quick prayer. Encourage them to get right with God themselves — they can pray right now, or as soon as they're alone.`,
+        branches: [
+          { if: "“I want to get right with God”", go: "step:8" },
+          { if: "“I've done too much to be forgiven”", go: "objections/too-far-gone" },
+          { if: "“Not today”", go: "objections/think-later" },
+        ],
       },
       {
         heading: "Next steps",

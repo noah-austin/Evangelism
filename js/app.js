@@ -21,6 +21,8 @@
     skills: '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/>',
     evidence: '<path d="M12 4v16M6 20h12M5 8h14M5 8l-2.5 6a2.5 2.5 0 0 0 5 0zM19 8l-2.5 6a2.5 2.5 0 0 0 5 0z" stroke-linejoin="round" stroke-linecap="round"/>',
     openers: '<path d="M5 12h12M13 7l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/>',
+    practice: '<rect x="3.5" y="6" width="13" height="14" rx="2"/><path d="M7.5 6V5a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-2" />',
+    live: '<path d="M8 5.5v13l11-6.5z" stroke-linejoin="round"/>',
     worldviews: '<circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c2.5 2.3 3.5 5 3.5 8s-1 5.7-3.5 8c-2.5-2.3-3.5-5-3.5-8s1-5.7 3.5-8z"/>',
   };
   const svg = (paths, size = 24, sw = 1.8) =>
@@ -234,6 +236,12 @@
     const saved = favs.map(savedRow).filter(Boolean);
     body.innerHTML = `
       ${saved.length ? `<h2 class="section-label">Favorites</h2><div class="list">${saved.join("")}</div>` : ""}
+      <h2 class="section-label">Study</h2>
+      <a class="wide-card" href="#/practice">
+        <span class="tile-icon">${svg(ICON.practice, 26)}</span>
+        <span class="wide-main"><span class="tile-title">Practice</span>
+        <span class="tile-blurb">Verse flashcards and objection drills. ${practiceSummary()}</span></span>${chevron}
+      </a>
       <h2 class="section-label">Sections</h2>
       <div class="grid">
         ${SECTIONS.map(
@@ -348,6 +356,13 @@
     } else {
       body = `
         ${item.summary ? `<div class="prose summary">${md(item.summary)}</div>` : ""}
+        ${sec === "paths" && item.numbered && item.parts.length
+          ? `<a class="wide-card live-start" href="#/live/${id}/1">
+              <span class="tile-icon">${svg(ICON.live, 24)}</span>
+              <span class="wide-main"><span class="tile-title">Start conversation mode</span>
+              <span class="tile-blurb">One step at a time in big text. Your screen stays on.</span></span>${chevron}
+            </a>`
+          : ""}
         ${item.draft ? `<p class="notice">This page is a placeholder. We'll fill it in together.</p>` : ""}
         ${(item.parts || []).map((p, i) => renderPart(p, i, item, sec)).join("")}`;
     }
@@ -367,6 +382,224 @@
     const [sec, id] = path.split("/");
     const item = getItem(sec, id);
     return item ? itemRow(sec, item, sectionById[sec].title) : "";
+  }
+
+  // ── Conversation mode ───────────────────────────────
+  let wakeLock = null;
+  async function keepAwake(on) {
+    try {
+      if (on && "wakeLock" in navigator && !wakeLock) {
+        wakeLock = await navigator.wakeLock.request("screen");
+        wakeLock.addEventListener("release", () => (wakeLock = null));
+      } else if (!on && wakeLock) {
+        await wakeLock.release();
+        wakeLock = null;
+      }
+    } catch (e) {}
+  }
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible" && document.body.classList.contains("live-mode")) keepAwake(true);
+  });
+
+  function pageLive(id, stepStr) {
+    const item = getItem("paths", id);
+    if (!item || !item.parts || !item.parts.length) return pageNotFound();
+    const n = item.parts.length;
+    const i = Math.min(Math.max(parseInt(stepStr, 10) || 1, 1), n);
+    const p = item.parts[i - 1];
+    const stepHref = (k) => `#/live/${id}/${k}`;
+    const dots = item.parts
+      .map((_, k) => `<a class="dot${k + 1 === i ? " on" : k + 1 < i ? " done" : ""}" href="${stepHref(k + 1)}" data-replace aria-label="Step ${k + 1}"></a>`)
+      .join("");
+    const responses = (p.branches || [])
+      .map((b) => {
+        let href, target, replace = "";
+        if (b.go.startsWith("step:")) {
+          const k = +b.go.slice(5);
+          href = stepHref(k);
+          replace = " data-replace";
+          target = `Step ${k}: ${plain(item.parts[k - 1].heading || "")}`;
+        } else {
+          const [s2, id2] = b.go.split("/");
+          const t = getItem(s2, id2);
+          href = `#/${b.go}`;
+          target = t ? plain(itemTitle(s2, t)) : b.go;
+        }
+        return `<a class="response" href="${href}"${replace}>
+          <span class="branch-main"><span class="response-if">${inline(b.if)}</span><span class="branch-go">${esc(target)}</span></span>${chevron}</a>`;
+      })
+      .join("");
+    const next = item.parts[i];
+    app.innerHTML = `
+      <div class="live">
+        <div class="live-top">
+          <span class="live-count">${esc(item.title)} · Step ${i} of ${n}</span>
+          <div class="dots">${dots}</div>
+        </div>
+        <h1 class="live-title">${inline(p.heading || "")}</h1>
+        ${boxes("say", "Say", p.say, " big")}
+        ${boxes("ask", "Ask", p.ask, " big")}
+        ${chips(p.verses)}
+        ${responses ? `<h2 class="section-label">If they say</h2><div class="responses">${responses}</div>` : ""}
+        ${p.body ? `<details class="fold"><summary>Notes</summary><div class="prose">${md(p.body)}</div></details>` : ""}
+      </div>
+      <nav class="live-nav">
+        ${i > 1 ? `<a class="live-btn" href="${stepHref(i - 1)}" data-replace>Back</a>` : `<span class="live-btn disabled">Back</span>`}
+        ${next
+          ? `<a class="live-btn primary" href="${stepHref(i + 1)}" data-replace>Next: ${esc(plain(next.heading || `Step ${i + 1}`))}</a>`
+          : `<a class="live-btn primary" href="#/paths/${id}">Finish</a>`}
+      </nav>`;
+    return { title: "Conversation mode", section: "paths", liveKey: `#/live/${id}/` };
+  }
+
+  // ── Practice ────────────────────────────────────────
+  // Each card has a "box" from 0 to 5. "Got it" moves it up, "Again" sends
+  // it back to 0. Cards in lower boxes come up more often. Box 3+ = known.
+  const KNOWN = 3;
+  const getBoxes = () => store.get("practice", {});
+  const boxOf = (key) => getBoxes()[key] || 0;
+  function setBox(key, box) {
+    const b = getBoxes();
+    b[key] = box;
+    store.set("practice", b);
+  }
+  function deckCards(kind, deck) {
+    if (kind === "verses") {
+      const list =
+        deck === "All" ? D.verses : deck === "Favorites" ? D.verses.filter((v) => isFav("verse:" + v.ref)) : D.verses.filter((v) => v.topics.includes(deck));
+      return list.map((v) => ({ key: "v:" + v.ref, verse: v }));
+    }
+    const list =
+      deck === "All"
+        ? D.objections
+        : deck === "Favorites"
+        ? D.objections.filter((o) => isFav("objections/" + o.id))
+        : D.objections.filter((o) => o.category === deck);
+    return list.map((o) => ({ key: "o:" + o.id, obj: o }));
+  }
+  const knownCount = (cards) => cards.filter((c) => boxOf(c.key) >= KNOWN).length;
+  function practiceSummary() {
+    const v = deckCards("verses", "All");
+    const o = deckCards("objections", "All");
+    const kv = knownCount(v), ko = knownCount(o);
+    return kv || ko ? `${kv} verses and ${ko} answers known.` : "";
+  }
+
+  let practiceState = {};
+  function pagePractice(kind, deck) {
+    if (!kind) return pagePracticeMenu();
+    if (kind !== "verses" && kind !== "objections") return pageNotFound();
+    deck = deck || "All";
+    const cards = deckCards(kind, deck);
+    practiceState = { kind, deck, cards, current: null, last: null, revealed: false, streak: 0 };
+    const title = kind === "verses" ? "Verse Flashcards" : "Objection Drill";
+    app.innerHTML = `
+      <p class="kicker">${esc(deck === "All" ? "All" : deck)}</p>
+      <h1 class="page-title">${title}</h1>
+      ${kind === "verses" ? `<div class="segs small" id="direction"></div>` : ""}
+      <div id="card"></div>`;
+    if (cards.length) pickCard();
+    renderCard();
+    return { title };
+  }
+  function pagePracticeMenu() {
+    const deckList = (kind, decks) =>
+      decks
+        .map((d) => {
+          const cards = deckCards(kind, d);
+          if (!cards.length && d !== "Favorites") return "";
+          return `<a class="row" href="#/practice/${kind}/${encodeURIComponent(d)}">
+            <span class="row-main"><span class="row-title">${esc(d)}</span>
+            <span class="row-sub">${cards.length ? `${knownCount(cards)} of ${cards.length} known` : "Star some first"}</span></span>
+            ${progressRing(cards.length ? knownCount(cards) / cards.length : 0)}${chevron}</a>`;
+        })
+        .join("");
+    app.innerHTML = `
+      <h1 class="page-title">Practice</h1>
+      <p class="summary">Say your answer out loud, then check it. Cards you miss come back more often.</p>
+      <h2 class="section-label">Verse flashcards</h2>
+      <div class="list">${deckList("verses", ["All", "Favorites", ...D.verseTopics])}</div>
+      <h2 class="section-label">Objection drill</h2>
+      <div class="list">${deckList("objections", ["All", "Favorites", ...(D.objectionCategories || [])])}</div>
+      <button class="text-btn" data-reset-practice>Reset practice progress</button>`;
+    return { title: "Practice" };
+  }
+  function progressRing(frac) {
+    const c = 2 * Math.PI * 9;
+    return `<svg class="ring" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+      <circle cx="12" cy="12" r="9" fill="none" stroke="var(--line)" stroke-width="3"/>
+      ${frac > 0 ? `<circle cx="12" cy="12" r="9" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"
+        stroke-dasharray="${(frac * c).toFixed(1)} ${c.toFixed(1)}" transform="rotate(-90 12 12)"/>` : ""}</svg>`;
+  }
+  function pickCard() {
+    const { cards, last } = practiceState;
+    let pool = cards.length > 1 ? cards.filter((c) => c.key !== last) : cards;
+    // Weight toward low boxes: box 0 is 6x as likely as box 5
+    const weights = pool.map((c) => 6 - boxOf(c.key));
+    let r = Math.random() * weights.reduce((a, b) => a + b, 0);
+    let pick = pool[0];
+    for (let k = 0; k < pool.length; k++) {
+      r -= weights[k];
+      if (r <= 0) {
+        pick = pool[k];
+        break;
+      }
+    }
+    practiceState.current = pick;
+    practiceState.revealed = false;
+  }
+  function renderCard() {
+    const el = document.getElementById("card");
+    if (!el) return;
+    const { kind, cards, current, revealed } = practiceState;
+    const dirEl = document.getElementById("direction");
+    const dir = store.get("verseDirection", "ref");
+    if (dirEl) {
+      dirEl.innerHTML = `<button class="seg${dir === "ref" ? " on" : ""}" data-direction="ref">Reference first</button><button class="seg${dir === "text" ? " on" : ""}" data-direction="text">Text first</button>`;
+    }
+    if (!cards.length) {
+      el.innerHTML = `<p class="empty">No cards in this deck yet. Tap the star on verses or objections to add favorites.</p>`;
+      return;
+    }
+    const known = knownCount(cards);
+    const box = boxOf(current.key);
+    let front, back;
+    if (kind === "verses") {
+      const v = current.verse;
+      const refHtml = `<p class="card-ref">${esc(v.ref)}</p>`;
+      const textHtml = `<p class="card-text">${esc(v.text)}</p>`;
+      front = dir === "ref" ? refHtml + `<p class="card-hint">Say the verse</p>` : textHtml + `<p class="card-hint">Name the reference</p>`;
+      back = dir === "ref" ? textHtml : refHtml;
+    } else {
+      const o = current.obj;
+      front = `<p class="card-hint">${esc(o.category || "")}</p><p class="card-ref">“${esc(o.title)}”</p><p class="card-hint">What would you say?</p>`;
+      back = `${boxes("say", "Say", o.oneLiner)}${boxes("ask", "Ask back", o.askBack)}${chips(o.verses)}
+        <a class="ilink" href="#/objections/${o.id}">Open the full answer</a>`;
+    }
+    el.innerHTML = `
+      <div class="practice-progress"><span>${known} of ${cards.length} known</span><span>${box >= KNOWN ? "Known" : box ? `Seen ${box}x` : "New"}</span></div>
+      <div class="bar"><span style="width:${((known / cards.length) * 100).toFixed(1)}%"></span></div>
+      <div class="flashcard${revealed ? " revealed" : ""}">
+        <div class="card-front">${front}</div>
+        ${revealed ? `<div class="card-back">${back}</div>` : ""}
+      </div>
+      <div class="card-actions">
+        ${revealed
+          ? `<button class="btn" data-grade="again">Again</button><button class="btn primary" data-grade="got">Got it</button>`
+          : `<button class="btn primary wide" data-reveal>Show answer</button>`}
+      </div>`;
+  }
+  function practiceReveal() {
+    practiceState.revealed = true;
+    renderCard();
+  }
+  function practiceGrade(got) {
+    const key = practiceState.current.key;
+    setBox(key, got ? Math.min(boxOf(key) + 1, 5) : 0);
+    practiceState.last = key;
+    pickCard();
+    renderCard();
+    window.scrollTo(0, 0);
   }
 
   function pageSettings() {
@@ -449,6 +682,29 @@
       }
       return;
     }
+    const repl = t.closest("a[data-replace]");
+    if (repl) {
+      e.preventDefault();
+      location.replace(repl.getAttribute("href"));
+      return;
+    }
+    const reveal = t.closest("[data-reveal]");
+    if (reveal) return practiceReveal();
+    const grade = t.closest("[data-grade]");
+    if (grade) return practiceGrade(grade.dataset.grade === "got");
+    const flip = t.closest("[data-direction]");
+    if (flip) {
+      store.set("verseDirection", flip.dataset.direction);
+      practiceState.revealed = false;
+      return renderCard();
+    }
+    if (t.closest("[data-reset-practice]")) {
+      if (confirm("Reset all practice progress?")) {
+        store.set("practice", {});
+        rerender();
+      }
+      return;
+    }
     const jump = t.closest("[data-jump]");
     if (jump) {
       const el = document.getElementById(jump.dataset.jump);
@@ -501,6 +757,8 @@
     const { parts } = currentRoute();
     if (!parts.length) return pageHome();
     if (parts[0] === "settings") return pageSettings();
+    if (parts[0] === "live") return pageLive(parts[1], parts[2]);
+    if (parts[0] === "practice") return pagePractice(parts[1], parts[2]);
     if (parts.length === 1) return pageSection(parts[0]);
     return pageItem(parts[0], parts[1], parts[2]);
   }
@@ -526,11 +784,16 @@
     const at = trail.findIndex((p) => p.hash === hash);
     let goingBack = false;
     if (isHome) trail = [{ hash: "#/", title: "Home" }];
-    else if (at >= 0) {
+    else if (info.liveKey && trail.length && trail[trail.length - 1].hash.startsWith(info.liveKey)) {
+      trail[trail.length - 1] = { hash, title: info.title };
+    } else if (at >= 0) {
       goingBack = at < trail.length - 1;
       trail = trail.slice(0, at + 1);
     } else trail.push({ hash, title: info.title });
     sessionStorage.setItem("trail", JSON.stringify(trail));
+
+    document.body.classList.toggle("live-mode", !!info.liveKey);
+    keepAwake(!!info.liveKey);
 
     // Top bar
     const prev = trail[trail.length - 2];

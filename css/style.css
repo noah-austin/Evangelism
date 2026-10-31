@@ -248,3 +248,67 @@ main { max-width: 720px; margin: 0 auto; padding: 14px 16px calc(48px + env(safe
 .sheet-actions { display: flex; gap: 8px; margin-top: 16px; }
 .btn { flex: 1; padding: 12px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--card); font-weight: 700; }
 .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--card); }
+
+/* ── Wide cards (Practice, Start conversation mode) ── */
+.wide-card {
+  display: flex; align-items: center; gap: 14px; padding: 14px 12px 14px 14px;
+  background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+  color: var(--text); text-decoration: none; box-shadow: var(--shadow);
+}
+.wide-card:active { background: var(--chip); }
+.wide-card .tile-icon { margin: 0; flex: none; }
+.wide-main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.live-start { margin: 6px 0 14px; border-color: var(--accent); background: var(--accent-bg); }
+.live-start .tile-icon { background: var(--accent); color: var(--card); }
+
+/* ── Conversation mode ─────────────────────────────── */
+body.live-mode main { padding-bottom: calc(110px + env(safe-area-inset-bottom)); }
+.live-top { display: flex; flex-direction: column; gap: 8px; margin: 2px 0 6px; }
+.live-count { font-size: 0.8rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.dots { display: flex; gap: 6px; }
+.dot { flex: 1; height: 6px; border-radius: 3px; background: var(--line); }
+.dot.done { background: var(--accent); opacity: 0.45; }
+.dot.on { background: var(--accent); }
+.live-title { font-size: 1.7rem; line-height: 1.2; margin: 10px 0 6px; letter-spacing: -0.01em; }
+.live .say.big, .live .ask.big { font-size: 1.3rem; line-height: 1.4; }
+.responses { display: flex; flex-direction: column; gap: 8px; }
+.response {
+  display: flex; align-items: center; gap: 8px; padding: 12px 10px 12px 14px; min-height: 56px;
+  background: var(--card); border: 1.5px solid var(--line); border-radius: 14px; color: var(--text); text-decoration: none;
+}
+.response:active { background: var(--chip); }
+.response-if { font-weight: 650; font-size: 1rem; }
+.live-nav {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; display: flex; gap: 10px;
+  max-width: 720px; margin: 0 auto; padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+  background: var(--bg); border-top: 1px solid var(--line);
+}
+.live-btn {
+  flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; min-height: 56px;
+  padding: 8px 12px; border-radius: 14px; font-weight: 700; text-decoration: none; line-height: 1.25;
+  background: var(--card); border: 1.5px solid var(--line); color: var(--text);
+}
+.live-btn.primary { flex: 2.2; background: var(--accent); border-color: var(--accent); color: var(--card); }
+.live-btn.disabled { opacity: 0.4; }
+
+/* ── Practice ──────────────────────────────────────── */
+.ring { flex: none; }
+.text-btn { display: block; margin: 26px auto 0; color: var(--muted); font-size: 0.88rem; text-decoration: underline; }
+.segs.small { margin-bottom: 12px; }
+.segs.small .seg { padding: 8px 4px; font-size: 0.85rem; }
+.practice-progress { display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700; color: var(--muted); }
+.bar { height: 6px; border-radius: 3px; background: var(--line); margin: 6px 0 14px; overflow: hidden; }
+.bar span { display: block; height: 100%; background: var(--accent); border-radius: 3px; }
+.flashcard {
+  background: var(--card); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow);
+  padding: 22px 18px; min-height: 220px; display: flex; flex-direction: column; justify-content: center;
+}
+.card-front { text-align: center; }
+.flashcard.revealed .card-front { padding-bottom: 14px; border-bottom: 1px solid var(--line); margin-bottom: 14px; }
+.card-ref { font-size: 1.45rem; font-weight: 750; line-height: 1.25; margin: 6px 0; }
+.card-text { font-family: Georgia, "Times New Roman", serif; font-size: 1.2rem; line-height: 1.55; margin: 6px 0; }
+.card-back .card-ref { text-align: center; }
+.card-text { text-align: left; }
+.card-hint { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); margin: 4px 0; }
+.card-actions { display: flex; gap: 10px; margin-top: 14px; }
+.card-actions .btn { min-height: 54px; font-size: 1.02rem; }
