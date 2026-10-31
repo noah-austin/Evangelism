@@ -6,3 +6,6 @@
 - Tone: non-denominational; Way of the Master is the primary gospel path.
 - Keep "Say"/"Ask" lines short enough to read at a glance on a phone.
 - After adding new files, update `FILES` and bump `VERSION` in `sw.js`.
+- No emojis or decorative symbols anywhere (the user dislikes them). Icons are inline SVG line drawings.
+- Objections need a `category` from `DATA.objectionCategories`.
+- Visual style: warm cards (cream background, navy top bar, gold "Say" boxes, teal "Ask" boxes). The user preferred this over a minimal white design.

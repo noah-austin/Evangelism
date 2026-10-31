@@ -10,7 +10,7 @@ No build step — it's plain HTML/CSS/JS. Open `index.html` through any static s
 |---|---|
 | `data/verses.js` | Every verse (NASB 1995), topics, notes, and a `verified` flag |
 | `data/paths.js` | Way of the Master, Romans Road, testimony |
-| `data/objections.js` | Objections: one-liner, ask-back, 30-second answer, deeper study |
+| `data/objections.js` | Objections by category: one-liner, ask-back, 30-second answer, deeper study |
 | `data/skills.js` | Tactics (Koukl), Knechtle-style questions |
 | `data/evidence.js` | Resurrection, Lewis's trilemma, moral law |
 | `data/openers.js` | Starting and wrapping up conversations |
