@@ -1,4 +1,4 @@
-// EVIDENCE & ARGUMENTS
+// REASONS TO BELIEVE (section id: evidence)
 //
 // Same format as paths: title, sources, summary, and parts
 // (heading, say, ask, body, verses, branches).

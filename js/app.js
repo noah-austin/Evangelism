@@ -43,8 +43,8 @@
       intro: "Ways to start a conversation, turn it toward spiritual things, and end it well." },
     { id: "skills", group: "prep", title: "Conversation Skills", blurb: "Tactics, good questions, and tone",
       intro: "How to keep a conversation friendly and on track: asking good questions, handling pushback, and using the Law well." },
-    { id: "evidence", group: "prep", title: "Evidence & Arguments", blurb: "Resurrection, the Bible, creation",
-      intro: "Reasons to believe, for when someone wants evidence. Use them to support the gospel, not replace it." },
+    { id: "evidence", group: "prep", title: "Reasons to Believe", blurb: "Resurrection, the Bible, creation",
+      intro: "The positive case for Christianity, to study ahead of time. Objections answer what they say in the moment; this is the deeper evidence behind those answers." },
     { id: "worldviews", group: "prep", title: "Worldview Notes", blurb: "Atheists, Muslims, Mormons, and more",
       intro: "What different groups believe, where they differ from the gospel, and good questions to ask." },
   ];
