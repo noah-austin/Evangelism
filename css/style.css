@@ -320,3 +320,45 @@ body.live-mode main { padding-bottom: calc(110px + env(safe-area-inset-bottom));
   padding: 3px 8px; border-radius: 99px; background: var(--ask-bg); color: var(--ask);
 }
 .live.is-detour .live-count { color: var(--ask); }
+
+/* ── Polish pass ───────────────────────────────────── */
+.intro { color: var(--muted); font-size: 0.95rem; line-height: 1.45; margin: -4px 0 14px; }
+.prose .vchip { white-space: nowrap; }
+
+/* Home: primary action */
+.hero {
+  display: flex; align-items: center; gap: 14px; margin: 6px 0 4px; padding: 16px 14px 16px 16px;
+  background: var(--top); color: var(--top-text); border-radius: 18px; text-decoration: none;
+  box-shadow: 0 6px 18px rgba(20, 32, 46, 0.18);
+}
+.hero:active { transform: scale(0.99); }
+.hero-icon {
+  flex: none; width: 46px; height: 46px; border-radius: 14px; display: inline-flex; align-items: center; justify-content: center;
+  background: var(--accent); color: #fff;
+}
+.hero-title { font-size: 1.12rem; font-weight: 750; }
+.hero-sub { font-size: 0.86rem; opacity: 0.75; }
+.hero .chev { color: var(--top-text); opacity: 0.7; }
+:root[data-theme="dark"] .hero { background: #1d2a39; box-shadow: none; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .hero { background: #1d2a39; box-shadow: none; } }
+
+/* Home: grouped navigation list */
+.nav-list {
+  background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow);
+}
+.nav-row {
+  display: flex; align-items: center; gap: 12px; padding: 12px 12px 12px 12px; color: var(--text); text-decoration: none;
+}
+.nav-row + .nav-row { border-top: 1px solid var(--line); }
+.nav-row:active { background: var(--chip); }
+.nav-row .tile-icon { width: 40px; height: 40px; margin: 0; flex: none; border-radius: 11px; }
+.nav-row .row-sub { -webkit-line-clamp: 2; font-size: 0.84rem; }
+.nav-meta { flex: none; font-size: 0.8rem; font-weight: 700; color: var(--muted); }
+
+/* Path overview */
+.overview { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 12px 15px 8px; margin: 0 0 4px; box-shadow: var(--shadow); }
+.overview .label { color: var(--muted); }
+.overview ol { margin: 4px 0 0; padding-left: 1.4em; }
+.overview li { margin: 0 0 5px; font-size: 0.95rem; color: var(--muted); }
+.overview button { color: var(--accent); font-weight: 650; text-align: left; line-height: 1.3; }
+.verse-label { display: block; margin: 14px 0 -4px; color: var(--muted); }

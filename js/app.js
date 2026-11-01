@@ -33,13 +33,20 @@
 
   // ── Sections ────────────────────────────────────────
   const SECTIONS = [
-    { id: "paths", title: "Gospel Path", blurb: "Way of the Master, Romans Road, your testimony" },
-    { id: "objections", title: "Objections", blurb: "Quick answers to common pushback" },
-    { id: "verses", title: "Quick Verses", blurb: "NASB 1995, by topic" },
-    { id: "skills", title: "Conversation Skills", blurb: "Tactics, questions, and tone" },
-    { id: "evidence", title: "Evidence & Arguments", blurb: "Resurrection, the Bible, creation" },
-    { id: "openers", title: "Openers & Wrap-Up", blurb: "Start, steer, and finish well" },
-    { id: "worldviews", title: "Worldview Notes", blurb: "Atheists, Muslims, Mormons, and more" },
+    { id: "paths", group: "use", title: "Gospel Path", blurb: "Way of the Master, Romans Road, your testimony",
+      intro: "Step-by-step ways to share the gospel. Way of the Master is the main path; tap “Start conversation mode” to follow it live." },
+    { id: "objections", group: "use", title: "Objections", blurb: "What to say when they push back",
+      intro: "Each answer starts with one line to say and a question to ask back. Open the 30-second answer or deeper study when you have time." },
+    { id: "verses", group: "use", title: "Quick Verses", blurb: "Key verses by topic, NASB 1995",
+      intro: "Tap any verse for the full text and a note on how to use it. Star the ones you use most." },
+    { id: "openers", group: "use", title: "Openers & Wrap-Up", blurb: "How to start, steer, and finish",
+      intro: "Ways to start a conversation, turn it toward spiritual things, and end it well." },
+    { id: "skills", group: "prep", title: "Conversation Skills", blurb: "Tactics, good questions, and tone",
+      intro: "How to keep a conversation friendly and on track: asking good questions, handling pushback, and using the Law well." },
+    { id: "evidence", group: "prep", title: "Evidence & Arguments", blurb: "Resurrection, the Bible, creation",
+      intro: "Reasons to believe, for when someone wants evidence. Use them to support the gospel, not replace it." },
+    { id: "worldviews", group: "prep", title: "Worldview Notes", blurb: "Atheists, Muslims, Mormons, and more",
+      intro: "What different groups believe, where they differ from the gospel, and good questions to ask." },
   ];
   const sectionById = Object.fromEntries(SECTIONS.map((s) => [s.id, s]));
 
@@ -235,9 +242,8 @@
     return { title: "Home" };
   }
   function countLabel(s) {
-    if (s.id === "verses") return `${D.verses.length} verses`;
-    const n = itemsOf(s.id).filter((x) => !x.draft).length;
-    return `${n} ${n === 1 ? "page" : "pages"}`;
+    if (s.id === "verses") return String(D.verses.length);
+    return String(itemsOf(s.id).filter((x) => !x.draft).length);
   }
   function renderHomeBody() {
     const body = document.getElementById("home-body");
@@ -247,24 +253,24 @@
       return;
     }
     const saved = favs.map(savedRow).filter(Boolean);
+    const navRow = (href, icon, title, blurb, meta) => `<a class="nav-row" href="${href}">
+        <span class="tile-icon">${svg(icon, 24)}</span>
+        <span class="row-main"><span class="row-title">${esc(title)}</span><span class="row-sub">${esc(blurb)}</span></span>
+        ${meta ? `<span class="nav-meta">${esc(meta)}</span>` : ""}${chevron}</a>`;
+    const group = (g) => SECTIONS.filter((x) => x.group === g).map((x) => navRow(`#/${x.id}`, ICON[x.id], x.title, x.blurb, countLabel(x))).join("");
     body.innerHTML = `
-      ${saved.length ? `<h2 class="section-label">Favorites</h2><div class="list">${saved.join("")}</div>` : ""}
-      <h2 class="section-label">Study</h2>
-      <a class="wide-card" href="#/practice">
-        <span class="tile-icon">${svg(ICON.practice, 26)}</span>
-        <span class="wide-main"><span class="tile-title">Practice</span>
-        <span class="tile-blurb">Verse flashcards and objection drills. ${practiceSummary()}</span></span>${chevron}
+      <a class="hero" href="#/live/way-of-the-master/1">
+        <span class="hero-icon">${svg(ICON.live, 26, 2)}</span>
+        <span class="row-main"><span class="hero-title">Start a conversation</span>
+        <span class="hero-sub">Way of the Master, one step at a time</span></span>${chevron}
       </a>
-      <h2 class="section-label">Sections</h2>
-      <div class="grid">
-        ${SECTIONS.map(
-          (s) => `<a class="tile" href="#/${s.id}">
-            <span class="tile-icon">${svg(ICON[s.id], 26)}</span>
-            <span class="tile-title">${esc(s.title)}</span>
-            <span class="tile-blurb">${esc(s.blurb)}</span>
-            <span class="tile-count">${countLabel(s)}</span>
-          </a>`
-        ).join("")}
+      ${saved.length ? `<h2 class="section-label">Favorites</h2><div class="list">${saved.join("")}</div>` : ""}
+      <h2 class="section-label">In a conversation</h2>
+      <div class="nav-list">${group("use")}</div>
+      <h2 class="section-label">Prepare</h2>
+      <div class="nav-list">
+        ${navRow("#/practice", ICON.practice, "Practice", "Verse flashcards and objection drills", "")}
+        ${group("prep")}
       </div>
       <p class="copyright">${esc(COPYRIGHT)}</p>`;
   }
@@ -327,7 +333,7 @@
     } else {
       body = `<div class="list">${items.map((x) => itemRow(sec, x)).join("")}</div>`;
     }
-    app.innerHTML = `<h1 class="page-title">${esc(s.title)}</h1>${body}`;
+    app.innerHTML = `<h1 class="page-title">${esc(s.title)}</h1><p class="intro">${esc(s.intro)}</p>${body}`;
     return { title: s.title };
   }
 
@@ -344,11 +350,13 @@
     const unverified = D.verses.filter((v) => !v.verified).length;
     app.innerHTML = `
       <h1 class="page-title">${esc(s.title)}</h1>
+      <p class="intro">${esc(s.intro)}</p>
       <div class="filters">${topics
         .map((t) => `<button class="filter${t === verseTopic ? " on" : ""}" data-topic="${esc(t)}">${esc(t)}</button>`)
         .join("")}</div>
-      ${unverified ? `<p class="notice">${unverified} of ${D.verses.length} verses still need their wording checked against a NASB 1995 Bible.</p>` : ""}
+
       <div class="list">${list.length ? list.map((v) => verseRow(v)).join("") : `<p class="empty">No favorite verses yet. Tap the star on any verse to add it.</p>`}</div>
+      ${unverified ? `<p class="copyright">${unverified} of ${D.verses.length} verses still need their wording checked against a NASB 1995 Bible.</p>` : ""}
       <p class="copyright">${esc(COPYRIGHT)}</p>`;
     return { title: s.title };
   }
@@ -362,8 +370,8 @@
       body = `
         ${boxes("say", "Say", item.oneLiner, " big")}
         ${boxes("ask", "Ask back", item.askBack)}
-        ${chips(item.verses)}
         <details class="fold" open><summary>30-second answer</summary><div class="prose">${md(item.short)}</div></details>
+        ${item.verses && item.verses.length ? `<span class="label verse-label">Key verses</span>${chips(item.verses)}` : ""}
         <details class="fold"><summary>Deeper study</summary><div class="prose">${md(item.deep)}</div></details>
         ${item.related && item.related.length ? `<h2 class="section-label">Related</h2><div class="list">${item.related.map(relatedRow).join("")}</div>` : ""}`;
     } else {
@@ -375,6 +383,11 @@
               <span class="wide-main"><span class="tile-title">Start conversation mode</span>
               <span class="tile-blurb">One step at a time in big text. Your screen stays on.</span></span>${chevron}
             </a>`
+          : ""}
+        ${sec === "paths" && item.numbered && item.parts.length > 3
+          ? `<div class="overview"><span class="label">Steps</span><ol>${item.parts
+              .map((p, i) => (p.detour ? "" : `<li><button data-jump="step-${i + 1}">${esc(plain(p.heading || `Step ${i + 1}`))}</button></li>`))
+              .join("")}</ol></div>`
           : ""}
         ${item.draft ? `<p class="notice">This page is a placeholder. We'll fill it in together.</p>` : ""}
         ${(item.parts || []).map((p, i) => (p.detour ? "" : renderPart(p, i, item, sec))).join("")}
