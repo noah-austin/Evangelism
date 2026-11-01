@@ -312,3 +312,11 @@ body.live-mode main { padding-bottom: calc(110px + env(safe-area-inset-bottom));
 .card-hint { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); margin: 4px 0; }
 .card-actions { display: flex; gap: 10px; margin-top: 14px; }
 .card-actions .btn { min-height: 54px; font-size: 1.02rem; }
+
+/* ── Side steps ────────────────────────────────────── */
+.part.detour { border-style: dashed; border-width: 1.5px; }
+.side-tag {
+  flex: none; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 3px 8px; border-radius: 99px; background: var(--ask-bg); color: var(--ask);
+}
+.live.is-detour .live-count { color: var(--ask); }

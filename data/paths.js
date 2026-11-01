@@ -7,6 +7,10 @@
 //   body:     notes (supports **bold**, *italics*, "- " lists, [[Verse Ref]] and {{Label|section/id}} links)
 //   verses:   verse references (must match a ref in verses.js to show the text)
 //   branches: "if they say X, go to Y" — go is "step:N" or "section/id"
+//             (N counts every part in the list, side steps included)
+//   detour:   true for an optional side step. Side steps go at the end of
+//             the list, aren't numbered, and are skipped by "Next".
+//   next:     for a side step, the step number "Continue" returns to
 
 window.DATA = window.DATA || {};
 
@@ -15,7 +19,9 @@ DATA.paths = [
     id: "way-of-the-master",
     title: "Way of the Master",
     sources: ["Ray Comfort", "Mark Spence", "Living Waters"],
-    summary: `Use the Law (Ten Commandments) to show someone their sin, so the cross makes sense. **Law to the proud, grace to the humble.**`,
+    summary: `Use the Law (Ten Commandments) to show someone their sin, so the cross makes sense. **Law to the proud, grace to the humble.**
+
+**You don't need to prove the Bible first.** The Law is already written on every heart, and the conscience agrees with it ([[Romans 2:15]]). You're not asking them to accept a book. You're asking whether *they* think lying and stealing are wrong. If they push back on God, the Bible, or hell, use a side step, then come back.`,
     numbered: true,
     parts: [
       {
@@ -29,7 +35,7 @@ Other options:
 - “Did you get one of these?” (hand a tract)`,
         branches: [
           { if: "They think they'll go to heaven", go: "step:2" },
-          { if: "“Nothing happens” / atheist", go: "worldviews/atheist" },
+          { if: "“I don't believe in God” / “Nothing happens”", go: "step:9" },
           { if: "Not interested", go: "openers/wrapping-up" },
         ],
       },
@@ -59,7 +65,10 @@ Other options:
 On blasphemy: “You used the name of the God who gave you life as a cuss word. That's serious.”
 
 Optional: hatred is murder in God's eyes ([[1 John 3:15]]).`,
-        branches: [{ if: "They admit breaking them", go: "step:4" }],
+        branches: [
+          { if: "They admit breaking them", go: "step:4" },
+          { if: "“Who cares what the Bible says?”", go: "step:10" },
+        ],
       },
       {
         heading: "Judgment",
@@ -73,7 +82,8 @@ Optional: hatred is murder in God's eyes ([[1 John 3:15]]).`,
         branches: [
           { if: "“Guilty” / “Hell”", go: "step:5" },
           { if: "“God is good, He'll forgive me”", go: "objections/god-will-forgive" },
-          { if: "“I don't believe in hell” / “Hell isn't fair”", go: "objections/hell-unfair" },
+          { if: "“I don't believe the Bible”", go: "step:10" },
+          { if: "“Hell isn't real” / “Hell isn't fair”", go: "step:11" },
         ],
       },
       {
@@ -123,6 +133,65 @@ Optional: hatred is murder in God's eyes ([[1 John 3:15]]).`,
 - Find a Bible-believing church
 - Offer your contact info or a follow-up resource`,
         verses: ["1 John 5:13", "2 Corinthians 5:17"],
+      },
+
+      // --- Side steps (only if needed) ---
+      {
+        heading: "“I don't believe in God”",
+        detour: true,
+        next: 2,
+        say: [
+          "If you saw a building, would you know there was a builder?",
+          "Creation is the same. It's proof there's a Creator.",
+        ],
+        ask: "Do you think everything came from nothing?",
+        body: `Keep it short. This is Ray Comfort's usual move: a building proves a builder, a painting proves a painter ([[Hebrews 3:4]]). Everyone knows God exists; people suppress it ([[Romans 1:20]]).
+
+Then go straight back to the conscience. You don't need to win the argument first. Most people's problem with God is moral, not intellectual ([[John 3:19]]).`,
+        verses: ["Hebrews 3:4", "Romans 1:20", "John 3:19"],
+        branches: [
+          { if: "“OK, maybe there's a God”", go: "step:2" },
+          { if: "They want to keep debating", go: "objections/no-god" },
+          { if: "Atheist background notes", go: "worldviews/atheist" },
+        ],
+      },
+      {
+        heading: "“I don't believe the Bible”",
+        detour: true,
+        next: 3,
+        say: [
+          "That's fine. Let's leave the Bible out of it for a minute.",
+          "Do you think lying is wrong? Stealing?",
+          "You don't need the Bible to know that. Your conscience tells you.",
+        ],
+        body: `The commandments aren't true because they're in the Bible; they're in the Bible because they're true, and the conscience agrees with them ([[Romans 2:15]]). Their own conscience gives the verdict.
+
+If they want to talk about the Bible's reliability later, that's a good conversation, but don't let it replace the Law.`,
+        verses: ["Romans 2:15"],
+        branches: [
+          { if: "Back to the Law questions", go: "step:3" },
+          { if: "Back to Judgment", go: "step:4" },
+          { if: "“The Bible has been changed”", go: "objections/bible-changed" },
+          { if: "“The Bible was written by men”", go: "objections/bible-men" },
+        ],
+      },
+      {
+        heading: "“Hell isn't real”",
+        detour: true,
+        next: 5,
+        say: [
+          "Should a good judge punish a murderer?",
+          "Then a perfect God will punish sin too. Hell is God's prison for people who break His Law.",
+        ],
+        ask: "If God is good, shouldn't He punish evil?",
+        body: `Argue from justice, not from the Bible's authority. Everyone's conscience already believes in justice: they want murderers and child abusers punished. A judge who lets the guilty go is corrupt ([[Proverbs 17:15]]). The question isn't whether hell seems harsh, but whether God is just ([[Genesis 18:25]]).
+
+Whether they believe in it or not, everyone faces judgment ([[Hebrews 9:27]]).`,
+        verses: ["Proverbs 17:15", "Genesis 18:25", "Hebrews 9:27"],
+        branches: [
+          { if: "They see it", go: "step:5" },
+          { if: "“Hell isn't fair”", go: "objections/hell-unfair" },
+        ],
       },
     ],
   },

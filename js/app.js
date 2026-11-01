@@ -175,7 +175,7 @@
           const n = b.go.slice(5);
           const step = item.parts[n - 1];
           href = `#/${sec}/${item.id}/${n}`;
-          target = `Step ${n}${step && step.heading ? `: ${plain(step.heading)}` : ""}`;
+          target = stepLabel(item, +n);
         } else {
           const [s, id] = b.go.split("/");
           const t = getItem(s, id);
@@ -187,10 +187,23 @@
       })
       .join("")}</div>`;
   }
+  // Steps are numbered by their position among main steps; side steps
+  // (detour: true) aren't numbered. "step:N" links count every part.
+  const stepNumber = (item, i) => item.parts.slice(0, i + 1).filter((p) => !p.detour).length;
+  function stepLabel(item, n) {
+    const p = item.parts[n - 1];
+    if (!p) return `Step ${n}`;
+    const h = p.heading ? `: ${plain(p.heading)}` : "";
+    return p.detour ? `Side step${h}` : `Step ${stepNumber(item, n - 1)}${h}`;
+  }
   function renderPart(p, i, item, sec) {
-    const num = item.numbered ? `<span class="step-num">${i + 1}</span>` : "";
+    const num = p.detour
+      ? `<span class="side-tag">Side step</span>`
+      : item.numbered
+      ? `<span class="step-num">${stepNumber(item, i)}</span>`
+      : "";
     const heading = p.heading || num ? `<h3>${num}<span>${inline(p.heading || "")}</span></h3>` : "";
-    return `<section class="part" id="step-${i + 1}">
+    return `<section class="part${p.detour ? " detour" : ""}" id="step-${i + 1}">
       ${heading}
       ${boxes("say", "Say", p.say)}
       ${boxes("ask", "Ask", p.ask)}
@@ -364,7 +377,11 @@
             </a>`
           : ""}
         ${item.draft ? `<p class="notice">This page is a placeholder. We'll fill it in together.</p>` : ""}
-        ${(item.parts || []).map((p, i) => renderPart(p, i, item, sec)).join("")}`;
+        ${(item.parts || []).map((p, i) => (p.detour ? "" : renderPart(p, i, item, sec))).join("")}
+        ${(item.parts || []).some((p) => p.detour)
+          ? `<h2 class="section-label">Side steps (only if needed)</h2>
+             ${item.parts.map((p, i) => (p.detour ? renderPart(p, i, item, sec) : "")).join("")}`
+          : ""}`;
     }
     app.innerHTML = `
       ${item.category ? `<p class="kicker">${esc(item.category)}</p>` : ""}
@@ -404,12 +421,17 @@
   function pageLive(id, stepStr) {
     const item = getItem("paths", id);
     if (!item || !item.parts || !item.parts.length) return pageNotFound();
-    const n = item.parts.length;
-    const i = Math.min(Math.max(parseInt(stepStr, 10) || 1, 1), n);
+    const total = item.parts.length;
+    const i = Math.min(Math.max(parseInt(stepStr, 10) || 1, 1), total);
     const p = item.parts[i - 1];
     const stepHref = (k) => `#/live/${id}/${k}`;
-    const dots = item.parts
-      .map((_, k) => `<a class="dot${k + 1 === i ? " on" : k + 1 < i ? " done" : ""}" href="${stepHref(k + 1)}" data-replace aria-label="Step ${k + 1}"></a>`)
+    // Main steps (by their position in the list), skipping side steps
+    const main = item.parts.map((x, k) => (x.detour ? null : k + 1)).filter(Boolean);
+    const lastKey = "liveLast:" + id;
+    if (!p.detour) sessionStorage.setItem(lastKey, i);
+    const here = p.detour ? +(sessionStorage.getItem(lastKey) || main[0]) : i;
+    const dots = main
+      .map((k) => `<a class="dot${k === here ? (p.detour ? " done" : " on") : k < here ? " done" : ""}" href="${stepHref(k)}" data-replace aria-label="${esc(stepLabel(item, k))}"></a>`)
       .join("");
     const responses = (p.branches || [])
       .map((b) => {
@@ -418,7 +440,7 @@
           const k = +b.go.slice(5);
           href = stepHref(k);
           replace = " data-replace";
-          target = `Step ${k}: ${plain(item.parts[k - 1].heading || "")}`;
+          target = stepLabel(item, k);
         } else {
           const [s2, id2] = b.go.split("/");
           const t = getItem(s2, id2);
@@ -429,11 +451,33 @@
           <span class="branch-main"><span class="response-if">${inline(b.if)}</span><span class="branch-go">${esc(target)}</span></span>${chevron}</a>`;
       })
       .join("");
-    const next = item.parts[i];
+
+    let backBtnHtml, nextBtnHtml;
+    if (p.detour) {
+      // Continue to the side step's "next", unless they came from further along
+      const ret = p.next && p.next > here ? p.next : here;
+      const retName = esc(plain(item.parts[ret - 1].heading || ""));
+      if (ret === here) {
+        backBtnHtml = "";
+        nextBtnHtml = `<a class="live-btn primary" href="${stepHref(ret)}" data-replace>Back to step ${stepNumber(item, ret - 1)}: ${retName}</a>`;
+      } else {
+        backBtnHtml = `<a class="live-btn" href="${stepHref(here)}" data-replace>Back to step ${stepNumber(item, here - 1)}</a>`;
+        nextBtnHtml = `<a class="live-btn primary" href="${stepHref(ret)}" data-replace>Continue: ${retName}</a>`;
+      }
+    } else {
+      const pos = main.indexOf(i);
+      const prev = main[pos - 1], next = main[pos + 1];
+      backBtnHtml = prev ? `<a class="live-btn" href="${stepHref(prev)}" data-replace>Back</a>` : `<span class="live-btn disabled">Back</span>`;
+      nextBtnHtml = next
+        ? `<a class="live-btn primary" href="${stepHref(next)}" data-replace>Next: ${esc(plain(item.parts[next - 1].heading || ""))}</a>`
+        : `<a class="live-btn primary" href="#/paths/${id}">Finish</a>`;
+    }
+    const counter = p.detour ? "Side step" : `Step ${stepNumber(item, i - 1)} of ${main.length}`;
+
     app.innerHTML = `
-      <div class="live">
+      <div class="live${p.detour ? " is-detour" : ""}">
         <div class="live-top">
-          <span class="live-count">${esc(item.title)} · Step ${i} of ${n}</span>
+          <span class="live-count">${esc(item.title)} · ${counter}</span>
           <div class="dots">${dots}</div>
         </div>
         <h1 class="live-title">${inline(p.heading || "")}</h1>
@@ -443,12 +487,7 @@
         ${responses ? `<h2 class="section-label">If they say</h2><div class="responses">${responses}</div>` : ""}
         ${p.body ? `<details class="fold"><summary>Notes</summary><div class="prose">${md(p.body)}</div></details>` : ""}
       </div>
-      <nav class="live-nav">
-        ${i > 1 ? `<a class="live-btn" href="${stepHref(i - 1)}" data-replace>Back</a>` : `<span class="live-btn disabled">Back</span>`}
-        ${next
-          ? `<a class="live-btn primary" href="${stepHref(i + 1)}" data-replace>Next: ${esc(plain(next.heading || `Step ${i + 1}`))}</a>`
-          : `<a class="live-btn primary" href="#/paths/${id}">Finish</a>`}
-      </nav>`;
+      <nav class="live-nav">${backBtnHtml}${nextBtnHtml}</nav>`;
     return { title: "Conversation mode", section: "paths", liveKey: `#/live/${id}/` };
   }
 
