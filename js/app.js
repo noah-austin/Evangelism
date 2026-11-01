@@ -25,6 +25,7 @@
     live: '<path d="M8 5.5v13l11-6.5z" stroke-linejoin="round"/>',
     talking: '<path d="M6 4v6a4 4 0 0 0 4 4h8M14 10l4 4-4 4M6 20v-2" stroke-linecap="round" stroke-linejoin="round"/>',
     cheat: '<rect x="5" y="3.5" width="14" height="17" rx="2"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4" stroke-linecap="round"/>',
+    convictions: '<path d="M6 21V4M6 4.5c4-2 6 2 12 0v8c-6 2-8-2-12 0" stroke-linecap="round" stroke-linejoin="round"/>',
     worldviews: '<circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c2.5 2.3 3.5 5 3.5 8s-1 5.7-3.5 8c-2.5-2.3-3.5-5-3.5-8s1-5.7 3.5-8z"/>',
   };
   const svg = (paths, size = 24, sw = 1.8) =>
@@ -51,6 +52,8 @@
       intro: "The positive case for Christianity, to study ahead of time. Objections answer what they say in the moment; this is the deeper evidence behind those answers." },
     { id: "worldviews", group: "prep", title: "Worldview Notes", blurb: "Atheists, Muslims, Mormons, and more",
       intro: "What different groups believe, where they differ from the gospel, and good questions to ask." },
+    { id: "convictions", group: "prep", title: "My Convictions", blurb: "Where I stand on key topics, and why",
+      intro: "My positions on topics like creation, baptism, and sexuality, worked out from Scripture. Each page has my view, the key verses, how other Christians see it, and a short way to explain it." },
   ];
   const sectionById = Object.fromEntries(SECTIONS.map((s) => [s.id, s]));
 
@@ -397,6 +400,7 @@
     "objections/spiritual-not-religious": "spiritual",
     "objections/morality-relative": "morality",
     "evidence/moral-law": "morality",
+    "convictions/abortion": "pro-choice",
   };
   function talkCard(sec, id) {
     const tid = TALK_FOR[`${sec}/${id}`] || (sec === "worldviews" ? id : null);

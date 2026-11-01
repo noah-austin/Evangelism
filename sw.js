@@ -2,7 +2,7 @@
 // With signal: always load the latest files from the site (and save a copy).
 // Without signal (or if the site takes too long): use the saved copy.
 // Bump VERSION when adding or renaming files.
-const VERSION = "v18";
+const VERSION = "v19";
 const CACHE = "field-guide-" + VERSION;
 const FILES = [
   "./",
@@ -17,6 +17,7 @@ const FILES = [
   "data/evidence.js",
   "data/openers.js",
   "data/worldviews.js",
+  "data/convictions.js",
   "manifest.webmanifest",
   "icons/icon.svg",
   "icons/icon-180.png",

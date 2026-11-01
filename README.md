@@ -15,6 +15,8 @@ No build step — it's plain HTML/CSS/JS. Open `index.html` through any static s
 | `data/evidence.js` | Reasons to Believe: resurrection, the Bible, prophecy, creation, Lewis |
 | `data/openers.js` | Starting and wrapping up conversations |
 | `data/worldviews.js` | Notes for specific worldviews |
+| `data/talking.js` | Talking paths by starting point ("I'm an atheist", etc.) |
+| `data/convictions.js` | My Convictions: personal positions on topics |
 
 ## Writing content
 

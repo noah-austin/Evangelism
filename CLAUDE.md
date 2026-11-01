@@ -8,5 +8,6 @@
 - After adding new files, update `FILES` and bump `VERSION` in `sw.js`.
 - No emojis or decorative symbols anywhere (the user dislikes them). Icons are inline SVG line drawings.
 - Objections need a `category` from `DATA.objectionCategories`.
+- My Convictions (`data/convictions.js`) holds the user's own positions; only change a "My view" after they confirm it.
 - Every verse needs a short `tag` (2-5 words) shown next to its reference.
 - Visual style: warm cards (cream background, navy top bar, gold "Say" boxes, teal "Ask" boxes). The user preferred this over a minimal white design.
