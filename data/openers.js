@@ -30,11 +30,11 @@ DATA.openers = [
         body: `See {{Transitions|openers/transitions}} for moving from small talk to spiritual things.`,
       },
       {
-        heading: "Then",
-        branches: [{ if: "They're open to talking", go: "paths/way-of-the-master" }],
+        heading: "When they're open",
+        branches: [{ if: "“Sure” / “I've thought about it”", go: "paths/way-of-the-master" }],
       },
       {
-        heading: "Remember",
+        heading: "Be encouraged",
         body: `Most people are more open than you expect. The hardest part is the first sentence.`,
         verses: ["Romans 1:16", "Romans 10:14"],
       },
@@ -55,21 +55,21 @@ DATA.openers = [
       {
         heading: "Afterlife",
         say: ["Do you think there's an afterlife?"],
-        body: `A natural follow-up: "Where do you think you'll go?" Then "Why?" That leads straight to {{Are you a good person?|paths/way-of-the-master/2}}.`,
+        body: `A natural follow-up: “Where do you think you'll go?” Then “Why?” That leads straight to {{Are you a good person?|paths/way-of-the-master/2}}.`,
       },
       {
         heading: "What gets you to heaven",
         say: ["What do you think it takes to go to heaven?"],
-        body: `Most people say "being good." That opens the door to the Law.`,
-        branches: [{ if: "They say being good", go: "objections/good-person" }],
+        body: `Most people say “being good.” That opens the door to the Law.`,
+        branches: [{ if: "“Being a good person”", go: "objections/good-person" }],
       },
       {
         heading: "Bridges from everyday topics",
-        body: `- **News, death, tragedy:** "Do you ever think about what happens when we die?"
-- **Work or stress:** "What gets you through hard times?"
-- **Someone thanks you:** "Can I ask you a question? Do you think much about spiritual things?"
-- **Church comes up:** "What's your background with church?"
-- **Holidays:** "What does Christmas (or Easter) mean to you?"`,
+        body: `- **News, death, tragedy:** “Do you ever think about what happens when we die?”
+- **Work or stress:** “What gets you through hard times?”
+- **Someone thanks you:** “Can I ask you a question? Do you think much about spiritual things?”
+- **Church comes up:** “What's your background with church?”
+- **Holidays:** “What does Christmas (or Easter) mean to you?”`,
       },
       {
         heading: "Ask permission",
@@ -110,7 +110,7 @@ DATA.openers = [
       {
         heading: "If they stop",
         ask: "What do you think happens after someone dies?",
-        branches: [{ if: "They're open", go: "paths/way-of-the-master" }],
+        branches: [{ if: "“I don't know” / “Heaven, I hope”", go: "paths/way-of-the-master" }],
       },
     ],
   },
@@ -123,7 +123,7 @@ DATA.openers = [
     parts: [
       {
         heading: "The caution",
-        body: `Way of the Master warns against leading people through a quick "sinner's prayer" and then telling them they're saved. Many people have prayed a prayer without real repentance and now feel falsely secure.
+        body: `Way of the Master warns against leading people through a quick “sinner's prayer” and then telling them they're saved. Many people have prayed a prayer without real repentance and now feel falsely secure.
 
 Assurance comes from a changed life and trust in Christ, not from having said certain words ([[Matthew 7:21]], [[2 Corinthians 5:17]]).`,
         verses: ["Matthew 7:21", "2 Corinthians 5:17", "2 Corinthians 7:10"],
@@ -216,7 +216,7 @@ Assurance comes from a changed life and trust in Christ, not from having said ce
         heading: "Earn trust",
         body: `- Do good work and be honest
 - Care about them as people, not projects
-- Let your faith be known naturally ("I'm going to church Sunday")`,
+- Let your faith be known naturally (“I'm going to church Sunday”)`,
         verses: ["Matthew 5:16", "Colossians 4:5-6"],
       },
       {
@@ -226,7 +226,7 @@ Assurance comes from a changed life and trust in Christ, not from having said ce
         body: `Asking first keeps the friendship safe and makes them more open.`,
       },
       {
-        heading: "Don't",
+        heading: "Avoid",
         body: `- Corner people or preach during work time
 - Make every conversation about religion
 - Avoid it forever because it might be awkward`,

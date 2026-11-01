@@ -9,7 +9,7 @@ DATA.evidence = [
   {
     id: "resurrection",
     title: "The Resurrection: Minimal Facts",
-    sources: ["Gary Habermas", "Lee Strobel"],
+    sources: ["Lee Strobel"],
     summary: `Facts accepted by most scholars, even skeptical ones. The best explanation for all of them together is that Jesus rose from the dead.`,
     parts: [
       {
@@ -35,6 +35,7 @@ DATA.evidence = [
 - **Legend.** The creed in [[1 Corinthians 15:3-4]] dates to within a few years of the cross. Too early for legend.`,
       },
       {
+        heading: "Ask",
         ask: "If Jesus really rose, what would that mean for you?",
       },
       {
@@ -48,11 +49,12 @@ DATA.evidence = [
     id: "eyewitness-gospels",
     title: "The Gospels as Eyewitness Accounts",
     sources: ["Lee Strobel"],
-    summary: `The Gospels read like history, written early, based on eyewitnesses, and full of details no one would invent.`,
+    summary: `The Gospels read like history: written early, based on eyewitnesses, and full of details no one would invent.`,
     parts: [
       {
-        heading: "Written by eyewitnesses or their close associates",
-        body: `- Matthew and John were apostles
+        heading: "Written by eyewitnesses",
+        body: `Or by their close associates:
+- Matthew and John were apostles
 - Mark is traditionally linked to Peter's preaching
 - Luke says he carefully investigated eyewitness accounts ([[Luke 1:3-4]])`,
         verses: ["Luke 1:3-4", "2 Peter 1:16", "John 20:30-31"],
@@ -98,16 +100,17 @@ DATA.evidence = [
       },
       {
         heading: "Archaeology",
+        verses: ["Isaiah 40:8", "2 Timothy 3:16"],
         body: `Archaeology has repeatedly confirmed places, rulers, and details mentioned in the Bible, for example Pontius Pilate, the pool of Bethesda, and many of the places Luke names in Acts.`,
       },
       {
+        heading: "Ask",
         ask: "Which part do you think was changed, and when?",
         body: `This is a good {{Columbo|skills/columbo}} moment: most people have heard the claim but can't point to an example.`,
       },
       {
         heading: "Study",
         body: `Lee Strobel, *The Case for Christ* (interviews with Bruce Metzger and John McRay).`,
-        verses: ["Isaiah 40:8", "2 Timothy 3:16"],
       },
     ],
   },
@@ -123,7 +126,7 @@ DATA.evidence = [
         body: `- **Isaiah 53** (about 700 years before): a servant who is pierced, crushed for our sins, silent before His accusers, and buried with the rich
 - **Psalm 22** (about 1,000 years before): hands and feet pierced, clothing divided by lot, mocked by onlookers
 - **Micah 5:2**: the ruler comes from Bethlehem
-- **Daniel 9**: gives a timeline pointing to the Messiah coming and being "cut off" before the temple was destroyed (it was destroyed in AD 70)`,
+- **Daniel 9**: gives a timeline pointing to the Messiah coming and being “cut off” before the temple was destroyed (it was destroyed in AD 70)`,
         verses: ["Isaiah 53:5", "Isaiah 53:6", "Psalm 22:16", "Micah 5:2"],
       },
       {
@@ -138,7 +141,7 @@ DATA.evidence = [
       },
       {
         heading: "Study",
-        body: `Lee Strobel, *The Case for Christ*, chapter on the "fingerprint" of fulfilled prophecy (interview with Louis Lapides).`,
+        body: `Lee Strobel, *The Case for Christ*, chapter on the “fingerprint” of fulfilled prophecy (interview with Louis Lapides).`,
       },
     ],
   },
@@ -147,7 +150,7 @@ DATA.evidence = [
     id: "trilemma",
     title: "Liar, Lunatic, or Lord",
     sources: ["C.S. Lewis"],
-    summary: `People like to call Jesus "just a good teacher." But given what He claimed, that's the one option He didn't leave us.`,
+    summary: `People like to call Jesus “just a good teacher.” But given what He claimed, that's the one option He didn't leave us.`,
     parts: [
       {
         heading: "The argument",
@@ -160,6 +163,7 @@ A good moral teacher is not on the list.`,
         verses: ["John 8:58", "John 14:6"],
       },
       {
+        heading: "Ask",
         ask: "Which of those three do you think fits the Jesus of the Gospels?",
       },
       {
@@ -196,7 +200,7 @@ A good moral teacher is not on the list.`,
       {
         heading: "Then go to the conscience",
         body: `Comfort usually doesn't stay here long. Creation shows God exists; the conscience shows we've sinned against Him.`,
-        branches: [{ if: "They agree there's probably a God", go: "paths/way-of-the-master" }],
+        branches: [{ if: "“OK, there's probably a God”", go: "paths/way-of-the-master" }],
       },
       {
         heading: "Study",
@@ -208,7 +212,7 @@ A good moral teacher is not on the list.`,
   {
     id: "cosmological",
     title: "The Universe Had a Beginning",
-    sources: ["William Lane Craig", "Lee Strobel"],
+    sources: ["Lee Strobel"],
     summary: `The Kalam cosmological argument: whatever begins to exist has a cause. The universe began to exist. So the universe has a cause.`,
     parts: [
       {
@@ -228,8 +232,9 @@ A good moral teacher is not on the list.`,
         body: `Something outside space, time, and matter that caused them: timeless, immaterial, enormously powerful, and personal (it chose to create). That sounds a lot like God.`,
       },
       {
+        heading: "Ask",
         ask: "Can something come from nothing?",
-        body: `If they ask "Who made God?": God didn't begin to exist, so He doesn't need a cause. The argument is about things that *begin*.`,
+        body: `If they ask “Who made God?”: God didn't begin to exist, so He doesn't need a cause. The argument is about things that *begin*.`,
       },
       {
         heading: "Study",
@@ -258,7 +263,7 @@ Physicists across the spectrum, believers and not, acknowledge the fine-tuning. 
 - **Necessity.** Nothing we know says the constants *had* to be these values.
 - **Design.** The best explanation.
 
-Some propose an unlimited number of universes (a "multiverse"), but there's no evidence for it, and it would itself need explaining.`,
+Some propose an unlimited number of universes (a “multiverse”), but there's no evidence for it, and it would itself need explaining.`,
         verses: ["Psalm 19:1", "Romans 1:20"],
       },
       {
@@ -275,12 +280,13 @@ Some propose an unlimited number of universes (a "multiverse"), but there's no e
     summary: `Everyone knows some things are really wrong. A real moral law points to a real Moral Lawgiver.`,
     parts: [
       {
+        heading: "Start with a question",
         ask: "Is anything really wrong, not just disliked, but actually wrong?",
-        body: `Most people say yes (for example, torturing children for fun). Then: "Where does that standard come from?" If there's no God, morality is just opinion or evolution, and nothing is *really* wrong.`,
+        body: `Most people say yes (for example, torturing children for fun). Then: “Where does that standard come from?” If there's no God, morality is just opinion or evolution, and nothing is *really* wrong.`,
       },
       {
         heading: "Lewis's observation",
-        body: `People everywhere quarrel by appealing to a standard: "That's not fair." They expect the other person to know the standard too. And everyone breaks it.`,
+        body: `People everywhere quarrel by appealing to a standard: “That's not fair.” They expect the other person to know the standard too. And everyone breaks it.`,
       },
       {
         heading: "Connect it to the Law",
@@ -306,16 +312,17 @@ Some propose an unlimited number of universes (a "multiverse"), but there's no e
         verses: ["Ecclesiastes 3:11"],
       },
       {
+        heading: "Ask",
         ask: "Have you ever gotten something you really wanted, and found it didn't satisfy like you expected?",
       },
       {
         heading: "Use it gently",
-        body: `This works well with people who are restless or disillusioned, more than with debaters. It opens the door to Jesus as the "living water" ([[John 4:10]]).`,
+        body: `This works well with people who are restless or disillusioned, more than with debaters. It opens the door to Jesus as the “living water” ([[John 4:10]]).`,
         verses: ["John 4:10"],
       },
       {
         heading: "Study",
-        body: `C.S. Lewis, *Mere Christianity*, Book 3, chapter 10 ("Hope").`,
+        body: `C.S. Lewis, *Mere Christianity*, Book 3, chapter 10 (“Hope”).`,
       },
     ],
   },

@@ -1,4 +1,4 @@
-// CONVERSATION SKILLS — tactics for steering conversations
+// CONVERSATION SKILLS: tactics for steering conversations
 //
 // Same format as paths: title, sources, summary, and parts
 // (heading, say, ask, body, verses, branches).
@@ -10,7 +10,7 @@ DATA.skills = [
     id: "ambassador-model",
     title: "The Ambassador Model",
     sources: ["Greg Koukl"],
-    summary: `We represent Christ to people who don't know Him yet ([[2 Corinthians 5:20]]). A good ambassador needs three things: **knowledge**, **wisdom**, and **character**.`,
+    summary: `We represent Christ to people who don't know Him yet ([[2 Corinthians 5:20]]). A good ambassador needs three things: **knowledge**, **wisdom**, and **character**. This is the big picture behind every other skill here.`,
     parts: [
       {
         heading: "Knowledge",
@@ -65,12 +65,12 @@ DATA.skills = [
     id: "columbo",
     title: "Columbo",
     sources: ["Greg Koukl"],
-    summary: `Stay in the driver's seat by asking questions, like the TV detective who always had "just one more thing."`,
+    summary: `Stay in the driver's seat by asking questions, like the TV detective who always had “just one more thing.” Three questions, used in order.`,
     parts: [
       {
         heading: "1. Get clear",
         ask: "What do you mean by that?",
-        body: `Find out what they actually believe before answering. Often the objection changes once they explain it. Words like "God," "faith," "truth," and "good" mean different things to different people.`,
+        body: `Find out what they actually believe before answering. Often the objection changes once they explain it. Words like “God,” “faith,” “truth,” and “good” mean different things to different people.`,
       },
       {
         heading: "2. Get their reasons",
@@ -78,13 +78,13 @@ DATA.skills = [
         body: `Puts the burden of proof on the person making the claim. Many people have never thought about *why* they believe something. You're not being sneaky; you're being curious.`,
       },
       {
-        heading: "3. Lead (when ready)",
+        heading: "3. Lead them (when ready)",
         ask: "Have you ever considered...?",
         body: `Use a question to point out a flaw or bring in a new idea gently, instead of making a statement they can push back on.`,
       },
       {
         heading: "Tips",
-        body: `- Ask with real curiosity, not as a trap
+        body: `- Ask out of real curiosity, not as a trap
 - If you get stuck, ask another question
 - It also buys you time to think`,
         verses: ["Proverbs 18:13"],
@@ -100,15 +100,15 @@ DATA.skills = [
     id: "suicide",
     title: "Suicide (Self-Defeating Claims)",
     sources: ["Greg Koukl"],
-    summary: `Some claims destroy themselves: they fail their own standard. Point it out gently.`,
+    summary: `Some claims defeat themselves: they fail their own standard. Spot them, then point it out gently with a question.`,
     parts: [
       {
         heading: "Examples",
-        body: `- **"There is no truth."** Then ask: "Is that true?"
-- **"You shouldn't force your views on others."** Then ask: "Isn't that what you're doing now?"
-- **"All religions are true."** That rules out every religion that says it's the only way. (See {{All religions lead to God|objections/all-religions}})
-- **"Only science can tell us what's true."** Can science prove that statement?
-- **"You can't know anything about God."** Then how do you know that about God?`,
+        body: `- **“There is no truth.”** Then ask: “Is that true?”
+- **“You shouldn't force your views on others.”** Then ask: “Isn't that what you're doing now?”
+- **“All religions are true.”** That rules out every religion that says it's the only way. (See {{All religions lead to God|objections/all-religions}})
+- **“Only science can tell us what's true.”** Can science prove that statement?
+- **“You can't know anything about God.”** Then how do you know that about God?`,
       },
       {
         heading: "Tone",
@@ -116,7 +116,7 @@ DATA.skills = [
       },
       {
         heading: "Study",
-        body: `Greg Koukl, *Tactics*, the "Suicide" chapters.`,
+        body: `Greg Koukl, *Tactics*, the “Suicide” chapters.`,
       },
     ],
   },
@@ -130,19 +130,19 @@ DATA.skills = [
       {
         heading: "How it works",
         body: `1. Find out what they believe (use {{Columbo|skills/columbo}})
-2. Ask, "If that's true, what follows?"
+2. Ask, “If that's true, what follows?”
 3. Point out where it leads, with a question`,
       },
       {
         heading: "Examples",
-        body: `- **"Morality is just personal opinion."** Then torturing children for fun is only wrong for you, not really wrong. (See {{The Moral Law|evidence/moral-law}})
-- **"We're just chemicals and evolution."** Then your thoughts are just chemical reactions too. Why trust them?
-- **"Everyone goes to heaven."** Including people who never wanted God? Would God force them?`,
+        body: `- **“Morality is just personal opinion.”** Then torturing children for fun is only wrong for you, not really wrong. (See {{The Moral Law|evidence/moral-law}})
+- **“We're just chemicals and evolution.”** Then your thoughts are just chemical reactions too. Why trust them?
+- **“Everyone goes to heaven.”** Including people who never wanted God? Would God force them?`,
         ask: "If that's true, how would you explain...?",
       },
       {
         heading: "Study",
-        body: `Greg Koukl, *Tactics*, "Taking the Roof Off."`,
+        body: `Greg Koukl, *Tactics*, “Taking the Roof Off.”`,
       },
     ],
   },
@@ -169,7 +169,7 @@ DATA.skills = [
       },
       {
         heading: "Study",
-        body: `Greg Koukl, *Tactics*, "Steamroller."`,
+        body: `Greg Koukl, *Tactics*, “Steamroller.”`,
       },
     ],
   },
@@ -178,7 +178,7 @@ DATA.skills = [
     id: "rhodes-scholar",
     title: "Rhodes Scholar",
     sources: ["Greg Koukl"],
-    summary: `For "Experts say..." or "Scientists have proven...". An expert's opinion is only as good as the reasons behind it.`,
+    summary: `For “Experts say…” or “Scientists have proven…”. An expert's opinion is only as good as the reasons behind it.`,
     parts: [
       {
         heading: "Questions to ask",
@@ -196,7 +196,7 @@ DATA.skills = [
       },
       {
         heading: "Study",
-        body: `Greg Koukl, *Tactics*, "Rhodes Scholar."`,
+        body: `Greg Koukl, *Tactics*, “Rhodes Scholar.”`,
       },
     ],
   },
@@ -218,7 +218,7 @@ DATA.skills = [
       {
         heading: "Tone",
         body: `- Be gentle and calm, never smug
-- Include yourself: "I've done these things too"
+- Include yourself: “I've done these things too”
 - Let them answer; don't call them names
 - It's the Law that convicts, not you`,
         say: ["I'm not judging you. I'm guilty of the same things."],
@@ -231,12 +231,12 @@ If someone is already humble and broken over their sin, go straight to grace.`,
       },
       {
         heading: "The conscience",
-        body: `"Conscience" means "with knowledge." Even people who reject the Bible know lying and stealing are wrong. Speak to that.`,
+        body: `“Conscience” means “with knowledge.” Even people who reject the Bible know lying and stealing are wrong. Speak to that.`,
         ask: "Your conscience tells you lying is wrong, doesn't it?",
       },
       {
-        heading: "Walk through it",
-        branches: [{ if: "Ready to use it", go: "paths/way-of-the-master" }],
+        heading: "Put it into practice",
+        body: `Walk through the steps in {{Way of the Master|paths/way-of-the-master}}.`,
       },
       {
         heading: "Study",
@@ -258,15 +258,15 @@ If someone is already humble and broken over their sin, go straight to grace.`,
           "What do you think happens after you die?",
           "Why do you believe that?",
         ],
-        body: `- "How sure are you, on a scale of 1 to 10?"
-- "If you're wrong, what's at stake?"
-- "What would it take to change your mind?"`,
+        body: `- “How sure are you, on a scale of 1 to 10?”
+- “If you're wrong, what's at stake?”
+- “What would it take to change your mind?”`,
       },
       {
         heading: "About meaning and morality",
-        body: `- "Where do you get your sense of right and wrong?"
-- "What gives your life meaning?"
-- "Who do you think Jesus is?"`,
+        body: `- “Where do you get your sense of right and wrong?”
+- “What gives your life meaning?”
+- “Who do you think Jesus is?”`,
       },
       {
         heading: "Style notes",
@@ -275,6 +275,10 @@ If someone is already humble and broken over their sin, go straight to grace.`,
 - Answer the question they actually asked
 - Bring it back to Jesus and the resurrection`,
         verses: ["1 Peter 3:15"],
+      },
+      {
+        heading: "Study",
+        body: `Cliff Knechtle, *Give Me an Answer*, and the Knechtles' “Give Me an Answer” campus videos.`,
       },
     ],
   },
@@ -301,7 +305,13 @@ If someone is already humble and broken over their sin, go straight to grace.`,
       },
       {
         heading: "4. Answer what they asked",
-        body: `Answer the actual question, briefly. Then turn it back to Jesus. Some questions are really personal pain dressed up as an argument; be gentle there.`,
+        body: `Answer the actual question, briefly. Then turn it back to Jesus.
+
+**Watch for pain.** Some questions are really personal hurt dressed up as an argument. Be gentle there.`,
+      },
+      {
+        heading: "Study",
+        body: `Watch the Knechtles' “Give Me an Answer” videos and notice how often they restate the question before answering.`,
       },
     ],
   },
@@ -337,7 +347,12 @@ If someone is already humble and broken over their sin, go straight to grace.`,
       },
       {
         heading: "Knowing when to leave",
-        body: `If someone is only mocking, you can kindly end it. "I'd love to talk more if you ever want to. Take care." Don't throw pearls before swine, but don't give up quickly on people either.`,
+        say: ["I'd love to talk more if you ever want to. Take care."],
+        body: `If someone is only mocking, you can kindly end it. But don't give up on people too quickly either.`,
+      },
+      {
+        heading: "Study",
+        body: `Greg Koukl, *Tactics*, “Steamroller.” Living Waters' open-air videos show how Ray Comfort handles hecklers.`,
       },
     ],
   },
@@ -360,7 +375,7 @@ If someone is already humble and broken over their sin, go straight to grace.`,
         heading: "Practical tips",
         body: `- Always carry some
 - Smile and keep walking if they're busy
-- Leave them with a tip at restaurants (with a generous tip)
+- At restaurants, leave one with a generous tip
 - Leave them where people wait: bus stops, waiting rooms
 - Pick tracts that give the full gospel, including the Law and repentance`,
         verses: ["Ecclesiastes 11:1"],
@@ -368,7 +383,11 @@ If someone is already humble and broken over their sin, go straight to grace.`,
       {
         heading: "Turning it into a conversation",
         ask: "Do you think you're a good person?",
-        branches: [{ if: "They stop and talk", go: "paths/way-of-the-master" }],
+        branches: [{ if: "“No, not really” / “Yeah, I think so”", go: "paths/way-of-the-master" }],
+      },
+      {
+        heading: "Study",
+        body: `Living Waters' tract catalog, and Ray Comfort, *The Way of the Master*.`,
       },
     ],
   },
@@ -387,16 +406,20 @@ If someone is already humble and broken over their sin, go straight to grace.`,
         ],
       },
       {
-        heading: "Then",
+        heading: "Keep it going",
         body: `- Ask what they think the answer is ({{Columbo|skills/columbo}})
 - Come back to what you *do* know: sin, the cross, the resurrection
 - Actually follow up, and write the question down to study later`,
         ask: "Even if I can't answer that, can I ask you a question?",
       },
       {
-        heading: "Remember",
+        heading: "Keep perspective",
         body: `One unanswered question doesn't make Christianity false. Bring it back to the main issue: what they'll do with Jesus.`,
         verses: ["1 Peter 3:15"],
+      },
+      {
+        heading: "Study",
+        body: `Greg Koukl, *Tactics*, on asking questions when you're stuck.`,
       },
     ],
   },

@@ -406,7 +406,7 @@ But a hypocrite doesn't make Christianity false. If someone uses a counterfeit $
     id: "hurt-by-church",
     category: "Church & Christians",
     title: "I was hurt by the church",
-    sources: ["General"],
+    sources: [],
     oneLiner: `I'm really sorry that happened. Can I ask what happened?`,
     askBack: `Has what happened changed how you see God, or just how you see Christians?`,
     short: `I'm sorry. That's real, and it shouldn't have happened. Churches are full of sinners, and sometimes they hurt people badly.
@@ -647,7 +647,7 @@ The only other option is that He was telling the truth. And then we have to do w
     id: "resurrection-myth",
     category: "Jesus",
     title: "The resurrection didn't happen",
-    sources: ["Lee Strobel", "Gary Habermas"],
+    sources: ["Lee Strobel"],
     oneLiner: "Then how do you explain the empty tomb, and why the disciples died saying they'd seen Him alive?",
     askBack: "What do you think happened to the body?",
     short: `A handful of facts are accepted by most scholars, even skeptical ones: Jesus died by crucifixion, His followers believed they saw Him alive, and even enemies like Paul and skeptics like His brother James became believers.
@@ -897,7 +897,7 @@ So abortion isn't first a political issue. It's sin, and the answer is the gospe
     id: "clump-of-cells",
     category: "Abortion",
     title: "It's just a clump of cells",
-    sources: ["Scott Klusendorf", "Greg Koukl", "Abolitionist Rising"],
+    sources: ["Greg Koukl", "Abolitionist Rising"],
     oneLiner: "So are you and I. The question isn't how many cells, but what kind of thing it is: a living human being.",
     askBack: "At what point do you think it becomes a human being, and why then?",
     short: `From fertilization, the unborn has its own DNA, its own body, and is growing as a human being. It isn't a potential human. It's a human with potential.
@@ -962,7 +962,7 @@ But abortion doesn't undo the rape. It adds a second victim. The child is just a
     id: "mothers-life",
     category: "Abortion",
     title: "What if the mother's life is at risk?",
-    sources: ["Abolitionist Rising", "Free the States"],
+    sources: ["Abolitionist Rising"],
     oneLiner: "Doctors should try to save both lives. Treating a mother to save her life is not the same as deliberately killing her child.",
     askBack: "Is treating a sick mother the same as intentionally killing her child?",
     short: `The goal in any medical emergency should be to save both patients. When a mother is treated for a life-threatening condition and the child dies as an unintended result, that isn't abortion.
@@ -1027,7 +1027,7 @@ Abortion is a serious sin, but it is not beyond the blood of Christ. Jesus took 
     id: "incrementalism",
     category: "Abortion",
     title: "We should reduce abortion step by step",
-    sources: ["Russell Hunter", "Abolitionist Rising", "Free the States"],
+    sources: ["Russell Hunter", "Abolitionist Rising"],
     oneLiner: "If abortion is murder, we shouldn't write laws that allow some of it. We should call for it to end now.",
     askBack: "Would we pass a law that says child abuse is legal until a certain age?",
     short: `Abolitionists believe laws like heartbeat bills or 15-week bans, while well meant, still permit killing before that point and regulate murder instead of ending it. God condemns unjust laws ([[Isaiah 10:1-2]]).
