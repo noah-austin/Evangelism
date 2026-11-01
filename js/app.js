@@ -550,8 +550,10 @@
 
   // ── Practice ────────────────────────────────────────
   // Each card has a "box" from 0 to 5. "Got it" moves it up, "Again" sends
-  // it back to 0. Cards in lower boxes come up more often. Box 3+ = known.
-  const KNOWN = 3;
+  // it back to 0. Cards in lower boxes come up more often.
+  // Box 1+ = learned (got it right at least once). Box 3+ = strong.
+  const LEARNED = 1;
+  const STRONG = 3;
   const getBoxes = () => store.get("practice", {});
   const boxOf = (key) => getBoxes()[key] || 0;
   function setBox(key, box) {
@@ -573,12 +575,18 @@
         : D.objections.filter((o) => o.category === deck);
     return list.map((o) => ({ key: "o:" + o.id, obj: o }));
   }
-  const knownCount = (cards) => cards.filter((c) => boxOf(c.key) >= KNOWN).length;
+  const knownCount = (cards) => cards.filter((c) => boxOf(c.key) >= LEARNED).length;
+  function cardStatus(key) {
+    const b = getBoxes()[key];
+    if (b === undefined) return "New";
+    if (b === 0) return "Needs work";
+    return b >= STRONG ? "Strong" : "Learned";
+  }
   function practiceSummary() {
     const v = deckCards("verses", "All");
     const o = deckCards("objections", "All");
     const kv = knownCount(v), ko = knownCount(o);
-    return kv || ko ? `${kv} verses and ${ko} answers known.` : "";
+    return kv || ko ? `${kv} verses and ${ko} answers learned.` : "";
   }
 
   let practiceState = {};
@@ -587,7 +595,7 @@
     if (kind !== "verses" && kind !== "objections") return pageNotFound();
     deck = deck || "All";
     const cards = deckCards(kind, deck);
-    practiceState = { kind, deck, cards, current: null, last: null, revealed: false, streak: 0 };
+    practiceState = { kind, deck, cards, current: null, last: null, revealed: false, reviewed: 0, right: 0 };
     const title = kind === "verses" ? "Verse Flashcards" : "Objection Drill";
     app.innerHTML = `
       <p class="kicker">${esc(deck === "All" ? "All" : deck)}</p>
@@ -606,7 +614,7 @@
           if (!cards.length && d !== "Favorites") return "";
           return `<a class="row" href="#/practice/${kind}/${encodeURIComponent(d)}">
             <span class="row-main"><span class="row-title">${esc(d)}</span>
-            <span class="row-sub">${cards.length ? `${knownCount(cards)} of ${cards.length} known` : "Star some first"}</span></span>
+            <span class="row-sub">${cards.length ? `${knownCount(cards)} of ${cards.length} learned` : "Star some first"}</span></span>
             ${progressRing(cards.length ? knownCount(cards) / cards.length : 0)}${chevron}</a>`;
         })
         .join("");
@@ -658,7 +666,6 @@
       return;
     }
     const known = knownCount(cards);
-    const box = boxOf(current.key);
     let front, back;
     if (kind === "verses") {
       const v = current.verse;
@@ -673,8 +680,9 @@
         <a class="ilink" href="#/objections/${o.id}">Open the full answer</a>`;
     }
     el.innerHTML = `
-      <div class="practice-progress"><span>${known} of ${cards.length} known</span><span>${box >= KNOWN ? "Known" : box ? `Seen ${box}x` : "New"}</span></div>
+      <div class="practice-progress"><span>${known} of ${cards.length} learned</span><span class="status">${cardStatus(current.key)}</span></div>
       <div class="bar"><span style="width:${((known / cards.length) * 100).toFixed(1)}%"></span></div>
+      ${practiceState.reviewed ? `<p class="session">This session: ${practiceState.reviewed} ${practiceState.reviewed === 1 ? "card" : "cards"}, ${practiceState.right} right</p>` : ""}
       <div class="flashcard${revealed ? " revealed" : ""}">
         <div class="card-front">${front}</div>
         ${revealed ? `<div class="card-back">${back}</div>` : ""}
@@ -692,6 +700,8 @@
   function practiceGrade(got) {
     const key = practiceState.current.key;
     setBox(key, got ? Math.min(boxOf(key) + 1, 5) : 0);
+    practiceState.reviewed++;
+    if (got) practiceState.right++;
     practiceState.last = key;
     pickCard();
     renderCard();
