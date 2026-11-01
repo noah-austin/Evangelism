@@ -181,7 +181,8 @@
     const [s, id, step] = go.split("/");
     const t = getItem(s, id);
     if (!t) return { title: go };
-    let title = plain(itemTitle(s, t));
+    const prefix = { objections: "Answer: ", worldviews: "Notes: ", evidence: "Evidence: ", skills: "Skill: ", openers: "" }[s] || "";
+    let title = prefix + plain(itemTitle(s, t));
     if (step) title += `, ${stepLabel(t, +step)}`;
     return { title, live: isPathSection(s) && t.numbered, id, step: step || 1 };
   }
