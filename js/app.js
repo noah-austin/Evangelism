@@ -154,7 +154,8 @@
   }
   function verseRow(v, kicker) {
     const star = isFav("verse:" + v.ref) ? `<span class="star-inline">${starSvg(true, 15)}</span>` : "";
-    return row({ ref: v.ref, kicker, title: esc(v.ref) + star, sub: v.text, verse: true });
+    const tag = v.tag ? `<span class="vtag">${esc(v.tag)}</span>` : "";
+    return row({ ref: v.ref, kicker, title: `<span class="vname">${esc(v.ref)}${star}</span>${tag}`, sub: v.text, verse: true });
   }
   function itemRow(sec, item, kicker) {
     const draft = item.draft ? ` <span class="badge">Draft</span>` : "";
@@ -317,7 +318,7 @@
       }
     }
     for (const v of D.verses) {
-      idx.push({ verse: v, hay: [v.ref, v.text, v.note, ...(v.topics || [])].join(" ").toLowerCase(), titleHay: v.ref.toLowerCase() });
+      idx.push({ verse: v, hay: [v.ref, v.tag, v.text, v.note, ...(v.topics || [])].join(" ").toLowerCase(), titleHay: (v.ref + " " + (v.tag || "")).toLowerCase() });
     }
     return idx;
   }
@@ -727,7 +728,7 @@
     const v = getVerse(ref);
     sheet.innerHTML = v
       ? `<div class="sheet-handle"></div>
-        <div class="item-head"><h2 class="sheet-ref">${esc(v.ref)} <span class="ver">NASB 1995</span></h2>${favButton("verse:" + v.ref)}</div>
+        <div class="item-head"><h2 class="sheet-ref">${esc(v.ref)} <span class="ver">NASB 1995</span>${v.tag ? `<span class="sheet-tag">${esc(v.tag)}</span>` : ""}</h2>${favButton("verse:" + v.ref)}</div>
         <p class="sheet-text">${esc(v.text)}</p>
         ${v.note ? `<p class="sheet-note">${inline(v.note)}</p>` : ""}
         ${v.verified ? "" : `<p class="unverified">Wording not yet checked against a NASB 1995 Bible</p>`}

@@ -362,3 +362,8 @@ body.live-mode main { padding-bottom: calc(110px + env(safe-area-inset-bottom));
 .overview li { margin: 0 0 5px; font-size: 0.95rem; color: var(--muted); }
 .overview button { color: var(--accent); font-weight: 650; text-align: left; line-height: 1.3; }
 .verse-label { display: block; margin: 14px 0 -4px; color: var(--muted); }
+
+/* Verse tag lines */
+.vname { margin-right: 8px; }
+.vtag { font-weight: 650; color: var(--accent); font-size: 0.92rem; }
+.sheet-tag { display: block; margin-top: 2px; font-size: 0.95rem; font-weight: 650; color: var(--accent); }
