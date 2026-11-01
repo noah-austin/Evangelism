@@ -404,4 +404,491 @@ DATA.talking = [
       },
     ],
   },
+
+  // --- Muslim ---
+  {
+    id: "muslim",
+    title: "“I'm Muslim”",
+    sources: ["Cliff Knechtle", "Ray Comfort"],
+    summary: `Start with what you share: one God, a coming judgment, and respect for Jesus. Then ask the big question every Muslim has to face: how can a just God forgive sinners?`,
+    numbered: true,
+    parts: [
+      {
+        heading: "Common ground",
+        say: ["I'd love to hear what you believe. We actually agree on a lot."],
+        ask: "What do you think happens on Judgment Day?",
+        body: `- **You share a lot:** one Creator, prophets, a day of judgment, and Jesus born of a virgin.
+- **Listen first.** Most Muslims will say God weighs our good and bad deeds.
+- **Be respectful.** Don't mock Muhammad or the Qur'an.`,
+        branches: [
+          { if: "“God weighs our good and bad deeds”", go: "step:2" },
+          { if: "“The Bible was corrupted”", go: "step:6" },
+        ],
+      },
+      {
+        heading: "The scales",
+        ask: "How do you know your good deeds will outweigh your bad?",
+        say: ["If a judge let a criminal go because he'd done some good things, would that judge be just?"],
+        body: `- **Good deeds don't cancel crimes.** A just judge has to punish wrongdoing ([[Proverbs 17:15]]).
+- **One broken law is enough** to make us guilty ([[James 2:10]]).
+- **Most Muslims have no assurance.** Gently let that sink in.`,
+        verses: ["Proverbs 17:15", "James 2:10"],
+        branches: [
+          { if: "“God is merciful”", go: "step:3" },
+          { if: "“I can't know for sure”", go: "step:3" },
+        ],
+      },
+      {
+        heading: "Just and merciful",
+        say: [
+          "That's the big question: how can God be perfectly just and still forgive?",
+          "The gospel's answer is the cross. Someone else paid the fine.",
+        ],
+        body: `- **Mercy without justice** would make God unjust.
+- **At the cross** God punished sin and showed mercy at the same time ([[Romans 3:26]]).
+- **Jesus said** He came to give His life as a ransom ([[Mark 10:45]]).`,
+        verses: ["Romans 3:26", "2 Corinthians 5:21", "Mark 10:45"],
+        branches: [
+          { if: "“How would that work?”", go: "step:4" },
+          { if: "“Jesus wasn't crucified”", go: "step:7" },
+          { if: "“God can't have a son”", go: "step:8" },
+        ],
+      },
+      {
+        heading: "Who is Jesus?",
+        say: ["Jesus didn't only claim to be a prophet. He forgave sins and accepted worship."],
+        ask: "Who can forgive sins but God alone?",
+        body: `- **He forgave sins**, and the religious leaders knew what that meant ([[Mark 2:5-7]]).
+- **He accepted worship.** Thomas called Him “my Lord and my God” ([[John 20:28]]).
+- **He used God's name** for Himself ([[John 8:58]]).`,
+        verses: ["Mark 2:5-7", "John 20:28", "John 8:58"],
+        branches: [
+          { if: "“The Bible was corrupted”", go: "step:6" },
+          { if: "“God can't have a son”", go: "step:8" },
+        ],
+      },
+      {
+        heading: "Go to the Law",
+        say: ["You take God's commands seriously. Can I ask how you've done with them?"],
+        ask: "Have you ever told a lie?",
+        body: `- **Muslims believe in judgment**, so the Law lands well.
+- **Once they see they can't balance the scales**, the cross is the answer to their real problem.`,
+        verses: ["Romans 3:20", "James 2:10"],
+        branches: [{ if: "Ready to go through the Law", go: "paths/way-of-the-master/3" }],
+      },
+
+      // --- Side steps (only if needed) ---
+      {
+        heading: "“The Bible was corrupted”",
+        detour: true,
+        next: 4,
+        say: [
+          "The Qur'an tells Christians to judge by the Gospel. That means it was reliable in Muhammad's day.",
+          "And we have copies of the Bible from centuries before Muhammad.",
+        ],
+        ask: "When do you think it was changed?",
+        body: `- **The Qur'an trusts the earlier Scriptures:** Surah 5:47 and 10:94.
+- **The Qur'an says no one can change God's words** (Surah 6:115). So who changed them?
+- **Manuscripts from before Muhammad** say what our Bibles say today.`,
+        verses: ["Isaiah 40:8", "Matthew 24:35"],
+        branches: [{ if: "“It was changed before Muhammad”", go: "evidence/bible-reliability" }],
+      },
+      {
+        heading: "“Jesus wasn't crucified”",
+        detour: true,
+        next: 4,
+        say: [
+          "Almost every historian, even skeptics, agrees Jesus died on a Roman cross.",
+          "And Jesus said ahead of time that He came to give His life.",
+        ],
+        body: `- **Surah 4:157** says it only appeared that He was crucified. That was written about 600 years later.
+- **The eyewitness accounts** and early non-Christian historians all say He died.
+- **Then He rose.** See the evidence for the resurrection.`,
+        verses: ["Mark 10:45", "1 Corinthians 15:3-4"],
+        branches: [{ if: "“What's the evidence?”", go: "evidence/resurrection" }],
+      },
+      {
+        heading: "“God can't have a son”",
+        detour: true,
+        next: 4,
+        say: [
+          "We agree. God didn't take a wife and have a child. That's not what Christians mean.",
+          "“Son of God” means Jesus shares God's nature, the way a son shares his father's.",
+        ],
+        body: `- **Not a physical son.** Jesus was conceived by the Holy Spirit ([[Luke 1:35]]).
+- **One God, three persons**, not three gods. Christians don't worship Mary.
+- **The Word was God** and became flesh ([[John 1:1]], [[John 1:14]]).`,
+        verses: ["Luke 1:35", "John 1:1", "John 1:14", "Matthew 28:19"],
+      },
+    ],
+  },
+
+  // --- Mormon ---
+  {
+    id: "mormon",
+    title: "“I'm Mormon”",
+    sources: ["Greg Koukl", "Ray Comfort"],
+    summary: `Latter-day Saints use the same words Christians do, but often mean something different. Define terms, then talk about grace, the nature of God, and God's perfect standard.`,
+    numbered: true,
+    parts: [
+      {
+        heading: "Define terms",
+        say: ["I'd love to understand what you believe."],
+        ask: "When you say “Jesus” and “saved,” what do you mean?",
+        body: `- **Same words, different meanings.** In LDS teaching, Jesus is the spirit brother of Lucifer, God was once a man, and “salvation” is different from “exaltation.”
+- **Use Columbo.** Ask, don't assume.
+- **Be kind.** Missionaries are often young, sincere, and far from home.`,
+        branches: [
+          { if: "“We believe in Jesus too”", go: "step:7" },
+          { if: "“We're saved by grace”", go: "step:2" },
+        ],
+      },
+      {
+        heading: "Grace “after all we can do”",
+        ask: "Do you think you've done all you can do?",
+        say: ["The Book of Mormon says we're saved by grace “after all we can do.” Have you done all you can?"],
+        body: `- **2 Nephi 25:23** puts grace after our best efforts.
+- **Most Latter-day Saints will honestly say no.** That's the opening.
+- **The Bible says grace is a gift.** If it's earned, it isn't grace ([[Romans 11:6]]).`,
+        verses: ["Ephesians 2:8-9", "Romans 11:6"],
+        branches: [
+          { if: "“No, I haven't”", go: "step:3" },
+          { if: "“I'm trying my best”", go: "step:3" },
+        ],
+      },
+      {
+        heading: "Eternal life is a gift",
+        say: ["The Bible says eternal life is a free gift, not a reward."],
+        ask: "Do you know you have eternal life?",
+        body: `- **A gift you receive**, not wages you earn ([[Romans 6:23]]).
+- **Not by our deeds**, even our good ones ([[Titus 3:5]]).
+- **You can know** you have it ([[1 John 5:13]]).`,
+        verses: ["Romans 6:23", "Titus 3:5", "1 John 5:13"],
+        branches: [{ if: "“I've felt the Spirit confirm it”", go: "step:6" }],
+      },
+      {
+        heading: "Who is God?",
+        say: ["The Bible says there's only one God, and He has always been God."],
+        ask: "Was God ever a man?",
+        body: `- **LDS teaching:** God was once a man who became God, and faithful members can be exalted too.
+- **The Bible:** there is no other God, before or after ([[Isaiah 43:10]]). God is not a man ([[Numbers 23:19]]). He is God from everlasting ([[Psalm 90:2]]).
+- **Keep it short.** Don't turn this into a debate. Move to the Law.`,
+        verses: ["Isaiah 43:10", "Isaiah 44:6", "Numbers 23:19", "Psalm 90:2"],
+      },
+      {
+        heading: "Go to the Law",
+        say: ["God's standard is perfect obedience. Can I ask how you're doing with the Ten Commandments?"],
+        ask: "Have you ever told a lie?",
+        body: `- **The Law shuts every mouth.** If we have to keep all of it, we're cursed ([[Galatians 3:10]]).
+- **Then the cross:** Jesus kept it perfectly and paid for those who didn't.`,
+        verses: ["James 2:10", "Galatians 3:10"],
+        branches: [{ if: "Ready to go through the Law", go: "paths/way-of-the-master/3" }],
+      },
+
+      // --- Side steps (only if needed) ---
+      {
+        heading: "“I've felt the burning in the bosom”",
+        detour: true,
+        next: 4,
+        say: [
+          "I don't doubt you felt something real.",
+          "But feelings can mislead us. God tells us to test everything by His Word.",
+        ],
+        ask: "If your feelings and the Bible disagreed, which would you trust?",
+        body: `- **The heart can deceive** ([[Jeremiah 17:9]]).
+- **A way can seem right** and still be wrong ([[Proverbs 14:12]]).
+- **Even an angel's message** must match the gospel ([[Galatians 1:8]]).`,
+        verses: ["Jeremiah 17:9", "Proverbs 14:12", "Galatians 1:8"],
+      },
+      {
+        heading: "“We believe in Jesus too”",
+        detour: true,
+        next: 2,
+        say: [
+          "I'm glad. Can I ask which Jesus?",
+          "The Bible's Jesus is eternal God, not a spirit brother of Lucifer.",
+        ],
+        ask: "Was Jesus ever not God?",
+        body: `- **The Word was God** from the beginning ([[John 1:1]]).
+- **All the fullness of God** lives in Him ([[Colossians 2:9]]).
+- **The Father calls the Son “God”** ([[Hebrews 1:8]]).`,
+        verses: ["John 1:1", "Colossians 2:9", "Hebrews 1:8"],
+      },
+    ],
+  },
+
+  // --- Jehovah's Witness ---
+  {
+    id: "jw",
+    title: "“I'm a Jehovah's Witness”",
+    sources: ["Greg Koukl", "Ray Comfort"],
+    summary: `Jehovah's Witnesses know their Bibles and are trained to answer. Stay friendly, focus on who Jesus is, and ask whether they know they're saved.`,
+    numbered: true,
+    parts: [
+      {
+        heading: "Start friendly",
+        say: ["I appreciate how seriously you take the Bible."],
+        ask: "Can we look at what the Bible says about who Jesus is?",
+        body: `- **What they believe:** Jehovah alone is God. Jesus is a created being, Michael the archangel. The Holy Spirit is a force.
+- **They use the New World Translation.** Stick to a few clear verses.
+- **Stay calm and kind.** They expect hostility.`,
+        branches: [
+          { if: "“Sure”", go: "step:2" },
+          { if: "“Jesus is Michael the archangel”", go: "step:6" },
+        ],
+      },
+      {
+        heading: "Who is Jesus?",
+        say: [
+          "John 1:1 says the Word was God.",
+          "Thomas called Jesus “my Lord and my God,” and Jesus didn't correct him.",
+        ],
+        ask: "If Jesus isn't God, why did He accept worship?",
+        body: `- **“A god”:** The New World Translation says “a god” in John 1:1. Then there are two gods, but God says there is no other ([[Isaiah 43:10]]).
+- **“I am”:** Jesus used God's name for Himself ([[John 8:58]]).
+- **Angels worship Him** ([[Hebrews 1:6]]). Angels only worship God.`,
+        verses: ["John 1:1", "John 20:28", "John 8:58", "Hebrews 1:6", "Isaiah 43:10"],
+        branches: [
+          { if: "“I'll have to think about that”", go: "step:3" },
+          { if: "“The Trinity isn't in the Bible”", go: "step:7" },
+        ],
+      },
+      {
+        heading: "Do you know you're saved?",
+        ask: "Do you know where you'll spend eternity?",
+        say: ["The Bible says you can know you have eternal life."],
+        body: `- **Most Witnesses aren't sure.** They hope to survive Armageddon and live on a paradise earth if they stay faithful.
+- **Only 144,000** go to heaven in their teaching.
+- **God's promise:** you can *know* ([[1 John 5:13]], [[John 5:24]]).`,
+        verses: ["1 John 5:13", "John 5:24"],
+      },
+      {
+        heading: "Saved by grace",
+        say: ["It's not by our works. It's a gift."],
+        ask: "Are you sure you've been faithful enough?",
+        body: `- **Not of works** ([[Ephesians 2:8-9]]).
+- **Not even our righteous deeds** ([[Titus 3:5]]).
+- **This is where the Law helps:** no one is faithful enough.`,
+        verses: ["Ephesians 2:8-9", "Titus 3:5"],
+      },
+      {
+        heading: "Go to the Law",
+        say: ["Can I ask you a few questions about God's commandments?"],
+        ask: "Have you ever told a lie?",
+        body: `- **The Law shows we need a Savior**, not just better effort ([[Romans 3:20]]).
+- **Then the cross:** only God Himself could pay what we owe.`,
+        verses: ["Romans 3:20"],
+        branches: [{ if: "Ready to go through the Law", go: "paths/way-of-the-master/3" }],
+      },
+
+      // --- Side steps (only if needed) ---
+      {
+        heading: "“Jesus is Michael the archangel”",
+        detour: true,
+        next: 2,
+        say: [
+          "The Bible says all of God's angels worship Jesus.",
+          "Michael wouldn't even rebuke the devil on his own authority. Jesus did it all the time.",
+        ],
+        body: `- **God never called an angel His Son**, and He commands the angels to worship Him ([[Hebrews 1:6]]).
+- **Michael said “The Lord rebuke you”** ([[Jude 1:9]]). Jesus rebuked demons directly.`,
+        verses: ["Hebrews 1:6", "Jude 1:9"],
+      },
+      {
+        heading: "“The Trinity isn't in the Bible”",
+        detour: true,
+        next: 3,
+        say: [
+          "The word isn't, but the teaching is. One God, three persons.",
+          "The Father is called God, and so is the Son.",
+        ],
+        ask: "If there's only one God, and both are called God, how do you explain that?",
+        body: `- **One God** ([[Isaiah 44:6]]).
+- **The Son is called God** ([[John 1:1]], [[John 20:28]], [[Hebrews 1:8]]).
+- **One name, three persons** ([[Matthew 28:19]]).`,
+        verses: ["Isaiah 44:6", "Hebrews 1:8", "Matthew 28:19"],
+      },
+    ],
+  },
+
+  // --- Catholic ---
+  {
+    id: "catholic",
+    title: "“I'm Catholic”",
+    sources: ["Ray Comfort", "Cliff Knechtle"],
+    summary: `Many Catholics love God and know a lot about Jesus. The key question is how someone is made right with God: by grace through faith alone, or grace plus works and sacraments.`,
+    numbered: true,
+    parts: [
+      {
+        heading: "Start respectfully",
+        say: ["I'd love to hear about your faith."],
+        ask: "If you died today, do you know you'd go to heaven?",
+        body: `- **Don't attack the Church.** Focus on the gospel, not on Mary, the Pope, or traditions.
+- **Most Catholics say “I hope so.”** That's the opening.`,
+        branches: [
+          { if: "“I hope so”", go: "step:2" },
+          { if: "“Yes, because I'm Catholic”", go: "step:2" },
+        ],
+      },
+      {
+        heading: "How do you get to heaven?",
+        ask: "What do you think gets someone into heaven?",
+        body: `- **Listen.** A common answer: being a good person, going to Mass, and the sacraments.
+- **Catholic teaching** says grace comes through faith and the sacraments, and mortal sin can lose it.`,
+        branches: [
+          { if: "“Being a good person and going to Mass”", go: "step:3" },
+          { if: "“I go to confession”", go: "step:6" },
+        ],
+      },
+      {
+        heading: "Grace through faith",
+        say: [
+          "The Bible says we're saved by grace through faith, not by works.",
+          "If it's earned, it isn't grace anymore.",
+        ],
+        body: `- **A gift, not a wage** ([[Ephesians 2:8-9]], [[Romans 4:4-5]]).
+- **Grace plus works** isn't grace ([[Romans 11:6]]).
+- **Not by our righteous deeds** ([[Titus 3:5]]).`,
+        verses: ["Ephesians 2:8-9", "Romans 4:4-5", "Romans 11:6", "Titus 3:5"],
+        branches: [{ if: "“Faith without works is dead”", go: "step:7" }],
+      },
+      {
+        heading: "It is finished",
+        say: ["On the cross Jesus said, “It is finished.” His sacrifice was once for all."],
+        ask: "If Jesus paid it all, what's left for you to pay?",
+        body: `- **Paid in full** ([[John 19:30]]).
+- **One offering** perfects forever those who are being sanctified ([[Hebrews 10:14]]).
+- **Gently:** this is why there's no need for purgatory to finish paying for sin.`,
+        verses: ["John 19:30", "Hebrews 10:14"],
+      },
+      {
+        heading: "Go to the Law",
+        say: ["The Bible says you can know you have eternal life. Can I ask you a few questions to see if you'd be good enough on your own?"],
+        ask: "Do you think you're a good person?",
+        body: `- **The Law shows no one is good enough**, so trust shifts from self to Christ.
+- **Assurance** comes from His work, not ours ([[1 John 5:13]]).`,
+        verses: ["1 John 5:13"],
+        branches: [{ if: "Ready to go through the Law", go: "paths/way-of-the-master/2" }],
+      },
+
+      // --- Side steps (only if needed) ---
+      {
+        heading: "“I go to confession”",
+        detour: true,
+        next: 3,
+        say: [
+          "Confessing sin is good. The Bible says to confess to God, and He forgives.",
+          "But forgiveness rests on what Jesus did, not on our penance.",
+        ],
+        ask: "Do you know your sins are fully forgiven, or only until next time?",
+        body: `- **Confess to God** ([[1 John 1:9]]).
+- **One mediator:** Jesus ([[1 Timothy 2:5]]).
+- **His one sacrifice** is enough ([[Hebrews 10:14]]).`,
+        verses: ["1 John 1:9", "1 Timothy 2:5", "Hebrews 10:14"],
+      },
+      {
+        heading: "“Faith without works is dead”",
+        detour: true,
+        next: 4,
+        say: [
+          "Agreed. Real faith always produces good works.",
+          "But works are the fruit of being saved, not the root.",
+        ],
+        body: `- **James is about showing** that faith is real. Even demons believe ([[James 2:19]]).
+- **Paul says the same thing:** saved by grace ([[Ephesians 2:8-9]]), *for* good works ([[Ephesians 2:10]]).`,
+        verses: ["James 2:19", "Ephesians 2:8-9", "Ephesians 2:10"],
+      },
+    ],
+  },
+
+  // --- Jewish ---
+  {
+    id: "jewish",
+    title: "“I'm Jewish”",
+    sources: ["Ray Comfort", "Lee Strobel"],
+    summary: `You share the Hebrew Scriptures. Stay in them: the need for atonement, Isaiah 53, and the Messiah. Then go to the Law they already know.`,
+    numbered: true,
+    parts: [
+      {
+        heading: "Common ground",
+        say: ["I really respect the Hebrew Scriptures. We share them."],
+        ask: "Are you religious, or more cultural?",
+        body: `- **Find out where they are.** Many Jewish people are secular.
+- **Use the Hebrew Bible.** Its verses carry more weight than the New Testament.
+- **Never imply blame** for Jesus' death. We all put Him there.`,
+        branches: [
+          { if: "“I'm observant” / “Somewhat religious”", go: "step:2" },
+          { if: "“More cultural”", go: "step:7" },
+        ],
+      },
+      {
+        heading: "Atonement",
+        say: ["The Torah says atonement requires blood."],
+        ask: "Since the temple was destroyed, how are sins atoned for now?",
+        body: `- **The life is in the blood**, given for atonement ([[Leviticus 17:11]]).
+- **No temple since AD 70.** Most rabbinic teaching now points to prayer, repentance, and good deeds.
+- **God promises cleansing** ([[Isaiah 1:18]]). But how?`,
+        verses: ["Leviticus 17:11", "Isaiah 1:18", "Hebrews 10:4"],
+      },
+      {
+        heading: "Isaiah 53",
+        say: ["Can I read you a passage, and you tell me who it's about?"],
+        body: `- **Read it without the reference.** Many people assume it's from the New Testament.
+- **The servant is innocent** ([[Isaiah 53:9]]) and suffers for the sins of others ([[Isaiah 53:5]], [[Isaiah 53:8]]).
+- **If they say it's about Israel:** the servant is sinless and dies for “my people.” That can't be the nation.`,
+        verses: ["Isaiah 53:5", "Isaiah 53:6", "Isaiah 53:8", "Isaiah 53:9"],
+        branches: [{ if: "“Who is it about?”", go: "step:4" }],
+      },
+      {
+        heading: "The Messiah",
+        say: ["Jesus was born in Bethlehem, was pierced, died for sins, and rose again, just as the prophets said."],
+        body: `- **Bethlehem** ([[Micah 5:2]]).
+- **Pierced hands and feet** ([[Psalm 22:16]]).
+- **A new covenant** that forgives sin ([[Jeremiah 31:31]]).
+- **Daniel 9** puts the Messiah before the temple's destruction. See Fulfilled Prophecy.`,
+        verses: ["Micah 5:2", "Psalm 22:16", "Jeremiah 31:31"],
+        branches: [
+          { if: "“There's no world peace, so He's not the Messiah”", go: "step:6" },
+          { if: "“What's the evidence?”", go: "evidence/prophecy" },
+        ],
+      },
+      {
+        heading: "Go to the Law",
+        say: ["You know the Ten Commandments better than most people. How do you think you've done?"],
+        ask: "Have you ever told a lie?",
+        body: `- **Stay in the Torah:** Exodus 20.
+- **No one is righteous** on their own ([[Isaiah 64:6]]).
+- **Then the cross:** the Messiah is the atonement.`,
+        verses: ["Exodus 20:16", "Exodus 20:15", "Isaiah 64:6"],
+        branches: [{ if: "Ready to go through the Law", go: "paths/way-of-the-master/3" }],
+      },
+
+      // --- Side steps (only if needed) ---
+      {
+        heading: "“There's no world peace”",
+        detour: true,
+        next: 5,
+        say: [
+          "The prophets describe the Messiah suffering and also reigning.",
+          "Jesus came first to deal with sin. He'll return to bring peace.",
+        ],
+        body: `- **Suffering servant** ([[Isaiah 53:5]]) and **Prince of Peace** ([[Isaiah 9:6]]).
+- **Two comings:** first to bear sin, then to reign ([[Hebrews 9:28]]).`,
+        verses: ["Isaiah 53:5", "Isaiah 9:6", "Hebrews 9:28"],
+      },
+      {
+        heading: "“I'm Jewish culturally, not religiously”",
+        detour: true,
+        next: 5,
+        say: ["That's common. Can I ask what you think happens after we die?"],
+        body: `- **Treat it like a conversation with an agnostic or atheist.**
+- **Go to the conscience.** They know lying and stealing are wrong ([[Romans 2:15]]).`,
+        verses: ["Romans 2:15"],
+        branches: [
+          { if: "“I don't believe in God”", go: "paths/way-of-the-master/9" },
+          { if: "Ready to go through the Law", go: "paths/way-of-the-master/2" },
+        ],
+      },
+    ],
+  },
 ];

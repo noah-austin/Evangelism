@@ -1,7 +1,7 @@
 // Offline support: saves every file on first visit, then serves from the
 // saved copy (fast + works with no signal) while checking for updates in
 // the background. Bump VERSION when adding or renaming files.
-const VERSION = "v10";
+const VERSION = "v11";
 const CACHE = "field-guide-" + VERSION;
 const FILES = [
   "./",

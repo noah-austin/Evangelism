@@ -208,6 +208,13 @@ DATA.verses = [
     note: "The Law is good when used the right way: to show sinners their need.",
     verified: false,
   },
+  {
+    ref: "Galatians 3:10",
+    text: "For as many as are of the works of the Law are under a curse; for it is written, “Cursed is everyone who does not abide by all things written in the book of the law, to perform them.”",
+    topics: ["The Law"],
+    note: "If you want to be saved by keeping the Law, you have to keep all of it, all the time.",
+    verified: false,
+  },
 
   // --- Judgment ---
   {
@@ -415,6 +422,20 @@ DATA.verses = [
     note: "One offering, complete forever.",
     verified: false,
   },
+  {
+    ref: "Hebrews 10:4",
+    text: "For it is impossible for the blood of bulls and goats to take away sins.",
+    topics: ["The Cross"],
+    note: "The animal sacrifices pointed forward to the one sacrifice that could actually take sin away.",
+    verified: false,
+  },
+  {
+    ref: "Hebrews 9:28",
+    text: "so Christ also, having been offered once to bear the sins of many, will appear a second time for salvation without reference to sin, to those who eagerly await Him.",
+    topics: ["The Cross"],
+    note: "Two comings: first to bear sin, second to bring His kingdom.",
+    verified: false,
+  },
 
   // --- Grace ---
   {
@@ -555,6 +576,27 @@ DATA.verses = [
     text: "But He gives a greater grace. Therefore it says, “God is opposed to the proud, but gives grace to the humble.”",
     topics: ["Grace","The Law"],
     note: "The basis of “Law to the proud, grace to the humble.”",
+    verified: false,
+  },
+  {
+    ref: "Titus 3:5",
+    text: "He saved us, not on the basis of deeds which we have done in righteousness, but according to His mercy, by the washing of regeneration and renewing by the Holy Spirit,",
+    topics: ["Grace"],
+    note: "Not by our deeds, even our righteous ones. By His mercy.",
+    verified: false,
+  },
+  {
+    ref: "Romans 11:6",
+    text: "But if it is by grace, it is no longer on the basis of works, otherwise grace is no longer grace.",
+    topics: ["Grace"],
+    note: "Grace plus works isn't grace. You can't mix the two.",
+    verified: false,
+  },
+  {
+    ref: "Ephesians 2:10",
+    text: "For we are His workmanship, created in Christ Jesus for good works, which God prepared beforehand so that we would walk in them.",
+    topics: ["Grace"],
+    note: "Right after “not as a result of works.” Good works are the fruit of salvation, not the root.",
     verified: false,
   },
 
@@ -878,6 +920,34 @@ DATA.verses = [
     text: "But of the Son He says, “Your throne, O God, is forever and ever, And the righteous scepter is the scepter of His kingdom.",
     topics: ["Deity of Christ"],
     note: "The Father calls the Son “God.”",
+    verified: false,
+  },
+  {
+    ref: "Isaiah 9:6",
+    text: "For a child will be born to us, a son will be given to us; And the government will rest on His shoulders; And His name will be called Wonderful Counselor, Mighty God, Eternal Father, Prince of Peace.",
+    topics: ["Deity of Christ"],
+    note: "The promised child is called “Mighty God.” The Messiah is God Himself.",
+    verified: false,
+  },
+  {
+    ref: "Luke 1:35",
+    text: "The angel answered and said to her, “The Holy Spirit will come upon you, and the power of the Most High will overshadow you; and for that reason the holy Child shall be called the Son of God.",
+    topics: ["Deity of Christ"],
+    note: "“Son of God” isn't about God taking a wife. Jesus was conceived by the Holy Spirit.",
+    verified: false,
+  },
+  {
+    ref: "Matthew 28:19",
+    text: "Go therefore and make disciples of all the nations, baptizing them in the name of the Father and the Son and the Holy Spirit,",
+    topics: ["Deity of Christ"],
+    note: "One “name,” three persons. The Trinity in a single sentence.",
+    verified: false,
+  },
+  {
+    ref: "Jude 1:9",
+    text: "But Michael the archangel, when he disputed with the devil and argued about the body of Moses, did not dare pronounce against him a railing judgment, but said, “The Lord rebuke you!”",
+    topics: ["Deity of Christ"],
+    note: "Michael wouldn't rebuke the devil on his own authority. Jesus rebuked demons directly. Jesus isn't Michael.",
     verified: false,
   },
 
