@@ -1,6 +1,7 @@
 // QUICK VERSES — NASB 1995
 //
 // Each verse:
+//   tag:      a 2-5 word hint shown next to the reference (e.g. "All have sinned")
 //   ref:      "Book Chapter:Verse" (this exact text is how other pages link to it, e.g. [[Romans 3:23]])
 //   text:     verse text, NASB 1995
 //   topics:   list of topics it shows up under on the Verses page
@@ -33,6 +34,7 @@ DATA.verses = [
   // --- Sin ---
   {
     ref: "Romans 3:23",
+    tag: "All have sinned",
     text: "for all have sinned and fall short of the glory of God,",
     topics: ["Sin"],
     note: "Everyone is included — no exceptions. Good for “I'm a good person.”",
@@ -40,6 +42,7 @@ DATA.verses = [
   },
   {
     ref: "Proverbs 20:6",
+    tag: "Everyone claims to be good",
     text: "Many a man proclaims his own loyalty, But who can find a trustworthy man?",
     topics: ["Sin"],
     note: "Way of the Master uses this right after “Do you think you're a good person?” Most people proclaim their own goodness.",
@@ -47,6 +50,7 @@ DATA.verses = [
   },
   {
     ref: "Isaiah 64:6",
+    tag: "Our good deeds are filthy",
     text: "For all of us have become like one who is unclean, And all our righteous deeds are like a filthy garment; And all of us wither like a leaf, And our iniquities, like the wind, take us away.",
     topics: ["Sin"],
     note: "Even our good deeds can't clean us up before a holy God.",
@@ -54,6 +58,7 @@ DATA.verses = [
   },
   {
     ref: "Isaiah 53:6",
+    tag: "All like sheep astray",
     text: "All of us like sheep have gone astray, Each of us has turned to his own way; But the LORD has caused the iniquity of us all To fall on Him.",
     topics: ["Sin","The Cross"],
     note: "Sin and the cross in one verse.",
@@ -61,6 +66,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 5:12",
+    tag: "Sin entered through one man",
     text: "Therefore, just as through one man sin entered into the world, and death through sin, and so death spread to all men, because all sinned—",
     topics: ["Sin"],
     note: "Why the world is broken: sin brought death and suffering into creation.",
@@ -68,6 +74,7 @@ DATA.verses = [
   },
   {
     ref: "Matthew 23:28",
+    tag: "Righteous outside, hypocrites inside",
     text: "So you, too, outwardly appear righteous to men, but inwardly you are full of hypocrisy and lawlessness.",
     topics: ["Sin"],
     note: "Jesus was the strongest critic of religious hypocrisy.",
@@ -75,6 +82,7 @@ DATA.verses = [
   },
   {
     ref: "Judges 21:25",
+    tag: "Everyone did as they pleased",
     text: "In those days there was no king in Israel; everyone did what was right in his own eyes.",
     topics: ["Sin"],
     note: "Moral relativism is not new. It is what happens without God as King.",
@@ -82,6 +90,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 1:21-22",
+    tag: "They knew God, didn't honor",
     text: "For even though they knew God, they did not honor Him as God or give thanks, but they became futile in their speculations, and their foolish heart was darkened. Professing to be wise, they became fools,",
     topics: ["Sin","God's Existence"],
     note: "People know God but refuse to honor Him.",
@@ -89,6 +98,7 @@ DATA.verses = [
   },
   {
     ref: "John 3:19",
+    tag: "Men loved the darkness",
     text: "This is the judgment, that the Light has come into the world, and men loved the darkness rather than the Light, for their deeds were evil.",
     topics: ["Sin","Judgment"],
     note: "The deepest problem is moral, not intellectual.",
@@ -96,6 +106,7 @@ DATA.verses = [
   },
   {
     ref: "Jeremiah 17:9",
+    tag: "The heart is deceitful",
     text: "The heart is more deceitful than all else And is desperately sick; Who can understand it?",
     topics: ["Sin"],
     note: "For “follow your heart.” Our feelings are not a reliable guide to truth.",
@@ -103,6 +114,7 @@ DATA.verses = [
   },
   {
     ref: "James 4:17",
+    tag: "Not doing right is sin",
     text: "Therefore, to one who knows the right thing to do and does not do it, to him it is sin.",
     topics: ["Sin","Life & the Unborn"],
     note: "Silence and inaction can be sin too, including the church's silence on abortion.",
@@ -112,6 +124,7 @@ DATA.verses = [
   // --- The Law ---
   {
     ref: "Exodus 20:7",
+    tag: "Don't misuse God's name",
     text: "You shall not take the name of the LORD your God in vain, for the LORD will not leave him unpunished who takes His name in vain.",
     topics: ["The Law"],
     note: "Blasphemy. God says He will not leave it unpunished.",
@@ -119,6 +132,7 @@ DATA.verses = [
   },
   {
     ref: "Exodus 20:13",
+    tag: "Don't murder",
     text: "You shall not murder.",
     topics: ["The Law","Life & the Unborn"],
     note: "Pair with 1 John 3:15 (hate = murder) and with the abortion conversation.",
@@ -126,6 +140,7 @@ DATA.verses = [
   },
   {
     ref: "Exodus 20:15",
+    tag: "Don't steal",
     text: "You shall not steal.",
     topics: ["The Law"],
     note: "“Have you ever stolen anything, even something small?”",
@@ -133,6 +148,7 @@ DATA.verses = [
   },
   {
     ref: "Exodus 20:16",
+    tag: "Don't lie",
     text: "You shall not bear false witness against your neighbor.",
     topics: ["The Law"],
     note: "“Have you ever told a lie?”",
@@ -140,6 +156,7 @@ DATA.verses = [
   },
   {
     ref: "Matthew 5:27-28",
+    tag: "Lust is adultery of heart",
     text: "You have heard that it was said, ‘You shall not commit adultery’; but I say to you that everyone who looks at a woman with lust for her has already committed adultery with her in his heart.",
     topics: ["The Law"],
     note: "Jesus raises the standard to the heart. Few people can claim innocence here.",
@@ -147,6 +164,7 @@ DATA.verses = [
   },
   {
     ref: "1 John 3:15",
+    tag: "Hate is murder",
     text: "Everyone who hates his brother is a murderer; and you know that no murderer has eternal life abiding in him.",
     topics: ["The Law"],
     note: "God sees hatred as murder of the heart.",
@@ -154,6 +172,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 3:20",
+    tag: "Law shows us our sin",
     text: "because by the works of the Law no flesh will be justified in His sight; for through the Law comes the knowledge of sin.",
     topics: ["The Law"],
     note: "Why we use the Law: it doesn't save — it shows people they need saving.",
@@ -161,6 +180,7 @@ DATA.verses = [
   },
   {
     ref: "Galatians 3:24",
+    tag: "Law leads us to Christ",
     text: "Therefore the Law has become our tutor to lead us to Christ, so that we may be justified by faith.",
     topics: ["The Law"],
     note: "The Law is the tutor that leads to Christ — the core idea behind Way of the Master.",
@@ -168,6 +188,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 2:15",
+    tag: "Law written on hearts",
     text: "in that they show the work of the Law written in their hearts, their conscience bearing witness and their thoughts alternately accusing or else defending them,",
     topics: ["The Law","God's Existence"],
     note: "Even people who reject the Bible have a conscience that agrees with God's Law. Speak to the conscience.",
@@ -175,6 +196,7 @@ DATA.verses = [
   },
   {
     ref: "Isaiah 5:20",
+    tag: "Calling evil good",
     text: "Woe to those who call evil good, and good evil; Who substitute darkness for light and light for darkness; Who substitute bitter for sweet and sweet for bitter!",
     topics: ["The Law"],
     note: "Good and evil are real categories, not personal preferences.",
@@ -182,6 +204,7 @@ DATA.verses = [
   },
   {
     ref: "Exodus 21:16",
+    tag: "Kidnapping punished by death",
     text: "He who kidnaps a man, whether he sells him or he is found in his possession, shall surely be put to death.",
     topics: ["The Law"],
     note: "Man-stealing was a capital crime — the basis of the slave trade was forbidden.",
@@ -189,6 +212,7 @@ DATA.verses = [
   },
   {
     ref: "James 2:10",
+    tag: "Break one, guilty of all",
     text: "For whoever keeps the whole law and yet stumbles in one point, he has become guilty of all.",
     topics: ["The Law"],
     note: "One broken commandment makes you a lawbreaker. Great for anyone trusting their own obedience.",
@@ -196,6 +220,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 7:7",
+    tag: "Law reveals what sin is",
     text: "What shall we say then? Is the Law sin? May it never be! On the contrary, I would not have come to know sin except through the Law; for I would not have known about coveting if the Law had not said, “You shall not covet.”",
     topics: ["The Law"],
     note: "Paul himself learned what sin was through the Law.",
@@ -203,6 +228,7 @@ DATA.verses = [
   },
   {
     ref: "1 Timothy 1:8",
+    tag: "The Law is good",
     text: "But we know that the Law is good, if one uses it lawfully,",
     topics: ["The Law"],
     note: "The Law is good when used the right way: to show sinners their need.",
@@ -210,6 +236,7 @@ DATA.verses = [
   },
   {
     ref: "Galatians 3:10",
+    tag: "Lawbreakers are cursed",
     text: "For as many as are of the works of the Law are under a curse; for it is written, “Cursed is everyone who does not abide by all things written in the book of the law, to perform them.”",
     topics: ["The Law"],
     note: "If you want to be saved by keeping the Law, you have to keep all of it, all the time.",
@@ -219,6 +246,7 @@ DATA.verses = [
   // --- Judgment ---
   {
     ref: "Hebrews 9:27",
+    tag: "Die once, then judgment",
     text: "And inasmuch as it is appointed for men to die once and after this comes judgment,",
     topics: ["Judgment"],
     note: "Death is certain, then judgment. No second chances.",
@@ -226,6 +254,7 @@ DATA.verses = [
   },
   {
     ref: "Revelation 21:8",
+    tag: "All liars face the lake",
     text: "But for the cowardly and unbelieving and abominable and murderers and immoral persons and sorcerers and idolaters and all liars, their part will be in the lake that burns with fire and brimstone, which is the second death.",
     topics: ["Judgment"],
     note: "“All liars.” Sobering after the Law questions.",
@@ -233,6 +262,7 @@ DATA.verses = [
   },
   {
     ref: "Acts 17:30-31",
+    tag: "Repent, judgment day is fixed",
     text: "Therefore having overlooked the times of ignorance, God is now declaring to men that all people everywhere should repent, because He has fixed a day in which He will judge the world in righteousness through a Man whom He has appointed, having furnished proof to all men by raising Him from the dead.",
     topics: ["Judgment","Repentance & Faith","The Resurrection"],
     note: "Repent, judgment day, and the resurrection as proof — all together.",
@@ -240,6 +270,7 @@ DATA.verses = [
   },
   {
     ref: "Proverbs 17:15",
+    tag: "Freeing the guilty is wrong",
     text: "He who justifies the wicked and he who condemns the righteous, Both of them alike are an abomination to the LORD.",
     topics: ["Judgment","Life & the Unborn"],
     note: "A judge who lets the guilty go is corrupt. God will not do that, which is why we need the cross.",
@@ -247,6 +278,7 @@ DATA.verses = [
   },
   {
     ref: "Nahum 1:3",
+    tag: "God won't clear the guilty",
     text: "The LORD is slow to anger and great in power, And the LORD will by no means leave the guilty unpunished. In whirlwind and storm is His way, And clouds are the dust beneath His feet.",
     topics: ["Judgment"],
     note: "Patient, but not soft on sin.",
@@ -254,6 +286,7 @@ DATA.verses = [
   },
   {
     ref: "Psalm 7:11",
+    tag: "God is a righteous judge",
     text: "God is a righteous judge, And a God who has indignation every day.",
     topics: ["Judgment"],
     note: "God's goodness includes His justice.",
@@ -261,6 +294,7 @@ DATA.verses = [
   },
   {
     ref: "Genesis 18:25",
+    tag: "Judge of all does right",
     text: "Far be it from You to do such a thing, to slay the righteous with the wicked, so that the righteous and the wicked are treated alike. Far be it from You! Shall not the Judge of all the earth deal justly?”",
     topics: ["Judgment"],
     note: "Whatever God does with those who never heard, He will be perfectly just.",
@@ -268,6 +302,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 2:12",
+    tag: "Judged with or without Law",
     text: "For all who have sinned without the Law will also perish without the Law, and all who have sinned under the Law will be judged by the Law;",
     topics: ["Judgment"],
     note: "People are judged by the light they had, and everyone has had some.",
@@ -275,6 +310,7 @@ DATA.verses = [
   },
   {
     ref: "Revelation 20:12",
+    tag: "Dead judged by their deeds",
     text: "And I saw the dead, the great and the small, standing before the throne, and books were opened; and another book was opened, which is the book of life; and the dead were judged from the things which were written in the books, according to their deeds.",
     topics: ["Judgment"],
     note: "Judgment is according to deeds: fair, exact, and personal.",
@@ -282,6 +318,7 @@ DATA.verses = [
   },
   {
     ref: "Hebrews 4:13",
+    tag: "Nothing hidden from God",
     text: "And there is no creature hidden from His sight, but all things are open and laid bare to the eyes of Him with whom we have to do.",
     topics: ["Judgment"],
     note: "God sees everything, including what no one else knows.",
@@ -289,6 +326,7 @@ DATA.verses = [
   },
   {
     ref: "Matthew 10:28",
+    tag: "Fear Him who destroys soul",
     text: "Do not fear those who kill the body but are unable to kill the soul; but rather fear Him who is able to destroy both soul and body in hell.",
     topics: ["Judgment"],
     note: "Jesus spoke about hell more than anyone else in the Bible.",
@@ -296,6 +334,7 @@ DATA.verses = [
   },
   {
     ref: "Matthew 7:21",
+    tag: "Not all who say Lord",
     text: "Not everyone who says to Me, ‘Lord, Lord,’ will enter the kingdom of heaven, but he who does the will of My Father who is in heaven will enter.",
     topics: ["Judgment","Assurance"],
     note: "Not everyone who claims Christ belongs to Him. Fake Christians will answer to God.",
@@ -303,6 +342,7 @@ DATA.verses = [
   },
   {
     ref: "John 3:36",
+    tag: "Wrath remains on unbelievers",
     text: "He who believes in the Son has eternal life; but he who does not obey the Son will not see life, but the wrath of God abides on him.",
     topics: ["Judgment","Only Way"],
     note: "Believing in God is not enough. It is about the Son.",
@@ -310,6 +350,7 @@ DATA.verses = [
   },
   {
     ref: "Genesis 15:16",
+    tag: "Amorite sin not yet complete",
     text: "Then in the fourth generation they will return here, for the iniquity of the Amorite is not yet complete.",
     topics: ["Judgment"],
     note: "God waited about 400 years before judging the Canaanites. Judgment was not hasty.",
@@ -317,6 +358,7 @@ DATA.verses = [
   },
   {
     ref: "Matthew 7:21-23",
+    tag: "I never knew you",
     text: "Not everyone who says to Me, ‘Lord, Lord,’ will enter the kingdom of heaven, but he who does the will of My Father who is in heaven will enter. Many will say to Me on that day, ‘Lord, Lord, did we not prophesy in Your name, and in Your name cast out demons, and in Your name perform many miracles?’ And then I will declare to them, ‘I never knew you; depart from Me, you who practice lawlessness.’",
     topics: ["Judgment","Assurance"],
     note: "Jesus' warning to people who call Him Lord but were never truly His. Key for cultural Christians.",
@@ -324,6 +366,7 @@ DATA.verses = [
   },
   {
     ref: "Matthew 7:13-14",
+    tag: "Narrow gate, broad way",
     text: "Enter through the narrow gate; for the gate is wide and the way is broad that leads to destruction, and there are many who enter through it. For the gate is small and the way is narrow that leads to life, and there are few who find it.",
     topics: ["Judgment","Only Way"],
     note: "Many are on the broad road. Being religious or nice isn't the narrow way.",
@@ -333,6 +376,7 @@ DATA.verses = [
   // --- The Cross ---
   {
     ref: "Romans 5:8",
+    tag: "Christ died for sinners",
     text: "But God demonstrates His own love toward us, in that while we were yet sinners, Christ died for us.",
     topics: ["The Cross","Grace"],
     note: "God's love shown at the cross — while we were still sinners.",
@@ -340,6 +384,7 @@ DATA.verses = [
   },
   {
     ref: "2 Corinthians 5:21",
+    tag: "He became sin for us",
     text: "He made Him who knew no sin to be sin on our behalf, so that we might become the righteousness of God in Him.",
     topics: ["The Cross"],
     note: "The great exchange: our sin on Him, His righteousness to us.",
@@ -347,6 +392,7 @@ DATA.verses = [
   },
   {
     ref: "1 Corinthians 15:3-4",
+    tag: "Died, buried, raised",
     text: "For I delivered to you as of first importance what I also received, that Christ died for our sins according to the Scriptures, and that He was buried, and that He was raised on the third day according to the Scriptures,",
     topics: ["The Cross","The Resurrection"],
     note: "The gospel in a sentence. Also one of the earliest Christian creeds — useful in resurrection evidence.",
@@ -354,6 +400,7 @@ DATA.verses = [
   },
   {
     ref: "John 3:16",
+    tag: "God so loved the world",
     text: "For God so loved the world, that He gave His only begotten Son, that whoever believes in Him shall not perish, but have eternal life.",
     topics: ["The Cross","Grace"],
     note: "Best said after the Law — then “perish” has weight.",
@@ -361,6 +408,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 3:26",
+    tag: "Just and the justifier",
     text: "for the demonstration, I say, of His righteousness at the present time, so that He would be just and the justifier of the one who has faith in Jesus.",
     topics: ["The Cross","Grace"],
     note: "At the cross God stays just and still forgives. Both at once.",
@@ -368,6 +416,7 @@ DATA.verses = [
   },
   {
     ref: "Isaiah 53:5",
+    tag: "Pierced for our transgressions",
     text: "But He was pierced through for our transgressions, He was crushed for our iniquities; The chastening for our well-being fell upon Him, And by His scourging we are healed.",
     topics: ["The Cross"],
     note: "Written centuries before Jesus. Read it to a Jewish friend and ask who it's about.",
@@ -375,6 +424,7 @@ DATA.verses = [
   },
   {
     ref: "Isaiah 53:8",
+    tag: "Cut off for our sin",
     text: "By oppression and judgment He was taken away; And as for His generation, who considered That He was cut off out of the land of the living For the transgression of my people, to whom the stroke was due?",
     topics: ["The Cross"],
     note: "The servant suffers for “my people.” He can't simply be Israel.",
@@ -382,6 +432,7 @@ DATA.verses = [
   },
   {
     ref: "Isaiah 53:9",
+    tag: "Grave with the rich",
     text: "His grave was assigned with wicked men, Yet He was with a rich man in His death, Because He had done no violence, Nor was there any deceit in His mouth.",
     topics: ["The Cross"],
     note: "The servant is innocent. Fulfilled in Jesus' burial in a rich man's tomb.",
@@ -389,6 +440,7 @@ DATA.verses = [
   },
   {
     ref: "Psalm 22:16",
+    tag: "Pierced hands and feet",
     text: "For dogs have surrounded me; A band of evildoers has encompassed me; They pierced my hands and my feet.",
     topics: ["The Cross"],
     note: "A picture of crucifixion written about a thousand years before Jesus.",
@@ -396,6 +448,7 @@ DATA.verses = [
   },
   {
     ref: "Leviticus 17:11",
+    tag: "Blood makes atonement",
     text: "For the life of the flesh is in the blood, and I have given it to you on the altar to make atonement for your souls; for it is the blood by reason of the life that makes atonement.",
     topics: ["The Cross"],
     note: "Atonement requires blood. Without a temple, Jesus is the final sacrifice.",
@@ -403,6 +456,7 @@ DATA.verses = [
   },
   {
     ref: "Mark 10:45",
+    tag: "A ransom for many",
     text: "For even the Son of Man did not come to be served, but to serve, and to give His life a ransom for many.",
     topics: ["The Cross"],
     note: "Jesus said He came to die as a ransom. His death was the plan, not a failure.",
@@ -410,6 +464,7 @@ DATA.verses = [
   },
   {
     ref: "John 19:30",
+    tag: "It is finished",
     text: "Therefore when Jesus had received the sour wine, He said, “It is finished!” And He bowed His head and gave up His spirit.",
     topics: ["The Cross","Grace"],
     note: "Paid in full. Nothing left for us to add.",
@@ -417,6 +472,7 @@ DATA.verses = [
   },
   {
     ref: "Hebrews 10:14",
+    tag: "One offering, perfected forever",
     text: "For by one offering He has perfected for all time those who are sanctified.",
     topics: ["The Cross","Assurance"],
     note: "One offering, complete forever.",
@@ -424,6 +480,7 @@ DATA.verses = [
   },
   {
     ref: "Hebrews 10:4",
+    tag: "Animal blood can't remove sin",
     text: "For it is impossible for the blood of bulls and goats to take away sins.",
     topics: ["The Cross"],
     note: "The animal sacrifices pointed forward to the one sacrifice that could actually take sin away.",
@@ -431,6 +488,7 @@ DATA.verses = [
   },
   {
     ref: "Hebrews 9:28",
+    tag: "Offered once, coming again",
     text: "so Christ also, having been offered once to bear the sins of many, will appear a second time for salvation without reference to sin, to those who eagerly await Him.",
     topics: ["The Cross"],
     note: "Two comings: first to bear sin, second to bring His kingdom.",
@@ -440,6 +498,7 @@ DATA.verses = [
   // --- Grace ---
   {
     ref: "Romans 6:23",
+    tag: "Wages of sin is death",
     text: "For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord.",
     topics: ["Grace","Sin"],
     note: "What we earned vs. what God gives.",
@@ -447,6 +506,7 @@ DATA.verses = [
   },
   {
     ref: "Ephesians 2:8-9",
+    tag: "By grace through faith",
     text: "For by grace you have been saved through faith; and that not of yourselves, it is the gift of God; not as a result of works, so that no one may boast.",
     topics: ["Grace"],
     note: "Not by works. Key for anyone trusting in their own goodness.",
@@ -454,6 +514,7 @@ DATA.verses = [
   },
   {
     ref: "1 John 4:8",
+    tag: "God is love",
     text: "The one who does not love does not know God, for God is love.",
     topics: ["Grace"],
     note: "True. And the greatest display of that love is the cross, not ignoring sin.",
@@ -461,6 +522,7 @@ DATA.verses = [
   },
   {
     ref: "1 Timothy 1:15",
+    tag: "Christ came to save sinners",
     text: "It is a trustworthy statement, deserving full acceptance, that Christ Jesus came into the world to save sinners, among whom I am foremost of all.",
     topics: ["Grace"],
     note: "Paul persecuted Christians and called himself the worst sinner, yet he was saved.",
@@ -468,6 +530,7 @@ DATA.verses = [
   },
   {
     ref: "Isaiah 1:18",
+    tag: "Scarlet sins made white",
     text: "“Come now, and let us reason together,” Says the LORD, “Though your sins are as scarlet, They will be as white as snow; Though they are red like crimson, They will be like wool.",
     topics: ["Grace"],
     note: "No stain is too deep for God to wash.",
@@ -475,6 +538,7 @@ DATA.verses = [
   },
   {
     ref: "Luke 23:42-43",
+    tag: "Thief on the cross saved",
     text: "And he was saying, “Jesus, remember me when You come in Your kingdom!” And He said to him, “Truly I say to you, today you shall be with Me in Paradise.”",
     topics: ["Grace"],
     note: "A dying criminal, with no time for good works, was forgiven.",
@@ -482,6 +546,7 @@ DATA.verses = [
   },
   {
     ref: "1 Corinthians 6:11",
+    tag: "Such were some of you",
     text: "Such were some of you; but you were washed, but you were sanctified, but you were justified in the name of the Lord Jesus Christ and in the Spirit of our God.",
     topics: ["Grace","Assurance"],
     note: "“Such were some of you.” The church is full of forgiven sinners.",
@@ -489,6 +554,7 @@ DATA.verses = [
   },
   {
     ref: "Ezekiel 33:11",
+    tag: "No pleasure in death",
     text: "Say to them, ‘As I live!’ declares the Lord GOD, ‘I take no pleasure in the death of the wicked, but rather that the wicked turn from his way and live. Turn back, turn back from your evil ways! Why then will you die, O house of Israel?’",
     topics: ["Grace","Repentance & Faith","Judgment"],
     note: "God does not want anyone to perish. He pleads with people to turn.",
@@ -496,6 +562,7 @@ DATA.verses = [
   },
   {
     ref: "Matthew 11:28",
+    tag: "Come to Me, find rest",
     text: "Come to Me, all who are weary and heavy-laden, and I will give you rest.",
     topics: ["Grace"],
     note: "Jesus invites the hurting and the worn out.",
@@ -503,6 +570,7 @@ DATA.verses = [
   },
   {
     ref: "Psalm 34:18",
+    tag: "Near to the brokenhearted",
     text: "The LORD is near to the brokenhearted And saves those who are crushed in spirit.",
     topics: ["Grace"],
     note: "For someone who has been hurt, including by the church.",
@@ -510,6 +578,7 @@ DATA.verses = [
   },
   {
     ref: "Galatians 3:28",
+    tag: "All one in Christ",
     text: "There is neither Jew nor Greek, there is neither slave nor free man, there is neither male nor female; for you are all one in Christ Jesus.",
     topics: ["Grace"],
     note: "In Christ, race and status don't divide.",
@@ -517,6 +586,7 @@ DATA.verses = [
   },
   {
     ref: "Revelation 7:9",
+    tag: "Every nation before the throne",
     text: "After these things I looked, and behold, a great multitude which no one could count, from every nation and all tribes and peoples and tongues, standing before the throne and before the Lamb, clothed in white robes, and palm branches were in their hands;",
     topics: ["Grace"],
     note: "Heaven is multi-ethnic. Christianity was never one culture's religion.",
@@ -524,6 +594,7 @@ DATA.verses = [
   },
   {
     ref: "Philemon 1:16",
+    tag: "No longer slave but brother",
     text: "no longer as a slave, but more than a slave, a beloved brother, especially to me, but how much more to you, both in the flesh and in the Lord.",
     topics: ["Grace"],
     note: "Paul asks a master to receive his runaway slave as a beloved brother.",
@@ -531,6 +602,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 3:28",
+    tag: "Justified by faith, not works",
     text: "For we maintain that a man is justified by faith apart from works of the Law.",
     topics: ["Grace"],
     note: "Justified by faith, apart from works.",
@@ -538,6 +610,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 4:4-5",
+    tag: "Faith credited as righteousness",
     text: "Now to the one who works, his wage is not credited as a favor, but as what is due. But to the one who does not work, but believes in Him who justifies the ungodly, his faith is credited as righteousness,",
     topics: ["Grace"],
     note: "Wages vs. a gift. God justifies the ungodly who believe.",
@@ -545,6 +618,7 @@ DATA.verses = [
   },
   {
     ref: "Galatians 2:16",
+    tag: "Not justified by Law works",
     text: "nevertheless knowing that a man is not justified by the works of the Law but through faith in Christ Jesus, even we have believed in Christ Jesus, so that we may be justified by faith in Christ and not by the works of the Law; since by the works of the Law no flesh will be justified.",
     topics: ["Grace","The Law"],
     note: "Says “not by works of the Law” three times.",
@@ -552,6 +626,7 @@ DATA.verses = [
   },
   {
     ref: "Psalm 103:12",
+    tag: "East from west",
     text: "As far as the east is from the west, So far has He removed our transgressions from us.",
     topics: ["Grace","Assurance"],
     note: "Forgiven sin is gone completely.",
@@ -559,6 +634,7 @@ DATA.verses = [
   },
   {
     ref: "Jeremiah 31:31",
+    tag: "A new covenant",
     text: "“Behold, days are coming,” declares the LORD, “when I will make a new covenant with the house of Israel and with the house of Judah,",
     topics: ["Grace"],
     note: "God promised Israel a new covenant, fulfilled in the Messiah.",
@@ -566,6 +642,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 1:16",
+    tag: "Not ashamed of the gospel",
     text: "For I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the Jew first and also to the Greek.",
     topics: ["Grace","How We Speak"],
     note: "The gospel itself is God's power. Don't be ashamed of it.",
@@ -573,6 +650,7 @@ DATA.verses = [
   },
   {
     ref: "James 4:6",
+    tag: "Grace to the humble",
     text: "But He gives a greater grace. Therefore it says, “God is opposed to the proud, but gives grace to the humble.”",
     topics: ["Grace","The Law"],
     note: "The basis of “Law to the proud, grace to the humble.”",
@@ -580,6 +658,7 @@ DATA.verses = [
   },
   {
     ref: "Titus 3:5",
+    tag: "Saved by mercy, not deeds",
     text: "He saved us, not on the basis of deeds which we have done in righteousness, but according to His mercy, by the washing of regeneration and renewing by the Holy Spirit,",
     topics: ["Grace"],
     note: "Not by our deeds, even our righteous ones. By His mercy.",
@@ -587,6 +666,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 11:6",
+    tag: "Grace is not works",
     text: "But if it is by grace, it is no longer on the basis of works, otherwise grace is no longer grace.",
     topics: ["Grace"],
     note: "Grace plus works isn't grace. You can't mix the two.",
@@ -594,6 +674,7 @@ DATA.verses = [
   },
   {
     ref: "Ephesians 2:10",
+    tag: "Saved for good works",
     text: "For we are His workmanship, created in Christ Jesus for good works, which God prepared beforehand so that we would walk in them.",
     topics: ["Grace"],
     note: "Right after “not as a result of works.” Good works are the fruit of salvation, not the root.",
@@ -603,6 +684,7 @@ DATA.verses = [
   // --- Repentance & Faith ---
   {
     ref: "Mark 1:15",
+    tag: "Repent and believe",
     text: "and saying, “The time is fulfilled, and the kingdom of God is at hand; repent and believe in the gospel.”",
     topics: ["Repentance & Faith"],
     note: "Jesus' own message: repent and believe.",
@@ -610,6 +692,7 @@ DATA.verses = [
   },
   {
     ref: "Proverbs 28:13",
+    tag: "Confess and forsake sin",
     text: "He who conceals his transgressions will not prosper, But he who confesses and forsakes them will find compassion.",
     topics: ["Repentance & Faith"],
     note: "Confess AND forsake. A clear picture of repentance.",
@@ -617,6 +700,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 10:9",
+    tag: "Confess Jesus as Lord",
     text: "that if you confess with your mouth Jesus as Lord, and believe in your heart that God raised Him from the dead, you will be saved;",
     topics: ["Repentance & Faith"],
     note: "Jesus as Lord, raised from the dead.",
@@ -624,6 +708,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 10:13",
+    tag: "Whoever calls will be saved",
     text: "for “Whoever will call on the name of the Lord will be saved.”",
     topics: ["Repentance & Faith"],
     note: "“Whoever” — no one is too far gone.",
@@ -631,6 +716,7 @@ DATA.verses = [
   },
   {
     ref: "John 1:12",
+    tag: "Receive Him, become God's children",
     text: "But as many as received Him, to them He gave the right to become children of God, even to those who believe in His name,",
     topics: ["Repentance & Faith"],
     note: "Receiving Christ makes us God's children.",
@@ -638,6 +724,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 2:4",
+    tag: "Kindness leads to repentance",
     text: "Or do you think lightly of the riches of His kindness and tolerance and patience, not knowing that the kindness of God leads you to repentance?",
     topics: ["Repentance & Faith"],
     note: "God's patience is not permission to wait. It is meant to lead to repentance.",
@@ -645,6 +732,7 @@ DATA.verses = [
   },
   {
     ref: "2 Corinthians 7:10",
+    tag: "Godly sorrow brings repentance",
     text: "For the sorrow that is according to the will of God produces a repentance without regret, leading to salvation, but the sorrow of the world produces death.",
     topics: ["Repentance & Faith"],
     note: "Godly sorrow leads to real repentance. Not just feeling bad about consequences.",
@@ -652,6 +740,7 @@ DATA.verses = [
   },
   {
     ref: "Psalm 51:4",
+    tag: "Against You only I sinned",
     text: "Against You, You only, I have sinned And done what is evil in Your sight, So that You are justified when You speak And blameless when You judge.",
     topics: ["Repentance & Faith","Sin"],
     note: "David's confession. Sin is first against God.",
@@ -661,6 +750,7 @@ DATA.verses = [
   // --- Assurance ---
   {
     ref: "1 John 5:13",
+    tag: "Know you have eternal life",
     text: "These things I have written to you who believe in the name of the Son of God, so that you may know that you have eternal life.",
     topics: ["Assurance"],
     note: "You can KNOW. Good for new believers and for “nobody can know.”",
@@ -668,6 +758,7 @@ DATA.verses = [
   },
   {
     ref: "John 5:24",
+    tag: "Passed from death to life",
     text: "Truly, truly, I say to you, he who hears My word, and believes Him who sent Me, has eternal life, and does not come into judgment, but has passed out of death into life.",
     topics: ["Assurance"],
     note: "“Has” eternal life — present tense.",
@@ -675,6 +766,7 @@ DATA.verses = [
   },
   {
     ref: "2 Corinthians 5:17",
+    tag: "A new creation",
     text: "Therefore if anyone is in Christ, he is a new creature; the old things passed away; behold, new things have come.",
     topics: ["Assurance"],
     note: "Real conversion brings a new life, not just a new opinion.",
@@ -682,6 +774,7 @@ DATA.verses = [
   },
   {
     ref: "1 John 1:9",
+    tag: "Confess and be forgiven",
     text: "If we confess our sins, He is faithful and righteous to forgive us our sins and to cleanse us from all unrighteousness.",
     topics: ["Assurance","Repentance & Faith"],
     note: "Forgiveness for anyone who confesses — including someone who has had an abortion.",
@@ -689,6 +782,7 @@ DATA.verses = [
   },
   {
     ref: "John 6:37",
+    tag: "I will not cast out",
     text: "All that the Father gives Me will come to Me, and the one who comes to Me I will certainly not cast out.",
     topics: ["Assurance"],
     note: "Jesus will not turn away anyone who comes to Him.",
@@ -696,6 +790,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 8:18",
+    tag: "Suffering versus coming glory",
     text: "For I consider that the sufferings of this present time are not worthy to be compared with the glory that is to be revealed to us.",
     topics: ["Assurance"],
     note: "Suffering is real, but it is not the end of the story.",
@@ -703,6 +798,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 8:28",
+    tag: "All things work for good",
     text: "And we know that God causes all things to work together for good to those who love God, to those who are called according to His purpose.",
     topics: ["Assurance"],
     note: "A promise to believers, not a promise that everything feels good.",
@@ -710,6 +806,7 @@ DATA.verses = [
   },
   {
     ref: "Revelation 21:4",
+    tag: "No more tears or death",
     text: "and He will wipe away every tear from their eyes; and there will no longer be any death; there will no longer be any mourning, or crying, or pain; the first things have passed away.”",
     topics: ["Assurance"],
     note: "God will end suffering for good.",
@@ -717,6 +814,7 @@ DATA.verses = [
   },
   {
     ref: "Genesis 50:20",
+    tag: "Meant evil, God meant good",
     text: "As for you, you meant evil against me, but God meant it for good in order to bring about this present result, to preserve many people alive.",
     topics: ["Assurance"],
     note: "God can bring good out of evil people meant for harm.",
@@ -724,6 +822,7 @@ DATA.verses = [
   },
   {
     ref: "1 John 5:11-12",
+    tag: "Have the Son, have life",
     text: "And the testimony is this, that God has given us eternal life, and this life is in His Son. He who has the Son has the life; he who does not have the Son of God does not have the life.",
     topics: ["Assurance","Only Way"],
     note: "Eternal life is in the Son. Having Him means having life.",
@@ -731,6 +830,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 8:1",
+    tag: "No condemnation in Christ",
     text: "Therefore there is now no condemnation for those who are in Christ Jesus.",
     topics: ["Assurance"],
     note: "No condemnation, for anyone in Christ, whatever their past.",
@@ -738,6 +838,7 @@ DATA.verses = [
   },
   {
     ref: "2 Corinthians 13:5",
+    tag: "Examine yourselves",
     text: "Test yourselves to see if you are in the faith; examine yourselves! Or do you not recognize this about yourselves, that Jesus Christ is in you—unless indeed you fail the test?",
     topics: ["Assurance"],
     note: "Scripture tells us to examine ourselves. Key for cultural Christians.",
@@ -745,6 +846,7 @@ DATA.verses = [
   },
   {
     ref: "1 John 2:3-4",
+    tag: "Knowing Him means obeying",
     text: "By this we know that we have come to know Him, if we keep His commandments. The one who says, “I have come to know Him,” and does not keep His commandments, is a liar, and the truth is not in him;",
     topics: ["Assurance"],
     note: "Real faith shows up in obedience.",
@@ -752,6 +854,7 @@ DATA.verses = [
   },
   {
     ref: "1 Peter 2:2",
+    tag: "Crave the word like milk",
     text: "like newborn babies, long for the pure milk of the word, so that by it you may grow in respect to salvation,",
     topics: ["Assurance"],
     note: "New believers grow by the Word.",
@@ -759,6 +862,7 @@ DATA.verses = [
   },
   {
     ref: "Hebrews 10:24-25",
+    tag: "Don't skip gathering together",
     text: "and let us consider how to stimulate one another to love and good deeds, not forsaking our own assembling together, as is the habit of some, but encouraging one another; and all the more as you see the day drawing near.",
     topics: ["Assurance"],
     note: "Why new believers need a church.",
@@ -768,6 +872,7 @@ DATA.verses = [
   // --- Only Way ---
   {
     ref: "John 14:6",
+    tag: "Jesus the only way",
     text: "Jesus said to him, “I am the way, and the truth, and the life; no one comes to the Father but through Me.",
     topics: ["Only Way"],
     note: "Jesus' own exclusive claim.",
@@ -775,6 +880,7 @@ DATA.verses = [
   },
   {
     ref: "Acts 4:12",
+    tag: "No other name saves",
     text: "And there is salvation in no one else; for there is no other name under heaven that has been given among men by which we must be saved.”",
     topics: ["Only Way"],
     note: "No other name.",
@@ -782,6 +888,7 @@ DATA.verses = [
   },
   {
     ref: "James 2:19",
+    tag: "Even demons believe",
     text: "You believe that God is one. You do well; the demons also believe, and shudder.",
     topics: ["Only Way","Repentance & Faith"],
     note: "Believing God exists does not save anyone. Even demons believe that.",
@@ -789,6 +896,7 @@ DATA.verses = [
   },
   {
     ref: "1 Timothy 2:5",
+    tag: "One mediator, Christ Jesus",
     text: "For there is one God, and one mediator also between God and men, the man Christ Jesus,",
     topics: ["Only Way"],
     note: "Only one go-between can bring us to God.",
@@ -796,6 +904,7 @@ DATA.verses = [
   },
   {
     ref: "Proverbs 14:12",
+    tag: "A way that seems right",
     text: "There is a way which seems right to a man, But its end is the way of death.",
     topics: ["Only Way","Sin"],
     note: "Feeling right doesn't make it right.",
@@ -803,6 +912,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 10:2-3",
+    tag: "Zeal without knowledge",
     text: "For I testify about them that they have a zeal for God, but not in accordance with knowledge. For not knowing about God's righteousness and seeking to establish their own, they did not subject themselves to the righteousness of God.",
     topics: ["Only Way"],
     note: "Zeal without truth. Sincere religious people can still be trying to earn their own righteousness.",
@@ -810,6 +920,7 @@ DATA.verses = [
   },
   {
     ref: "Hebrews 1:6",
+    tag: "Angels worship the Son",
     text: "And when He again brings the firstborn into the world, He says, “And let all the angels of God worship Him.”",
     topics: ["Only Way"],
     note: "Angels worship the Son. So He can't be an angel.",
@@ -817,6 +928,7 @@ DATA.verses = [
   },
   {
     ref: "Isaiah 43:10",
+    tag: "No God before or after",
     text: "“You are My witnesses,” declares the LORD, “And My servant whom I have chosen, So that you may know and believe Me And understand that I am He. Before Me there was no God formed, And there will be none after Me.",
     topics: ["Only Way"],
     note: "No God before or after the LORD. Key for LDS conversations.",
@@ -824,6 +936,7 @@ DATA.verses = [
   },
   {
     ref: "Isaiah 44:6",
+    tag: "First and last, only God",
     text: "Thus says the LORD, the King of Israel and his Redeemer, the LORD of hosts: ‘I am the first and I am the last, And there is no God besides Me.",
     topics: ["Only Way"],
     note: "There is only one God.",
@@ -831,6 +944,7 @@ DATA.verses = [
   },
   {
     ref: "Numbers 23:19",
+    tag: "God is not a man",
     text: "God is not a man, that He should lie, Nor a son of man, that He should repent; Has He said, and will He not do it? Or has He spoken, and will He not make it good?",
     topics: ["Only Way"],
     note: "God is not a man. Contrasts with LDS teaching that God was once a man.",
@@ -838,6 +952,7 @@ DATA.verses = [
   },
   {
     ref: "Galatians 1:8",
+    tag: "No other gospel, even angels",
     text: "But even if we, or an angel from heaven, should preach to you a gospel contrary to what we have preached to you, he is to be accursed!",
     topics: ["Only Way"],
     note: "Test any new revelation, even from an angel, against the gospel already given.",
@@ -845,6 +960,7 @@ DATA.verses = [
   },
   {
     ref: "Micah 5:2",
+    tag: "Ruler born in Bethlehem",
     text: "But as for you, Bethlehem Ephrathah, Too little to be among the clans of Judah, From you One will go forth for Me to be ruler in Israel. His goings forth are from long ago, From the days of eternity.",
     topics: ["Only Way"],
     note: "The Messiah born in Bethlehem, yet eternal.",
@@ -854,6 +970,7 @@ DATA.verses = [
   // --- Deity of Christ ---
   {
     ref: "John 8:58",
+    tag: "Before Abraham, I AM",
     text: "Jesus said to them, “Truly, truly, I say to you, before Abraham was born, I am.”",
     topics: ["Deity of Christ"],
     note: "Jesus claims God's name (Exodus 3:14). The crowd picked up stones — they knew what He meant.",
@@ -861,6 +978,7 @@ DATA.verses = [
   },
   {
     ref: "John 14:9",
+    tag: "Seen Me, seen the Father",
     text: "Jesus said to him, “Have I been so long with you, and yet you do not know Me, Philip? He who has seen Me has seen the Father; how can you say, ‘Show us the Father’?",
     topics: ["Deity of Christ","God's Existence"],
     note: "God has shown Himself in Jesus.",
@@ -868,6 +986,7 @@ DATA.verses = [
   },
   {
     ref: "John 10:30",
+    tag: "Father and I are one",
     text: "I and the Father are one.",
     topics: ["Deity of Christ"],
     note: "The next verses show the crowd picked up stones “because You, being a man, make Yourself out to be God.”",
@@ -875,6 +994,7 @@ DATA.verses = [
   },
   {
     ref: "John 20:28",
+    tag: "My Lord and my God",
     text: "Thomas answered and said to Him, “My Lord and my God!”",
     topics: ["Deity of Christ","The Resurrection"],
     note: "Jesus accepts being called God — and doesn't correct Thomas.",
@@ -882,6 +1002,7 @@ DATA.verses = [
   },
   {
     ref: "Mark 2:5-7",
+    tag: "Only God forgives sins",
     text: "And Jesus seeing their faith said to the paralytic, “Son, your sins are forgiven.” But some of the scribes were sitting there and reasoning in their hearts, “Why does this man speak that way? He is blaspheming; who can forgive sins but God alone?”",
     topics: ["Deity of Christ"],
     note: "Jesus forgives sins against God — something only God can do. His enemies understood the claim.",
@@ -889,6 +1010,7 @@ DATA.verses = [
   },
   {
     ref: "Mark 14:62",
+    tag: "Jesus claims to be Messiah",
     text: "And Jesus said, “I am; and you shall see the Son of Man sitting at the right hand of power, and coming with the clouds of heaven.”",
     topics: ["Deity of Christ"],
     note: "At His trial Jesus claims the divine “Son of Man” of Daniel 7. The high priest called it blasphemy. (NASB prints the Old Testament quote in small capitals.)",
@@ -896,6 +1018,7 @@ DATA.verses = [
   },
   {
     ref: "John 1:1",
+    tag: "The Word was God",
     text: "In the beginning was the Word, and the Word was with God, and the Word was God.",
     topics: ["Deity of Christ"],
     note: "Jesus is eternal and is God. The NWT changes this to “a god.”",
@@ -903,6 +1026,7 @@ DATA.verses = [
   },
   {
     ref: "John 1:14",
+    tag: "The Word became flesh",
     text: "And the Word became flesh, and dwelt among us, and we saw His glory, glory as of the only begotten from the Father, full of grace and truth.",
     topics: ["Deity of Christ"],
     note: "God became a man.",
@@ -910,6 +1034,7 @@ DATA.verses = [
   },
   {
     ref: "Colossians 2:9",
+    tag: "Fullness of Deity in Him",
     text: "For in Him all the fullness of Deity dwells in bodily form,",
     topics: ["Deity of Christ"],
     note: "All of God, not part, dwells in Jesus.",
@@ -917,6 +1042,7 @@ DATA.verses = [
   },
   {
     ref: "Hebrews 1:8",
+    tag: "The Son called God",
     text: "But of the Son He says, “Your throne, O God, is forever and ever, And the righteous scepter is the scepter of His kingdom.",
     topics: ["Deity of Christ"],
     note: "The Father calls the Son “God.”",
@@ -924,6 +1050,7 @@ DATA.verses = [
   },
   {
     ref: "Isaiah 9:6",
+    tag: "Child called Mighty God",
     text: "For a child will be born to us, a son will be given to us; And the government will rest on His shoulders; And His name will be called Wonderful Counselor, Mighty God, Eternal Father, Prince of Peace.",
     topics: ["Deity of Christ"],
     note: "The promised child is called “Mighty God.” The Messiah is God Himself.",
@@ -931,6 +1058,7 @@ DATA.verses = [
   },
   {
     ref: "Luke 1:35",
+    tag: "Holy Child, Son of God",
     text: "The angel answered and said to her, “The Holy Spirit will come upon you, and the power of the Most High will overshadow you; and for that reason the holy Child shall be called the Son of God.",
     topics: ["Deity of Christ"],
     note: "“Son of God” isn't about God taking a wife. Jesus was conceived by the Holy Spirit.",
@@ -938,6 +1066,7 @@ DATA.verses = [
   },
   {
     ref: "Matthew 28:19",
+    tag: "Father, Son, and Holy Spirit",
     text: "Go therefore and make disciples of all the nations, baptizing them in the name of the Father and the Son and the Holy Spirit,",
     topics: ["Deity of Christ"],
     note: "One “name,” three persons. The Trinity in a single sentence.",
@@ -945,6 +1074,7 @@ DATA.verses = [
   },
   {
     ref: "Jude 1:9",
+    tag: "Michael wouldn't rebuke the devil",
     text: "But Michael the archangel, when he disputed with the devil and argued about the body of Moses, did not dare pronounce against him a railing judgment, but said, “The Lord rebuke you!”",
     topics: ["Deity of Christ"],
     note: "Michael wouldn't rebuke the devil on his own authority. Jesus rebuked demons directly. Jesus isn't Michael.",
@@ -954,6 +1084,7 @@ DATA.verses = [
   // --- Urgency ---
   {
     ref: "Proverbs 27:1",
+    tag: "Tomorrow isn't promised",
     text: "Do not boast about tomorrow, For you do not know what a day may bring forth.",
     topics: ["Urgency"],
     note: "For “I'll think about it later.”",
@@ -961,6 +1092,7 @@ DATA.verses = [
   },
   {
     ref: "2 Corinthians 6:2",
+    tag: "Now is the day",
     text: "for He says, “At the acceptable time I listened to you, And on the day of salvation I helped you.” Behold, now is “the acceptable time,” behold, now is “the day of salvation”—",
     topics: ["Urgency"],
     note: "Now is the day of salvation.",
@@ -968,6 +1100,7 @@ DATA.verses = [
   },
   {
     ref: "2 Peter 3:9",
+    tag: "God patient, wants repentance",
     text: "The Lord is not slow about His promise, as some count slowness, but is patient toward you, not wishing for any to perish but for all to come to repentance.",
     topics: ["Urgency","Grace"],
     note: "God's patience is meant to lead to repentance, not delay.",
@@ -975,6 +1108,7 @@ DATA.verses = [
   },
   {
     ref: "Luke 12:20",
+    tag: "This night your soul required",
     text: "But God said to him, ‘You fool! This very night your soul is required of you; and now who will own what you have prepared?’",
     topics: ["Urgency"],
     note: "The rich man planned for years he did not have.",
@@ -982,6 +1116,7 @@ DATA.verses = [
   },
   {
     ref: "James 4:14",
+    tag: "Life is a vapor",
     text: "Yet you do not know what your life will be like tomorrow. You are just a vapor that appears for a little while and then vanishes away.",
     topics: ["Urgency"],
     note: "Life is short and uncertain.",
@@ -989,6 +1124,7 @@ DATA.verses = [
   },
   {
     ref: "Luke 13:4-5",
+    tag: "Unless you repent, perish",
     text: "Or do you suppose that those eighteen on whom the tower in Siloam fell and killed them were worse culprits than all the men who live in Jerusalem? I tell you, no, but unless you repent, you will all likewise perish.”",
     topics: ["Urgency","Repentance & Faith"],
     note: "Jesus' answer to a tragedy: it is a warning to repent.",
@@ -996,6 +1132,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 10:14",
+    tag: "How will they hear",
     text: "How then will they call on Him in whom they have not believed? How will they believe in Him whom they have not heard? And how will they hear without a preacher?",
     topics: ["Urgency","How We Speak"],
     note: "Why we go: people need to hear.",
@@ -1005,6 +1142,7 @@ DATA.verses = [
   // --- The Bible ---
   {
     ref: "2 Timothy 3:16",
+    tag: "All Scripture God-breathed",
     text: "All Scripture is inspired by God and profitable for teaching, for reproof, for correction, for training in righteousness;",
     topics: ["The Bible"],
     note: "Scripture is God-breathed — human writers, divine Author.",
@@ -1012,6 +1150,7 @@ DATA.verses = [
   },
   {
     ref: "2 Peter 1:20-21",
+    tag: "Men moved by the Spirit",
     text: "But know this first of all, that no prophecy of Scripture is a matter of one's own interpretation, for no prophecy was ever made by an act of human will, but men moved by the Holy Spirit spoke from God.",
     topics: ["The Bible"],
     note: "Men wrote, but they were carried along by God. For “The Bible was written by men.”",
@@ -1019,6 +1158,7 @@ DATA.verses = [
   },
   {
     ref: "Isaiah 40:8",
+    tag: "God's word stands forever",
     text: "The grass withers, the flower fades, But the word of our God stands forever.",
     topics: ["The Bible"],
     note: "God's word lasts. Good for “The Bible has been changed.”",
@@ -1026,6 +1166,7 @@ DATA.verses = [
   },
   {
     ref: "Matthew 24:35",
+    tag: "My words won't pass away",
     text: "Heaven and earth will pass away, but My words will not pass away.",
     topics: ["The Bible"],
     note: "Jesus promises His words will be preserved.",
@@ -1033,6 +1174,7 @@ DATA.verses = [
   },
   {
     ref: "2 Peter 3:16",
+    tag: "Some Scripture hard to understand",
     text: "as also in all his letters, speaking in them of these things, in which are some things hard to understand, which the untaught and unstable distort, as they do also the rest of the Scriptures, to their own destruction.",
     topics: ["The Bible","How We Speak"],
     note: "Scripture can be twisted — so read it carefully and in context. For “You just interpret it your way.”",
@@ -1040,6 +1182,7 @@ DATA.verses = [
   },
   {
     ref: "2 Peter 1:16",
+    tag: "Not clever tales, eyewitnesses",
     text: "For we did not follow cleverly devised tales when we made known to you the power and coming of our Lord Jesus Christ, but we were eyewitnesses of His majesty.",
     topics: ["The Bible","The Resurrection"],
     note: "The apostles claim eyewitness testimony, not myth. For “Christianity copied pagan myths.”",
@@ -1047,6 +1190,7 @@ DATA.verses = [
   },
   {
     ref: "Luke 1:3-4",
+    tag: "Luke investigated carefully",
     text: "it seemed fitting for me as well, having investigated everything carefully from the beginning, to write it out for you in consecutive order, most excellent Theophilus; so that you may know the exact truth about the things you have been taught.",
     topics: ["The Bible","The Resurrection"],
     note: "Luke writes as a careful investigator of history.",
@@ -1054,6 +1198,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 10:17",
+    tag: "Faith comes from hearing",
     text: "So faith comes from hearing, and hearing by the word of Christ.",
     topics: ["The Bible","Repentance & Faith"],
     note: "Faith grows through God's Word. Get new believers reading.",
@@ -1061,6 +1206,7 @@ DATA.verses = [
   },
   {
     ref: "Luke 24:44",
+    tag: "Scripture fulfilled in Jesus",
     text: "Now He said to them, “These are My words which I spoke to you while I was still with you, that all things which are written about Me in the Law of Moses and the Prophets and the Psalms must be fulfilled.”",
     topics: ["The Bible","Only Way","The Resurrection"],
     note: "Jesus said the whole Old Testament points to Him.",
@@ -1068,6 +1214,7 @@ DATA.verses = [
   },
   {
     ref: "Isaiah 46:9-10",
+    tag: "God declares the end",
     text: "Remember the former things long past, For I am God, and there is no other; I am God, and there is no one like Me, Declaring the end from the beginning, And from ancient times things which have not been done, Saying, ‘My purpose will be established, And I will accomplish all My good pleasure’;",
     topics: ["The Bible"],
     note: "Only God declares the end from the beginning. The basis for prophecy as evidence.",
@@ -1075,6 +1222,7 @@ DATA.verses = [
   },
   {
     ref: "John 20:30-31",
+    tag: "Written so you may believe",
     text: "Therefore many other signs Jesus also performed in the presence of the disciples, which are not written in this book; but these have been written so that you may believe that Jesus is the Christ, the Son of God; and that believing you may have life in His name.",
     topics: ["The Bible","The Resurrection"],
     note: "Why John wrote his Gospel. A good place to send new readers.",
@@ -1084,6 +1232,7 @@ DATA.verses = [
   // --- God's Existence ---
   {
     ref: "Romans 1:20",
+    tag: "Creation shows God clearly",
     text: "For since the creation of the world His invisible attributes, His eternal power and divine nature, have been clearly seen, being understood through what has been made, so that they are without excuse.",
     topics: ["God's Existence"],
     note: "Creation points to a Creator. Everyone knows God exists.",
@@ -1091,6 +1240,7 @@ DATA.verses = [
   },
   {
     ref: "Psalm 14:1",
+    tag: "Fool says no God",
     text: "The fool has said in his heart, “There is no God.” They are corrupt, they have committed abominable deeds; There is no one who does good.",
     topics: ["God's Existence"],
     note: "Use with care. Unbelief is a heart issue, not just a head issue.",
@@ -1098,6 +1248,7 @@ DATA.verses = [
   },
   {
     ref: "Genesis 1:1",
+    tag: "In the beginning God",
     text: "In the beginning God created the heavens and the earth.",
     topics: ["God's Existence"],
     note: "Everything that began has a cause. God did not begin.",
@@ -1105,6 +1256,7 @@ DATA.verses = [
   },
   {
     ref: "Hebrews 3:4",
+    tag: "Every house has a builder",
     text: "For every house is built by someone, but the builder of all things is God.",
     topics: ["God's Existence"],
     note: "A building proves a builder. Creation proves a Creator.",
@@ -1112,6 +1264,7 @@ DATA.verses = [
   },
   {
     ref: "Psalm 19:1",
+    tag: "Heavens declare God's glory",
     text: "The heavens are telling of the glory of God; And their expanse is declaring the work of His hands.",
     topics: ["God's Existence"],
     note: "Creation speaks to everyone, in every language.",
@@ -1119,6 +1272,7 @@ DATA.verses = [
   },
   {
     ref: "Psalm 90:2",
+    tag: "God from everlasting",
     text: "Before the mountains were born Or You gave birth to the earth and the world, Even from everlasting to everlasting, You are God.",
     topics: ["God's Existence"],
     note: "God has no beginning. He was never made.",
@@ -1126,6 +1280,7 @@ DATA.verses = [
   },
   {
     ref: "Colossians 1:17",
+    tag: "In Him all holds together",
     text: "He is before all things, and in Him all things hold together.",
     topics: ["God's Existence"],
     note: "Christ is before everything and holds it all together.",
@@ -1133,6 +1288,7 @@ DATA.verses = [
   },
   {
     ref: "Romans 1:18",
+    tag: "Truth suppressed, wrath revealed",
     text: "For the wrath of God is revealed from heaven against all ungodliness and unrighteousness of men who suppress the truth in unrighteousness,",
     topics: ["God's Existence","Judgment","Sin"],
     note: "Unbelief is often suppressing what we already know.",
@@ -1140,6 +1296,7 @@ DATA.verses = [
   },
   {
     ref: "Ecclesiastes 3:11",
+    tag: "Eternity in our hearts",
     text: "He has made everything appropriate in its time. He has also set eternity in their heart, yet so that man will not find out the work which God has done from the beginning even to the end.",
     topics: ["God's Existence"],
     note: "Everyone has a sense that there is more than this life.",
@@ -1147,6 +1304,7 @@ DATA.verses = [
   },
   {
     ref: "Acts 17:26-27",
+    tag: "God near to seekers",
     text: "and He made from one man every nation of mankind to live on all the face of the earth, having determined their appointed times and the boundaries of their habitation, that they would seek God, if perhaps they might grope for Him and find Him, though He is not far from each one of us;",
     topics: ["God's Existence"],
     note: "God placed every person where they are so they would seek Him.",
@@ -1154,6 +1312,7 @@ DATA.verses = [
   },
   {
     ref: "Jeremiah 29:13",
+    tag: "Seek Me, find Me",
     text: "You will seek Me and find Me when you search for Me with all your heart.",
     topics: ["God's Existence","Repentance & Faith"],
     note: "A promise to the honest seeker.",
@@ -1161,6 +1320,7 @@ DATA.verses = [
   },
   {
     ref: "Hebrews 11:6",
+    tag: "Faith pleases God",
     text: "And without faith it is impossible to please Him, for he who comes to God must believe that He is and that He is a rewarder of those who seek Him.",
     topics: ["God's Existence","Repentance & Faith"],
     note: "God rewards those who seek Him.",
@@ -1168,6 +1328,7 @@ DATA.verses = [
   },
   {
     ref: "John 1:18",
+    tag: "Jesus makes God known",
     text: "No one has seen God at any time; the only begotten God who is in the bosom of the Father, He has explained Him.",
     topics: ["God's Existence"],
     note: "Jesus is how God has made Himself known.",
@@ -1175,6 +1336,7 @@ DATA.verses = [
   },
   {
     ref: "Luke 16:31",
+    tag: "Not even if one rises",
     text: "But he said to him, ‘If they do not listen to Moses and the Prophets, they will not be persuaded even if someone rises from the dead.’”",
     topics: ["God's Existence"],
     note: "More evidence does not change a heart that will not listen.",
@@ -1182,6 +1344,7 @@ DATA.verses = [
   },
   {
     ref: "Acts 17:26",
+    tag: "All nations from one man",
     text: "and He made from one man every nation of mankind to live on all the face of the earth, having determined their appointed times and the boundaries of their habitation,",
     topics: ["God's Existence"],
     note: "One human family. No race is above another.",
@@ -1191,6 +1354,7 @@ DATA.verses = [
   // --- The Resurrection ---
   {
     ref: "1 Corinthians 15:17",
+    tag: "If not raised, faith worthless",
     text: "and if Christ has not been raised, your faith is worthless; you are still in your sins.",
     topics: ["The Resurrection"],
     note: "Christianity stands or falls on the resurrection — Paul invites testing.",
@@ -1198,6 +1362,7 @@ DATA.verses = [
   },
   {
     ref: "1 Corinthians 15:6",
+    tag: "Seen by five hundred",
     text: "After that He appeared to more than five hundred brethren at one time, most of whom remain until now, but some have fallen asleep;",
     topics: ["The Resurrection"],
     note: "Hundreds of eyewitnesses, many still alive and able to be questioned when Paul wrote.",
@@ -1207,6 +1372,7 @@ DATA.verses = [
   // --- Life & the Unborn ---
   {
     ref: "Genesis 9:6",
+    tag: "Image of God, life sacred",
     text: "Whoever sheds man's blood, By man his blood shall be shed, For in the image of God He made man.",
     topics: ["Life & the Unborn"],
     note: "Human life is sacred because people are made in God's image.",
@@ -1214,6 +1380,7 @@ DATA.verses = [
   },
   {
     ref: "Psalm 139:13",
+    tag: "Knit in the womb",
     text: "For You formed my inward parts; You wove me in my mother's womb.",
     topics: ["Life & the Unborn"],
     note: "God personally forms each child in the womb.",
@@ -1221,6 +1388,7 @@ DATA.verses = [
   },
   {
     ref: "Jeremiah 1:5",
+    tag: "Known before the womb",
     text: "Before I formed you in the womb I knew you, And before you were born I consecrated you; I have appointed you a prophet to the nations.",
     topics: ["Life & the Unborn"],
     note: "God knows and calls people before birth.",
@@ -1228,6 +1396,7 @@ DATA.verses = [
   },
   {
     ref: "Proverbs 24:11",
+    tag: "Rescue those led to death",
     text: "Deliver those who are being taken away to death, And those who are staggering to slaughter, Oh hold them back.",
     topics: ["Life & the Unborn"],
     note: "A command to rescue — a key verse for abolitionists.",
@@ -1235,6 +1404,7 @@ DATA.verses = [
   },
   {
     ref: "Genesis 1:27",
+    tag: "Made in God's image",
     text: "God created man in His own image, in the image of God He created him; male and female He created them.",
     topics: ["Life & the Unborn"],
     note: "Every human being bears God's image, at every stage.",
@@ -1242,6 +1412,7 @@ DATA.verses = [
   },
   {
     ref: "Luke 1:44",
+    tag: "Baby leaped in the womb",
     text: "For behold, when the sound of your greeting reached my ears, the baby leaped in my womb for joy.",
     topics: ["Life & the Unborn"],
     note: "Scripture calls the unborn John a “baby,” and he responds with joy.",
@@ -1249,6 +1420,7 @@ DATA.verses = [
   },
   {
     ref: "Proverbs 6:16-17",
+    tag: "God hates innocent bloodshed",
     text: "There are six things which the LORD hates, Yes, seven which are an abomination to Him: Haughty eyes, a lying tongue, And hands that shed innocent blood,",
     topics: ["Life & the Unborn","Sin"],
     note: "God hates the shedding of innocent blood.",
@@ -1256,6 +1428,7 @@ DATA.verses = [
   },
   {
     ref: "Exodus 23:7",
+    tag: "Don't kill the innocent",
     text: "Keep far from a false charge, and do not kill the innocent or the righteous, for I will not acquit the guilty.",
     topics: ["Life & the Unborn","Judgment"],
     note: "Do not kill the innocent.",
@@ -1263,6 +1436,7 @@ DATA.verses = [
   },
   {
     ref: "Deuteronomy 24:16",
+    tag: "Each dies for own sin",
     text: "Fathers shall not be put to death for their sons, nor shall sons be put to death for their fathers; everyone shall be put to death for his own sin.",
     topics: ["Life & the Unborn"],
     note: "A child shouldn't die for a father's crime. Key for the rape exception.",
@@ -1270,6 +1444,7 @@ DATA.verses = [
   },
   {
     ref: "Proverbs 31:8-9",
+    tag: "Speak up for the voiceless",
     text: "Open your mouth for the mute, For the rights of all the unfortunate. Open your mouth, judge righteously, And defend the rights of the afflicted and needy.",
     topics: ["Life & the Unborn"],
     note: "Speak for those who can't speak for themselves.",
@@ -1277,6 +1452,7 @@ DATA.verses = [
   },
   {
     ref: "Isaiah 10:1-2",
+    tag: "Woe to unjust laws",
     text: "Woe to those who enact evil statutes And to those who constantly record unjust decisions, So as to deprive the needy of justice And rob the poor of My people's rights, So that widows may be their spoil And that they may plunder the orphans.",
     topics: ["Life & the Unborn","Judgment"],
     note: "God judges unjust laws.",
@@ -1284,6 +1460,7 @@ DATA.verses = [
   },
   {
     ref: "Acts 5:29",
+    tag: "Obey God, not men",
     text: "But Peter and the apostles answered, “We must obey God rather than men.",
     topics: ["Life & the Unborn","How We Speak"],
     note: "When human law contradicts God's law, obey God.",
@@ -1291,6 +1468,7 @@ DATA.verses = [
   },
   {
     ref: "1 Corinthians 6:19-20",
+    tag: "Your body isn't your own",
     text: "Or do you not know that your body is a temple of the Holy Spirit who is in you, whom you have from God, and that you are not your own? For you have been bought with a price: therefore glorify God in your body.",
     topics: ["Life & the Unborn"],
     note: "For Christians: our bodies are not our own.",
@@ -1300,6 +1478,7 @@ DATA.verses = [
   // --- How We Speak ---
   {
     ref: "1 Peter 3:15",
+    tag: "Always ready to answer",
     text: "but sanctify Christ as Lord in your hearts, always being ready to make a defense to everyone who asks you to give an account for the hope that is in you, yet with gentleness and reverence;",
     topics: ["How We Speak"],
     note: "Be ready — and be gentle.",
@@ -1307,6 +1486,7 @@ DATA.verses = [
   },
   {
     ref: "Colossians 4:5-6",
+    tag: "Speech seasoned with salt",
     text: "Conduct yourselves with wisdom toward outsiders, making the most of the opportunity. Let your speech always be with grace, as though seasoned with salt, so that you will know how you should respond to each person.",
     topics: ["How We Speak"],
     note: "Gracious, salty, and tailored to each person.",
@@ -1314,6 +1494,7 @@ DATA.verses = [
   },
   {
     ref: "2 Timothy 2:24-25",
+    tag: "Not quarrelsome, but kind",
     text: "The Lord's bond-servant must not be quarrelsome, but be kind to all, able to teach, patient when wronged, with gentleness correcting those who are in opposition, if perhaps God may grant them repentance leading to the knowledge of the truth,",
     topics: ["How We Speak"],
     note: "Not quarrelsome. God grants repentance — not our arguments.",
@@ -1321,6 +1502,7 @@ DATA.verses = [
   },
   {
     ref: "Matthew 7:1",
+    tag: "Do not judge",
     text: "Do not judge so that you will not be judged.",
     topics: ["How We Speak"],
     note: "Read it with verse 5. Jesus forbids hypocritical judging, not all moral judgment.",
@@ -1328,6 +1510,7 @@ DATA.verses = [
   },
   {
     ref: "Matthew 7:5",
+    tag: "Log in your own eye",
     text: "You hypocrite, first take the log out of your own eye, and then you will see clearly to take the speck out of your brother's eye.",
     topics: ["How We Speak"],
     note: "Deal with your own sin first, and then help your brother.",
@@ -1335,6 +1518,7 @@ DATA.verses = [
   },
   {
     ref: "John 7:24",
+    tag: "Judge with righteous judgment",
     text: "Do not judge according to appearance, but judge with righteous judgment.”",
     topics: ["How We Speak"],
     note: "Jesus commands right judgment.",
@@ -1342,6 +1526,7 @@ DATA.verses = [
   },
   {
     ref: "John 4:7",
+    tag: "Jesus asks for water",
     text: "There came a woman of Samaria to draw water. Jesus said to her, “Give Me a drink.”",
     topics: ["How We Speak"],
     note: "Jesus started with something ordinary.",
@@ -1349,6 +1534,7 @@ DATA.verses = [
   },
   {
     ref: "John 4:10",
+    tag: "Living water offered",
     text: "Jesus answered and said to her, “If you knew the gift of God, and who it is who says to you, ‘Give Me a drink,’ you would have asked Him, and He would have given you living water.”",
     topics: ["How We Speak"],
     note: "Then He moved from water to living water: natural to spiritual.",
@@ -1356,6 +1542,7 @@ DATA.verses = [
   },
   {
     ref: "2 Corinthians 5:20",
+    tag: "Ambassadors for Christ",
     text: "Therefore, we are ambassadors for Christ, as though God were making an appeal through us; we beg you on behalf of Christ, be reconciled to God.",
     topics: ["How We Speak"],
     note: "We represent Christ and plead with people.",
@@ -1363,6 +1550,7 @@ DATA.verses = [
   },
   {
     ref: "Matthew 10:16",
+    tag: "Shrewd as serpents",
     text: "Behold, I send you out as sheep in the midst of wolves; so be shrewd as serpents and innocent as doves.",
     topics: ["How We Speak"],
     note: "Wise and harmless.",
@@ -1370,6 +1558,7 @@ DATA.verses = [
   },
   {
     ref: "James 1:19",
+    tag: "Quick to hear",
     text: "This you know, my beloved brethren. But everyone must be quick to hear, slow to speak and slow to anger;",
     topics: ["How We Speak"],
     note: "Listen first.",
@@ -1377,6 +1566,7 @@ DATA.verses = [
   },
   {
     ref: "Proverbs 18:13",
+    tag: "Listen before you answer",
     text: "He who gives an answer before he hears, It is folly and shame to him.",
     topics: ["How We Speak"],
     note: "Don't answer before you understand the question.",
@@ -1384,6 +1574,7 @@ DATA.verses = [
   },
   {
     ref: "Proverbs 15:1",
+    tag: "Gentle answer turns wrath",
     text: "A gentle answer turns away wrath, But a harsh word stirs up anger.",
     topics: ["How We Speak"],
     note: "For heated conversations.",
@@ -1391,6 +1582,7 @@ DATA.verses = [
   },
   {
     ref: "1 Corinthians 3:6",
+    tag: "God gives the growth",
     text: "I planted, Apollos watered, but God was causing the growth.",
     topics: ["How We Speak"],
     note: "Our job is planting and watering. God saves.",
@@ -1398,6 +1590,7 @@ DATA.verses = [
   },
   {
     ref: "Ecclesiastes 11:1",
+    tag: "Cast your bread out",
     text: "Cast your bread on the surface of the waters, for you will find it after many days.",
     topics: ["How We Speak"],
     note: "Seeds sown today can bear fruit later. Good for tracts.",
@@ -1405,6 +1598,7 @@ DATA.verses = [
   },
   {
     ref: "Matthew 5:16",
+    tag: "Let your light shine",
     text: "Let your light shine before men in such a way that they may see your good works, and glorify your Father who is in heaven.",
     topics: ["How We Speak"],
     note: "Your life backs up your words.",
@@ -1412,6 +1606,7 @@ DATA.verses = [
   },
   {
     ref: "Mark 5:19",
+    tag: "Tell your family",
     text: "And He did not let him, but He said to him, “Go home to your people and report to them what great things the Lord has done for you, and how He had mercy on you.”",
     topics: ["How We Speak"],
     note: "Jesus sent him home to tell his own family first.",
@@ -1419,6 +1614,7 @@ DATA.verses = [
   },
   {
     ref: "1 Peter 3:1",
+    tag: "Won without a word",
     text: "In the same way, you wives, be submissive to your own husbands so that even if any of them are disobedient to the word, they may be won without a word by the behavior of their wives,",
     topics: ["How We Speak"],
     note: "A godly life can win family members.",
