@@ -690,12 +690,15 @@
       const refHtml = `<p class="card-ref">${esc(v.ref)}</p>`;
       const textHtml = `<p class="card-text">${esc(v.text)}</p>`;
       front = dir === "ref" ? refHtml + `<p class="card-hint">Say the verse</p>` : textHtml + `<p class="card-hint">Name the reference</p>`;
-      back = dir === "ref" ? textHtml : refHtml;
+      const extra = `${v.tag ? `<p class="card-tag">${esc(v.tag)}</p>` : ""}${v.note ? `<p class="card-note">${inline(v.note)}</p>` : ""}`;
+      back = (dir === "ref" ? textHtml : refHtml) + extra;
     } else {
       const o = current.obj;
       front = `<p class="card-hint">${esc(o.category || "")}</p><p class="card-ref">“${esc(o.title)}”</p><p class="card-hint">What would you say?</p>`;
-      back = `${boxes("say", "Say", o.oneLiner)}${boxes("ask", "Ask back", o.askBack)}${chips(o.verses)}
-        <a class="ilink" href="#/objections/${o.id}">Open the full answer</a>`;
+      back = `${boxes("say", "Say", o.oneLiner)}${boxes("ask", "Ask back", o.askBack)}
+        ${o.short ? `<div class="card-answer"><span class="label">30-second answer</span><div class="prose">${md(o.short)}</div></div>` : ""}
+        ${o.verses && o.verses.length ? `<span class="label verse-label">Key verses</span>${chips(o.verses)}` : ""}
+        <a class="ilink" href="#/objections/${o.id}">Open deeper study</a>`;
     }
     el.innerHTML = `
       <div class="practice-progress"><span>${known} of ${cards.length} learned</span><span class="status">${cardStatus(current.key)}</span></div>
