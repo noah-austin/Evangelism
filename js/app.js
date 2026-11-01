@@ -596,13 +596,26 @@
     deck = deck || "All";
     const cards = deckCards(kind, deck);
     practiceState = { kind, deck, cards, current: null, last: null, revealed: false, reviewed: 0, right: 0 };
+    // Coming back to the same deck (e.g. after "Open the full answer")
+    // picks up on the same card instead of starting over.
+    let resumed = false;
+    try {
+      const saved = JSON.parse(sessionStorage.getItem("practiceState") || "null");
+      if (saved && saved.kind === kind && saved.deck === deck) {
+        const card = cards.find((c) => c.key === saved.currentKey);
+        if (card) {
+          Object.assign(practiceState, { current: card, last: saved.last, revealed: saved.revealed, reviewed: saved.reviewed, right: saved.right });
+          resumed = true;
+        }
+      }
+    } catch (e) {}
     const title = kind === "verses" ? "Verse Flashcards" : "Objection Drill";
     app.innerHTML = `
       <p class="kicker">${esc(deck === "All" ? "All" : deck)}</p>
       <h1 class="page-title">${title}</h1>
       ${kind === "verses" ? `<div class="segs small" id="direction"></div>` : ""}
       <div id="card"></div>`;
-    if (cards.length) pickCard();
+    if (cards.length && !resumed) pickCard();
     renderCard();
     return { title };
   }
@@ -652,9 +665,14 @@
     practiceState.current = pick;
     practiceState.revealed = false;
   }
+  function savePractice() {
+    const { kind, deck, current, last, revealed, reviewed, right } = practiceState;
+    sessionStorage.setItem("practiceState", JSON.stringify({ kind, deck, currentKey: current && current.key, last, revealed, reviewed, right }));
+  }
   function renderCard() {
     const el = document.getElementById("card");
     if (!el) return;
+    savePractice();
     const { kind, cards, current, revealed } = practiceState;
     const dirEl = document.getElementById("direction");
     const dir = store.get("verseDirection", "ref");
