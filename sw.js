@@ -1,7 +1,8 @@
-// Offline support: saves every file on first visit, then serves from the
-// saved copy (fast + works with no signal) while checking for updates in
-// the background. Bump VERSION when adding or renaming files.
-const VERSION = "v11";
+// Offline support.
+// With signal: always load the latest files from the site (and save a copy).
+// Without signal (or if the site takes too long): use the saved copy.
+// Bump VERSION when adding or renaming files.
+const VERSION = "v12";
 const CACHE = "field-guide-" + VERSION;
 const FILES = [
   "./",
@@ -22,9 +23,14 @@ const FILES = [
   "icons/icon-192.png",
   "icons/icon-512.png",
 ];
+const TIMEOUT_MS = 4000;
 
 self.addEventListener("install", (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));
+  e.waitUntil(
+    caches.open(CACHE)
+      .then((c) => c.addAll(FILES.map((f) => new Request(f, { cache: "reload" }))))
+      .then(() => self.skipWaiting())
+  );
 });
 
 self.addEventListener("activate", (e) => {
@@ -38,16 +44,25 @@ self.addEventListener("activate", (e) => {
 self.addEventListener("fetch", (e) => {
   const req = e.request;
   if (req.method !== "GET" || new URL(req.url).origin !== location.origin) return;
-  e.respondWith(
-    caches.open(CACHE).then(async (cache) => {
-      const cached = await cache.match(req, { ignoreSearch: true });
-      const network = fetch(req)
-        .then((res) => {
-          if (res.ok) cache.put(req, res.clone());
-          return res;
-        })
-        .catch(() => cached);
-      return cached || network;
-    })
-  );
+  e.respondWith(networkFirst(req));
 });
+
+async function networkFirst(req) {
+  const cache = await caches.open(CACHE);
+  try {
+    const res = await Promise.race([
+      fetch(req, { cache: "no-cache" }),
+      new Promise((_, reject) => setTimeout(() => reject(new Error("timeout")), TIMEOUT_MS)),
+    ]);
+    if (res.ok) cache.put(req, res.clone());
+    return res;
+  } catch (err) {
+    const cached = await cache.match(req, { ignoreSearch: true });
+    if (cached) return cached;
+    if (req.mode === "navigate") {
+      const home = await cache.match("index.html");
+      if (home) return home;
+    }
+    throw err;
+  }
+}

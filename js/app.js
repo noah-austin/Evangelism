@@ -919,5 +919,14 @@
   // ── Offline support ─────────────────────────────────
   if ("serviceWorker" in navigator && location.protocol !== "file:") {
     window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+    // When a new version takes over, reload once so it shows right away
+    // (skip on the very first install, when nothing was in control yet).
+    const hadController = !!navigator.serviceWorker.controller;
+    let reloaded = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (!hadController || reloaded) return;
+      reloaded = true;
+      location.reload();
+    });
   }
 })();
