@@ -374,3 +374,23 @@ body.live-mode main { padding-bottom: calc(110px + env(safe-area-inset-bottom));
 .card-answer { margin: 12px 0 4px; padding: 12px 14px 4px; border-radius: 12px; background: var(--bg); }
 .card-answer .label { color: var(--muted); margin-bottom: 6px; }
 .card-answer .prose p { font-size: 0.98rem; }
+
+/* Follow-up line on "If they say" buttons */
+.branch-then, .response-then {
+  display: block; margin: 4px 0 3px; padding: 6px 10px; border-radius: 8px;
+  background: var(--ask-bg); color: var(--text); font-size: 0.92rem; font-weight: 550; line-height: 1.35;
+}
+.response-then { font-size: 1rem; }
+
+/* Cheat sheet */
+.cheat-card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 12px 12px 6px 15px; margin: 0 0 12px; box-shadow: var(--shadow); }
+.cheat-card > .label { color: var(--accent); margin-bottom: 4px; }
+.cheat-line { display: flex; align-items: center; gap: 8px; padding: 8px 0; color: var(--text); text-decoration: none; }
+.cheat-line + .cheat-line { border-top: 1px solid var(--line); }
+.cheat-line:active { opacity: 0.6; }
+.cheat-main { font-weight: 650; line-height: 1.3; display: flex; align-items: baseline; gap: 10px; }
+.cheat-sub { color: var(--muted); font-size: 0.9rem; line-height: 1.35; margin-top: 1px; }
+.cheat-num { flex: none; width: 22px; height: 22px; border-radius: 50%; background: var(--accent); color: var(--card); font-size: 0.75rem; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; transform: translateY(-1px); }
+.chip-tag { font-weight: 600; opacity: 0.75; }
+.cheat-remember { margin: 2px 0 8px; padding-left: 1.2em; }
+.cheat-remember li { margin: 3px 0; font-weight: 600; }

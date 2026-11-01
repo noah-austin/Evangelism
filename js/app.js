@@ -24,6 +24,7 @@
     practice: '<rect x="3.5" y="6" width="13" height="14" rx="2"/><path d="M7.5 6V5a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-2" />',
     live: '<path d="M8 5.5v13l11-6.5z" stroke-linejoin="round"/>',
     talking: '<path d="M6 4v6a4 4 0 0 0 4 4h8M14 10l4 4-4 4M6 20v-2" stroke-linecap="round" stroke-linejoin="round"/>',
+    cheat: '<rect x="5" y="3.5" width="14" height="17" rx="2"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4" stroke-linecap="round"/>',
     worldviews: '<circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c2.5 2.3 3.5 5 3.5 8s-1 5.7-3.5 8c-2.5-2.3-3.5-5-3.5-8s1-5.7 3.5-8z"/>',
   };
   const svg = (paths, size = 24, sw = 1.8) =>
@@ -212,7 +213,7 @@
           target = goTarget(b.go).title;
         }
         return `<a class="branch" href="${href}">
-          <span class="branch-main"><span class="branch-if">If they say: ${inline(b.if)}</span><span class="branch-go">Go to ${esc(target)}</span></span>${chevron}</a>`;
+          <span class="branch-main"><span class="branch-if">If they say: ${inline(b.if)}</span>${b.then ? `<span class="branch-then">Ask: ${inline(b.then)}</span>` : ""}<span class="branch-go">Go to ${esc(target)}</span></span>${chevron}</a>`;
       })
       .join("")}</div>`;
   }
@@ -288,7 +289,10 @@
       </a>
       ${saved.length ? `<h2 class="section-label">Favorites</h2><div class="list">${saved.join("")}</div>` : ""}
       <h2 class="section-label">In a conversation</h2>
-      <div class="nav-list">${group("use")}</div>
+      <div class="nav-list">
+        ${navRow("#/cheat", ICON.cheat, "Cheat Sheet", "The whole conversation on one screen", "")}
+        ${group("use")}
+      </div>
       <h2 class="section-label">Prepare</h2>
       <div class="nav-list">
         ${navRow("#/practice", ICON.practice, "Practice", "Verse flashcards and objection drills", "")}
@@ -507,7 +511,7 @@
           target = g.title;
         }
         return `<a class="response" href="${href}"${replace}>
-          <span class="branch-main"><span class="response-if">${inline(b.if)}</span><span class="branch-go">${esc(target)}</span></span>${chevron}</a>`;
+          <span class="branch-main"><span class="response-if">${inline(b.if)}</span>${b.then ? `<span class="response-then">Ask: ${inline(b.then)}</span>` : ""}<span class="branch-go">${b.then ? "Then " : ""}${esc(target)}</span></span>${chevron}</a>`;
       })
       .join("");
 
@@ -731,6 +735,67 @@
     window.scrollTo(0, 0);
   }
 
+  // ── Cheat sheet ─────────────────────────────────────
+  // The whole conversation on one screen. Each line opens the full page.
+  const CHEAT = {
+    steps: [
+      [1, "What happens after you die?"],
+      [2, "Are you a good person?"],
+      [3, "Lied? Stolen? God's name? Lust?"],
+      [4, "Innocent or guilty? Heaven or hell?"],
+      [5, "Does that concern you?"],
+      [6, "You broke the Law; Jesus paid your fine."],
+      [7, "Repent and trust Him, like a parachute."],
+      [8, "Read John, find a church."],
+    ],
+    replies: [
+      ["“God will forgive me”", "A good judge can't let the guilty go.", "objections/god-will-forgive"],
+      ["“I'm a good person”", "By whose standard? Let's check.", "objections/good-person"],
+      ["“There's no God”", "A building proves a builder.", "live/way-of-the-master/9"],
+      ["“I don't believe the Bible”", "Leave it out. Your conscience knows.", "live/way-of-the-master/10"],
+      ["“Hell isn't fair”", "Should a judge punish a murderer?", "objections/hell-unfair"],
+      ["“I'll think about it later”", "You have no promise of tomorrow.", "objections/think-later"],
+    ],
+    verses: ["Romans 3:23", "Romans 6:23", "Romans 5:8", "Hebrews 9:27", "John 14:6"],
+    remember: ["Ask, don't argue.", "Law before grace.", "Be gentle. Include yourself.", "Don't pressure a prayer."],
+  };
+  function pageCheat() {
+    const favObjections = favs
+      .filter((k) => k.startsWith("objections/"))
+      .map((k) => getItem("objections", k.split("/")[1]))
+      .filter(Boolean);
+    const line = (href, main, sub) => `<a class="cheat-line" href="#/${href}">
+        <span class="row-main"><span class="cheat-main">${main}</span>${sub ? `<span class="cheat-sub">${esc(sub)}</span>` : ""}</span>${chevron}</a>`;
+    app.innerHTML = `
+      <h1 class="page-title">Cheat Sheet</h1>
+      <p class="intro">A last look before you walk up to someone. Tap any line for the full page.</p>
+      <div class="cheat-card">
+        <span class="label">Way of the Master</span>
+        ${CHEAT.steps.map(([n, t]) => line(`live/way-of-the-master/${n}`, `<span class="cheat-num">${n}</span>${esc(t)}`)).join("")}
+      </div>
+      <div class="cheat-card">
+        <span class="label">If they say</span>
+        ${CHEAT.replies.map(([q, a, href]) => line(href, esc(q), a)).join("")}
+      </div>
+      ${favObjections.length
+        ? `<div class="cheat-card"><span class="label">Your favorites</span>
+            ${favObjections.map((o) => line(`objections/${o.id}`, esc(`“${o.title}”`), o.oneLiner)).join("")}</div>`
+        : ""}
+      <div class="cheat-card">
+        <span class="label">Key verses</span>
+        <div class="chips">${CHEAT.verses.map((r) => {
+          const v = getVerse(r);
+          return `<button class="vchip" data-ref="${esc(r)}">${esc(r)}${v && v.tag ? ` <span class="chip-tag">${esc(v.tag)}</span>` : ""}</button>`;
+        }).join("")}</div>
+      </div>
+      <div class="cheat-card">
+        <span class="label">Remember</span>
+        <ul class="cheat-remember">${CHEAT.remember.map((r) => `<li>${esc(r)}</li>`).join("")}</ul>
+      </div>
+      <p class="copyright">Star objections to add them here under “Your favorites.”</p>`;
+    return { title: "Cheat Sheet" };
+  }
+
   function pageSettings() {
     const theme = store.get("theme", "auto");
     const size = store.get("textSize", 1);
@@ -887,6 +952,7 @@
     if (!parts.length) return pageHome();
     if (parts[0] === "settings") return pageSettings();
     if (parts[0] === "live") return pageLive(parts[1], parts[2]);
+    if (parts[0] === "cheat") return pageCheat();
     if (parts[0] === "practice") return pagePractice(parts[1], parts[2]);
     if (parts.length === 1) return pageSection(parts[0]);
     return pageItem(parts[0], parts[1], parts[2]);

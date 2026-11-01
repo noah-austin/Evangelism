@@ -27,15 +27,18 @@ DATA.paths = [
       {
         heading: "Natural to spiritual",
         say: ["What do you think happens after someone dies?"],
-        body: `Start where they are, the way Jesus did with the woman at the well (John 4). A gospel tract is an easy way in.
+        body: `**The bridge to step 2:** almost everyone believes the afterlife depends on being good. Whatever they answer, ask how someone gets there, then test *their* standard. You don't need them to believe the Bible first.
 
 **Other openers:**
 - “Do you have any spiritual beliefs?”
 - “Do you think there's a heaven?”
 - “Did you get one of these?” (hand them a tract)`,
         branches: [
-          { if: "“I think I'll go to heaven”", go: "step:2" },
-          { if: "“I don't believe in God” / “Nothing happens”", go: "step:9" },
+          { if: "“I think I'll go to heaven”", then: "What do you think gets someone into heaven?", go: "step:2" },
+          { if: "“I don't know”", then: "If there is a heaven, do you think you'd go there? Why?", go: "step:2" },
+          { if: "“Nothing, you just die”", then: "Are you 100% sure there's no God? If there is one, would He let you in?", go: "step:2" },
+          { if: "“There's no God” (and they're sure)", go: "step:9" },
+          { if: "“Reincarnation” / “Karma”", then: "So how you live matters. Do you think you've been good enough?", go: "step:2" },
           { if: "“I'm not interested”", go: "openers/wrapping-up" },
         ],
       },
