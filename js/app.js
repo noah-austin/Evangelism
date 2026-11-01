@@ -167,7 +167,7 @@
       href: `#/${sec}/${item.id}`,
       kicker,
       title: esc(itemTitle(sec, item)) + draft,
-      sub: item.draft ? "" : item.oneLiner || plain(item.summary),
+      sub: item.oneLiner || plain(item.summary),
     });
   }
   function sourcePills(list) {
@@ -442,7 +442,7 @@
               .map((p, i) => (p.detour ? "" : `<li><button data-jump="step-${i + 1}">${esc(plain(p.heading || `Step ${i + 1}`))}</button></li>`))
               .join("")}</ol></div>`
           : ""}
-        ${item.draft ? `<p class="notice">This page is a placeholder. We'll fill it in together.</p>` : ""}
+        ${item.draft ? `<p class="notice">This is a draft. Confirm or edit it, and it becomes final.</p>` : ""}
         ${(item.parts || []).map((p, i) => (p.detour ? "" : renderPart(p, i, item, sec))).join("")}
         ${(item.parts || []).some((p) => p.detour)
           ? `<h2 class="section-label">Side steps (only if needed)</h2>

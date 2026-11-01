@@ -304,4 +304,232 @@ If we follow Jesus, we take Scripture the way He did.`,
       },
     ],
   },
+
+  // --- Revelation & the end times ---
+  {
+    id: "end-times",
+    title: "Revelation & the End Times",
+    summary: `Jesus will come for His church before the tribulation (pre-trib rapture), return visibly after it, and reign on earth for a thousand years.`,
+    parts: [
+      {
+        heading: "My view",
+        body: `I hold a **pre-tribulation, premillennial** view:
+1. **The rapture:** Jesus comes for His church, and believers, living and dead, are caught up to meet Him ([[1 Thessalonians 4:16-17]], [[1 Corinthians 15:51-52]]).
+2. **The tribulation:** a seven-year period of judgment on the earth ([[Daniel 9:27]]). The church is kept from it ([[Revelation 3:10]], [[1 Thessalonians 5:9]]).
+3. **The second coming:** Jesus returns visibly to the earth to judge and to reign ([[Revelation 19:11]], [[Acts 1:11]]).
+4. **The millennium:** Christ reigns on earth for a thousand years ([[Revelation 20:4]]).
+5. **The new heavens and new earth:** God makes all things new ([[Revelation 21:1]]).`,
+        verses: ["1 Thessalonians 4:16-17", "Revelation 3:10", "1 Thessalonians 5:9", "Revelation 19:11", "Revelation 20:4", "Revelation 21:1"],
+      },
+      {
+        heading: "Why pre-trib",
+        body: `- **Believers aren't destined for wrath** ([[1 Thessalonians 5:9]]). The tribulation is God's wrath poured out on the earth.
+- **Kept from the hour of testing** that comes on the whole world ([[Revelation 3:10]]).
+- **Jesus could come at any moment.** No one knows the day or hour ([[Matthew 24:36]]), which fits a rapture with no signs that must come first.
+- **The church isn't mentioned on earth** in Revelation 4 to 19, the chapters describing the tribulation.
+- **Jesus promised to come and take us to be with Him** ([[John 14:2-3]]).`,
+        verses: ["Matthew 24:36", "John 14:2-3"],
+      },
+      {
+        heading: "How I read Revelation",
+        body: `As future prophecy, read plainly where possible (futurist), with real symbols that Scripture often explains itself. It's meant to give hope and urgency, not fear.`,
+      },
+      {
+        heading: "Why it matters for evangelism",
+        body: `If Jesus could come at any moment, today matters. Don't put off sharing the gospel ([[2 Corinthians 6:2]]). Our hope is “the blessed hope and the appearing of the glory of our great God and Savior, Christ Jesus” ([[Titus 2:13]]).`,
+        verses: ["Titus 2:13", "2 Corinthians 6:2"],
+      },
+      {
+        heading: "How Christians differ",
+        body: `- **Mid-trib and pre-wrath:** the rapture happens partway through the tribulation.
+- **Post-trib:** the church goes through the tribulation, and the rapture and second coming are one event.
+- **Amillennial:** the thousand years is symbolic of the present church age; Christ returns once, at the end.
+- **Postmillennial:** the gospel will gradually transform the world before Christ returns.
+- **Preterist:** much of Revelation was fulfilled in the first century (the fall of Jerusalem in AD 70).
+
+All agree: Jesus is coming back.`,
+      },
+      {
+        heading: "If someone asks",
+        say: ["I believe Jesus could come back any day. That's why I'm telling you now."],
+      },
+    ],
+  },
+
+  // --- Women in ministry (DRAFT) ---
+  {
+    id: "women-in-ministry",
+    title: "Women in Ministry",
+    draft: true,
+    summary: `Men and women are equal in worth and both gifted to serve. The role of pastor or elder is for qualified men.`,
+    parts: [
+      {
+        heading: "My view (draft)",
+        body: `Men and women are equally made in God's image and equal in value and salvation ([[Genesis 1:27]], [[Galatians 3:28]]). Both are gifted and called to serve. The office of pastor or elder, the authoritative teaching and leading of the church, is given to qualified men ([[1 Timothy 2:12]], [[1 Timothy 3:1-2]]). This is about role, not worth.`,
+        verses: ["Genesis 1:27", "Galatians 3:28", "1 Timothy 2:12", "1 Timothy 3:1-2"],
+      },
+      {
+        heading: "Women serving",
+        body: `Women served throughout the New Testament:
+- **Priscilla** helped explain the gospel more accurately to Apollos ([[Acts 18:26]]).
+- **Phoebe** served the church at Cenchrea ([[Romans 16:1]]).
+- **Older women teach younger women** ([[Titus 2:3-5]]).
+- **Sons and daughters will prophesy** ([[Acts 2:17-18]]).
+- **Women were the first witnesses** of the resurrection.
+
+Women can evangelize, teach women and children, lead ministries, and serve in countless ways.`,
+        verses: ["Acts 18:26", "Romans 16:1", "Titus 2:3-5", "Acts 2:17-18"],
+      },
+      {
+        heading: "How Christians differ",
+        body: `- **Complementarian** (this view): equal worth, different roles in church and home.
+- **Egalitarian:** all roles, including pastor, are open to women; 1 Timothy 2 is read as addressing a specific local problem.`,
+      },
+      {
+        heading: "If someone asks",
+        say: ["Equal in worth, different in role. Jesus submitted to the Father, and He isn't less than God."],
+      },
+    ],
+  },
+
+  // --- Eternal security (DRAFT) ---
+  {
+    id: "eternal-security",
+    title: "Can You Lose Your Salvation?",
+    draft: true,
+    summary: `A true believer can't lose salvation, because God keeps them. Those who fall away completely show they were never truly saved.`,
+    parts: [
+      {
+        heading: "My view (draft)",
+        body: `Someone who is truly born again can't lose their salvation, because it depends on God keeping them, not on them keeping themselves ([[John 10:28-29]], [[Philippians 1:6]]). Nothing can separate us from God's love ([[Romans 8:38-39]]). The Holy Spirit is God's seal and guarantee ([[Ephesians 1:13-14]]).`,
+        verses: ["John 10:28-29", "Romans 8:38-39", "Philippians 1:6", "Ephesians 1:13-14"],
+      },
+      {
+        heading: "What about people who fall away?",
+        body: `- **They were never truly saved.** “They went out from us, but they were not really of us” ([[1 John 2:19]]).
+- **Many will say “Lord, Lord”** and hear “I never knew you” ([[Matthew 7:22-23]]). These are false converts, not people who lost salvation.
+- This is why Way of the Master stresses real repentance, not just a prayer.`,
+        verses: ["1 John 2:19", "Matthew 7:22-23"],
+      },
+      {
+        heading: "The warnings are real",
+        body: `Passages like [[Hebrews 6:4-6]] are serious warnings. God uses them to keep His people persevering. True believers heed them and press on.
+
+**Assurance** comes from trusting Christ and seeing the fruit of a changed life ([[1 John 5:13]], [[2 Peter 1:10]]), not from a past prayer.`,
+        verses: ["Hebrews 6:4-6", "2 Peter 1:10", "1 John 5:13"],
+      },
+      {
+        heading: "How Christians differ",
+        body: `- **Eternal security / perseverance of the saints** (this view).
+- **Conditional security** (many Arminian, Methodist, Pentecostal churches): a believer can fall away and lose salvation by turning from Christ.
+- **“Once saved, always saved” with no need for fruit:** a looser form that says a past decision guarantees heaven regardless of life. This view rejects that.`,
+      },
+      {
+        heading: "If someone asks",
+        say: ["God doesn't lose His children. But someone who never changes should ask if they were ever really His."],
+      },
+    ],
+  },
+
+  // --- Election & free will (DRAFT) ---
+  {
+    id: "election-free-will",
+    title: "Election & Free Will",
+    draft: true,
+    summary: `God is sovereign and chooses His people, and every person is responsible to repent and believe. Scripture teaches both.`,
+    parts: [
+      {
+        heading: "My view (draft)",
+        body: `Scripture teaches both truths, and I hold them together:
+- **God is sovereign in salvation.** He chose His people before the foundation of the world ([[Ephesians 1:4-5]], [[Romans 8:29-30]]), and no one comes to Christ unless the Father draws him ([[John 6:44]]).
+- **People are truly responsible.** God commands all people everywhere to repent ([[Acts 17:30-31]]), desires all to be saved ([[1 Timothy 2:3-4]]), and whoever calls on the Lord will be saved ([[Romans 10:13]]).
+
+I may not fully understand how they fit, but I don't have to choose one and deny the other.`,
+        verses: ["Ephesians 1:4-5", "Romans 8:29-30", "John 6:44", "1 Timothy 2:3-4", "Romans 10:13"],
+      },
+      {
+        heading: "Why it matters for evangelism",
+        body: `- **God's sovereignty gives confidence.** Everyone the Father gives will come ([[John 6:37]]). Our job is to be faithful, not to save anyone.
+- **Human responsibility gives urgency.** People must repent and believe, so we must tell them ([[Romans 10:14]]).
+
+Neither truth is an excuse not to share the gospel.`,
+        verses: ["John 6:37", "Romans 10:14"],
+      },
+      {
+        heading: "How Christians differ",
+        body: `- **Calvinist / Reformed:** God unconditionally chooses who will be saved, and His grace is effective in them.
+- **Arminian:** God chooses those He foresees will believe; His grace enables everyone to respond, and people can resist it.
+- **Many in between,** like this view, affirm both without a full system.`,
+      },
+      {
+        heading: "If someone asks",
+        say: ["God is in control, and you're still responsible for what you do with Jesus."],
+      },
+    ],
+  },
+
+  // --- Divorce & remarriage (DRAFT) ---
+  {
+    id: "divorce",
+    title: "Divorce & Remarriage",
+    draft: true,
+    summary: `Marriage is meant for life. Scripture allows divorce for adultery and abandonment by an unbelieving spouse, and remarriage in those cases.`,
+    parts: [
+      {
+        heading: "My view (draft)",
+        body: `God designed marriage to be lifelong ([[Matthew 19:4-6]]) and hates divorce ([[Malachi 2:16]]). Scripture allows divorce in two cases:
+1. **Sexual immorality** by a spouse ([[Matthew 19:9]]).
+2. **Abandonment by an unbelieving spouse** ([[1 Corinthians 7:15]]).
+
+In those cases, the innocent spouse is free to remarry. Otherwise, believers should stay married or, if separated, remain unmarried or be reconciled ([[1 Corinthians 7:10-11]]).`,
+        verses: ["Matthew 19:4-6", "Malachi 2:16", "Matthew 19:9", "1 Corinthians 7:15", "1 Corinthians 7:10-11"],
+      },
+      {
+        heading: "Grace for the divorced",
+        body: `Divorce isn't the unforgivable sin. Many people divorced before they knew Christ, or were the victims of a spouse's sin. Christ forgives and restores ([[1 John 1:9]]). Abuse is a serious matter: a victim should get safe, and church leaders should be involved.`,
+        verses: ["1 John 1:9"],
+      },
+      {
+        heading: "How Christians differ",
+        body: `- **No remarriage** while a former spouse lives, even after a biblical divorce.
+- **Broader grounds,** such as abuse or serious neglect, treated as forms of abandonment.
+- **Catholic view:** a valid marriage can't be dissolved; an annulment declares it was never valid.`,
+      },
+      {
+        heading: "If someone asks",
+        say: ["God takes marriage seriously, and He also forgives. Both are true."],
+      },
+    ],
+  },
+
+  // --- Politics (DRAFT) ---
+  {
+    id: "politics",
+    title: "Politics & the Christian",
+    draft: true,
+    summary: `Christians should engage as good citizens and vote by biblical values, but our hope is in Christ, not in politics.`,
+    parts: [
+      {
+        heading: "My view (draft)",
+        body: `- **Respect and pray for leaders.** Government is established by God ([[Romans 13:1]]), and we're to pray for those in authority ([[1 Timothy 2:1-2]]).
+- **Engage as good citizens.** Vote, speak up, and seek the good of the place we live ([[Jeremiah 29:7]]), guided by biblical values like the sanctity of life, justice, and truth. Righteousness exalts a nation ([[Proverbs 14:34]]).
+- **Obey God first.** When the law commands sin, we obey God rather than men ([[Acts 5:29]]).
+- **Our hope isn't political.** Our citizenship is in heaven ([[Philippians 3:20]]). No candidate or party can save; only the gospel changes hearts.`,
+        verses: ["Romans 13:1", "1 Timothy 2:1-2", "Jeremiah 29:7", "Proverbs 14:34", "Acts 5:29", "Philippians 3:20"],
+      },
+      {
+        heading: "Keep the gospel first",
+        body: `Don't let politics become a barrier to the gospel. Someone who votes differently still needs Jesus, and you may be the one to tell them. Render to Caesar what is Caesar's, and to God what is God's ([[Matthew 22:21]]).`,
+        verses: ["Matthew 22:21"],
+      },
+      {
+        heading: "How Christians differ",
+        body: `Christians vary widely: from deep political involvement to near withdrawal, and across parties and policies. Most agree on the basics: pray for leaders, obey the law unless it requires sin, and keep the gospel central.`,
+      },
+      {
+        heading: "If someone asks",
+        say: ["I vote my convictions, but my hope isn't in any politician. It's in Jesus."],
+      },
+    ],
+  },
 ];
