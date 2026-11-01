@@ -23,6 +23,7 @@
     openers: '<path d="M5 12h12M13 7l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/>',
     practice: '<rect x="3.5" y="6" width="13" height="14" rx="2"/><path d="M7.5 6V5a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-2" />',
     live: '<path d="M8 5.5v13l11-6.5z" stroke-linejoin="round"/>',
+    talking: '<path d="M6 4v6a4 4 0 0 0 4 4h8M14 10l4 4-4 4M6 20v-2" stroke-linecap="round" stroke-linejoin="round"/>',
     worldviews: '<circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c2.5 2.3 3.5 5 3.5 8s-1 5.7-3.5 8c-2.5-2.3-3.5-5-3.5-8s1-5.7 3.5-8z"/>',
   };
   const svg = (paths, size = 24, sw = 1.8) =>
@@ -35,6 +36,8 @@
   const SECTIONS = [
     { id: "paths", group: "use", title: "Gospel Path", blurb: "Way of the Master and Romans Road",
       intro: "Step-by-step ways to share the gospel. Way of the Master is the main path; tap “Start conversation mode” to follow it live." },
+    { id: "talking", group: "use", title: "Talking Paths", blurb: "Step by step for “I'm an atheist,” “I'm Muslim,” and more",
+      intro: "Start from where they are. Each path handles their starting point, then hands off to Way of the Master. Tap “Start conversation mode” to follow one live." },
     { id: "objections", group: "use", title: "Objections", blurb: "What to say when they push back",
       intro: "Each answer starts with one line to say and a question to ask back. Open the 30-second answer or deeper study when you have time." },
     { id: "verses", group: "use", title: "Quick Verses", blurb: "Key verses by topic, NASB 1995",
@@ -173,6 +176,25 @@
     if (!items.length) return "";
     return `<div class="${kind}${extra}"><span class="label">${label}</span>${items.map((l) => `<p>${inline(l)}</p>`).join("")}</div>`;
   }
+  // A branch target like "objections/hell-unfair" or "paths/way-of-the-master/3"
+  function goTarget(go) {
+    const [s, id, step] = go.split("/");
+    const t = getItem(s, id);
+    if (!t) return { title: go };
+    let title = plain(itemTitle(s, t));
+    if (step) title += `, ${stepLabel(t, +step)}`;
+    return { title, live: isPathSection(s) && t.numbered, id, step: step || 1 };
+  }
+  const PATH_SECTIONS = ["paths", "talking"];
+  const isPathSection = (s) => PATH_SECTIONS.includes(s);
+  function findPath(id) {
+    for (const s of PATH_SECTIONS) {
+      const it = getItem(s, id);
+      if (it) return { sec: s, item: it };
+    }
+    return null;
+  }
+
   function branchLinks(list, item, sec) {
     if (!list || !list.length) return "";
     return `<div class="branches">${list
@@ -184,10 +206,8 @@
           href = `#/${sec}/${item.id}/${n}`;
           target = stepLabel(item, +n);
         } else {
-          const [s, id] = b.go.split("/");
-          const t = getItem(s, id);
           href = `#/${b.go}`;
-          target = t ? itemTitle(s, t) : b.go;
+          target = goTarget(b.go).title;
         }
         return `<a class="branch" href="${href}">
           <span class="branch-main"><span class="branch-if">If they say: ${inline(b.if)}</span><span class="branch-go">Go to ${esc(target)}</span></span>${chevron}</a>`;
@@ -361,6 +381,25 @@
     return { title: s.title };
   }
 
+  // Worldview and objection pages that have a matching talking path
+  const TALK_FOR = {
+    "worldviews/nominal": "already-christian",
+    "objections/abortion": "pro-choice",
+    "objections/my-body": "pro-choice",
+    "objections/no-god": "atheist",
+    "objections/all-religions": "spiritual",
+    "objections/spiritual-not-religious": "spiritual",
+  };
+  function talkCard(sec, id) {
+    const tid = TALK_FOR[`${sec}/${id}`] || (sec === "worldviews" ? id : null);
+    const t = tid && getItem("talking", tid);
+    if (!t) return "";
+    return `<a class="wide-card live-start" href="#/talking/${tid}">
+      <span class="tile-icon">${svg(ICON.talking, 24)}</span>
+      <span class="wide-main"><span class="tile-title">Talk it through step by step</span>
+      <span class="tile-blurb">Talking path: ${esc(plain(t.title))}</span></span>${chevron}</a>`;
+  }
+
   function pageItem(sec, id, step) {
     const item = getItem(sec, id);
     if (!item || !sectionById[sec]) return pageNotFound();
@@ -370,6 +409,7 @@
       body = `
         ${boxes("say", "Say", item.oneLiner, " big")}
         ${boxes("ask", "Ask back", item.askBack)}
+        ${talkCard(sec, id)}
         <details class="fold" open><summary>30-second answer</summary><div class="prose">${md(item.short)}</div></details>
         ${item.verses && item.verses.length ? `<span class="label verse-label">Key verses</span>${chips(item.verses)}` : ""}
         <details class="fold"><summary>Deeper study</summary><div class="prose">${md(item.deep)}</div></details>
@@ -377,14 +417,15 @@
     } else {
       body = `
         ${item.summary ? `<div class="prose summary">${md(item.summary)}</div>` : ""}
-        ${sec === "paths" && item.numbered && item.parts.length
+        ${talkCard(sec, id)}
+        ${isPathSection(sec) && item.numbered && item.parts.length
           ? `<a class="wide-card live-start" href="#/live/${id}/1">
               <span class="tile-icon">${svg(ICON.live, 24)}</span>
               <span class="wide-main"><span class="tile-title">Start conversation mode</span>
               <span class="tile-blurb">One step at a time in big text. Your screen stays on.</span></span>${chevron}
             </a>`
           : ""}
-        ${sec === "paths" && item.numbered && item.parts.length > 3
+        ${isPathSection(sec) && item.numbered && item.parts.length > 3
           ? `<div class="overview"><span class="label">Steps</span><ol>${item.parts
               .map((p, i) => (p.detour ? "" : `<li><button data-jump="step-${i + 1}">${esc(plain(p.heading || `Step ${i + 1}`))}</button></li>`))
               .join("")}</ol></div>`
@@ -432,8 +473,9 @@
   });
 
   function pageLive(id, stepStr) {
-    const item = getItem("paths", id);
-    if (!item || !item.parts || !item.parts.length) return pageNotFound();
+    const found = findPath(id);
+    if (!found || !found.item.parts || !found.item.parts.length) return pageNotFound();
+    const { sec, item } = found;
     const total = item.parts.length;
     const i = Math.min(Math.max(parseInt(stepStr, 10) || 1, 1), total);
     const p = item.parts[i - 1];
@@ -455,10 +497,10 @@
           replace = " data-replace";
           target = stepLabel(item, k);
         } else {
-          const [s2, id2] = b.go.split("/");
-          const t = getItem(s2, id2);
-          href = `#/${b.go}`;
-          target = t ? plain(itemTitle(s2, t)) : b.go;
+          const g = goTarget(b.go);
+          // Jumping to another path stays in conversation mode
+          href = g.live ? `#/live/${g.id}/${g.step}` : `#/${b.go}`;
+          target = g.title;
         }
         return `<a class="response" href="${href}"${replace}>
           <span class="branch-main"><span class="response-if">${inline(b.if)}</span><span class="branch-go">${esc(target)}</span></span>${chevron}</a>`;
@@ -483,14 +525,14 @@
       backBtnHtml = prev ? `<a class="live-btn" href="${stepHref(prev)}" data-replace>Back</a>` : `<span class="live-btn disabled">Back</span>`;
       nextBtnHtml = next
         ? `<a class="live-btn primary" href="${stepHref(next)}" data-replace>Next: ${esc(plain(item.parts[next - 1].heading || ""))}</a>`
-        : `<a class="live-btn primary" href="#/paths/${id}">Finish</a>`;
+        : `<a class="live-btn primary" href="#/${sec}/${id}">Finish</a>`;
     }
     const counter = p.detour ? "Side step" : `Step ${stepNumber(item, i - 1)} of ${main.length}`;
 
     app.innerHTML = `
       <div class="live${p.detour ? " is-detour" : ""}">
         <div class="live-top">
-          <span class="live-count">${esc(item.title)} · ${counter}</span>
+          <span class="live-count">${esc(plain(item.title))} · ${counter}</span>
           <div class="dots">${dots}</div>
         </div>
         <h1 class="live-title">${inline(p.heading || "")}</h1>
@@ -501,7 +543,7 @@
         ${p.body ? `<details class="fold"><summary>Notes</summary><div class="prose">${md(p.body)}</div></details>` : ""}
       </div>
       <nav class="live-nav">${backBtnHtml}${nextBtnHtml}</nav>`;
-    return { title: "Conversation mode", section: "paths", liveKey: `#/live/${id}/` };
+    return { title: "Conversation mode", section: sec, liveKey: `#/live/${id}/` };
   }
 
   // ── Practice ────────────────────────────────────────
