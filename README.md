@@ -9,7 +9,7 @@ No build step — it's plain HTML/CSS/JS. Open `index.html` through any static s
 | File | What's in it |
 |---|---|
 | `data/verses.js` | Every verse (NASB 1995), topics, notes, and a `verified` flag |
-| `data/paths.js` | Way of the Master, Romans Road, testimony |
+| `data/paths.js` | Way of the Master, Romans Road |
 | `data/objections.js` | Objections by category: one-liner, ask-back, 30-second answer, deeper study |
 | `data/skills.js` | Tactics (Koukl), Knechtle-style questions |
 | `data/evidence.js` | Reasons to Believe: resurrection, the Bible, prophecy, creation, Lewis |

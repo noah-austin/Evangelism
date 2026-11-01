@@ -227,37 +227,4 @@ DATA.paths = [
       },
     ],
   },
-
-  {
-    id: "testimony",
-    title: "My Testimony",
-    sources: ["Personal"],
-    summary: `Your story in about one minute: short, simple, and pointing to Jesus, not to you. **Draft:** we'll write it together, then you can practice it out loud.`,
-    numbered: true,
-    parts: [
-      {
-        heading: "Before",
-        body: `**Prompt:** What was your life like before Christ? What were you trusting in?
-
-[Your words here]`,
-      },
-      {
-        heading: "How I came to Christ",
-        body: `**Prompt:** What showed you your sin? When did the cross make sense to you?
-
-[Your words here]`,
-      },
-      {
-        heading: "After",
-        body: `**Prompt:** What changed? Be honest: following Jesus doesn't mean life got easy.
-
-[Your words here]`,
-      },
-      {
-        heading: "Turn it back to them",
-        ask: "Can I ask what you think happens after you die?",
-        branches: [{ if: "“I'm not sure” / “I hope heaven”", go: "paths/way-of-the-master" }],
-      },
-    ],
-  },
 ];

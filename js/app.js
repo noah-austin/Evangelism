@@ -33,7 +33,7 @@
 
   // ── Sections ────────────────────────────────────────
   const SECTIONS = [
-    { id: "paths", group: "use", title: "Gospel Path", blurb: "Way of the Master, Romans Road, your testimony",
+    { id: "paths", group: "use", title: "Gospel Path", blurb: "Way of the Master and Romans Road",
       intro: "Step-by-step ways to share the gospel. Way of the Master is the main path; tap “Start conversation mode” to follow it live." },
     { id: "objections", group: "use", title: "Objections", blurb: "What to say when they push back",
       intro: "Each answer starts with one line to say and a question to ask back. Open the 30-second answer or deeper study when you have time." },

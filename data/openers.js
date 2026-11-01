@@ -252,7 +252,7 @@ Assurance comes from a changed life and trust in Christ, not from having said ce
       {
         heading: "Tell your story",
         say: ["Can I tell you what's happened to me?"],
-        body: `Your testimony is hard to argue with. See {{My Testimony|paths/testimony}}.`,
+        body: `Your own story is hard to argue with. Keep it short and point to Jesus, not to yourself.`,
       },
       {
         heading: "Be honest, not preachy",
