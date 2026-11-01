@@ -891,4 +891,129 @@ DATA.talking = [
       },
     ],
   },
+
+  // --- Morality is just opinion (the moral argument) ---
+  {
+    id: "morality",
+    title: "“Morality is just opinion”",
+    sources: ["C.S. Lewis", "Greg Koukl", "Ray Comfort"],
+    summary: `The moral argument, step by step. Everyone knows some things are really wrong. A real moral law above all of us points to a Moral Lawgiver, and it shows us we've broken His law.`,
+    numbered: true,
+    parts: [
+      {
+        heading: "Is anything really wrong?",
+        ask: "Do you think anything is really wrong? Not just something you dislike, but actually wrong?",
+        say: ["Like torturing a child for fun?"],
+        body: `- **Pick a clear case.** Almost no one will call child torture “just a preference.”
+- **Let them say it.** Once they agree something is truly wrong, they've admitted a moral standard that isn't just opinion.`,
+        branches: [
+          { if: "“Yes, of course that's wrong”", go: "step:2" },
+          { if: "“No, it's all opinion”", go: "step:6" },
+        ],
+      },
+      {
+        heading: "Where does that come from?",
+        ask: "Where does that “really wrong” come from?",
+        body: `There are only a few options:
+- **Personal feeling.** Then it's just your taste, like preferring vanilla. Torturing a child would only be wrong *for you*.
+- **Society.** Then whatever a culture approves is right. See the side step.
+- **Evolution.** That explains why we *feel* things, not why we *ought* to do them. See the side step.
+- **A standard above all of us.** That's the only option that makes it *really* wrong.`,
+        branches: [
+          { if: "“Society decides”", go: "step:7" },
+          { if: "“Evolution gave us morality”", go: "step:8" },
+          { if: "“It has to be bigger than us”", go: "step:3" },
+        ],
+      },
+      {
+        heading: "A law needs a lawgiver",
+        say: [
+          "If there's a real moral law above all of us, then someone put it there.",
+          "A law points to a lawgiver. That's God.",
+        ],
+        body: `**The argument in three lines:**
+1. If there is no God, nothing is really right or wrong. It's all opinion.
+2. But some things really are wrong. We all know it.
+3. So God exists.
+
+You don't need to say it this formally. Just walk them through it with questions.`,
+        verses: ["Romans 2:14", "Romans 2:15"],
+        branches: [
+          { if: "“But why is God's opinion any better?”", go: "step:9" },
+        ],
+      },
+      {
+        heading: "You already know it",
+        say: [
+          "That's why your conscience bothers you when you lie or steal.",
+          "The Bible says God wrote His law on every heart. That's exactly what we see.",
+        ],
+        body: `- **The Bible predicts this.** People who never read it still know right from wrong ([[Romans 2:14]], [[Romans 2:15]]).
+- **This is why it points to the God of the Bible,** not just “a higher power.” He's a moral Lawgiver who will judge by that law ([[Genesis 18:25]]).`,
+        verses: ["Romans 2:15", "Genesis 18:25"],
+      },
+      {
+        heading: "Which means we have a problem",
+        ask: "If there's a real moral law, have you kept it?",
+        body: `This is the turn. The moral argument doesn't just prove God; it shows we're guilty before Him. Move straight into the Law.`,
+        branches: [
+          { if: "“Nobody's perfect”", go: "paths/way-of-the-master/3" },
+          { if: "“I'm a pretty good person”", go: "paths/way-of-the-master/2" },
+        ],
+      },
+
+      // Side steps
+      {
+        heading: "“Nothing is really wrong”",
+        detour: true,
+        next: 2,
+        ask: [
+          "So if someone stole your phone right now, that wouldn't really be wrong?",
+          "Was slavery wrong, or just unpopular?",
+        ],
+        body: `- **Nobody lives this way.** The moment they're wronged, they appeal to a real standard: “That's not fair.”
+- **It defeats itself.** “You shouldn't push your morals on others” is itself a moral rule for everyone. See {{Suicide|skills/suicide}}.
+- **Be gentle.** You're not trying to win, just showing they already believe in right and wrong.`,
+        verses: ["Isaiah 5:20"],
+        branches: [
+          { if: "“OK, some things are wrong”", go: "step:2" },
+          { if: "They keep pushing back", go: "objections/morality-relative" },
+        ],
+      },
+      {
+        heading: "“Society decides”",
+        detour: true,
+        next: 3,
+        ask: [
+          "Then when a society approved of slavery, was slavery right?",
+          "Were the abolitionists wrong for going against their society?",
+        ],
+        body: `- **Reformers prove the point.** We praise people like William Wilberforce and Martin Luther King Jr. because they stood for a right that was *above* their society.
+- **Moral progress needs a fixed target.** You can only say a society got *better* if there's a standard it's moving toward.`,
+        verses: ["Judges 21:25"],
+      },
+      {
+        heading: "“Evolution gave us morality”",
+        detour: true,
+        next: 3,
+        say: ["Evolution might explain why we feel something. It can't tell us what we ought to do."],
+        ask: ["If torturing a child helped someone survive, would that make it right?"],
+        body: `- **Feelings aren't obligations.** Survival instincts describe what we do, not what we should do.
+- **C.S. Lewis's point:** the moral law often tells us to go *against* our strongest instinct, like risking ourselves to save a stranger. So it can't just be one of our instincts.
+- **If it's only evolution, it's not really wrong;** it's just unhelpful for the species. Most people won't accept that about cruelty.`,
+      },
+      {
+        heading: "“Why is God's opinion any better?”",
+        detour: true,
+        next: 4,
+        say: [
+          "Good isn't a rule God follows or something He made up.",
+          "It's His own character. God Himself is the standard.",
+        ],
+        body: `- **The objection (called the Euthyphro dilemma):** Is something good because God commands it (then it's arbitrary), or does God command it because it's good (then goodness is above God)?
+- **The answer:** neither. God's commands flow from His nature, which is perfectly good and never changes ([[Psalm 145:17]]).`,
+        verses: ["Psalm 145:17"],
+      },
+    ],
+  },
 ];

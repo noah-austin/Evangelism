@@ -195,6 +195,22 @@ DATA.verses = [
     verified: false,
   },
   {
+    ref: "Romans 2:14",
+    tag: "Law by instinct",
+    text: "For when Gentiles who do not have the Law do instinctively the things of the Law, these, not having the Law, are a law to themselves,",
+    topics: ["The Law", "God's Existence"],
+    note: "People who never read the Bible still know right from wrong. The moral law is built in.",
+    verified: false,
+  },
+  {
+    ref: "Psalm 145:17",
+    tag: "God is righteous",
+    text: "The LORD is righteous in all His ways And kind in all His deeds.",
+    topics: ["God's Existence"],
+    note: "Goodness isn't a rule above God or something He made up. It's His own character.",
+    verified: false,
+  },
+  {
     ref: "Isaiah 5:20",
     tag: "Calling evil good",
     text: "Woe to those who call evil good, and good evil; Who substitute darkness for light and light for darkness; Who substitute bitter for sweet and sweet for bitter!",

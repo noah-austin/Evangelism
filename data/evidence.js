@@ -275,30 +275,54 @@ Some propose an unlimited number of universes (a “multiverse”), but there's 
 
   {
     id: "moral-law",
-    title: "The Moral Law",
-    sources: ["C.S. Lewis"],
-    summary: `Everyone knows some things are really wrong. A real moral law points to a real Moral Lawgiver.`,
+    title: "The Moral Argument",
+    sources: ["C.S. Lewis", "Greg Koukl", "Ray Comfort"],
+    summary: `Everyone knows some things are really wrong. If morality is real and not just opinion, it needs a source above all of us: a Moral Lawgiver. And that law shows we've broken it.`,
     parts: [
       {
+        heading: "The argument in three lines",
+        body: `1. If there is no God, nothing is really right or wrong. It's all opinion.
+2. But some things really are wrong. We all know it.
+3. So God exists.`,
+      },
+      {
         heading: "Start with a question",
-        ask: "Is anything really wrong, not just disliked, but actually wrong?",
-        body: `Most people say yes (for example, torturing children for fun). Then: “Where does that standard come from?” If there's no God, morality is just opinion or evolution, and nothing is *really* wrong.`,
+        ask: "Is anything really wrong? Not just disliked, but actually wrong?",
+        body: `Use a clear case, like torturing a child for fun. Almost everyone says yes. Then ask: “Where does that standard come from?”`,
       },
       {
-        heading: "Lewis's observation",
-        body: `People everywhere quarrel by appealing to a standard: “That's not fair.” They expect the other person to know the standard too. And everyone breaks it.`,
+        heading: "Why it can't just be opinion",
+        body: `- **Nobody lives as if it's opinion.** When we're wronged, we say “That's not fair” and expect the other person to know it.
+- **We judge whole cultures.** We say slavery and genocide were wrong even when societies approved them.
+- **Moral progress needs a target.** A society can only get *better* if there's a fixed standard it's moving toward.
+- **Relativism defeats itself.** “You shouldn't impose your morals” is a moral rule for everyone. See {{Suicide|skills/suicide}}.`,
       },
       {
-        heading: "Connect it to the Law",
-        body: `This leads straight into the {{Way of the Master|paths/way-of-the-master}}: their conscience already agrees with God's commandments ([[Romans 2:15]]). The real problem isn't that they don't know right from wrong. It's that they've done wrong.`,
-        verses: ["Romans 2:15", "Romans 1:20"],
+        heading: "Common pushback",
+        body: `- **“Society decides.”** Then the abolitionists and civil rights reformers were wrong for opposing their society.
+- **“Evolution gave us morality.”** Evolution might explain why we *feel* things, not why we *ought* to do them. And the moral law often tells us to go against our strongest instinct, like risking ourselves for a stranger (C.S. Lewis).
+- **“Why is God's opinion better?”** Goodness isn't a rule above God or something He invented. It's His own unchanging character ([[Psalm 145:17]]).`,
+        verses: ["Psalm 145:17"],
+      },
+      {
+        heading: "Why it points to the God of the Bible",
+        body: `The Bible says exactly what we observe: God wrote His law on every human heart, so even people without the Bible know right from wrong ([[Romans 2:14]], [[Romans 2:15]]). And this God is a Judge who will hold us to that law ([[Genesis 18:25]]).`,
+        verses: ["Romans 2:14", "Romans 2:15", "Genesis 18:25"],
+      },
+      {
+        heading: "Bring it to the Law",
+        ask: "If there's a real moral law, have you kept it?",
+        body: `The moral argument doesn't just prove God exists. It shows we're guilty before Him. That's the bridge into the {{Way of the Master|paths/way-of-the-master}}.`,
+        branches: [{ if: "“Nobody's perfect”", go: "paths/way-of-the-master/3" }],
       },
       {
         heading: "Study",
-        body: `C.S. Lewis, *Mere Christianity*, Book 1.`,
+        body: `- C.S. Lewis, *Mere Christianity*, Book 1
+- Greg Koukl and Francis Beckwith, *Relativism: Feet Firmly Planted in Mid-Air*`,
       },
     ],
   },
+
 
   {
     id: "argument-from-desire",

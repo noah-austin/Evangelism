@@ -391,6 +391,8 @@
     "objections/no-god": "atheist",
     "objections/all-religions": "spiritual",
     "objections/spiritual-not-religious": "spiritual",
+    "objections/morality-relative": "morality",
+    "evidence/moral-law": "morality",
   };
   function talkCard(sec, id) {
     const tid = TALK_FOR[`${sec}/${id}`] || (sec === "worldviews" ? id : null);
