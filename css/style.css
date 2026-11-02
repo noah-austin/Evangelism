@@ -404,3 +404,20 @@ body.live-mode main { padding-bottom: calc(110px + env(safe-area-inset-bottom));
 :root[data-theme="dark"] .prose .vchip { color: var(--accent); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .prose .vchip { color: var(--accent); } }
 .nw { white-space: nowrap; }
+
+/* Collapsible favorites on the home screen */
+.fav-fold { margin: 12px 0 0; }
+.fav-fold summary {
+  list-style: none; display: flex; align-items: center; gap: 10px; cursor: pointer;
+  padding: 11px 14px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow);
+}
+.fav-fold summary::-webkit-details-marker { display: none; }
+.fav-fold summary::after {
+  content: ""; width: 8px; height: 8px; margin: 0 4px 0 6px;
+  border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted);
+  transform: rotate(45deg) translateY(-2px); transition: transform 0.15s;
+}
+.fav-fold[open] summary::after { transform: rotate(-135deg) translateY(-2px); }
+.fav-fold-icon { color: var(--accent); display: inline-flex; }
+.fav-fold-title { flex: 1; font-weight: 700; }
+.fav-fold .list { margin-top: 8px; }

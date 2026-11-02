@@ -295,6 +295,12 @@
         <span class="row-main"><span class="hero-title">Start a conversation</span>
         <span class="hero-sub">Way of the Master, one step at a time</span></span>${chevron}
       </a>
+      ${saved.length
+        ? `<details class="fav-fold"${store.get("favsOpen", false) ? " open" : ""}>
+            <summary><span class="fav-fold-icon">${svg(ICON.star, 20)}</span><span class="fav-fold-title">Favorites</span><span class="nav-meta">${saved.length}</span></summary>
+            <div class="list">${saved.join("")}</div>
+          </details>`
+        : ""}
       <h2 class="section-label">In a conversation</h2>
       <div class="nav-list">
         ${navRow("#/cheat", ICON.cheat, "Cheat Sheet", "The whole conversation on one screen", "")}
@@ -304,7 +310,6 @@
       <div class="nav-list">
         ${navRow("#/practice", ICON.practice, "Practice", "Verse flashcards and objection drills", "")}
         ${group("prep")}
-        ${navRow("#/favorites", ICON.star, "Favorites", "Everything you've starred", saved.length ? String(saved.length) : "")}
       </div>
       <p class="copyright">${esc(COPYRIGHT)}</p>`;
   }
@@ -873,6 +878,11 @@
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && !sheet.hidden) closeSheet();
   });
+
+  // Remember whether the home favorites list is open
+  document.addEventListener("toggle", (e) => {
+    if (e.target.classList && e.target.classList.contains("fav-fold")) store.set("favsOpen", e.target.open);
+  }, true);
 
   // ── Clicks ──────────────────────────────────────────
   document.addEventListener("click", (e) => {
