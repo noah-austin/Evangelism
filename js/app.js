@@ -101,7 +101,11 @@
   }
   function inline(s) {
     let out = esc(s);
-    out = out.replace(/\[\[([^\]]+)\]\]/g, (m, ref) => verseChip(unesc(ref)));
+    // Keep "(" and ")" attached to the verse next to them so they don't wrap alone
+    out = out.replace(/\(\[\[/g, "\u0001[[").replace(/\]\]\)/g, "]]\u0002");
+    out = out.replace(/(\u0001)?\[\[([^\]]+)\]\](\u0002)?/g, (m, open, ref, close) =>
+      open || close ? `<span class="nw">${open ? "(" : ""}${verseChip(unesc(ref))}${close ? ")" : ""}</span>` : verseChip(unesc(ref)));
+    out = out.replace(/\u0001/g, "(").replace(/\u0002/g, ")");
     out = out.replace(/\{\{([^|}]+)\|([^}]+)\}\}/g, (m, label, href) => `<a class="ilink" href="#/${href.trim()}">${label}</a>`);
     out = out.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
     out = out.replace(/(^|[^*])\*([^*]+?)\*/g, "$1<em>$2</em>");
@@ -241,7 +245,7 @@
       ${boxes("say", "Say", p.say)}
       ${boxes("ask", "Ask", p.ask)}
       ${p.body ? `<div class="prose">${md(p.body)}</div>` : ""}
-      ${chips(p.verses)}
+      ${chips((p.verses || []).filter((r) => !(p.body || "").includes(`[[${r}]]`)))}
       ${branchLinks(p.branches, item, sec)}
     </section>`;
   }
@@ -343,13 +347,20 @@
       .join("")}</div>`;
   }
 
+  // Sections whose pages are grouped by their `category` field, in this order
+  const CATEGORY_ORDER = {
+    objections: D.objectionCategories || [],
+    talking: ["Doubting God", "Other Faiths", "Christians", "Issues"],
+    convictions: ["Scripture & Creation", "Salvation", "Church & Christian Living", "Ethics & Society", "Last Things"],
+  };
+
   function pageSection(sec) {
     const s = sectionById[sec];
     if (!s) return pageNotFound();
     if (sec === "verses") return pageVerses(s);
     const items = itemsOf(sec);
     let body;
-    const cats = sec === "objections" ? D.objectionCategories || [] : [];
+    const cats = CATEGORY_ORDER[sec] || [];
     if (cats.length) {
       const groups = cats.map((c) => ({ c, list: items.filter((x) => x.category === c) })).filter((g) => g.list.length);
       const other = items.filter((x) => !cats.includes(x.category));

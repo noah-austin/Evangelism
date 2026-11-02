@@ -1,5 +1,7 @@
 // TALKING PATHS
 //
+// category: "Doubting God", "Other Faiths", "Christians", or "Issues"
+//
 // Step-by-step on-ramps that start from where the person is ("I'm an
 // atheist", "I'm Muslim") and hand off into Way of the Master.
 // Same format as paths.js (numbered steps, side steps with detour/next,
@@ -12,6 +14,7 @@ DATA.talking = [
   {
     id: "atheist",
     title: "“I'm an atheist”",
+    category: "Doubting God",
     sources: ["Ray Comfort", "Living Waters", "Cliff Knechtle"],
     summary: `Stay friendly, ask a few questions, and move to the conscience. You don't need to win a debate about God before you talk about the Law.`,
     numbered: true,
@@ -36,7 +39,7 @@ DATA.talking = [
         branches: [
           { if: "“Science explains everything”", go: "step:6" },
           { if: "“There's no evidence”", go: "step:7" },
-          { if: "“Well, no, not 100%”", go: "step:3" },
+          { if: "“Well, no, not 100%”", then: "Then God could exist. Can I show you why I think He does?", go: "step:3" },
         ],
       },
       {
@@ -81,7 +84,7 @@ DATA.talking = [
 - **Many great scientists believed in God.** Science and God aren't enemies.`,
         branches: [
           { if: "“Evolution explains it”", go: "objections/evolution" },
-          { if: "They want to go deeper", go: "objections/science-disproves-god" },
+          { if: "“Science has disproved God”", go: "objections/science-disproves-god" },
         ],
       },
       {
@@ -93,7 +96,7 @@ DATA.talking = [
         body: `- **The resurrection** is the best historical evidence. If Jesus rose, the question is settled ({{The Resurrection|evidence/resurrection}}).
 - **If nothing would convince them,** the issue isn't evidence.`,
         verses: ["Romans 1:20", "Psalm 19:1"],
-        branches: [{ if: "They want to keep debating", go: "objections/no-god" }],
+        branches: [{ if: "“I still don't see any evidence”", go: "objections/no-god" }],
       },
       {
         heading: "“Then who made God?”",
@@ -106,7 +109,7 @@ DATA.talking = [
         body: `- **The universe had a beginning;** God didn't ([[Psalm 90:2]]).
 - **Keep it brief,** then move on to the conscience.`,
         verses: ["Psalm 90:2"],
-        branches: [{ if: "They want to go deeper", go: "objections/who-made-god" }],
+        branches: [{ if: "“But something had to make God”", go: "objections/who-made-god" }],
       },
     ],
   },
@@ -115,6 +118,7 @@ DATA.talking = [
   {
     id: "agnostic",
     title: "“I don't know if God exists”",
+    category: "Doubting God",
     sources: ["Greg Koukl", "Lee Strobel", "Ray Comfort"],
     summary: `Honest uncertainty is a fine place to start but a bad place to stay. Find out what they mean, point to evidence, then speak to the conscience.`,
     numbered: true,
@@ -125,8 +129,8 @@ DATA.talking = [
         body: `- **“I don't know”** is honest. Ask how much they've looked into it.
 - **“No one can know”** claims to know something about God. That defeats itself ({{Suicide|skills/suicide}}).`,
         branches: [
-          { if: "“I just haven't really thought about it”", go: "step:2" },
-          { if: "“Nobody can know for sure”", go: "step:2" },
+          { if: "“I just haven't really thought about it”", then: "Fair enough. Can I ask you something?", go: "step:2" },
+          { if: "“Nobody can know for sure”", then: "How do you know no one can know?", go: "step:2" },
         ],
       },
       {
@@ -183,6 +187,7 @@ DATA.talking = [
   {
     id: "already-christian",
     title: "“I'm already a Christian”",
+    category: "Christians",
     sources: ["Ray Comfort", "Living Waters", "Mark Spence"],
     summary: `Many people who say this have never truly repented. Kindly test their understanding of grace. If they get it, encourage them; if not, go to the Law.`,
     numbered: true,
@@ -206,12 +211,12 @@ DATA.talking = [
 - **If their answer is clear,** go to step 5 and encourage them.`,
         verses: ["2 Corinthians 5:17", "1 John 2:3-4"],
         branches: [
-          { if: "They clearly understand grace and repentance", go: "step:5" },
-          { if: "“Not much, really”", go: "step:3" },
+          { if: "“Jesus changed everything. I hate my sin now”", go: "step:5" },
+          { if: "“Not much, really”", then: "Can I ask you a question about that?", go: "step:3" },
         ],
       },
       {
-        heading: "Do you think you're a good person?",
+        heading: "The good person test",
         ask: "Do you think you're a good person?",
         say: ["Can we look at the Ten Commandments together and see?"],
         body: `- **If they say yes,** they likely don't understand grace. Christians know they aren't good ([[Romans 3:23]]).
@@ -251,8 +256,9 @@ DATA.talking = [
   {
     id: "spiritual",
     title: "“I'm spiritual, not religious”",
+    category: "Doubting God",
     sources: ["Greg Koukl", "Ray Comfort", "Cliff Knechtle"],
-    summary: `Also covers “All religions lead to God.” Ask what they mean, point out that the claim takes a side, contrast karma with grace, then go to the Law.`,
+    summary: `Find out what they mean by “spiritual,” show that “all religions are true” takes a side, and contrast karma with grace. Then go to the Law. Also covers “All religions lead to God.”`,
     numbered: true,
     parts: [
       {
@@ -276,7 +282,7 @@ DATA.talking = [
         body: `- **The claim takes a side.** “All religions are true” says every religion that claims to be the only way is wrong ({{Suicide|skills/suicide}}).
 - **Jesus claimed to be the only way** ([[John 14:6]]).`,
         verses: ["John 14:6", "Acts 4:12"],
-        branches: [{ if: "They want to go deeper", go: "objections/all-religions" }],
+        branches: [{ if: "“They're all basically the same”", go: "objections/all-religions" }],
       },
       {
         heading: "Karma or grace",
@@ -287,7 +293,7 @@ DATA.talking = [
         verses: ["Ephesians 2:8-9", "Romans 6:23"],
       },
       {
-        heading: "Do you think you're a good person?",
+        heading: "The good person test",
         ask: "Do you think you're a good person?",
         say: ["Can I ask you a few questions to see?"],
         body: `Move into Way of the Master. Spiritual people often believe they're basically good. The Law shows them otherwise.`,
@@ -303,8 +309,9 @@ DATA.talking = [
   {
     id: "pro-choice",
     title: "“I'm pro-choice”",
+    category: "Issues",
     sources: ["Russell Hunter", "Abolitionist Rising", "Greg Koukl"],
-    summary: `Keep it to one question: what is the unborn? Abortion is murder of a person made in God's image, but the real answer is the gospel, for them and for anyone who's been involved in abortion.`,
+    summary: `Keep it to one question: what is the unborn? Abortion kills a human being made in God's image, but the real answer is the gospel, for them and for anyone involved in an abortion.`,
     numbered: true,
     parts: [
       {
@@ -329,7 +336,7 @@ DATA.talking = [
         ],
         body: `- **Science answers this.** From conception, the unborn is a living, distinct human being.
 - **Size, development, location, and dependency** don't change what a person is.`,
-        branches: [{ if: "They want to go deeper", go: "objections/clump-of-cells" }],
+        branches: [{ if: "“It's not a person yet”", go: "objections/clump-of-cells" }],
       },
       {
         heading: "Made in God's image",
@@ -340,7 +347,7 @@ DATA.talking = [
         verses: ["Genesis 9:6", "Psalm 139:13", "Exodus 20:13"],
         body: `- **Say it plainly, but kindly.** Abortion isn't mainly a political issue; it's a sin issue.
 - **The answer is the gospel,** not just changing their vote.`,
-        branches: [{ if: "They want to go deeper", go: "objections/abortion" }],
+        branches: [{ if: "“It's a woman's right”", go: "objections/abortion" }],
       },
       {
         heading: "Turn to their own heart",
@@ -372,7 +379,7 @@ DATA.talking = [
         body: `- **Show compassion first.** This may be personal.
 - **Then come back to the key question:** what is the unborn?`,
         verses: ["Deuteronomy 24:16"],
-        branches: [{ if: "They want to go deeper", go: "objections/rape-incest" }],
+        branches: [{ if: "“It's still not fair to her”", go: "objections/rape-incest" }],
       },
       {
         heading: "“My body, my choice”",
@@ -383,7 +390,7 @@ DATA.talking = [
           "But the unborn has a different body, a different heartbeat, and different DNA.",
         ],
         ask: "Whose body is being killed in an abortion?",
-        branches: [{ if: "They want to go deeper", go: "objections/my-body" }],
+        branches: [{ if: "“It's still my body”", go: "objections/my-body" }],
       },
       {
         heading: "“I've had an abortion”",
@@ -409,6 +416,7 @@ DATA.talking = [
   {
     id: "muslim",
     title: "“I'm Muslim”",
+    category: "Other Faiths",
     sources: ["Cliff Knechtle", "Ray Comfort"],
     summary: `Start with what you share: one God, a coming judgment, and respect for Jesus. Then ask the big question every Muslim has to face: how can a just God forgive sinners?`,
     numbered: true,
@@ -527,6 +535,7 @@ DATA.talking = [
   {
     id: "mormon",
     title: "“I'm Mormon”",
+    category: "Other Faiths",
     sources: ["Greg Koukl", "Ray Comfort"],
     summary: `Latter-day Saints use the same words Christians do, but often mean something different. Define terms, then talk about grace, the nature of God, and God's perfect standard.`,
     numbered: true,
@@ -546,7 +555,7 @@ DATA.talking = [
       {
         heading: "Grace “after all we can do”",
         ask: "Do you think you've done all you can do?",
-        say: ["The Book of Mormon says we're saved by grace “after all we can do.” Have you done all you can?"],
+        say: ["The Book of Mormon says we're saved by grace “after all we can do.”"],
         body: `- **2 Nephi 25:23** puts grace after our best efforts.
 - **Most Latter-day Saints will honestly say no.** That's the opening.
 - **The Bible says grace is a gift.** If it's earned, it isn't grace ([[Romans 11:6]]).`,
@@ -621,6 +630,7 @@ DATA.talking = [
   {
     id: "jw",
     title: "“I'm a Jehovah's Witness”",
+    category: "Other Faiths",
     sources: ["Greg Koukl", "Ray Comfort"],
     summary: `Jehovah's Witnesses know their Bibles and are trained to answer. Stay friendly, focus on who Jesus is, and ask whether they know they're saved.`,
     numbered: true,
@@ -715,6 +725,7 @@ DATA.talking = [
   {
     id: "catholic",
     title: "“I'm Catholic”",
+    category: "Other Faiths",
     sources: ["Ray Comfort", "Cliff Knechtle"],
     summary: `Many Catholics love God and know a lot about Jesus. The key question is how someone is made right with God: by grace through faith alone, or grace plus works and sacraments.`,
     numbered: true,
@@ -763,7 +774,7 @@ DATA.talking = [
       },
       {
         heading: "Go to the Law",
-        say: ["The Bible says you can know you have eternal life. Can I ask you a few questions to see if you'd be good enough on your own?"],
+        say: ["The Bible says you can know you have eternal life.", "Can I ask you a few questions to see if you'd be good enough on your own?"],
         ask: "Do you think you're a good person?",
         body: `- **The Law shows no one is good enough**, so trust shifts from self to Christ.
 - **Assurance** comes from His work, not ours ([[1 John 5:13]]).`,
@@ -805,6 +816,7 @@ DATA.talking = [
   {
     id: "jewish",
     title: "“I'm Jewish”",
+    category: "Other Faiths",
     sources: ["Ray Comfort", "Lee Strobel"],
     summary: `You share the Hebrew Scriptures. Stay in them: the need for atonement, Isaiah 53, and the Messiah. Then go to the Law they already know.`,
     numbered: true,
@@ -845,7 +857,7 @@ DATA.talking = [
         body: `- **Bethlehem** ([[Micah 5:2]]).
 - **Pierced hands and feet** ([[Psalm 22:16]]).
 - **A new covenant** that forgives sin ([[Jeremiah 31:31]]).
-- **Daniel 9** puts the Messiah before the temple's destruction. See Fulfilled Prophecy.`,
+- **Daniel 9** puts the Messiah before the temple's destruction. See {{Fulfilled Prophecy|evidence/prophecy}}.`,
         verses: ["Micah 5:2", "Psalm 22:16", "Jeremiah 31:31"],
         branches: [
           { if: "“There's no world peace, so He's not the Messiah”", go: "step:6" },
@@ -896,13 +908,14 @@ DATA.talking = [
   {
     id: "morality",
     title: "“Morality is just opinion”",
+    category: "Doubting God",
     sources: ["C.S. Lewis", "Greg Koukl", "Ray Comfort"],
     summary: `The moral argument, step by step. Everyone knows some things are really wrong. A real moral law above all of us points to a Moral Lawgiver, and it shows us we've broken His law.`,
     numbered: true,
     parts: [
       {
         heading: "Is anything really wrong?",
-        ask: "Do you think anything is really wrong? Not just something you dislike, but actually wrong?",
+        ask: "Do you think anything is really wrong, not just something you dislike?",
         say: ["Like torturing a child for fun?"],
         body: `- **Pick a clear case.** Almost no one will call child torture “just a preference.”
 - **Let them say it.** Once they agree something is truly wrong, they've admitted a moral standard that isn't just opinion.`,
@@ -962,7 +975,7 @@ You don't need to say it this formally. Just walk them through it with questions
         ],
       },
 
-      // Side steps
+      // --- Side steps (only if needed) ---
       {
         heading: "“Nothing is really wrong”",
         detour: true,
@@ -977,7 +990,7 @@ You don't need to say it this formally. Just walk them through it with questions
         verses: ["Isaiah 5:20"],
         branches: [
           { if: "“OK, some things are wrong”", go: "step:2" },
-          { if: "They keep pushing back", go: "objections/morality-relative" },
+          { if: "“I still say it's all opinion”", go: "objections/morality-relative" },
         ],
       },
       {

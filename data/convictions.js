@@ -2,15 +2,24 @@
 //
 // Personal positions on topics, worked out from Scripture.
 // Same format as paths: title, summary, and parts (heading, say, ask, body, verses, branches).
-// Each page: My view, supporting sections, How Christians differ, If someone asks.
+// Each page: category, My view, supporting sections, How Christians differ, If someone asks.
 
 window.DATA = window.DATA || {};
+
+DATA.convictionCategories = [
+  "Scripture & Creation",
+  "Salvation",
+  "Church & Christian Living",
+  "Ethics & Society",
+  "Last Things",
+];
 
 DATA.convictions = [
   // --- Creation ---
   {
     id: "creation",
     title: "Creation & Literal Days",
+    category: "Scripture & Creation",
     summary: `God created everything in six literal days, a few thousand years ago, and He made it mature from the start.`,
     parts: [
       {
@@ -25,7 +34,7 @@ DATA.convictions = [
 - **Adam was created a grown man** ([[Genesis 2:7]]), not a baby.
 - **Jesus made aged wine in a moment** ([[John 2:9-10]]). The headwaiter judged it the best wine, with no years of aging behind it.
 
-So a young creation can still look old. That isn't deception; it's a working world made ready to live in from day one.`,
+**So a young creation can still look old.** That isn't deception; it's a working world made ready to live in from day one.`,
         verses: ["Genesis 1:11-12", "Genesis 2:7", "John 2:9-10"],
       },
       {
@@ -48,6 +57,7 @@ So a young creation can still look old. That isn't deception; it's a working wor
   {
     id: "drinking",
     title: "Drinking & Drunkenness",
+    category: "Church & Christian Living",
     summary: `Drinking is not a sin. Being drunk is.`,
     parts: [
       {
@@ -64,7 +74,7 @@ So a young creation can still look old. That isn't deception; it's a working wor
       },
       {
         heading: "How Christians differ",
-        body: `Some Christians hold to total abstinence, because of alcohol's dangers, its damage to families, or warnings like Proverbs 23. Scripture condemns drunkenness clearly; it doesn't forbid drinking itself.`,
+        body: `Many Christians hold to total abstinence, out of wisdom about alcohol's dangers, its damage to families, warnings like Proverbs 23, or love for those who struggle. Some also argue biblical wine was weaker than today's drinks.`,
       },
       {
         heading: "If someone asks",
@@ -77,6 +87,7 @@ So a young creation can still look old. That isn't deception; it's a working wor
   {
     id: "infallibility",
     title: "Infallibility of Scripture",
+    category: "Scripture & Creation",
     summary: `The Bible is God's Word, without error in all it teaches, and the final authority for faith and life.`,
     parts: [
       {
@@ -131,6 +142,7 @@ If we follow Jesus, we take Scripture the way He did.`,
   {
     id: "baptism",
     title: "Baptism",
+    category: "Salvation",
     summary: `Baptism is for believers, by immersion, as an act of obedience. It doesn't save; faith in Christ does.`,
     parts: [
       {
@@ -161,6 +173,7 @@ If we follow Jesus, we take Scripture the way He did.`,
   {
     id: "church",
     title: "The Church",
+    category: "Church & Christian Living",
     summary: `The church is God's people, not a building. Every believer belongs in a local, Bible-teaching church.`,
     parts: [
       {
@@ -175,6 +188,10 @@ If we follow Jesus, we take Scripture the way He did.`,
         verses: ["Ephesians 4:11-12"],
       },
       {
+        heading: "How Christians differ",
+        body: `Christians agree the church matters but differ on its shape: who leads it (bishops, elders, or the congregation), how formal membership is, and how much weight tradition carries. Some also see house churches or small groups as a full expression of church.`,
+      },
+      {
         heading: "If someone asks",
         say: ["You can't follow Jesus and skip His family."],
       },
@@ -185,6 +202,7 @@ If we follow Jesus, we take Scripture the way He did.`,
   {
     id: "homosexuality",
     title: "Homosexuality",
+    category: "Church & Christian Living",
     summary: `God designed sex for marriage between one man and one woman. Homosexual behavior is sin, like all sexual sin, and the gospel offers the same forgiveness and new life to everyone.`,
     parts: [
       {
@@ -222,6 +240,7 @@ If we follow Jesus, we take Scripture the way He did.`,
   {
     id: "equality-of-sin",
     title: "Equality of Sin",
+    category: "Salvation",
     summary: `Any one sin makes us guilty before God. But not all sins are equal in every way.`,
     parts: [
       {
@@ -235,6 +254,11 @@ If we follow Jesus, we take Scripture the way He did.`,
 - **Not equal in weight:** keeps us honest. Lying and murder are both sin, but they aren't the same.`,
       },
       {
+        heading: "How Christians differ",
+        body: `- **Catholic teaching** divides sins into mortal (which cut off grace) and venial (which don't).
+- **Some Christians** say all sins are equal in every way, stressing that any sin separates us from God.`,
+      },
+      {
         heading: "If someone asks",
         say: ["Every sin breaks God's law, so we all need a Savior. That doesn't mean lying and murder are the same."],
       },
@@ -245,6 +269,7 @@ If we follow Jesus, we take Scripture the way He did.`,
   {
     id: "capital-punishment",
     title: "Capital Punishment",
+    category: "Ethics & Society",
     summary: `God gave government the authority to take life for murder, because people are made in His image. It still applies today.`,
     parts: [
       {
@@ -265,7 +290,9 @@ If we follow Jesus, we take Scripture the way He did.`,
       },
       {
         heading: "Justice must be careful",
-        body: `God required multiple witnesses before anyone was put to death. Where the system can't be certain of guilt, caution is right. The standard is justice, not revenge.`,
+        body: `- **Certainty required.** God required two or three witnesses before anyone was put to death.
+- **Caution where the system can't be sure.**
+- **The standard is justice, not revenge.**`,
       },
       {
         heading: "How Christians differ",
@@ -282,6 +309,7 @@ If we follow Jesus, we take Scripture the way He did.`,
   {
     id: "abortion",
     title: "Abortion",
+    category: "Ethics & Society",
     summary: `The unborn child is a human being made in God's image. Abortion is murder and should be abolished, and the gospel offers full forgiveness.`,
     parts: [
       {
@@ -309,6 +337,7 @@ If we follow Jesus, we take Scripture the way He did.`,
   {
     id: "end-times",
     title: "Revelation & the End Times",
+    category: "Last Things",
     summary: `Jesus will come for His church before the tribulation (pre-trib rapture), return visibly after it, and reign on earth for a thousand years.`,
     parts: [
       {
@@ -360,6 +389,7 @@ All agree: Jesus is coming back.`,
   {
     id: "women-in-ministry",
     title: "Women in Ministry",
+    category: "Church & Christian Living",
     summary: `Men and women are equal in worth and both gifted to serve. The role of pastor or elder is for qualified men.`,
     parts: [
       {
@@ -382,7 +412,7 @@ Women can evangelize, teach women and children, lead ministries, and serve in co
       {
         heading: "How Christians differ",
         body: `- **Complementarian** (this view): equal worth, different roles in church and home.
-- **Egalitarian:** all roles, including pastor, are open to women; 1 Timothy 2 is read as addressing a specific local problem.`,
+- **Egalitarian:** all roles, including pastor, are open to women. They point to women leaders like Deborah, Junia, and Priscilla, and read 1 Timothy 2 as addressing a specific local problem in Ephesus.`,
       },
       {
         heading: "If someone asks",
@@ -395,6 +425,7 @@ Women can evangelize, teach women and children, lead ministries, and serve in co
   {
     id: "eternal-security",
     title: "Can You Lose Your Salvation?",
+    category: "Salvation",
     summary: `A true believer can't lose salvation, because God keeps them. Those who fall away completely show they were never truly saved.`,
     parts: [
       {
@@ -433,6 +464,7 @@ Women can evangelize, teach women and children, lead ministries, and serve in co
   {
     id: "election-free-will",
     title: "Election & Free Will",
+    category: "Salvation",
     summary: `God genuinely wants everyone to be saved. Christ died for all, God's grace enables everyone to respond, and each person freely chooses to accept or reject Him.`,
     parts: [
       {
@@ -477,6 +509,7 @@ Women can evangelize, teach women and children, lead ministries, and serve in co
   {
     id: "divorce",
     title: "Divorce & Remarriage",
+    category: "Church & Christian Living",
     summary: `Marriage is meant for life. Scripture allows divorce for adultery and abandonment by an unbelieving spouse, and remarriage in those cases.`,
     parts: [
       {
@@ -510,6 +543,7 @@ In those cases, the innocent spouse is free to remarry. Otherwise, believers sho
   {
     id: "politics",
     title: "Politics & the Christian",
+    category: "Ethics & Society",
     summary: `Christians should engage as good citizens and vote by biblical values, but our hope is in Christ, not in politics.`,
     parts: [
       {
