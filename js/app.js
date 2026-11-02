@@ -26,6 +26,7 @@
     talking: '<path d="M6 4v6a4 4 0 0 0 4 4h8M14 10l4 4-4 4M6 20v-2" stroke-linecap="round" stroke-linejoin="round"/>',
     cheat: '<rect x="5" y="3.5" width="14" height="17" rx="2"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4" stroke-linecap="round"/>',
     convictions: '<path d="M6 21V4M6 4.5c4-2 6 2 12 0v8c-6 2-8-2-12 0" stroke-linecap="round" stroke-linejoin="round"/>',
+    star: '<path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.8l-5.2 2.8 1-5.8-4.3-4.1 5.9-.8z" stroke-linejoin="round"/>',
     worldviews: '<circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c2.5 2.3 3.5 5 3.5 8s-1 5.7-3.5 8c-2.5-2.3-3.5-5-3.5-8s1-5.7 3.5-8z"/>',
   };
   const svg = (paths, size = 24, sw = 1.8) =>
@@ -294,7 +295,6 @@
         <span class="row-main"><span class="hero-title">Start a conversation</span>
         <span class="hero-sub">Way of the Master, one step at a time</span></span>${chevron}
       </a>
-      ${saved.length ? `<h2 class="section-label">Favorites</h2><div class="list">${saved.join("")}</div>` : ""}
       <h2 class="section-label">In a conversation</h2>
       <div class="nav-list">
         ${navRow("#/cheat", ICON.cheat, "Cheat Sheet", "The whole conversation on one screen", "")}
@@ -304,8 +304,17 @@
       <div class="nav-list">
         ${navRow("#/practice", ICON.practice, "Practice", "Verse flashcards and objection drills", "")}
         ${group("prep")}
+        ${navRow("#/favorites", ICON.star, "Favorites", "Everything you've starred", saved.length ? String(saved.length) : "")}
       </div>
       <p class="copyright">${esc(COPYRIGHT)}</p>`;
+  }
+  function pageFavorites() {
+    const saved = favs.map(savedRow).filter(Boolean);
+    app.innerHTML = `
+      <h1 class="page-title">Favorites</h1>
+      <p class="intro">Tap the star on any page or verse to keep it here.</p>
+      ${saved.length ? `<div class="list">${saved.join("")}</div>` : `<p class="empty">Nothing starred yet.</p>`}`;
+    return { title: "Favorites" };
   }
   function savedRow(key) {
     if (key.startsWith("verse:")) {
@@ -968,6 +977,7 @@
     if (parts[0] === "settings") return pageSettings();
     if (parts[0] === "live") return pageLive(parts[1], parts[2]);
     if (parts[0] === "cheat") return pageCheat();
+    if (parts[0] === "favorites") return pageFavorites();
     if (parts[0] === "practice") return pagePractice(parts[1], parts[2]);
     if (parts.length === 1) return pageSection(parts[0]);
     return pageItem(parts[0], parts[1], parts[2]);
