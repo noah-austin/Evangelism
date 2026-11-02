@@ -58,6 +58,12 @@
   ];
   const sectionById = Object.fromEntries(SECTIONS.map((s) => [s.id, s]));
 
+  // Remembered only while the app is open (closed again on a fresh open)
+  const session = {
+    get(k, d) { try { const v = sessionStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
+    set(k, v) { try { sessionStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+  };
+
   // ── Storage ─────────────────────────────────────────
   const store = {
     get(k, d) {
@@ -75,6 +81,7 @@
     },
   };
   let favs = store.get("favs", []);
+  try { localStorage.removeItem("favsOpen"); localStorage.removeItem("favTypesOpen"); localStorage.removeItem("favFilter"); } catch (e) {}
   const isFav = (key) => favs.includes(key);
   function toggleFav(key) {
     favs = isFav(key) ? favs.filter((k) => k !== key) : [key, ...favs];
@@ -296,7 +303,7 @@
         <span class="hero-sub">Way of the Master, one step at a time</span></span>${chevron}
       </a>
       ${saved.length
-        ? `<details class="fav-fold"${store.get("favsOpen", false) ? " open" : ""}>
+        ? `<details class="fav-fold"${session.get("favsOpen", false) ? " open" : ""}>
             <summary><span class="fav-fold-icon">${svg(ICON.star, 20)}</span><span class="fav-fold-title">Favorites</span><span class="nav-meta">${saved.length}</span></summary>
             <div id="fav-body">${favBody()}</div>
           </details>`
@@ -314,7 +321,6 @@
       <p class="copyright">${esc(COPYRIGHT)}</p>`;
   }
   // Favorites grouped by type, with filter chips: All, Verses, Objections, ...
-  let favFilter = store.get("favFilter", "All");
   function favGroups() {
     const groups = [];
     const add = (label, rows) => rows.length && groups.push({ label, rows });
@@ -327,21 +333,15 @@
     }
     return groups;
   }
+  // Each type is its own collapsible row; tap a type to see those favorites
   function favBody() {
-    const groups = favGroups();
-    if (!groups.some((g) => g.label === favFilter)) favFilter = "All";
-    const chipsHtml = groups.length > 1
-      ? `<div class="filters fav-filters">${["All", ...groups.map((g) => g.label)]
-          .map((l) => {
-            const n = l === "All" ? groups.reduce((a, g) => a + g.rows.length, 0) : groups.find((g) => g.label === l).rows.length;
-            return `<button class="filter${l === favFilter ? " on" : ""}" data-fav-filter="${esc(l)}">${esc(l)} ${n}</button>`;
-          })
-          .join("")}</div>`
-      : "";
-    const shown = favFilter === "All" ? groups : groups.filter((g) => g.label === favFilter);
-    return chipsHtml + shown
-      .map((g) => `${groups.length > 1 && favFilter === "All" ? `<h3 class="fav-group">${esc(g.label)}</h3>` : ""}<div class="list">${g.rows.join("")}</div>`)
-      .join("");
+    const open = session.get("favTypesOpen", []);
+    return `<div class="fav-types">${favGroups()
+      .map((g) => `<details class="fav-type" data-fav-type="${esc(g.label)}"${open.includes(g.label) ? " open" : ""}>
+          <summary><span class="fav-type-title">${esc(g.label)}</span><span class="nav-meta">${g.rows.length}</span></summary>
+          <div class="list">${g.rows.join("")}</div>
+        </details>`)
+      .join("")}</div>`;
   }
 
   function pageFavorites() {
@@ -912,7 +912,12 @@
 
   // Remember whether the home favorites list is open
   document.addEventListener("toggle", (e) => {
-    if (e.target.classList && e.target.classList.contains("fav-fold")) store.set("favsOpen", e.target.open);
+    if (e.target.classList && e.target.classList.contains("fav-fold")) session.set("favsOpen", e.target.open);
+    if (e.target.classList && e.target.classList.contains("fav-type")) {
+      const label = e.target.dataset.favType;
+      const open = session.get("favTypesOpen", []).filter((l) => l !== label);
+      session.set("favTypesOpen", e.target.open ? [...open, label] : open);
+    }
   }, true);
 
   // ── Clicks ──────────────────────────────────────────
@@ -968,17 +973,6 @@
     if (jump) {
       const el = document.getElementById(jump.dataset.jump);
       if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 70, behavior: "smooth" });
-      return;
-    }
-    const ff = t.closest("[data-fav-filter]");
-    if (ff) {
-      favFilter = ff.dataset.favFilter;
-      store.set("favFilter", favFilter);
-      const body = document.getElementById("fav-body");
-      const x = body.querySelector(".fav-filters") ? body.querySelector(".fav-filters").scrollLeft : 0;
-      body.innerHTML = favBody();
-      const f = body.querySelector(".fav-filters");
-      if (f) f.scrollLeft = x;
       return;
     }
     const topic = t.closest("[data-topic]");

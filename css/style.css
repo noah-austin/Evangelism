@@ -407,19 +407,33 @@ body.live-mode main { padding-bottom: calc(110px + env(safe-area-inset-bottom));
 
 /* Collapsible favorites on the home screen */
 .fav-fold { margin: 12px 0 0; }
-.fav-fold summary {
+.fav-fold > summary {
   list-style: none; display: flex; align-items: center; gap: 10px; cursor: pointer;
   padding: 11px 14px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow);
 }
-.fav-fold summary::-webkit-details-marker { display: none; }
-.fav-fold summary::after {
+.fav-fold > summary::-webkit-details-marker { display: none; }
+.fav-fold > summary::after {
   content: ""; width: 8px; height: 8px; margin: 0 4px 0 6px;
   border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted);
   transform: rotate(45deg) translateY(-2px); transition: transform 0.15s;
 }
-.fav-fold[open] summary::after { transform: rotate(-135deg) translateY(-2px); }
+.fav-fold[open] > summary::after { transform: rotate(-135deg) translateY(-2px); }
 .fav-fold-icon { color: var(--accent); display: inline-flex; }
 .fav-fold-title { flex: 1; font-weight: 700; }
 .fav-fold .list { margin-top: 8px; }
 .fav-filters { margin: 10px -16px 2px; }
 .fav-group { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.07em; font-weight: 700; color: var(--muted); margin: 14px 2px 6px; }
+
+/* Favorites: one collapsible row per type */
+.fav-types { margin-top: 8px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); }
+.fav-type + .fav-type { border-top: 1px solid var(--line); }
+.fav-type summary { list-style: none; display: flex; align-items: center; gap: 10px; padding: 12px 14px; cursor: pointer; }
+.fav-type summary::-webkit-details-marker { display: none; }
+.fav-type summary::after {
+  content: ""; width: 7px; height: 7px; margin: 0 4px 0 6px;
+  border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted);
+  transform: rotate(-45deg); transition: transform 0.15s;
+}
+.fav-type[open] summary::after { transform: rotate(45deg) translateY(-2px); }
+.fav-type-title { flex: 1; font-weight: 650; }
+.fav-type .list { padding: 0 10px 10px; }
