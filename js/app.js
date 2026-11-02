@@ -298,7 +298,7 @@
       ${saved.length
         ? `<details class="fav-fold"${store.get("favsOpen", false) ? " open" : ""}>
             <summary><span class="fav-fold-icon">${svg(ICON.star, 20)}</span><span class="fav-fold-title">Favorites</span><span class="nav-meta">${saved.length}</span></summary>
-            <div class="list">${saved.join("")}</div>
+            <div id="fav-body">${favBody()}</div>
           </details>`
         : ""}
       <h2 class="section-label">In a conversation</h2>
@@ -313,6 +313,37 @@
       </div>
       <p class="copyright">${esc(COPYRIGHT)}</p>`;
   }
+  // Favorites grouped by type, with filter chips: All, Verses, Objections, ...
+  let favFilter = store.get("favFilter", "All");
+  function favGroups() {
+    const groups = [];
+    const add = (label, rows) => rows.length && groups.push({ label, rows });
+    // Rows without the type label, since each group already has a header
+    const verseRows = favs.filter((k) => k.startsWith("verse:")).map((k) => getVerse(k.slice(6))).filter(Boolean).map((v) => verseRow(v));
+    add("Verses", verseRows);
+    for (const s of SECTIONS) {
+      if (s.id === "verses") continue;
+      add(s.title, favs.filter((k) => k.startsWith(s.id + "/")).map((k) => getItem(s.id, k.split("/")[1])).filter(Boolean).map((it) => itemRow(s.id, it)));
+    }
+    return groups;
+  }
+  function favBody() {
+    const groups = favGroups();
+    if (!groups.some((g) => g.label === favFilter)) favFilter = "All";
+    const chipsHtml = groups.length > 1
+      ? `<div class="filters fav-filters">${["All", ...groups.map((g) => g.label)]
+          .map((l) => {
+            const n = l === "All" ? groups.reduce((a, g) => a + g.rows.length, 0) : groups.find((g) => g.label === l).rows.length;
+            return `<button class="filter${l === favFilter ? " on" : ""}" data-fav-filter="${esc(l)}">${esc(l)} ${n}</button>`;
+          })
+          .join("")}</div>`
+      : "";
+    const shown = favFilter === "All" ? groups : groups.filter((g) => g.label === favFilter);
+    return chipsHtml + shown
+      .map((g) => `${groups.length > 1 && favFilter === "All" ? `<h3 class="fav-group">${esc(g.label)}</h3>` : ""}<div class="list">${g.rows.join("")}</div>`)
+      .join("");
+  }
+
   function pageFavorites() {
     const saved = favs.map(savedRow).filter(Boolean);
     app.innerHTML = `
@@ -937,6 +968,17 @@
     if (jump) {
       const el = document.getElementById(jump.dataset.jump);
       if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 70, behavior: "smooth" });
+      return;
+    }
+    const ff = t.closest("[data-fav-filter]");
+    if (ff) {
+      favFilter = ff.dataset.favFilter;
+      store.set("favFilter", favFilter);
+      const body = document.getElementById("fav-body");
+      const x = body.querySelector(".fav-filters") ? body.querySelector(".fav-filters").scrollLeft : 0;
+      body.innerHTML = favBody();
+      const f = body.querySelector(".fav-filters");
+      if (f) f.scrollLeft = x;
       return;
     }
     const topic = t.closest("[data-topic]");
