@@ -360,11 +360,10 @@ All agree: Jesus is coming back.`,
   {
     id: "women-in-ministry",
     title: "Women in Ministry",
-    draft: true,
     summary: `Men and women are equal in worth and both gifted to serve. The role of pastor or elder is for qualified men.`,
     parts: [
       {
-        heading: "My view (draft)",
+        heading: "My view",
         body: `Men and women are equally made in God's image and equal in value and salvation ([[Genesis 1:27]], [[Galatians 3:28]]). Both are gifted and called to serve. The office of pastor or elder, the authoritative teaching and leading of the church, is given to qualified men ([[1 Timothy 2:12]], [[1 Timothy 3:1-2]]). This is about role, not worth.`,
         verses: ["Genesis 1:27", "Galatians 3:28", "1 Timothy 2:12", "1 Timothy 3:1-2"],
       },
@@ -396,11 +395,10 @@ Women can evangelize, teach women and children, lead ministries, and serve in co
   {
     id: "eternal-security",
     title: "Can You Lose Your Salvation?",
-    draft: true,
     summary: `A true believer can't lose salvation, because God keeps them. Those who fall away completely show they were never truly saved.`,
     parts: [
       {
-        heading: "My view (draft)",
+        heading: "My view",
         body: `Someone who is truly born again can't lose their salvation, because it depends on God keeping them, not on them keeping themselves ([[John 10:28-29]], [[Philippians 1:6]]). Nothing can separate us from God's love ([[Romans 8:38-39]]). The Holy Spirit is God's seal and guarantee ([[Ephesians 1:13-14]]).`,
         verses: ["John 10:28-29", "Romans 8:38-39", "Philippians 1:6", "Ephesians 1:13-14"],
       },
@@ -435,48 +433,54 @@ Women can evangelize, teach women and children, lead ministries, and serve in co
   {
     id: "election-free-will",
     title: "Election & Free Will",
-    draft: true,
-    summary: `God is sovereign and chooses His people, and every person is responsible to repent and believe. Scripture teaches both.`,
+    summary: `God genuinely wants everyone to be saved. Christ died for all, God's grace enables everyone to respond, and each person freely chooses to accept or reject Him.`,
     parts: [
       {
-        heading: "My view (draft)",
-        body: `Scripture teaches both truths, and I hold them together:
-- **God is sovereign in salvation.** He chose His people before the foundation of the world ([[Ephesians 1:4-5]], [[Romans 8:29-30]]), and no one comes to Christ unless the Father draws him ([[John 6:44]]).
-- **People are truly responsible.** God commands all people everywhere to repent ([[Acts 17:30-31]]), desires all to be saved ([[1 Timothy 2:3-4]]), and whoever calls on the Lord will be saved ([[Romans 10:13]]).
-
-I may not fully understand how they fit, but I don't have to choose one and deny the other.`,
-        verses: ["Ephesians 1:4-5", "Romans 8:29-30", "John 6:44", "1 Timothy 2:3-4", "Romans 10:13"],
+        heading: "My view",
+        body: `I lean **Arminian**:
+- **God wants everyone saved.** He isn't willing that any should perish ([[2 Peter 3:9]]) and desires all people to be saved ([[1 Timothy 2:3-4]]).
+- **Christ died for everyone,** not just the elect. He is the payment for the sins of the whole world ([[1 John 2:2]], [[John 3:16]]).
+- **God's grace comes first.** No one can come to Christ on their own ([[John 6:44]]), but Jesus draws all people ([[John 12:32]]), enabling everyone to respond.
+- **People can accept or resist.** God commands all to repent ([[Acts 17:30-31]]), and people can refuse Him ([[Matthew 23:37]], [[Acts 7:51]]).
+- **Election is based on foreknowledge.** God chose those He knew beforehand would believe ([[1 Peter 1:1-2]], [[Romans 8:29-30]]).`,
+        verses: ["2 Peter 3:9", "1 Timothy 2:3-4", "1 John 2:2", "John 12:32", "Matthew 23:37", "1 Peter 1:1-2"],
+      },
+      {
+        heading: "What about election passages?",
+        body: `Passages like [[Ephesians 1:4-5]] are real: God does choose. In this view, He chooses “in Him” (in Christ). Everyone who is in Christ by faith is chosen, and God foreknew who would be.`,
+        verses: ["Ephesians 1:4-5", "Romans 8:29-30"],
       },
       {
         heading: "Why it matters for evangelism",
-        body: `- **God's sovereignty gives confidence.** Everyone the Father gives will come ([[John 6:37]]). Our job is to be faithful, not to save anyone.
-- **Human responsibility gives urgency.** People must repent and believe, so we must tell them ([[Romans 10:14]]).
-
-Neither truth is an excuse not to share the gospel.`,
-        verses: ["John 6:37", "Romans 10:14"],
+        body: `- **Every person you meet is someone Christ died for.** The offer is real for everyone.
+- **People must respond, so we must tell them** ([[Romans 10:14]]). Whoever calls on the Lord will be saved ([[Romans 10:13]]).
+- **God still does the work.** Our job is to be faithful; the Spirit draws.`,
+        verses: ["Romans 10:14", "Romans 10:13"],
+      },
+      {
+        heading: "Fits with eternal security",
+        body: `Free will in *coming* to Christ, and God's keeping power *once* you're in Him, are held together by many Christians (including many Baptists). See {{Can You Lose Your Salvation?|convictions/eternal-security}}.`,
       },
       {
         heading: "How Christians differ",
-        body: `- **Calvinist / Reformed:** God unconditionally chooses who will be saved, and His grace is effective in them.
-- **Arminian:** God chooses those He foresees will believe; His grace enables everyone to respond, and people can resist it.
-- **Many in between,** like this view, affirm both without a full system.`,
+        body: `**Calvinist / Reformed:** God unconditionally chooses who will be saved, Christ's death secures salvation for the elect, and God's grace is irresistible in them. They read “all” in verses like 1 Timothy 2:4 as “all kinds of people,” and see God's choice as the cause of faith, not a response to it.`,
       },
       {
         heading: "If someone asks",
-        say: ["God is in control, and you're still responsible for what you do with Jesus."],
+        say: ["Jesus died for you. The question is whether you'll receive Him."],
       },
     ],
   },
+
 
   // --- Divorce & remarriage (DRAFT) ---
   {
     id: "divorce",
     title: "Divorce & Remarriage",
-    draft: true,
     summary: `Marriage is meant for life. Scripture allows divorce for adultery and abandonment by an unbelieving spouse, and remarriage in those cases.`,
     parts: [
       {
-        heading: "My view (draft)",
+        heading: "My view",
         body: `God designed marriage to be lifelong ([[Matthew 19:4-6]]) and hates divorce ([[Malachi 2:16]]). Scripture allows divorce in two cases:
 1. **Sexual immorality** by a spouse ([[Matthew 19:9]]).
 2. **Abandonment by an unbelieving spouse** ([[1 Corinthians 7:15]]).
@@ -506,11 +510,10 @@ In those cases, the innocent spouse is free to remarry. Otherwise, believers sho
   {
     id: "politics",
     title: "Politics & the Christian",
-    draft: true,
     summary: `Christians should engage as good citizens and vote by biblical values, but our hope is in Christ, not in politics.`,
     parts: [
       {
-        heading: "My view (draft)",
+        heading: "My view",
         body: `- **Respect and pray for leaders.** Government is established by God ([[Romans 13:1]]), and we're to pray for those in authority ([[1 Timothy 2:1-2]]).
 - **Engage as good citizens.** Vote, speak up, and seek the good of the place we live ([[Jeremiah 29:7]]), guided by biblical values like the sanctity of life, justice, and truth. Righteousness exalts a nation ([[Proverbs 14:34]]).
 - **Obey God first.** When the law commands sin, we obey God rather than men ([[Acts 5:29]]).
