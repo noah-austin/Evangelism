@@ -24,6 +24,7 @@ DATA.objectionCategories = [
   "Other Religions",
   "Abortion",
   "Church & Christians",
+  "About Evangelism",
 ];
 
 DATA.objections = [
@@ -1046,5 +1047,162 @@ The call is immediate abolition: equal protection under the law for every child,
 *Note: we can refine this page to match exactly how Abolitionist Rising presents it.*`,
     verses: ["Isaiah 10:1-2", "Proverbs 17:15", "Proverbs 24:11", "Acts 5:29"],
     related: ["objections/abortion"],
+  },
+
+  // --- About Evangelism ---
+  {
+    id: "keep-it-to-yourself",
+    category: "About Evangelism",
+    title: "Keep your religion to yourself",
+    sources: ["Ray Comfort", "Cliff Knechtle"],
+    oneLiner: "I get that. But if I believed you were in danger and said nothing, would that be loving?",
+    askBack: "Is there anything you think is true enough that everyone should hear it?",
+    short: `I understand why it can feel pushy. But I'm not trying to win an argument. If what Jesus said is true, everyone will stand before God one day, and I'd be a terrible friend to keep quiet about that.
+
+You're free to disagree, and I'll respect that. I'd just rather tell you and be wrong than stay silent and be right.`,
+    deep: `**Everyone shares what matters to them.** People talk freely about politics, health, sports, and causes they care about. Faith isn't the only private subject.
+
+**It defeats itself.** “Keep your beliefs to yourself” is a belief, shared out loud. See {{Suicide|skills/suicide}}.
+
+**Jesus commanded it.** We're told to go into all the world ([[Mark 16:15]]). Keeping it private would be disobedience.
+
+**Respect the person.** Ask permission, listen, and leave when they want to leave. Sharing isn't forcing. See {{“You're forcing your beliefs on me”|objections/forcing-beliefs}}.`,
+    verses: ["Mark 16:15", "Acts 4:19-20", "2 Corinthians 5:14"],
+    related: ["objections/forcing-beliefs", "skills/why-evangelize"],
+  },
+
+  {
+    id: "forcing-beliefs",
+    category: "About Evangelism",
+    title: "You're forcing your beliefs on me",
+    sources: ["Greg Koukl", "Ray Comfort"],
+    oneLiner: "I'm not forcing anything. You're free to walk away. I'm just offering you something I think is true.",
+    askBack: "What would forcing look like, compared to just telling you?",
+    short: `Forcing would mean making you believe, or punishing you if you don't. I can't do that, and I wouldn't want to. Faith has to be your own.
+
+All I'm doing is telling you what I believe and why. You get to decide what to do with it. Can I ask you one question before you go?`,
+    deep: `**Persuading isn't forcing.** Paul “persuaded men” ([[2 Corinthians 5:11]]), but he never coerced anyone. Conversation is how free people share ideas.
+
+**Turn it around gently** (Koukl): telling me not to share my view is sharing your view about what I should do. That's fine; it's what we're both doing.
+
+**Watch your tone.** If someone feels pushed, slow down, ask questions, and let them lead. Be kind, not quarrelsome ([[2 Timothy 2:24-25]]).
+
+**Know when to stop.** If they're done, thank them, offer a tract, and go. See {{Wrapping Up|openers/wrapping-up}}.`,
+    verses: ["2 Corinthians 5:11", "2 Timothy 2:24-25", "Colossians 4:5-6"],
+    related: ["objections/keep-it-to-yourself", "skills/staying-calm"],
+  },
+
+  {
+    id: "use-words-if-necessary",
+    category: "About Evangelism",
+    title: "Preach the gospel; use words if necessary",
+    sources: ["Ray Comfort", "Living Waters"],
+    oneLiner: "A good life matters, but nobody can see the gospel. It has to be told.",
+    askBack: "How would someone learn that Jesus died for their sins just by watching you?",
+    short: `I agree our lives should match what we say. But the gospel is news: Jesus died for sinners and rose again. People can see that you're kind, but they can't see that from your kindness.
+
+The Bible says faith comes from hearing ([[Romans 10:17]]). How will they hear without someone telling them?`,
+    deep: `**The quote isn't from Scripture,** and there's no record that Francis of Assisi said it. He was known as a preacher.
+
+**Faith comes by hearing** ([[Romans 10:14]], [[Romans 10:17]]). God chose the message preached to save people ([[1 Corinthians 1:21]]).
+
+**Both, not either.** Live a life that adorns the gospel ([[Matthew 5:16]]) and open your mouth. Good works without words point to *you*; words without good works sound empty.
+
+**Many good people never hear the gospel** from Christian friends who assumed their example was enough.`,
+    verses: ["Romans 10:14", "Romans 10:17", "1 Corinthians 1:21", "Matthew 5:16"],
+    related: ["skills/why-evangelize", "objections/relationship-first"],
+  },
+
+  {
+    id: "street-preaching-turns-off",
+    category: "About Evangelism",
+    title: "Street preaching doesn't work / turns people off",
+    sources: ["Ray Comfort", "Living Waters", "Cliff Knechtle"],
+    oneLiner: "Some people are turned off, but some aren't. Jesus, Peter, and Paul all preached in public, and people were saved.",
+    askBack: "Is it the message that bothers you, or the way you've seen it done?",
+    short: `Bad street preaching does turn people off: angry, condemning, or showy. But the method itself is biblical. Jesus preached on hillsides, Peter preached to a crowd and three thousand were saved, and Paul reasoned in the marketplace every day.
+
+Done with love and clarity, it reaches people who would never set foot in a church.`,
+    deep: `**It's biblical:** Noah ([[2 Peter 2:5]]), Jonah ([[Jonah 3:4]]), John the Baptist, Jesus ([[Matthew 4:17]]), Peter at Pentecost, Paul in the marketplace ([[Acts 17:17]]). See {{The Biblical Case for Evangelism|skills/why-evangelize}}.
+
+**Results belong to God.** God's Word doesn't return empty ([[Isaiah 55:11]]). One plants, another waters, God gives the growth ([[1 Corinthians 3:6]]).
+
+**It reaches people churches don't.** Many will never visit a church or read a Bible, but they'll walk past you.
+
+**Do it well:**
+- Be friendly and clear, not angry
+- Use the Law to show sin, then the cross (see {{Way of the Master|paths/way-of-the-master}})
+- Stay calm with hecklers ({{Staying Calm|skills/staying-calm}})
+- Know your rights ({{Your Rights in Public|skills/your-rights}})
+
+**Some offense is unavoidable.** The cross itself offends. Make sure it's the message that offends, not you.`,
+    verses: ["Acts 17:17", "Isaiah 55:11", "1 Corinthians 3:6", "Jonah 3:4"],
+    related: ["skills/why-evangelize", "skills/your-rights", "skills/staying-calm"],
+  },
+
+  {
+    id: "relationship-first",
+    category: "About Evangelism",
+    title: "Shouldn't you build a relationship first?",
+    sources: ["Ray Comfort", "Living Waters"],
+    oneLiner: "Relationships are great, and I share with my friends too. But Jesus and Paul also talked to strangers, and we don't know how much time anyone has.",
+    askBack: "If you knew a stranger was about to step into traffic, would you wait until you were friends to warn them?",
+    short: `It's not either-or. I want to share with people I know well. But many people I meet I'll only see once. Jesus talked to a stranger at a well, Philip ran up to a stranger in a chariot, and both conversations changed lives.
+
+Nobody is promised tomorrow, so I'd rather say something today than wait for a perfect moment that may never come.`,
+    deep: `**Strangers in Scripture:** the woman at the well ([[John 4:7]]), the Ethiopian official ([[Acts 8:36-38]]), the crowds at Pentecost, the marketplace in Athens ([[Acts 17:17]]).
+
+**Urgency:** no one knows what tomorrow brings ([[Proverbs 27:1]]). Now is the day of salvation ([[2 Corinthians 6:2]]).
+
+**Long-term friendships matter too.** Keep sharing with family and coworkers. See {{Workplace and Friends|openers/workplace-friends}}.
+
+**The danger:** “relationship first” can quietly become “relationship only,” and the gospel never comes up.`,
+    verses: ["John 4:7", "Acts 8:36-38", "Proverbs 27:1", "2 Corinthians 6:2"],
+    related: ["objections/use-words-if-necessary", "openers/workplace-friends"],
+  },
+
+  {
+    id: "why-do-you-care",
+    category: "About Evangelism",
+    title: "Why do you even care what I believe?",
+    sources: ["Ray Comfort", "Cliff Knechtle"],
+    oneLiner: "Because if this is true, your eternity is at stake, and I'd want someone to tell me.",
+    askBack: "If you saw someone's house on fire, would you knock on the door even if they were a stranger?",
+    short: `I care because I believe what the Bible says about death, judgment, and forgiveness. If I'm right, nothing matters more. If I'm wrong, you've lost five minutes.
+
+I'm not out here to win points. Someone cared enough to tell me, and I'm grateful.`,
+    deep: `**Love is the motive.** “The love of Christ controls us” ([[2 Corinthians 5:14]]). Jesus came to seek and save the lost ([[Luke 19:10]]).
+
+**The burning building:** you'd shout a warning to a stranger without asking permission first. Scripture calls us to rescue ([[Proverbs 24:11]]) and to snatch people from the fire ([[Jude 1:23]]).
+
+**The watchman:** God warned Ezekiel that silence isn't neutral ([[Ezekiel 33:8]]). See {{The Biblical Case for Evangelism|skills/why-evangelize}}.
+
+**Let them see it.** Your tone should make it obvious that you care.`,
+    verses: ["2 Corinthians 5:14", "Proverbs 24:11", "Jude 1:23", "Luke 19:10"],
+    related: ["skills/why-evangelize", "paths/way-of-the-master"],
+  },
+
+  {
+    id: "not-your-place",
+    category: "About Evangelism",
+    title: "Only pastors should do that",
+    sources: ["Ray Comfort", "Living Waters"],
+    oneLiner: "Every Christian is called to share the gospel. In Acts, ordinary believers spread it everywhere they went.",
+    askBack: "Where in the Bible does it say evangelism is only for pastors?",
+    short: `Pastors have an important role, but they aren't the only ones sent. When persecution scattered the early church, the apostles stayed in Jerusalem and ordinary believers went everywhere preaching the word ([[Acts 8:4]]).
+
+Every believer is an ambassador for Christ ([[2 Corinthians 5:20]]) and called to proclaim Him ([[1 Peter 2:9]]).`,
+    deep: `**Ordinary believers spread the gospel** in Acts 8:1-4, while the apostles stayed behind.
+
+**Every believer:**
+- An ambassador ([[2 Corinthians 5:20]])
+- A royal priesthood called to proclaim ([[1 Peter 2:9]])
+- Ready to give an answer ([[1 Peter 3:15]])
+
+**Pastors equip; believers do the work** of service ([[Ephesians 4:11-12]]).
+
+**Stay humble and teachable.** Get trained, go with others, and stay accountable to your church.`,
+    verses: ["Acts 8:4", "2 Corinthians 5:20", "1 Peter 2:9", "Ephesians 4:11-12"],
+    related: ["skills/why-evangelize", "objections/keep-it-to-yourself"],
   },
 ];

@@ -423,4 +423,111 @@ If someone is already humble and broken over their sin, go straight to grace.`,
       },
     ],
   },
+
+  // --- The Biblical Case for Evangelism ---
+  {
+    id: "why-evangelize",
+    title: "The Biblical Case for Evangelism",
+    sources: ["Ray Comfort", "Living Waters", "Cliff Knechtle"],
+    summary: `Why we share the gospel, including in public: God commands it, Scripture models it, and love compels it.`,
+    parts: [
+      {
+        heading: "We're commanded",
+        body: `- **Go into all the world** and preach the gospel ([[Mark 16:15]]).
+- **Make disciples** of all nations ([[Matthew 28:19]]).
+- **Be My witnesses,** starting where you live ([[Acts 1:8]]).
+- **Preach the word,** in season and out of season ([[2 Timothy 4:2]]).`,
+      },
+      {
+        heading: "Public preaching is biblical",
+        body: `- **Noah** was “a preacher of righteousness” to his generation ([[2 Peter 2:5]]).
+- **Jonah** cried out through the streets of Nineveh, and the city repented ([[Jonah 3:4]]).
+- **John the Baptist** preached in the wilderness to crowds.
+- **Jesus** preached repentance in public ([[Matthew 4:17]]), and the Sermon on the Mount was preached outdoors.
+- **Peter** preached to a crowd at Pentecost, and about three thousand were saved.
+- **Paul** reasoned in the marketplace every day ([[Acts 17:17]]) and taught “publicly and from house to house” ([[Acts 20:20]]).`,
+      },
+      {
+        heading: "How will they hear?",
+        body: `Faith comes from hearing the message about Christ ([[Romans 10:14]], [[Romans 10:17]]). God chose the “foolishness” of preaching to save those who believe ([[1 Corinthians 1:21]]).`,
+      },
+      {
+        heading: "The watchman",
+        body: `God told Ezekiel that a watchman who sees danger and stays silent is responsible ([[Ezekiel 33:8]]). It's a sober reminder: silence isn't neutral when people are headed for judgment.`,
+      },
+      {
+        heading: "Love is the motive",
+        body: `- “Knowing the fear of the Lord, we persuade men” ([[2 Corinthians 5:11]]).
+- “The love of Christ controls us” ([[2 Corinthians 5:14]]).
+- We are ambassadors, pleading on Christ's behalf ([[2 Corinthians 5:20]]).
+- Snatch people from the fire ([[Jude 1:23]]); rescue those headed for death ([[Proverbs 24:11]]).`,
+      },
+      {
+        heading: "Boldness, not shame",
+        body: `- When told to stop, Peter and John said, “We cannot stop speaking” ([[Acts 4:19-20]]).
+- Under threat, the church prayed for boldness, not safety ([[Acts 4:29]]).
+- The gospel is the power of God for salvation ([[Romans 1:16]]).
+- Don't be ashamed of Jesus or His words ([[Mark 8:38]]).`,
+      },
+      {
+        heading: "When other Christians question it",
+        body: `- **Be respectful.** Believers have different gifts and settings, and not everyone is called to open-air preaching.
+- **But every believer is called to share.** Ordinary Christians spread the gospel in Acts ([[Acts 8:4]]).
+- **Let your tone answer the critics.** Be gracious and clear ([[Colossians 4:5-6]]), gentle and respectful ([[1 Peter 3:15]]).
+- **Use many means** to reach people ([[1 Corinthians 9:22]]).`,
+        say: ["We may do it differently, but we're both called to tell people about Jesus."],
+      },
+      {
+        heading: "Study",
+        body: `- Ray Comfort, *Hell's Best Kept Secret*
+- Living Waters open-air preaching training
+- Cliff and Stuart Knechtle's campus Q&A videos`,
+      },
+    ],
+  },
+
+  // --- Your rights in public (US) ---
+  {
+    id: "your-rights",
+    title: "Your Rights in Public (US)",
+    sources: [],
+    summary: `General information about sharing your faith in public in the United States. This is not legal advice, and local rules vary.`,
+    parts: [
+      {
+        heading: "Public places",
+        body: `- **Public sidewalks, streets, and parks** are traditional public forums. Religious speech there is strongly protected by the First Amendment.
+- **Handing out tracts and talking with people** in these places is generally protected.
+- **Content can't be singled out.** The government generally can't restrict your speech because of its religious message.`,
+      },
+      {
+        heading: "What can be limited",
+        body: `- **Time, place, and manner rules** that are reasonable and apply to everyone equally, such as noise limits or hours.
+- **Amplified sound** (a speaker or microphone) may need a permit or have volume limits.
+- **Don't block** sidewalks, entrances, or traffic.
+- **Private property is different.** Malls, store fronts, and private parking lots belong to the owner, who can ask you to leave. Respect that.`,
+      },
+      {
+        heading: "If police approach",
+        body: `- **Stay calm and respectful.** Your demeanor matters more than winning the moment.
+- **Ask politely** what law or ordinance applies.
+- **Comply with lawful orders.** If you think an order is wrong, follow it and challenge it later, not on the spot.
+- **Record calmly** if it's allowed where you are, without interfering.
+- **Don't argue.** Thank them and move on if needed.`,
+        say: ["Officer, I want to follow the law. Can you tell me which ordinance applies here?"],
+      },
+      {
+        heading: "Be wise",
+        body: `- **Know local ordinances** before you go, especially about amplification.
+- **Go with others** when you can, and carry ID.
+- **Keep your tone gracious.** A good testimony matters more than proving your rights.
+- **Respect authority** ([[Romans 13:1]]), and be shrewd and innocent ([[Matthew 10:16]]).`,
+        verses: ["Romans 13:1", "Matthew 10:16"],
+      },
+      {
+        heading: "If you need help",
+        body: `- **Contact a religious liberty legal organization** that defends free speech for street evangelists.
+- **Keep notes and video** of what happened, with names, badge numbers, dates, and locations.`,
+      },
+    ],
+  },
 ];
