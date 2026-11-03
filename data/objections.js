@@ -227,23 +227,52 @@ But “spiritual” can mean a lot of things. If there's a God who made us, the 
   {
     id: "believe-in-god",
     category: "The Gospel & Salvation",
-    title: "I believe in God. Why do I need Jesus?",
+    title: "You don't need a relationship with Jesus",
     sources: ["Ray Comfort", "Cliff Knechtle"],
-    oneLiner: `Even the demons believe in God. Believing He exists doesn't deal with your sin. Only Jesus does.`,
+    oneLiner: `Jesus said eternal life is knowing God and Him. You can't be right with God while rejecting the One He sent to save you.`,
     askBack: `If you stood before God today, what would you say to Him about your sin?`,
     short: `Believing God exists is a good start, but the Bible says even demons believe that, and they tremble.
 
-The issue isn't whether God exists. It's that we've broken His Law and are guilty before Him. Jesus is the only one who paid for sin. That's why He said no one comes to the Father except through Him.`,
-    deep: `**Belief isn't enough** ([[James 2:19]]). The question is what we do about our guilt.
+The problem isn't whether God exists. It's that we've broken His Law and we're guilty before Him. A relationship with God isn't just a feeling. It means being forgiven and made right with Him, and Jesus is the only one who paid for sin. That's why He said no one comes to the Father except through Him.`,
+    deep: `**What “relationship” means:** It isn't religious emotion. It's being reconciled to God: forgiven, at peace with Him, and knowing Him ([[2 Corinthians 5:18-19]]). Jesus defined eternal life that way: “that they may know You, the only true God, and Jesus Christ whom You have sent” ([[John 17:3]]).
 
-**Go to the Law:** Someone who believes in God usually has a high view of themselves. Ask “Do you think you're a good person?” and walk through {{Way of the Master|paths/way-of-the-master}}.
+**Knowing about God isn't enough:** Even demons believe God exists ([[James 2:19]]). On Judgment Day many religious people will hear Jesus say, “I never knew you” ([[Matthew 7:22-23]]). Being known by Him is what matters.
 
-**One mediator:** There's one God and one go-between, Jesus ([[1 Timothy 2:5]]). He is the only way ([[John 14:6]], [[Acts 4:12]]).
+**You can't have the Father without the Son:** “He who does not honor the Son does not honor the Father who sent Him” ([[John 5:23]]). “Whoever denies the Son does not have the Father” ([[1 John 2:23]]).
 
-**Belief in the Son** ([[John 3:36]]): eternal life comes through the Son, and God's wrath remains on those who reject Him.`,
-    verses: ["James 2:19", "1 Timothy 2:5", "John 14:6", "John 3:36"],
-    related: ["paths/way-of-the-master", "objections/all-religions"],
+**One way:** There's one God and one go-between, Jesus ([[1 Timothy 2:5]]). He is the only way ([[John 14:6]], [[Acts 4:12]]).
+
+**Use the courtroom:** You can't be on good terms with the Judge while refusing the One He sent to pay your fine.
+
+**Go to the Law:** People who say they don't need Jesus usually think they're good enough. Ask “Do you think you're a good person?” and walk through {{Way of the Master|paths/way-of-the-master/2}}.`,
+    verses: ["John 17:3", "James 2:19", "Matthew 7:22-23", "John 5:23", "1 John 2:23", "John 14:6"],
+    related: ["paths/way-of-the-master", "objections/good-person", "objections/all-religions"],
   },
+  {
+    id: "just-be-decent",
+    category: "The Gospel & Salvation",
+    title: "The Bible is just a guide to being a decent person",
+    sources: ["Ray Comfort", "Living Waters"],
+    oneLiner: `If all God wanted was decent people, Jesus wouldn't have needed to die. The cross says decent isn't enough.`,
+    askBack: `Who decides what counts as decent: you, or God?`,
+    short: `The Bible does teach us how to live, but it doesn't present its commands as suggestions. It says “You shall not,” not “try not to.” And the standard isn't “don't be a jerk.” It's perfect: love God with all your heart, and keep His commandments in your heart, not just your actions.
+
+By that standard, none of us is decent enough. That's the whole point. The Bible isn't a self-help book; it's a rescue.`,
+    deep: `**Commands, not suggestions:** The Ten Commandments say “You shall not,” and Jesus said to be perfect as God is perfect ([[Matthew 5:48]]). The bar isn't “better than most people.”
+
+**The greatest commandment:** Love God with all your heart, soul, and mind ([[Matthew 22:37-38]]). No one has done that for even a day. Breaking the greatest commandment is the greatest sin.
+
+**Jesus raised the bar:** Lust is adultery of the heart ([[Matthew 5:27-28]]); hatred is murder ([[1 John 3:15]]).
+
+**Everyone thinks they're decent** ([[Proverbs 20:6]]). But we judge ourselves on a curve. God doesn't.
+
+**Not a self-improvement plan:** If being good enough could save us, Jesus died for nothing. We're saved by grace, not by our good deeds ([[Ephesians 2:8-9]], [[Titus 3:5]]). The Law shows us we can't make it on our own ([[Romans 3:20]]).
+
+**Go to the Law:** “Can I ask you a few questions to see if you'd pass God's standard?” ({{Way of the Master|paths/way-of-the-master/2}})`,
+    verses: ["Matthew 5:48", "Matthew 22:37-38", "Proverbs 20:6", "Ephesians 2:8-9", "Romans 3:20"],
+    related: ["objections/good-person", "paths/way-of-the-master"],
+  },
+
 
   // --- God & Suffering ---
   {
@@ -445,7 +474,33 @@ I'm not saying I'm better than you. I've broken God's Law too. I'm telling you w
 **Telling the truth isn't hate.** If a bridge is out, warning drivers is love.`,
     verses: ["Matthew 7:1", "Matthew 7:5", "John 7:24"],
     related: ["skills/suicide", "objections/morality-relative", "paths/way-of-the-master"],
+  },  {
+    id: "religion-evil",
+    category: "Church & Christians",
+    title: "Religion is man-made and evil",
+    sources: ["Ray Comfort", "C.S. Lewis", "Cliff Knechtle"],
+    oneLiner: `A lot of religion is man-made. Jesus agreed and was its harshest critic. Christianity isn't people reaching up to God; it's God reaching down to us.`,
+    askBack: `Is your problem with Jesus, or with people who claimed to follow Him?`,
+    short: `I agree that people have done terrible things in the name of religion, and Jesus condemned religious hypocrites more strongly than anyone.
+
+But every man-made religion says “do this to earn God's favor.” The gospel says Jesus did it for us, because we can't. And when people do evil in Jesus' name, they're disobeying Him, not following Him. The question isn't what religious people have done. It's what you'll do with Jesus.`,
+    deep: `**Jesus against man-made religion:** He called the religious leaders “whitewashed tombs” ([[Matthew 23:27-28]]) and condemned “teaching as doctrines the precepts of men” ([[Mark 7:6-7]]).
+
+**Religion says “do,” the gospel says “done”:** Man-made religion tries to earn God's approval. The gospel says no one can, so God provided a Savior ([[Ephesians 2:8-9]]).
+
+**Counterfeits prove the real thing:** People who did evil in Jesus' name broke His commands. A counterfeit $20 bill doesn't make real money worthless.
+
+**Evil comes from the heart, not just religion:** The 20th century's officially atheist regimes (like Stalin's and Mao's) killed millions. The problem is the human heart ([[Jeremiah 17:9]]), including mine and yours. That's why we need a new heart, not a better religion.
+
+**Calling it “evil” needs a standard:** If there's no God, “evil” is just an opinion. See {{The Moral Argument|evidence/moral-law}}.
+
+**What real faith does:** Pure religion cares for orphans and widows ([[James 1:27]]). Christians led the way in founding hospitals, caring for the poor, and ending the slave trade.
+
+**Go to the Law:** “Since we both agree people do evil, can I ask about you? Have you ever lied?” ({{Way of the Master|paths/way-of-the-master/3}})`,
+    verses: ["Matthew 23:27-28", "Mark 7:6-7", "Jeremiah 17:9", "James 1:27", "Ephesians 2:8-9"],
+    related: ["objections/hypocrites", "objections/hurt-by-church", "evidence/moral-law", "paths/way-of-the-master"],
   },
+
 
   // --- THE BIBLE ---
   {
@@ -453,28 +508,69 @@ I'm not saying I'm better than you. I've broken God's Law too. I'm telling you w
     category: "The Bible",
     title: "The Bible has been changed",
     sources: ["Lee Strobel", "Greg Koukl"],
-    oneLiner: "It's not a game of telephone. Modern Bibles are translated straight from thousands of ancient copies.",
-    askBack: "Which part do you think was changed, and how do you know?",
-    short: `We don't translate a translation of a translation. Translators work from the original languages, and we have more ancient copies of the New Testament than of any other ancient book: over 5,000 in Greek alone.
+    oneLiner: "It's not a game of telephone. We have thousands of ancient copies, and they show us what was originally written.",
+    askBack: "Who do you think changed it, and when?",
+    short: `We don't translate a translation of a translation. Translators work from the original Hebrew and Greek, and we have more ancient copies of the New Testament than of any other ancient book: over 5,000 in Greek alone, spread across the ancient world.
 
-By comparing them, scholars can see where copies differ. Most differences are spelling or word order, and none changes a core teaching. And “You shall not lie” reads the same in every copy. Have you ever lied?`,
-    deep: `**Not a telephone game:** In telephone, there's one line of messages and you can only hear the last person. With the Bible, there are many independent copies spread across different regions. Comparing them lets scholars reconstruct the original with great confidence.
+Nobody could have gathered them all up and changed them. Comparing them, scholars can see where copies differ, and the differences are mostly spelling and word order. None changes a core teaching. And “You shall not lie” reads the same in every copy. Have you ever lied?`,
+    deep: `**Ask first** ({{Columbo|skills/columbo}}): “Who changed it? When? What did it say before?” Most people have heard the claim but can't name a single example.
+
+**Not a telephone game:** Telephone has one line of messages, and you only hear the last person. The Bible was copied in many places at once, in many independent lines. Comparing them lets scholars reconstruct the original with great confidence.
+
+**No one was in control:** By the early 100s, copies of the New Testament were spread from Rome to Egypt to Syria, in several languages. No person, church, or emperor could have collected them all and edited them the same way.
 
 **The numbers (approximate):**
 - Over 5,000 Greek New Testament manuscripts, plus thousands more in early translations (Latin, Syriac, Coptic)
 - Complete New Testaments survive from the 300s (Codex Sinaiticus, Codex Vaticanus)
-- Most other ancient works survive in a handful of copies, often written many centuries after the original
+- Early church leaders quoted the New Testament so often that most of it could be pieced together from their quotes alone
+- Most other ancient works survive in a handful of copies, often from many centuries after they were written
 
-**The Old Testament:** The Dead Sea Scrolls (found 1947) include a copy of Isaiah about 1,000 years older than the copies we had before, and it is remarkably close to them.
+**The Old Testament:** The Dead Sea Scrolls (found in 1947) include a copy of Isaiah about 1,000 years older than the copies we had before, and it reads almost exactly the same.
 
-**What about variants?** Most are misspellings, word order, or obvious copying slips. The few meaningful ones are noted in the footnotes of most modern Bibles. No core doctrine depends on a disputed passage.
+**What about the differences?** Most are spelling, word order, or obvious copying slips. The few that matter are listed in the footnotes of most Bibles. No core teaching depends on a disputed passage.
 
-**Steer back:** The bigger question isn't whether the Bible was changed. It's whether it's right about you. “You shall not lie” reads the same in every manuscript. Move to the Law ({{Way of the Master|paths/way-of-the-master}}).
+**“The Council of Nicaea changed it” or “they removed books”:** Nicaea (AD 325) dealt with who Jesus is, not which books belong in the Bible. The “lost gospels” (like the Gospel of Thomas) were written a century or more after the apostles and were never accepted by the early church.
 
-**Study:** *The Case for Christ*, chapter on the documentary evidence (Strobel's interview with Bruce Metzger). See also {{Is the Bible reliable?|evidence/bible-reliability}}.`,
-    verses: ["Isaiah 40:8", "Matthew 24:35", "Luke 1:3-4"],
-    related: ["evidence/bible-reliability", "paths/way-of-the-master"],
+**If someone changed it, they did a bad job:** They left in Peter denying Jesus, the disciples doubting and running away, and women as the first witnesses of the resurrection. People editing a story to look good leave those out.
+
+**God keeps His Word** ([[Isaiah 40:8]], [[Psalm 12:6-7]], [[Matthew 24:35]]).
+
+**Steer back:** The bigger question isn't whether the Bible was changed. It's whether it's right about you. Move to the Law ({{Way of the Master|paths/way-of-the-master}}).
+
+**Study:** *The Case for Christ*, chapter on the documentary evidence (Strobel's interview with Bruce Metzger). See also {{Has the Bible Been Changed?|evidence/bible-reliability}}.`,
+    verses: ["Isaiah 40:8", "Psalm 12:6-7", "Matthew 24:35", "Luke 1:3-4"],
+    related: ["objections/translations", "evidence/bible-reliability", "paths/way-of-the-master"],
   },
+  {
+    id: "translations",
+    category: "The Bible",
+    title: "Translations aren't accurate",
+    sources: ["Lee Strobel", "Greg Koukl"],
+    oneLiner: "Every major translation goes straight back to the Hebrew and Greek. Line them up side by side and they say the same thing.",
+    askBack: "Have you compared a few translations yourself? Where do they disagree?",
+    short: `Modern Bibles aren't a translation of a translation. Teams of scholars translate directly from the original Hebrew and Greek, checking each other's work.
+
+Translations differ in wording, not in message. Some go word for word, some go thought for thought, but on who God is, what sin is, and what Jesus did, they all agree. “You shall not steal” means the same thing in every one of them.`,
+    deep: `**Not a translation of a translation:** English Bibles are translated from the original languages, using the oldest and best manuscripts, not from earlier English versions.
+
+**Why translations differ:**
+- **Word for word** (NASB, ESV, KJV): stays as close as possible to the original wording
+- **Thought for thought** (NIV, NLT): puts the meaning in natural modern English
+- Different words, same message. No major translation changes a core teaching.
+
+**Check it yourself:** Free tools like Bible Gateway let anyone compare translations side by side, and interlinear Bibles show the Hebrew or Greek under each English word. Nothing is hidden.
+
+**Translation is biblical:** In Nehemiah's day, God's law was read “translating to give the sense so that they understood” ([[Nehemiah 8:8]]). Jesus and the apostles often quoted the Septuagint, a Greek translation of the Old Testament, and still called it Scripture.
+
+**God keeps His Word** ([[Isaiah 40:8]], [[Psalm 12:6-7]]).
+
+**Steer back:** “Every translation agrees on the Ten Commandments. Can I ask how you've done with them?” ({{Way of the Master|paths/way-of-the-master/3}})
+
+**Study:** See {{The Bible has been changed|objections/bible-changed}} and {{Has the Bible Been Changed?|evidence/bible-reliability}}.`,
+    verses: ["Nehemiah 8:8", "Isaiah 40:8", "Psalm 12:6-7"],
+    related: ["objections/bible-changed", "evidence/bible-reliability", "paths/way-of-the-master"],
+  },
+
 
   {
     id: "bible-contradictions",
