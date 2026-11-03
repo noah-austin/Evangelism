@@ -569,4 +569,54 @@ In those cases, the innocent spouse is free to remarry. Otherwise, believers sho
       },
     ],
   },
+
+  // --- The Flood (DRAFT: confirm "My view") ---
+  {
+    id: "flood",
+    title: "Noah's Flood",
+    category: "Scripture & Creation",
+    draft: true,
+    summary: `The flood was a real, worldwide judgment that covered the whole earth, and the ark was big enough to carry every kind of land animal God sent.`,
+    parts: [
+      {
+        heading: "My view",
+        body: `The flood in Noah's day covered the whole earth, not just one region. It's what the text says, Jesus and Peter treated it as real history, and God's promise afterward only makes sense if it was global.`,
+        verses: ["Genesis 7:19-20", "Genesis 7:21-23", "Genesis 9:11", "2 Peter 3:5-6"],
+      },
+      {
+        heading: "Why global",
+        body: `- **The mountains were covered:** “all the high mountains everywhere under the heavens” ([[Genesis 7:19-20]]). Water seeks its own level; it can't cover mountains in one region only.
+- **All life outside the ark died** ([[Genesis 7:21-23]]).
+- **It lasted about a year:** the water rose for 150 days before receding ([[Genesis 8:3-4]]), with water from below as well as above ([[Genesis 7:11]]).
+- **Why build an ark at all?** For a regional flood, God could have told Noah and the animals to move. A huge ark makes no sense for a local flood.
+- **God's promise:** never again “a flood to destroy the earth” ([[Genesis 9:11]]). Regional floods happen every year, so the promise only holds if the flood was global.
+- **Jesus and Peter treated it as worldwide:** the flood “took them all away” ([[Matthew 24:37-39]]); “the world at that time was destroyed” ([[2 Peter 3:5-6]]).`,
+      },
+      {
+        heading: "Could the ark hold them?",
+        body: `- **It was huge:** about 450 feet long, 75 wide, and 45 high ([[Genesis 6:15]]), roughly 1.5 million cubic feet, with three decks.
+- **“Kinds,” not species** ([[Genesis 6:19-20]]): one pair of the dog kind could later produce wolves, coyotes, and foxes. Creationist researchers estimate about 1,400 kinds, fewer than 7,000 animals. Even higher estimates (like John Woodmorappe's study) come to about 16,000.
+- **Most animals are small:** the average land animal is about the size of a sheep, and God could have sent young animals, which are smaller and eat less.
+- **Not everything needed to be aboard:** sea creatures didn't, and the text focuses on land animals with “the breath of the spirit of life” ([[Genesis 7:21-23]]).
+- **The result:** the animals fit in a fraction of the space, with room for food, water, and people.`,
+        verses: ["Genesis 6:15", "Genesis 6:19-20"],
+      },
+      {
+        heading: "Why it matters",
+        body: `- **Judgment is real.** Jesus used the flood to warn that judgment will come suddenly ([[Matthew 24:37-39]]).
+- **Salvation is one door.** Eight people were brought safely through in the ark ([[1 Peter 3:20]]), a picture of being safe in Christ.
+- **Faith takes God at His word,** as Noah did ([[Hebrews 11:7]]).`,
+        verses: ["1 Peter 3:20", "Hebrews 11:7"],
+      },
+      {
+        heading: "How Christians differ",
+        body: `Some Christians, mostly those who hold an old earth, believe the flood was regional: it covered the whole region where people lived. They point out that “all the earth” can sometimes mean the known world, as when “all the earth” came to Egypt for grain ([[Genesis 41:57]]). They still affirm the flood as a real judgment. The question is whether that reading fits this passage's covered mountains, year-long flood, and global promise.`,
+        verses: ["Genesis 41:57"],
+      },
+      {
+        heading: "If someone asks",
+        say: ["I take it as written: it covered the whole earth. Otherwise, why build an ark instead of just moving?"],
+      },
+    ],
+  },
 ];
