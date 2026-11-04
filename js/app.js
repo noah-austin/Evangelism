@@ -315,7 +315,7 @@
       </div>
       <h2 class="section-label">Prepare</h2>
       <div class="nav-list">
-        ${navRow("#/practice", ICON.practice, "Practice", "Verse flashcards and objection drills", "")}
+        ${navRow("#/practice", ICON.practice, "Practice", "Flashcards, objection and Columbo drills", "")}
         ${group("prep")}
       </div>
       <p class="copyright">${esc(COPYRIGHT)}</p>`;
@@ -627,7 +627,12 @@
     b[key] = box;
     store.set("practice", b);
   }
+  const CLAIM_DECKS = { "Self-defeating": (c) => c.selfDefeating, "Clarify first": (c) => !c.selfDefeating };
   function deckCards(kind, deck) {
+    if (kind === "claims") {
+      const list = deck === "All" ? D.claims || [] : (D.claims || []).filter(CLAIM_DECKS[deck] || (() => false));
+      return list.map((c) => ({ key: "c:" + c.id, claim: c }));
+    }
     if (kind === "verses") {
       const list =
         deck === "All" ? D.verses : deck === "Favorites" ? D.verses.filter((v) => isFav("verse:" + v.ref)) : D.verses.filter((v) => v.topics.includes(deck));
@@ -658,7 +663,7 @@
   let practiceState = {};
   function pagePractice(kind, deck) {
     if (!kind) return pagePracticeMenu();
-    if (kind !== "verses" && kind !== "objections") return pageNotFound();
+    if (!["verses", "objections", "claims"].includes(kind)) return pageNotFound();
     deck = deck || "All";
     const cards = deckCards(kind, deck);
     practiceState = { kind, deck, cards, current: null, last: null, revealed: false, reviewed: 0, right: 0 };
@@ -675,7 +680,7 @@
         }
       }
     } catch (e) {}
-    const title = kind === "verses" ? "Verse Flashcards" : "Objection Drill";
+    const title = { verses: "Verse Flashcards", objections: "Objection Drill", claims: "Columbo Drill" }[kind];
     app.innerHTML = `
       <p class="kicker">${esc(deck === "All" ? "All" : deck)}</p>
       <h1 class="page-title">${title}</h1>
@@ -704,6 +709,9 @@
       <div class="list">${deckList("verses", ["All", "Favorites", ...D.verseTopics])}</div>
       <h2 class="section-label">Objection drill</h2>
       <div class="list">${deckList("objections", ["All", "Favorites", ...(D.objectionCategories || [])])}</div>
+      <h2 class="section-label">Columbo drill</h2>
+      <p class="summary">See a claim, then say the question you'd ask back.</p>
+      <div class="list">${deckList("claims", ["All", ...Object.keys(CLAIM_DECKS)])}</div>
       <button class="text-btn" data-reset-practice>Reset practice progress</button>`;
     return { title: "Practice" };
   }
@@ -758,6 +766,11 @@
       front = dir === "ref" ? refHtml + `<p class="card-hint">Say the verse</p>` : textHtml + `<p class="card-hint">Name the reference</p>`;
       const extra = `${v.tag ? `<p class="card-tag">${esc(v.tag)}</p>` : ""}${v.note ? `<p class="card-note">${inline(v.note)}</p>` : ""}`;
       back = (dir === "ref" ? textHtml : refHtml) + extra;
+    } else if (kind === "claims") {
+      const c = current.claim;
+      front = `<p class="card-hint">${c.selfDefeating ? "Self-defeating" : "Clarify first"}</p><p class="card-ref">“${esc(c.claim)}”</p><p class="card-hint">What would you ask?</p>`;
+      back = `${boxes("ask", "Ask", c.ask)}<p class="card-note">${inline(c.why)}</p>
+        ${c.next ? `<a class="ilink" href="#/${c.next}">Open the full answer</a>` : ""}`;
     } else {
       const o = current.obj;
       front = `<p class="card-hint">${esc(o.category || "")}</p><p class="card-ref">“${esc(o.title)}”</p><p class="card-hint">What would you say?</p>`;

@@ -2,7 +2,7 @@
 // With signal: always load the latest files from the site (and save a copy).
 // Without signal (or if the site takes too long): use the saved copy.
 // Bump VERSION when adding or renaming files.
-const VERSION = "v32";
+const VERSION = "v33";
 const CACHE = "field-guide-" + VERSION;
 const FILES = [
   "./",
@@ -14,6 +14,7 @@ const FILES = [
   "data/talking.js",
   "data/objections.js",
   "data/skills.js",
+  "data/claims.js",
   "data/evidence.js",
   "data/openers.js",
   "data/worldviews.js",

@@ -570,12 +570,11 @@ In those cases, the innocent spouse is free to remarry. Otherwise, believers sho
     ],
   },
 
-  // --- The Flood (DRAFT: confirm "My view") ---
+  // --- The Flood ---
   {
     id: "flood",
     title: "Noah's Flood",
     category: "Scripture & Creation",
-    draft: true,
     summary: `The flood was a real, worldwide judgment that covered the whole earth, and the ark was big enough to carry every kind of land animal God sent.`,
     parts: [
       {
