@@ -1,6 +1,6 @@
 // CONVERSATION SKILLS: tactics for steering conversations
 //
-// Same format as paths: title, sources, summary, and parts
+// Same format as paths: title, category, sources, summary, and parts
 // (heading, say, ask, body, verses, branches).
 
 window.DATA = window.DATA || {};
@@ -8,6 +8,7 @@ window.DATA = window.DATA || {};
 DATA.skills = [
   {
     id: "ambassador-model",
+    category: "Mindset",
     title: "The Ambassador Model",
     sources: ["Greg Koukl"],
     summary: `We represent Christ to people who don't know Him yet ([[2 Corinthians 5:20]]). A good ambassador needs three things: **knowledge**, **wisdom**, and **character**. This is the big picture behind every other skill here.`,
@@ -36,6 +37,7 @@ DATA.skills = [
 
   {
     id: "stone-in-shoe",
+    category: "Mindset",
     title: "The Goal: A Stone in Their Shoe",
     sources: ["Greg Koukl"],
     summary: `You don't have to win the argument or close the deal. Aim to leave them with one good thing to think about, something that keeps bugging them after you leave.`,
@@ -63,6 +65,7 @@ DATA.skills = [
 
   {
     id: "columbo",
+    category: "Asking Questions",
     title: "Columbo",
     sources: ["Greg Koukl"],
     summary: `Stay in the driver's seat by asking questions, like the TV detective who always had “just one more thing.” Three questions, used in order.`,
@@ -98,6 +101,7 @@ DATA.skills = [
 
   {
     id: "suicide",
+    category: "Asking Questions",
     title: "Suicide (Self-Defeating Claims)",
     sources: ["Greg Koukl"],
     summary: `Some claims defeat themselves: they fail their own standard. Spot them, then point it out gently with a question.`,
@@ -110,7 +114,7 @@ DATA.skills = [
 - **“Only science can tell us what's true.”** Can science prove that statement?
 - **“You can't know anything about God.”** Then how do you know that about God?
 
-See the full list: {{Self-Defeating Claims|skills/self-defeating-claims}}.`,
+See the full list: {{Self-Defeating Claims List|skills/self-defeating-claims}}.`,
       },
       {
         heading: "Tone",
@@ -125,6 +129,7 @@ See the full list: {{Self-Defeating Claims|skills/self-defeating-claims}}.`,
 
   {
     id: "taking-the-roof-off",
+    category: "Asking Questions",
     title: "Taking the Roof Off",
     sources: ["Greg Koukl"],
     summary: `Take their view seriously and follow it to its logical end. If the result is something they can't accept, the view has a problem.`,
@@ -151,6 +156,7 @@ See the full list: {{Self-Defeating Claims|skills/self-defeating-claims}}.`,
 
   {
     id: "steamroller",
+    category: "Hard Moments",
     title: "Steamroller",
     sources: ["Greg Koukl"],
     summary: `For someone who keeps interrupting, piles on objections, and won't let you finish.`,
@@ -178,6 +184,7 @@ See the full list: {{Self-Defeating Claims|skills/self-defeating-claims}}.`,
 
   {
     id: "rhodes-scholar",
+    category: "Asking Questions",
     title: "Rhodes Scholar",
     sources: ["Greg Koukl"],
     summary: `For “Experts say…” or “Scientists have proven…”. An expert's opinion is only as good as the reasons behind it.`,
@@ -205,6 +212,7 @@ See the full list: {{Self-Defeating Claims|skills/self-defeating-claims}}.`,
 
   {
     id: "using-the-law",
+    category: "Sharing the Gospel",
     title: "Using the Law Well",
     sources: ["Ray Comfort", "Living Waters"],
     summary: `The Ten Commandments show people their sin so that grace makes sense. **Law to the proud, grace to the humble.** Used badly, the Law sounds harsh; used well, it speaks to the conscience.`,
@@ -250,6 +258,7 @@ If someone is already humble and broken over their sin, go straight to grace.`,
 
   {
     id: "knechtle-questions",
+    category: "Asking Questions",
     title: "Questions to Ask",
     sources: ["Cliff Knechtle", "Stuart Knechtle"],
     summary: `Get people thinking about their own worldview. Listen well, then answer directly from Scripture.`,
@@ -287,6 +296,7 @@ If someone is already humble and broken over their sin, go straight to grace.`,
 
   {
     id: "listening-well",
+    category: "Asking Questions",
     title: "Listening Well",
     sources: ["Cliff Knechtle", "Stuart Knechtle"],
     summary: `People listen to you after they feel heard. Listening also tells you which question they're really asking.`,
@@ -320,6 +330,7 @@ If someone is already humble and broken over their sin, go straight to grace.`,
 
   {
     id: "staying-calm",
+    category: "Hard Moments",
     title: "Staying Calm Under Fire",
     sources: ["Ray Comfort", "Cliff Knechtle"],
     summary: `Hostility, mockery, and hecklers come with the territory. Your calm answer may matter more than your argument.`,
@@ -361,6 +372,7 @@ If someone is already humble and broken over their sin, go straight to grace.`,
 
   {
     id: "handing-out-tracts",
+    category: "Sharing the Gospel",
     title: "Handing Out Tracts",
     sources: ["Living Waters", "Ray Comfort"],
     summary: `Tracts start conversations and keep working after you leave. Living Waters' tracts are designed to get attention and lead to the Law and the gospel.`,
@@ -396,6 +408,7 @@ If someone is already humble and broken over their sin, go straight to grace.`,
 
   {
     id: "dont-know-answer",
+    category: "Hard Moments",
     title: "When You Don't Know the Answer",
     sources: ["Greg Koukl"],
     summary: `It will happen. That's fine. Honesty builds trust, and a good question can still keep the conversation going.`,
@@ -429,6 +442,7 @@ If someone is already humble and broken over their sin, go straight to grace.`,
   // --- The Biblical Case for Evangelism ---
   {
     id: "why-evangelize",
+    category: "Mindset",
     title: "The Biblical Case for Evangelism",
     sources: ["Ray Comfort", "Living Waters", "Cliff Knechtle"],
     summary: `Why we share the gospel, including in public: God commands it, Scripture models it, and love compels it.`,
@@ -491,6 +505,7 @@ If someone is already humble and broken over their sin, go straight to grace.`,
   // --- Your rights in public (US) ---
   {
     id: "your-rights",
+    category: "Hard Moments",
     title: "Your Rights in Public (US)",
     sources: [],
     summary: `General information about sharing your faith in public in the United States. This is not legal advice, and local rules vary.`,

@@ -37,6 +37,8 @@
 
   // ── Sections ────────────────────────────────────────
   const SECTIONS = [
+    { id: "openers", group: "use", title: "Openers & Wrap-Up", blurb: "How to start, steer, and finish",
+      intro: "Ways to start a conversation, turn it toward spiritual things, and end it well." },
     { id: "paths", group: "use", title: "Gospel Path", blurb: "Way of the Master and Romans Road",
       intro: "Step-by-step ways to share the gospel. Way of the Master is the main path; tap “Start conversation mode” to follow it live." },
     { id: "talking", group: "use", title: "Talking Paths", blurb: "Step by step for “I'm an atheist,” “I'm Muslim,” and more",
@@ -45,8 +47,6 @@
       intro: "Each answer starts with one line to say and a question to ask back. Open the 30-second answer or deeper study when you have time." },
     { id: "verses", group: "use", title: "Quick Verses", blurb: "Key verses by topic, NASB 1995",
       intro: "Tap any verse for the full text and a note on how to use it. Star the ones you use most." },
-    { id: "openers", group: "use", title: "Openers & Wrap-Up", blurb: "How to start, steer, and finish",
-      intro: "Ways to start a conversation, turn it toward spiritual things, and end it well." },
     { id: "skills", group: "prep", title: "Conversation Skills", blurb: "Tactics, good questions, and tone",
       intro: "How to keep a conversation friendly and on track: asking good questions, handling pushback, and using the Law well." },
     { id: "evidence", group: "prep", title: "Reasons to Believe", blurb: "Resurrection, the Bible, creation",
@@ -396,6 +396,7 @@
   const CATEGORY_ORDER = {
     objections: D.objectionCategories || [],
     talking: ["Doubting God", "Other Faiths", "Christians", "Issues"],
+    skills: ["Mindset", "Asking Questions", "Sharing the Gospel", "Hard Moments"],
     convictions: ["Scripture & Creation", "Salvation", "Church & Christian Living", "Ethics & Society", "Last Things"],
   };
 
@@ -663,8 +664,8 @@
   let practiceState = {};
   function pagePractice(kind, deck) {
     if (!kind) return pagePracticeMenu();
-    if (!["verses", "objections", "claims"].includes(kind)) return pageNotFound();
-    deck = deck || "All";
+    if (!DRILLS[kind]) return pageNotFound();
+    if (!deck) return pageDeckMenu(kind);
     const cards = deckCards(kind, deck);
     practiceState = { kind, deck, cards, current: null, last: null, revealed: false, reviewed: 0, right: 0 };
     // Coming back to the same deck (e.g. after "Open the full answer")
@@ -680,7 +681,7 @@
         }
       }
     } catch (e) {}
-    const title = { verses: "Verse Flashcards", objections: "Objection Drill", claims: "Columbo Drill" }[kind];
+    const title = DRILLS[kind].title;
     app.innerHTML = `
       <p class="kicker">${esc(deck === "All" ? "All" : deck)}</p>
       <h1 class="page-title">${title}</h1>
@@ -690,30 +691,44 @@
     renderCard();
     return { title };
   }
+  const DRILLS = {
+    verses: { title: "Verse Flashcards", blurb: "See a reference, say the verse (or the reverse)", decks: () => ["All", "Favorites", ...D.verseTopics] },
+    objections: { title: "Objection Drill", blurb: "Hear an objection, give your answer", decks: () => ["All", "Favorites", ...(D.objectionCategories || [])] },
+    claims: { title: "Columbo Drill", blurb: "Hear a claim, ask the right question back", decks: () => ["All", ...Object.keys(CLAIM_DECKS)] },
+  };
+  function deckRow(kind, d) {
+    const cards = deckCards(kind, d);
+    if (!cards.length && d !== "Favorites") return "";
+    return `<a class="row" href="#/practice/${kind}/${encodeURIComponent(d)}">
+      <span class="row-main"><span class="row-title">${esc(d)}</span>
+      <span class="row-sub">${cards.length ? `${knownCount(cards)} of ${cards.length} learned` : "Star some first"}</span></span>
+      ${progressRing(cards.length ? knownCount(cards) / cards.length : 0)}${chevron}</a>`;
+  }
   function pagePracticeMenu() {
-    const deckList = (kind, decks) =>
-      decks
-        .map((d) => {
-          const cards = deckCards(kind, d);
-          if (!cards.length && d !== "Favorites") return "";
-          return `<a class="row" href="#/practice/${kind}/${encodeURIComponent(d)}">
-            <span class="row-main"><span class="row-title">${esc(d)}</span>
-            <span class="row-sub">${cards.length ? `${knownCount(cards)} of ${cards.length} learned` : "Star some first"}</span></span>
-            ${progressRing(cards.length ? knownCount(cards) / cards.length : 0)}${chevron}</a>`;
-        })
-        .join("");
+    const rows = Object.entries(DRILLS)
+      .map(([kind, d]) => {
+        const cards = deckCards(kind, "All");
+        return `<a class="row" href="#/practice/${kind}">
+          <span class="row-main"><span class="row-title">${esc(d.title)}</span>
+          <span class="row-sub">${esc(d.blurb)}. ${knownCount(cards)} of ${cards.length} learned.</span></span>
+          ${progressRing(cards.length ? knownCount(cards) / cards.length : 0)}${chevron}</a>`;
+      })
+      .join("");
     app.innerHTML = `
       <h1 class="page-title">Practice</h1>
       <p class="summary">Say your answer out loud, then check it. Cards you miss come back more often.</p>
-      <h2 class="section-label">Verse flashcards</h2>
-      <div class="list">${deckList("verses", ["All", "Favorites", ...D.verseTopics])}</div>
-      <h2 class="section-label">Objection drill</h2>
-      <div class="list">${deckList("objections", ["All", "Favorites", ...(D.objectionCategories || [])])}</div>
-      <h2 class="section-label">Columbo drill</h2>
-      <p class="summary">See a claim, then say the question you'd ask back.</p>
-      <div class="list">${deckList("claims", ["All", ...Object.keys(CLAIM_DECKS)])}</div>
+      <div class="list">${rows}</div>
       <button class="text-btn" data-reset-practice>Reset practice progress</button>`;
     return { title: "Practice" };
+  }
+  function pageDeckMenu(kind) {
+    const d = DRILLS[kind];
+    app.innerHTML = `
+      <p class="kicker">Practice</p>
+      <h1 class="page-title">${esc(d.title)}</h1>
+      <p class="summary">${esc(d.blurb)}. Pick a deck.</p>
+      <div class="list">${d.decks().map((x) => deckRow(kind, x)).join("")}</div>`;
+    return { title: d.title };
   }
   function progressRing(frac) {
     const c = 2 * Math.PI * 9;

@@ -2,7 +2,7 @@
 //
 // Common claims and the first question to ask back. Used in two places:
 //   - Practice > Columbo drill (see the claim, come up with the question)
-//   - Conversation Skills > Self-Defeating Claims (the selfDefeating ones)
+//   - Conversation Skills > Self-Defeating Claims List (the selfDefeating ones)
 //
 // Each claim:
 //   id:            short id
@@ -229,7 +229,8 @@ DATA.claims = [
   const list = DATA.claims.filter((c) => c.selfDefeating);
   const page = {
     id: "self-defeating-claims",
-    title: "Self-Defeating Claims",
+    title: "Self-Defeating Claims List",
+    category: "Asking Questions",
     sources: ["Greg Koukl"],
     summary: `Claims that fail their own standard. Ask the question back, kindly, and let them see it. To drill these, try the {{Columbo drill|practice/claims/All}}.`,
     parts: list.map((c) => ({
