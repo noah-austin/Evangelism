@@ -49,15 +49,15 @@
       intro: "Each page has two tabs: Background (what they believe) and Conversation (how a talk usually goes)." },
     { id: "answers", group: "learn", title: "Answers", blurb: "Objections and claims, with what to say and ask",
       intro: "Everything people say back, in one place. Each answer starts with a line to say and a question to ask." },
-    { id: "objections", group: "hidden", title: "Objections", blurb: "What to say when they push back",
+    { id: "objections", group: "hidden", title: "Answers", blurb: "What to say when they push back",
       intro: "Each answer starts with one line to say and a question to ask back. Open the 30-second answer or deeper study when you have time." },
     { id: "verses", group: "lookup", title: "Quick Verses", blurb: "Key verses by topic, NASB 1995",
       intro: "Tap any verse for the full text and a note on how to use it. Star the ones you use most." },
     { id: "skills", group: "learn", title: "Conversation Skills", blurb: "Tactics, good questions, and tone",
       intro: "How to keep a conversation friendly and on track: asking good questions, handling pushback, and using the Law well." },
     { id: "evidence", group: "learn", title: "Reasons to Believe", blurb: "Resurrection, the Bible, creation",
-      intro: "The positive case for Christianity, to study ahead of time. Objections answer what they say in the moment; this is the deeper evidence behind those answers." },
-    { id: "worldviews", group: "hidden", title: "Worldview Notes", blurb: "Atheists, Muslims, Mormons, and more",
+      intro: "The positive case for Christianity, to study ahead of time. Answers cover what people say in the moment; this is the deeper evidence behind them." },
+    { id: "worldviews", group: "hidden", title: "People", blurb: "Atheists, Muslims, Mormons, and more",
       intro: "What different groups believe, where they differ from the gospel, and good questions to ask." },
     { id: "convictions", group: "learn", title: "My Convictions", blurb: "Where I stand on key topics, and why",
       intro: "My positions on topics like creation, baptism, and sexuality, worked out from Scripture. Each page has my view, the key verses, how other Christians see it, and a short way to explain it." },
@@ -311,7 +311,6 @@
     const mix = deckCards("mix", "Today");
     const today = store.get("todayDone", {})[new Date().toDateString()] || 0;
     body.innerHTML = `
-      <p class="notice">Preview of the new layout. Nothing on your real site has changed.</p>
       <a class="hero" href="#/practice/mix/Today">
         <span class="hero-icon">${svg(ICON.practice, 26, 2)}</span>
         <span class="row-main"><span class="hero-title">Today's practice</span>
@@ -388,8 +387,13 @@
     const partsText = (parts) =>
       (parts || []).map((p) => [p.heading, ...asList(p.say), ...asList(p.ask), p.body, ...(p.verses || []), ...(p.branches || []).map((b) => b.if)].join(" ")).join(" ");
     for (const s of SECTIONS) {
+      if (s.id === "worldviews" || s.id === "answers") continue; // same items as People and Objections
       for (const item of itemsOf(s.id)) {
-        const text = [item.title, item.category, item.summary, item.oneLiner, item.askBack, item.short, item.deep, ...(item.verses || []), ...(item.sources || []), partsText(item.parts)].join(" ");
+        // A person's talking path is searched as part of their People page
+        if (s.id === "talking" && D.people.some((x) => x.talk === item.id)) continue;
+        const talk = s.id === "people" ? getItem("talking", item.talk) : null;
+        const text = [item.title, item.category, item.summary, item.oneLiner, item.askBack, item.short, item.deep, ...(item.verses || []), ...(item.sources || []), partsText(item.parts),
+          talk ? [talk.title, talk.summary, partsText(talk.parts)].join(" ") : ""].join(" ");
         idx.push({ sec: s.id, item, hay: text.toLowerCase(), titleHay: item.title.toLowerCase() });
       }
     }
@@ -424,7 +428,7 @@
     const s = sectionById[sec];
     if (!s) return pageNotFound();
     if (sec === "verses") return pageVerses(s);
-    if (sec === "answers") return pageAnswers(s);
+    if (sec === "answers" || sec === "objections") return pageAnswers(sectionById.answers);
     const items = itemsOf(sec);
     let body;
     const cats = CATEGORY_ORDER[sec] || [];
@@ -1179,6 +1183,12 @@
     if (parts[0] === "favorites") return pageFavorites();
     if (parts[0] === "practice") return pagePractice(parts[1], parts[2]);
     if (parts[0] === "people" && parts[1]) return pagePerson(parts[1], parts[2]);
+    // Old links: Worldview Notes and Talking Paths now live on People pages
+    if (parts[0] === "worldviews" && parts[1]) return pagePerson(parts[1]);
+    if (parts[0] === "talking" && parts[1] && !parts[2]) {
+      const person = D.people.find((x) => x.talk === parts[1]);
+      if (person) return pagePerson(person.id, "talk");
+    }
     if (parts.length === 1) return pageSection(parts[0]);
     return pageItem(parts[0], parts[1], parts[2]);
   }
