@@ -16,6 +16,7 @@
   // ── Icons (simple line drawings) ────────────────────
   const ICON = {
     paths: '<path d="M12 3v18M7 8.5h10" stroke-linecap="round"/>',
+    answers: '<path d="M4 5.5h16v10H10l-5 4v-4H4z" stroke-linejoin="round"/>',
     objections: '<path d="M4 5.5h16v10H10l-5 4v-4H4z" stroke-linejoin="round"/><path d="M10 9.2a2 2 0 1 1 2.6 1.9c-.4.2-.6.5-.6.9v.4M12 14h0" stroke-linecap="round"/>',
     verses: '<path d="M4 5.5c3-1 6-1 8 .8 2-1.8 5-1.8 8-.8v13c-3-1-6-1-8 .8-2-1.8-5-1.8-8-.8z" stroke-linejoin="round"/><path d="M12 6.3v13.3"/>',
     skills: '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/>',
@@ -27,6 +28,7 @@
     cheat: '<rect x="5" y="3.5" width="14" height="17" rx="2"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4" stroke-linecap="round"/>',
     convictions: '<path d="M6 21V4M6 4.5c4-2 6 2 12 0v8c-6 2-8-2-12 0" stroke-linecap="round" stroke-linejoin="round"/>',
     star: '<path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.8l-5.2 2.8 1-5.8-4.3-4.1 5.9-.8z" stroke-linejoin="round"/>',
+    people: '<circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5" stroke-linecap="round"/><circle cx="16.5" cy="9" r="2.6"/><path d="M15.5 14.2c2.6-.3 4.6 1.3 5 4.3" stroke-linecap="round"/>',
     worldviews: '<circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c2.5 2.3 3.5 5 3.5 8s-1 5.7-3.5 8c-2.5-2.3-3.5-5-3.5-8s1-5.7 3.5-8z"/>',
   };
   const svg = (paths, size = 24, sw = 1.8) =>
@@ -37,23 +39,27 @@
 
   // ── Sections ────────────────────────────────────────
   const SECTIONS = [
-    { id: "openers", group: "use", title: "Openers & Wrap-Up", blurb: "How to start, steer, and finish",
+    { id: "openers", group: "hidden", title: "Openers & Wrap-Up", blurb: "How to start, steer, and finish",
       intro: "Ways to start a conversation, turn it toward spiritual things, and end it well." },
-    { id: "paths", group: "use", title: "Gospel Path", blurb: "Way of the Master and Romans Road",
+    { id: "paths", group: "learn", title: "The Gospel", blurb: "Way of the Master, step by step, and Romans Road",
       intro: "Step-by-step ways to share the gospel. Way of the Master is the main path; tap “Start conversation mode” to follow it live." },
-    { id: "talking", group: "use", title: "Talking Paths", blurb: "Step by step for “I'm an atheist,” “I'm Muslim,” and more",
+    { id: "talking", group: "hidden", title: "Talking Paths", blurb: "Step by step for “I'm an atheist,” “I'm Muslim,” and more",
       intro: "Start from where they are. Each path handles their starting point, then hands off to Way of the Master. Tap “Start conversation mode” to follow one live." },
-    { id: "objections", group: "use", title: "Objections", blurb: "What to say when they push back",
+    { id: "people", group: "learn", title: "People", blurb: "Atheists, Muslims, Catholics, and more",
+      intro: "Each page has two tabs: Background (what they believe) and Conversation (how a talk usually goes)." },
+    { id: "answers", group: "learn", title: "Answers", blurb: "Objections and claims, with what to say and ask",
+      intro: "Everything people say back, in one place. Each answer starts with a line to say and a question to ask." },
+    { id: "objections", group: "hidden", title: "Objections", blurb: "What to say when they push back",
       intro: "Each answer starts with one line to say and a question to ask back. Open the 30-second answer or deeper study when you have time." },
-    { id: "verses", group: "use", title: "Quick Verses", blurb: "Key verses by topic, NASB 1995",
+    { id: "verses", group: "lookup", title: "Quick Verses", blurb: "Key verses by topic, NASB 1995",
       intro: "Tap any verse for the full text and a note on how to use it. Star the ones you use most." },
-    { id: "skills", group: "prep", title: "Conversation Skills", blurb: "Tactics, good questions, and tone",
+    { id: "skills", group: "learn", title: "Conversation Skills", blurb: "Tactics, good questions, and tone",
       intro: "How to keep a conversation friendly and on track: asking good questions, handling pushback, and using the Law well." },
-    { id: "evidence", group: "prep", title: "Reasons to Believe", blurb: "Resurrection, the Bible, creation",
+    { id: "evidence", group: "learn", title: "Reasons to Believe", blurb: "Resurrection, the Bible, creation",
       intro: "The positive case for Christianity, to study ahead of time. Objections answer what they say in the moment; this is the deeper evidence behind those answers." },
-    { id: "worldviews", group: "prep", title: "Worldview Notes", blurb: "Atheists, Muslims, Mormons, and more",
+    { id: "worldviews", group: "hidden", title: "Worldview Notes", blurb: "Atheists, Muslims, Mormons, and more",
       intro: "What different groups believe, where they differ from the gospel, and good questions to ask." },
-    { id: "convictions", group: "prep", title: "My Convictions", blurb: "Where I stand on key topics, and why",
+    { id: "convictions", group: "learn", title: "My Convictions", blurb: "Where I stand on key topics, and why",
       intro: "My positions on topics like creation, baptism, and sexuality, worked out from Scripture. Each page has my view, the key verses, how other Christians see it, and a short way to explain it." },
   ];
   const sectionById = Object.fromEntries(SECTIONS.map((s) => [s.id, s]));
@@ -92,6 +98,10 @@
   const normRef = (r) => String(r).toLowerCase().replace(/[–—]/g, "-").replace(/\s+/g, " ").trim();
   const verseMap = new Map(D.verses.map((v) => [normRef(v.ref), v]));
   const getVerse = (ref) => verseMap.get(normRef(ref));
+  // People: one page per group, joining Worldview Notes (Background) and Talking Paths (Conversation)
+  const PERSON_TALK = { nominal: "already-christian" };
+  D.people = (D.worldviews || []).map((w) => ({ ...w, talk: PERSON_TALK[w.id] || w.id }));
+  D.answers = D.objections;
   const itemsOf = (sec) => (sec === "verses" ? [] : D[sec] || []);
   const getItem = (sec, id) => itemsOf(sec).find((x) => x.id === id);
   const itemTitle = (sec, item) => (sec === "objections" ? `“${item.title}”` : item.title);
@@ -281,6 +291,7 @@
   }
   function countLabel(s) {
     if (s.id === "verses") return String(D.verses.length);
+    if (s.id === "answers") return String(D.objections.length + (D.claims || []).length);
     return String(itemsOf(s.id).filter((x) => !x.draft).length);
   }
   function renderHomeBody() {
@@ -296,27 +307,36 @@
         <span class="row-main"><span class="row-title">${esc(title)}</span><span class="row-sub">${esc(blurb)}</span></span>
         ${meta ? `<span class="nav-meta">${esc(meta)}</span>` : ""}${chevron}</a>`;
     const group = (g) => SECTIONS.filter((x) => x.group === g).map((x) => navRow(`#/${x.id}`, ICON[x.id], x.title, x.blurb, countLabel(x))).join("");
+    const last = store.get("lastItem", null);
+    const mix = deckCards("mix", "Today");
+    const today = store.get("todayDone", {})[new Date().toDateString()] || 0;
     body.innerHTML = `
-      <a class="hero" href="#/live/way-of-the-master/1">
-        <span class="hero-icon">${svg(ICON.live, 26, 2)}</span>
-        <span class="row-main"><span class="hero-title">Start a conversation</span>
-        <span class="hero-sub">Way of the Master, one step at a time</span></span>${chevron}
+      <p class="notice">Preview of the new layout. Nothing on your real site has changed.</p>
+      <a class="hero" href="#/practice/mix/Today">
+        <span class="hero-icon">${svg(ICON.practice, 26, 2)}</span>
+        <span class="row-main"><span class="hero-title">Today's practice</span>
+        <span class="hero-sub">${today >= TODAY_SIZE ? "Done for today. Go again?" : `10 mixed cards, weak ones first${today ? ` (${today} done)` : ""}`}</span></span>${chevron}
       </a>
+      ${last ? `<a class="nav-row resume" href="${last.hash}">
+        <span class="tile-icon">${svg('<path d="M12 7v5l3 2" stroke-linecap="round"/><circle cx="12" cy="12" r="8"/>', 24)}</span>
+        <span class="row-main"><span class="row-sub">Pick up where you left off</span><span class="row-title">${esc(last.title)}</span></span>${chevron}</a>` : ""}
       ${saved.length
         ? `<details class="fav-fold"${session.get("favsOpen", false) ? " open" : ""}>
             <summary><span class="fav-fold-icon">${svg(ICON.star, 20)}</span><span class="fav-fold-title">Favorites</span><span class="nav-meta">${saved.length}</span></summary>
             <div id="fav-body">${favBody()}</div>
           </details>`
         : ""}
-      <h2 class="section-label">In a conversation</h2>
+      <h2 class="section-label">Learn</h2>
+      <div class="nav-list">${group("learn")}</div>
+      <h2 class="section-label">Practice</h2>
       <div class="nav-list">
-        ${navRow("#/cheat", ICON.cheat, "Cheat Sheet", "The whole conversation on one screen", "")}
-        ${group("use")}
+        ${navRow("#/practice", ICON.practice, "Practice", "Today's mix, drills, and rehearsing conversations", "")}
       </div>
-      <h2 class="section-label">Prepare</h2>
+      <h2 class="section-label">Look up</h2>
       <div class="nav-list">
-        ${navRow("#/practice", ICON.practice, "Practice", "Flashcards, objection and Columbo drills", "")}
-        ${group("prep")}
+        ${navRow("#/cheat", ICON.cheat, "Cheat Sheet", "A 30-second review before you go out", "")}
+        ${group("lookup")}
+        ${navRow("#/live/way-of-the-master/1", ICON.live, "Conversation Mode", "Way of the Master, one step at a time", "")}
       </div>
       <p class="copyright">${esc(COPYRIGHT)}</p>`;
   }
@@ -404,6 +424,7 @@
     const s = sectionById[sec];
     if (!s) return pageNotFound();
     if (sec === "verses") return pageVerses(s);
+    if (sec === "answers") return pageAnswers(s);
     const items = itemsOf(sec);
     let body;
     const cats = CATEGORY_ORDER[sec] || [];
@@ -419,8 +440,52 @@
     } else {
       body = `<div class="list">${items.map((x) => itemRow(sec, x)).join("")}</div>`;
     }
+    if (sec === "skills") {
+      body = `<h2 class="section-label">Starting & Ending</h2><div class="list">${D.openers.map((x) => itemRow("openers", x)).join("")}</div>` + body;
+    }
     app.innerHTML = `<h1 class="page-title">${esc(s.title)}</h1><p class="intro">${esc(s.intro)}</p>${body}`;
     return { title: s.title };
+  }
+
+  function pageAnswers(s) {
+    const cats = D.objectionCategories;
+    const claimCard = (c) => `<div class="card claim-card"><p class="row-title">“${esc(c.claim)}”</p>${boxes("ask", "Ask", c.ask)}
+      <p class="row-sub">${inline(c.why)}${c.next ? ` <a class="ilink" href="#/${c.next}">Full answer</a>` : ""}</p></div>`;
+    const groups = [
+      ...cats.map((c) => ({ c, html: `<div class="list">${D.objections.filter((o) => o.category === c).map((o) => itemRow("objections", o)).join("")}</div>` })),
+      { c: "Self-defeating claims", html: D.claims.filter((c) => c.selfDefeating).map(claimCard).join("") },
+      { c: "Quick questions", html: D.claims.filter((c) => !c.selfDefeating).map(claimCard).join("") },
+    ];
+    app.innerHTML = `<h1 class="page-title">${esc(s.title)}</h1><p class="intro">${esc(s.intro)}</p>
+      <div class="filters">${groups.map((g, i) => `<button class="filter" data-jump="cat-${i}">${esc(g.c)}</button>`).join("")}</div>
+      ${groups.map((g, i) => `<h2 class="section-label" id="cat-${i}">${esc(g.c)}</h2>${g.html}`).join("")}`;
+    return { title: s.title };
+  }
+
+  // One page per group of people, with Background and Conversation tabs
+  function pagePerson(id, tab) {
+    const w = getItem("people", id);
+    if (!w) return pageNotFound();
+    const t = getItem("talking", w.talk);
+    tab = tab === "talk" && t ? "talk" : "about";
+    pageItem("worldviews", id);
+    const about = app.innerHTML.replace(/<a class="wide-card live-start" href="#\/talking[^]*?<\/a>/, "");
+    let talk = "";
+    if (t) {
+      pageItem("talking", t.id);
+      talk = app.innerHTML;
+    }
+    const strip = (h) => h.replace(/<p class="kicker">[^]*?<\/p>/, "").replace(/<div class="item-head">[^]*?<\/div>/, "");
+    app.innerHTML = `
+      <p class="kicker">People</p>
+      <div class="item-head"><h1 class="page-title">${esc(w.title)}</h1>${favButton(`worldviews/${id}`)}</div>
+      ${t ? `<div class="segs"><a class="seg${tab === "about" ? " on" : ""}" href="#/people/${id}">Background</a><a class="seg${tab === "talk" ? " on" : ""}" href="#/people/${id}/talk">Conversation</a></div>` : ""}
+      ${tab === "about" ? strip(about) : strip(talk)}
+      ${t ? `<a class="wide-card live-start" href="#/practice/rehearse/${t.id}">
+        <span class="tile-icon">${svg(ICON.practice, 24)}</span>
+        <span class="wide-main"><span class="tile-title">Practice this</span>
+        <span class="tile-blurb">Rehearse this conversation with flashcards</span></span>${chevron}</a>` : ""}`;
+    return { title: plain(w.title), section: "people", replaceKey: `#/people/${id}` };
   }
 
   let verseTopic = sessionStorage.getItem("verseTopic") || "All";
@@ -629,7 +694,24 @@
     store.set("practice", b);
   }
   const CLAIM_DECKS = { "Self-defeating": (c) => c.selfDefeating, "Clarify first": (c) => !c.selfDefeating };
+  const TODAY_SIZE = 10;
+  // Rehearse: every step (what do you say?) and every reply (they say X, then?) in a path
+  function rehearseCards(pathId) {
+    const f = findPath(pathId);
+    if (!f) return [];
+    const cards = [];
+    f.item.parts.forEach((p, i) => {
+      if (p.say || p.ask) cards.push({ key: `r:${pathId}:${i}`, step: { path: f.item, part: p, n: i + 1 } });
+      (p.branches || []).forEach((b, j) => cards.push({ key: `r:${pathId}:${i}:${j}`, reply: { path: f.item, part: p, n: i + 1, b } }));
+    });
+    return cards;
+  }
+  const REHEARSE_PATHS = () => ["way-of-the-master", ...D.talking.map((t) => t.id)];
   function deckCards(kind, deck) {
+    if (kind === "mix") {
+      return [...deckCards("verses", "All"), ...deckCards("objections", "All"), ...deckCards("claims", "All"), ...rehearseCards("way-of-the-master")];
+    }
+    if (kind === "rehearse") return deck === "All" ? REHEARSE_PATHS().flatMap(rehearseCards) : rehearseCards(deck);
     if (kind === "claims") {
       const list = deck === "All" ? D.claims || [] : (D.claims || []).filter(CLAIM_DECKS[deck] || (() => false));
       return list.map((c) => ({ key: "c:" + c.id, claim: c }));
@@ -683,7 +765,7 @@
     } catch (e) {}
     const title = DRILLS[kind].title;
     app.innerHTML = `
-      <p class="kicker">${esc(deck === "All" ? "All" : deck)}</p>
+      <p class="kicker">${esc(DRILLS[kind].label ? DRILLS[kind].label(deck) : deck)}</p>
       <h1 class="page-title">${title}</h1>
       ${kind === "verses" ? `<div class="segs small" id="direction"></div>` : ""}
       <div id="card"></div>`;
@@ -692,6 +774,9 @@
     return { title };
   }
   const DRILLS = {
+    mix: { title: "Today's Practice", blurb: "10 mixed cards, weak ones first", decks: () => ["Today"], hidden: true },
+    rehearse: { title: "Rehearse a Conversation", blurb: "Run a conversation: what you say, and what to do when they reply",
+      decks: () => ["All", ...REHEARSE_PATHS()], label: (d) => (d === "All" ? "All" : plain(findPath(d).item.title)) },
     verses: { title: "Verse Flashcards", blurb: "See a reference, say the verse (or the reverse)", decks: () => ["All", "Favorites", ...D.verseTopics] },
     objections: { title: "Objection Drill", blurb: "Hear an objection, give your answer", decks: () => ["All", "Favorites", ...(D.objectionCategories || [])] },
     claims: { title: "Columbo Drill", blurb: "Hear a claim, ask the right question back", decks: () => ["All", ...Object.keys(CLAIM_DECKS)] },
@@ -700,12 +785,13 @@
     const cards = deckCards(kind, d);
     if (!cards.length && d !== "Favorites") return "";
     return `<a class="row" href="#/practice/${kind}/${encodeURIComponent(d)}">
-      <span class="row-main"><span class="row-title">${esc(d)}</span>
+      <span class="row-main"><span class="row-title">${esc(DRILLS[kind].label ? DRILLS[kind].label(d) : d)}</span>
       <span class="row-sub">${cards.length ? `${knownCount(cards)} of ${cards.length} learned` : "Star some first"}</span></span>
       ${progressRing(cards.length ? knownCount(cards) / cards.length : 0)}${chevron}</a>`;
   }
   function pagePracticeMenu() {
     const rows = Object.entries(DRILLS)
+      .filter(([, d]) => !d.hidden)
       .map(([kind, d]) => {
         const cards = deckCards(kind, "All");
         return `<a class="row" href="#/practice/${kind}">
@@ -717,6 +803,11 @@
     app.innerHTML = `
       <h1 class="page-title">Practice</h1>
       <p class="summary">Say your answer out loud, then check it. Cards you miss come back more often.</p>
+      <a class="hero" href="#/practice/mix/Today">
+        <span class="hero-icon">${svg(ICON.practice, 26, 2)}</span>
+        <span class="row-main"><span class="hero-title">Today's practice</span>
+        <span class="hero-sub">10 mixed cards: verses, answers, questions, and steps</span></span>${chevron}
+      </a>
       <div class="list">${rows}</div>
       <button class="text-btn" data-reset-practice>Reset practice progress</button>`;
     return { title: "Practice" };
@@ -773,15 +864,41 @@
       return;
     }
     const known = knownCount(cards);
-    let front, back;
-    if (kind === "verses") {
+    if (kind === "mix" && practiceState.reviewed >= TODAY_SIZE) {
+      if (!practiceState.counted) {
+        const done = store.get("todayDone", {});
+        done[new Date().toDateString()] = (done[new Date().toDateString()] || 0) + practiceState.reviewed;
+        store.set("todayDone", done);
+        practiceState.counted = true;
+      }
+      el.innerHTML = `<div class="flashcard"><div class="card-front"><p class="card-ref">Done for today</p>
+        <p class="card-hint">${practiceState.right} of ${practiceState.reviewed} right</p></div></div>
+        <div class="card-actions"><a class="btn" href="#/">Home</a><button class="btn primary" data-again-session>Do 10 more</button></div>`;
+      return;
+    }
+    let front, back, kind_;
+    const c0 = current;
+    if (c0.verse) kind_ = "verses"; else if (c0.obj) kind_ = "objections"; else if (c0.claim) kind_ = "claims"; else kind_ = "rehearse";
+    if (kind_ === "rehearse") {
+      const st = c0.step || c0.reply;
+      const ctx = `<p class="card-hint">${esc(plain(st.path.title))} · Step ${st.n}: ${esc(plain(st.part.heading || ""))}</p>`;
+      if (c0.step) {
+        front = ctx + `<p class="card-ref">What do you say here?</p>`;
+        back = `${boxes("say", "Say", st.part.say)}${boxes("ask", "Ask", st.part.ask)}`;
+      } else {
+        const b = st.b;
+        const tgt = goTarget(b.go.startsWith("step:") ? `${findPath(st.path.id).sec}/${st.path.id}/${b.go.slice(5)}` : b.go);
+        front = ctx + `<p class="card-ref">They say: ${esc(plain(b.if))}</p><p class="card-hint">What do you do?</p>`;
+        back = `${b.then ? boxes("ask", "Ask", b.then) : ""}<p class="card-note">Then: ${esc(tgt.title)}</p>`;
+      }
+    } else if (kind_ === "verses") {
       const v = current.verse;
       const refHtml = `<p class="card-ref">${esc(v.ref)}</p>`;
       const textHtml = `<p class="card-text">${esc(v.text)}</p>`;
       front = dir === "ref" ? refHtml + `<p class="card-hint">Say the verse</p>` : textHtml + `<p class="card-hint">Name the reference</p>`;
       const extra = `${v.tag ? `<p class="card-tag">${esc(v.tag)}</p>` : ""}${v.note ? `<p class="card-note">${inline(v.note)}</p>` : ""}`;
       back = (dir === "ref" ? textHtml : refHtml) + extra;
-    } else if (kind === "claims") {
+    } else if (kind_ === "claims") {
       const c = current.claim;
       front = `<p class="card-hint">${c.selfDefeating ? "Self-defeating" : "Clarify first"}</p><p class="card-ref">“${esc(c.claim)}”</p><p class="card-hint">What would you ask?</p>`;
       back = `${boxes("ask", "Ask", c.ask)}<p class="card-note">${inline(c.why)}</p>
@@ -795,8 +912,11 @@
         <a class="ilink" href="#/objections/${o.id}">Open deeper study</a>`;
     }
     el.innerHTML = `
-      <div class="practice-progress"><span>${known} of ${cards.length} learned</span><span class="status">${cardStatus(current.key)}</span></div>
-      <div class="bar"><span style="width:${((known / cards.length) * 100).toFixed(1)}%"></span></div>
+      ${kind === "mix"
+        ? `<div class="practice-progress"><span>Card ${practiceState.reviewed + 1} of ${TODAY_SIZE}</span><span class="status">${cardStatus(current.key)}</span></div>
+           <div class="bar"><span style="width:${((practiceState.reviewed / TODAY_SIZE) * 100).toFixed(1)}%"></span></div>`
+        : `<div class="practice-progress"><span>${known} of ${cards.length} learned</span><span class="status">${cardStatus(current.key)}</span></div>
+           <div class="bar"><span style="width:${((known / cards.length) * 100).toFixed(1)}%"></span></div>`}
       ${practiceState.reviewed ? `<p class="session">This session: ${practiceState.reviewed} ${practiceState.reviewed === 1 ? "card" : "cards"}, ${practiceState.right} right</p>` : ""}
       <div class="flashcard${revealed ? " revealed" : ""}">
         <div class="card-front">${front}</div>
@@ -980,6 +1100,11 @@
       location.replace(repl.getAttribute("href"));
       return;
     }
+    if (t.closest("[data-again-session]")) {
+      Object.assign(practiceState, { reviewed: 0, right: 0, counted: false });
+      pickCard();
+      return renderCard();
+    }
     const reveal = t.closest("[data-reveal]");
     if (reveal) return practiceReveal();
     const grade = t.closest("[data-grade]");
@@ -1053,6 +1178,7 @@
     if (parts[0] === "cheat") return pageCheat();
     if (parts[0] === "favorites") return pageFavorites();
     if (parts[0] === "practice") return pagePractice(parts[1], parts[2]);
+    if (parts[0] === "people" && parts[1]) return pagePerson(parts[1], parts[2]);
     if (parts.length === 1) return pageSection(parts[0]);
     return pageItem(parts[0], parts[1], parts[2]);
   }
@@ -1078,13 +1204,16 @@
     const at = trail.findIndex((p) => p.hash === hash);
     let goingBack = false;
     if (isHome) trail = [{ hash: "#/", title: "Home" }];
-    else if (info.liveKey && trail.length && trail[trail.length - 1].hash.startsWith(info.liveKey)) {
+    else if (info.replaceKey && trail.length && trail[trail.length - 1].hash.startsWith(info.replaceKey)) {
+      trail[trail.length - 1] = { hash, title: info.title };
+    } else if (info.liveKey && trail.length && trail[trail.length - 1].hash.startsWith(info.liveKey)) {
       trail[trail.length - 1] = { hash, title: info.title };
     } else if (at >= 0) {
       goingBack = at < trail.length - 1;
       trail = trail.slice(0, at + 1);
     } else trail.push({ hash, title: info.title });
     sessionStorage.setItem("trail", JSON.stringify(trail));
+    if (info.section && hash.split("/").length > 2) store.set("lastItem", { hash, title: info.title });
 
     document.body.classList.toggle("live-mode", !!info.liveKey);
     keepAwake(!!info.liveKey);

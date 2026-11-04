@@ -437,3 +437,12 @@ body.live-mode main { padding-bottom: calc(110px + env(safe-area-inset-bottom));
 .fav-type[open] summary::after { transform: rotate(45deg) translateY(-2px); }
 .fav-type-title { flex: 1; font-weight: 650; }
 .fav-type .list { padding: 0 10px 10px; }
+
+/* Preview layout */
+a.seg { display: block; text-align: center; text-decoration: none; color: inherit; }
+.item-head + .segs, .sources + .segs { margin: 4px 0 16px; }
+.claim-card { margin-bottom: 10px; padding-bottom: 12px; }
+.claim-card .row-title { margin: 0 0 8px; }
+.claim-card .row-sub { margin: 6px 0 0; }
+.nav-row.resume { background: var(--card); border: 1px solid var(--line); border-radius: 14px; margin: 0 0 14px; }
+.nav-row.resume .row-sub { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; }
