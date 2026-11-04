@@ -272,6 +272,32 @@ By that standard, none of us is decent enough. That's the whole point. The Bible
     verses: ["Matthew 5:48", "Matthew 22:37-38", "Proverbs 20:6", "Ephesians 2:8-9", "Romans 3:20"],
     related: ["objections/good-person", "paths/way-of-the-master"],
   },
+  {
+    id: "death-pays",
+    category: "The Gospel & Salvation",
+    title: "If the wages of sin is death, don't I pay it when I die?",
+    sources: ["Greg Koukl", "Ray Comfort"],
+    oneLiner: "If dying paid for sin, why does judgment come after death?",
+    askBack: "If you commit a crime and then pass out, does that pay your fine?",
+    short: `The Bible uses “death” in two ways. There's physical death, when the body dies. And there's the second death: eternal separation from God after judgment.
+
+Hebrews says we die once, and **after that** comes judgment. So dying isn't the payment. It's when the bill comes due. That's why Romans 6:23 doesn't stop at death: “the free gift of God is eternal life in Christ Jesus.” Jesus paid the wages so we don't have to.`,
+    deep: `**Two deaths:**
+- **Physical death** came into the world through sin ([[Romans 5:12]]).
+- **The second death** is the lake of fire ([[Revelation 20:14]], [[Revelation 21:8]]). This is the full wage.
+
+**Judgment comes after death:** “It is appointed for men to die once and after this comes judgment” ([[Hebrews 9:27]]). If death settled the debt, there would be nothing left to judge.
+
+**Jesus drew the line:** Don't fear those who can only kill the body; fear Him who can destroy both soul and body in hell ([[Matthew 10:28]]). Physical death isn't the worst thing.
+
+**Who can pay?** A crime against an infinite, holy God isn't paid off by one finite life. Only someone without sin could pay it for us: “the just for the unjust” ([[1 Peter 3:18]], [[2 Corinthians 5:21]]).
+
+**Turn it to the gospel:** “The good news is you don't have to pay it. Someone already did.” ({{Way of the Master|paths/way-of-the-master}})
+
+**Study:** Greg Koukl, *Tactics*: clarify the key word (“death”) before answering.`,
+    verses: ["Romans 6:23", "Hebrews 9:27", "Revelation 20:14", "Matthew 10:28", "1 Peter 3:18"],
+    related: ["objections/hell-unfair", "paths/way-of-the-master"],
+  },
 
 
   // --- God & Suffering ---

@@ -279,6 +279,22 @@ DATA.verses = [
     verified: true,
   },
   {
+    ref: "Revelation 20:14",
+    tag: "The second death",
+    text: "Then death and Hades were thrown into the lake of fire. This is the second death, the lake of fire.",
+    topics: ["Judgment"],
+    note: "There are two deaths. The wages of sin include the second one.",
+    verified: true,
+  },
+  {
+    ref: "1 Peter 3:18",
+    tag: "The just for the unjust",
+    text: "For Christ also died for sins once for all, the just for the unjust, so that He might bring us to God, having been put to death in the flesh, but made alive in the spirit;",
+    topics: ["The Cross"],
+    note: "Jesus paid the wages we owed, once for all.",
+    verified: true,
+  },
+  {
     ref: "Acts 17:30-31",
     tag: "Repent, judgment day is fixed",
     text: "Therefore having overlooked the times of ignorance, God is now declaring to men that all people everywhere should repent, because He has fixed a day in which He will judge the world in righteousness through a Man whom He has appointed, having furnished proof to all men by raising Him from the dead.",
