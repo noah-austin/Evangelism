@@ -279,6 +279,22 @@ DATA.verses = [
     verified: true,
   },
   {
+    ref: "Mark 8:36",
+    tag: "Gain the world, lose your soul",
+    text: "For what does it profit a man to gain the whole world, and forfeit his soul?",
+    topics: ["Urgency"],
+    note: "For someone who says they're happy as they are.",
+    verified: true,
+  },
+  {
+    ref: "1 Corinthians 6:11",
+    tag: "Such were some of you",
+    text: "Such were some of you; but you were washed, but you were sanctified, but you were justified in the name of the Lord Jesus Christ and in the Spirit of our God.",
+    topics: ["Grace"],
+    note: "Right after the list of sins: God washes and changes people, whatever their past.",
+    verified: true,
+  },
+  {
     ref: "Revelation 20:14",
     tag: "The second death",
     text: "Then death and Hades were thrown into the lake of fire. This is the second death, the lake of fire.",
@@ -1666,7 +1682,7 @@ DATA.verses = [
   },
   {
     ref: "Mark 10:6",
-    tag: "Male and female from the beginning",
+    tag: "Made male and female",
     text: "But from the beginning of creation, God made them male and female.",
     topics: ["God's Existence"],
     note: "Jesus places humans at the beginning of creation, not billions of years later.",
@@ -1858,7 +1874,7 @@ DATA.verses = [
   },
   {
     ref: "1 John 3:9",
-    tag: "Born of God doesn't practice sin",
+    tag: "New birth ends practicing sin",
     text: "No one who is born of God practices sin, because His seed abides in him; and he cannot sin, because he is born of God.",
     topics: ["Assurance"],
     note: "Not sinless perfection, but no longer living in sin as a lifestyle.",
@@ -2570,7 +2586,7 @@ DATA.verses = [
   },
   {
     ref: "1 John 2:23",
-    tag: "Deny the Son, lack the Father",
+    tag: "Deny the Son, no Father",
     text: "Whoever denies the Son does not have the Father; the one who confesses the Son has the Father also.",
     topics: ["Only Way"],
     note: "There's no having God without Jesus.",
@@ -2642,7 +2658,7 @@ DATA.verses = [
   },
   {
     ref: "Matthew 24:37-39",
-    tag: "As in the days of Noah",
+    tag: "Like the days of Noah",
     text: "For the coming of the Son of Man will be just like the days of Noah. For as in those days before the flood they were eating and drinking, marrying and giving in marriage, until the day that Noah entered the ark, and they did not understand until the flood came and took them all away; so will the coming of the Son of Man be.",
     topics: ["Urgency"],
     note: "Jesus treats the flood as real history and a warning of judgment.",
@@ -2674,7 +2690,7 @@ DATA.verses = [
   },
   {
     ref: "Genesis 41:57",
-    tag: "All the earth came to Egypt",
+    tag: "All earth came to Egypt",
     text: "The people of all the earth came to Egypt to buy grain from Joseph, because the famine was severe in all the earth.",
     topics: ["The Bible"],
     note: "Sometimes “all the earth” means the known region; used in the regional flood view.",

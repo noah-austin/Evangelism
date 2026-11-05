@@ -1,4 +1,4 @@
-// WORLDVIEW NOTES
+// PEOPLE: Background tab (what each group believes)
 //
 // Same format as paths: title, sources, summary, and parts
 // (heading, say, ask, body, verses, branches).

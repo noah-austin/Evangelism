@@ -1,6 +1,9 @@
-// TALKING PATHS
+// CONVERSATIONS (step-by-step paths)
 //
-// category: "Doubting God", "Other Faiths", "Christians", or "Issues"
+// Paths whose id matches a worldview (or is mapped in PERSON_TALK in js/app.js)
+// show as the Conversation tab on that People page. The rest (pro-choice,
+// morality) are listed under People > Topics.
+// category: "Doubting God", "Other Faiths", "Christians", or "Topics"
 //
 // Step-by-step on-ramps that start from where the person is ("I'm an
 // atheist", "I'm Muslim") and hand off into Way of the Master.
@@ -309,7 +312,7 @@ DATA.talking = [
   {
     id: "pro-choice",
     title: "“I'm pro-choice”",
-    category: "Issues",
+    category: "Topics",
     sources: ["Russell Hunter", "Abolitionist Rising", "Greg Koukl"],
     summary: `Keep it to one question: what is the unborn? Abortion kills a human being made in God's image, but the real answer is the gospel, for them and for anyone involved in an abortion.`,
     numbered: true,
@@ -908,7 +911,7 @@ DATA.talking = [
   {
     id: "morality",
     title: "“Morality is just opinion”",
-    category: "Doubting God",
+    category: "Topics",
     sources: ["C.S. Lewis", "Greg Koukl", "Ray Comfort"],
     summary: `The moral argument, step by step. Everyone knows some things are really wrong. A real moral law above all of us points to a Moral Lawgiver, and it shows us we've broken His law.`,
     numbered: true,

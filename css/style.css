@@ -446,3 +446,6 @@ a.seg { display: block; text-align: center; text-decoration: none; color: inheri
 .claim-card .row-sub { margin: 6px 0 0; }
 .nav-row.resume { background: var(--card); border: 1px solid var(--line); border-radius: 14px; margin: 0 0 14px; }
 .nav-row.resume .row-sub { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.row[hidden] { display: none; }
+.search-box.small { margin: 2px 0 12px; }
+.search-box.small input { flex: 1; min-width: 0; border: 0; outline: none; background: none; color: var(--text); font-size: 0.98rem; padding: 10px 0; -webkit-appearance: none; }

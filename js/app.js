@@ -39,7 +39,7 @@
 
   // ── Sections ────────────────────────────────────────
   const SECTIONS = [
-    { id: "openers", group: "hidden", title: "Openers & Wrap-Up", blurb: "How to start, steer, and finish",
+    { id: "openers", group: "hidden", title: "Starting & Ending", blurb: "How to start, steer, and finish",
       intro: "Ways to start a conversation, turn it toward spiritual things, and end it well." },
     { id: "paths", group: "learn", title: "The Gospel", blurb: "Way of the Master, step by step, and Romans Road",
       intro: "Step-by-step ways to share the gospel. Way of the Master is the main path; tap “Start conversation mode” to follow it live." },
@@ -62,6 +62,8 @@
     { id: "convictions", group: "learn", title: "My Convictions", blurb: "Where I stand on key topics, and why",
       intro: "My positions on topics like creation, baptism, and sexuality, worked out from Scripture. Each page has my view, the key verses, how other Christians see it, and a short way to explain it." },
   ];
+  // Pages from hidden sections show under these sections (Back button, trail)
+  const HOME_OF = { talking: "people", worldviews: "people", openers: "skills" };
   const sectionById = Object.fromEntries(SECTIONS.map((s) => [s.id, s]));
 
   // Remembered only while the app is open (closed again on a fresh open)
@@ -208,7 +210,7 @@
     const [s, id, step] = go.split("/");
     const t = getItem(s, id);
     if (!t) return { title: go };
-    const prefix = { objections: "Answer: ", worldviews: "Notes: ", evidence: "Evidence: ", skills: "Skill: ", openers: "" }[s] || "";
+    const prefix = { objections: "Answer: ", worldviews: "People: ", talking: "Conversation: ", evidence: "Evidence: ", skills: "Skill: ", openers: "" }[s] || "";
     let title = prefix + plain(itemTitle(s, t));
     if (step) title += `, ${stepLabel(t, +step)}`;
     return { title, live: isPathSection(s) && t.numbered, id, step: step || 1 };
@@ -314,7 +316,7 @@
       <a class="hero" href="#/practice/mix/Today">
         <span class="hero-icon">${svg(ICON.practice, 26, 2)}</span>
         <span class="row-main"><span class="hero-title">Today's practice</span>
-        <span class="hero-sub">${today >= TODAY_SIZE ? "Done for today. Go again?" : `10 mixed cards, weak ones first${today ? ` (${today} done)` : ""}`}</span></span>${chevron}
+        <span class="hero-sub">${today >= TODAY_SIZE ? "Done for today. Go again?" : `10 mixed cards: verses, answers, questions, steps${today ? ` (${today} done)` : ""}`}</span></span>${chevron}
       </a>
       ${last ? `<a class="nav-row resume" href="${last.hash}">
         <span class="tile-icon">${svg('<path d="M12 7v5l3 2" stroke-linecap="round"/><circle cx="12" cy="12" r="8"/>', 24)}</span>
@@ -405,9 +407,11 @@
   function searchResults(q) {
     searchIndex = searchIndex || buildIndex();
     const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+    // Match the start of a word, so "lie" finds "lied" but not "believe"
+    const res = terms.map((t) => new RegExp("(^|[^a-z0-9])" + t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
     const results = searchIndex
-      .filter((e) => terms.every((t) => e.hay.includes(t)))
-      .map((e) => ({ e, score: terms.filter((t) => e.titleHay.includes(t)).length * 10 + (e.item ? 1 : 0) }))
+      .filter((e) => res.every((r) => r.test(e.hay)))
+      .map((e) => ({ e, score: res.filter((r) => r.test(e.titleHay)).length * 10 + (e.item ? 1 : 0) }))
       .sort((a, b) => b.score - a.score)
       .slice(0, 60);
     if (!results.length) return `<p class="empty">No results for “${esc(q)}”.</p>`;
@@ -436,16 +440,19 @@
       const groups = cats.map((c) => ({ c, list: items.filter((x) => x.category === c) })).filter((g) => g.list.length);
       const other = items.filter((x) => !cats.includes(x.category));
       if (other.length) groups.push({ c: "Other", list: other });
+      if (sec === "skills") groups.unshift({ c: "Starting & Ending", list: D.openers, sec: "openers" });
       body = `
         <div class="filters">${groups.map((g, i) => `<button class="filter" data-jump="cat-${i}">${esc(g.c)}</button>`).join("")}</div>
         ${groups
-          .map((g, i) => `<h2 class="section-label" id="cat-${i}">${esc(g.c)}</h2><div class="list">${g.list.map((x) => itemRow(sec, x)).join("")}</div>`)
+          .map((g, i) => `<h2 class="section-label" id="cat-${i}">${esc(g.c)}</h2><div class="list">${g.list.map((x) => itemRow(g.sec || sec, x)).join("")}</div>`)
           .join("")}`;
     } else {
       body = `<div class="list">${items.map((x) => itemRow(sec, x)).join("")}</div>`;
     }
-    if (sec === "skills") {
-      body = `<h2 class="section-label">Starting & Ending</h2><div class="list">${D.openers.map((x) => itemRow("openers", x)).join("")}</div>` + body;
+    if (sec === "people") {
+      const topics = D.talking.filter((t) => !D.people.some((x) => x.talk === t.id));
+      body += `<h2 class="section-label">Topics</h2><p class="intro">Step-by-step conversations on an issue instead of a group.</p>
+        <div class="list">${topics.map((t) => itemRow("talking", t)).join("")}</div>`;
     }
     app.innerHTML = `<h1 class="page-title">${esc(s.title)}</h1><p class="intro">${esc(s.intro)}</p>${body}`;
     return { title: s.title };
@@ -458,7 +465,7 @@
     const groups = [
       ...cats.map((c) => ({ c, html: `<div class="list">${D.objections.filter((o) => o.category === c).map((o) => itemRow("objections", o)).join("")}</div>` })),
       { c: "Self-defeating claims", html: D.claims.filter((c) => c.selfDefeating).map(claimCard).join("") },
-      { c: "Quick questions", html: D.claims.filter((c) => !c.selfDefeating).map(claimCard).join("") },
+      { c: "Clarify first", html: D.claims.filter((c) => !c.selfDefeating).map(claimCard).join("") },
     ];
     app.innerHTML = `<h1 class="page-title">${esc(s.title)}</h1><p class="intro">${esc(s.intro)}</p>
       <div class="filters">${groups.map((g, i) => `<button class="filter" data-jump="cat-${i}">${esc(g.c)}</button>`).join("")}</div>
@@ -509,10 +516,16 @@
       <div class="filters">${topics
         .map((t) => `<button class="filter${t === verseTopic ? " on" : ""}" data-topic="${esc(t)}">${esc(t)}</button>`)
         .join("")}</div>
+      <div class="search-box small"><input id="verse-search" type="search" placeholder="Find a verse or reference" autocomplete="off" spellcheck="false"></div>
 
       <div class="list">${list.length ? list.map((v) => verseRow(v)).join("") : `<p class="empty">No favorite verses yet. Tap the star on any verse to add it.</p>`}</div>
       ${unverified ? `<p class="copyright">${unverified} of ${D.verses.length} verses still need their wording checked against a NASB 1995 Bible.</p>` : ""}
       <p class="copyright">${esc(COPYRIGHT)}</p>`;
+    const vs = document.getElementById("verse-search");
+    vs.addEventListener("input", () => {
+      const q = vs.value.trim().toLowerCase();
+      app.querySelectorAll(".list > .row").forEach((r) => (r.hidden = q && !r.textContent.toLowerCase().includes(q)));
+    });
     return { title: s.title };
   }
 
@@ -532,10 +545,12 @@
     const tid = TALK_FOR[`${sec}/${id}`] || (sec === "worldviews" ? id : null);
     const t = tid && getItem("talking", tid);
     if (!t) return "";
-    return `<a class="wide-card live-start" href="#/talking/${tid}">
+    const person = D.people.find((x) => x.talk === tid);
+    const href = person ? `#/people/${person.id}/talk` : `#/talking/${tid}`;
+    return `<a class="wide-card live-start" href="${href}">
       <span class="tile-icon">${svg(ICON.talking, 24)}</span>
-      <span class="wide-main"><span class="tile-title">Talk it through step by step</span>
-      <span class="tile-blurb">Talking path: ${esc(plain(t.title))}</span></span>${chevron}</a>`;
+      <span class="wide-main"><span class="tile-title">Walk through this conversation</span>
+      <span class="tile-blurb">Step by step: ${esc(plain(t.title))}</span></span>${chevron}</a>`;
   }
 
   function pageItem(sec, id, step) {
@@ -585,7 +600,7 @@
       scrollTo = document.getElementById(`step-${step}`);
       if (scrollTo) scrollTo.classList.add("flash");
     }
-    return { title: plain(item.title), section: sec, scrollTo };
+    return { title: plain(item.title), section: HOME_OF[sec] || sec, scrollTo };
   }
   function relatedRow(path) {
     const [sec, id] = path.split("/");
@@ -622,7 +637,8 @@
     const main = item.parts.map((x, k) => (x.detour ? null : k + 1)).filter(Boolean);
     const lastKey = "liveLast:" + id;
     if (!p.detour) sessionStorage.setItem(lastKey, i);
-    const here = p.detour ? +(sessionStorage.getItem(lastKey) || main[0]) : i;
+    const before = p.next ? main.filter((k) => k < p.next).pop() : null;
+    const here = p.detour ? +(sessionStorage.getItem(lastKey) || before || main[0]) : i;
     const dots = main
       .map((k) => `<a class="dot${k === here ? (p.detour ? " done" : " on") : k < here ? " done" : ""}" href="${stepHref(k)}" data-replace aria-label="${esc(stepLabel(item, k))}"></a>`)
       .join("");
@@ -681,7 +697,7 @@
         ${p.body ? `<details class="fold"><summary>Notes</summary><div class="prose">${md(p.body)}</div></details>` : ""}
       </div>
       <nav class="live-nav">${backBtnHtml}${nextBtnHtml}</nav>`;
-    return { title: "Conversation mode", section: sec, liveKey: `#/live/${id}/` };
+    return { title: "Conversation mode", section: HOME_OF[sec] || sec, liveKey: `#/live/${id}/` };
   }
 
   // ── Practice ────────────────────────────────────────
@@ -706,9 +722,27 @@
     const cards = [];
     f.item.parts.forEach((p, i) => {
       if (p.say || p.ask) cards.push({ key: `r:${pathId}:${i}`, step: { path: f.item, part: p, n: i + 1 } });
-      (p.branches || []).forEach((b, j) => cards.push({ key: `r:${pathId}:${i}:${j}`, reply: { path: f.item, part: p, n: i + 1, b } }));
+      (p.branches || []).forEach((b, j) => {
+        const to = sayAt(b.go, f);
+        if (b.then || to) cards.push({ key: `r:${pathId}:${i}:${j}`, reply: { path: f.item, part: p, n: i + 1, b, to } });
+      });
     });
     return cards;
+  }
+  // The first thing to say or ask where a reply leads (another step, a path, or an answer)
+  function sayAt(go, f) {
+    const first = (x) => (Array.isArray(x) ? x[0] : x);
+    let part = null;
+    if (go.startsWith("step:")) part = f.item.parts[+go.slice(5) - 1];
+    else {
+      const [sec, id, step] = go.split("/");
+      const t = getItem(sec, id);
+      if (!t) return null;
+      if (sec === "objections") return { say: t.oneLiner, ask: t.askBack };
+      if (t.parts) part = t.parts[(+step || 1) - 1];
+    }
+    if (!part || !(part.say || part.ask)) return null;
+    return { say: first(part.say), ask: first(part.ask) };
   }
   const REHEARSE_PATHS = () => ["way-of-the-master", ...D.talking.map((t) => t.id)];
   function deckCards(kind, deck) {
@@ -740,12 +774,6 @@
     if (b === 0) return "Needs work";
     return b >= STRONG ? "Strong" : "Learned";
   }
-  function practiceSummary() {
-    const v = deckCards("verses", "All");
-    const o = deckCards("objections", "All");
-    const kv = knownCount(v), ko = knownCount(o);
-    return kv || ko ? `${kv} verses and ${ko} answers learned.` : "";
-  }
 
   let practiceState = {};
   function pagePractice(kind, deck) {
@@ -762,7 +790,7 @@
       if (saved && saved.kind === kind && saved.deck === deck) {
         const card = cards.find((c) => c.key === saved.currentKey);
         if (card) {
-          Object.assign(practiceState, { current: card, last: saved.last, revealed: saved.revealed, reviewed: saved.reviewed, right: saved.right });
+          Object.assign(practiceState, { current: card, last: saved.last, revealed: saved.revealed, reviewed: saved.reviewed, right: saved.right, seen: saved.seen || [], plan: saved.plan });
           resumed = true;
         }
       }
@@ -778,8 +806,8 @@
     return { title };
   }
   const DRILLS = {
-    mix: { title: "Today's Practice", blurb: "10 mixed cards, weak ones first", decks: () => ["Today"], hidden: true },
-    rehearse: { title: "Rehearse a Conversation", blurb: "Run a conversation: what you say, and what to do when they reply",
+    mix: { title: "Today's Practice", blurb: "10 mixed cards: verses, answers, questions, and steps", decks: () => ["Today"], hidden: true },
+    rehearse: { title: "Rehearse a Conversation", blurb: "What you say, and how to answer their replies",
       decks: () => ["All", ...REHEARSE_PATHS()], label: (d) => (d === "All" ? "All" : plain(findPath(d).item.title)) },
     verses: { title: "Verse Flashcards", blurb: "See a reference, say the verse (or the reverse)", decks: () => ["All", "Favorites", ...D.verseTopics] },
     objections: { title: "Objection Drill", blurb: "Hear an objection, give your answer", decks: () => ["All", "Favorites", ...(D.objectionCategories || [])] },
@@ -832,9 +860,20 @@
       ${frac > 0 ? `<circle cx="12" cy="12" r="9" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"
         stroke-dasharray="${(frac * c).toFixed(1)} ${c.toFixed(1)}" transform="rotate(-90 12 12)"/>` : ""}</svg>`;
   }
+  // Today's practice: 3 verses, 3 answers, 2 claims, 2 conversation steps, shuffled
+  const TODAY_PLAN = ["v:", "v:", "v:", "o:", "o:", "o:", "c:", "c:", "r:", "r:"];
   function pickCard() {
     const { cards, last } = practiceState;
-    let pool = cards.length > 1 ? cards.filter((c) => c.key !== last) : cards;
+    const seen = (practiceState.seen = practiceState.seen || []);
+    // Today's practice never repeats a card; other decks bring missed cards back
+    let pool = cards.length > 1 ? cards.filter((c) => c.key !== last && !(practiceState.kind === "mix" && seen.includes(c.key))) : cards;
+    if (practiceState.kind === "mix") {
+      if (!practiceState.plan || practiceState.reviewed === 0) practiceState.plan = [...TODAY_PLAN].sort(() => Math.random() - 0.5);
+      const want = practiceState.plan[practiceState.reviewed % TODAY_PLAN.length];
+      const typed = pool.filter((c) => c.key.startsWith(want));
+      if (typed.length) pool = typed;
+    }
+    if (!pool.length) pool = cards;
     // Weight toward low boxes: box 0 is 6x as likely as box 5
     const weights = pool.map((c) => 6 - boxOf(c.key));
     let r = Math.random() * weights.reduce((a, b) => a + b, 0);
@@ -848,10 +887,11 @@
     }
     practiceState.current = pick;
     practiceState.revealed = false;
+    seen.push(pick.key);
   }
   function savePractice() {
-    const { kind, deck, current, last, revealed, reviewed, right } = practiceState;
-    sessionStorage.setItem("practiceState", JSON.stringify({ kind, deck, currentKey: current && current.key, last, revealed, reviewed, right }));
+    const { kind, deck, current, last, revealed, reviewed, right, seen, plan } = practiceState;
+    sessionStorage.setItem("practiceState", JSON.stringify({ kind, deck, currentKey: current && current.key, last, revealed, reviewed, right, seen, plan }));
   }
   function renderCard() {
     const el = document.getElementById("card");
@@ -892,13 +932,16 @@
       } else {
         const b = st.b;
         const tgt = goTarget(b.go.startsWith("step:") ? `${findPath(st.path.id).sec}/${st.path.id}/${b.go.slice(5)}` : b.go);
-        front = ctx + `<p class="card-ref">They say: ${esc(plain(b.if))}</p><p class="card-hint">What do you do?</p>`;
-        back = `${b.then ? boxes("ask", "Ask", b.then) : ""}<p class="card-note">Then: ${esc(tgt.title)}</p>`;
+        front = ctx + `<p class="card-ref">They say: ${esc(plain(b.if))}</p><p class="card-hint">What do you say?</p>`;
+        const to = st.to || {};
+        back = b.then
+          ? `${boxes("ask", "Ask", b.then)}<p class="card-note">Then: ${esc(tgt.title)}</p>`
+          : `${boxes("say", "Say", to.say)}${boxes("ask", "Ask", to.ask)}<p class="card-note">From: ${esc(tgt.title)}</p>`;
       }
     } else if (kind_ === "verses") {
       const v = current.verse;
       const refHtml = `<p class="card-ref">${esc(v.ref)}</p>`;
-      const textHtml = `<p class="card-text">${esc(v.text)}</p>`;
+      const textHtml = `<p class="card-text">${esc(/[,;:]$/.test(v.text) ? v.text.slice(0, -1) + " ..." : v.text)}</p>`;
       front = dir === "ref" ? refHtml + `<p class="card-hint">Say the verse</p>` : textHtml + `<p class="card-hint">Name the reference</p>`;
       const extra = `${v.tag ? `<p class="card-tag">${esc(v.tag)}</p>` : ""}${v.note ? `<p class="card-note">${inline(v.note)}</p>` : ""}`;
       back = (dir === "ref" ? textHtml : refHtml) + extra;
@@ -1105,7 +1148,7 @@
       return;
     }
     if (t.closest("[data-again-session]")) {
-      Object.assign(practiceState, { reviewed: 0, right: 0, counted: false });
+      Object.assign(practiceState, { reviewed: 0, right: 0, counted: false, seen: [], plan: null });
       pickCard();
       return renderCard();
     }
@@ -1184,6 +1227,8 @@
     if (parts[0] === "practice") return pagePractice(parts[1], parts[2]);
     if (parts[0] === "people" && parts[1]) return pagePerson(parts[1], parts[2]);
     // Old links: Worldview Notes and Talking Paths now live on People pages
+    if (parts.length === 1 && (parts[0] === "talking" || parts[0] === "worldviews")) return pageSection("people");
+    if (parts.length === 1 && parts[0] === "openers") return pageSection("skills");
     if (parts[0] === "worldviews" && parts[1]) return pagePerson(parts[1]);
     if (parts[0] === "talking" && parts[1] && !parts[2]) {
       const person = D.people.find((x) => x.talk === parts[1]);

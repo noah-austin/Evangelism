@@ -319,7 +319,7 @@ If we follow Jesus, we take Scripture the way He did.`,
       },
       {
         heading: "Go deeper",
-        body: `- {{Talking path: “I'm pro-choice”|talking/pro-choice}}
+        body: `- {{Step-by-step conversation: “I'm pro-choice”|talking/pro-choice}}
 - {{Abortion objections|objections/abortion}}`,
       },
       {

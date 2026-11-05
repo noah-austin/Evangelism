@@ -2,7 +2,7 @@
 //
 // Common claims and the first question to ask back. Used in two places:
 //   - Practice > Columbo drill (see the claim, come up with the question)
-//   - Conversation Skills > Self-Defeating Claims List (the selfDefeating ones)
+//   - Conversation Skills > Suicide (the selfDefeating ones fill its list)
 //
 // Each claim:
 //   id:            short id
@@ -224,22 +224,15 @@ DATA.claims = [
   },
 ];
 
-// Build the "Self-Defeating Claims" page in Conversation Skills, right after Suicide.
+// Fill the Suicide page in Conversation Skills with the full list of self-defeating claims.
 (function () {
-  const list = DATA.claims.filter((c) => c.selfDefeating);
-  const page = {
-    id: "self-defeating-claims",
-    title: "Self-Defeating Claims List",
-    category: "Asking Questions",
-    sources: ["Greg Koukl"],
-    summary: `Claims that fail their own standard. Ask the question back, kindly, and let them see it. To drill these, try the {{Columbo drill|practice/claims/All}}.`,
-    parts: list.map((c) => ({
-      heading: "“" + c.claim + "”",
-      ask: c.ask,
-      body: c.why + (c.next ? ` ({{Full answer|${c.next}}})` : ""),
-    })),
-  };
-  const skills = DATA.skills || [];
-  const at = skills.findIndex((s) => s.id === "suicide");
-  skills.splice(at < 0 ? skills.length : at + 1, 0, page);
+  const page = (DATA.skills || []).find((s) => s.id === "suicide");
+  if (!page) return;
+  const list = DATA.claims.filter((c) => c.selfDefeating).map((c) => ({
+    heading: "“" + c.claim + "”",
+    ask: c.ask,
+    body: c.why + (c.next ? ` ({{Full answer|${c.next}}})` : ""),
+  }));
+  const at = page.parts.findIndex((p) => p.heading === "Examples");
+  page.parts.splice(at < 0 ? 0 : at, at < 0 ? 0 : 1, ...list);
 })();

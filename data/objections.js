@@ -33,7 +33,7 @@ DATA.objections = [
     category: "The Gospel & Salvation",
     title: "I'm a good person",
     sources: ["Ray Comfort", "Living Waters"],
-    oneLiner: "Most people think they're good. Can I ask you a few questions to see if you'd pass God's standard?",
+    oneLiner: "Most people think they're good. Want to see if you'd pass God's standard?",
     askBack: "Good compared to what? Other people, or God?",
     short: `Most of us compare ourselves to other people, so we look pretty good. But God doesn't grade on a curve. His standard is His Law, and He sees the heart.
 
@@ -129,7 +129,7 @@ Paul persecuted Christians and called himself the worst of sinners, yet God save
     category: "The Gospel & Salvation",
     title: "Hell isn't fair",
     sources: ["Ray Comfort", "Greg Koukl", "C.S. Lewis"],
-    oneLiner: `Hell is justice, not cruelty. The good news is that God offers a pardon, and nobody has to go there.`,
+    oneLiner: "Hell is justice, not cruelty. And God offers a pardon, so no one has to go.",
     askBack: `Do you think God should punish murderers and rapists?`,
     short: `Most people agree that some people deserve punishment. The question is where to draw the line. God draws it at His perfect Law, and by that standard we've all broken it.
 
@@ -202,6 +202,28 @@ God is being patient with you right now, and that patience is meant to lead you 
     verses: ["Proverbs 27:1", "James 4:14", "Luke 12:20", "2 Corinthians 6:2", "2 Peter 3:9"],
     related: ["paths/way-of-the-master", "openers/wrapping-up"],
   },
+  {
+    id: "happy-as-i-am",
+    category: "The Gospel & Salvation",
+    title: "I'm happy as I am",
+    sources: ["Ray Comfort", "Living Waters"],
+    oneLiner: "I'm glad you're happy. But happiness doesn't answer what happens when you die.",
+    askBack: "If you died tonight, would you be ready to face God?",
+    short: `Being happy is good. But a man can be happy on a plane without a parachute, right up until he has to jump. The question isn't how you feel now; it's whether you're ready for what's coming.
+
+Jesus asked what it profits a man to gain the whole world and lose his soul. Everyone dies, and then comes judgment.`,
+    deep: `**The parachute:** You wouldn't put on a parachute to feel happier on a flight. You'd put it on because you're going to jump. Jesus isn't an add-on for a better life; He's the only way to survive the jump.
+
+**Happy now, lost later:** The rich man was content with his barns, and God called him a fool that very night ([[Luke 12:20]]). See also [[Mark 8:36]].
+
+**Death and judgment are certain** ([[Hebrews 9:27]]).
+
+**God put eternity in their heart** ([[Ecclesiastes 3:11]]). Gently ask if they ever think about it.
+
+**Go to the Law:** “Can I ask you a few questions to see if you'd pass God's standard?” ({{Way of the Master|paths/way-of-the-master/2}})`,
+    verses: ["Mark 8:36", "Luke 12:20", "Hebrews 9:27", "Ecclesiastes 3:11"],
+    related: ["objections/think-later", "paths/way-of-the-master"],
+  },
 
   {
     id: "spiritual-not-religious",
@@ -229,7 +251,7 @@ But “spiritual” can mean a lot of things. If there's a God who made us, the 
     category: "The Gospel & Salvation",
     title: "You don't need a relationship with Jesus",
     sources: ["Ray Comfort", "Cliff Knechtle"],
-    oneLiner: `Jesus said eternal life is knowing God and Him. You can't be right with God while rejecting the One He sent to save you.`,
+    oneLiner: "You can't be right with God while rejecting the One He sent to save you.",
     askBack: `If you stood before God today, what would you say to Him about your sin?`,
     short: `Believing God exists is a good start, but the Bible says even demons believe that, and they tremble.
 
@@ -253,7 +275,7 @@ The problem isn't whether God exists. It's that we've broken His Law and we're g
     category: "The Gospel & Salvation",
     title: "The Bible is just a guide to being a decent person",
     sources: ["Ray Comfort", "Living Waters"],
-    oneLiner: `If all God wanted was decent people, Jesus wouldn't have needed to die. The cross says decent isn't enough.`,
+    oneLiner: "If decent were enough, Jesus wouldn't have needed to die.",
     askBack: `Who decides what counts as decent: you, or God?`,
     short: `The Bible does teach us how to live, but it doesn't present its commands as suggestions. It says “You shall not,” not “try not to.” And the standard isn't “don't be a jerk.” It's perfect: love God with all your heart, and keep His commandments in your heart, not just your actions.
 
@@ -306,7 +328,7 @@ Hebrews says we die once, and **after that** comes judgment. So dying isn't the 
     category: "God & Suffering",
     title: "Why does God allow suffering?",
     sources: ["C.S. Lewis", "Greg Koukl", "Ray Comfort"],
-    oneLiner: `It's a hard question. But without God, there's no real evil to complain about, and no hope it will ever be fixed.`,
+    oneLiner: "It's a hard question. But without God, there's no real evil and no hope it gets fixed.",
     askBack: `Is this a question you're asking because of something you've been through?`,
     short: `That's one of the hardest questions there is. The Bible's answer is that the world is broken because of sin, ours included. Suffering is a sign that something has gone wrong.
 
@@ -440,7 +462,7 @@ Many people saw Jesus' miracles and still rejected Him. The issue usually isn't 
     category: "Church & Christians",
     title: "Christians are hypocrites",
     sources: ["Ray Comfort", "Cliff Knechtle"],
-    oneLiner: `You're right, some are. Jesus was hard on hypocrites too. But they'll answer to God, and so will we.`,
+    oneLiner: "You're right, some are. Jesus was hard on hypocrites too. They'll answer to God.",
     askBack: `Would you let a hypocrite keep you out of heaven?`,
     short: `I agree. Some people who call themselves Christians are hypocrites, and Jesus condemned that more strongly than anyone.
 
@@ -456,6 +478,30 @@ But a hypocrite doesn't make Christianity false. If someone uses a counterfeit $
 **Point to Jesus, not Christians.** Judge Christianity by Christ, not by His worst followers.`,
     verses: ["Matthew 23:28", "Matthew 7:21", "Romans 3:23"],
     related: ["paths/way-of-the-master", "objections/hurt-by-church"],
+  },
+  {
+    id: "hate-gay",
+    category: "Church & Christians",
+    title: "Christians hate gay people",
+    sources: ["Ray Comfort", "Greg Koukl"],
+    oneLiner: "Disagreeing isn't hating. The Bible says we're all sinners, me included.",
+    askBack: "What makes you say that? Has someone treated you badly?",
+    short: `Some Christians have been cruel, and that's wrong. But disagreeing with someone isn't hating them.
+
+The Bible lists homosexual sin right next to lying, stealing, and greed. It puts all of us in the same boat. Then it says, “Such were some of you; but you were washed.” The gospel is for everyone, and that includes me.`,
+    deep: `**Listen first.** If they've been hurt by Christians, say you're sorry. Don't defend bad behavior.
+
+**Same list, same need:** [[1 Corinthians 6:9-10]] names many sins, including ones most people have done. Then [[1 Corinthians 6:11]]: God washed and changed people like that. No one is singled out, and no one is beyond hope.
+
+**Include yourself.** “I've lied and lusted. I needed forgiveness too.” Everyone has sinned ([[Romans 3:23]]).
+
+**Love tells the truth.** If a bridge were out, the loving thing is to warn people. God showed His love while we were still sinners ([[Romans 5:8]]).
+
+**Stay on the gospel.** Don't let it become a debate about one sin. Take them to the Ten Commandments, where all of us are guilty ({{Way of the Master|paths/way-of-the-master/3}}).
+
+**My view:** {{Homosexuality|convictions/homosexuality}} and {{Equality of Sin|convictions/equality-of-sin}}.`,
+    verses: ["Romans 3:23", "1 Corinthians 6:9-10", "1 Corinthians 6:11", "Romans 5:8"],
+    related: ["convictions/homosexuality", "objections/dont-judge"],
   },
 
   {
@@ -486,7 +532,7 @@ But Jesus isn't the one who hurt you. He invites the hurting and the worn out to
     category: "Church & Christians",
     title: "Jesus said don't judge",
     sources: ["Greg Koukl", "Ray Comfort"],
-    oneLiner: `He was talking about hypocritical judging. In the same passage, He told us to help others with their sin.`,
+    oneLiner: "He meant hypocritical judging. In the same passage, He said to help others with sin.",
     askBack: `Isn't “you shouldn't judge” a judgment too?`,
     short: `In Matthew 7, Jesus said not to judge hypocritically: take the log out of your own eye *first*, then help your brother with the speck. He also said to “judge with righteous judgment.”
 
@@ -505,7 +551,7 @@ I'm not saying I'm better than you. I've broken God's Law too. I'm telling you w
     category: "Church & Christians",
     title: "Religion is man-made and evil",
     sources: ["Ray Comfort", "C.S. Lewis", "Cliff Knechtle"],
-    oneLiner: `A lot of religion is man-made. Jesus agreed and was its harshest critic. Christianity isn't people reaching up to God; it's God reaching down to us.`,
+    oneLiner: "Jesus was the harshest critic of man-made religion. The gospel is God reaching down.",
     askBack: `Is your problem with Jesus, or with people who claimed to follow Him?`,
     short: `I agree that people have done terrible things in the name of religion, and Jesus condemned religious hypocrites more strongly than anyone.
 
@@ -534,7 +580,7 @@ But every man-made religion says “do this to earn God's favor.” The gospel s
     category: "The Bible",
     title: "The Bible has been changed",
     sources: ["Lee Strobel", "Greg Koukl"],
-    oneLiner: "It's not a game of telephone. We have thousands of ancient copies, and they show us what was originally written.",
+    oneLiner: "It's not a game of telephone. Thousands of ancient copies show what was first written.",
     askBack: "Who do you think changed it, and when?",
     short: `We don't translate a translation of a translation. Translators work from the original Hebrew and Greek, and we have more ancient copies of the New Testament than of any other ancient book: over 5,000 in Greek alone, spread across the ancient world.
 
@@ -572,7 +618,7 @@ Nobody could have gathered them all up and changed them. Comparing them, scholar
     category: "The Bible",
     title: "Translations aren't accurate",
     sources: ["Lee Strobel", "Greg Koukl"],
-    oneLiner: "Every major translation goes straight back to the Hebrew and Greek. Line them up side by side and they say the same thing.",
+    oneLiner: "Every major translation goes back to the Hebrew and Greek, and they say the same thing.",
     askBack: "Have you compared a few translations yourself? Where do they disagree?",
     short: `Modern Bibles aren't a translation of a translation. Teams of scholars translate directly from the original Hebrew and Greek, checking each other's work.
 
@@ -660,7 +706,7 @@ The Bible was written by about 40 authors over roughly 1,500 years, yet it tells
     category: "The Bible",
     title: "The God of the Old Testament is cruel",
     sources: ["Greg Koukl", "C.S. Lewis"],
-    oneLiner: "That's a fair question. But to call God cruel, you need a real standard of right and wrong. Where does that come from?",
+    oneLiner: "Fair question. But to call God cruel, you need a real standard. Where does it come from?",
     askBack: "Do you mean it's really wrong, or just that you don't like it?",
     short: `Your sense that cruelty is truly wrong is a good thing, but it points to God, not away from Him. Without God, there's no real standard to judge anything as evil.
 
@@ -693,7 +739,7 @@ And when you look closely, God was not quick to judge. He waited hundreds of yea
     category: "The Bible",
     title: "You just interpret it your way",
     sources: ["Greg Koukl", "Cliff Knechtle"],
-    oneLiner: "Fair point. Anyone can twist a text. So let's read it in context together and see what the writer meant.",
+    oneLiner: "Fair point. Anyone can twist a text, so let's read it in context together.",
     askBack: "What do you think this passage is saying?",
     short: `Every writer means something, and our job is to find out what they meant, not make it say what we want. That's how we read any letter or book.
 
@@ -719,7 +765,7 @@ Some parts of the Bible are hard to understand. But the main message is not: we'
     category: "Jesus",
     title: "Jesus never existed",
     sources: ["Lee Strobel"],
-    oneLiner: "Almost no historians believe that, even skeptical ones. Non-Christian writers from that time mention Him.",
+    oneLiner: "Almost no historians believe that, even skeptics. Non-Christian writers mention Him.",
     askBack: "What historians have you read who say He didn't exist?",
     short: `Nearly all historians of the ancient world, Christian or not, agree Jesus was a real person who was crucified under Pontius Pilate.
 
@@ -745,7 +791,7 @@ Roman historian Tacitus and Jewish historian Josephus both mention Him. Even wel
     category: "Jesus",
     title: "Jesus was just a good teacher",
     sources: ["C.S. Lewis", "Ray Comfort"],
-    oneLiner: "A good teacher doesn't claim to be God. Jesus did, so “just a good teacher” isn't an option.",
+    oneLiner: "A good teacher doesn't claim to be God. Jesus did.",
     askBack: "What would you think of a teacher today who said he was God?",
     short: `Jesus claimed to forgive sins, to be one with the Father, and to be the only way to God. If those claims were false, He wasn't a good teacher. He was either lying or deluded.
 
@@ -771,7 +817,7 @@ The only other option is that He was telling the truth. And then we have to do w
     category: "Jesus",
     title: "The resurrection didn't happen",
     sources: ["Lee Strobel"],
-    oneLiner: "Then how do you explain the empty tomb, and why the disciples died saying they'd seen Him alive?",
+    oneLiner: "Then what explains the empty tomb, and disciples dying for saying they saw Him alive?",
     askBack: "What do you think happened to the body?",
     short: `A handful of facts are accepted by most scholars, even skeptical ones: Jesus died by crucifixion, His followers believed they saw Him alive, and even enemies like Paul and skeptics like His brother James became believers.
 
@@ -797,7 +843,7 @@ Every alternative theory struggles to explain all of those facts together. The r
     category: "Jesus",
     title: "Jesus never claimed to be God",
     sources: ["Lee Strobel", "Cliff Knechtle"],
-    oneLiner: "He did, and the people who heard Him understood it. That's why they tried to stone Him for blasphemy.",
+    oneLiner: "He did, and His hearers understood. That's why they tried to stone Him for blasphemy.",
     askBack: "Why do you think the religious leaders wanted Him executed?",
     short: `Jesus didn't usually say the words “I am God,” but He said and did things only God could. He forgave sins, claimed God's own name, “I am,” and accepted worship.
 
@@ -852,7 +898,7 @@ Many of the founders of modern science, like Kepler, Boyle, Newton and Faraday, 
     category: "Science",
     title: "Evolution explains everything",
     sources: ["Ray Comfort", "Living Waters", "Lee Strobel"],
-    oneLiner: "It can't explain where the universe came from, how life started, or why you know right from wrong.",
+    oneLiner: "It can't explain where the universe came from, how life began, or right from wrong.",
     askBack: "Where did the first living thing come from?",
     short: `Whatever someone thinks about evolution, it doesn't touch the biggest questions: why is there a universe, how did life begin from non-life, where does the information in DNA come from, and why do we have a conscience?
 
@@ -873,6 +919,32 @@ And no theory of biology changes the fact that we've all broken God's Law and wi
 **Study:** Lee Strobel, *The Case for a Creator*; Living Waters' film *Evolution vs. God*.`,
     verses: ["Genesis 1:1", "Romans 1:20", "John 3:19"],
     related: ["objections/science-disproves-god", "evidence/moral-law", "paths/way-of-the-master"],
+  },
+  {
+    id: "dinosaurs-age",
+    category: "Science",
+    title: "What about dinosaurs and the age of the earth?",
+    sources: ["Ray Comfort", "Living Waters"],
+    oneLiner: "Dinosaurs were made on day six, with people. The bigger question is who made them.",
+    askBack: "If the earth is old, does that change whether you've broken God's Law?",
+    short: `The Bible says God made everything in six days, including land animals like dinosaurs. Dating methods depend on assumptions about the past, and God may have made a mature earth, just as Adam was created a grown man.
+
+Christians do differ on the age of the earth, but none doubt that God made it. And either way, you'll still stand before Him one day.`,
+    deep: `**Six days:** “In six days the LORD made the heavens and the earth” ([[Exodus 20:11]]). Land animals and people were made on day six.
+
+**People from the beginning:** Jesus said God made them male and female “from the beginning of creation” ([[Mark 10:6]]).
+
+**Death came through sin** ([[Romans 5:12]]), so death and fossils came after the fall.
+
+**Mature creation:** Adam, trees, and starlight could have been made already “grown.” Apparent age isn't proof of actual age.
+
+**Job's Behemoth** (Job 40:15) is described as a huge animal with a tail like a cedar. Some think it was a dinosaur.
+
+**Don't get sidetracked.** Answer briefly, then bring it back to God's Law and the cross. Creation itself shows there's a Creator ([[Romans 1:20]]).
+
+**My view:** {{Creation & Literal Days|convictions/creation}}.`,
+    verses: ["Exodus 20:11", "Mark 10:6", "Romans 5:12", "Romans 1:20"],
+    related: ["convictions/creation", "objections/evolution"],
   },
 
   {
@@ -904,7 +976,7 @@ Saying miracles can't happen assumes there's no God, which is the very question 
     category: "Other Religions",
     title: "What about sincere people of other religions?",
     sources: ["Ray Comfort", "Cliff Knechtle"],
-    oneLiner: "Sincerity matters, but it doesn't make something true. You can sincerely take the wrong medicine.",
+    oneLiner: "Sincere doesn't mean true. You can sincerely take the wrong medicine.",
     askBack: "Can someone be sincere and still be wrong?",
     short: `Being sincere doesn't remove our sin. Every religion tries to reach God through good works, but we've all broken God's Law, and no amount of good deeds can erase that.
 
@@ -927,7 +999,7 @@ Christianity is different: God came to us. Jesus paid the penalty we owe. That's
     category: "Other Religions",
     title: "Christianity is a Western, white man's religion",
     sources: ["Cliff Knechtle"],
-    oneLiner: "Christianity began in the Middle East. Today most Christians live in Africa, Latin America and Asia.",
+    oneLiner: "It began in the Middle East. Most Christians now live in Africa, Asia, and Latin America.",
     askBack: "Where do you think Christianity started?",
     short: `Jesus was a Jewish man from the Middle East. The early church spread across Asia and Africa (Egypt, Ethiopia, Syria) long before it reached most of Europe.
 
@@ -952,7 +1024,7 @@ Today, most of the world's Christians live in the Global South. The gospel is fo
     category: "Other Religions",
     title: "Christianity copied pagan myths",
     sources: ["Lee Strobel"],
-    oneLiner: "That idea spreads online, but historians don't take it seriously. Most of the parallels are exaggerated or come from later sources.",
+    oneLiner: "Historians don't take that seriously. Most parallels are exaggerated or came later.",
     askBack: "Which myth do you think it copied?",
     short: `Claims that Jesus was copied from gods like Horus or Mithras usually fall apart when you check the ancient sources. Many “parallels” are invented, stretched, or come from later centuries.
 
@@ -978,7 +1050,7 @@ The Gospels read as history, not myth. They name real places, real rulers and re
     category: "Abortion",
     title: "Abortion is a woman's right",
     sources: ["Russell Hunter", "Abolitionist Rising", "Greg Koukl"],
-    oneLiner: "It comes down to one question: what is the unborn? If it's a human being, no one has the right to kill it.",
+    oneLiner: "One question: what is the unborn? If it's a human being, no one has the right to kill it.",
     askBack: "If you knew for sure the unborn was a human being, would that change your view?",
     short: `From fertilization, the unborn is a living, whole, distinct human being. That's basic embryology, not religion.
 
@@ -1021,7 +1093,7 @@ So abortion isn't first a political issue. It's sin, and the answer is the gospe
     category: "Abortion",
     title: "It's just a clump of cells",
     sources: ["Greg Koukl", "Abolitionist Rising"],
-    oneLiner: "So are you and I. The question isn't how many cells, but what kind of thing it is: a living human being.",
+    oneLiner: "So are you and I. The question is what kind of thing it is: a living human being.",
     askBack: "At what point do you think it becomes a human being, and why then?",
     short: `From fertilization, the unborn has its own DNA, its own body, and is growing as a human being. It isn't a potential human. It's a human with potential.
 
@@ -1044,7 +1116,7 @@ The differences between the unborn and you are differences of size and stage, no
     category: "Abortion",
     title: "My body, my choice",
     sources: ["Abolitionist Rising", "Greg Koukl"],
-    oneLiner: "I agree you have rights over your body. But there are two bodies here, and the other one is a child.",
+    oneLiner: "You have rights over your body. But there are two bodies here, and one is a child.",
     askBack: "Does your right to your body include the right to end someone else's life?",
     short: `The unborn child has their own body: their own DNA, heartbeat, blood type, and often a different sex from the mother. Being inside someone doesn't make you part of them.
 
@@ -1063,7 +1135,7 @@ No one's freedom includes the right to kill an innocent person.`,
     category: "Abortion",
     title: "What about rape or incest?",
     sources: ["Russell Hunter", "Abolitionist Rising"],
-    oneLiner: "Rape is evil, and the rapist should be punished. But the child did nothing wrong and shouldn't die for his father's crime.",
+    oneLiner: "Rape is evil and the rapist should be punished. The child shouldn't die for his crime.",
     askBack: "If the child is a human being, should how they were conceived decide whether they live?",
     short: `Rape is a horrible crime. The woman is a real victim, and she deserves care, protection, and justice.
 
@@ -1086,7 +1158,7 @@ But abortion doesn't undo the rape. It adds a second victim. The child is just a
     category: "Abortion",
     title: "What if the mother's life is at risk?",
     sources: ["Abolitionist Rising"],
-    oneLiner: "Doctors should try to save both lives. Treating a mother to save her life is not the same as deliberately killing her child.",
+    oneLiner: "Doctors should try to save both. Saving the mother isn't the same as killing the child.",
     askBack: "Is treating a sick mother the same as intentionally killing her child?",
     short: `The goal in any medical emergency should be to save both patients. When a mother is treated for a life-threatening condition and the child dies as an unintended result, that isn't abortion.
 
@@ -1107,7 +1179,7 @@ Abortion is the intentional killing of the child. That's never medically necessa
     category: "Abortion",
     title: "Men can't have an opinion on abortion",
     sources: ["Abolitionist Rising"],
-    oneLiner: "Whether killing an innocent person is wrong doesn't depend on who's saying it. Truth isn't male or female.",
+    oneLiner: "Whether killing an innocent person is wrong doesn't depend on who says it.",
     askBack: "Would you say a man can't speak against slavery or child abuse unless he's personally affected?",
     short: `An argument stands or falls on its own, not on the speaker. And half the babies killed by abortion are boys, so men aren't outsiders to this.
 
@@ -1126,7 +1198,7 @@ God calls everyone, men included, to speak up for those who can't ([[Proverbs 31
     category: "Abortion",
     title: "I've had an abortion",
     sources: ["Living Waters", "Abolitionist Rising"],
-    oneLiner: "Thank you for telling me. It was wrong, and I think you know that. But there's full forgiveness in Jesus, even for this.",
+    oneLiner: "Thank you for telling me. It was wrong, but Jesus fully forgives, even this.",
     askBack: "Can I tell you how God can completely forgive and clean someone's conscience?",
     short: `I'm not going to pretend it was nothing, and I'm not going to pile on either. I'm a sinner too.
 
@@ -1151,7 +1223,7 @@ Abortion is a serious sin, but it is not beyond the blood of Christ. Jesus took 
     category: "Abortion",
     title: "We should reduce abortion step by step",
     sources: ["Russell Hunter", "Abolitionist Rising"],
-    oneLiner: "If abortion is murder, we shouldn't write laws that allow some of it. We should call for it to end now.",
+    oneLiner: "If abortion is murder, laws shouldn't allow some of it. We should call for it to end now.",
     askBack: "Would we pass a law that says child abuse is legal until a certain age?",
     short: `Abolitionists believe laws like heartbeat bills or 15-week bans, while well meant, still permit killing before that point and regulate murder instead of ending it. God condemns unjust laws ([[Isaiah 10:1-2]]).
 
@@ -1198,7 +1270,7 @@ You're free to disagree, and I'll respect that. I'd just rather tell you and be 
     category: "About Evangelism",
     title: "You're forcing your beliefs on me",
     sources: ["Greg Koukl", "Ray Comfort"],
-    oneLiner: "I'm not forcing anything. You're free to walk away. I'm just offering you something I think is true.",
+    oneLiner: "I'm not forcing anything. You're free to walk away. I'm offering what I think is true.",
     askBack: "What would forcing look like, compared to just telling you?",
     short: `Forcing would mean making you believe, or punishing you if you don't. I can't do that, and I wouldn't want to. Faith has to be your own.
 
@@ -1240,7 +1312,7 @@ The Bible says faith comes from hearing ([[Romans 10:17]]). How will they hear w
     category: "About Evangelism",
     title: "Street preaching doesn't work / turns people off",
     sources: ["Ray Comfort", "Living Waters", "Cliff Knechtle"],
-    oneLiner: "Some people are turned off, but some aren't. Jesus, Peter, and Paul all preached in public, and people were saved.",
+    oneLiner: "Some are turned off, but Jesus and the apostles preached in public, and people were saved.",
     askBack: "Is it the message that bothers you, or the way you've seen it done?",
     short: `Bad street preaching does turn people off: angry, condemning, or showy. But the method itself is biblical. Jesus preached on hillsides, Peter preached to a crowd and three thousand were saved, and Paul reasoned in the marketplace every day.
 
@@ -1267,7 +1339,7 @@ Done with love and clarity, it reaches people who would never set foot in a chur
     category: "About Evangelism",
     title: "Shouldn't you build a relationship first?",
     sources: ["Ray Comfort", "Living Waters"],
-    oneLiner: "Relationships are great, and I share with my friends too. But Jesus and Paul also talked to strangers, and we don't know how much time anyone has.",
+    oneLiner: "I share with friends too. But Jesus talked to strangers, and no one is promised tomorrow.",
     askBack: "If you knew a stranger was about to step into traffic, would you wait until you were friends to warn them?",
     short: `It's not either-or. I want to share with people I know well. But many people I meet I'll only see once. Jesus talked to a stranger at a well, Philip ran up to a stranger in a chariot, and both conversations changed lives.
 
@@ -1309,7 +1381,7 @@ I'm not out here to win points. Someone cared enough to tell me, and I'm gratefu
     category: "About Evangelism",
     title: "Only pastors should do that",
     sources: ["Ray Comfort", "Living Waters"],
-    oneLiner: "Every Christian is called to share the gospel. In Acts, ordinary believers spread it everywhere they went.",
+    oneLiner: "Every Christian is called to share. In Acts, ordinary believers spread it everywhere.",
     askBack: "Where in the Bible does it say evangelism is only for pastors?",
     short: `Pastors have an important role, but they aren't the only ones sent. When persecution scattered the early church, the apostles stayed in Jerusalem and ordinary believers went everywhere preaching the word ([[Acts 8:4]]).
 

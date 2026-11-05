@@ -112,9 +112,7 @@ DATA.skills = [
 - **“You shouldn't force your views on others.”** Then ask: “Isn't that what you're doing now?”
 - **“All religions are true.”** That rules out every religion that says it's the only way. (See {{All religions lead to God|objections/all-religions}})
 - **“Only science can tell us what's true.”** Can science prove that statement?
-- **“You can't know anything about God.”** Then how do you know that about God?
-
-See the full list: {{Self-Defeating Claims List|skills/self-defeating-claims}}.`,
+- **“You can't know anything about God.”** Then how do you know that about God?`,
       },
       {
         heading: "Tone",

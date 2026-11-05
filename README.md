@@ -43,7 +43,7 @@ Scripture quotations taken from the (NASB®) New American Standard Bible®, Copy
 
 ## Site layout
 - **Home:** search, Today's practice, Pick up where you left off, Favorites.
-- **Learn:** The Gospel (paths.js), People (worldviews.js + talking.js), Answers (objections.js + claims.js), Conversation Skills (skills.js + openers.js), Reasons to Believe, My Convictions.
+- **Learn:** The Gospel (paths.js), People (worldviews.js + talking.js; pro-choice and morality paths under Topics), Answers (objections.js + claims.js), Conversation Skills (skills.js + openers.js), Reasons to Believe, My Convictions.
 - **Practice:** Today's practice (10 mixed cards), Verse Flashcards, Objection Drill, Columbo Drill, Rehearse a Conversation.
 - **Look up:** Cheat Sheet, Quick Verses, Conversation Mode.
 - Old links (`#/worldviews/x`, `#/talking/x`, `#/objections`) redirect to the new pages.
