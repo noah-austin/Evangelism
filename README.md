@@ -12,6 +12,7 @@ No build step — it's plain HTML/CSS/JS. Open `index.html` through any static s
 | `data/paths.js` | Way of the Master, Romans Road |
 | `data/objections.js` | Objections by category: one-liner, ask-back, 30-second answer, deeper study |
 | `data/skills.js` | Tactics (Koukl), Knechtle-style questions |
+| `data/quiz.js` | Quiz question banks: Who Believes This?, Name That Tactic, Fact Check |
 | `data/claims.js` | Claims to question back: Columbo drill and the Self-Defeating Claims page |
 | `data/evidence.js` | Reasons to Believe: resurrection, the Bible, prophecy, creation, Lewis |
 | `data/openers.js` | Starting and wrapping up conversations |
@@ -44,7 +45,7 @@ Scripture quotations taken from the (NASB®) New American Standard Bible®, Copy
 ## Site layout
 - **Home:** search, Today's practice, Pick up where you left off, Favorites.
 - **Learn:** The Gospel (paths.js), People (worldviews.js + talking.js; pro-choice and morality paths under Topics), Answers (objections.js + claims.js), Conversation Skills (skills.js + openers.js), Reasons to Believe, My Convictions.
-- **Practice:** Today's practice (10 mixed cards), Verse Flashcards, Objection Drill, Columbo Drill, Rehearse a Conversation.
+- **Practice:** Today's practice (10 mixed cards), Verse Flashcards, Objection Drill, Columbo Drill, Rehearse a Conversation, Quizzes (data/quiz.js plus quizzes built from other data).
 - **Look up:** Cheat Sheet, Quick Verses, Conversation Mode.
 - Old links (`#/worldviews/x`, `#/talking/x`, `#/objections`) redirect to the new pages.
 

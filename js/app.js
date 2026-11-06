@@ -27,6 +27,7 @@
     talking: '<path d="M6 4v6a4 4 0 0 0 4 4h8M14 10l4 4-4 4M6 20v-2" stroke-linecap="round" stroke-linejoin="round"/>',
     cheat: '<rect x="5" y="3.5" width="14" height="17" rx="2"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4" stroke-linecap="round"/>',
     convictions: '<path d="M6 21V4M6 4.5c4-2 6 2 12 0v8c-6 2-8-2-12 0" stroke-linecap="round" stroke-linejoin="round"/>',
+    quiz: '<rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12.5l2.6 2.6L16 9.5" stroke-linecap="round" stroke-linejoin="round"/>',
     star: '<path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.8l-5.2 2.8 1-5.8-4.3-4.1 5.9-.8z" stroke-linejoin="round"/>',
     people: '<circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5" stroke-linecap="round"/><circle cx="16.5" cy="9" r="2.6"/><path d="M15.5 14.2c2.6-.3 4.6 1.3 5 4.3" stroke-linecap="round"/>',
     worldviews: '<circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c2.5 2.3 3.5 5 3.5 8s-1 5.7-3.5 8c-2.5-2.3-3.5-5-3.5-8s1-5.7 3.5-8z"/>',
@@ -332,6 +333,7 @@
       <h2 class="section-label">Practice</h2>
       <div class="nav-list">
         ${navRow("#/practice", ICON.practice, "Practice", "Today's mix, drills, and rehearsing conversations", "")}
+        ${navRow("#/quiz", ICON.quiz, "Quizzes", "Test yourself: people, verses, tactics, and facts", "")}
       </div>
       <h2 class="section-label">Look up</h2>
       <div class="nav-list">
@@ -840,7 +842,9 @@
         <span class="row-main"><span class="hero-title">Today's practice</span>
         <span class="hero-sub">10 mixed cards: verses, answers, questions, and steps</span></span>${chevron}
       </a>
-      <div class="list">${rows}</div>
+      <div class="list">${rows}
+        <a class="row" href="#/quiz"><span class="row-main"><span class="row-title">Quizzes</span>
+        <span class="row-sub">Multiple-choice tests with a score at the end.</span></span>${chevron}</a></div>
       <button class="text-btn" data-reset-practice>Reset practice progress</button>`;
     return { title: "Practice" };
   }
@@ -988,6 +992,162 @@
     pickCard();
     renderCard();
     window.scrollTo(0, 0);
+  }
+
+  // ── Quizzes ─────────────────────────────────────────
+  // 10 multiple-choice questions per round. Hand-written banks live in
+  // data/quiz.js; the rest are built from verses, answers, claims, and paths.
+  const QUIZ_LEN = 10;
+  const shuffle = (a) => {
+    const b = [...a];
+    for (let i = b.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [b[i], b[j]] = [b[j], b[i]];
+    }
+    return b;
+  };
+  // Pick wrong answers from a pool, skipping the right one and look-alikes
+  const wrongs = (right, pool, n = 3) => shuffle([...new Set(pool)].filter((x) => x && x !== right)).slice(0, n);
+  const firstWords = (t) => t.toLowerCase().split(/\s+/).slice(0, 2).join(" ");
+  const QUIZZES = [
+    ...(D.quizBanks || []).map((b) => ({
+      id: b.id, title: b.title, blurb: b.blurb,
+      build: () =>
+        b.questions.map((x) => ({
+          q: x.q, a: x.a, explain: x.explain, link: x.link,
+          choices: x.choices ? shuffle(x.choices) : b.choices.length <= 2 ? b.choices : shuffle([x.a, ...wrongs(x.a, b.choices)]),
+        })),
+    })),
+    {
+      id: "verses", title: "Name That Verse", blurb: "Read the verse, pick the reference",
+      build: () =>
+        D.verses.map((v) => {
+          const same = D.verses.filter((w) => w.topics.some((t) => v.topics.includes(t))).map((w) => w.ref);
+          return { q: v.text, sub: v.tag, a: v.ref, verse: true, choices: shuffle([v.ref, ...wrongs(v.ref, same.length > 4 ? same : D.verses.map((w) => w.ref))]), explain: v.note };
+        }),
+    },
+    {
+      id: "answers", title: "Best Response", blurb: "Pick the line to say for each objection",
+      build: () =>
+        D.objections.map((o) => ({
+          q: `They say: “${o.title}”`, a: o.oneLiner, link: `objections/${o.id}`, explain: `Then ask: “${o.askBack}”`,
+          choices: shuffle([o.oneLiner, ...wrongs(o.oneLiner, D.objections.map((x) => x.oneLiner))]),
+        })),
+    },
+    {
+      id: "columbo", title: "Columbo Questions", blurb: "Pick the best question to ask back",
+      build: () =>
+        (D.claims || []).map((c) => ({
+          q: `They say: “${c.claim}”`, a: c.ask, link: c.next, explain: c.why,
+          choices: shuffle([c.ask, ...wrongs(c.ask, D.claims.map((x) => x.ask).filter((x) => firstWords(x) !== firstWords(c.ask)))]),
+        })),
+    },
+    {
+      id: "wotm", title: "Way of the Master", blurb: "Know the steps in order",
+      build: () => {
+        const item = getItem("paths", "way-of-the-master");
+        const main = item.parts.filter((p) => !p.detour);
+        const names = main.map((p) => plain(p.heading));
+        const qs = [];
+        main.forEach((p, i) => {
+          if (i < main.length - 1)
+            qs.push({ q: `What comes after “${names[i]}”?`, a: names[i + 1], choices: shuffle([names[i + 1], ...wrongs(names[i + 1], names)]), link: `paths/way-of-the-master/${i + 2}`,
+              explain: plain([].concat(main[i + 1].say || main[i + 1].ask || [])[0] || "") });
+          const line = [].concat(p.say || p.ask || [])[0];
+          if (line) qs.push({ q: `Which step is this? “${plain(line)}”`, a: names[i], choices: shuffle([names[i], ...wrongs(names[i], names)]), link: `paths/way-of-the-master/${i + 1}` });
+        });
+        return qs;
+      },
+    },
+  ];
+  const quizById = Object.fromEntries(QUIZZES.map((z) => [z.id, z]));
+  const quizBest = () => store.get("quizBest", {});
+
+  function pageQuizMenu() {
+    const best = quizBest();
+    app.innerHTML = `
+      <p class="kicker">Practice</p>
+      <h1 class="page-title">Quizzes</h1>
+      <p class="summary">${QUIZ_LEN} questions each. Tap an answer to see if you're right, then review what you missed at the end.</p>
+      <a class="hero" href="#/quiz/mixed">
+        <span class="hero-icon">${svg(ICON.quiz, 26, 2)}</span>
+        <span class="row-main"><span class="hero-title">Mixed test</span>
+        <span class="hero-sub">A little of everything${best.mixed !== undefined ? `. Best: ${best.mixed} of ${QUIZ_LEN}` : ""}</span></span>${chevron}
+      </a>
+      <div class="list">${QUIZZES.map((z) => `<a class="row" href="#/quiz/${z.id}">
+        <span class="row-main"><span class="row-title">${esc(z.title)}</span>
+        <span class="row-sub">${esc(z.blurb)}${best[z.id] !== undefined ? `. Best: ${best[z.id]} of ${QUIZ_LEN}` : ""}</span></span>${chevron}</a>`).join("")}</div>`;
+    return { title: "Quizzes" };
+  }
+
+  let quiz = null;
+  function pageQuiz(id) {
+    const z = id === "mixed" ? { id: "mixed", title: "Mixed Test" } : quizById[id];
+    if (!z) return pageNotFound();
+    // Keep the round going when coming back from a "Learn more" page
+    const saved = session.get("quiz", null);
+    if (saved && saved.id === id && !saved.done) quiz = saved;
+    else {
+      const qs = id === "mixed" ? shuffle(QUIZZES.flatMap((x) => shuffle(x.build()).slice(0, 2))) : shuffle(z.build());
+      quiz = { id, title: z.title, qs: qs.slice(0, QUIZ_LEN), i: 0, picked: [], done: false };
+    }
+    renderQuiz();
+    return { title: z.title };
+  }
+  function renderQuiz() {
+    session.set("quiz", quiz);
+    const n = quiz.qs.length;
+    if (quiz.done) {
+      const score = quiz.qs.filter((q, k) => quiz.picked[k] === q.a).length;
+      const best = quizBest();
+      const prevBest = best[quiz.id];
+      if (!quiz.saved) {
+        if (prevBest === undefined || score > prevBest) best[quiz.id] = score;
+        store.set("quizBest", best);
+        quiz.saved = true;
+        quiz.newBest = prevBest === undefined || score > prevBest;
+        session.set("quiz", quiz);
+      }
+      const missed = quiz.qs.map((q, k) => ({ q, pick: quiz.picked[k] })).filter((x) => x.pick !== x.q.a);
+      app.innerHTML = `
+        <p class="kicker">${esc(quiz.title)}</p>
+        <h1 class="page-title">${score} of ${n}</h1>
+        <p class="summary">${score === n ? "Perfect score." : score >= n * 0.7 ? "Well done." : "Keep at it. Review the ones you missed below."}${quiz.newBest && prevBest !== undefined ? " New best." : ""}</p>
+        <div class="card-actions"><a class="btn" href="#/quiz">All quizzes</a><button class="btn primary" data-quiz-again>Try again</button></div>
+        ${missed.length ? `<h2 class="section-label">Review</h2>${missed.map(({ q, pick }) => `
+          <div class="card quiz-review">
+            <p class="quiz-q${q.verse ? " verse" : ""}">${esc(q.q)}</p>
+            <p class="quiz-line wrong">You picked: ${esc(pick)}</p>
+            <p class="quiz-line right">Answer: ${esc(q.a)}</p>
+            ${q.explain ? `<p class="row-sub">${inline(q.explain)}</p>` : ""}
+            ${q.link ? `<a class="ilink" href="#/${q.link}">Learn more</a>` : ""}
+          </div>`).join("")}` : ""}`;
+      return;
+    }
+    const q = quiz.qs[quiz.i];
+    const pick = quiz.picked[quiz.i];
+    const answered = pick !== undefined;
+    app.innerHTML = `
+      <p class="kicker">${esc(quiz.title)}</p>
+      <div class="practice-progress"><span>Question ${quiz.i + 1} of ${n}</span><span class="status">${quiz.picked.filter((p, k) => p === quiz.qs[k].a).length} right</span></div>
+      <div class="bar"><span style="width:${((quiz.i / n) * 100).toFixed(1)}%"></span></div>
+      <div class="flashcard quiz-card">
+        ${q.sub ? `<p class="card-hint">${esc(q.sub)}</p>` : ""}
+        <p class="quiz-q${q.verse ? " verse" : ""}">${esc(q.q)}</p>
+      </div>
+      <div class="quiz-choices">${q.choices
+        .map((c) => {
+          const cls = !answered ? "" : c === q.a ? " right" : c === pick ? " wrong" : " dim";
+          return `<button class="quiz-choice${cls}" data-quiz-pick="${esc(c)}"${answered ? " disabled" : ""}>${esc(c)}</button>`;
+        })
+        .join("")}</div>
+      ${answered ? `
+        <div class="quiz-result ${pick === q.a ? "right" : "wrong"}">
+          <p class="quiz-verdict">${pick === q.a ? "Right" : "Not quite"}</p>
+          ${q.explain ? `<p>${inline(q.explain)}</p>` : ""}
+          ${q.link ? `<a class="ilink" href="#/${q.link}">Learn more</a>` : ""}
+        </div>
+        <div class="card-actions"><button class="btn primary wide" data-quiz-next>${quiz.i + 1 < n ? "Next question" : "See my score"}</button></div>` : ""}`;
   }
 
   // ── Cheat sheet ─────────────────────────────────────
@@ -1147,6 +1307,22 @@
       location.replace(repl.getAttribute("href"));
       return;
     }
+    const qp = t.closest("[data-quiz-pick]");
+    if (qp && quiz && quiz.picked[quiz.i] === undefined) {
+      quiz.picked[quiz.i] = qp.dataset.quizPick;
+      return renderQuiz();
+    }
+    if (t.closest("[data-quiz-next]") && quiz) {
+      if (quiz.i + 1 < quiz.qs.length) quiz.i++;
+      else quiz.done = true;
+      renderQuiz();
+      return window.scrollTo(0, 0);
+    }
+    if (t.closest("[data-quiz-again]") && quiz) {
+      session.set("quiz", null);
+      pageQuiz(quiz.id);
+      return window.scrollTo(0, 0);
+    }
     if (t.closest("[data-again-session]")) {
       Object.assign(practiceState, { reviewed: 0, right: 0, counted: false, seen: [], plan: null });
       pickCard();
@@ -1225,6 +1401,7 @@
     if (parts[0] === "cheat") return pageCheat();
     if (parts[0] === "favorites") return pageFavorites();
     if (parts[0] === "practice") return pagePractice(parts[1], parts[2]);
+    if (parts[0] === "quiz") return parts[1] ? pageQuiz(parts[1]) : pageQuizMenu();
     if (parts[0] === "people" && parts[1]) return pagePerson(parts[1], parts[2]);
     // Old links: Worldview Notes and Talking Paths now live on People pages
     if (parts.length === 1 && (parts[0] === "talking" || parts[0] === "worldviews")) return pageSection("people");
