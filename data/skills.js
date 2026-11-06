@@ -148,6 +148,13 @@ DATA.skills = [
     summary: `Some claims defeat themselves: they fail their own standard. Spot them, then point it out gently with a question.`,
     parts: [
       {
+        heading: "Four kinds",
+        body: `- **Formal:** the claim contradicts itself. “There is no truth.”
+- **Practical:** the claim can't be lived or said consistently. “You shouldn't judge.”
+- **Sibling rivalry:** two claims they hold can't both be true. “There's no right or wrong” and “God is evil for allowing suffering.”
+- **Infanticide:** the claim depends on the very thing it denies. Calling evil real borrows a moral standard that only makes sense if God exists.`,
+      },
+      {
         heading: "Examples",
         body: `- **“There is no truth.”** Then ask: “Is that true?”
 - **“You shouldn't force your views on others.”** Then ask: “Isn't that what you're doing now?”

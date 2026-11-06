@@ -59,8 +59,8 @@
       intro: "The positive case for Christianity, to study ahead of time. Answers cover what people say in the moment; this is the deeper evidence behind them." },
     { id: "worldviews", group: "hidden", title: "People", blurb: "Atheists, Muslims, Mormons, and more",
       intro: "What different groups believe, where they differ from the gospel, and good questions to ask." },
-    { id: "convictions", group: "learn", title: "My Convictions", blurb: "Where I stand on key topics, and why",
-      intro: "My positions on topics like creation, baptism, and sexuality, worked out from Scripture. Each page has my view, the key verses, how other Christians see it, and a short way to explain it." },
+    { id: "convictions", group: "learn", title: "My Convictions", blurb: "Where I stand, and notes from what I read",
+      intro: "My positions on topics like creation, baptism, and sexuality, worked out from Scripture, plus Book Notes: a log of what I read and the ideas I want to keep." },
   ];
   // Pages from hidden sections show under these sections (Back button, trail)
   const HOME_OF = { talking: "people", worldviews: "people", openers: "skills" };
@@ -425,7 +425,7 @@
     objections: D.objectionCategories || [],
     talking: ["Doubting God", "Other Faiths", "Christians", "Issues"],
     skills: ["Mindset", "Asking Questions", "Sharing the Gospel", "Hard Moments"],
-    convictions: ["Scripture & Creation", "Salvation", "Church & Christian Living", "Ethics & Society", "Last Things"],
+    convictions: ["Scripture & Creation", "Salvation", "Church & Christian Living", "Ethics & Society", "Last Things", "Book Notes"],
   };
 
   function pageSection(sec) {

@@ -3,6 +3,7 @@
 // Personal positions on topics, worked out from Scripture.
 // Same format as paths: title, summary, and parts (heading, say, ask, body, verses, branches).
 // Each page: category, My view, supporting sections, How Christians differ, If someone asks.
+// "Book Notes" pages are a reading log instead: core ideas, how to use them, examples, my takeaways.
 
 window.DATA = window.DATA || {};
 
@@ -12,6 +13,7 @@ DATA.convictionCategories = [
   "Church & Christian Living",
   "Ethics & Society",
   "Last Things",
+  "Book Notes",
 ];
 
 DATA.convictions = [
@@ -615,6 +617,115 @@ In those cases, the innocent spouse is free to remarry. Otherwise, believers sho
       {
         heading: "If someone asks",
         say: ["I take it as written: it covered the whole earth. Otherwise, why build an ark instead of just moving?"],
+      },
+    ],
+  },
+
+  // --- Book Notes ---
+  {
+    id: "tactics",
+    title: "Tactics (Greg Koukl)",
+    category: "Book Notes",
+    sources: ["Greg Koukl"],
+    summary: `Finished November 2026. The big idea: you don't have to win the argument or close the deal. Ask good questions, stay calm, and leave people with something to think about. Each tactic below also has a full page in {{Conversation Skills|skills}}.`,
+    parts: [
+      {
+        heading: "The goal: an ambassador",
+        body: `- **Knowledge:** know the gospel clearly and enough to answer common questions.
+- **Wisdom:** know how to say it. Questions, not speeches.
+- **Character:** how you treat people speaks as loud as what you say.
+- **The aim:** put a stone in their shoe, one thing they keep thinking about after you leave. You're not responsible for closing the deal; God is.`,
+        verses: ["2 Corinthians 5:20", "Colossians 4:5-6"],
+      },
+      {
+        heading: "Columbo: stay in the driver's seat with questions",
+        ask: ["What do you mean by that?", "How did you come to that conclusion?", "Have you ever considered...?"],
+        body: `**What it means:** Like the TV detective, keep asking questions instead of making speeches.
+
+**How:**
+1. **Clarify** what they mean. Many objections change once they explain them.
+2. **Get their reasons.** The person making a claim has to back it up (the burden of proof), not you.
+3. **Lead** with a question that points out a problem or brings in a new idea.
+
+**Example:** “The Bible has been changed.” Ask: “What do you mean? Which parts, and how do you know?” Most people can't name one.
+
+**Also:** questions buy you time to think, and they keep you out of the hot seat when you don't know an answer.
+
+Full page: {{Columbo|skills/columbo}}.`,
+      },
+      {
+        heading: "Be precise and check the facts",
+        body: `**What it means:** Vague claims sound strong; specific ones can be checked. Many challenges rest on a wrong fact.
+
+**How:** Ask for details (“Which one?” “Where did you hear that?”). Be specific yourself, define your words, and don't overstate.
+
+**Example:** “The church picked the Bible at Nicaea.” Ask: “What do you think happened at Nicaea?” (It was about who Jesus is, not which books.)
+
+Full page: {{Be Precise|skills/be-precise}}.`,
+        verses: ["Proverbs 18:17"],
+      },
+      {
+        heading: "Suicide: views that defeat themselves",
+        body: `**What it means:** Some views fail by their own standard. You don't have to refute them; just help them see it.
+
+**Kinds:**
+- **Formal:** the claim contradicts itself. “There is no truth.” Ask: “Is that true?”
+- **Practical:** the claim can't be lived or said consistently. “You shouldn't judge.” Ask: “Aren't you judging me?”
+- **Sibling rivalry:** two claims they hold can't both be true. “There's no right or wrong” and “God is evil for allowing suffering.”
+- **Infanticide:** the claim depends on the very thing it denies. Calling evil real borrows a moral standard that only makes sense if God exists.
+
+**Tone:** ask it as a real question, not a trap.
+
+Full page and list: {{Suicide|skills/suicide}}.`,
+      },
+      {
+        heading: "Taking the Roof Off",
+        body: `**What it means:** Take their view seriously and follow it to its logical end. If the end is something they'd never accept, the view has a problem.
+
+**How:**
+1. Sum up their view in a sentence.
+2. Apply it consistently.
+3. Ask if they really accept where it leads.
+
+**Example:** “Morality is just personal opinion.” Then: “So the Holocaust wasn't really wrong, just disliked?” Most people won't go there.
+
+Full page: {{Taking the Roof Off|skills/taking-the-roof-off}}.`,
+      },
+      {
+        heading: "Steamroller",
+        say: "Can I respond to that before we move on?",
+        body: `**What it means:** Some people pile on objections and won't let you finish.
+
+**How:** Kindly stop them and ask for a turn. If it keeps happening, name it gently (“I'd like to answer, but I can't if you keep moving on”). If they still won't listen, it's fine to end the conversation kindly.
+
+Full page: {{Steamroller|skills/steamroller}}.`,
+      },
+      {
+        heading: "Rhodes Scholar",
+        ask: "What reasons do the experts give?",
+        body: `**What it means:** “Scientists say...” or “Scholars agree...” is an appeal to experts. Experts can be wrong or biased, and their reasons matter more than their credentials.
+
+**Example:** “Scholars say the Gospels are myths.” Ask: “Which scholars, and what are their reasons?”
+
+Full page: {{Rhodes Scholar|skills/rhodes-scholar}}.`,
+      },
+      {
+        heading: "Character and approach",
+        body: `- Use a question before a statement.
+- Be ready, but don't be in a hurry. One stone in a shoe is a win.
+- Stay calm. If you lose your temper, you lose the person.
+- Avoid church jargon.
+- It's fine to say “I don't know. I'll look into it.”`,
+        verses: ["1 Peter 3:15", "2 Timothy 2:24-25"],
+      },
+      {
+        heading: "My takeaways",
+        body: `- **Be precise and use details.** Specifics persuade, and vague claims fall apart when you ask for details.`,
+      },
+      {
+        heading: "Practice",
+        body: `- {{Columbo drill|practice/claims/All}}: see a claim, ask the right question.
+- {{Objection drill|practice/objections/All}}: practice answers.`,
       },
     ],
   },
