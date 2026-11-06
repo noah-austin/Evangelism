@@ -623,6 +623,28 @@ In those cases, the innocent spouse is free to remarry. Otherwise, believers sho
 
   // --- Book Notes ---
   {
+    id: "school-of-biblical-evangelism",
+    title: "School of Biblical Evangelism (Ray Comfort & Kirk Cameron)",
+    category: "Book Notes",
+    sources: ["Ray Comfort", "Living Waters"],
+    summary: `Started November 2026 (Express edition). A course in sharing the gospel the way Jesus did: the Law before grace, answering objections, and practical evangelism. Notes are added as I read.`,
+    parts: [
+      {
+        heading: "Why I'm reading it",
+        body: `- Go deeper on the Way of the Master method I already use ({{Way of the Master|paths/way-of-the-master}}).
+- Pick up practical material: objections, open-air preaching, follow-up, and examples from Scripture.`,
+      },
+      {
+        heading: "Lesson notes",
+        body: `No notes yet. Add the lesson or chapter, the main idea, and anything worth remembering.`,
+      },
+      {
+        heading: "My takeaways",
+        body: `None yet.`,
+      },
+    ],
+  },
+  {
     id: "tactics",
     title: "Tactics (Greg Koukl)",
     category: "Book Notes",
