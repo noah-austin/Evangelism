@@ -244,6 +244,13 @@ DATA.claims = [
     next: "objections/blind-faith",
   },
   {
+    id: "no-meaning",
+    claim: "Life has no meaning.",
+    ask: "Then why does anything matter to you?",
+    why: "No one lives as if nothing matters. Without God there's no meaning that lasts.",
+    next: "objections/meaning-of-life",
+  },
+  {
     id: "womans-right",
     claim: "Abortion is a woman's right.",
     ask: "What is the unborn?",

@@ -327,6 +327,14 @@ DATA.verses = [
     verified: true,
   },
   {
+    ref: "Colossians 1:16",
+    tag: "Created for Him",
+    text: "For by Him all things were created, both in the heavens and on earth, visible and invisible, whether thrones or dominions or rulers or authorities—all things have been created through Him and for Him.",
+    topics: ["Deity of Christ", "God's Existence"],
+    note: "We were made for Christ. That's where life's meaning is found.",
+    verified: true,
+  },
+  {
     ref: "Revelation 20:14",
     tag: "The second death",
     text: "Then death and Hades were thrown into the lake of fire. This is the second death, the lake of fire.",

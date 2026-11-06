@@ -224,6 +224,34 @@ Jesus asked what it profits a man to gain the whole world and lose his soul. Eve
     verses: ["Mark 8:36", "Luke 12:20", "Hebrews 9:27", "Ecclesiastes 3:11"],
     related: ["objections/think-later", "paths/way-of-the-master"],
   },
+  {
+    id: "meaning-of-life",
+    category: "The Gospel & Salvation",
+    title: "What is the meaning of life?",
+    sources: ["Greg Koukl", "Ray Comfort"],
+    oneLiner: "To know God, love Him, and love people. Jesus is how we get back to Him.",
+    askBack: "What do you think it is?",
+    short: `We were made by God and for God. Jesus said eternal life is knowing the only true God and Jesus Christ whom He sent. The greatest commandment is to love God with everything, and the second is to love your neighbor.
+
+That's why nothing else fully satisfies: God set eternity in our hearts. The problem is that our sin separates us from the God we were made for, and that's why Jesus came.`,
+    deep: `**Ask first.** Most people say being happy, family, or helping others. Listen, and take it seriously.
+
+**What Scripture says:**
+- **Know God:** “This is eternal life, that they may know You” ([[John 17:3]]).
+- **Love God and others:** the greatest commandment ([[Matthew 22:37-38]]).
+- **Made for Him:** all things were created through Christ and for Him ([[Colossians 1:16]]).
+- **We sense it:** God set eternity in our hearts ([[Ecclesiastes 3:11]]).
+
+**Take the roof off, gently:** “If there's no God, then 50 years after we die, does any of it last?” Without God there can be meaning for a while, but no meaning that lasts.
+
+**If they say life has no meaning:** ask why anything matters to them, then. People can't live as if nothing matters.
+
+**Bridge to the gospel:** “Our sin separates us from the God we were made for. Can I ask you a few questions about that?” ({{Way of the Master|paths/way-of-the-master/2}})
+
+**Gaining everything else isn't enough** ([[Mark 8:36]]).`,
+    verses: ["John 17:3", "Matthew 22:37-38", "Colossians 1:16", "Ecclesiastes 3:11"],
+    related: ["objections/happy-as-i-am", "paths/way-of-the-master"],
+  },
 
   {
     id: "spiritual-not-religious",
