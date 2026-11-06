@@ -335,6 +335,22 @@ DATA.verses = [
     verified: true,
   },
   {
+    ref: "1 John 3:4",
+    tag: "Sin is lawlessness",
+    text: "Everyone who practices sin also practices lawlessness; and sin is lawlessness.",
+    topics: ["Sin", "The Law"],
+    note: "The Bible's simplest definition of sin: breaking God's Law.",
+    verified: true,
+  },
+  {
+    ref: "Isaiah 59:2",
+    tag: "Sin separates us from God",
+    text: "But your iniquities have made a separation between you and your God, And your sins have hidden His face from you so that He does not hear.",
+    topics: ["Sin"],
+    note: "Sin's worst result isn't guilt feelings; it's being cut off from God.",
+    verified: true,
+  },
+  {
     ref: "Revelation 20:14",
     tag: "The second death",
     text: "Then death and Hades were thrown into the lake of fire. This is the second death, the lake of fire.",

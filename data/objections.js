@@ -48,6 +48,34 @@ Let's try it. Have you ever told a lie? Stolen anything, even something small? U
     verses: ["Proverbs 20:6", "Romans 3:23", "Isaiah 64:6", "Romans 3:20"],
     related: ["paths/way-of-the-master"],
   },
+  {
+    id: "what-is-sin",
+    category: "The Gospel & Salvation",
+    title: "What is sin?",
+    sources: ["Ray Comfort", "Living Waters"],
+    oneLiner: "Sin is breaking God's Law, in what we do, say, or even think.",
+    askBack: "Have you ever lied or stolen anything, even something small?",
+    short: `The Bible says sin is lawlessness: breaking God's Law. It's not just big crimes. It's lying, stealing, lust, hatred, and putting anything ahead of God. It's also knowing the right thing and not doing it.
+
+Sin is serious because it's against a holy God, and it separates us from Him. The wages of sin is death. But God showed His love: Christ died for sinners.`,
+    deep: `**Definition:** “Sin is lawlessness” ([[1 John 3:4]]). God's Law, summed up in the Ten Commandments, is the standard. That's why the Law questions work: they show people what sin is.
+
+**More than actions:**
+- **Thoughts:** lust is adultery of the heart ([[Matthew 5:27-28]]).
+- **Words:** using God's name as a curse word ([[Exodus 20:7]]).
+- **Failing to do good:** knowing the right thing and not doing it ([[James 4:17]]).
+- **The heart:** the root problem is inside us ([[Jeremiah 17:9]]).
+
+**The biggest sin:** not loving God with all your heart, soul, and mind ([[Matthew 22:37-38]]). Everyone has broken this one.
+
+**Everyone has sinned** ([[Romans 3:23]]). Sin separates us from God ([[Isaiah 59:2]]) and earns death ([[Romans 6:23]]).
+
+**Don't stop at the definition.** Move from “what is sin?” to “have you sinned?” Ask the Law questions ({{Way of the Master|paths/way-of-the-master/3}}), then share the cross: Jesus, who knew no sin, became sin for us ([[2 Corinthians 5:21]]).
+
+**Watch for:** “Sin is just a religious word for mistakes.” A mistake is accidental. Sin is choosing to do what you know is wrong.`,
+    verses: ["1 John 3:4", "Romans 3:23", "James 4:17", "Isaiah 59:2", "Romans 6:23"],
+    related: ["objections/good-person", "paths/way-of-the-master"],
+  },
 
   {
     id: "all-religions",
