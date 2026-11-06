@@ -579,7 +579,7 @@ But every man-made religion says “do this to earn God's favor.” The gospel s
     id: "bible-changed",
     category: "The Bible",
     title: "The Bible has been changed",
-    sources: ["Lee Strobel", "Greg Koukl"],
+    sources: ["Lee Strobel", "Greg Koukl", "Wes Huff"],
     oneLiner: "It's not a game of telephone. Thousands of ancient copies show what was first written.",
     askBack: "Who do you think changed it, and when?",
     short: `We don't translate a translation of a translation. Translators work from the original Hebrew and Greek, and we have more ancient copies of the New Testament than of any other ancient book: over 5,000 in Greek alone, spread across the ancient world.
@@ -609,7 +609,7 @@ Nobody could have gathered them all up and changed them. Comparing them, scholar
 
 **Steer back:** The bigger question isn't whether the Bible was changed. It's whether it's right about you. Move to the Law ({{Way of the Master|paths/way-of-the-master}}).
 
-**Study:** *The Case for Christ*, chapter on the documentary evidence (Strobel's interview with Bruce Metzger). See also {{Has the Bible Been Changed?|evidence/bible-reliability}}.`,
+**Study:** Wes Huff's talks and videos on the manuscripts, including the Dead Sea Isaiah Scroll. *The Case for Christ*, chapter on the documentary evidence (Strobel's interview with Bruce Metzger). See also {{Has the Bible Been Changed?|evidence/bible-reliability}}.`,
     verses: ["Isaiah 40:8", "Psalm 12:6-7", "Matthew 24:35", "Luke 1:3-4"],
     related: ["objections/translations", "evidence/bible-reliability", "paths/way-of-the-master"],
   },
@@ -617,7 +617,7 @@ Nobody could have gathered them all up and changed them. Comparing them, scholar
     id: "translations",
     category: "The Bible",
     title: "Translations aren't accurate",
-    sources: ["Lee Strobel", "Greg Koukl"],
+    sources: ["Lee Strobel", "Greg Koukl", "Wes Huff"],
     oneLiner: "Every major translation goes back to the Hebrew and Greek, and they say the same thing.",
     askBack: "Have you compared a few translations yourself? Where do they disagree?",
     short: `Modern Bibles aren't a translation of a translation. Teams of scholars translate directly from the original Hebrew and Greek, checking each other's work.
@@ -638,7 +638,7 @@ Translations differ in wording, not in message. Some go word for word, some go t
 
 **Steer back:** “Every translation agrees on the Ten Commandments. Can I ask how you've done with them?” ({{Way of the Master|paths/way-of-the-master/3}})
 
-**Study:** See {{The Bible has been changed|objections/bible-changed}} and {{Has the Bible Been Changed?|evidence/bible-reliability}}.`,
+**Study:** Wes Huff's talks and videos on the manuscripts, including the Dead Sea Isaiah Scroll. See also {{The Bible has been changed|objections/bible-changed}} and {{Has the Bible Been Changed?|evidence/bible-reliability}}.`,
     verses: ["Nehemiah 8:8", "Isaiah 40:8", "Psalm 12:6-7"],
     related: ["objections/bible-changed", "evidence/bible-reliability", "paths/way-of-the-master"],
   },
@@ -764,7 +764,7 @@ Some parts of the Bible are hard to understand. But the main message is not: we'
     id: "jesus-existed",
     category: "Jesus",
     title: "Jesus never existed",
-    sources: ["Lee Strobel"],
+    sources: ["Lee Strobel", "Wes Huff"],
     oneLiner: "Almost no historians believe that, even skeptics. Non-Christian writers mention Him.",
     askBack: "What historians have you read who say He didn't exist?",
     short: `Nearly all historians of the ancient world, Christian or not, agree Jesus was a real person who was crucified under Pontius Pilate.
@@ -781,7 +781,7 @@ Roman historian Tacitus and Jewish historian Josephus both mention Him. Even wel
 
 **Next step:** If Jesus existed, the question becomes: who was He? (See {{Liar, Lunatic, or Lord|evidence/trilemma}}.)
 
-**Study:** *The Case for Christ*, chapter on corroborating evidence (Edwin Yamauchi).`,
+**Study:** *The Case for Christ*, chapter on corroborating evidence (Edwin Yamauchi). Wes Huff also covers the historical evidence for Jesus.`,
     verses: ["1 Corinthians 15:3-4", "Luke 1:3-4", "2 Peter 1:16"],
     related: ["evidence/trilemma", "evidence/resurrection"],
   },

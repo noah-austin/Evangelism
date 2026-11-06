@@ -81,7 +81,7 @@ DATA.evidence = [
   {
     id: "bible-reliability",
     title: "Has the Bible Been Changed?",
-    sources: ["Lee Strobel"],
+    sources: ["Lee Strobel", "Wes Huff"],
     summary: `We have far more and far earlier copies of the New Testament than of any other ancient book. We can be confident we have what was originally written.`,
     parts: [
       {
@@ -110,7 +110,7 @@ DATA.evidence = [
       },
       {
         heading: "Study",
-        body: `Lee Strobel, *The Case for Christ* (interviews with Bruce Metzger and John McRay).`,
+        body: `Lee Strobel, *The Case for Christ* (interviews with Bruce Metzger and John McRay). Wes Huff's talks on the manuscripts, including the Dead Sea Isaiah Scroll.`,
       },
     ],
   },
