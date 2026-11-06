@@ -100,6 +100,47 @@ DATA.skills = [
   },
 
   {
+    id: "be-precise",
+    category: "Asking Questions",
+    title: "Be Precise",
+    sources: ["Greg Koukl"],
+    summary: `Vague claims sound strong; specific ones can be checked. Be precise in what you say, and ask for details in what they say.`,
+    parts: [
+      {
+        heading: "Ask for their details",
+        ask: ["Which one?", "Where did you hear that?"],
+        body: `Many challenges fall apart once you ask for specifics: which contradiction, which historians, when it was written. People often repeat something they heard without checking it. Ask kindly, then look at the facts together.`,
+        verses: ["Proverbs 18:17"],
+      },
+      {
+        heading: "Be specific yourself",
+        say: "We have over 5,000 Greek manuscripts of the New Testament.",
+        body: `Names, numbers, and dates persuade better than “there's lots of evidence.” Know a few facts by heart. (See {{Has the Bible Been Changed?|evidence/bible-reliability}} and {{The Resurrection|evidence/resurrection}}.)`,
+      },
+      {
+        heading: "Define your words",
+        say: "By faith, I mean trust based on good reasons.",
+        body: `Words like *faith*, *sin*, *saved*, *God*, and *love* mean different things to different people. Say what you mean by yours, and ask what they mean by theirs ({{Columbo|skills/columbo}}).`,
+      },
+      {
+        heading: "Drop religious jargon",
+        say: "Jesus paid the fine for what you've done.",
+        body: `Phrases like “washed in the blood,” “justified,” or “accept Jesus into your heart” can lose people who didn't grow up in church. Say the same truth in plain words.`,
+      },
+      {
+        heading: "Don't overstate",
+        say: "I'm not sure. Let me look into that and get back to you.",
+        body: `One wrong fact can cost you trust on everything else. If you're not sure, say so. (See {{When You Don't Know the Answer|skills/dont-know-answer}}.)`,
+        verses: ["1 Peter 3:15"],
+      },
+      {
+        heading: "Study",
+        body: `Greg Koukl, *Tactics*. Practice asking for details in the {{Columbo drill|practice/claims/All}}.`,
+      },
+    ],
+  },
+
+  {
     id: "suicide",
     category: "Asking Questions",
     title: "Suicide (Self-Defeating Claims)",

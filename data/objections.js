@@ -503,6 +503,37 @@ The Bible lists homosexual sin right next to lying, stealing, and greed. It puts
     verses: ["Romans 3:23", "1 Corinthians 6:9-10", "1 Corinthians 6:11", "Romans 5:8"],
     related: ["convictions/homosexuality", "objections/dont-judge"],
   },
+  {
+    id: "blind-faith",
+    category: "Church & Christians",
+    title: "Christianity teaches you to believe blindly and never question",
+    sources: ["Greg Koukl", "Lee Strobel", "C.S. Lewis"],
+    oneLiner: "The Bible says “examine everything carefully.” Faith is trust based on good reasons.",
+    askBack: "What do you mean by faith?",
+    short: `Some Christians have discouraged questions, and that's a mistake. But the Bible itself invites testing. Paul praised people who checked his teaching against Scripture. Luke investigated carefully before he wrote. Jesus showed Himself alive with “many convincing proofs.”
+
+Christianity even stakes everything on a fact you can check: if Jesus didn't rise, Paul says our faith is worthless. That's not blind faith. It's trust based on evidence.`,
+    deep: `**Define faith:** Biblical faith is active trust in what you have good reason to believe is true. It's a step into the light, not a leap in the dark. Ask what they mean by faith first ({{Be Precise|skills/be-precise}}).
+
+**The Bible invites questions:**
+- “Examine everything carefully” ([[1 Thessalonians 5:21]])
+- The Bereans checked Paul against Scripture and were called noble-minded ([[Acts 17:11]])
+- Luke investigated everything carefully so readers could know the truth ([[Luke 1:3-4]])
+- Jesus gave “many convincing proofs” over forty days ([[Acts 1:3]])
+- John wrote down the signs so people could believe ([[John 20:30-31]])
+
+**It can be tested:** If Christ has not been raised, our faith is worthless ([[1 Corinthians 15:17]]). Few religions put everything on one checkable event. (See {{The Resurrection|evidence/resurrection}}.)
+
+**Love God with your mind** ([[Matthew 22:37-38]]). Thinking is part of worship, not a threat to it.
+
+**People who questioned hard:** Lee Strobel investigated as an atheist journalist. C.S. Lewis was an atheist who reasoned his way to faith.
+
+**If they were told not to question:** agree that was wrong. Then gently ask: “Have you questioned your own view as hard?”
+
+**Then the conscience:** “Can I ask you a few questions about the Ten Commandments?” ({{Way of the Master|paths/way-of-the-master/2}})`,
+    verses: ["1 Thessalonians 5:21", "Acts 17:11", "Luke 1:3-4", "Acts 1:3", "1 Corinthians 15:17"],
+    related: ["evidence/resurrection", "skills/be-precise"],
+  },
 
   {
     id: "hurt-by-church",
