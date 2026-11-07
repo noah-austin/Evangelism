@@ -251,6 +251,13 @@ DATA.claims = [
     next: "objections/meaning-of-life",
   },
   {
+    id: "prosperity",
+    claim: "If you have enough faith, God will make you healthy and rich.",
+    ask: "Then why were Paul and the apostles beaten, jailed, and killed?",
+    why: "Jesus promised trouble in this world. The rewards He promised are mostly eternal.",
+    next: "objections/good-life",
+  },
+  {
     id: "womans-right",
     claim: "Abortion is a woman's right.",
     ask: "What is the unborn?",

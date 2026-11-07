@@ -98,6 +98,7 @@ DATA.quizBanks = [
       { q: "Jesus and the apostles often quoted the Apocrypha as Scripture.", a: "False", explain: "They quote the Old Testament often, but never the Apocrypha as Scripture.", link: "evidence/canon" },
       { q: "Athanasius listed exactly our 27 New Testament books in AD 367.", a: "True", explain: "Councils at Hippo (393) and Carthage (397) confirmed the same list.", link: "evidence/canon" },
       { q: "The Gospel of Thomas was written by the apostle Thomas in the first century.", a: "False", explain: "It dates to the 100s or later and teaches ideas the apostles rejected.", link: "evidence/canon" },
+      { q: "Jesus promised His followers an easy life if they had enough faith.", a: "False", explain: "He said, “In the world you have tribulation” (John 16:33).", link: "objections/good-life" },
       { q: "In the Bible, sincere belief in any religion is enough to be saved.", a: "False", explain: "Jesus said He is the only way to the Father (John 14:6).", link: "objections/sincere-religions" },
     ],
   },

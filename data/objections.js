@@ -280,6 +280,38 @@ That's why nothing else fully satisfies: God set eternity in our hearts. The pro
     verses: ["John 17:3", "Matthew 22:37-38", "Colossians 1:16", "Ecclesiastes 3:11"],
     related: ["objections/happy-as-i-am", "paths/way-of-the-master"],
   },
+  {
+    id: "good-life",
+    category: "The Gospel & Salvation",
+    title: "If I follow Jesus, will my life go well?",
+    sources: ["Ray Comfort", "Living Waters"],
+    oneLiner: "Not always an easy life. Jesus promised trouble, and His presence and eternal reward.",
+    askBack: "What do you think following Jesus should get you?",
+    short: `Faith and obedience don't guarantee health, money, or an easy road. Jesus said, “In the world you have tribulation, but take courage; I have overcome the world.” Paul was beaten and shipwrecked, and most of the apostles were killed.
+
+But God gives real rewards: His presence, peace that doesn't depend on circumstances, His good purpose in everything, and treasure in heaven that lasts forever.`,
+    deep: `**What Jesus promised for this life:**
+- Trouble, and His peace in it ([[John 16:33]]).
+- Persecution for those who live godly ([[2 Timothy 3:12]]).
+- Suffering for His sake as part of the calling ([[Philippians 1:29]]).
+- The faithful in Hebrews 11 “died in faith, without receiving the promises” ([[Hebrews 11:13]]).
+
+**What faith does bring:**
+- God works all things together for good for those who love Him ([[Romans 8:28]]).
+- Today's affliction is light next to the coming glory ([[2 Corinthians 4:17]]).
+- Treasure in heaven that can't be lost ([[Matthew 6:19-20]]).
+- Abundant life: life with God ([[John 10:10]]).
+
+**A general pattern, not a guarantee:** Proverbs shows that honesty, hard work, and faithfulness often lead to a better life. But Job and Psalm 73 show the righteous can suffer while the wicked prosper, for now.
+
+**We obey out of love, not to earn.** Salvation is a gift ([[Ephesians 2:8-9]]). Rewards are God's generosity, not wages.
+
+**Why it matters for evangelism:** Don't present Jesus as a way to a better life. People who come for an easy life fall away when trouble comes. Use the parachute: you put it on because you're going to jump, not to make the flight nicer. Jesus saves us from judgment ({{Way of the Master|paths/way-of-the-master}}).
+
+**Watch for the prosperity gospel:** “God wants you healthy and rich” isn't the message of Jesus or the apostles.`,
+    verses: ["John 16:33", "2 Timothy 3:12", "Romans 8:28", "2 Corinthians 4:17", "Matthew 6:19-20"],
+    related: ["objections/happy-as-i-am", "objections/suffering"],
+  },
 
   {
     id: "spiritual-not-religious",
