@@ -116,6 +116,79 @@ DATA.evidence = [
   },
 
   {
+    id: "canon",
+    title: "How We Got the Bible",
+    summary: `No council invented the Bible. The church recognized the books God had already given: the Old Testament from Israel, and the New Testament from the apostles and their close companions. Protestant and Catholic Bibles have the same 27 New Testament books. The difference is seven extra Old Testament books, called the Apocrypha (or Deuterocanon).`,
+    parts: [
+      {
+        heading: "The big idea",
+        say: "The church didn't decide which books were Scripture. It recognized them.",
+        body: `“Canon” means a measuring rule: the list of books that measure up as God's Word. God inspired the books ([[2 Timothy 3:16]], [[2 Peter 1:21]]); His people, over time, recognized which ones they were.`,
+      },
+      {
+        heading: "The Old Testament",
+        body: `- God entrusted His words to Israel ([[Romans 3:2]]).
+- The Hebrew Bible has the same content as the Protestant Old Testament (39 books, counted as 24 in the Jewish arrangement).
+- Jesus pointed to its three parts: the Law, the Prophets, and the Psalms ([[Luke 24:44]]).
+- He spoke of martyrs “from Abel to Zechariah” ([[Matthew 23:35]]): from Genesis to Chronicles, the first and last books in the Hebrew order.
+- The Jewish historian Josephus (around AD 95) wrote that the Jewish Scriptures were a fixed, closed set, and that no more were added after the time of the prophets.`,
+        verses: ["Romans 3:2", "Luke 24:44", "Matthew 23:35"],
+      },
+      {
+        heading: "The New Testament",
+        body: `The early churches asked a few questions about each book:
+1. **Apostolic:** was it written by an apostle or a close companion (like Mark or Luke)?
+2. **True to the faith:** does it agree with the gospel the apostles taught?
+3. **Used everywhere:** was it read and trusted by churches across the world?
+4. **Early:** was it written in the apostles' time?
+
+**It started inside the New Testament itself.** Peter calls Paul's letters “Scripture” ([[2 Peter 3:16]]). Paul quotes Luke's Gospel as “Scripture” ([[1 Timothy 5:18]]).`,
+        verses: ["2 Peter 3:16", "1 Timothy 5:18"],
+      },
+      {
+        heading: "Timeline",
+        body: `- **AD 50 to 95:** the New Testament books are written.
+- **Around 180:** Irenaeus defends the four Gospels as the only true ones.
+- **Late 100s to 300s:** churches widely use most of the New Testament. A few books are debated for a time (Hebrews, James, 2 Peter, 2 and 3 John, Jude, Revelation).
+- **325, Council of Nicaea:** about who Jesus is. It did **not** vote on the books of the Bible.
+- **367:** Athanasius lists exactly the 27 books we have today.
+- **393 and 397, councils at Hippo and Carthage:** confirm the same 27.`,
+      },
+      {
+        heading: "Why other “gospels” were left out",
+        body: `Books like the Gospel of Thomas or the Gospel of Judas were written in the 100s or later, long after the apostles, and teach ideas (often Gnostic) that contradict the apostles' gospel. They failed the tests, and most churches never used them as Scripture.`,
+      },
+      {
+        heading: "Why Catholic Bibles have more books",
+        body: `**The books:** Tobit, Judith, 1 and 2 Maccabees, Wisdom of Solomon, Sirach, Baruch, and additions to Esther and Daniel. They were written between the Old and New Testaments.
+
+**Why they're in Catholic Bibles:**
+- Early Christians mostly read the Old Testament in Greek (the Septuagint), and many copies included these books.
+- Augustine and the councils at Hippo and Carthage accepted them.
+- The Catholic Church officially declared them Scripture at the Council of Trent (1546), during the Reformation. Orthodox churches also accept them, plus a few more.
+
+**Why Protestants leave them out:**
+- They were never part of the Hebrew Bible that the Jews kept, the Old Testament Jesus used.
+- Jesus and the apostles quote the Old Testament often, but never quote these books as Scripture.
+- Jerome, who translated the Latin Bible, said they were good for reading but not for setting doctrine.
+- 1 Maccabees itself says there was no prophet in Israel at that time (1 Maccabees 9:27).
+- Some teach things at odds with the rest of Scripture, like giving money to atone for sin (Tobit 12:9). Prayers for the dead (2 Maccabees 12) are a main source for the teaching of purgatory.
+
+**Still worth knowing:** they're useful history. 1 Maccabees tells the story behind Hanukkah, which Jesus attended ([[John 10:22-23]]). Early Protestant Bibles, including the 1611 King James, printed them in a separate section.`,
+      },
+      {
+        heading: "If someone asks",
+        say: ["Catholics and Protestants agree on the whole New Testament.", "The difference is a few Old Testament books the Jews never counted as Scripture."],
+        ask: "What do you think decided which books made it in?",
+      },
+      {
+        heading: "Study",
+        body: `F.F. Bruce, *The Canon of Scripture*. Michael Kruger, *The Question of Canon*. See also {{Has the Bible Been Changed?|evidence/bible-reliability}}.`,
+      },
+    ],
+  },
+
+  {
     id: "prophecy",
     title: "Fulfilled Prophecy",
     sources: ["Lee Strobel"],

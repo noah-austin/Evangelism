@@ -698,7 +698,7 @@ Nobody could have gathered them all up and changed them. Comparing them, scholar
 
 **Study:** Wes Huff's talks and videos on the manuscripts, including the Dead Sea Isaiah Scroll. *The Case for Christ*, chapter on the documentary evidence (Strobel's interview with Bruce Metzger). See also {{Has the Bible Been Changed?|evidence/bible-reliability}}.`,
     verses: ["Isaiah 40:8", "Psalm 12:6-7", "Matthew 24:35", "Luke 1:3-4"],
-    related: ["objections/translations", "evidence/bible-reliability", "paths/way-of-the-master"],
+    related: ["evidence/canon", "objections/translations", "evidence/bible-reliability", "paths/way-of-the-master"],
   },
   {
     id: "translations",
@@ -762,6 +762,28 @@ For example, one Gospel mentions one angel at the tomb and another mentions two.
     related: ["skills/columbo", "evidence/bible-reliability", "paths/way-of-the-master"],
   },
 
+  {
+    id: "who-decided-bible",
+    category: "The Bible",
+    title: "Men just decided what went in the Bible",
+    sources: [],
+    oneLiner: "The church didn't create the Bible. It recognized the books God had already given.",
+    askBack: "Who do you think decided, and when?",
+    short: `The New Testament books were written by the apostles and their companions, and churches were already using them as Scripture in the first century. Peter even calls Paul's letters Scripture.
+
+Later lists, like Athanasius in 367, just confirmed what churches across the world already used. Nicaea never voted on it. The Old Testament is the Hebrew Bible Jesus Himself used.`,
+    deep: `**Recognized, not invented:** The churches asked: is it from an apostle or close companion, true to the gospel, early, and used everywhere? See the full story in {{How We Got the Bible|evidence/canon}}.
+
+**Inside the New Testament:** Paul's letters are called Scripture ([[2 Peter 3:16]]), and Paul quotes Luke as Scripture ([[1 Timothy 5:18]]).
+
+**The Old Testament:** God entrusted it to Israel ([[Romans 3:2]]), and Jesus affirmed all three parts ([[Luke 24:44]]).
+
+**Ask for details:** “Which book do you think should have been in or out, and why?” Most people have heard the claim but can't name a book ({{Be Precise|skills/be-precise}}).
+
+**If they mean the Catholic books:** Catholics and Protestants agree on the whole New Testament. The difference is a few Old Testament books the Jews never counted as Scripture.`,
+    verses: ["2 Peter 3:16", "1 Timothy 5:18", "Romans 3:2", "Luke 24:44"],
+    related: ["evidence/canon", "objections/bible-changed"],
+  },
   {
     id: "bible-men",
     category: "The Bible",

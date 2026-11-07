@@ -227,7 +227,7 @@ DATA.claims = [
     claim: "The church picked the books of the Bible at Nicaea.",
     ask: "What do you think happened at Nicaea?",
     why: "The Council of Nicaea (AD 325) was about who Jesus is. It didn't vote on the books of the Bible.",
-    next: "objections/bible-changed",
+    next: "evidence/canon",
   },
   {
     id: "copied-gods",
