@@ -387,32 +387,37 @@ All agree: Jesus is coming back.`,
     ],
   },
 
-  // --- Israel & the Church (DRAFT: confirm "My view") ---
+  // --- Israel & the Church ---
   {
     id: "israel-church",
     title: "Israel & the Church",
     category: "Last Things",
-    draft: true,
-    summary: `The church, Jews and Gentiles together in Christ, is God's people today. God has not rejected Israel, and He will still keep His promises to the Jewish people as a nation.`,
+    summary: `The church, Jews and Gentiles together in Christ, is the true Israel of God. God's promises to Abraham and Israel are fulfilled in Jesus and His people. Many Jewish people will still turn to Christ, joining the one church.`,
     parts: [
       {
         heading: "My view",
-        body: `Everyone is saved the same way: by grace through faith in Jesus. In Christ, believing Jews and Gentiles are one body and equal heirs. But God's promises to Israel weren't cancelled. He has not rejected His people, and a day is coming when many Jewish people will turn to their Messiah. This fits my pre-trib, premillennial view of the end times ({{Revelation & the End Times|convictions/end-times}}).`,
-        verses: ["Romans 11:1", "Romans 11:25-26", "Romans 11:29", "Ephesians 2:14-16"],
+        body: `There is one people of God, not two. Everyone is saved the same way, by grace through faith in Jesus, and all who belong to Christ are Abraham's children and heirs of the promise. The promises to Israel find their “yes” in Christ and are shared by His people, Jew and Gentile. God has not forgotten the Jewish people: Romans 11 points to a time when many will believe in their Messiah and be grafted back in.`,
+        verses: ["Galatians 3:29", "Ephesians 2:14-16", "Romans 9:6", "Romans 11:25-26"],
       },
       {
         heading: "Why",
-        body: `- **Paul says no:** “God has not rejected His people, has He? May it never be!” ([[Romans 11:1]])
-- **A future turning:** Israel is partly hardened “until the fullness of the Gentiles has come in; and so all Israel will be saved” ([[Romans 11:25-26]]).
-- **God doesn't take it back:** “the gifts and the calling of God are irrevocable” ([[Romans 11:29]]).
-- **Tied to the sun and stars:** Israel won't cease as a nation while the created order stands ([[Jeremiah 31:35-36]]).`,
+        body: `- **Not all Israel is Israel:** being born Jewish doesn't make someone part of God's true people ([[Romans 9:6]]).
+- **Abraham's heirs:** “if you belong to Christ, then you are Abraham's descendants” ([[Galatians 3:29]]).
+- **One new man:** Jesus made Jew and Gentile into one body ([[Ephesians 2:14-16]]), with no Jew or Greek in Christ ([[Galatians 3:28]]).
+- **Israel's titles go to the church:** a chosen race, a royal priesthood, a holy nation ([[1 Peter 2:9]]).
+- **The promise was about Christ:** “to your seed,” that is, Christ ([[Galatians 3:16]]).`,
       },
       {
-        heading: "One people in Christ",
-        body: `- Not every descendant of Israel is truly God's people; faith is what counts ([[Romans 9:6]]).
-- Every believer is Abraham's heir through Christ ([[Galatians 3:29]]), with no Jew or Greek in Christ ([[Galatians 3:28]]).
-- Jesus made the two groups into “one new man” ([[Ephesians 2:14-16]]).
-- Peter gives the church Israel's titles: a chosen race, a royal priesthood, a holy nation ([[1 Peter 2:9]]).`,
+        heading: "Blessing those who bless Abraham",
+        body: `God promised Abraham, “I will bless those who bless you... And in you all the families of the earth will be blessed” ([[Genesis 12:2-3]]). Paul calls this “the gospel preached beforehand to Abraham” ([[Galatians 3:8]]). The blessing to the nations comes through Christ, Abraham's seed. The best way to bless the Jewish people is to share their Messiah with them.`,
+      },
+      {
+        heading: "God hasn't rejected the Jewish people",
+        body: `- “God has not rejected His people, has He? May it never be!” ([[Romans 11:1]])
+- A partial hardening has come on Israel “until the fullness of the Gentiles has come in” ([[Romans 11:25-26]]).
+- His gifts and calling are irrevocable ([[Romans 11:29]]).
+
+Jewish people who believe aren't a separate program; they're grafted back into the one olive tree, the one people of God.`,
       },
       {
         heading: "Why it matters for evangelism",
@@ -420,15 +425,19 @@ All agree: Jesus is coming back.`,
       },
       {
         heading: "How Christians differ",
-        body: `- **Distinct (dispensational):** Israel and the church are distinct; God's promises to ethnic Israel, including the land and national restoration, are still future. Usually held with a pre-trib, premillennial view.
-- **Fulfilled (covenant):** the church is the true Israel; the promises are fulfilled in Christ and His people. “All Israel” often means all God's people, Jew and Gentile.
-- **In between (progressive):** one people of God in Christ, yet a future turning of many ethnic Jews to Christ.
+        body: `- **Fulfilled (covenant), my view:** the church is the true Israel; the promises are fulfilled in Christ and His people. Wayne Grudem holds a version of this, while still expecting many Jews to turn to Christ.
+- **Distinct (dispensational):** Israel and the church are separate; promises to ethnic Israel, including the land and national restoration, are still future. Usually held with a pre-trib rapture.
+- **In between (progressive):** one people of God in Christ, with a special future for ethnic Israel.
 
 All three agree: salvation is only through Jesus, for Jews and Gentiles alike.`,
       },
       {
+        heading: "Still studying",
+        body: `How this fits with my view of the end times. The pre-trib rapture usually rests on the dispensational view. See {{Revelation & the End Times|convictions/end-times}}.`,
+      },
+      {
         heading: "If someone asks",
-        say: ["Anyone who trusts Jesus is part of God's people, Jew or Gentile.", "But God hasn't given up on Israel. Romans 11 says a day is coming when many will believe."],
+        say: ["Anyone who trusts Jesus is part of God's people, Jew or Gentile.", "God's promises to Israel are fulfilled in Jesus, and many Jewish people will still come to Him."],
       },
     ],
   },
