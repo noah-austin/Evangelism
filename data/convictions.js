@@ -387,6 +387,52 @@ All agree: Jesus is coming back.`,
     ],
   },
 
+  // --- Israel & the Church (DRAFT: confirm "My view") ---
+  {
+    id: "israel-church",
+    title: "Israel & the Church",
+    category: "Last Things",
+    draft: true,
+    summary: `The church, Jews and Gentiles together in Christ, is God's people today. God has not rejected Israel, and He will still keep His promises to the Jewish people as a nation.`,
+    parts: [
+      {
+        heading: "My view",
+        body: `Everyone is saved the same way: by grace through faith in Jesus. In Christ, believing Jews and Gentiles are one body and equal heirs. But God's promises to Israel weren't cancelled. He has not rejected His people, and a day is coming when many Jewish people will turn to their Messiah. This fits my pre-trib, premillennial view of the end times ({{Revelation & the End Times|convictions/end-times}}).`,
+        verses: ["Romans 11:1", "Romans 11:25-26", "Romans 11:29", "Ephesians 2:14-16"],
+      },
+      {
+        heading: "Why",
+        body: `- **Paul says no:** “God has not rejected His people, has He? May it never be!” ([[Romans 11:1]])
+- **A future turning:** Israel is partly hardened “until the fullness of the Gentiles has come in; and so all Israel will be saved” ([[Romans 11:25-26]]).
+- **God doesn't take it back:** “the gifts and the calling of God are irrevocable” ([[Romans 11:29]]).
+- **Tied to the sun and stars:** Israel won't cease as a nation while the created order stands ([[Jeremiah 31:35-36]]).`,
+      },
+      {
+        heading: "One people in Christ",
+        body: `- Not every descendant of Israel is truly God's people; faith is what counts ([[Romans 9:6]]).
+- Every believer is Abraham's heir through Christ ([[Galatians 3:29]]), with no Jew or Greek in Christ ([[Galatians 3:28]]).
+- Jesus made the two groups into “one new man” ([[Ephesians 2:14-16]]).
+- Peter gives the church Israel's titles: a chosen race, a royal priesthood, a holy nation ([[1 Peter 2:9]]).`,
+      },
+      {
+        heading: "Why it matters for evangelism",
+        body: `Jewish people need Jesus like everyone else. The gospel is “to the Jew first and also to the Greek” ([[Romans 1:16]]). Share it with love and respect, starting from the Hebrew Scriptures ({{Jewish People|people/jewish}}). Hatred of Jewish people is sin.`,
+      },
+      {
+        heading: "How Christians differ",
+        body: `- **Distinct (dispensational):** Israel and the church are distinct; God's promises to ethnic Israel, including the land and national restoration, are still future. Usually held with a pre-trib, premillennial view.
+- **Fulfilled (covenant):** the church is the true Israel; the promises are fulfilled in Christ and His people. “All Israel” often means all God's people, Jew and Gentile.
+- **In between (progressive):** one people of God in Christ, yet a future turning of many ethnic Jews to Christ.
+
+All three agree: salvation is only through Jesus, for Jews and Gentiles alike.`,
+      },
+      {
+        heading: "If someone asks",
+        say: ["Anyone who trusts Jesus is part of God's people, Jew or Gentile.", "But God hasn't given up on Israel. Romans 11 says a day is coming when many will believe."],
+      },
+    ],
+  },
+
   // --- Women in ministry (DRAFT) ---
   {
     id: "women-in-ministry",
