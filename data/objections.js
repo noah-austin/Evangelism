@@ -337,6 +337,38 @@ But God gives real rewards: His presence, peace that doesn't depend on circumsta
     verses: ["John 16:33", "2 Timothy 3:12", "Romans 8:28", "2 Corinthians 4:17", "Matthew 6:19-20"],
     related: ["objections/happy-as-i-am", "objections/suffering"],
   },
+  {
+    id: "living-in-sin",
+    category: "The Gospel & Salvation",
+    title: "Can I be saved and keep living in sin?",
+    sources: ["Ray Comfort", "Living Waters"],
+    oneLiner: "Real faith turns from sin. The question is: are you at war with your sin, or at peace with it?",
+    askBack: "Do you want to stop, or do you think God's okay with it?",
+    short: `Every Christian still sins, but saving faith and repentance go together. Jesus said, “Repent and believe.” Someone who knows something is sin, has made peace with it, and doesn't want to stop has good reason to question whether their faith is real.
+
+A believer can stumble, even often, but hates the sin, fights it, and confesses it. Jesus didn't only come to forgive sin. He came to free us from it.`,
+    deep: `**Faith and repentance are one package:** “Repent and believe in the gospel” ([[Mark 1:15]]); “repentance toward God and faith in our Lord Jesus Christ” ([[Acts 20:21]]).
+
+**Saving faith changes a life:** faith without works is dead ([[James 2:17]]); in Christ we're a new creature ([[2 Corinthians 5:17]]).
+
+**The warnings:**
+- “Those who practice such things will not inherit the kingdom of God” ([[Galatians 5:19-21]]).
+- Someone born of God doesn't go on practicing sin ([[1 John 3:9]]).
+- Claiming to know God while ignoring His commands is a lie ([[1 John 2:4]]).
+- Many will say “Lord, Lord” and hear “I never knew you” ([[Matthew 7:21-23]]).
+
+**Struggling isn't the same as living in it:** we all still sin ([[1 John 1:8]]). A believer confesses and is forgiven ([[1 John 1:9]]), and fights sin like Paul in Romans 7. Same-sex attraction itself, fought and not acted on, is a struggle, not living in sin.
+
+**It applies to every sin,** not just one: sex outside marriage, drunkenness, greed, lying ([[1 Corinthians 6:9-10]]). And God changes people: “Such were some of you” ([[1 Corinthians 6:11]]).
+
+**What it means for salvation:** a true believer can't lose salvation, so someone comfortable in sin was likely never truly saved ([[1 John 2:19]]). If they are God's child, He will discipline them and draw them back ([[Hebrews 12:6]]). We can't see hearts, so don't pronounce judgment, but don't give false assurance either: “Test yourselves” ([[2 Corinthians 13:5]]).
+
+**How to say it:** gently, including yourself. “I've had to turn from things too. Jesus gives the power to change, not just forgiveness.”
+
+**My views:** {{Homosexuality|convictions/homosexuality}} and {{Can You Lose Your Salvation?|convictions/eternal-security}}.`,
+    verses: ["Mark 1:15", "Galatians 5:19-21", "1 John 3:9", "1 John 1:8", "2 Corinthians 13:5"],
+    related: ["convictions/eternal-security", "convictions/homosexuality"],
+  },
 
   {
     id: "spiritual-not-religious",

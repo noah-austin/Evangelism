@@ -437,6 +437,8 @@ DATA.quizBanks = [
       {"q": "The Bible says, “Hate the sin, love the sinner,” word for word.", "a": "False", "explain": "A popular saying, not a verse."},
       {"q": "The early church gathered on Sunday, the day of the resurrection.", "a": "True", "explain": "Acts 20:7; 1 Corinthians 16:2."},
       {"q": "The last book of the Bible is called Revelations.", "a": "False", "explain": "It's Revelation, singular: the revelation of Jesus Christ (Revelation 1:1)."},
+      {"q": "A Christian who still struggles with sin can't be truly saved.", "a": "False", "explain": "We all still sin (1 John 1:8). The question is whether we fight it or embrace it.", "link": "objections/living-in-sin"},
+      {"q": "The Bible teaches that saving faith and repentance go together.", "a": "True", "explain": "“Repent and believe in the gospel” (Mark 1:15).", "link": "objections/living-in-sin"},
     ],
   },
 ];
