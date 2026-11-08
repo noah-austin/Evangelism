@@ -736,20 +736,15 @@ In those cases, the innocent spouse is free to remarry. Otherwise, believers sho
     title: "School of Biblical Evangelism (Ray Comfort & Kirk Cameron)",
     category: "Book Notes",
     sources: ["Ray Comfort", "Living Waters"],
-    summary: `Started November 2026. 101 lessons on sharing the gospel the way Jesus did: the Law before grace, true repentance, doing the work, the Bible, apologetics, and other religions. Notes are added as I read.`,
+    summary: `Started November 2026. 101 lessons on sharing the gospel the way Jesus did: the Law before grace, true repentance, doing the work, the Bible, apologetics, and other religions.`,
     parts: [
       {
-        heading: "Why I'm reading it",
-        body: `- Go deeper on the Way of the Master method I already use ({{Way of the Master|paths/way-of-the-master}}).
-- Pick up practical material: tracts, open-air preaching, witnessing to hurting people, and answers for other religions.`,
+        heading: "About these summaries",
+        body: `The lesson summaries below are first drafts written by Claude from the titles and Ray Comfort's teaching, **not from the book itself**. As I read, I'll correct them. Lessons marked **(checked)** have been confirmed against the book.`,
       },
       {
         heading: "Where I am",
         body: `Not started yet. Next up: Lesson 1, The Forgotten Key to Biblical Evangelism.`,
-      },
-      {
-        heading: "Lesson notes",
-        body: `No notes yet. For each lesson: the main idea, key verses, and anything worth remembering.`,
       },
       {
         heading: "My takeaways",
@@ -757,128 +752,128 @@ In those cases, the innocent spouse is free to remarry. Otherwise, believers sho
       },
       {
         heading: "The message: Law, grace, and repentance (1 to 20)",
-        body: `1. The Forgotten Key to Biblical Evangelism
-2. Making Grace Amazing
-3. The Problem with the Modern Gospel
-4. How to Confront Sinners
-5. The Ten Commandments, Part 1
-6. The Ten Commandments, Part 2
-7. The Ten Commandments, Part 3
-8. The Ten Commandments, Part 4
-9. The Ten Commandments, Part 5
-10. The Ten Commandments, Part 6
-11. The Ten Commandments, Part 7
-12. The Ten Commandments, Part 8
-13. The Ten Commandments, Part 9
-14. The Ten Commandments, Part 10
-15. Our Ally: The Conscience
-16. The Necessity of Repentance
-17. Personal Witnessing: How Jesus Did It
-18. The Sinner's Prayer
-19. True and False Conversions
-20. Hypocrisy`,
+        body: `- **1. The Forgotten Key to Biblical Evangelism.** The Law (the Ten Commandments) is the key the modern church forgot. It shows people their sin so they see their need for a Savior. Romans 3:20, 7:7; Galatians 3:24.
+- **2. Making Grace Amazing.** Grace only looks amazing after the Law shows how guilty we are. The courtroom: we broke the law, and Jesus paid our fine.
+- **3. The Problem with the Modern Gospel.** Preaching Jesus as a way to a happier life produces false converts who fall away when trouble comes. The parachute: put Him on because of the jump to come, not to improve the flight.
+- **4. How to Confront Sinners.** Move from natural to spiritual, then walk through the Law. A simple outline: are you a good person, have you kept the Commandments, innocent or guilty on Judgment Day, heaven or hell?
+- **5. The Ten Commandments, Part 1.** The first commandment: no other gods before God. Everyone has put something ahead of Him.
+- **6. The Ten Commandments, Part 2.** The second commandment: no idols, including making up a god you're comfortable with.
+- **7. The Ten Commandments, Part 3.** The third commandment: using God's name in vain, even as a curse word, is blasphemy.
+- **8. The Ten Commandments, Part 4.** The fourth commandment: the Sabbath, a day set apart for God.
+- **9. The Ten Commandments, Part 5.** The fifth commandment: honor your father and mother.
+- **10. The Ten Commandments, Part 6.** The sixth commandment: do not murder. Jesus said hatred is murder of the heart (1 John 3:15).
+- **11. The Ten Commandments, Part 7.** The seventh commandment: do not commit adultery. Jesus said lust is adultery of the heart (Matthew 5:27-28).
+- **12. The Ten Commandments, Part 8.** The eighth commandment: do not steal, no matter the value.
+- **13. The Ten Commandments, Part 9.** The ninth commandment: do not lie or bear false witness. All liars face judgment (Revelation 21:8).
+- **14. The Ten Commandments, Part 10.** The tenth commandment: do not covet. It shows sin starts in the heart.
+- **15. Our Ally: The Conscience.** “Con-science” means “with knowledge.” God's Law is written on every heart (Romans 2:15), so speak to the conscience, not just the intellect.
+- **16. The Necessity of Repentance.** Repentance is turning from sin, not just feeling sorry. It's required for salvation (Luke 13:3, Acts 17:30).
+- **17. Personal Witnessing: How Jesus Did It.** Jesus moved from natural to spiritual with the woman at the well, used the Law with the rich young ruler, and gave grace to the humble.
+- **18. The Sinner's Prayer.** Be careful leading people in a prayer and then telling them they're saved. Call them to repent and trust Christ, and let God give the assurance.
+- **19. True and False Conversions.** The parable of the sower and the wheat and tares: not every profession is real. True converts bear fruit.
+- **20. Hypocrisy.** Hypocrites in the church are often false converts. God will judge them; their existence doesn't disprove Christ.`,
       },
       {
         heading: "Judgment and sin (21 to 24)",
-        body: `21. The Certainty of Judgment
-22. Judgment Day
-23. The Reality of Hell
-24. Man's Sinful Condition`,
+        body: `- **21. The Certainty of Judgment.** Everyone will die and then face judgment (Hebrews 9:27). God has fixed the day (Acts 17:31).
+- **22. Judgment Day.** What that day will be like: perfect justice, every deed, word, and secret thought judged.
+- **23. The Reality of Hell.** Jesus spoke plainly about hell. It's real, eternal, and just. Speak of it with tears, not anger.
+- **24. Man's Sinful Condition.** People are not basically good. The heart is deceitful (Jeremiah 17:9), and all have sinned (Romans 3:23).`,
       },
       {
         heading: "Doing the work (25 to 36)",
-        body: `25. Our Primary Task
-26. The Fear of Man
-27. The Empowering of the Holy Spirit
-28. How to Capture the World's Attention
-29. Gospel Tracts, Part 1
-30. Gospel Tracts, Part 2
-31. Personal Testimony
-32. Creative Ways to Share Your Faith
-33. How to Witness to Hurting People
-34. Open-Air Preaching, Part 1
-35. Open-Air Preaching, Part 2
-36. Open-Air Preaching, Part 3`,
+        body: `- **25. Our Primary Task.** Reaching the lost is the church's main job, not an optional extra. The Great Commission is for every believer.
+- **26. The Fear of Man.** Fear of what people think is the biggest hindrance to witnessing (Proverbs 29:25). Love for the lost and fear of God overcome it.
+- **27. The Empowering of the Holy Spirit.** The Spirit gives power and boldness to witness (Acts 1:8, Acts 4:31).
+- **28. How to Capture the World's Attention.** Use creative openers and attention-getters, like trick tracts or a question, to start conversations.
+- **29. Gospel Tracts, Part 1.** Why tracts work: they keep preaching after you leave, they're easy for anyone, and they open conversations.
+- **30. Gospel Tracts, Part 2.** How to give tracts well, choosing good tracts, and leaving them in useful places.
+- **31. Personal Testimony.** A testimony can't be argued with, but it isn't the gospel. Use it to lead to the Law and the cross, not to replace them.
+- **32. Creative Ways to Share Your Faith.** Practical ideas for everyday witnessing: at work, in stores, in restaurants, online, and with family.
+- **33. How to Witness to Hurting People.** With the grieving and suffering, be gentle and compassionate, but don't withhold the gospel they need.
+- **34. Open-Air Preaching, Part 1.** The biblical case for open-air preaching: Jesus, the prophets, and the apostles preached in public.
+- **35. Open-Air Preaching, Part 2.** How to start: drawing a crowd, using a question or test, and keeping attention.
+- **36. Open-Air Preaching, Part 3.** Handling hecklers, staying calm, and using interruptions to your advantage.`,
       },
       {
         heading: "Growing as a witness, and core beliefs (37 to 51)",
-        body: `37. Faith, Part 1
-38. Faith, Part 2
-39. The Enemy, Part 1
-40. The Enemy, Part 2
-41. The Enemy, Part 3
-42. The Enemy, Part 4
-43. Prayer
-44. The Survivor's Guide
-45. Holiness
-46. Water Baptism, Part 1
-47. Water Baptism, Part 2
-48. The Trinity
-49. The Deity of Christ
-50. The Holy Spirit
-51. The Resurrection`,
+        body: `- **37. Faith, Part 1.** Everyone lives by faith, in pilots, chairs, and doctors. Biblical faith is trust in God's character.
+- **38. Faith, Part 2.** Growing in faith through God's Word and trusting His promises.
+- **39. The Enemy, Part 1.** Satan is real, and he opposes the gospel. Know his tactics.
+- **40. The Enemy, Part 2.** How the enemy works: lies, accusation, and temptation.
+- **41. The Enemy, Part 3.** Standing firm in spiritual warfare: the armor of God (Ephesians 6).
+- **42. The Enemy, Part 4.** The world, the flesh, and the devil, and how to resist.
+- **43. Prayer.** Prayer for the lost, for laborers, and for boldness. Evangelism starts on your knees.
+- **44. The Survivor's Guide.** How to keep going as a Christian: the Word, prayer, fellowship, and obedience.
+- **45. Holiness.** God calls His people to be holy. A holy life backs up the message.
+- **46. Water Baptism, Part 1.** What baptism means: an outward sign of new life, for believers.
+- **47. Water Baptism, Part 2.** Common questions about baptism, and why it doesn't save on its own.
+- **48. The Trinity.** One God in three persons: Father, Son, and Holy Spirit.
+- **49. The Deity of Christ.** Jesus is God in the flesh, shown by His claims, miracles, and resurrection.
+- **50. The Holy Spirit.** The Spirit is a person, not a force, and God Himself.
+- **51. The Resurrection.** The evidence for the resurrection and why it's the foundation of the faith (1 Corinthians 15).`,
       },
       {
         heading: "The Bible (52 to 63)",
-        body: `52. The Bible, Part 1
-53. The Bible, Part 2
-54. The Bible, Part 3
-55. The Bible, Part 4
-56. Contradictions in the Bible
-57. Prophecy
-58. Messianic Prophecies, Part 1
-59. Messianic Prophecies, Part 2
-60. Non-Messianic Prophecies
-61. Scientific Facts in the Bible, Part 1
-62. Scientific Facts in the Bible, Part 2
-63. Scientific Facts in the Bible, Part 3`,
+        body: `- **52. The Bible, Part 1.** The Bible is God's inspired Word (2 Timothy 3:16).
+- **53. The Bible, Part 2.** The Bible's reliability: manuscripts and accurate transmission.
+- **54. The Bible, Part 3.** Archaeology and history that support the Bible.
+- **55. The Bible, Part 4.** How to answer people who don't believe the Bible.
+- **56. Contradictions in the Bible.** Common “contradictions” and how they're resolved. Ask which one, then look at the context.
+- **57. Prophecy.** Fulfilled prophecy shows the Bible's divine origin.
+- **58. Messianic Prophecies, Part 1.** Prophecies about the Messiah fulfilled in Jesus: birth, life, and ministry.
+- **59. Messianic Prophecies, Part 2.** Prophecies of the Messiah's death and resurrection (Isaiah 53, Psalm 22).
+- **60. Non-Messianic Prophecies.** Other fulfilled prophecies, about nations, cities, and Israel.
+- **61. Scientific Facts in the Bible, Part 1.** Statements in Scripture that match later science, such as the earth hanging on nothing (Job 26:7).
+- **62. Scientific Facts in the Bible, Part 2.** More examples, such as life being in the blood (Leviticus 17:11).
+- **63. Scientific Facts in the Bible, Part 3.** More examples, such as the paths of the seas (Psalm 8:8).`,
       },
       {
         heading: "Evolution, atheism, and relativism (64 to 76)",
-        body: `64. Evolution, Part 1
-65. Evolution, Part 2
-66. Evolution, Part 3
-67. Evolution, Part 4
-68. Evolution, Part 5
-69. Atheism
-70. How to Prove the Existence of God
-71. Atheist Obstacles
-72. Atheists' Questions, Part 1
-73. Atheists' Questions, Part 2
-74. Relativism, Part 1
-75. Relativism, Part 2
-76. Reincarnation`,
+        body: `- **64. Evolution, Part 1.** What evolution claims, and the difference between change within kinds and one kind becoming another.
+- **65. Evolution, Part 2.** Missing links and the fossil record.
+- **66. Evolution, Part 3.** Design in nature points to a Designer.
+- **67. Evolution, Part 4.** Problems for evolution, like the origin of life and information.
+- **68. Evolution, Part 5.** How to talk with someone who believes in evolution, then move to the conscience.
+- **69. Atheism.** Claiming there's no God requires knowing everything. Most people are really saying “I don't know.”
+- **70. How to Prove the Existence of God.** Creation proves a Creator (building and builder), and the conscience confirms it.
+- **71. Atheist Obstacles.** What keeps atheists from God, often moral reasons more than intellectual ones.
+- **72. Atheists' Questions, Part 1.** Answering common questions, like “Who made God?”
+- **73. Atheists' Questions, Part 2.** More questions, like suffering and evil.
+- **74. Relativism, Part 1.** “There's no absolute truth” defeats itself.
+- **75. Relativism, Part 2.** Moral relativism, and how the conscience shows real right and wrong.
+- **76. Reincarnation.** The Bible says we die once, then judgment (Hebrews 9:27).`,
       },
       {
         heading: "Other religions and groups (77 to 93)",
-        body: `77. Islam, Part 1
-78. Islam, Part 2
-79. Hinduism
-80. Buddhism, Part 1
-81. Buddhism, Part 2
-82. Judaism
-83. What Makes a Group Non-Christian?
-84. Unitarianism
-85. Mormonism, Part 1
-86. Mormonism, Part 2
-87. Jehovah's Witnesses, Part 1
-88. Jehovah's Witnesses, Part 2
-89. Roman Catholicism
-90. Oneness Pentecostals
-91. International Church of Christ
-92. Seventh-Day Adventists
-93. New Age Movement`,
+        body: `- **77. Islam, Part 1.** What Muslims believe about God, Muhammad, and the Qur'an.
+- **78. Islam, Part 2.** How to witness to Muslims: Jesus, the cross, and how a just God can forgive.
+- **79. Hinduism.** Hindu beliefs (many gods, karma, reincarnation) and how to share the gospel.
+- **80. Buddhism, Part 1.** What Buddhists believe about suffering and enlightenment.
+- **81. Buddhism, Part 2.** How to witness to Buddhists: sin, not just suffering, is the problem.
+- **82. Judaism.** Witnessing to Jewish people from the Hebrew Scriptures.
+- **83. What Makes a Group Non-Christian?.** Groups that deny core truths, like the deity of Christ, the Trinity, or salvation by grace, are not Christian even if they use Christian words.
+- **84. Unitarianism.** Unitarians deny the Trinity and Christ's deity.
+- **85. Mormonism, Part 1.** LDS beliefs: Joseph Smith, the Book of Mormon, and God once a man.
+- **86. Mormonism, Part 2.** How to witness to Mormons.
+- **87. Jehovah's Witnesses, Part 1.** Watchtower beliefs: Jesus as Michael, no Trinity, the 144,000.
+- **88. Jehovah's Witnesses, Part 2.** How to witness to Jehovah's Witnesses.
+- **89. Roman Catholicism.** Catholic teaching on salvation, Mary, and tradition, compared with Scripture, and how to share grace.
+- **90. Oneness Pentecostals.** They deny the Trinity, teaching Father, Son, and Spirit are modes of one person, and often require baptism in Jesus' name and tongues.
+- **91. International Church of Christ.** A group that teaches baptism is required for salvation and has controlling discipleship.
+- **92. Seventh-Day Adventists.** Ellen G. White, Sabbath-keeping, and teachings that differ from Scripture.
+- **93. New Age Movement.** God as energy, self as divine, and many paths, compared with the God of the Bible.`,
       },
       {
         heading: "Christian living and revival (94 to 101)",
-        body: `94. The Will of God
-95. Our Most Valuable Commodity
-96. When You've Been Wronged
-97. The Source of Revival
-98. Hindrances to Revival
-99. How to Maintain Zeal
-100. Raising Laborers in Your Church
-101. The Christian's Prayer`,
+        body: `- **94. The Will of God.** Reaching the lost is clearly God's will: He isn't willing that any should perish (2 Peter 3:9).
+- **95. Our Most Valuable Commodity.** Likely time: use it for what matters eternally.
+- **96. When You've Been Wronged.** Forgive, don't retaliate, and trust God with justice.
+- **97. The Source of Revival.** Revival comes from God, through prayer, repentance, and faithful preaching.
+- **98. Hindrances to Revival.** Sin, apathy, and false converts in the church hold back revival.
+- **99. How to Maintain Zeal.** Keep your passion: remember the cross, the reality of hell, and the lost.
+- **100. Raising Laborers in Your Church.** Train and encourage other believers to share their faith.
+- **101. The Christian's Prayer.** Pray for laborers and for the lost (Matthew 9:38).`,
       },
       {
         heading: "Also in the book",
