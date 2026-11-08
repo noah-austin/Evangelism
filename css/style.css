@@ -475,3 +475,10 @@ a.seg { display: block; text-align: center; text-decoration: none; color: inheri
 .quiz-line.wrong { color: var(--muted); text-decoration: line-through; }
 .quiz-line.right { color: var(--ask); font-weight: 650; }
 .card-actions a.btn { text-decoration: none; display: flex; align-items: center; justify-content: center; }
+
+/* Mixed test setup */
+.mix-actions { display: flex; gap: 16px; margin: 0 0 8px; }
+.mix-actions .text-btn { margin: 0; }
+.mix-row { display: flex; align-items: center; gap: 12px; cursor: pointer; }
+.mix-row input { width: 22px; height: 22px; flex: none; accent-color: var(--accent); }
+.mix-note { color: var(--accent); font-weight: 650; margin: 10px 0 0; }

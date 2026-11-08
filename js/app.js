@@ -1062,34 +1062,80 @@
   ];
   const quizById = Object.fromEntries(QUIZZES.map((z) => [z.id, z]));
   const quizBest = () => store.get("quizBest", {});
+  const quizBestN = () => store.get("quizBestN", {});
+  const bestText = (id) => {
+    const b = quizBest()[id];
+    return b === undefined ? "" : `. Best: ${b} of ${quizBestN()[id] || QUIZ_LEN}`;
+  };
+  // Mixed test settings: which quizzes to draw from and how many questions
+  const MIX_LENGTHS = [10, 20, 30];
+  const getMix = () => {
+    const m = store.get("quizMix", null) || {};
+    const ids = (m.topics || QUIZZES.filter((z) => z.id !== "verses").map((z) => z.id)).filter((id) => quizById[id]);
+    return { topics: ids.length ? ids : QUIZZES.map((z) => z.id), len: MIX_LENGTHS.includes(m.len) ? m.len : QUIZ_LEN };
+  };
 
   function pageQuizMenu() {
-    const best = quizBest();
     app.innerHTML = `
       <p class="kicker">Practice</p>
       <h1 class="page-title">Quizzes</h1>
       <p class="summary">${QUIZ_LEN} questions each. Tap an answer to see if you're right, then review what you missed at the end.</p>
-      <a class="hero" href="#/quiz/mixed">
+      <a class="hero" href="#/quiz/mix">
         <span class="hero-icon">${svg(ICON.quiz, 26, 2)}</span>
         <span class="row-main"><span class="hero-title">Mixed test</span>
-        <span class="hero-sub">A little of everything${best.mixed !== undefined ? `. Best: ${best.mixed} of ${QUIZ_LEN}` : ""}</span></span>${chevron}
+        <span class="hero-sub">Pick your topics and length${bestText("mixed")}</span></span>${chevron}
       </a>
       <div class="list">${QUIZZES.map((z) => `<a class="row" href="#/quiz/${z.id}">
         <span class="row-main"><span class="row-title">${esc(z.title)}</span>
-        <span class="row-sub">${esc(z.blurb)}${best[z.id] !== undefined ? `. Best: ${best[z.id]} of ${QUIZ_LEN}` : ""}</span></span>${chevron}</a>`).join("")}</div>`;
+        <span class="row-sub">${esc(z.blurb)}${bestText(z.id)}</span></span>${chevron}</a>`).join("")}</div>`;
     return { title: "Quizzes" };
+  }
+
+  function pageQuizMix() {
+    const mix = getMix();
+    app.innerHTML = `
+      <p class="kicker">Quizzes</p>
+      <h1 class="page-title">Mixed Test</h1>
+      <p class="summary">Pick the topics to mix, then how many questions.</p>
+      <div class="mix-actions"><button class="text-btn" data-mix-all>Select all</button><button class="text-btn" data-mix-none>Clear</button></div>
+      <div class="list mix-list">${QUIZZES.map((z) => `
+        <label class="row mix-row">
+          <input type="checkbox" id="mix-${z.id}" value="${z.id}"${mix.topics.includes(z.id) ? " checked" : ""}>
+          <span class="row-main"><span class="row-title">${esc(z.title)}</span><span class="row-sub">${esc(z.blurb)}</span></span>
+        </label>`).join("")}</div>
+      <h2 class="section-label">Questions</h2>
+      <div class="segs">${MIX_LENGTHS.map((n) => `<button class="seg${n === mix.len ? " on" : ""}" data-mix-len="${n}">${n}</button>`).join("")}</div>
+      <p class="mix-note" id="mix-note" hidden>Pick at least one topic.</p>
+      <div class="card-actions"><button class="btn primary wide" data-mix-start>Start mixed test</button></div>`;
+    return { title: "Mixed Test" };
+  }
+  function saveMixFromPage() {
+    const topics = [...app.querySelectorAll(".mix-list input:checked")].map((x) => x.value);
+    const on = app.querySelector("[data-mix-len].on");
+    store.set("quizMix", { topics, len: on ? +on.dataset.mixLen : QUIZ_LEN });
+    return topics;
   }
 
   let quiz = null;
   function pageQuiz(id) {
+    if (id === "mix") return pageQuizMix();
     const z = id === "mixed" ? { id: "mixed", title: "Mixed Test" } : quizById[id];
     if (!z) return pageNotFound();
     // Keep the round going when coming back from a "Learn more" page
     const saved = session.get("quiz", null);
     if (saved && saved.id === id && !saved.done) quiz = saved;
     else {
-      const qs = id === "mixed" ? shuffle(QUIZZES.flatMap((x) => shuffle(x.build()).slice(0, 2))) : shuffle(z.build());
-      quiz = { id, title: z.title, qs: qs.slice(0, QUIZ_LEN), i: 0, picked: [], done: false };
+      let qs, len = QUIZ_LEN;
+      if (id === "mixed") {
+        const mix = getMix();
+        len = mix.len;
+        const pools = shuffle(mix.topics.map((t) => shuffle(quizById[t].build())));
+        qs = [];
+        for (let k = 0; qs.length < len && pools.some((p) => p.length > k); k++)
+          pools.forEach((p) => { if (p[k] && qs.length < len) qs.push(p[k]); });
+        qs = shuffle(qs);
+      } else qs = shuffle(z.build());
+      quiz = { id, title: z.title, qs: qs.slice(0, len), i: 0, picked: [], done: false };
     }
     renderQuiz();
     return { title: z.title };
@@ -1102,10 +1148,16 @@
       const best = quizBest();
       const prevBest = best[quiz.id];
       if (!quiz.saved) {
-        if (prevBest === undefined || score > prevBest) best[quiz.id] = score;
+        const bestN = quizBestN();
+        const better = prevBest === undefined || score / n > prevBest / (bestN[quiz.id] || QUIZ_LEN);
+        if (better) {
+          best[quiz.id] = score;
+          bestN[quiz.id] = n;
+        }
         store.set("quizBest", best);
+        store.set("quizBestN", bestN);
         quiz.saved = true;
-        quiz.newBest = prevBest === undefined || score > prevBest;
+        quiz.newBest = better;
         session.set("quiz", quiz);
       }
       const missed = quiz.qs.map((q, k) => ({ q, pick: quiz.picked[k] })).filter((x) => x.pick !== x.q.a);
@@ -1305,6 +1357,23 @@
     if (repl) {
       e.preventDefault();
       location.replace(repl.getAttribute("href"));
+      return;
+    }
+    const ml = t.closest("[data-mix-len]");
+    if (ml) {
+      app.querySelectorAll("[data-mix-len]").forEach((b) => b.classList.toggle("on", b === ml));
+      return saveMixFromPage();
+    }
+    if (t.closest("[data-mix-all]") || t.closest("[data-mix-none]")) {
+      const all = !!t.closest("[data-mix-all]");
+      app.querySelectorAll(".mix-list input").forEach((x) => (x.checked = all));
+      return saveMixFromPage();
+    }
+    if (t.closest("[data-mix-start]")) {
+      const topics = saveMixFromPage();
+      if (!topics.length) return (document.getElementById("mix-note").hidden = false);
+      session.set("quiz", null);
+      location.hash = "#/quiz/mixed";
       return;
     }
     const qp = t.closest("[data-quiz-pick]");
