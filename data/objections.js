@@ -76,6 +76,31 @@ Sin is serious because it's against a holy God, and it separates us from Him. Th
     verses: ["1 John 3:4", "Romans 3:23", "James 4:17", "Isaiah 59:2", "Romans 6:23"],
     related: ["objections/good-person", "paths/way-of-the-master"],
   },
+  {
+    id: "judged-by",
+    category: "The Gospel & Salvation",
+    title: "Does God only judge by the Ten Commandments?",
+    sources: ["Ray Comfort", "Living Waters"],
+    oneLiner: "No. God judges everything we do, say, and think. The Ten Commandments are the clearest summary.",
+    askBack: "If God judged your thoughts too, how would you do?",
+    short: `God's standard is His own perfect holiness. He judges our deeds, our words, even our thoughts and motives. People who never read the Bible are judged by the law written on their hearts, through their conscience.
+
+The Ten Commandments are the clearest summary of that standard, like a mirror that shows us we've fallen short. That's why we use them.`,
+    deep: `**What God judges:**
+- **Deeds:** judged “according to their deeds” ([[Revelation 20:12]]).
+- **Words:** every careless word ([[Matthew 12:36]]).
+- **Thoughts and motives:** hidden things and the motives of the heart ([[1 Corinthians 4:5]], [[Hebrews 4:13]]). Every act, even hidden ones ([[Ecclesiastes 12:14]]).
+- **What we knew:** with the written Law, or by conscience without it ([[Romans 2:12]], [[Romans 2:15]]). More knowledge, more responsibility ([[Luke 12:47-48]]).
+- **What we did with Jesus:** “he who does not believe has been judged already” ([[John 3:18]]).
+
+**Where the Ten Commandments fit:** they sum up God's moral law, and Jesus summed it up further: love God, love your neighbor ([[Matthew 22:37-38]]). The Law works like a mirror: “through the Law comes the knowledge of sin” ([[Romans 3:20]]). Jesus showed it reaches the heart: lust is adultery, hatred is murder.
+
+**For believers:** no condemnation ([[Romans 8:1]]), because Jesus took our judgment. Our lives will still be evaluated for reward ([[2 Corinthians 5:10]]).
+
+**In a conversation:** “The Ten Commandments are just the clearest way to see we've all fallen short.” Then go to the Law questions ({{Way of the Master|paths/way-of-the-master/3}}).`,
+    verses: ["Revelation 20:12", "Matthew 12:36", "1 Corinthians 4:5", "Romans 2:15", "John 3:18"],
+    related: ["objections/what-is-sin", "paths/way-of-the-master"],
+  },
 
   {
     id: "all-religions",
