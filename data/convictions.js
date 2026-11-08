@@ -736,20 +736,153 @@ In those cases, the innocent spouse is free to remarry. Otherwise, believers sho
     title: "School of Biblical Evangelism (Ray Comfort & Kirk Cameron)",
     category: "Book Notes",
     sources: ["Ray Comfort", "Living Waters"],
-    summary: `Started November 2026 (Express edition). A course in sharing the gospel the way Jesus did: the Law before grace, answering objections, and practical evangelism. Notes are added as I read.`,
+    summary: `Started November 2026. 101 lessons on sharing the gospel the way Jesus did: the Law before grace, true repentance, doing the work, the Bible, apologetics, and other religions. Notes are added as I read.`,
     parts: [
       {
         heading: "Why I'm reading it",
         body: `- Go deeper on the Way of the Master method I already use ({{Way of the Master|paths/way-of-the-master}}).
-- Pick up practical material: objections, open-air preaching, follow-up, and examples from Scripture.`,
+- Pick up practical material: tracts, open-air preaching, witnessing to hurting people, and answers for other religions.`,
+      },
+      {
+        heading: "Where I am",
+        body: `Not started yet. Next up: Lesson 1, The Forgotten Key to Biblical Evangelism.`,
       },
       {
         heading: "Lesson notes",
-        body: `No notes yet. Add the lesson or chapter, the main idea, and anything worth remembering.`,
+        body: `No notes yet. For each lesson: the main idea, key verses, and anything worth remembering.`,
       },
       {
         heading: "My takeaways",
         body: `None yet.`,
+      },
+      {
+        heading: "The message: Law, grace, and repentance (1 to 20)",
+        body: `1. The Forgotten Key to Biblical Evangelism
+2. Making Grace Amazing
+3. The Problem with the Modern Gospel
+4. How to Confront Sinners
+5. The Ten Commandments, Part 1
+6. The Ten Commandments, Part 2
+7. The Ten Commandments, Part 3
+8. The Ten Commandments, Part 4
+9. The Ten Commandments, Part 5
+10. The Ten Commandments, Part 6
+11. The Ten Commandments, Part 7
+12. The Ten Commandments, Part 8
+13. The Ten Commandments, Part 9
+14. The Ten Commandments, Part 10
+15. Our Ally: The Conscience
+16. The Necessity of Repentance
+17. Personal Witnessing: How Jesus Did It
+18. The Sinner's Prayer
+19. True and False Conversions
+20. Hypocrisy`,
+      },
+      {
+        heading: "Judgment and sin (21 to 24)",
+        body: `21. The Certainty of Judgment
+22. Judgment Day
+23. The Reality of Hell
+24. Man's Sinful Condition`,
+      },
+      {
+        heading: "Doing the work (25 to 36)",
+        body: `25. Our Primary Task
+26. The Fear of Man
+27. The Empowering of the Holy Spirit
+28. How to Capture the World's Attention
+29. Gospel Tracts, Part 1
+30. Gospel Tracts, Part 2
+31. Personal Testimony
+32. Creative Ways to Share Your Faith
+33. How to Witness to Hurting People
+34. Open-Air Preaching, Part 1
+35. Open-Air Preaching, Part 2
+36. Open-Air Preaching, Part 3`,
+      },
+      {
+        heading: "Growing as a witness, and core beliefs (37 to 51)",
+        body: `37. Faith, Part 1
+38. Faith, Part 2
+39. The Enemy, Part 1
+40. The Enemy, Part 2
+41. The Enemy, Part 3
+42. The Enemy, Part 4
+43. Prayer
+44. The Survivor's Guide
+45. Holiness
+46. Water Baptism, Part 1
+47. Water Baptism, Part 2
+48. The Trinity
+49. The Deity of Christ
+50. The Holy Spirit
+51. The Resurrection`,
+      },
+      {
+        heading: "The Bible (52 to 63)",
+        body: `52. The Bible, Part 1
+53. The Bible, Part 2
+54. The Bible, Part 3
+55. The Bible, Part 4
+56. Contradictions in the Bible
+57. Prophecy
+58. Messianic Prophecies, Part 1
+59. Messianic Prophecies, Part 2
+60. Non-Messianic Prophecies
+61. Scientific Facts in the Bible, Part 1
+62. Scientific Facts in the Bible, Part 2
+63. Scientific Facts in the Bible, Part 3`,
+      },
+      {
+        heading: "Evolution, atheism, and relativism (64 to 76)",
+        body: `64. Evolution, Part 1
+65. Evolution, Part 2
+66. Evolution, Part 3
+67. Evolution, Part 4
+68. Evolution, Part 5
+69. Atheism
+70. How to Prove the Existence of God
+71. Atheist Obstacles
+72. Atheists' Questions, Part 1
+73. Atheists' Questions, Part 2
+74. Relativism, Part 1
+75. Relativism, Part 2
+76. Reincarnation`,
+      },
+      {
+        heading: "Other religions and groups (77 to 93)",
+        body: `77. Islam, Part 1
+78. Islam, Part 2
+79. Hinduism
+80. Buddhism, Part 1
+81. Buddhism, Part 2
+82. Judaism
+83. What Makes a Group Non-Christian?
+84. Unitarianism
+85. Mormonism, Part 1
+86. Mormonism, Part 2
+87. Jehovah's Witnesses, Part 1
+88. Jehovah's Witnesses, Part 2
+89. Roman Catholicism
+90. Oneness Pentecostals
+91. International Church of Christ
+92. Seventh-Day Adventists
+93. New Age Movement`,
+      },
+      {
+        heading: "Christian living and revival (94 to 101)",
+        body: `94. The Will of God
+95. Our Most Valuable Commodity
+96. When You've Been Wronged
+97. The Source of Revival
+98. Hindrances to Revival
+99. How to Maintain Zeal
+100. Raising Laborers in Your Church
+101. The Christian's Prayer`,
+      },
+      {
+        heading: "Also in the book",
+        body: `Answers to the lesson questions, recommended resources, and a section on memorizing and remembering Scripture.`,
       },
     ],
   },

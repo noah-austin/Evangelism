@@ -150,7 +150,7 @@
           .map((g) =>
             g.type === "p"
               ? `<p>${g.lines.map(inline).join("<br>")}</p>`
-              : `<${g.type}>${g.lines.map((l) => `<li>${inline(l.replace(/^(- |\d+\. )/, ""))}</li>`).join("")}</${g.type}>`
+              : `<${g.type}${g.type === "ol" && parseInt(g.lines[0], 10) > 1 ? ` start="${parseInt(g.lines[0], 10)}"` : ""}>${g.lines.map((l) => `<li>${inline(l.replace(/^(- |\d+\. )/, ""))}</li>`).join("")}</${g.type}>`
           )
           .join("");
       })
