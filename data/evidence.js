@@ -189,6 +189,66 @@ DATA.evidence = [
   },
 
   {
+    id: "the-law",
+    title: "The Law: What Still Applies",
+    summary: `Jesus didn't come to abolish the Law but to fulfill it ([[Matthew 5:17-19]]). Christians often sort the Old Testament laws into three kinds, because Christ fulfilled each one differently: ceremonial, civil, and moral.`,
+    parts: [
+      {
+        heading: "The key verse",
+        body: `“Do not think that I came to abolish the Law or the Prophets; I did not come to abolish but to fulfill” ([[Matthew 5:17-19]]). Faith doesn't nullify the Law; it establishes it ([[Romans 3:31]]). The question is how each part applies now that Christ has come and the new covenant has replaced the old ([[Hebrews 8:13]]).`,
+        verses: ["Matthew 5:17-19", "Romans 3:31"],
+      },
+      {
+        heading: "1. Ceremonial laws: fulfilled in Christ",
+        body: `**What:** sacrifices, priesthood, temple, feasts, food laws, and clean and unclean rules.
+
+**Why they ended:** they were “a mere shadow of what is to come; but the substance belongs to Christ” ([[Colossians 2:16-17]]). Jesus offered “one sacrifice for sins for all time” ([[Hebrews 10:12]]). He declared all foods clean ([[Mark 7:19]]), and God told Peter, “What God has cleansed, no longer consider unholy” ([[Acts 10:15]]).
+
+The sacrificial laws belong here. Hebrews 7 to 10 is the main passage.`,
+        verses: ["Colossians 2:16-17", "Hebrews 10:12", "Mark 7:19"],
+      },
+      {
+        heading: "2. Civil (judicial) laws: Christians differ",
+        body: `**What:** laws for justice in Israel's society, such as courts, restitution, and penalties for crimes.
+
+**The question:** do they still bind governments today? This is where views split (see below). Everyone agrees they show what God considers just: honest courts, protecting the weak, restitution for theft, and the seriousness of crimes like murder ([[Deuteronomy 4:6-8]]).`,
+        verses: ["Deuteronomy 4:6-8"],
+      },
+      {
+        heading: "3. Moral laws: still apply",
+        body: `**What:** commands that reflect God's own character, summed up in the Ten Commandments.
+
+**Why they remain:** God's character doesn't change, and the New Testament repeats them ([[Romans 13:8-10]]). Jesus deepened them to the heart (Matthew 5). The Law is still good and still exposes sin ([[1 Timothy 1:8-10]]).
+
+**They don't save us.** Christ did what the Law couldn't, so we keep it by the Spirit, out of love ([[Romans 8:3-4]]).`,
+        verses: ["Romans 13:8-10", "1 Timothy 1:8-10", "Romans 8:3-4"],
+      },
+      {
+        heading: "A quick test for any Old Testament law",
+        body: `1. Does it point to Christ (sacrifice, priesthood, purity, feasts)? **Fulfilled.**
+2. Does it reflect God's character, and does the New Testament repeat it? **Still applies.**
+3. Is it a civil law for justice in society? **See the views below.**`,
+      },
+      {
+        heading: "How Christians differ on the civil laws",
+        body: `- **Theonomy:** God's civil laws, including their penalties, remain the standard of justice for every government, except where the New Testament changes them. Greg Bahnsen is a leading voice. {{My view|convictions/theonomy}}.
+- **General equity:** the civil laws expired with Israel as a nation, but the justice behind them still applies (Westminster Confession 19.4). Many in this view keep the death penalty for murder because of [[Genesis 9:6]].
+- **Ended with Israel:** governments set penalties under Romans 13, guided by justice, but not bound to Moses.
+- **New Covenant Theology:** the whole law of Moses is fulfilled; Christians follow “the law of Christ,” which repeats the moral commands.`,
+      },
+      {
+        heading: "The Sabbath",
+        body: `Christians differ: some keep a Saturday Sabbath, some see Sunday as the Christian Sabbath, and many see it fulfilled in Christ, our rest ([[Colossians 2:16-17]], Hebrews 4), while keeping a weekly rhythm of rest and worship.`,
+      },
+      {
+        heading: "If someone asks",
+        say: ["Some laws pointed to Jesus and were fulfilled in Him, like the sacrifices and food laws.", "God's moral law, like don't lie or steal, still stands."],
+        ask: "Which law did you have in mind?",
+      },
+    ],
+  },
+
+  {
     id: "prophecy",
     title: "Fulfilled Prophecy",
     sources: ["Lee Strobel"],

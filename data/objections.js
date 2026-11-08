@@ -842,6 +842,26 @@ Later lists, like Athanasius in 367, just confirmed what churches across the wor
     related: ["evidence/canon", "objections/bible-changed"],
   },
   {
+    id: "pick-and-choose",
+    category: "The Bible",
+    title: "Christians pick and choose from the Old Testament",
+    sources: ["Greg Koukl", "Ray Comfort"],
+    oneLiner: "Some laws pointed to Jesus and were fulfilled in Him. God's moral law still stands.",
+    askBack: "Which law did you have in mind?",
+    short: `Christians aren't picking at random. The food laws, sacrifices, and temple rules were shadows pointing to Jesus. When He came, He fulfilled them. Jesus Himself declared all foods clean.
+
+But the moral law, like don't lie, steal, or murder, reflects God's character. It never changes, and the New Testament repeats it. That's the part that shows all of us we need a Savior.`,
+    deep: `**Ask for details first:** “Which law?” Usually it's shellfish, mixed fabrics, or tattoos ({{Be Precise|skills/be-precise}}).
+
+**The three kinds:** ceremonial laws were fulfilled in Christ ([[Colossians 2:16-17]], [[Mark 7:19]], [[Hebrews 10:12]]); the moral law still applies ([[Romans 13:8-10]]); Christians differ on how the civil laws apply today. Full breakdown: {{The Law: What Still Applies|evidence/the-law}}.
+
+**Jesus didn't abolish the Law** ([[Matthew 5:17-19]]); He fulfilled it.
+
+**Turn it to the conscience:** “You're right that some laws were for a specific time. But the moral law, like don't lie or steal, still applies to all of us. Can I ask how you've done with those?” ({{Way of the Master|paths/way-of-the-master/3}})`,
+    verses: ["Matthew 5:17-19", "Colossians 2:16-17", "Mark 7:19", "Romans 13:8-10"],
+    related: ["evidence/the-law", "objections/ot-cruel"],
+  },
+  {
     id: "bible-men",
     category: "The Bible",
     title: "The Bible was written by men",

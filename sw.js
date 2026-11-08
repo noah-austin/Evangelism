@@ -2,7 +2,7 @@
 // With signal: always load the latest files from the site (and save a copy).
 // Without signal (or if the site takes too long): use the saved copy.
 // Bump VERSION when adding or renaming files.
-const VERSION = "v49";
+const VERSION = "v50";
 const CACHE = "field-guide-" + VERSION;
 const FILES = [
   "./",

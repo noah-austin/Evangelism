@@ -272,12 +272,12 @@ If we follow Jesus, we take Scripture the way He did.`,
     id: "capital-punishment",
     title: "Capital Punishment",
     category: "Ethics & Society",
-    summary: `God gave government the authority to take life for murder, because people are made in His image. It still applies today.`,
+    summary: `God gave government the authority to take life for murder, rape, and kidnapping. It still applies today.`,
     parts: [
       {
         heading: "My view",
-        body: `God gave government the authority to take the life of a murderer, because people are made in His image ([[Genesis 9:6]]). It must be carried out justly and only with certainty of guilt ([[Numbers 35:30]], [[Deuteronomy 19:15]]).`,
-        verses: ["Genesis 9:6", "Numbers 35:30", "Deuteronomy 19:15"],
+        body: `God gave government the authority to take the life of a murderer, because people are made in His image ([[Genesis 9:6]]). God's law also gives death for rape ([[Deuteronomy 22:25-26]]) and kidnapping ([[Exodus 21:16]]), and that standard of justice still applies ({{God's Law & Civil Government|convictions/theonomy}}). It must be carried out justly and only with certainty of guilt ([[Numbers 35:30]], [[Deuteronomy 19:15]]).`,
+        verses: ["Genesis 9:6", "Deuteronomy 22:25-26", "Exodus 21:16", "Deuteronomy 19:15"],
       },
       {
         heading: "Why it still applies today",
@@ -298,11 +298,65 @@ If we follow Jesus, we take Scripture the way He did.`,
       },
       {
         heading: "How Christians differ",
-        body: `Some Christians oppose capital punishment because of the risk of executing the innocent, unequal application, or an emphasis on mercy and the possibility of repentance.`,
+        body: `- Some Christians oppose capital punishment because of the risk of executing the innocent, unequal application, or an emphasis on mercy and repentance.
+- Many hold it for murder only, based on [[Genesis 9:6]] (general equity), but not for other crimes in the law of Moses.`,
       },
       {
         heading: "If someone asks",
         say: ["It's grounded in how valuable human life is, not a disregard for it."],
+      },
+    ],
+  },
+
+  // --- God's Law & Civil Government (DRAFT: confirm the details) ---
+  {
+    id: "theonomy",
+    title: "God's Law & Civil Government (Theonomy)",
+    category: "Ethics & Society",
+    draft: true,
+    summary: `God's law, including its civil laws and penalties, is still the standard of justice for every government, except where the New Testament changes it. The ceremonial laws are fulfilled in Christ.`,
+    parts: [
+      {
+        heading: "My view",
+        body: `Jesus didn't abolish the Law ([[Matthew 5:17-19]]). The ceremonial laws (sacrifices, priesthood, food laws) are fulfilled in Him. But God's moral law, and the civil laws that apply it to society, still show what justice is. Government is “a minister of God” to punish evil ([[Romans 13:4]]), and God's law is what defines evil and its just penalty. Murder, rape, and kidnapping still deserve death.`,
+        verses: ["Matthew 5:17-19", "Romans 13:4", "Deuteronomy 4:6-8"],
+      },
+      {
+        heading: "Why",
+        body: `- **Every letter stands until all is accomplished** ([[Matthew 5:17-19]]). The New Testament explicitly sets aside the ceremonial laws, but not the civil ones.
+- **God's law was meant to be a model** of wisdom and justice for the nations ([[Deuteronomy 4:6-8]]).
+- **Faith establishes the Law** ([[Romans 3:31]]).
+- **The Law is still good** for restraining the lawless, including murderers and kidnappers ([[1 Timothy 1:8-10]]).
+- **Government punishes evil as God's servant** ([[Romans 13:4]]). Who better defines justice than the One who appointed it?`,
+      },
+      {
+        heading: "Examples",
+        body: `- **Murder:** [[Genesis 9:6]], given to all humanity before Moses. See {{Capital Punishment|convictions/capital-punishment}}.
+- **Rape:** the rapist dies, the victim is innocent ([[Deuteronomy 22:25-26]]).
+- **Kidnapping:** “He who kidnaps a man... shall surely be put to death” ([[Exodus 21:16]]).
+- **Theft:** restitution to the victim, not just prison (Exodus 22:1-4).`,
+      },
+      {
+        heading: "Justice must be careful",
+        body: `- **Only civil government** carries out penalties, never individuals.
+- **Certainty required:** two or three witnesses ([[Deuteronomy 19:15]]).
+- **Change comes through the gospel**, persuasion, and lawful means, not force.`,
+      },
+      {
+        heading: "To work through",
+        body: `The law of Moses also gives the death penalty for other crimes, such as adultery (Leviticus 20:10), blasphemy (Leviticus 24:16), and Sabbath-breaking (Exodus 31:14). Theonomists differ on how these apply today; some see some of them as the maximum penalty rather than the required one. I need to decide where I stand on these.`,
+      },
+      {
+        heading: "How Christians differ",
+        body: `- **General equity:** civil laws expired with Israel, but their justice still applies (Westminster Confession 19.4).
+- **Ended with Israel:** governments set penalties under Romans 13, not bound to Moses.
+- **New Covenant Theology:** the law of Moses is fulfilled; Christians follow the law of Christ.
+
+See {{The Law: What Still Applies|evidence/the-law}} for the full breakdown.`,
+      },
+      {
+        heading: "If someone asks",
+        say: ["I believe God's law is the best standard of justice for any nation.", "But the heart only changes through the gospel, so that comes first."],
       },
     ],
   },
