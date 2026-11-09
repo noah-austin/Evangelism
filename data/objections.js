@@ -203,6 +203,28 @@ Hell isn't unfair. It's justice. What's “unfair” is grace: Jesus took the pu
     verses: ["Revelation 20:12", "Hebrews 4:13", "Matthew 10:28", "Psalm 7:11", "Ezekiel 33:11", "John 3:16"],
     related: ["paths/way-of-the-master", "objections/god-will-forgive"],
   },
+  {
+    id: "same-as-murderer",
+    category: "God & Suffering",
+    title: "Why would I get the same punishment as a murderer?",
+    sources: ["Ray Comfort", "Living Waters"],
+    oneLiner: "You wouldn't. Punishment fits the crime. But a smaller criminal is still a criminal.",
+    askBack: "If you broke one law, would a judge call you innocent?",
+    short: `The Bible says God judges fairly, and punishment fits the crime. Jesus said some will receive more punishment than others.
+
+But breaking one law still makes you a lawbreaker. A shoplifter isn't a murderer, but he's still guilty. The question isn't whether you're as bad as the worst person; it's whether you're innocent before a holy God. None of us are, and that's why we need a Savior.`,
+    deep: `**Degrees of punishment:** the servant who knew more is beaten with many lashes; the one who knew less, with few ([[Luke 12:47-48]]). Everyone is judged according to their deeds ([[Revelation 20:12]]).
+
+**One law makes you guilty:** stumbling in one point makes you guilty of all ([[James 2:10]]). “The soul who sins will die” ([[Ezekiel 18:4]]).
+
+**God's standard, not ours:** we compare ourselves with the worst people and look good. God compares us with His perfect Law ({{I'm a good person|objections/good-person}}).
+
+**Agree with their sense of justice.** Wanting a murderer punished is right; it reflects God's justice. Then turn it gently: the same justice applies to us.
+
+**Then the cross:** the guilty don't walk free because the fine is paid, not ignored ({{Way of the Master|paths/way-of-the-master/6}}).`,
+    verses: ["Luke 12:47-48", "James 2:10", "Ezekiel 18:4", "Revelation 20:12"],
+    related: ["objections/hell-unfair", "objections/good-person"],
+  },
 
   {
     id: "never-heard",

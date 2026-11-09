@@ -370,7 +370,12 @@ DATA.worldviews = [
         body: `- **Never say “the Jews killed Jesus.”** Our sins put Him there, and He laid down His life willingly.
 - **Acknowledge** the church's past sins against Jewish people.
 - **Present Jesus as the Jewish Messiah,** not as someone asking them to stop being Jewish.
-- **Use “Messiah” and “Hebrew Scriptures”** where it helps.`,
+- **Use “Messiah” and “Hebrew Scriptures”** where it helps.
+- **Quote the Hebrew Bible, not the New Testament,** when you can. Instead of “the wages of sin is death,” use “the soul who sins will die” ([[Ezekiel 18:4]]). For judgment after death, use [[Daniel 12:2]].
+- **Ask “innocent or guilty?”** rather than “heaven or hell?” Many Jewish people don't think much about hell.
+- **Respect Yom Kippur.** Don't call it “informal.” Agree repentance is real, then ask who pays the fine.
+- **Jesus and His first followers were all Jewish.** Trusting the Jewish Messiah isn't leaving your people. Many Jewish believers (Messianic Jews) keep their heritage.
+- **Point them to Isaiah 53 first,** then Matthew or John.`,
       },
       {
         heading: "Go to the Law",

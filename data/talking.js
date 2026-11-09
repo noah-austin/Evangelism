@@ -844,6 +844,10 @@ DATA.talking = [
 - **No temple since AD 70.** Most rabbinic teaching now points to prayer, repentance, and good deeds.
 - **God promises cleansing** ([[Isaiah 1:18]]). But how?`,
         verses: ["Leviticus 17:11", "Isaiah 1:18", "Hebrews 10:4"],
+        branches: [
+          { if: "“Yom Kippur is enough”", go: "step:8" },
+          { if: "“A man can't die for someone else's sins”", go: "step:9" },
+        ],
       },
       {
         heading: "Isaiah 53",
@@ -864,6 +868,7 @@ DATA.talking = [
         verses: ["Micah 5:2", "Psalm 22:16", "Jeremiah 31:31"],
         branches: [
           { if: "“There's no world peace, so He's not the Messiah”", go: "step:6" },
+          { if: "“What would my family think?”", go: "step:10" },
           { if: "“What's the evidence?”", go: "evidence/prophecy" },
         ],
       },
@@ -875,7 +880,10 @@ DATA.talking = [
 - **No one is righteous** on their own ([[Isaiah 64:6]]).
 - **Then the cross:** the Messiah is the atonement.`,
         verses: ["Exodus 20:16", "Exodus 20:15", "Isaiah 64:6"],
-        branches: [{ if: "Ready to go through the Law", go: "paths/way-of-the-master/3" }],
+        branches: [
+          { if: "Ready to go through the Law", go: "paths/way-of-the-master/3" },
+          { if: "“So I'm as bad as a murderer?”", go: "objections/same-as-murderer" },
+        ],
       },
 
       // --- Side steps (only if needed) ---
@@ -897,12 +905,52 @@ DATA.talking = [
         next: 5,
         say: ["That's common. Can I ask what you think happens after we die?"],
         body: `- **Treat it like a conversation with an agnostic or atheist.**
+- **If suffering comes up** (often the Holocaust), listen first. Their longing for justice is a bridge: if nothing happens after death, the guilty walk free. The Hebrew Bible says the dead will rise to life or to contempt ([[Daniel 12:2]]).
 - **Go to the conscience.** They know lying and stealing are wrong ([[Romans 2:15]]).`,
-        verses: ["Romans 2:15"],
+        verses: ["Romans 2:15", "Daniel 12:2"],
         branches: [
           { if: "“I don't believe in God”", go: "paths/way-of-the-master/9" },
           { if: "Ready to go through the Law", go: "paths/way-of-the-master/2" },
         ],
+      },
+      {
+        heading: "“Yom Kippur is enough”",
+        detour: true,
+        next: 3,
+        say: ["Repentance is real and important. But if a guilty man says sorry in court, does a good judge let him go?"],
+        ask: "On Yom Kippur, who pays for the sin?",
+        body: `- **Respect it.** People take it seriously; don't call it informal.
+- **The judge:** being sorry doesn't pay the fine.
+- **Blood was always required** ([[Leviticus 17:11]]). With no temple and no sacrifice, the fine is unpaid.`,
+        verses: ["Leviticus 17:11", "Ezekiel 18:4"],
+      },
+      {
+        heading: "“A man can't die for someone else's sins”",
+        detour: true,
+        next: 3,
+        say: [
+          "You're right, it is a sacrifice. Think about Passover: the lamb died so the firstborn would live.",
+          "Jesus had no sin of His own to pay for, so He could pay for yours.",
+        ],
+        ask: "Can I read you something from your own Scriptures?",
+        body: `- **Agree it's a sacrifice.** Arguing about the word gets you stuck.
+- **The Torah already has a substitute:** the Passover lamb ([[Exodus 12:13]]) and the Yom Kippur goat carrying Israel's sins (Leviticus 16).
+- **Isaiah 53:** the servant is pierced for our transgressions ([[Isaiah 53:5]], [[Isaiah 53:6]]).
+- **Why one death pays for many:** who died. A sinless man owed nothing, and as God in the flesh His life is worth more than all our sins.
+- **Not pagan sacrifice:** no one forced Him. God came Himself, like the judge paying the fine.
+- **Ezekiel 18** says each person answers for their own sin instead of blaming their fathers ([[Ezekiel 18:20]]). It doesn't rule out God providing a substitute.
+- **Answer first.** If they ask sincerely, don't turn it back with a question.`,
+        verses: ["Exodus 12:13", "Isaiah 53:5", "Isaiah 53:6", "Ezekiel 18:20"],
+      },
+      {
+        heading: "“What would my family think?”",
+        detour: true,
+        next: 5,
+        say: ["I understand. That's a real cost.", "Jesus and all His first followers were Jewish. Trusting the Jewish Messiah isn't leaving your people."],
+        body: `- **Be gentle.** For many, especially Holocaust families, this is deeply personal.
+- **Many Jewish believers (Messianic Jews)** keep their heritage.
+- **Don't push.** Ask them to read Isaiah 53 and a Gospel, and to pray.`,
+        verses: ["Romans 1:16"],
       },
     ],
   },
