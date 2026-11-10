@@ -1080,4 +1080,441 @@ You don't need to say it this formally. Just walk them through it with questions
       },
     ],
   },
+  {
+    id: "hindu",
+    title: "“I'm Hindu”",
+    category: "Other Faiths",
+    sources: ["Ray Comfort", "Living Waters", "Cliff Knechtle"],
+    summary: `Find out what they believe, since Hinduism varies widely. Use one life then judgment against reincarnation, grace against karma, and Jesus as the only way. Then go to the Law.`,
+    numbered: true,
+    parts: [
+      {
+        heading: "Common ground",
+        say: ["I'd love to hear what you believe. Hinduism is so varied."],
+        ask: "Which god or tradition does your family follow?",
+        body: `- **Listen first.** Beliefs range from one supreme god to many gods to an impersonal Brahman.
+- **You share some things:** a spiritual world is real, actions matter, and people need rescue.
+- **Be respectful.** Don't mock their gods or images.`,
+        branches: [
+          { if: "“Karma and reincarnation”", go: "step:2" },
+          { if: "“All paths lead to God”", go: "step:6" },
+          { if: "“Jesus is one of the gods too”", go: "step:7" },
+        ],
+      },
+      {
+        heading: "One life or many?",
+        ask: "What do you think happens when you die?",
+        say: ["The Bible says we die once, and then comes judgment."],
+        body: `- **Reincarnation offers many chances.** The Bible says there is one ([[Hebrews 9:27]]).
+- **The dead will be raised,** some to life and some to shame ([[Daniel 12:2]]).
+- **One life raises the stakes.** There is no next round to fix this one.`,
+        verses: ["Hebrews 9:27", "Daniel 12:2"],
+        branches: [
+          { if: "“How do you know?”", go: "step:4" },
+          { if: "“Karma will sort it out”", go: "step:3" },
+        ],
+      },
+      {
+        heading: "Karma or grace",
+        ask: "If karma is real, what do you have coming?",
+        say: ["Karma is bad news for anyone with a past.", "Grace means Someone else pays what you owe."],
+        body: `- **Karma has no forgiveness.** Every debt must be paid.
+- **The problem isn't ignorance. It's sin** against a holy God ([[Romans 3:23]]).
+- **The gospel is a gift,** not earned over many lives ([[Romans 6:23]], [[Ephesians 2:8-9]]).`,
+        verses: ["Romans 3:23", "Romans 6:23", "Ephesians 2:8-9"],
+        branches: [
+          { if: "“I'm a good person”", go: "paths/way-of-the-master/2" },
+          { if: "“Who paid it?”", go: "step:4" },
+        ],
+      },
+      {
+        heading: "Who is Jesus?",
+        say: ["Jesus didn't claim to be one way among many. He said He is the way.", "He came once, died for sins, and rose again."],
+        ask: "If Jesus rose from the dead, shouldn't we listen to Him?",
+        body: `- **Not one avatar among many.** God became flesh once, for good ([[John 1:14]]).
+- **The only way** to the Father ([[John 14:6]], [[Acts 4:12]]).
+- **He rose bodily.** That is how we know He spoke the truth ([[1 Corinthians 15:3-4]]).`,
+        verses: ["John 1:14", "John 14:6", "Acts 4:12", "1 Corinthians 15:3-4"],
+        branches: [
+          { if: "“He's one of the gods too”", go: "step:7" },
+          { if: "“What's the evidence?”", go: "evidence/resurrection" },
+        ],
+      },
+      {
+        heading: "Go to the Law",
+        say: ["Many Hindus value truth and nonviolence. Can I ask how you've done?"],
+        ask: "Have you ever told a lie?",
+        body: `- **The conscience already agrees** with God's Law ([[Romans 2:15]]).
+- **Go through the commandments:** lying, stealing, lust, hatred.
+- **Then the cross:** Jesus paid the debt karma can only collect ([[1 Peter 3:18]]).`,
+        verses: ["Exodus 20:16", "Exodus 20:15", "Romans 2:15", "1 Peter 3:18"],
+        branches: [
+          { if: "Ready to go through the Law", go: "paths/way-of-the-master/3" },
+          { if: "“So I'm as bad as a murderer?”", go: "objections/same-as-murderer" },
+        ],
+      },
+      {
+        heading: "“All paths lead to God”",
+        detour: true,
+        next: 2,
+        say: ["Paths that teach opposite things can't all end in the same place.", "Jesus said He is the only way. Either that's true or it isn't."],
+        ask: "If all paths are equal, was Jesus wrong?",
+        body: `- **The claim takes a side.** It says every religion that claims to be the only way is wrong ({{Suicide|skills/suicide}}).
+- **Be gentle.** This view feels humble and tolerant to many Hindus.`,
+        verses: ["John 14:6", "Acts 4:12"],
+        branches: [
+          { if: "“They're all basically the same”", go: "objections/all-religions" },
+        ],
+      },
+      {
+        heading: "“Jesus is one of the gods too”",
+        detour: true,
+        next: 5,
+        say: ["Jesus wouldn't accept a place on the shelf.", "He said to worship the one true God alone."],
+        body: `- **One God:** “I am the first and I am the last, and there is no God besides Me” ([[Isaiah 44:6]]).
+- **No other gods** ([[Exodus 20:3]]).
+- **Jesus is God the Son,** not a lesser deity ([[John 1:1]]). See {{Liar, Lunatic, or Lord|evidence/trilemma}}.`,
+        verses: ["Isaiah 44:6", "Exodus 20:3", "John 1:1"],
+        branches: [
+          { if: "“He was just a good teacher”", go: "objections/jesus-good-teacher" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "buddhist",
+    title: "“I'm Buddhist”",
+    category: "Other Faiths",
+    sources: ["Ray Comfort", "Living Waters", "Cliff Knechtle"],
+    summary: `Agree that suffering is real. Then show that the deepest problem is sin, not desire, that we die once and face judgment, and that grace gives what karma never can. Then go to the Law.`,
+    numbered: true,
+    parts: [
+      {
+        heading: "Common ground",
+        say: ["I'd love to hear what Buddhism means to you."],
+        ask: "Were you raised Buddhist, or did you come to it later?",
+        body: `- **Find out which kind.** Theravada, Zen, Pure Land, Tibetan, or Western mindfulness.
+- **You share a lot:** suffering is real, selfish craving causes harm, and honesty and kindness matter.
+- **Listen first.** Many don't believe in a creator God.`,
+        branches: [
+          { if: "“Desire causes suffering”", go: "step:2" },
+          { if: "“I don't believe in God”", go: "step:6" },
+          { if: "“The Buddha and Jesus taught the same thing”", go: "step:7" },
+        ],
+      },
+      {
+        heading: "What's the real problem?",
+        say: ["We agree something is deeply wrong with the world and with us."],
+        ask: "Where do you think suffering comes from?",
+        body: `- **Buddhism says** craving and ignorance.
+- **Jesus says** evil comes from the heart ([[Mark 7:21]], [[Jeremiah 17:9]]).
+- **Desire isn't the problem. Wrong desire is.** And sin is against God, not just harmful ([[Psalm 51:4]]).`,
+        verses: ["Mark 7:21", "Jeremiah 17:9", "Psalm 51:4"],
+        branches: [
+          { if: "“There's no God to sin against”", go: "step:6" },
+          { if: "“Karma deals with that”", go: "step:3" },
+        ],
+      },
+      {
+        heading: "One life",
+        ask: "What do you think happens after you die?",
+        say: ["The Bible says we die once, and then comes judgment."],
+        body: `- **Not endless rebirth.** One life, then judgment ([[Hebrews 9:27]]).
+- **We don't fade out.** The dead will be raised ([[Daniel 12:2]]).
+- **God wants to give life,** not extinction ([[John 10:10]]).`,
+        verses: ["Hebrews 9:27", "Daniel 12:2", "John 10:10"],
+        branches: [
+          { if: "“How do you know?”", go: "step:4" },
+        ],
+      },
+      {
+        heading: "Karma or grace",
+        ask: "If karma is real, what do you have coming?",
+        say: ["Karma says you pay. Grace says Someone paid for you.", "The Buddha pointed to a path. Jesus said He is the way."],
+        body: `- **Karma has no forgiveness.** Grace is a gift ([[Romans 6:23]], [[Titus 3:5]]).
+- **Jesus forgave sins** and rose from the dead ([[Mark 2:5-7]], [[1 Corinthians 15:3-4]]).
+- **He offers rest,** not more effort ([[Matthew 11:28]]).`,
+        verses: ["Romans 6:23", "Titus 3:5", "John 14:6", "Matthew 11:28"],
+        branches: [
+          { if: "“Amida's grace saves me”", go: "step:8" },
+          { if: "“What's the evidence?”", go: "evidence/resurrection" },
+          { if: "“I'm a good person”", go: "paths/way-of-the-master/2" },
+        ],
+      },
+      {
+        heading: "Go to the Law",
+        say: ["The Five Precepts say don't lie, steal, or commit sexual sin. Have you kept them?"],
+        ask: "Have you ever told a lie?",
+        body: `- **The precepts overlap God's Law.** Use them as a starting point.
+- **Go to the Ten Commandments,** including lust and hatred ([[Matthew 5:27-28]]).
+- **Then the cross:** Christ suffered for sins to bring us to God ([[1 Peter 3:18]]).`,
+        verses: ["Exodus 20:16", "Matthew 5:27-28", "1 Peter 3:18"],
+        branches: [
+          { if: "Ready to go through the Law", go: "paths/way-of-the-master/3" },
+          { if: "“So I'm as bad as a murderer?”", go: "objections/same-as-murderer" },
+        ],
+      },
+      {
+        heading: "“I don't believe in God”",
+        detour: true,
+        next: 3,
+        say: ["A building needs a builder. Everything we see had to come from somewhere."],
+        ask: "Where do you think everything came from?",
+        body: `- **Creation points to a Creator** ([[Hebrews 3:4]], [[Romans 1:20]]).
+- **The conscience points to a Lawgiver** ([[Romans 2:15]]).
+- **Don't stall here.** Move on to judgment and the Law.`,
+        verses: ["Hebrews 3:4", "Romans 1:20", "Romans 2:15"],
+        branches: [
+          { if: "“The universe has always existed”", go: "evidence/cosmological" },
+          { if: "“Morality is just karma”", go: "evidence/moral-law" },
+        ],
+      },
+      {
+        heading: "“The Buddha and Jesus taught the same thing”",
+        detour: true,
+        next: 5,
+        say: ["They agree on some ethics. But the Buddha said he showed the way. Jesus said He is the way."],
+        ask: "Did the Buddha ever claim to forgive sins?",
+        body: `- **Jesus claimed what no teacher does:** to forgive sins and be the only way ([[Mark 2:5-7]], [[John 14:6]]).
+- **He rose from the dead** ([[1 Corinthians 15:3-4]]).
+- See {{Liar, Lunatic, or Lord|evidence/trilemma}}.`,
+        verses: ["Mark 2:5-7", "John 14:6", "1 Corinthians 15:3-4"],
+        branches: [
+          { if: "“They're all basically the same”", go: "objections/all-religions" },
+        ],
+      },
+      {
+        heading: "“Amida's grace saves me”",
+        detour: true,
+        next: 5,
+        say: ["Grace is exactly what we need. But a just judge can't just let the guilty go.", "Jesus actually paid for sin, in history."],
+        body: `- **Pure Land Buddhists** rely on Amida Buddha's vow, not their own effort.
+- **The gospel's grace is just:** Jesus took the penalty ([[Romans 3:26]], [[2 Corinthians 5:21]]).
+- **Jesus is historical.** He died and rose in recorded history ([[1 Corinthians 15:3-4]]).`,
+        verses: ["Romans 3:26", "2 Corinthians 5:21", "1 Corinthians 15:3-4"],
+      },
+    ],
+  },
+  {
+    id: "adventist",
+    title: "“I'm Seventh-day Adventist”",
+    category: "Other Faiths",
+    sources: ["Ray Comfort", "Greg Koukl"],
+    summary: `Many Adventists believe the Trinity and speak of grace. Start there, ask about assurance, and keep coming back to Christ's finished work, not the day of worship.`,
+    numbered: true,
+    parts: [
+      {
+        heading: "Common ground",
+        say: ["I'd love to hear about your church.", "We agree on a lot: the Trinity, Jesus as God, and the cross."],
+        ask: "What do you love most about being Adventist?",
+        body: `- **Find out where they stand.** Some sound like any evangelical; others lean on Ellen White and law-keeping.
+- **Don't start with the Sabbath or 1844.** You'll argue about days instead of the gospel.
+- **Be warm.** Many have been called a cult before they've said a word.`,
+        branches: [
+          { if: "“I'm saved by grace, like you”", go: "step:2" },
+          { if: "“We keep the true Sabbath”", go: "step:6" },
+          { if: "“Ellen White was a prophet”", go: "step:8" },
+        ],
+      },
+      {
+        heading: "Do you know you're saved?",
+        say: ["The Bible says you can know you have eternal life."],
+        ask: "If you died today, do you know you'd be with the Lord?",
+        body: `- **Many say “I hope so”** or “if I stay faithful.”
+- **God's promise:** you can *know* ([[1 John 5:13]]).
+- **Believers have already passed** from death to life and don't come into judgment ([[John 5:24]]).`,
+        verses: ["1 John 5:13", "John 5:24"],
+        branches: [
+          { if: "“I hope so”", go: "step:3" },
+          { if: "“Yes, Jesus saved me”", go: "step:3" },
+          { if: "“My life is still being judged”", go: "step:7" },
+        ],
+      },
+      {
+        heading: "Grace alone",
+        say: ["If it's grace, nothing can be added to it."],
+        ask: "Is anything you do part of what keeps you saved?",
+        body: `- **A gift, not a wage** ([[Ephesians 2:8-9]], [[Romans 4:4-5]]).
+- **Grace plus works** isn't grace ([[Romans 11:6]]).
+- **Obedience is the fruit, not the root.** We're saved for good works, not by them ([[Ephesians 2:10]]).`,
+        verses: ["Ephesians 2:8-9", "Romans 4:4-5", "Romans 11:6", "Ephesians 2:10"],
+        branches: [
+          { if: "“Keeping the Sabbath is part of obeying God”", go: "step:6" },
+        ],
+      },
+      {
+        heading: "It is finished",
+        say: ["Jesus said, “It is finished.” One sacrifice, once for all."],
+        ask: "If Jesus paid it all, what's left to be settled?",
+        body: `- **Paid in full** ([[John 19:30]]).
+- **One offering** perfects forever those being sanctified ([[Hebrews 10:12]], [[Hebrews 10:14]]).
+- **No condemnation** for those in Christ ([[Romans 8:1]]).
+- **God keeps His own.** No one can snatch them from His hand ([[John 10:28-29]]). See {{Can You Lose Your Salvation?|convictions/eternal-security}}.`,
+        verses: ["John 19:30", "Hebrews 10:14", "Romans 8:1", "John 10:28-29"],
+        branches: [
+          { if: "“What about the judgment since 1844?”", go: "step:7" },
+          { if: "“How can I be sure?”", go: "objections/assurance" },
+        ],
+      },
+      {
+        heading: "Go to the Law",
+        say: ["You take the Ten Commandments seriously. Can I ask how you've done?"],
+        ask: "Have you ever told a lie?",
+        body: `- **Common ground:** they honor the Law. Use it as a mirror, not a ladder ([[Romans 3:20]], [[Galatians 3:24]]).
+- **Break one, guilty of all** ([[James 2:10]]). No one is saved by keeping them, the Sabbath included.
+- **Then the cross:** Christ kept the Law for us and paid what we owe.`,
+        verses: ["Romans 3:20", "Galatians 3:24", "James 2:10"],
+        branches: [
+          { if: "Ready to go through the Law", go: "paths/way-of-the-master/3" },
+          { if: "Ready for the cross", go: "paths/way-of-the-master/6" },
+        ],
+      },
+      {
+        heading: "“We keep the true Sabbath”",
+        detour: true,
+        next: 3,
+        say: ["Paul calls the Sabbath a shadow. The substance is Christ.", "Jesus is our rest."],
+        ask: "Is someone who worships on Sunday disobeying God?",
+        body: `- **A shadow of Christ** ([[Colossians 2:16-17]]).
+- **Each person's conscience** decides on days ([[Romans 14:5]]).
+- **Hebrews 4:** the real rest is found by faith in Christ.
+- **Christians differ** on the day. The key question is whether keeping it is part of being saved. See {{The Law: What Still Applies|evidence/the-law}}.
+- **Don't argue Saturday versus Sunday.** Come back to grace.`,
+        verses: ["Colossians 2:16-17", "Romans 14:5"],
+      },
+      {
+        heading: "“My life is still being judged”",
+        detour: true,
+        next: 4,
+        say: ["The Bible says believers have already passed from death to life."],
+        ask: "If your record is still being reviewed, how could you ever be sure?",
+        body: `- **The teaching:** since 1844, Christ has been reviewing the records of professed believers.
+- **Hebrews says** Christ entered the holy place “once for all” at His ascension, having obtained eternal redemption (Hebrews 9:12).
+- **No judgment for believers** ([[John 5:24]]) and **no condemnation** ([[Romans 8:1]]).
+- **Be gentle.** Many carry real fear about this.`,
+        verses: ["John 5:24", "Romans 8:1", "Hebrews 10:14"],
+      },
+      {
+        heading: "“Ellen White was a prophet”",
+        detour: true,
+        next: 2,
+        say: ["I'd want to test any prophet by Scripture."],
+        ask: "If Ellen White and the Bible seemed to disagree, which would win?",
+        body: `- **Most Adventists say the Bible.** Agree, and keep the Bible as the test ([[1 Thessalonians 5:21]], [[Acts 17:11]]).
+- **The 1844 teaching** began as a way to explain a failed prediction. Jesus said no one knows the day ([[Matthew 24:36]]).
+- **Don't attack her character.** Bring the conversation back to whether they know they're saved.`,
+        verses: ["1 Thessalonians 5:21", "Acts 17:11", "Matthew 24:36"],
+      },
+    ],
+  },
+  {
+    id: "oneness",
+    title: "“I'm Oneness Pentecostal”",
+    category: "Other Faiths",
+    sources: ["Ray Comfort", "Greg Koukl", "Wes Huff"],
+    summary: `You agree Jesus is fully God. Ask who He prayed to, show the Father, Son, and Spirit at His baptism, and show that salvation is by grace through faith, not baptism or tongues.`,
+    numbered: true,
+    parts: [
+      {
+        heading: "Common ground",
+        say: ["I love how much your church honors Jesus.", "We agree Jesus is fully God."],
+        ask: "How did you come to faith?",
+        body: `- **They believe Jesus is God.** That's real common ground.
+- **Be kind about standards and worship.** Mocking them ends the conversation.
+- **Listen for what they think saves:** often faith plus baptism in Jesus' name and tongues.`,
+        branches: [
+          { if: "“There's one God, and His name is Jesus”", go: "step:2" },
+          { if: "“Have you been baptized in Jesus' name?”", go: "step:6" },
+          { if: "“The Trinity is three gods”", go: "step:7" },
+        ],
+      },
+      {
+        heading: "Jesus' baptism",
+        say: ["At Jesus' baptism, the Son is in the water, the Spirit comes down, and the Father speaks from heaven."],
+        ask: "Who was the voice from heaven talking to?",
+        body: `- **All three at once,** not one after another ([[Matthew 3:16-17]]).
+- **“This is My beloved Son”:** the Father speaks about and to Another.
+- **Ask, don't lecture.** Let them explain their view first.`,
+        verses: ["Matthew 3:16-17"],
+        branches: [
+          { if: "“The Father was speaking to the human Jesus”", go: "step:3" },
+          { if: "“The Trinity is three gods”", go: "step:7" },
+        ],
+      },
+      {
+        heading: "John 17",
+        say: ["Jesus prayed, “Glorify Me with the glory I had with You before the world was.”"],
+        ask: "Who was Jesus with before the world was made?",
+        body: `- **Glory “with You”** before creation ([[John 17:5]]).
+- **Loved before the foundation of the world** ([[John 17:24]]). Love needs someone to love.
+- **A human nature didn't exist then.** The Son was already with the Father ([[John 1:1]]).
+- **Still one God** ([[Isaiah 44:6]]): one God, three persons.`,
+        verses: ["John 17:5", "John 17:24", "John 1:1", "Isaiah 44:6"],
+      },
+      {
+        heading: "Grace through faith",
+        say: ["We're saved by grace through faith, not by what we do.", "The thief on the cross was never baptized."],
+        ask: "If someone trusted Jesus but died before baptism, could they be saved?",
+        body: `- **A gift, not a wage** ([[Ephesians 2:8-9]], [[Titus 3:5]]).
+- **The thief** was promised paradise ([[Luke 23:42-43]]).
+- **Baptism is obedience**, not what saves. See {{Baptism|convictions/baptism}}.
+- **Standards and tongues** don't add to grace ([[Romans 11:6]]).`,
+        verses: ["Ephesians 2:8-9", "Titus 3:5", "Luke 23:42-43", "Romans 11:6"],
+        branches: [
+          { if: "“Acts 2:38 says baptism is for forgiveness”", go: "step:6" },
+          { if: "“You have to speak in tongues”", go: "step:8" },
+        ],
+      },
+      {
+        heading: "Go to the Law",
+        say: ["Can I ask how you're doing with God's commandments?"],
+        ask: "Have you ever told a lie?",
+        body: `- **Standards can hide the heart.** Outward holiness doesn't clean the inside.
+- **No one measures up** ([[Romans 3:20]], [[James 2:10]]).
+- **Then the cross:** Jesus paid it all ([[John 19:30]]), so you can know you're saved ([[1 John 5:13]]).`,
+        verses: ["Romans 3:20", "James 2:10", "John 19:30", "1 John 5:13"],
+        branches: [
+          { if: "Ready to go through the Law", go: "paths/way-of-the-master/3" },
+          { if: "Ready for the cross", go: "paths/way-of-the-master/6" },
+        ],
+      },
+      {
+        heading: "“Acts 2:38 says baptism is required”",
+        detour: true,
+        next: 4,
+        say: ["In Acts, people believed and then were baptized.", "Cornelius received the Spirit before he was baptized."],
+        ask: "If baptism is required, how did Cornelius receive the Spirit first?",
+        body: `- **Belief came first** ([[Acts 2:38]], [[Acts 8:36-38]]).
+- **Cornelius** received the Spirit, then was baptized (Acts 10:44-48).
+- **Paul** said Christ sent him to preach the gospel, not to baptize (1 Corinthians 1:17).
+- **“In Jesus' name”** means by His authority. Jesus Himself gave the words “Father, Son, and Holy Spirit” ([[Matthew 28:19]]).
+- **Don't fight about the formula.** Keep the focus on what saves.`,
+        verses: ["Acts 2:38", "Acts 8:36-38", "Matthew 28:19"],
+      },
+      {
+        heading: "“The Trinity is three gods”",
+        detour: true,
+        next: 3,
+        say: ["I agree there's only one God.", "The Trinity means one God in three persons, not three gods."],
+        ask: "What have you been told Christians mean by the Trinity?",
+        body: `- **Often they're rejecting tritheism,** which Christians reject too.
+- **One God** ([[Isaiah 44:6]]); **one name, three persons** ([[Matthew 28:19]]).
+- **The early church** rejected both three gods and modalism. Tertullian answered modalism around AD 213.
+- **The word isn't in the Bible; the teaching is.**`,
+        verses: ["Isaiah 44:6", "Matthew 28:19"],
+      },
+      {
+        heading: "“You have to speak in tongues”",
+        detour: true,
+        next: 4,
+        say: ["Tongues are a real gift. But Paul asks, “All do not speak with tongues, do they?”"],
+        ask: "Was the thief on the cross saved without tongues?",
+        body: `- **Not everyone has every gift** (1 Corinthians 12:30).
+- **Sealed when we believe** ([[Ephesians 1:13-14]]).
+- **Don't deny tongues.** The question is whether they're required.
+- **Assurance** rests on Christ's work, not an experience ([[1 John 5:13]]).`,
+        verses: ["Ephesians 1:13-14", "Luke 23:42-43", "1 John 5:13"],
+      },
+    ],
+  },
 ];

@@ -753,4 +753,421 @@ Jewish people have endured centuries of persecution, some of it done in Jesus' n
 
 **Bridge to the gospel:** If they trust their own goodness, take them through the Law to the cross ({{Way of the Master|paths/way-of-the-master/3}}). If they're truly saved, encourage them and invite them to share the gospel with you.`,
   },
+  {
+    id: "hindu",
+    title: "Hindus",
+    sources: ["Ray Comfort", "Living Waters", "Cliff Knechtle"],
+    summary: `Hinduism is a family of traditions, not one creed. Many Hindus gladly honor Jesus as one teacher among many. Lovingly show that He is the only way, and that grace answers what karma can't.`,
+    lead: "Hinduism is the major religion of India and Nepal, a broad family of traditions with no single founder, creed, or central authority. Most Hindus share belief in karma, rebirth, and liberation (moksha), while differing widely on God and practice.",
+    facts: [
+      {
+        label: "Also called",
+        text: "Sanatana Dharma (“the eternal order” or “eternal way”)",
+      },
+      {
+        label: "Origins",
+        text: "Ancient India; no single founder. Grew from the religion of the Vedas over many centuries.",
+      },
+      {
+        label: "Key texts",
+        text: "The Vedas (including the Upanishads), the Bhagavad Gita, the Ramayana and Mahabharata, the Puranas",
+      },
+      { label: "Followers", text: "Over one billion, most in India and Nepal" },
+      {
+        label: "God",
+        text: "Varies: one ultimate reality (Brahman), one supreme god such as Vishnu or Shiva, many gods, or a mix",
+      },
+      { label: "Jesus", text: "Often honored as a holy man, guru, or one divine incarnation among many" },
+      {
+        label: "Salvation",
+        text: "Moksha: release from the cycle of rebirth, by knowledge, devotion, or right action",
+      },
+      { label: "Afterlife", text: "Rebirth according to karma until liberation" },
+    ],
+    parts: [
+      {
+        heading: "History",
+        body: `Hinduism has no single founding moment. Its oldest scriptures, the Vedas, were composed in ancient India and passed down orally for centuries. Later texts, the Upanishads, explored the nature of ultimate reality and the self. The great epics, the Ramayana and the Mahabharata (which contains the Bhagavad Gita), and the Puranas shaped popular devotion to gods such as Vishnu, his incarnations Rama and Krishna, Shiva, and the goddess (Devi).
+
+Over time devotional movements (bhakti) spread across India, and philosophical schools developed different readings of the Upanishads. In the modern era, teachers carried Hindu ideas to the West, where yoga, meditation, and groups such as ISKCON (the Hare Krishna movement) became widely known. The word “Hindu” itself began as an outsider's term for the people beyond the Indus River.`,
+      },
+      {
+        heading: "Major branches",
+        body: `Hindus often describe their tradition by the deity they treat as supreme:
+- **Vaishnavism:** devotion to Vishnu and his incarnations (avatars), especially Krishna and Rama. ISKCON belongs to this family.
+- **Shaivism:** devotion to Shiva as the supreme god.
+- **Shaktism:** devotion to the goddess, Devi or Shakti, in forms such as Durga and Kali.
+- **Smarta tradition:** worship of several deities as forms of the one ultimate reality.
+
+Philosophical schools also differ. **Advaita Vedanta** (associated with Shankara) teaches that the true self (atman) is identical with Brahman and that the world of separate things is illusion (maya). Other Vedanta schools, associated with Ramanuja and Madhva, keep a real distinction between the soul and a personal God. Many ordinary Hindus mix family, regional, and village traditions and do not identify with one school.`,
+      },
+      {
+        heading: "Core beliefs",
+        body: `- **Brahman:** the one ultimate reality behind everything. Some understand it as impersonal; others as a personal God.
+- **Many gods:** many Hindus worship numerous deities, often seen as forms or expressions of one divine reality. Some are close to monotheism, with one supreme god.
+- **Atman:** the eternal self or soul.
+- **Karma:** every action brings results, in this life or a later one. There is no judge who pardons; the law of action and result works itself out.
+- **Samsara:** the cycle of birth, death, and rebirth. A soul may be reborn as a human, an animal, or another being.
+- **Moksha:** liberation from samsara. In nondual teaching, it is realizing the self is one with Brahman; in devotional teaching, it is eternal union with or service to a personal God.
+- **Dharma:** duty and right order, including one's duties in family and society.
+- **Three paths:** the Bhagavad Gita describes paths of action (karma yoga), knowledge (jnana yoga), and devotion (bhakti yoga). Some devotional traditions speak strongly of God's grace.
+- **Many paths:** many Hindus see other religions as different paths suited to different people, all leading to the same goal.`,
+      },
+      {
+        heading: "Practices",
+        body: `- **Puja:** worship at home shrines and temples, often before images of the gods (murti), with offerings of flowers, food, light, and incense.
+- **Festivals:** Diwali (festival of lights) and Holi are among the best known.
+- **Pilgrimage:** to holy places such as Varanasi and the Ganges River.
+- **Yoga and meditation:** in Hinduism these are spiritual disciplines, not only exercise.
+- **Ethics:** nonviolence (ahimsa), truthfulness, and duty are widely valued. Many Hindus are vegetarian, and the cow is honored.
+- **Caste:** a hereditary social system (varna and jati) long tied to ideas of karma and duty. Caste discrimination is illegal in India, and many Hindus reject it, though it still shapes society.`,
+      },
+      {
+        heading: "Key terms",
+        body: `- **Avatar:** a descent of a god, especially Vishnu, into the world in a bodily form.
+- **Guru:** a spiritual teacher.
+- **Maya:** illusion, or the changing appearance of the world.
+- **Avidya:** ignorance of one's true nature, often seen as the root problem.`,
+      },
+      {
+        heading: "Where it differs from biblical Christianity",
+        body: `- **God:** the Bible reveals one personal, holy God, the Creator, distinct from His creation ([[Genesis 1:1]], [[Isaiah 44:6]]). People are made in His image, not divine themselves ([[Genesis 1:27]]).
+- **The problem:** Scripture names the root problem as sin, a moral offense against God, not ignorance of one's true self ([[Romans 3:23]], [[Psalm 51:4]]).
+- **One life:** the Bible teaches one life, then judgment, not many lives ([[Hebrews 9:27]]). The dead will be raised ([[Daniel 12:2]]).
+- **Karma and grace:** karma gives each person what they earn. The gospel offers forgiveness as a free gift, because Christ bore the penalty for sin ([[Romans 6:23]], [[Ephesians 2:8-9]], [[1 Peter 3:18]]). Some bhakti traditions speak of divine grace, but without a substitute who pays for sin.
+- **Jesus:** not one avatar among many, but the eternal Word who became flesh once and for all ([[John 1:1]], [[John 1:14]]). He died, rose bodily, and claimed to be the only way to the Father ([[John 14:6]], [[1 Corinthians 15:3-4]]).
+- **Worship:** the Bible forbids worshiping other gods or images ([[Exodus 20:3]]).`,
+        verses: ["Genesis 1:1", "Isaiah 44:6", "Hebrews 9:27", "Romans 6:23", "Ephesians 2:8-9", "John 1:14", "John 14:6"],
+      },
+      {
+        heading: "Further reading",
+        body: `- Winfried Corduan, *Neighboring Faiths*
+- Lesson 79, Hinduism, in the {{School of Biblical Evangelism|convictions/school-of-biblical-evangelism}}`,
+      },
+    ],
+    tips: `**Approach:** Hinduism is very diverse. Ask what they believe instead of assuming. A temple-going family, a philosophy student, and a Western yoga teacher may believe very different things.
+
+**Questions to ask:**
+- “Which god or tradition does your family follow?”
+- “What do you think happens when we die?”
+- “If karma is real, what do you have coming?”
+- “Who do you think Jesus is?”
+
+**Pitfalls:**
+- **Don't let Jesus be added to the shelf.** Many Hindus will happily accept Jesus as one god among many. The issue is whether He is the only way ([[John 14:6]]).
+- **Define your terms.** Words like God, sin, salvation, and born again can mean very different things. “Born again” may sound like reincarnation.
+- **Don't mock images or gods.** Be gentle and respectful ([[1 Peter 3:15]]).
+- **Family and community matter.** Leaving the family religion can be costly. Be patient.
+- **Don't get lost in philosophy.** Stay on sin, judgment, and the cross.
+
+**Reincarnation:** “The Bible says we die once, and after that comes judgment” ([[Hebrews 9:27]]). One life raises the stakes.
+
+**Karma and grace:** “Karma says you get what you deserve. Grace says Someone else took what you deserve.” Karma is bad news for anyone with a past ([[Romans 6:23]]).
+
+**Going to the Law:** Many Hindus value truthfulness and nonviolence, so the conscience already agrees. Use the Ten Commandments: lying, stealing, lust, hatred. The problem isn't ignorance but guilt before a holy God.
+
+**Bridge to the gospel:** Jesus didn't come to show a path. He came to pay the debt karma can only collect. {{Way of the Master|paths/way-of-the-master/2}}. See also {{All religions lead to God|objections/all-religions}}.`,
+  },
+  {
+    id: "buddhist",
+    title: "Buddhists",
+    sources: ["Ray Comfort", "Living Waters", "Cliff Knechtle"],
+    summary: `Buddhists see suffering clearly and often value peace and ethics. Agree that something is deeply wrong, then show that the root is sin, not desire, and that grace offers what karma can't.`,
+    lead: "Buddhism is a religion and philosophy founded on the teaching of Siddhartha Gautama, called the Buddha (“awakened one”). Its traditions differ widely, but most teach that suffering arises from craving and ignorance and can be ended by following the Buddha's path to nirvana.",
+    facts: [
+      { label: "Founder", text: "Siddhartha Gautama, the Buddha" },
+      { label: "Founded", text: "Northern India, around the fifth century BC (exact dates are debated)" },
+      {
+        label: "Key texts",
+        text: "The Pali Canon (Theravada), Mahayana sutras such as the Lotus and Heart Sutras, Tibetan scriptures",
+      },
+      { label: "Followers", text: "Roughly 500 million, mostly in East and Southeast Asia" },
+      { label: "God", text: "No creator God. Gods may exist but are within the cycle of rebirth." },
+      { label: "Jesus", text: "Often seen as a wise or enlightened teacher" },
+      { label: "Salvation", text: "Nirvana: the end of craving, suffering, and rebirth" },
+      { label: "Afterlife", text: "Rebirth driven by karma until nirvana" },
+    ],
+    parts: [
+      {
+        heading: "History",
+        body: `According to Buddhist tradition, Siddhartha Gautama was born a prince in the region of present-day Nepal and northern India. Troubled by old age, sickness, and death, he left his privileged life to seek an answer to suffering. After years of searching, including severe self-denial, he is said to have reached enlightenment while meditating under a tree, and spent the rest of his life teaching a “middle way.”
+
+After his death, his teaching spread across Asia. Disagreements over teaching and discipline produced distinct traditions. In the twentieth century, Buddhist teachers and practices such as meditation and mindfulness became popular in the West, often in a secular form.`,
+      },
+      {
+        heading: "Major branches",
+        body: `- **Theravada** (“teaching of the elders”): mainly in Sri Lanka, Thailand, Myanmar, Cambodia, and Laos. Stresses the Pali Canon, monastic life, and personal effort toward nirvana.
+- **Mahayana** (“great vehicle”): mainly in China, Japan, Korea, and Vietnam. Honors bodhisattvas, enlightened beings who delay nirvana to help others. Includes **Zen**, which emphasizes meditation, and **Pure Land**, which relies on the vow of Amida (Amitabha) Buddha to bring the faithful to rebirth in a paradise called the Pure Land.
+- **Vajrayana or Tibetan Buddhism:** in Tibet, Mongolia, and Bhutan. Uses ritual, mantras, and teachers called lamas. The Dalai Lama is its best-known figure.
+- **Western Buddhism:** often centered on meditation and mindfulness, sometimes with little belief in rebirth or the supernatural.
+
+Folk Buddhism in much of Asia also includes prayers to Buddhas, bodhisattvas, spirits, and ancestors.`,
+      },
+      {
+        heading: "Core beliefs",
+        body: `- **Four Noble Truths:** life involves suffering or unsatisfactoriness (dukkha); suffering arises from craving (tanha); suffering can end (nirvana); the way to end it is the Noble Eightfold Path.
+- **Eightfold Path:** right view, intention, speech, action, livelihood, effort, mindfulness, and concentration.
+- **Three marks of existence:** everything is impermanent (anicca), unsatisfactory (dukkha), and without a permanent self (anatta).
+- **Karma:** intentional actions shape future experience and future births. There is no judge who pardons.
+- **Rebirth:** the cycle of samsara continues across lives. Because Buddhism denies a permanent soul, most Buddhists speak of rebirth rather than a soul moving from body to body.
+- **Nirvana:** the “blowing out” of craving, ignorance, and the cycle of rebirth. It is not usually described as union with God or as heaven.
+- **Ignorance and craving** are the root problem, not offense against a creator.
+- **God:** the Buddha did not teach a creator God. Traditional cosmology includes gods (devas), but they are also bound in samsara.`,
+      },
+      {
+        heading: "Practices",
+        body: `- **Three Refuges:** taking refuge in the Buddha, the Dharma (teaching), and the Sangha (community).
+- **Five Precepts** for lay Buddhists: not killing, not stealing, no sexual misconduct, not lying, and no intoxicants.
+- **Meditation:** mindfulness and concentration practices, central in many traditions.
+- **Devotion:** bowing, offerings, chanting, and visiting temples and shrines.
+- **Monastic life:** monks and nuns follow many more rules; in Theravada countries, laypeople support them with food and gifts as a way of earning merit.`,
+      },
+      {
+        heading: "Where it differs from biblical Christianity",
+        body: `- **God:** the Bible begins with a personal Creator ([[Genesis 1:1]], [[Acts 17:24]]). Creation points to Him ([[Romans 1:20]]).
+- **The problem:** Scripture says the root problem is sin, an offense against a holy God, coming from the heart ([[Mark 7:21]], [[Psalm 51:4]]). Desire itself is not the problem; wrong desire is.
+- **The self:** people are real, made in God's image, and will exist forever ([[Genesis 1:27]]).
+- **One life:** people die once and then face judgment, not endless rebirth ([[Hebrews 9:27]]).
+- **The solution:** not extinguishing the self by effort, but forgiveness and a new life given by God ([[Titus 3:5]], [[2 Corinthians 5:17]]).
+- **Karma and grace:** karma gives each person what they earn. Grace gives what is not earned, because Christ bore the penalty ([[Romans 6:23]], [[1 Peter 3:18]]). Pure Land Buddhism also speaks of relying on another's power, but has no atonement for sin.
+- **Jesus:** the Buddha pointed to a path; Jesus claimed to be the way ([[John 14:6]]), forgave sins ([[Mark 2:5-7]]), and rose from the dead ([[1 Corinthians 15:3-4]]).`,
+        verses: ["Genesis 1:1", "Mark 7:21", "Hebrews 9:27", "Titus 3:5", "Romans 6:23", "John 14:6"],
+      },
+      {
+        heading: "Further reading",
+        body: `- Winfried Corduan, *Neighboring Faiths*
+- Lessons 80 and 81, Buddhism, in the {{School of Biblical Evangelism|convictions/school-of-biblical-evangelism}}`,
+      },
+    ],
+    tips: `**Approach:** Buddhism varies a lot. Ask which tradition they follow. A Thai Theravada family, a Japanese Pure Land believer, and an American who meditates may believe very different things.
+
+**Questions to ask:**
+- “What drew you to Buddhism?” or “Were you raised Buddhist?”
+- “Where do you think suffering comes from?”
+- “What do you think happens after you die?”
+- “If karma is real, what do you have coming?”
+
+**Pitfalls:**
+- **Don't assume they believe in God.** Many don't. Start with creation and conscience if needed.
+- **Define your terms.** Sin, salvation, and heaven may mean little to them. Explain simply.
+- **Don't argue about meditation.** Stay on sin, judgment, and the cross.
+- **Be patient and gentle.** Family, culture, and national identity are often bound up with Buddhism.
+
+**Sin, not desire:** Agree that suffering is real and that craving causes much of it. Then go deeper: “Jesus said evil comes from the heart” ([[Mark 7:21]]). The problem isn't having desires, but wrong ones, and guilt before God.
+
+**Rebirth:** “The Bible says we die once, and after that comes judgment” ([[Hebrews 9:27]]).
+
+**Karma and grace:** “Karma says you pay. Grace says Someone paid for you.” Pure Land believers already understand relying on another's power; point them to the One who actually paid for sin.
+
+**Going to the Law:** The Five Precepts forbid killing, stealing, sexual misconduct, and lying. Ask if they've kept them, then go to the Ten Commandments.
+
+**Bridge to the gospel:** {{Way of the Master|paths/way-of-the-master/2}}. See also {{All religions lead to God|objections/all-religions}} and {{What about sincere people of other religions?|objections/sincere-religions}}.`,
+  },
+  {
+    id: "adventist",
+    title: "Seventh-Day Adventists",
+    sources: ["Ray Comfort", "Greg Koukl"],
+    summary: `Many Adventists love Jesus, believe the Trinity, and speak of grace. Start there, then focus on assurance: is Christ's finished work enough on its own?`,
+    lead: "The Seventh-day Adventist Church is a Protestant denomination that grew out of the 1840s Millerite movement in the United States. It is known for worship on Saturday, the seventh day, for its emphasis on Christ's soon return, and for its health teaching.",
+    facts: [
+      { label: "Also called", text: "Adventists, SDA" },
+      { label: "Founded", text: "Organized in 1863 in Battle Creek, Michigan, out of the Millerite movement" },
+      { label: "Founders", text: "Ellen G. White, James White, and Joseph Bates, among others" },
+      {
+        label: "Key texts",
+        text: "The Bible; the 28 Fundamental Beliefs; the writings of Ellen G. White, such as *The Great Controversy* and *Steps to Christ*",
+      },
+      { label: "Followers", text: "Over 20 million baptized members worldwide" },
+      { label: "God", text: "One God in three persons (the Trinity), in official teaching" },
+      { label: "Jesus", text: "Eternal God, made flesh; died for sins and rose bodily" },
+      {
+        label: "Afterlife",
+        text: "The dead are unconscious until the resurrection; the lost are finally destroyed, not punished forever",
+      },
+    ],
+    parts: [
+      {
+        heading: "History",
+        body: `**The Millerites:** In the 1830s and 1840s, the Baptist preacher William Miller taught from Daniel 8:14 (“2,300 evenings and mornings”) that Christ would return around 1843 to 1844. His followers settled on October 22, 1844. When Jesus did not return, the day became known as the Great Disappointment.
+
+**A new explanation:** A small group concluded the date was right but the event was wrong. Instead of coming to earth, Christ had entered the Most Holy Place of the heavenly sanctuary to begin a final phase of His work. This became the teaching of the investigative judgment.
+
+**Organization:** Joseph Bates promoted keeping the seventh-day Sabbath, and Ellen G. White (1827 to 1915) was accepted by the group as having the gift of prophecy. The General Conference of Seventh-day Adventists was organized in 1863.
+
+**Discussion with evangelicals:** In the 1950s, Adventist leaders met with evangelicals including Walter Martin, and the church published *Questions on Doctrine* (1957) to explain its beliefs. Martin concluded that the church, as its leaders described it, held to the gospel while teaching some serious errors. Other Christians, including some former Adventists, disagreed. Debate over the investigative judgment also continued inside the church, notably around the theologian Desmond Ford in 1980.`,
+      },
+      {
+        heading: "Core beliefs",
+        body: `Many Adventist beliefs are shared with other Protestants:
+- **The Trinity:** one God in three persons, Father, Son, and Holy Spirit.
+- **Jesus** is fully God and fully man, born of a virgin, crucified for sins, and bodily raised.
+- **Salvation** is described in official teaching as by grace through faith in Christ.
+- **Scripture** is affirmed as the inspired Word of God and the standard for doctrine.
+- **The second coming** is literal, visible, and near.
+
+Distinctive teachings include:
+- **The seventh-day Sabbath:** Saturday, from Friday sunset to Saturday sunset, is the Lord's day of rest and worship, and keeping it is part of obeying the Ten Commandments.
+- **Ellen G. White:** her writings are regarded as a genuine prophetic gift and an authoritative source of truth for the church, though Adventists say they are tested by and subject to the Bible.
+- **The investigative judgment:** since 1844 Christ has been reviewing the records of those who have professed faith, as the final phase of His priestly ministry in the heavenly sanctuary, before His return.
+- **Soul sleep:** humans do not have an immortal soul that lives on consciously after death. The dead sleep until the resurrection.
+- **Annihilation:** the unsaved will be raised for judgment and then destroyed, not punished consciously forever.
+- **The remnant church:** traditional teaching sees the Adventist movement as the end-time remnant of Revelation 12:17, called to proclaim the three angels' messages of Revelation 14. Traditional teaching has also linked a future enforced Sunday worship with the mark of the beast; Adventists generally say no one has received that mark yet.`,
+      },
+      {
+        heading: "Practices",
+        body: `- **Sabbath worship:** Saturday services, with Sabbath School (Bible study) and a worship service. Many avoid work, shopping, and secular entertainment on the Sabbath.
+- **Health message:** abstaining from alcohol and tobacco, avoiding meats called unclean in Leviticus 11, and often vegetarian diets. Adventists run many hospitals and Loma Linda University in California.
+- **Baptism** of believers by immersion, and foot washing before the Lord's Supper.
+- **Education and mission:** a large worldwide network of schools, hospitals, and relief work, including the Adventist Development and Relief Agency (ADRA).`,
+      },
+      {
+        heading: "Key terms",
+        body: `- **Great Disappointment:** the failure of Christ to return on October 22, 1844.
+- **Investigative judgment:** the teaching that Christ began a final review of professed believers' records in 1844.
+- **Sanctuary doctrine:** the belief that Christ's ministry in heaven follows the pattern of the Old Testament tabernacle, with a Holy Place and Most Holy Place.
+- **Spirit of Prophecy:** a common Adventist term for Ellen G. White's writings.
+- **Remnant:** God's faithful end-time people who keep His commandments.
+- **Michael:** Adventists hold that Michael the archangel is a title of Christ. Unlike Jehovah's Witnesses, they teach that Christ is eternal and uncreated.`,
+      },
+      {
+        heading: "How Christians classify Adventism",
+        body: `Christians disagree. Some see the Seventh-day Adventist Church as an evangelical denomination with unusual teachings, since it officially affirms the Trinity, the deity of Christ, and salvation by grace. Others see it as a sect or an aberrant group because of Ellen White's authority, the investigative judgment, and its view of Sunday worship. Members also vary widely: some sound like any evangelical, while others stress Ellen White and law-keeping. It is fairest to treat each person according to what they actually believe.`,
+      },
+      {
+        heading: "Where it differs from biblical Christianity",
+        body: `- **The finished work of Christ:** the New Testament says Christ entered the holy place in heaven “once for all” at His ascension, having obtained eternal redemption (Hebrews 9:12, Hebrews 6:19-20). His one offering has perfected for all time those who are sanctified ([[Hebrews 10:12]], [[Hebrews 10:14]]). Nothing in Scripture describes a new phase of atonement or review beginning in 1844.
+- **Assurance:** believers have eternal life now and do not come into judgment ([[John 5:24]], [[1 John 5:13]]). There is no condemnation for those in Christ ([[Romans 8:1]]).
+- **The Sabbath:** Paul calls the Sabbath, along with festivals and food laws, “a mere shadow of what is to come; but the substance belongs to Christ” ([[Colossians 2:16-17]]). He leaves the observance of days to each person's conscience ([[Romans 14:5]]). Hebrews 4 presents Christ as the rest the Sabbath pointed to. The other nine commandments are repeated in the New Testament as commands; the Sabbath is not. See {{The Law: What Still Applies|evidence/the-law}}.
+- **Prophecy:** Scripture is the final test of every prophet ([[1 Thessalonians 5:21]], [[Acts 17:11]]). The 1844 date grew out of a failed prediction, and Jesus said no one knows the day or hour ([[Matthew 24:36]]).
+- **The state of the dead:** Paul says to be absent from the body is to be at home with the Lord ([[2 Corinthians 5:8]]), and Jesus promised the thief, “today you shall be with Me in Paradise” ([[Luke 23:42-43]]).
+- **Hell:** Jesus set eternal punishment beside eternal life ([[Matthew 25:46]]), and Daniel speaks of everlasting contempt ([[Daniel 12:2]]).`,
+        verses: ["Hebrews 10:14", "John 5:24", "Romans 8:1", "Colossians 2:16-17", "2 Corinthians 5:8", "Matthew 25:46"],
+      },
+      {
+        heading: "Further reading",
+        body: `- *Seventh-day Adventists Believe* (the church's own explanation of its 28 Fundamental Beliefs)
+- Walter Martin, *The Kingdom of the Cults* (appendix on Adventism)
+- {{The Law: What Still Applies|evidence/the-law}}
+- {{School of Biblical Evangelism|convictions/school-of-biblical-evangelism}}, lesson 92`,
+      },
+    ],
+    tips: `**Start with common ground:** Many Adventists believe in the Trinity, the deity of Christ, and salvation by grace. Thank God for that. Don't open with Ellen White, 1844, or the Sabbath; you'll end up arguing about days instead of the gospel.
+
+**Find out where they stand:** Adventists vary a lot. Some sound like any evangelical; others lean heavily on Ellen White and law-keeping. Ask before you assume.
+
+**Questions to ask:**
+- “What do you love most about your church?”
+- “If you died today, do you know you'd be with the Lord?”
+- “Is anything you do part of what keeps you saved?”
+- “If Ellen White and the Bible seemed to disagree, which would win?”
+
+**Focus on assurance:** Many Adventists hope they'll be ready but aren't sure, especially if they were taught that their lives are being reviewed in the investigative judgment. The heart of the conversation is whether Christ's finished work is enough. Assurance rests on His work, not on ours ([[John 19:30]], [[Hebrews 10:14]], [[1 John 5:13]]). Most Adventists believe a Christian can lose salvation; a true believer is kept by God ({{Can You Lose Your Salvation?|convictions/eternal-security}}).
+
+**On the Sabbath:** Keep it short. “Paul calls the Sabbath a shadow; the substance is Christ” ([[Colossians 2:16-17]]). Christians differ on the day; the real question is whether keeping it is part of being saved. See {{The Law: What Still Applies|evidence/the-law}}.
+
+**Pitfalls:**
+- Don't call them a cult in the first sentence. Many are born-again believers.
+- Don't attack Ellen White's character. Ask how her writings are tested.
+- Don't get pulled into food laws, Daniel 8, or the mark of the beast. Come back to the cross.
+
+**Going to the Law:** Adventists honor the Ten Commandments, which is great common ground. Show that the Law is a mirror, not a ladder ([[Romans 3:20]], [[Galatians 3:24]]). Breaking one commandment makes a person guilty of all ([[James 2:10]]), so no one is saved by keeping them, the Sabbath included.
+
+**Bridge to the gospel:** “Jesus said, ‘It is finished.’ If He paid it all, nothing is left for you to settle.” ({{Way of the Master|paths/way-of-the-master/3}})`,
+  },
+  {
+    id: "oneness",
+    title: "Oneness Pentecostals",
+    sources: ["Ray Comfort", "Greg Koukl", "Wes Huff"],
+    summary: `Oneness Pentecostals love Jesus and believe He is fully God, but deny the Trinity and often add baptism in Jesus' name and tongues to salvation. Talk about who Jesus prayed to, and grace alone.`,
+    lead: "Oneness Pentecostalism is a branch of the Pentecostal movement that teaches God is a single person who reveals Himself as Father, Son, and Holy Spirit. It emerged around 1913 to 1916 and is known for baptizing only in the name of Jesus.",
+    facts: [
+      { label: "Also called", text: "Apostolic, Jesus' Name, or “Jesus Only” Pentecostals" },
+      { label: "Founded", text: "About 1913 to 1916, within early American Pentecostalism" },
+      {
+        label: "Largest bodies",
+        text: "United Pentecostal Church International (UPCI); Pentecostal Assemblies of the World (PAW)",
+      },
+      { label: "Key texts", text: "The Bible, especially Acts 2:38, Deuteronomy 6:4, and Colossians 2:9" },
+      { label: "God", text: "One person, not three; Father, Son, and Spirit are ways He reveals Himself" },
+      { label: "Jesus", text: "Fully God and fully man; “Jesus” is the name of the one God" },
+      {
+        label: "Salvation",
+        text: "Often taught as repentance, baptism in Jesus' name, and receiving the Spirit with tongues",
+      },
+    ],
+    parts: [
+      {
+        heading: "History",
+        body: `**Origins:** At a Pentecostal camp meeting at Arroyo Seco near Los Angeles in 1913, a preacher spoke on baptism in the name of Jesus, based on Acts 2:38. Some ministers, including Frank Ewart, began rebaptizing believers in Jesus' name only, and the teaching developed into a denial of the Trinity.
+
+**The split:** In 1916 the Assemblies of God adopted a statement affirming the Trinity, and Oneness ministers left. Oneness groups then formed their own bodies. The Pentecostal Assemblies of the World became a major Oneness church, and the United Pentecostal Church International was formed by a merger in 1945.
+
+**Older roots:** The view resembles modalism (also called Sabellianism), taught by Sabellius and others in the early third century and rejected by the early church. Tertullian wrote *Against Praxeas* around AD 213 against an early form of it. Oneness teachers generally see themselves as restoring the apostles' teaching rather than following Sabellius.`,
+      },
+      {
+        heading: "Core beliefs",
+        body: `- **God is one person.** Oneness believers stress that God is absolutely one (Deuteronomy 6:4). Father, Son, and Holy Spirit are not three persons but titles or manifestations of the one God.
+- **Jesus is that one God.** All the fullness of deity dwells in Jesus ([[Colossians 2:9]]). The Father is God as Spirit, the Son is God made flesh, and the Holy Spirit is God at work in believers.
+- **The Son began at the incarnation.** The Son refers to the human nature of Christ, so most Oneness teachers deny that the Son existed eternally as a distinct person.
+- **The name of Jesus:** the “name” in [[Matthew 28:19]] is understood to be Jesus, so baptism must be done “in the name of Jesus Christ” ([[Acts 2:38]]), not with the words “Father, Son, and Holy Spirit.”
+- **The new birth:** many Oneness churches, including the UPCI, teach that the full new birth includes repentance, water baptism by immersion in Jesus' name, and receiving the Holy Spirit with the evidence of speaking in tongues. Some Oneness believers hold that faith and repentance save, with baptism and tongues following.
+- **Holiness:** a holy life is expected, often expressed in outward standards.`,
+      },
+      {
+        heading: "Practices",
+        body: `- **Lively worship** with singing, raised hands, prayer at the altar, and expectation of the Spirit's gifts.
+- **Baptism by immersion** in Jesus' name. Converts baptized with the Trinitarian formula are usually rebaptized.
+- **Holiness standards** vary by church. Common ones: women with long, uncut hair, wearing dresses or skirts, and avoiding makeup and jewelry; men with short hair; modest dress; caution about some forms of entertainment.
+- **Speaking in tongues** is sought and seen as the initial sign of receiving the Holy Spirit.`,
+      },
+      {
+        heading: "Key terms",
+        body: `- **Oneness:** God is one person, not three.
+- **Modalism:** the older name for the view that Father, Son, and Spirit are modes or roles of one person.
+- **Jesus' Name baptism:** baptism using the words “in the name of Jesus Christ.”
+- **Initial evidence:** speaking in tongues as the first sign of the Spirit's baptism.
+- **Apostolic:** a term many Oneness churches use for themselves, claiming the apostles' teaching.`,
+      },
+      {
+        heading: "Where it differs from biblical Christianity",
+        body: `- **The Trinity:** historic Christianity teaches one God in three distinct, co-equal, eternal persons. It agrees with Oneness believers that there is only one God ([[Isaiah 44:6]]) and that Jesus is fully God ([[John 1:1]], [[Colossians 2:9]]). It differs on whether the Father, Son, and Spirit are distinct persons.
+- **All three at once:** at Jesus' baptism the Son is in the water, the Spirit descends, and the Father speaks from heaven about His beloved Son ([[Matthew 3:16-17]]).
+- **Relationship before creation:** Jesus prayed to the Father for the glory He had “with You before the world was” and said the Father loved Him “before the foundation of the world” ([[John 17:5]], [[John 17:24]]). The Word was with God and was God ([[John 1:1]]). This points to a distinct person of the Son before the incarnation, not only a human nature added later.
+- **The Father and the Son relate as persons:** the Son prays to, is sent by, and speaks of the Father, and the Spirit is “another Helper” (John 14:16).
+- **Salvation by grace through faith:** Scripture says salvation is a gift received by faith, not by works ([[Ephesians 2:8-9]], [[Titus 3:5]]). The thief on the cross was promised paradise without baptism ([[Luke 23:42-43]]). Cornelius and his household received the Holy Spirit before they were baptized (Acts 10:44-48). Baptism is a command for believers but not the means of salvation; see {{Baptism|convictions/baptism}}.
+- **Tongues:** Paul asks, “All do not speak with tongues, do they?” (1 Corinthians 12:30), expecting the answer no. Believers are sealed with the Spirit when they believe ([[Ephesians 1:13-14]]).
+- **Holiness:** holiness is the fruit of salvation, not a condition for it ([[Ephesians 2:10]], [[Romans 11:6]]).`,
+        verses: ["Matthew 3:16-17", "John 17:5", "John 17:24", "John 1:1", "Ephesians 2:8-9", "Luke 23:42-43"],
+      },
+      {
+        heading: "Further reading",
+        body: `- David K. Bernard, *The Oneness of God* (a leading Oneness presentation)
+- Gregory Boyd, *Oneness Pentecostals and the Trinity* (by a former Oneness Pentecostal)
+- James White, *The Forgotten Trinity*
+- {{School of Biblical Evangelism|convictions/school-of-biblical-evangelism}}, lesson 90`,
+      },
+    ],
+    tips: `**Start with common ground:** Oneness Pentecostals believe Jesus is fully God, and they're often zealous and sincere. Say so. Don't mock holiness standards or worship styles.
+
+**Questions to ask:**
+- “How did you come to faith?”
+- “At Jesus' baptism, who was the voice from heaven talking to?”
+- “Who was Jesus with before the world was made?”
+- “If someone trusted Jesus but died before being baptized, could they be saved?”
+
+**Define the Trinity first:** Many Oneness believers think the Trinity means three gods. Make clear Christians believe in one God in three persons, not three gods. They may have been arguing against something you don't believe.
+
+**On the Trinity:** Stay in a few clear passages: Jesus' baptism ([[Matthew 3:16-17]]) and Jesus' prayer in John 17 ([[John 17:5]], [[John 17:24]]). Ask questions rather than lecture (the Columbo approach). Expect the answer that the Father was speaking to the human nature; ask how a human nature could share glory with the Father before the world was.
+
+**On salvation:** Many have been taught that without baptism in Jesus' name and tongues they aren't saved. That can bring either pride or fear. Show that salvation is by grace through faith ([[Ephesians 2:8-9]]), and that the thief on the cross was saved without either ([[Luke 23:42-43]]). Baptism matters as obedience but doesn't save ({{Baptism|convictions/baptism}}). Assurance rests on Christ's work ([[1 John 5:13]]).
+
+**Pitfalls:**
+- Don't argue over the baptism formula first. Who God is and how we're saved matter more.
+- Don't deny that tongues are real; the question is whether they're required.
+- Don't get lost in Church history; one or two Bible passages work better.
+
+**Going to the Law:** Holiness standards can leave someone feeling righteous for what they avoid, or crushed for falling short. The Law shows that no one measures up inside, where God looks ([[Romans 3:20]], [[James 2:10]]).
+
+**Bridge to the gospel:** “If you had to keep every standard perfectly to be saved, would you make it? That's why Jesus paid it all.” ({{Way of the Master|paths/way-of-the-master/3}})`,
+  },
 ];

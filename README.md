@@ -16,7 +16,7 @@ No build step — it's plain HTML/CSS/JS. Open `index.html` through any static s
 | `data/claims.js` | Claims to question back: Columbo drill and the Self-Defeating Claims page |
 | `data/evidence.js` | Reasons to Believe: resurrection, the Bible, prophecy, creation, Lewis |
 | `data/openers.js` | Starting and wrapping up conversations |
-| `data/worldviews.js` | People pages, Background tab (what each group believes) |
+| `data/worldviews.js` | People pages, Background tab: reference entry (lead, facts, parts) plus `tips` shown on the Conversation tab |
 | `data/talking.js` | People pages, Conversation tab (step-by-step paths); pro-choice and morality paths link from Answers |
 | `data/convictions.js` | My Convictions: personal positions on topics |
 
