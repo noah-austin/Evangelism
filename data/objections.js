@@ -18,6 +18,8 @@
 //   inBrief:    one-sentence answer for the fact box
 //   tip:        a short "Before you answer" note for the Talk view
 //   otherViews: [{ name, text }] how other worldviews answer it
+//   talk:       conversation advice for the Talk view (same bold-heading format as deep).
+//               When present, deep is pure reference material and Study leaves out the 30-second answer.
 //
 // Text supports **bold**, *italics*, "- " lists, [[Verse Ref]] and {{Label|section/id}} links.
 
@@ -548,7 +550,7 @@ Hebrews says we die once, and **after that** comes judgment. So dying isn't the 
     lead: "The problem of suffering asks how a good and all-powerful God could allow pain and evil. It's one of the most common reasons people give for doubting God, and one of the most personal.",
     alsoAsked: ["Where was God?", "Why do bad things happen to good people?"],
     inBrief: "The world is broken by sin. God brings good out of evil, entered suffering Himself at the cross, and will end it.",
-    tip: "find out if it's personal. If they're grieving, listen first.",
+    tip: "find out if it's personal. Ask before you explain.",
     otherViews: [
       { name: "Atheism", text: "No God, so no ultimate reason for suffering, and no real evil to object to." },
       { name: "Buddhism and Hinduism", text: "Suffering comes from desire or karma; the goal is escape from the cycle." },
@@ -560,22 +562,29 @@ Hebrews says we die once, and **after that** comes judgment. So dying isn't the 
     short: `That's one of the hardest questions there is. The Bible's answer is that the world is broken because of sin, ours included. Suffering is a sign that something has gone wrong.
 
 But God hasn't stayed distant. He came and suffered Himself on the cross. And He promises a day when He will wipe away every tear. Without God, suffering just is. With Him, it has an end. And Jesus said tragedies are a reminder to be ready to meet God.`,
-    deep: `**First, find out if it's personal.** If someone is grieving, listen and show compassion before giving arguments.
+    deep: `**The question:** If God is good, He would want to stop suffering. If He is all-powerful, He could. Yet suffering exists. Philosophers call this the problem of evil. For many people it isn't abstract: it comes from grief, illness, or tragedy.
 
-**The moral argument turned around** (Lewis, Koukl): To call something truly evil, you need a real standard of good. Without God, suffering is just nature. The objection quietly assumes God exists. ({{The Moral Law|evidence/moral-law}})
+**Why there is suffering:**
+- Sin brought death into the world ([[Romans 5:12]]). Suffering is a sign that something has gone wrong.
+- God can bring good out of evil ([[Genesis 50:20]], [[Romans 8:28]]).
+- For God's people, suffering is temporary compared with the glory to come ([[Romans 8:18]]).
 
-**Why there's suffering:**
-- Sin brought death into the world ([[Romans 5:12]])
-- God can bring good out of evil ([[Genesis 50:20]], [[Romans 8:28]])
-- Suffering is temporary for God's people ([[Romans 8:18]])
+**God entered suffering:** At the cross, God Himself suffered injustice to save sinners ([[Romans 5:8]]).
 
-**God entered suffering.** At the cross, God Himself suffered injustice to save us ([[Romans 5:8]]).
+**Suffering will end:** God will wipe away every tear, and there will be no more death or pain ([[Revelation 21:4]]).
 
-**It will end** ([[Revelation 21:4]]).
+**The moral argument** (Lewis, Koukl): Calling something truly evil requires a real standard of good. Without God, suffering is simply nature. The objection assumes a moral standard that points back to God. ({{The Moral Law|evidence/moral-law}})
 
-**Jesus' answer to tragedy:** When a tower fell and killed 18 people, Jesus said it was a warning to repent ([[Luke 13:4-5]]). Comfort often goes here: life is short, are you ready?
+**Jesus on tragedy:** When a tower fell and killed 18 people, Jesus said they were no worse than anyone else, and that all must repent ([[Luke 13:4-5]]). Tragedy is a reminder that life is short.
 
-**Study:** C.S. Lewis, *The Problem of Pain*; Lee Strobel, *The Case for Faith*.`,
+**Further reading:** C.S. Lewis, *The Problem of Pain*. Lee Strobel, *The Case for Faith*.`,
+    talk: `**If they're grieving:** Don't argue. Listen, say you're sorry, and offer to pray if they're open. Arguments can wait for another day.
+
+**If they say “God should have stopped it”:** Ask, “Would you want Him to remove every rapist right now?” Then, “How about every liar?” If God judged all evil today, none of us would be left. His patience is mercy ([[2 Peter 3:9]]).
+
+**If they say “Then God is cruel”:** Ask where their standard of good comes from. Calling God cruel assumes a real moral law.
+
+**Bridge to the gospel:** Jesus said tragedies are a reminder to be ready ([[Luke 13:4-5]]). “Life is short. If you died today, would you be ready to face God?” ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["Romans 5:12", "Genesis 50:20", "Romans 8:18", "Revelation 21:4", "Luke 13:4-5"],
     related: ["evidence/moral-law", "paths/way-of-the-master"],
   },

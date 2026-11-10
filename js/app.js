@@ -578,10 +578,12 @@
       const views = (item.otherViews || []).length
         ? `<div class="views">${item.otherViews.map((v) => `<div class="view"><strong>${esc(v.name)}</strong>${inline(v.text)}</div>`).join("")}</div>`
         : "";
+      // Answers with a `talk` field keep Study as pure knowledge; the spoken 30-second answer lives in Talk
       const sections = [
-        { h: "The 30-second answer", body: item.short },
+        ...(item.talk ? [] : [{ h: "The 30-second answer", body: item.short }]),
         ...splitNotes(item.deep),
       ].filter((x) => x.body && x.body.trim());
+      const talkNotes = splitNotes(item.talk).filter((x) => x.body && x.body.trim());
       // Other views go before a closing "Study" reading list
       if (views) {
         const last = sections[sections.length - 1];
@@ -605,6 +607,7 @@
         ${item.tip ? `<p class="notice"><b>Before you answer:</b> ${inline(item.tip)}</p>` : ""}
         ${talkCard(sec, id)}
         <section class="part summary-part"><span class="label">The 30-second answer</span><div class="prose">${md(item.short)}</div></section>
+        ${talkNotes.map((x) => `<section class="part talk-note"><h3><span>${inline(x.h)}</span></h3><div class="prose">${md(x.body)}</div></section>`).join("")}
         ${verseRows ? `<h2 class="section-label">Verses to use</h2>${verseRows}` : ""}
         ${related ? `<h2 class="section-label">Where to go next</h2>${related}` : ""}
         <button class="swap" data-answer-tab="study">Read the full study notes</button>`;
@@ -622,7 +625,7 @@
           .join("")}</ol></div>
         ${sections
           .map(
-            (x, i) => `<section class="part${i === 0 ? " summary-part" : ""}" id="note-${i + 1}">
+            (x, i) => `<section class="part${i === 0 && !item.talk ? " summary-part" : ""}" id="note-${i + 1}">
               <h3><span class="step-num">${i + 1}</span><span>${inline(x.h)}</span></h3>
               ${x.html || `<div class="prose">${md(x.body)}</div>`}</section>`
           )
