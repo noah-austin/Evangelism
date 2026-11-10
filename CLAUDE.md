@@ -12,3 +12,4 @@
 - Every verse needs a short `tag` (2-5 words) shown next to its reference.
 - Visual style: warm cards (cream background, navy top bar, gold "Say" boxes, teal "Ask" boxes). The user preferred this over a minimal white design.
 - Site layout is Learn / Practice / Look up (see README "Site layout"). A People page joins a worldview note (Background) with its talking path (Conversation); map ids in `PERSON_TALK` in js/app.js when they differ.
+- Answer pages have Talk and Study views. Study (`deep`, `lead`, `inBrief`, `otherViews`) is pure reference material; conversation advice (pushback replies, tips, gospel bridge) goes in `talk`. Sections in `deep` and `talk` start with a bold heading ending in a colon. See the header of data/objections.js.
