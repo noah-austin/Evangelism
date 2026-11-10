@@ -3079,4 +3079,921 @@ Every believer is an ambassador for Christ ([[2 Corinthians 5:20]]) and called t
     verses: ["Acts 8:4", "2 Corinthians 5:20", "1 Peter 2:9", "Ephesians 4:11-12"],
     related: ["skills/why-evangelize", "objections/keep-it-to-yourself"],
   },
+  {
+    id: "god-knows-heart",
+    category: "The Gospel & Salvation",
+    title: "God knows my heart",
+    topic: "The Human Heart Before God",
+    lead: "Many people answer the Law by saying God knows their heart, meaning their intentions are good even if their actions are not. The Bible agrees that God judges the heart, but it describes the heart as the source of sin rather than proof of innocence.",
+    alsoAsked: ["I have a good heart", "It's what's inside that counts", "God knows I mean well"],
+    inBrief: "God does know the heart, and that is the problem: Scripture says the heart is deceitful, and God judges thoughts as well as deeds.",
+    tip: "agree with them. God does know the heart. Then turn it.",
+    sources: ["Ray Comfort", "Living Waters"],
+    oneLiner: "He does. That's the problem. The Bible says the heart is where sin starts.",
+    askBack: "If God knows your heart, what do you think He sees there?",
+    short: `You're right, God knows your heart. But that's actually bad news before it's good news. The Bible says the heart is deceitful, and it's where lying, lust, and hatred start.
+
+Jesus said lust in the heart is adultery and hatred is murder. So God isn't only judging what we do. He sees what we think and want. If He knows your heart, He knows everything you've hidden.`,
+    deep: `**The claim:** “God knows my heart” usually means that a person's inner intentions are good, so God will overlook outward sins. It assumes the heart is the best part of a person.
+
+**God does judge the heart:** Scripture agrees that God looks past appearances and searches the heart and mind ([[Jeremiah 17:10]]). Nothing is hidden from Him ([[Hebrews 4:13]]), and He will judge even the secret things ([[Ecclesiastes 12:14]], [[1 Corinthians 4:5]]).
+
+**What the Bible says about the heart:** The heart is “more deceitful than all else” and “desperately sick” ([[Jeremiah 17:9]]). Jesus taught that evil thoughts, sexual sin, theft, murder, and deceit come out of the heart ([[Mark 7:21]]). The heart is the source of sin, not a refuge from it.
+
+**The Law reaches the heart:** Jesus applied the commandments to inner life. Looking with lust is adultery of the heart ([[Matthew 5:27-28]]), and hatred is murder ([[1 John 3:15]]). A heart-level standard makes the Law harder to pass, not easier.
+
+**Good intentions and self-deception:** People generally judge themselves by their intentions and others by their actions. Scripture warns that sinners are often blind to their own hearts ([[Proverbs 20:6]]) and that a person can look righteous outwardly while being full of lawlessness inside ([[Matthew 23:28]]).
+
+**The remedy is a new heart:** God promises not to improve the old heart but to give a new one. Those in Christ are a new creation ([[2 Corinthians 5:17]]), and Jeremiah 31 promises a new covenant ([[Jeremiah 31:31]]) in which God writes His Law on the heart.
+
+**Further reading:** Ray Comfort and Living Waters on using the Law to reach the conscience. See also {{I'm a good person|objections/good-person}}.`,
+    talk: `**Agree first:** “You're right. God does know your heart. That's what worries me.”
+
+**When it comes up:** Usually right after the Law questions, when someone has admitted lying or stealing but wants to soften it. Don't argue. Agree, then turn it.
+
+**Questions to ask:**
+- “If God knows your heart, what do you think He sees there?”
+- “Has your heart ever wanted something you knew was wrong?”
+- “Would you want everyone to see every thought you had this week?”
+
+**How to say it:** “Jesus said lust in the heart is adultery, and hatred is murder. God isn't just looking at what we do. He sees what we want.”
+
+**If they say “But I mean well”:** “Every criminal means well in his own eyes. A judge goes by the law, not by how we feel about ourselves.” ([[Jeremiah 17:9]])
+
+**Bridge to the gospel:** Go back to judgment: “If God judged your heart by His Law, innocent or guilty?” ({{Way of the Master|paths/way-of-the-master/4}})`,
+    verses: ["Jeremiah 17:9", "Jeremiah 17:10", "Mark 7:21", "Matthew 5:27-28", "Hebrews 4:13"],
+    related: ["objections/good-person", "paths/way-of-the-master"],
+  },
+  {
+    id: "take-my-chances",
+    category: "The Gospel & Salvation",
+    title: "I'll take my chances",
+    topic: "Risk and Eternity",
+    lead: "Some people respond to the warning of judgment by saying they will take their chances. The phrase treats eternity as a gamble, while the Bible presents death and judgment as certain.",
+    alsoAsked: ["I'll find out when I die", "If I'm wrong, I'm wrong", "I'll deal with it then"],
+    inBrief: "Death and judgment are not chances but certainties, and no one gambles with what cannot be undone when a sure way of escape is offered.",
+    tip: "stay calm and caring. This is often bravado, not a settled view.",
+    otherViews: [
+      { name: "Pascal's wager", text: "Blaise Pascal argued that with eternity at stake, a reasonable person should not stake everything on God not existing." },
+      { name: "Christianity", text: "Judgment is not a possibility to weigh but an appointment; the rescue is offered now and freely." },
+    ],
+    sources: ["Ray Comfort", "Living Waters"],
+    oneLiner: "There's no chance about it. Everyone dies, and after that comes judgment.",
+    askBack: "Would you jump out of a plane without a parachute and take your chances?",
+    short: `I understand, but it isn't really a chance. Death is certain, and the Bible says after death comes judgment. You'd never jump out of a plane and just hope it works out.
+
+What you'd lose isn't a bet. It's your soul, forever. And you don't have to gamble at all. Jesus offers a sure rescue right now, for free. Why risk eternity when you could be certain?`,
+    deep: `**What the phrase assumes:** “I'll take my chances” treats life after death as uncertain and the outcome as a fair bet. It often reflects an assumption that judgment, if it comes, will turn out acceptably.
+
+**Certainty, not chance:** Scripture presents death and judgment as appointed, not possible: “it is appointed for men to die once and after this comes judgment” ([[Hebrews 9:27]]). The death rate is one per person.
+
+**The size of the stakes:** Jesus asked what it profits a person to gain the whole world and forfeit his soul ([[Mark 8:36]]), and taught that God is to be feared because He can destroy soul and body in hell ([[Matthew 10:28]]). A loss that is eternal cannot be made up later.
+
+**The uncertainty of time:** No one knows what a day will bring ([[Proverbs 27:1]]). The rich fool in Jesus' parable made plans for years he did not have ([[Luke 12:20]]).
+
+**The parachute illustration:** Ray Comfort often compares the situation to jumping from a plane. No sensible person jumps without a parachute and hopes for the best, especially when a parachute is offered free. Christ is the parachute; trusting Him means putting Him on, not merely believing He exists.
+
+**Pascal's wager:** The 17th-century mathematician Blaise Pascal argued that when the stakes are infinite, wagering against God is unreasonable. The argument shows the folly of indifference, though it does not by itself prove God exists or produce saving faith.
+
+**Distinct from delay:** “I'll take my chances” is a choice to risk judgment; “I'll think about it later” is a choice to postpone. See {{I'll think about it later|objections/think-later}}.`,
+    talk: `**When it comes up:** Usually at the “Does that concern you?” step. It's often a shrug to end the discomfort, not a real decision. Don't get frustrated.
+
+**Questions to ask:**
+- “Would you jump out of a plane without a parachute and take your chances?”
+- “What do you think your chances are, honestly?”
+- “If you're wrong, what do you lose?”
+
+**How to say it:** “It's not a chance. Death is certain, and after that comes judgment.” ([[Hebrews 9:27]])
+
+**If they say “I'll find out when I die”:** “That's the one time it's too late to change your mind.”
+
+**If they say “I'm not scared”:** “I'm not trying to scare you. I'm concerned for you. You wouldn't gamble your house, so why gamble your soul?” ([[Mark 8:36]])
+
+**Bridge to the gospel:** “You don't have to gamble. Jesus offers a sure rescue.” Go to the cross ({{Way of the Master|paths/way-of-the-master/6}}).`,
+    verses: ["Hebrews 9:27", "Mark 8:36", "Matthew 10:28", "Proverbs 27:1", "Luke 12:20"],
+    related: ["objections/think-later", "paths/way-of-the-master"],
+  },
+  {
+    id: "murderer-repents",
+    category: "The Gospel & Salvation",
+    title: "So a murderer can just repent and go to heaven? That's not fair",
+    topic: "Grace and Fairness",
+    lead: "When people hear that forgiveness is free, they often object that a murderer or a deathbed convert could be saved while a decent person is not. The objection assumes heaven is a reward for good behavior, whereas the Bible presents salvation as a pardon for the guilty.",
+    alsoAsked: ["So Hitler could be in heaven?", "Someone can live how they want and repent at the end?", "That's too easy"],
+    inBrief: "No one earns heaven; it is a pardon paid by Christ, so a forgiven murderer and a forgiven liar stand on the same grace.",
+    tip: "this is a good sign. They've understood grace is free.",
+    otherViews: [
+      { name: "Islam", text: "God may forgive any sin through sincere repentance, but deeds are still weighed at the judgment." },
+      { name: "Karma-based religions", text: "Every act brings its own result, so no one escapes the consequences of serious wrongdoing by repenting." },
+      { name: "Christianity", text: "No one earns heaven; any sinner who truly repents and trusts Christ is pardoned because Christ paid the penalty." },
+    ],
+    sources: ["Ray Comfort", "Living Waters", "Mark Spence"],
+    oneLiner: "You're right, it's not fair. It's grace. No one earns heaven, including you and me.",
+    askBack: "Do you think you'd get into heaven because you deserve it?",
+    short: `You're right, it isn't fair. If God were fair, we'd all be guilty. Heaven isn't a reward for good people. It's a pardon for guilty ones, and Jesus paid the fine.
+
+The thief on the cross had nothing to offer, and Jesus forgave him. That's the same mercy you and I need. The question isn't whether a murderer deserves it. None of us do.`,
+    deep: `**The assumption behind the objection:** The complaint assumes heaven is a reward earned by good behavior, so a decent person deserves it more than a murderer. Scripture teaches that no one earns it: all have sinned ([[Romans 3:23]]), and the wages of sin is death, while eternal life is a free gift ([[Romans 6:23]]).
+
+**Pardon, not reward:** Salvation is by grace through faith, not by works, so no one can boast ([[Ephesians 2:8-9]]). If it were earned it would be a wage, not a gift; God justifies the ungodly who believe ([[Romans 4:4-5]]). A pardon is, by definition, for the guilty.
+
+**Justice is still done:** Forgiveness does not mean sin is ignored. The penalty is paid by Christ, so God remains just while justifying the one who believes ([[Romans 3:26]]). A forgiven murderer is not let off; his sin was punished at the cross ([[2 Corinthians 5:21]]).
+
+**The thief on the cross:** One of the criminals crucified with Jesus admitted he was receiving what he deserved ([[Luke 23:41]]), asked Jesus to remember him, and was promised paradise that day ([[Luke 23:42-43]]). He had no time for good works.
+
+**Biblical examples:** Paul took part in persecuting and killing Christians and called himself the foremost of sinners, yet was shown mercy as an example ([[1 Timothy 1:15]]). David committed adultery and arranged a murder, then repented (Psalm 51). Jesus' parable of the laborers in the vineyard (Matthew 20:1-16) addresses those who resent the generosity shown to latecomers.
+
+**Repentance is real, not a trick:** The gospel offers no loophole for living in sin and repenting at the end. Repentance is a genuine turning from sin ([[Acts 20:21]]), and no one is promised time to repent later ([[Proverbs 27:1]]).
+
+**Earthly consequences remain:** God's pardon does not remove earthly justice. A converted murderer may still rightly face the courts ([[Romans 13:4]]).
+
+**Further reading:** See {{I've done too much to be forgiven|objections/too-far-gone}} and {{Equality of Sin|convictions/equality-of-sin}}.`,
+    talk: `**Why this is a good sign:** If they're offended that grace is free, they've understood it. Now help them see they need the same grace.
+
+**Agree first:** “You're right. It isn't fair. It's grace.”
+
+**Questions to ask:**
+- “Do you think you'd get into heaven because you deserve it?”
+- “If God gave everyone what's fair, where would you be?”
+- “Is a pardon ever for innocent people?”
+
+**How to say it:** “Heaven isn't a reward for good people. It's a pardon for guilty people.”
+
+**If they say “So I can live how I want and repent later?”:** “Repentance isn't a trick. And no one is promised a later.” ([[Proverbs 27:1]])
+
+**If they bring up Hitler:** “If a man like that truly repented, his sin would be paid for, not ignored. But don't miss the point: you need the same pardon.”
+
+**Use the thief:** He said he deserved to die, and Jesus forgave him that day ([[Luke 23:42-43]]).
+
+**Bridge to the gospel:** Take them back to their own guilt ({{Way of the Master|paths/way-of-the-master/3}}), then the cross ({{Way of the Master|paths/way-of-the-master/6}}).`,
+    verses: ["Romans 6:23", "Ephesians 2:8-9", "Romans 4:4-5", "Luke 23:42-43", "1 Timothy 1:15"],
+    related: ["objections/too-far-gone", "objections/same-as-murderer", "paths/way-of-the-master"],
+  },
+  {
+    id: "nobody-perfect",
+    category: "The Gospel & Salvation",
+    title: "Nobody's perfect",
+    topic: "Imperfection and Guilt",
+    lead: "People often answer the Law by saying nobody's perfect, as if admitting imperfection settles the matter. The Bible agrees that no one is perfect, but treats this as a confession of guilt before a God whose standard is perfection.",
+    alsoAsked: ["Everyone sins", "I'm only human", "We all make mistakes"],
+    inBrief: "Admitting imperfection is not a defense but a confession; God's standard is perfection, so everyone needs a Savior.",
+    tip: "agree warmly. They've just made your point for you.",
+    sources: ["Ray Comfort", "Living Waters"],
+    oneLiner: "Exactly. And God's standard is perfection. That's why we all need a Savior.",
+    askBack: "If nobody's perfect, and God requires perfection, where does that leave us?",
+    short: `You're right, nobody's perfect. But that's not an excuse. It's a confession. Imagine telling a judge, “Your honor, nobody's perfect.” He'd say, “Thank you for admitting it.”
+
+God's standard isn't “pretty good.” Jesus said to be perfect, as God is perfect. We all fall short, so we're all guilty. That's exactly why Jesus came.`,
+    deep: `**What the phrase assumes:** “Nobody's perfect” usually means that because everyone sins, sin is normal and therefore acceptable to God. It turns a universal problem into a universal excuse.
+
+**The Bible agrees no one is perfect:** All have sinned and fall short of God's glory ([[Romans 3:23]]). Anyone who claims to be without sin deceives himself ([[1 John 1:8]]).
+
+**God's standard is perfection:** Jesus said, “you are to be perfect, as your heavenly Father is perfect” ([[Matthew 5:48]]). Whoever keeps the whole Law yet stumbles in one point is guilty of all ([[James 2:10]]), and those who rely on the Law are under a curse unless they keep all of it ([[Galatians 3:10]]).
+
+**Confession, not defense:** In a courtroom, a defendant who says “nobody's perfect” has admitted the charge rather than answered it. The fact that others are also guilty does not make anyone innocent. The Law's purpose is to bring this knowledge of sin ([[Romans 3:20]]).
+
+**Common, not harmless:** Universal sin shows the depth of the human problem, not its smallness. Like a disease that affects everyone, its being common does not make it less deadly ([[Romans 5:12]]).
+
+**Where this leads:** Because no one meets the standard, salvation cannot come by effort. Christ lived the perfect life and died for sinners ([[2 Corinthians 5:21]], [[Romans 5:8]]).
+
+**Further reading:** Ray Comfort and Living Waters, the “Good Person Test.” See also {{I'm a good person|objections/good-person}} and {{Equality of Sin|convictions/equality-of-sin}}.`,
+    talk: `**Agree warmly:** “You're right. Nobody's perfect. That's actually the point.”
+
+**When it comes up:** Often during the Law questions, as a way to wave off “liar” or “thief.” Don't let it end the conversation. It's the opening you need.
+
+**Questions to ask:**
+- “If nobody's perfect, and God requires perfection, where does that leave us?”
+- “Would a judge let you go because other people commit crimes too?”
+- “So would you be innocent or guilty on Judgment Day?”
+
+**How to say it:** “Imagine telling a judge, ‘Your honor, nobody's perfect.’ He'd say, ‘Thank you for your confession.’”
+
+**If they say “God doesn't expect perfection”:** “Jesus said to be perfect as God is perfect.” ([[Matthew 5:48]])
+
+**If they say “I'm only human”:** “That's true. And that's why we need someone more than human to save us.”
+
+**Bridge to the gospel:** Move to judgment ({{Way of the Master|paths/way-of-the-master/4}}), then show that Jesus was perfect for us ({{Way of the Master|paths/way-of-the-master/6}}).`,
+    verses: ["Matthew 5:48", "Romans 3:23", "James 2:10", "1 John 1:8"],
+    related: ["objections/good-person", "paths/way-of-the-master"],
+  },
+  {
+    id: "no-hell",
+    category: "The Gospel & Salvation",
+    title: "I don't believe in hell",
+    topic: "The Reality of Hell",
+    lead: "Many people reject the existence of hell outright, apart from whether it would be fair. Christianity teaches that hell is real because Jesus taught it plainly, and that a person's disbelief does not change what is true.",
+    alsoAsked: ["Hell isn't real", "Hell was made up to scare people", "Hell is just here on earth"],
+    inBrief: "Jesus taught that hell is real; belief does not change reality, and a just God must deal with evil after death.",
+    tip: "find out why. Is it about the Bible, God, or fairness?",
+    otherViews: [
+      { name: "Atheism", text: "There is no afterlife, so there is no hell and no final judgment." },
+      { name: "Universalism", text: "God will eventually reconcile everyone, so hell is either unreal or temporary." },
+      { name: "Annihilationism", text: "Some Christians hold that the lost are finally destroyed rather than punished forever, while still affirming a real judgment." },
+      { name: "Christianity", text: "Hell is real, as Jesus taught, and Jesus came so that no one who trusts Him has to go there." },
+    ],
+    sources: ["Ray Comfort", "Living Waters", "Lee Strobel", "C.S. Lewis"],
+    oneLiner: "Not believing in it won't make it go away. Jesus spoke about hell more than anyone.",
+    askBack: "Should a good judge punish a murderer?",
+    short: `I understand. But whether we believe something doesn't change whether it's real. If a bridge is out, not believing it won't keep you from falling.
+
+Jesus talked about hell more than anyone, and He came to rescue us from it. And think about it: if God is good, He has to deal with evil. Murderers and abusers won't just get away with it. The real question is whether you'll be ready.`,
+    deep: `**The claim:** Disbelief in hell takes several forms: that there is no afterlife at all, that a loving God would never allow it, or that hell is an invention used to control people. This entry addresses whether hell is real; whether it is fair is covered in {{Hell isn't fair|objections/hell-unfair}}.
+
+**Belief does not determine reality:** A thing is true or false regardless of whether anyone believes it. The relevant question is what evidence and authority speak to the matter.
+
+**Jesus taught it:** Jesus warned about hell more than any other figure in Scripture. He taught that God can destroy soul and body in hell ([[Matthew 10:28]]), spoke of being cast into hell rather than entering life with a body intact (Mark 9:43-48), described the rich man in torment (Luke 16:19-31), and ended the parable of the sheep and goats with eternal punishment and eternal life (Matthew 25:46). Anyone who accepts Jesus as a moral teacher must reckon with His teaching on hell.
+
+**The Old and New Testaments agree:** Daniel foresaw a resurrection to everlasting life or everlasting contempt ([[Daniel 12:2]]). Revelation describes the lake of fire as the second death ([[Revelation 20:14]], [[Revelation 21:8]]). Judgment follows death for everyone ([[Hebrews 9:27]]).
+
+**The argument from justice:** Most people believe that serious evil should be punished. Many great crimes go unpunished in this life. If God is good and just, He must deal with evil after death ([[Genesis 18:25]], [[Ecclesiastes 12:14]]). A universe without final justice would mean that tyrants and abusers escape forever.
+
+**The conscience:** Even without the Bible, the conscience bears witness to right and wrong and to accountability ([[Romans 2:15]]).
+
+**Not invented to control:** Jesus used the warning of hell to call people to Himself, not to gain power; He came to give His life for others ([[Mark 10:45]]) and urged people to repent. God takes no pleasure in the death of the wicked ([[Ezekiel 33:11]]).
+
+**Lewis's view:** C.S. Lewis wrote that the doors of hell are in a sense locked from the inside: hell is finally God giving people the separation from Him that they chose (*The Great Divorce*, *The Problem of Pain*).
+
+**Further reading:** Lee Strobel, *The Case for Faith* (chapter on hell). C.S. Lewis, *The Great Divorce*.`,
+    talk: `**Find out why first:** Ask, “Why don't you believe in it?” If it's about God or the Bible, see {{I don't believe in God|paths/way-of-the-master/9}} or {{I don't believe the Bible|paths/way-of-the-master/10}}. If it's about fairness, see {{Hell isn't fair|objections/hell-unfair}}.
+
+**Questions to ask:**
+- “Should a good judge punish a murderer?”
+- “If there's no hell, does Hitler just get away with it?”
+- “If you're wrong, what's at stake?”
+
+**How to say it:** “Not believing in it won't make it go away. If a bridge is out, not believing it won't stop you falling.”
+
+**If they say “Hell was invented to control people”:** “Jesus warned about hell more than anyone, and He didn't take power. He gave His life.”
+
+**If they say “Hell is here on earth”:** “Some people suffer terribly here, but many evil people die comfortable. If that's the end, there's no justice.”
+
+**Don't argue forever:** Their conscience already knows they're accountable ([[Romans 2:15]]). Go back to the Law.
+
+**Bridge to the gospel:** “Jesus talked about hell because He came to save us from it.” ({{Way of the Master|paths/way-of-the-master/11}})`,
+    verses: ["Matthew 10:28", "Daniel 12:2", "Hebrews 9:27", "Revelation 21:8"],
+    related: ["objections/hell-unfair", "paths/way-of-the-master"],
+  },
+  {
+    id: "assurance",
+    category: "The Gospel & Salvation",
+    title: "How can I know I'm going to heaven?",
+    topic: "Assurance of Salvation",
+    lead: "Assurance of salvation is the confidence that a person truly has eternal life. It matters both to seekers and to people who once prayed a prayer but are unsure whether anything changed.",
+    alsoAsked: ["I said a prayer once. Am I saved?", "Can anyone be sure they're saved?", "I was baptized as a kid. Am I OK?"],
+    inBrief: "Assurance rests on Christ's finished work, received by repentance and faith, and is confirmed by a changed life, not by a past prayer.",
+    tip: "find out what they're trusting in. A prayer, church, or Christ?",
+    otherViews: [
+      { name: "Catholicism", text: "A person can have hope of heaven, but grace can be lost through mortal sin, so final salvation is not normally presumed." },
+      { name: "Islam", text: "No one can be certain of paradise; a person hopes in God's mercy at the judgment." },
+      { name: "Christianity (evangelical)", text: "Those who truly repent and trust Christ can know they have eternal life, because it rests on His work." },
+    ],
+    sources: ["Ray Comfort", "Living Waters", "Mark Spence"],
+    oneLiner: "You can know. Not because of a prayer, but because you've turned to and trusted Jesus.",
+    askBack: "What are you trusting in to get you to heaven?",
+    short: `The Bible says you can know you have eternal life. It doesn't rest on how good you are, or on a prayer you once said. It rests on Jesus, who paid for your sins.
+
+The question is: have you truly repented, turned from your sin, and trusted Jesus alone? If so, your life will start to change. You'll want to obey Him. That change doesn't save you, but it's evidence that you've been saved.`,
+    deep: `**Assurance is possible:** John wrote so that believers “may know” they have eternal life ([[1 John 5:13]]). Eternal life is in the Son: whoever has the Son has life ([[1 John 5:11-12]]). Whoever hears Christ's word and believes has passed from death to life ([[John 5:24]]).
+
+**The ground of assurance is Christ's work:** Salvation rests on what Jesus did, not on human merit ([[Ephesians 2:8-9]], [[Titus 3:5]]). His sacrifice was once for all and complete ([[Hebrews 10:14]]). There is no condemnation for those in Christ ([[Romans 8:1]]).
+
+**The means is repentance and faith:** Jesus called people to repent and believe ([[Mark 1:15]]); Paul preached repentance toward God and faith in Jesus ([[Acts 20:21]]). These are a turning of the whole person, not a formula of words.
+
+**A prayer is not the ground of assurance:** Scripture nowhere bases assurance on having once said a particular prayer. Jesus warned that many who call Him “Lord” will hear “I never knew you” ([[Matthew 7:21-23]]). Way of the Master stresses genuine repentance and faith rather than a quick prayer, out of concern for false conversions.
+
+**The evidence of a changed life:** Those in Christ are a new creation ([[2 Corinthians 5:17]]). Knowing Christ shows itself in keeping His commandments ([[1 John 2:3-4]]). Believers are urged to examine themselves ([[2 Corinthians 13:5]]) and to make their calling and election sure ([[2 Peter 1:10]]). The fruit does not earn salvation; it shows that salvation is real.
+
+**Kept by God:** Those who are truly Christ's are kept by Him; no one can snatch them from His hand ([[John 10:28-29]]), and He finishes what He began ([[Philippians 1:6]]). See {{Can You Lose Your Salvation?|convictions/eternal-security}}.
+
+**Imperfect but growing:** Assurance does not require sinlessness. Believers still sin and confess ([[1 John 1:8]], [[1 John 1:9]]), but they do not settle into a life of unrepentant sin.
+
+**Further reading:** See {{Nominal Christians|people/nominal}} and the {{Way of the Master|paths/way-of-the-master}} path on repentance and faith.`,
+    talk: `**Find out what they're trusting in:** Ask, “What are you trusting in to get to heaven?” Listen for “I'm a good person,” “I go to church,” “I was baptized,” or “I said a prayer.”
+
+**If they're a seeker:** Don't jump to comfort. Take them through the Law first so they understand what they need saving from ({{Way of the Master|paths/way-of-the-master/2}}).
+
+**If they say “I said a prayer once”:** “I'm glad you prayed. But the Bible never says a prayer saves. Have you truly repented and trusted Jesus? Has your life changed?”
+
+**Questions to ask:**
+- “Do you love what God loves now, and hate your sin?”
+- “Do you read your Bible and want to obey it?”
+- “If you died tonight, why should God let you into heaven?”
+
+**How to say it:** “You can know. Not because of what you did, but because of what Jesus did, and because you've turned to Him.” ([[1 John 5:13]])
+
+**Be careful:** Don't tell someone they're saved, and don't tell a struggling believer they're lost. Point them to Christ and to Scripture ([[2 Corinthians 13:5]]).
+
+**Bridge to the gospel:** If they're unsure, call them to repent and trust today ({{Way of the Master|paths/way-of-the-master/7}}). If they have, give next steps ({{Way of the Master|paths/way-of-the-master/8}}).`,
+    verses: ["1 John 5:13", "1 John 5:11-12", "2 Corinthians 13:5", "Matthew 7:21-23", "2 Corinthians 5:17"],
+    related: ["convictions/eternal-security", "people/nominal", "paths/way-of-the-master"],
+  },
+  {
+    id: "natural-evil",
+    category: "God & Suffering",
+    title: "Why do children get cancer?",
+    topic: "Natural Evil",
+    lead: "Natural evil is suffering that no human directly causes, such as disease, earthquakes, and floods. It is often seen as the hardest form of the problem of suffering, because it cannot be blamed on human choices alone.",
+    alsoAsked: ["Why does God allow earthquakes and tsunamis?", "Why do innocent babies suffer?", "If God made nature, why is it so cruel?"],
+    inBrief: "Sin broke all of creation, not just people. Disease and disaster show the world is fallen, and God promises to make it new.",
+    tip: "find out if they've lost someone. Comfort before you explain.",
+    otherViews: [
+      { name: "Atheism", text: "Disease and disaster are simply nature at work; there is no one to blame and no promise it will be put right." },
+      { name: "Hinduism and Buddhism", text: "Suffering is often linked to karma from past lives, and the goal is release from the cycle." },
+      { name: "Christianity", text: "Creation was made good, was damaged by the fall, and will be restored when Christ returns." },
+    ],
+    sources: ["C.S. Lewis", "Lee Strobel", "Ray Comfort"],
+    oneLiner: "The whole world is broken by sin, not just people. God promises to make it new.",
+    askBack: "Has this touched your life, or someone close to you?",
+    short: `That's a heartbreaking question. The Bible says God made the world good, but when sin came in, all of creation was damaged. Disease and disasters aren't how it was meant to be. They show us the world is broken.
+
+But God didn't leave it that way. Jesus healed the sick, wept at a grave, and rose from the dead. He promises a new world with no more death or pain. Without God, a child's cancer is just bad luck. With Him, it's an enemy that will be destroyed.`,
+    deep: `**The question:** Some suffering comes from human choices, such as war or abuse. Natural evil is different: childhood cancer, earthquakes, tsunamis, and famine seem to have no human cause. The question is why a good and powerful God would make a world where these happen. The broader question is covered in {{Why does God allow suffering?|objections/suffering}}.
+
+**A good creation:** Genesis 1 describes everything God made as “very good.” There was no death in the original creation; death entered through Adam's sin ([[Romans 5:12]]).
+
+**Creation under a curse:** After the fall, God cursed the ground, and work became painful toil ([[Genesis 3:17-18]]). Paul teaches that creation itself was subjected to futility and now groans, waiting to be set free from its slavery to corruption ([[Romans 8:20-22]]). Natural evil is therefore not part of God's original design; it is a symptom of a fallen world.
+
+**Not a sign of personal guilt:** Scripture does not teach that those who suffer a disaster were worse sinners. When a tower in Siloam fell and killed eighteen people, Jesus said they were no more guilty than anyone else, and called all to repent ([[Luke 13:4-5]]). In John 9 He denied that a man's blindness was punishment for his own or his parents' sin.
+
+**A world of stable laws:** C.S. Lewis argued in *The Problem of Pain* that a shared world needs fixed, dependable natural laws. The same regularity that makes life and free choice possible also means that fire burns and rock can fall. Some scientists also note that processes such as plate movement, which cause earthquakes, help recycle nutrients and support life on earth.
+
+**God is not distant from it:** Jesus healed disease, raised the dead, and wept at the tomb of Lazarus (John 11). At the cross God Himself entered suffering ([[Romans 5:8]]).
+
+**The end of natural evil:** Present sufferings are not worth comparing with the glory to come ([[Romans 8:18]]). God will wipe away every tear, and there will be no more death, mourning, or pain ([[Revelation 21:4]]).
+
+**The moral point:** Calling a child's cancer evil, rather than simply unfortunate, assumes things ought to be otherwise. Without God, disease is just nature; the outrage itself points to a standard of good ({{The Moral Law|evidence/moral-law}}).
+
+**Further reading:** C.S. Lewis, *The Problem of Pain*. Lee Strobel, *The Case for Faith*.`,
+    talk: `**If they're grieving:** Don't explain yet. Say you're sorry, ask about the person they lost, and offer to pray. Answers can wait.
+
+**How to say it:** “This isn't how God made the world. Sin broke everything, even nature.”
+
+**If they say “Then God should fix it now”:** “He will. And Jesus showed what that looks like: He healed the sick and beat death.” Point to [[Revelation 21:4]].
+
+**If they say “That's not fair to the child”:** Agree it's wrong. Then ask, “Without God, is it wrong, or just bad luck?”
+
+**If they say “Those people were being punished”:** Jesus said no ([[Luke 13:4-5]]). Disaster isn't a sign that someone was worse.
+
+**Bridge to the gospel:** Jesus used a disaster to say, “Be ready.” Ask, “If your life ended today, would you be ready to face God?” ({{Way of the Master|paths/way-of-the-master/2}})`,
+    verses: ["Romans 8:20-22", "Genesis 3:17-18", "Romans 5:12", "Luke 13:4-5", "Revelation 21:4"],
+    related: ["objections/suffering", "evidence/moral-law", "paths/way-of-the-master"],
+  },
+  {
+    id: "why-create",
+    category: "God & Suffering",
+    title: "If God knew people would go to hell, why did He create them?",
+    topic: "Foreknowledge and Creation",
+    lead: "This question asks why an all-knowing God would create people He knew would reject Him and be lost. It touches on God's foreknowledge, human freedom, and His desire for all to be saved.",
+    alsoAsked: ["Why would God make people just to send them to hell?", "If God knows the future, do we really have a choice?"],
+    inBrief: "God wants everyone saved and offers grace to all. Knowing a choice in advance is not the same as causing it.",
+    tip: "check whether it's about a loved one. Then answer gently.",
+    otherViews: [
+      { name: "Calvinism", text: "God unconditionally chooses whom He will save for His own glory, and those not chosen are justly left in their sin." },
+      { name: "Arminianism", text: "God desires all to be saved, enables all to respond, and elects those He foreknew would believe." },
+      { name: "Open theism", text: "God does not know future free choices with certainty, so He did not create anyone knowing they would be lost." },
+      { name: "Universalism", text: "God will eventually save everyone, so no one He creates is finally lost." },
+    ],
+    sources: ["Greg Koukl", "Cliff Knechtle", "C.S. Lewis"],
+    oneLiner: "God wants everyone saved. Knowing what you'll choose isn't making you choose it.",
+    askBack: "If God only made people who'd love Him, would anyone have real freedom?",
+    short: `God doesn't make anyone to be lost. The Bible says He wants everyone to be saved and takes no pleasure in anyone dying in their sin. Jesus died for the whole world.
+
+God knowing what you'll choose doesn't force your choice, any more than me knowing the sun will rise makes it rise. Real love has to be freely given, so God gives real freedom. The question isn't why God made you. It's what you'll do with His offer.`,
+    deep: `**God desires all to be saved:** Scripture says God is not willing that any should perish but that all should come to repentance ([[2 Peter 3:9]]), and that He desires all people to be saved ([[1 Timothy 2:3-4]]). He takes no pleasure in the death of the wicked ([[Ezekiel 33:11]]). Christ died for the sins of the whole world ([[1 John 2:2]], [[John 3:16]]).
+
+**Foreknowledge is not causation:** Knowing that something will happen does not make it happen. A person who watches a recorded game knows the outcome, but did not cause it. God's knowledge of a free choice follows the choice; it does not force it. In the Arminian reading, God chose those He foreknew would believe ([[1 Peter 1:1-2]], [[Romans 8:29-30]]).
+
+**People really resist God:** Jesus wept over Jerusalem: He wanted to gather its people, but they were unwilling ([[Matthew 23:37]]). Stephen told his hearers they always resisted the Holy Spirit ([[Acts 7:51]]). Those who are lost are lost because they refused, not because God wanted it.
+
+**Love requires freedom:** A relationship of love cannot be forced. C.S. Lewis argued that free will, though it makes evil possible, is also the only thing that makes love and real goodness possible. In his picture, hell is God finally giving people what they insisted on: life without Him.
+
+**The alternative:** If God refused to create anyone who would reject Him, the free choices of some would decide whether others ever existed. Every person who will be saved would also be part of a human family that includes those who refuse. God chose to create a world where the offer of grace is real for everyone.
+
+**Grace comes first:** No one comes to Christ unless the Father draws him ([[John 6:44]]), but Jesus said He would draw all people to Himself ([[John 12:32]]). God enables everyone to respond.
+
+**How Christians differ:** Calvinists hold that God's choice is the cause of faith, not a response to foreseen faith, and read “all” in passages like 1 Timothy 2:4 as “all kinds of people.” Open theists deny that God knows future free choices. See {{Election & Free Will|convictions/election-free-will}}.
+
+**Further reading:** C.S. Lewis, *The Great Divorce*. See also {{Hell isn't fair|objections/hell-unfair}}.`,
+    talk: `**How to say it:** “God didn't make anyone to be lost. He wants everyone saved.” Show them [[2 Peter 3:9]].
+
+**If they say “Knowing is the same as causing”:** “If I know my kid will eat the cookie, did I make him eat it?”
+
+**If they say “Then why not only make the good ones?”:** “Then your existence would depend on someone else's choice. And no one is good anyway. That's why we all need grace.”
+
+**If they ask about Calvinism:** Don't get pulled into a debate. Say Christians differ on how election works, but agree God's offer is real. See {{Election & Free Will|convictions/election-free-will}}.
+
+**Make it personal:** “God knows what you'll do with Jesus. Do you?”
+
+**Bridge to the gospel:** “The question isn't why God made you. It's whether you'll accept His pardon.” ({{Way of the Master|paths/way-of-the-master/2}})`,
+    verses: ["2 Peter 3:9", "1 Timothy 2:3-4", "Ezekiel 33:11", "Matthew 23:37", "1 Peter 1:1-2"],
+    related: ["convictions/election-free-will", "objections/hell-unfair", "paths/way-of-the-master"],
+  },
+  {
+    id: "adams-sin",
+    category: "God & Suffering",
+    title: "Why should I be punished for what Adam did?",
+    topic: "Original Sin",
+    lead: "Original sin is the teaching that Adam's first sin affected the whole human race, bringing death and a sinful nature to all his descendants. Many people object that it is unfair to be held responsible for another person's choice.",
+    alsoAsked: ["Why am I guilty for eating a piece of fruit I never ate?", "It's not fair to blame me for Adam"],
+    inBrief: "Everyone is judged for their own sins. Adam represented us, and Christ, the second Adam, represents all who trust Him.",
+    tip: "move quickly from Adam to their own sins.",
+    otherViews: [
+      { name: "Judaism", text: "Most Jewish teaching holds that people inherit an inclination to evil but not Adam's guilt, and each is judged for their own deeds." },
+      { name: "Islam", text: "Adam sinned and was forgiven; people are born pure and are accountable only for their own actions." },
+      { name: "Christianity", text: "Adam's sin brought death and a fallen nature to all, everyone also sins personally, and Christ undoes what Adam did." },
+    ],
+    sources: ["Ray Comfort", "Greg Koukl", "Cliff Knechtle"],
+    oneLiner: "You won't be judged for Adam's sins, but for your own. Have you sinned?",
+    askBack: "Leave Adam aside. Have you ever lied or stolen?",
+    short: `Good news: God won't judge you for Adam's sins. The Bible says each person is judged for their own. The bad news is we all have our own. Have you ever lied, stolen, or used God's name as a curse word?
+
+Adam was our representative, and we've all followed in his steps. But God sent a second representative: Jesus. Just as Adam brought death, Jesus brings life to everyone who trusts Him.`,
+    deep: `**Each person is judged for their own sins:** Scripture is clear that a son does not bear the punishment for his father's iniquity; the person who sins will die ([[Ezekiel 18:20]], [[Deuteronomy 24:16]]). At the final judgment people are judged according to their own deeds ([[Revelation 20:12]]).
+
+**What Adam's sin did:** Through one man sin entered the world, and death through sin, and so death spread to all “because all sinned” ([[Romans 5:12]]). Adam's fall brought death and a corrupted nature to the whole race. The heart is deceitful above all things ([[Jeremiah 17:9]]), and all have sinned ([[Romans 3:23]]).
+
+**Representation:** Adam acted as the head of the human race, much as a nation's leader can bind citizens by a treaty or a declaration of war. Scripture presents humanity under two heads: Adam and Christ. In Adam all die, and in Christ all will be made alive ([[1 Corinthians 15:22]]).
+
+**The second Adam:** Through one man's disobedience the many were made sinners; through one Man's obedience the many will be made righteous ([[Romans 5:18-19]]). The same principle that joins people to Adam's fall allows them to be joined to Christ's righteousness. Rejecting representation in Adam would also mean rejecting the possibility of salvation through Christ as a substitute ([[2 Corinthians 5:21]]).
+
+**Personal sin:** No adult stands before God guilty only of Adam's sin. Every person has also broken God's Law knowingly ([[James 4:17]]). The objection usually shifts attention away from personal guilt.
+
+**How Christians differ:** Many in the Reformed and Catholic traditions hold that Adam's guilt is counted to all his descendants. Others, including many Arminians and Eastern Orthodox Christians, stress that people inherit a fallen nature and death but are condemned for their own sins. Many Christians believe God deals mercifully with infants and those unable to understand.
+
+**Further reading:** C.S. Lewis, *The Problem of Pain* (chapter on the fall of man). See also {{What is sin?|objections/what-is-sin}}.`,
+    talk: `**How to say it:** “God won't judge you for Adam's sin. He'll judge you for yours.” Show them [[Ezekiel 18:20]].
+
+**Then make it personal:** Go through a few commandments. “Have you ever told a lie? Stolen anything?” ({{Using the Law|skills/using-the-law}})
+
+**If they say “But I was born with a sinful nature”:** “True, but you still chose to lie. Nobody made you.”
+
+**If they say “Representation isn't fair”:** “Then you'd have to reject Jesus representing you too. That's the only way anyone is saved.”
+
+**Bridge to the gospel:** “Adam brought death. Jesus, the second Adam, brings life to anyone who trusts Him.” ({{Way of the Master|paths/way-of-the-master/2}})`,
+    verses: ["Ezekiel 18:20", "Romans 5:12", "Romans 5:18-19", "1 Corinthians 15:22", "Romans 3:23"],
+    related: ["objections/what-is-sin", "skills/using-the-law", "paths/way-of-the-master"],
+  },
+  {
+    id: "one-god-further",
+    category: "God & Suffering",
+    title: "I just go one god further than you",
+    topic: "God and the Gods",
+    lead: "This line suggests that Christians already reject thousands of gods such as Zeus and Thor, and atheists simply reject one more. It assumes that the God of the Bible belongs in the same category as the gods of mythology.",
+    alsoAsked: ["You don't believe in Zeus or Thor either", "We're both atheists, I just believe in one fewer god", "Why your God and not all the others?"],
+    inBrief: "Zeus and Thor were beings inside the universe. The God of the Bible is its eternal Creator, a different kind of claim.",
+    tip: "ask what they mean by “god” before you answer.",
+    otherViews: [
+      { name: "Atheism", text: "All gods are human inventions, so the God of the Bible is one more to set aside." },
+      { name: "Polytheism", text: "Many gods exist, each with limited power and a role within the world." },
+      { name: "Christianity", text: "There is one eternal Creator of all things; the gods of the nations are not gods at all." },
+    ],
+    sources: ["Greg Koukl", "Cliff Knechtle", "Ray Comfort"],
+    oneLiner: "Zeus lived inside the universe. God made the universe. That's a different kind of claim.",
+    askBack: "Who made the universe Zeus lived in?",
+    short: `That line sounds clever, but it compares two different things. Zeus and Thor were born, had parents, and lived inside the world. They were like super-powered people. The God of the Bible isn't one more item in the universe. He's the eternal Creator of it all.
+
+So the question isn't how many gods you reject. It's whether the universe had a Creator. And we don't believe in Jesus just because we like Him; He rose from the dead in history.`,
+    deep: `**The claim:** The line, popularized by writers such as Richard Dawkins, argues that Christians are atheists about every other god and that atheists simply reject one more. It treats the God of the Bible as one member of a large class of gods.
+
+**A different category:** In Greek and Norse mythology, the gods were born and had parents. Zeus was the son of Cronus, and Thor the son of Odin. They lived within the world, had limited power, and were part of nature. The God of the Bible has no beginning ([[Psalm 90:2]]), created the heavens and the earth ([[Genesis 1:1]]), and made all things, visible and invisible ([[Colossians 1:16]]). He is the source of the universe, not a powerful being within it.
+
+**Paul in Athens:** Speaking in a city full of idols, Paul proclaimed the God who made the world and everything in it, who does not dwell in temples made with hands ([[Acts 17:24]]). He drew the same contrast between the Creator and the gods of the Greeks.
+
+**One God:** Scripture teaches that besides the Lord there is no God ([[Isaiah 44:6]]), and that no god was formed before Him or after Him ([[Isaiah 43:10]]). Christians do not reject Zeus because of preference, but because there is only one Creator.
+
+**The real question:** Rejecting Zeus means rejecting a being inside nature. Rejecting God means holding that the universe has no Creator, which raises the question of where it came from ({{The Universe Had a Beginning|evidence/cosmological}}, {{Fine-Tuning|evidence/fine-tuning}}). It is the difference between doubting one character in a story and denying that the story has an author.
+
+**Evidence, not numbers:** Belief in a god should rest on evidence. There is no historical evidence that Zeus or Thor acted in history. Christianity rests on a public, testable event: the resurrection of Jesus ([[1 Corinthians 15:17]], {{The Resurrection|evidence/resurrection}}).
+
+**Further reading:** Greg Koukl, *Tactics*. See also {{Who made God?|objections/who-made-god}}.`,
+    talk: `**Be precise:** Ask, “What do you mean by god?” Most people picture a big being in the sky ({{Be Precise|skills/be-precise}}).
+
+**How to say it:** “Zeus had a dad. God never began. He made everything, including Mount Olympus.”
+
+**Questions to ask:**
+- “Why don't you believe in Zeus?” (Usually: no evidence.)
+- “Fair enough. So would evidence matter to you for Jesus?”
+
+**If they say “Your God is just another myth”:** Point to the resurrection. Zeus has no empty tomb and no eyewitnesses.
+
+**Bridge to the gospel:** “If there's a Creator, He gave you a conscience. Can I ask how you'd do by His standard?” ({{Way of the Master|paths/way-of-the-master/2}})`,
+    verses: ["Acts 17:24", "Genesis 1:1", "Psalm 90:2", "Isaiah 44:6", "Colossians 1:16"],
+    related: ["skills/be-precise", "objections/who-made-god", "evidence/resurrection"],
+  },
+  {
+    id: "heavy-rock",
+    category: "God & Suffering",
+    title: "Can God make a rock so heavy He can't lift it?",
+    topic: "The Omnipotence Paradox",
+    lead: "The omnipotence paradox asks whether God can do something that would limit His own power, such as creating a rock too heavy to lift. It is meant to show that the idea of an all-powerful being contradicts itself.",
+    alsoAsked: ["If God can do anything, can He make a square circle?", "Is there anything God can't do?"],
+    inBrief: "All-powerful means able to do anything that is possible. A self-contradiction is not a thing, so it is no limit on power.",
+    tip: "keep it light and short, then move on.",
+    sources: ["C.S. Lewis", "Greg Koukl"],
+    oneLiner: "That's like asking for a square circle. Nonsense isn't a task, even for God.",
+    askBack: "Can you draw a square circle? Is that a lack of skill?",
+    short: `It's a fun puzzle, but it's a word trick. “A rock too heavy for an all-powerful God to lift” is like “a square circle.” It's not a real thing, just words that cancel out.
+
+All-powerful means God can do anything that can actually be done. There are things God can't do: He can't lie, and He can't stop being God. That's not weakness, that's perfection. The bigger question is what God's power means for you.`,
+    deep: `**The puzzle:** If God can make such a rock, there is something He cannot lift; if He cannot make it, there is something He cannot make. Either way, the argument claims, He is not all-powerful.
+
+**What omnipotence means:** Christian thinkers, such as Thomas Aquinas, have long defined omnipotence as the power to do anything that is logically possible. A self-contradictory task, like a square circle or a married bachelor, is not a real task at all. C.S. Lewis made the same point: putting the words “God can” in front of nonsense does not turn it into sense.
+
+**Nothing too hard:** Within what is possible, nothing is too difficult for God ([[Jeremiah 32:17]]). The puzzle does not describe a hard task, only a contradictory sentence.
+
+**Things God cannot do:** Scripture itself says God cannot lie ([[Titus 1:2]], [[Hebrews 6:18]]). He does not change His mind like a man ([[Numbers 23:19]]) and does not change in His nature ([[Malachi 3:6]]). These are not limits on His power but expressions of His perfect character. Being unable to fail is strength, not weakness.
+
+**Further reading:** C.S. Lewis, *The Problem of Pain* (chapter on divine omnipotence).`,
+    talk: `**Keep it short:** This is usually a game, not a real barrier. Answer in a sentence or two and move on.
+
+**How to say it:** “It's a square circle. God can do anything that's possible, not nonsense.”
+
+**If they say “So there are things God can't do”:** “Yes. He can't lie. That's good news, because His promises hold.” ([[Titus 1:2]])
+
+**Bridge to the gospel:** “Here's a better question: if God can't lie, what has He said about you?” Then go to the Law. ({{Way of the Master|paths/way-of-the-master/2}})`,
+    verses: ["Titus 1:2", "Hebrews 6:18", "Numbers 23:19", "Jeremiah 32:17"],
+    related: ["objections/who-made-god", "paths/way-of-the-master"],
+  },
+  {
+    id: "worship-ego",
+    category: "God & Suffering",
+    title: "Why does God demand worship? That sounds egotistical.",
+    topic: "Why God Is Worshiped",
+    lead: "Some people object that a God who commands worship must be vain or insecure. The question challenges God's character rather than His existence, and often comes up when the first commandment is discussed.",
+    alsoAsked: ["Why does God need our praise?", "Isn't God just insecure?", "Why would God want people bowing down to Him?"],
+    inBrief: "God isn't needy. Worship is the fitting response to the highest good, and loving Him first is what we were made for.",
+    tip: "find out what they picture when they hear “worship.”",
+    otherViews: [
+      { name: "Atheism", text: "There is no God to worship; people direct admiration toward what they value most." },
+      { name: "Islam", text: "Humans were created to worship God, who is fully self-sufficient and needs nothing from them." },
+      { name: "Christianity", text: "God needs nothing, but worship is the fitting response to Him and the source of our deepest joy." },
+    ],
+    sources: ["C.S. Lewis", "Greg Koukl", "Ray Comfort"],
+    oneLiner: "God doesn't need our praise. We need to give it to the right thing.",
+    askBack: "Is it ego to want people to love what's truly best?",
+    short: `If a person demanded worship, it would be ego, because they'd be claiming more than they deserve. But God isn't claiming too much. He really is the greatest good there is.
+
+And God isn't needy. The Bible says He doesn't need anything from us. Worship is for our good. Everyone worships something: money, pleasure, themselves. God commands us to put Him first because He's the only one worthy of it.`,
+    deep: `**The objection:** Among people, demanding praise is a sign of vanity or insecurity. If God commands worship, the argument goes, He must share those faults.
+
+**God is not needy:** God is not served by human hands as though He needed anything, since He gives life and breath to all ([[Acts 17:25]]). In Christian teaching, the Father, Son, and Holy Spirit enjoyed perfect love before creation (John 17), so God did not create in order to fill a lack.
+
+**Fitting, not vain:** Pride in a human is claiming more than is true. For God, the highest honor is simply the truth about Him. He is perfectly righteous and kind in all His ways ([[Psalm 145:17]]). Worship is the right response to that reality, just as admiring a masterpiece is the right response to great art.
+
+**Worship is for human good:** C.S. Lewis wrote in *Reflections on the Psalms* that he was once troubled by God's demand for praise, until he saw that people naturally praise whatever they enjoy, and that praise completes the enjoyment. Commanding worship is commanding people to enjoy the best thing there is. Knowing God is eternal life ([[John 17:3]]).
+
+**Everyone worships something:** People give their highest devotion to something: money, success, pleasure, or themselves. When people refuse to honor God, their thinking becomes futile and their hearts darkened ([[Romans 1:21-22]]). Psalm 115 notes that people become like what they worship.
+
+**The first commandment:** “You shall have no other gods before Me” ([[Exodus 20:3]]). Jesus called loving God with all the heart, soul, and mind the greatest commandment ([[Matthew 22:37-38]]). Failing to put God first is the first way people break His Law.
+
+**Further reading:** C.S. Lewis, *Reflections on the Psalms* (chapter “A Word about Praising”).`,
+    talk: `**How to say it:** “It's ego if you're claiming more than you deserve. God isn't.”
+
+**Questions to ask:**
+- “What's your favorite band or team? Do you ever tell people about them?”
+- “Is that ego on their part, or just you enjoying something great?”
+
+**If they say “God must be insecure”:** “He doesn't need anything from us” ([[Acts 17:25]]). Worship is for our good, not His.
+
+**If they say “I don't worship anything”:** “What do you live for? Whatever that is, that's your god.”
+
+**Bridge to the gospel:** Use the first commandment. “Have you always loved God more than anything else?” Then go through the rest of the Law. ({{Way of the Master|paths/way-of-the-master/2}})`,
+    verses: ["Acts 17:25", "Exodus 20:3", "Matthew 22:37-38", "Romans 1:21-22", "Psalm 145:17"],
+    related: ["evidence/the-law", "paths/way-of-the-master"],
+  },
+  {
+    id: "bible-circular",
+    category: "The Bible",
+    title: "You're using the Bible to prove the Bible",
+    topic: "The Bible and Circular Reasoning",
+    lead: "Circular reasoning assumes the very thing it sets out to prove. Skeptics often raise the charge once a verse is quoted, so it matters how the Bible's claims can be tested without simply assuming them.",
+    alsoAsked: ["That's circular reasoning", "You can't quote the Bible to prove the Bible", "The Bible says it's true, so it's true?"],
+    inBrief: "The Bible is a collection of ancient sources that can be tested like any other history, and outside evidence agrees with it at many points.",
+    tip: "agree that “it's true because it says so” is circular. Then show you're not doing that.",
+    sources: ["Greg Koukl", "Lee Strobel", "Wes Huff"],
+    oneLiner: "The Bible isn't one book. It's 66 documents by about 40 authors. You test it like history.",
+    askBack: "How would you test any other ancient document?",
+    short: `You're right that “the Bible is true because the Bible says so” would be circular. But that's not the argument. The Bible is 66 documents by about 40 different authors. Historians treat the Gospels and Paul's letters as sources, just like they treat Tacitus or Josephus.
+
+When we test them, they hold up: early copies, eyewitness claims, places and rulers confirmed by archaeology, and non-Christian writers who mention Jesus and His death. If the history is reliable, then we have to deal with what Jesus said, including what He said about sin.`,
+    deep: `**The charge:** Circular reasoning assumes its conclusion in its premise: “The Bible is God's Word because the Bible says it is God's Word.” Christian apologists generally agree that such an argument proves nothing on its own.
+
+**Not one book:** The Bible is a collection of 66 documents written by about 40 authors over roughly 1,500 years, in three languages. When Luke, Paul, John, and Matthew report the same events, they function as separate witnesses, not a single source repeating itself.
+
+**Treated as historical sources:** Historians of the ancient world use the Gospels and Paul's letters as sources for first-century Judea, the same way they use Tacitus or Josephus. Doing so assumes nothing about inspiration. Luke states that he investigated carefully so readers could know the exact truth ([[Luke 1:3-4]]), and Peter claims to have been an eyewitness, not a teller of clever tales ([[2 Peter 1:16]]). See {{The Gospels as Eyewitness Accounts|evidence/eyewitness-gospels}}.
+
+**Evidence outside the Bible:**
+- **Non-Christian writers:** Tacitus, Josephus, and Pliny the Younger mention Jesus or His followers, and Tacitus records His execution under Pontius Pilate.
+- **Archaeology:** The Pilate Stone, the Tel Dan inscription naming the “house of David,” and sites such as the pool of Bethesda confirm people and places the Bible names.
+- **Manuscripts:** Thousands of early copies allow the original text to be reconstructed with confidence. See {{Has the Bible Been Changed?|evidence/bible-reliability}}.
+
+**The shape of the argument:** A common non-circular case runs in steps:
+- The New Testament documents are generally reliable historical sources.
+- They report that Jesus claimed divine authority and rose from the dead, a claim made publicly before many living witnesses ([[1 Corinthians 15:6]], [[Acts 1:3]]).
+- If Jesus rose, His claims are vindicated.
+- Jesus treated the Old Testament as the Word of God that cannot be broken ([[John 10:35]], [[Luke 24:44]]).
+
+Inspiration is the conclusion of this case, not its starting assumption.
+
+**Testing is biblical:** Scripture itself commends examining claims rather than accepting them blindly ([[Acts 17:11]], [[1 Thessalonians 5:21]]).
+
+**Another approach:** Presuppositional apologists argue that every worldview rests on an ultimate authority that cannot be proven by something higher, so all final standards involve some circularity. On this view, the question is which ultimate standard can account for logic, morality, and knowledge.
+
+**Further reading:** Lee Strobel, *The Case for Christ*. Greg Koukl, *Tactics*. Wes Huff's talks on the manuscripts and historical evidence for Jesus. See also {{Jesus never existed|objections/jesus-existed}}.`,
+    talk: `**How to say it:** Agree first. “You're right, ‘it's true because it says so’ would be circular.” Then: “I'm not saying that. I'm treating it like any other ancient source.”
+
+**Questions to ask:**
+- “How do historians test any ancient document?”
+- “Is Luke's Gospel the same source as Paul's letters?”
+- “If a non-Christian historian says Jesus was crucified, is that circular too?”
+
+**If they say “But it's all one book”:** “It's 66 documents by about 40 authors, bound together later. Like a library on one shelf.”
+
+**If they say “Show me evidence outside the Bible”:** “Tacitus and Josephus mention Jesus. Archaeology has found Pilate's name in stone.” See {{Has the Bible Been Changed?|evidence/bible-reliability}}.
+
+**If they say “Everyone believes their book”:** “Fair. So let's test this one. Most holy books can't be checked like this.” See {{Why trust the Bible over the Quran or the Book of Mormon?|objections/bible-vs-other-books}}.
+
+**Bridge to the gospel:** There is a witness that doesn't need a book at all. The conscience already knows lying and stealing are wrong ([[Romans 2:15]]). “Forget the Bible for a second. Have you ever lied?” ({{Way of the Master|paths/way-of-the-master/2}})`,
+    verses: ["Luke 1:3-4", "2 Peter 1:16", "1 Corinthians 15:6", "Acts 17:11", "Romans 2:15"],
+    related: ["evidence/bible-reliability", "evidence/eyewitness-gospels", "objections/jesus-existed"],
+  },
+  {
+    id: "bible-myths",
+    category: "The Bible",
+    title: "The Bible is just myths and fairy tales",
+    topic: "Miracle Accounts and Biblical Genre",
+    lead: "Critics often dismiss the Bible's miracle accounts, such as the serpent in Eden, Noah's ark, and Jonah and the great fish, as myths. The question is whether the biblical writers meant these as history and whether such events are possible.",
+    alsoAsked: ["A talking snake? Really?", "Noah's ark and Jonah in a whale are fairy tales", "Adam and Eve are just a story"],
+    inBrief: "The Bible presents these events as history, Jesus treated them as real, and if God exists, miracles are not impossible.",
+    tip: "don't defend every story at once. Find out what they actually doubt.",
+    otherViews: [
+      { name: "Naturalism", text: "Nature is all there is, so miracle stories must be legend, myth, or mistake." },
+      { name: "Liberal theology", text: "Early chapters of Genesis and Jonah are meaningful stories that teach truth without being historical." },
+      { name: "Christianity", text: "The accounts are real history recorded as such, and the God who made the world can act in it." },
+    ],
+    sources: ["C.S. Lewis", "Ray Comfort", "Greg Koukl"],
+    oneLiner: "They sound strange if there's no God. If God made the universe, they're not hard for Him.",
+    askBack: "Do you think God exists? If He does, could He do a miracle?",
+    short: `I get it. A talking snake and a man in a fish sound like fairy tales. But fairy tales start with “once upon a time.” The Bible gives names, places, rulers, and family trees. It's written as history, and Jesus Himself treated Noah, Jonah, and Adam and Eve as real people.
+
+The real question is whether God exists. If He made the whole universe from nothing, a flood or a great fish is easy for Him. So the issue isn't the snake. It's God. And if He's real, we'll all stand before Him one day.`,
+    deep: `**The objection:** Accounts such as the serpent in Eden (Genesis 3), the worldwide flood (Genesis 6 to 9), and Jonah swallowed by a great fish (Jonah 1 to 2) are compared with fables and children's stories. The objection is usually ridicule rather than argument: the events sound unlikely, so they are assumed to be false.
+
+**Genre and intent:** Myths and fairy tales are typically set in no particular time or place. Genesis and Jonah are written as historical narrative, with genealogies, named places (the Tigris and Euphrates, Nineveh), and ties to later recorded history. The Gospels name rulers and places that can be checked. Peter insists the apostles did not follow cleverly devised tales but were eyewitnesses ([[2 Peter 1:16]]). C.S. Lewis, a scholar of myth and legend, argued that the Gospels do not read like legend.
+
+**Jesus treated them as history:**
+- **Adam and Eve:** God made them male and female from the beginning of creation ([[Mark 10:6]], [[Matthew 19:4-6]]).
+- **Noah:** Jesus compared His return to the days of Noah, when the flood came and took them all away ([[Matthew 24:37-39]]).
+- **Jonah:** Jesus compared His three days in the tomb to Jonah's three days in the fish ([[Matthew 12:40]]), and said the men of Nineveh repented at Jonah's preaching (Matthew 12:41).
+
+**The serpent:** The text presents more than a talking animal. Later Scripture identifies the serpent with Satan (Revelation 12:9), a spiritual being speaking through a creature.
+
+**The flood:** Scripture describes a real, worldwide judgment, and the ark's dimensions ([[Genesis 6:15]]) fit a seaworthy vessel. See {{Noah's Flood|convictions/flood}}.
+
+**If God exists, miracles are possible:** A miracle is God acting in the world He made. Ruling miracles out in advance assumes there is no God, which is the question at issue. Compared with creating the universe ([[Genesis 1:1]]), a flood or a great fish is a small thing. See {{Miracles are impossible|objections/miracles}}.
+
+**Strange is not the same as false:** Many true things sound strange at first. The test of a historical claim is the evidence and the reliability of the sources, not whether it fits everyday experience.
+
+**Further reading:** C.S. Lewis, *Miracles*. Lee Strobel, *The Case for Miracles*.`,
+    talk: `**How to say it:** Take the ridicule in stride. “Yeah, it sounds wild. Fair enough.” Then: “Fairy tales say ‘once upon a time.’ The Bible gives names and places.”
+
+**Questions to ask:**
+- “Which one bothers you most?”
+- “Do you think God exists?”
+- “If God made the universe, is a flood hard for Him?”
+
+**If they say “A talking snake, though?”:** “The Bible says it was Satan using a snake. That's not a cartoon.”
+
+**If they say “Jonah couldn't survive in a fish”:** “Not without a miracle. That's the point. Jesus said it really happened.”
+
+**If they say “Noah's ark couldn't fit the animals”:** Keep it short and point to {{Noah's Flood|convictions/flood}}. Don't get stuck on details.
+
+**If they say “Miracles don't happen”:** “That assumes there's no God. That's what we're asking.” ({{Miracles are impossible|objections/miracles}})
+
+**Bridge to the gospel:** Jesus used Noah as a warning: judgment came suddenly ([[Matthew 24:37-39]]). “If God judged the world once, would you be ready if He judged you today?” ({{Way of the Master|paths/way-of-the-master/2}})`,
+    verses: ["2 Peter 1:16", "Matthew 24:37-39", "Matthew 12:40", "Mark 10:6", "Genesis 1:1"],
+    related: ["convictions/flood", "objections/miracles", "evidence/eyewitness-gospels"],
+  },
+  {
+    id: "archaeology",
+    category: "The Bible",
+    title: "Archaeology proves the Bible wrong",
+    topic: "Archaeology and the Bible",
+    lead: "Biblical archaeology studies the physical remains of the lands and peoples the Bible describes. Its findings are often cited both for and against the Bible's historical reliability.",
+    alsoAsked: ["The Exodus never happened", "There's no evidence for David", "Archaeologists say the Bible is made up"],
+    inBrief: "Archaeology has confirmed many people and places the Bible names; it has never refuted a core biblical claim, though some questions remain debated.",
+    tip: "ask which find they mean. Usually it's a documentary, not a dig.",
+    otherViews: [
+      { name: "Minimalist scholars", text: "Much of the Old Testament history was written late and has little historical basis, especially before the monarchy." },
+      { name: "Maximalist scholars", text: "The biblical texts preserve real memories of early Israel, and the evidence fits them better than critics allow." },
+      { name: "Christianity", text: "The Bible is true history; archaeology often confirms it, and gaps in the evidence are not disproof." },
+    ],
+    sources: ["Lee Strobel", "Wes Huff"],
+    oneLiner: "Archaeology keeps confirming people and places in the Bible. Which find do you mean?",
+    askBack: "Which discovery do you have in mind?",
+    short: `Archaeology has actually confirmed a lot in the Bible. A stone with Pontius Pilate's name was found in 1961. An inscription mentioning the “house of David” turned up in the 1990s, after critics had said David was a legend. And the Dead Sea Scrolls showed the Old Testament had been copied faithfully.
+
+There are things we haven't found yet, like direct Egyptian records of the Exodus. But not finding something isn't proof it didn't happen. Most ancient sites have never been dug. The Bible keeps getting checked, and it keeps holding up.`,
+    deep: `**What archaeology can and cannot do:** Archaeology can confirm people, places, customs, and events in a historical setting. It cannot directly prove or disprove a miracle or a spiritual claim. Its evidence is also partial: only a fraction of ancient sites have been excavated, and much ancient material has not survived.
+
+**Confirmations (examples):**
+- **The Pilate Stone** (found at Caesarea, 1961) names Pontius Pilate as prefect of Judea.
+- **The Tel Dan inscription** (found in the 1990s, ninth century BC) refers to the “house of David,” the earliest known mention of David outside the Bible, at a time when some scholars treated him as legendary.
+- **The Merneptah Stele** (about 1200 BC) names Israel as a people in Canaan.
+- **Assyrian records** of Sennacherib describe his campaign against Judah and King Hezekiah in Jerusalem, matching the setting of 2 Kings 18 and 19.
+- **Belshazzar** (Daniel 5) was once unknown outside the Bible; Babylonian texts later showed he was the son of King Nabonidus and ruled in Babylon.
+- **The pools of Bethesda and Siloam** in Jerusalem, described in John's Gospel, have been excavated.
+- **Luke's details:** Luke uses local titles and place names accurately in Acts, such as the “politarchs” of Thessalonica (Acts 17:6), a title confirmed by inscriptions. Luke presents himself as a careful investigator ([[Luke 1:3-4]]).
+
+**The Dead Sea Scrolls:** Found from 1947, they include a copy of Isaiah about 1,000 years older than the copies known before, and it matches closely. See {{Has the Bible Been Changed?|evidence/bible-reliability}}.
+
+**Absence of evidence:** Not finding evidence is different from finding evidence against. Several biblical names once doubted (David, Belshazzar, the Hittite people) were later confirmed.
+
+**The Exodus debate:** No Egyptian record directly describing the Exodus has been found, and scholars disagree about its date and about how to read the evidence. Some conclude it did not happen as described. Others, such as Egyptologists James Hoffmeier and Kenneth Kitchen, argue that the Egyptian details in the account fit the period and that a group moving through the desert would leave little lasting trace. Ancient Egyptian records also tended not to record national defeats. The question remains debated; archaeology has not settled it either way.
+
+**Examining claims:** Scripture encourages testing claims ([[1 Thessalonians 5:21]]), and the first account in a dispute can seem right until it is examined ([[Proverbs 18:17]]).
+
+**Further reading:** Lee Strobel, *The Case for Christ* (interview with archaeologist John McRay). Kenneth Kitchen, *On the Reliability of the Old Testament*. James Hoffmeier, *Israel in Egypt*.`,
+    talk: `**Questions to ask:**
+- “Which find do you mean?”
+- “Where did you hear that?”
+- “Is that evidence against it, or just evidence we haven't found?”
+
+Most people heard it in a documentary or online and can't name a specific dig ({{Columbo|skills/columbo}}).
+
+**How to say it:** Keep it modest. “Archaeology doesn't prove everything. But it keeps confirming names and places.”
+
+**If they say “There's no evidence for David”:** “There is. The Tel Dan inscription mentions the ‘house of David.’”
+
+**If they say “The Exodus never happened”:** Don't overstate. “Scholars debate it. Not finding Egyptian records isn't proof it didn't happen. Egypt didn't usually record its defeats.”
+
+**If they say “Archaeology can't prove miracles”:** “True. But it shows the writers knew real places and real people.”
+
+**Bridge to the gospel:** The Bible's history checks out. Its words about us do too. “The same Book says all have sinned. Do you think that's true of you?” ({{Way of the Master|paths/way-of-the-master/2}})`,
+    verses: ["Luke 1:3-4", "1 Thessalonians 5:21", "Proverbs 18:17", "Isaiah 40:8"],
+    related: ["evidence/bible-reliability", "objections/bible-changed", "evidence/eyewitness-gospels"],
+  },
+  {
+    id: "bible-sexist",
+    category: "The Bible",
+    title: "The Bible is sexist",
+    topic: "Women in the Bible",
+    lead: "Critics charge that the Bible treats women as inferior or as property. The question concerns what Scripture teaches about women's worth and how Jesus treated women.",
+    alsoAsked: ["The Bible treats women as property", "Christianity oppresses women", "Why can't women be pastors?"],
+    inBrief: "Women are made in God's image with equal worth, Jesus honored them, and they were the first witnesses of the resurrection.",
+    tip: "ask which passage they mean. Then read it in context together.",
+    otherViews: [
+      { name: "Secular critics", text: "Biblical texts reflect ancient patriarchy and should be judged by modern standards of equality." },
+      { name: "Egalitarian Christians", text: "Men and women are equal in worth, and every role in church and home is open to both." },
+      { name: "Complementarian Christians", text: "Men and women are equal in worth, with some different roles in church and home." },
+    ],
+    sources: ["Greg Koukl", "Ray Comfort"],
+    oneLiner: "The Bible says women are made in God's image. Jesus chose women as first witnesses.",
+    askBack: "Which passage are you thinking of?",
+    short: `The Bible starts by saying God made both male and female in His image. Same worth, same dignity. And Jesus treated women in ways that surprised people in His day. He taught them, spoke with them in public, and had women among His followers.
+
+When He rose from the dead, the first witnesses were women, in a culture where their word often counted for less. If someone were making it up, they wouldn't write it that way. The Bible says men and women are equal before God, and equally guilty before Him too.`,
+    deep: `**Equal in creation:** Both male and female are created in the image of God ([[Genesis 1:27]]). Women and men share the same dignity and worth from the first chapter of the Bible.
+
+**Equal in salvation:** In Christ there is neither male nor female; all are one in Him ([[Galatians 3:28]]). Peter calls husbands and wives fellow heirs of the grace of life (1 Peter 3:7).
+
+**How Jesus treated women:**
+- He spoke publicly with a Samaritan woman, crossing barriers of both sex and ethnicity ([[John 4:7]]).
+- He taught Mary of Bethany as she sat at His feet, the posture of a disciple (Luke 10:39).
+- Women traveled with Him and supported His ministry (Luke 8:1-3).
+- Women stayed at the cross when most of the male disciples had fled.
+
+**First witnesses of the resurrection:** Women, including Mary Magdalene, were the first to find the empty tomb and see the risen Jesus. In that culture a woman's testimony was often given less weight, so historians note that writers inventing a story would be unlikely to make women the first witnesses.
+
+**Husbands and wives:** The New Testament commands husbands to love their wives as Christ loved the church and gave Himself for it ([[Ephesians 5:25]]), a standard of sacrificial love.
+
+**Old Testament laws:** Some laws regulated customs of the ancient world rather than endorsing them, much as with slavery (see {{The God of the Old Testament is cruel|objections/ot-cruel}}). Many laws protected women, such as the death penalty for rape, which treated the woman as an innocent victim ([[Deuteronomy 22:25-26]]). Many stories, such as polygamy, are recorded rather than approved, while God's design from the beginning is one man and one woman ([[Matthew 19:4-6]]).
+
+**Women in the early church:** Priscilla helped explain the gospel to Apollos ([[Acts 18:26]]), Phoebe served the church at Cenchrea ([[Romans 16:1]]), and daughters as well as sons would prophesy ([[Acts 2:17-18]]).
+
+**Roles in the church:** Many Christians hold that the office of pastor or elder is given to qualified men ([[1 Timothy 2:12]]), while affirming equal worth; others believe all roles are open to women. Difference of role is not a difference of value. See {{Women in Ministry|convictions/women-in-ministry}}.
+
+**Further reading:** Rebecca McLaughlin, *Confronting Christianity*, chapter on women.`,
+    talk: `**Questions to ask:**
+- “Which passage are you thinking of?”
+- “What do you mean by sexist?”
+- “Where do you get the idea that women have equal worth?”
+
+Often they mean one verse they've heard quoted. Read it in context together ({{Columbo|skills/columbo}}).
+
+**How to say it:** Start with Genesis 1:27. “Page one says women are made in God's image.” Then: “Jesus' first resurrection witnesses were women.”
+
+**If they say “Women can't be pastors”:** “That's about role, not worth. Men and women are equal before God.” See {{Women in Ministry|convictions/women-in-ministry}}.
+
+**If they say “The Old Testament treats women as property”:** “Some laws limited ancient customs. Others protected women, like the death penalty for rape.”
+
+**If they say “Wives have to submit”:** “Husbands are told to love their wives like Christ, who died for the church.”
+
+**Bridge to the gospel:** Equal in worth also means equal before God's Law. “God made us all in His image, and we'll all stand before Him. Have you kept His commandments?” ({{Way of the Master|paths/way-of-the-master/2}})`,
+    verses: ["Genesis 1:27", "Galatians 3:28", "John 4:7", "Ephesians 5:25", "Acts 2:17-18"],
+    related: ["convictions/women-in-ministry", "objections/ot-cruel", "paths/way-of-the-master"],
+  },
+  {
+    id: "bible-outdated",
+    category: "The Bible",
+    title: "The Bible is outdated",
+    topic: "The Relevance of Scripture",
+    lead: "A common objection holds that the Bible was written for ancient people and has nothing to say to the modern world. The question is whether its central teachings depend on time and culture.",
+    alsoAsked: ["It was written thousands of years ago", "It's a Bronze Age book", "That was for people back then"],
+    inBrief: "God's character and human nature have not changed, so the Bible's diagnosis of sin and its offer of grace still apply.",
+    tip: "ask what part feels outdated. Lying and greed never go out of date.",
+    otherViews: [
+      { name: "Secular progressivism", text: "Moral understanding improves over time, so ancient texts should give way to modern values." },
+      { name: "Islam", text: "Earlier Scriptures were real revelations but have been superseded by the Quran as God's final word." },
+      { name: "Christianity", text: "God and human nature do not change, so His Word speaks to every generation." },
+    ],
+    sources: ["Ray Comfort", "Mark Spence", "Living Waters"],
+    oneLiner: "Technology changes. People don't. Lying and greed aren't outdated.",
+    askBack: "Is lying wrong today, or was that just for back then?",
+    short: `Old doesn't mean wrong. Our phones change every year, but people haven't changed at all. We still lie, steal, lust, and get angry, the same as people did thousands of years ago.
+
+The Bible's main message is about two things that never change: who God is and who we are. Let's test it. “You shall not lie” is from the Ten Commandments. Is that outdated? Have you ever told a lie?`,
+    deep: `**Old is not the same as false:** The age of an idea says nothing about whether it is true. Mathematics and logic are ancient; so are the moral rules against murder and theft. Dismissing a claim because of its date is sometimes called “chronological snobbery,” a term associated with C.S. Lewis and Owen Barfield.
+
+**God does not change:** “I, the LORD, do not change” ([[Malachi 3:6]]). His Word stands forever ([[Isaiah 40:8]]), and Jesus said His words would not pass away ([[Matthew 24:35]]). Scripture describes itself as living and active, able to judge the thoughts of the heart ([[Hebrews 4:12]]).
+
+**Human nature does not change:** Technology and customs change, but the human heart does not. The heart is described as deceitful ([[Jeremiah 17:9]]), and there is nothing new under the sun ([[Ecclesiastes 1:9]]). Lying, greed, lust, and pride look the same in every age.
+
+**The moral law still applies:** The moral law is written on the conscience ([[Romans 2:15]]). Through the Law comes the knowledge of sin ([[Romans 3:20]]). Commands such as “You shall not lie” ([[Exodus 20:16]]) and “You shall not steal” ([[Exodus 20:15]]) are not tied to one culture.
+
+**Fulfilled, not expired:** Some Old Testament laws (sacrifices, food laws, and other ceremonial laws) pointed to Christ and were fulfilled in Him, so Christians no longer keep them. That is fulfillment, not the Bible becoming outdated. See {{Christians pick and choose|objections/pick-and-choose}} and {{The Law|evidence/the-law}}.
+
+**Further reading:** C.S. Lewis, *Surprised by Joy* (on chronological snobbery). Ray Comfort and Living Waters on using the Law.`,
+    talk: `**Questions to ask:**
+- “Which part feels outdated to you?”
+- “Is lying wrong today?”
+- “Has human nature changed in 3,000 years?”
+
+**How to say it:** “Phones change. People don't.” Then go straight to the commandments: they show the Bible is current because they describe the listener.
+
+**If they say “What about shellfish and mixed fabrics?”:** “Those laws pointed to Jesus and were fulfilled. The moral law still stands.” ({{Christians pick and choose|objections/pick-and-choose}})
+
+**If they say “We've moved past that morally”:** “Moved past it compared to what? You'd need a standard that doesn't change.”
+
+**If they say “It's a Bronze Age book”:** “So are the laws against murder. Old doesn't mean wrong.”
+
+**Bridge to the gospel:** Let the Law show it's not outdated. “Have you ever lied? Stolen? Used God's name as a curse word?” The conscience agrees every time ([[Romans 2:15]]). ({{Way of the Master|paths/way-of-the-master/2}})`,
+    verses: ["Malachi 3:6", "Isaiah 40:8", "Hebrews 4:12", "Romans 2:15", "Exodus 20:16"],
+    related: ["evidence/the-law", "objections/pick-and-choose", "paths/way-of-the-master"],
+  },
+  {
+    id: "bible-vs-other-books",
+    category: "The Bible",
+    title: "Why trust the Bible over the Quran or the Book of Mormon?",
+    topic: "The Bible and Other Scriptures",
+    lead: "Many religions have sacred books that claim divine authority. The question is whether there are good reasons to trust the Bible's claims over those of other scriptures such as the Quran and the Book of Mormon.",
+    alsoAsked: ["Every religion has a holy book", "Why is your book better than theirs?", "How do you know the Bible is the right one?"],
+    inBrief: "The Bible's central claim, the resurrection, was made publicly before many eyewitnesses, and its history, prophecy, and manuscripts can be tested.",
+    tip: "be respectful of the other books. Compare evidence, not insults.",
+    otherViews: [
+      { name: "Islam", text: "The Quran was revealed to Muhammad through the angel Gabriel and is God's final, perfectly preserved word, confirmed by its unmatched beauty." },
+      { name: "Latter-day Saints", text: "The Book of Mormon is another testament of Jesus Christ, translated by Joseph Smith, and confirmed by the witness of the Holy Spirit in prayer." },
+      { name: "Skeptics", text: "All holy books are human products, and none has better claim to divine authority than the others." },
+      { name: "Christianity", text: "God revealed Himself publicly in history, through many witnesses, culminating in the risen Jesus." },
+    ],
+    sources: ["Cliff Knechtle", "Lee Strobel", "Wes Huff"],
+    oneLiner: "The Bible can be tested: public events, many eyewitnesses, early copies.",
+    askBack: "How would you test whether a book is from God?",
+    short: `Good question. Most holy books rest on one man's private experience. Muhammad said an angel spoke to him alone. Joseph Smith said an angel showed him golden plates. You can't check that.
+
+The Bible is different. It's many authors over many centuries, and its central claim happened in public: Jesus was crucified and rose again in Jerusalem, and hundreds of people saw Him alive. The authorities could have shown His body. They didn't. That's something you can investigate.`,
+    deep: `**The question:** Many sacred texts claim divine authority. Comparing them involves asking what each claims and whether those claims can be tested.
+
+**The Quran:** Muslims believe the Quran was revealed to Muhammad through the angel Gabriel over about 23 years (AD 610 to 632) and compiled into a standard text in the decades after his death. Muslims often point to its literary excellence as a sign of its divine origin. It was given about six centuries after Jesus, and it denies that Jesus was crucified (Surah 4:157), while first-century sources, including non-Christian ones such as Tacitus and Josephus, report His crucifixion. The Quran also affirms the earlier Scriptures (Surah 5:47). See {{Muslim|people/muslim}}.
+
+**The Book of Mormon:** Latter-day Saints believe Joseph Smith translated it from golden plates shown to him by the angel Moroni, publishing it in 1830. Two groups of witnesses (the Three and the Eight) signed statements that they saw the plates; the plates themselves are said to have been returned to the angel. The book describes nations, cities, and wars in the ancient Americas, but no Book of Mormon city or people has been identified by mainstream archaeology. Latter-day Saints are invited to confirm it by prayer (Moroni 10:4). See {{Mormon|people/mormon}}.
+
+**What sets the Bible apart:**
+- **Many authors:** About 40 writers over roughly 1,500 years, rather than one person's revelation.
+- **Public events:** The resurrection was proclaimed in Jerusalem, where it could be checked, and Paul named more than 500 witnesses, most still alive ([[1 Corinthians 15:6]]). Paul told a Roman governor that these things were not done in a corner ([[Acts 26:26]]).
+- **Falsifiable:** Christianity stakes everything on one checkable event: if Christ has not been raised, faith is worthless ([[1 Corinthians 15:17]]). See {{Minimal Facts|evidence/resurrection}}.
+- **Eyewitness testimony:** The apostles claimed to be eyewitnesses, not tellers of clever tales ([[2 Peter 1:16]]). See {{The Gospels as Eyewitness Accounts|evidence/eyewitness-gospels}}.
+- **Prophecy:** God declares the end from the beginning ([[Isaiah 46:9-10]]). See {{Prophecy|evidence/prophecy}}.
+- **Manuscripts and archaeology:** Thousands of early copies and many confirmed places and people. See {{Has the Bible Been Changed?|evidence/bible-reliability}}.
+
+**Feelings and private revelation:** Inner experiences can be sincere and still mistaken, since the heart can deceive ([[Jeremiah 17:9]]). Scripture warns against accepting a different gospel even from an angel ([[Galatians 1:8]]) and commends testing claims ([[Acts 17:11]]).
+
+**Further reading:** Nabeel Qureshi, *Seeking Allah, Finding Jesus*. Bill McKeever and Eric Johnson, *Mormonism 101*. Lee Strobel, *The Case for the Real Jesus*.`,
+    talk: `**How to say it:** Be fair and respectful. “Sincere people believe all of these.” Then compare how each can be tested: “One man, alone, with an angel? Or hundreds of people seeing Jesus alive?”
+
+**Questions to ask:**
+- “How would you test whether a book is from God?”
+- “Can anyone check what happened to Muhammad in the cave?”
+- “Could the authorities in Jerusalem have stopped Christianity by showing the body?”
+
+**If they're Muslim:** Don't insult Muhammad or the Quran. Ask: “The Quran says the Gospel came from God. When was it changed?” See {{Muslim|people/muslim}}.
+
+**If they're LDS:** Be kind and define terms. If they mention a burning in the bosom: “Feelings can mislead. How do we test them?” See {{Mormon|people/mormon}}.
+
+**If they say “All holy books are man-made”:** “Then test them. Christianity is the one that says: if Jesus didn't rise, throw it out.” ([[1 Corinthians 15:17]])
+
+**Bridge to the gospel:** The books disagree about the cross. “Every religion says do more. The Bible says Jesus paid it all. Have you kept God's Law?” ({{Way of the Master|paths/way-of-the-master/2}})`,
+    verses: ["1 Corinthians 15:6", "1 Corinthians 15:17", "Acts 26:26", "2 Peter 1:16", "Galatians 1:8"],
+    related: ["people/muslim", "people/mormon", "evidence/resurrection"],
+  },
 ];
