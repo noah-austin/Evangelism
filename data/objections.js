@@ -11,6 +11,14 @@
 //   category: which group it shows under (see DATA.objectionCategories)
 //   sources:  where this approach comes from
 //
+// Optional (Study view, encyclopedia style):
+//   topic:      topic name used as the page title, e.g. "The Problem of Suffering"
+//   lead:       one or two plain sentences defining the topic
+//   alsoAsked:  other ways people ask it
+//   inBrief:    one-sentence answer for the fact box
+//   tip:        a short "Before you answer" note for the Talk view
+//   otherViews: [{ name, text }] how other worldviews answer it
+//
 // Text supports **bold**, *italics*, "- " lists, [[Verse Ref]] and {{Label|section/id}} links.
 
 window.DATA = window.DATA || {};
@@ -536,6 +544,16 @@ Hebrews says we die once, and **after that** comes judgment. So dying isn't the 
     id: "suffering",
     category: "God & Suffering",
     title: "Why does God allow suffering?",
+    topic: "The Problem of Suffering",
+    lead: "The problem of suffering asks how a good and all-powerful God could allow pain and evil. It's one of the most common reasons people give for doubting God, and one of the most personal.",
+    alsoAsked: ["Where was God?", "Why do bad things happen to good people?"],
+    inBrief: "The world is broken by sin. God brings good out of evil, entered suffering Himself at the cross, and will end it.",
+    tip: "find out if it's personal. If they're grieving, listen first.",
+    otherViews: [
+      { name: "Atheism", text: "No God, so no ultimate reason for suffering, and no real evil to object to." },
+      { name: "Buddhism and Hinduism", text: "Suffering comes from desire or karma; the goal is escape from the cycle." },
+      { name: "Christianity", text: "Suffering is real and wrong, God shares in it through Christ, and He will end it." },
+    ],
     sources: ["C.S. Lewis", "Greg Koukl", "Ray Comfort"],
     oneLiner: "It's a hard question. But without God, there's no real evil and no hope it gets fixed.",
     askBack: `Is this a question you're asking because of something you've been through?`,

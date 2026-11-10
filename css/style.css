@@ -491,3 +491,24 @@ a.seg { display: block; text-align: center; text-decoration: none; color: inheri
 .part h3 .step-num + span { padding-top: 2px; }
 .summary-part { border-color: var(--accent); }
 .overview button { vertical-align: top; }
+
+/* Answer pages: Talk / Study */
+.mode { margin: 2px 0 14px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 4px; gap: 4px; box-shadow: var(--shadow); }
+.mode .seg { border: 0; background: none; padding: 9px 4px; border-radius: 10px; display: flex; align-items: center; justify-content: center; gap: 7px; color: var(--muted); }
+.mode .seg.on { background: var(--top); color: var(--top-text); }
+.theysay { margin: -4px 0 12px; color: var(--muted); font-size: 0.98rem; line-height: 1.4; }
+.theysay b { color: var(--text); font-weight: 650; }
+.theysay .label { display: inline; margin-right: 6px; color: var(--muted); }
+.summary-part > .label { color: var(--accent); margin-bottom: 6px; display: block; }
+.swap { display: block; width: 100%; text-align: center; margin: 22px 0 0; font-weight: 700; color: var(--accent); }
+.lead { font-size: 1.05rem; line-height: 1.55; margin: 2px 0 14px; }
+.infobox { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 2px 15px; margin: 0 0 14px; box-shadow: var(--shadow); }
+.infobox dl { margin: 0; }
+.ib-row { display: grid; grid-template-columns: 5.6em 1fr; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 0.93rem; line-height: 1.42; }
+.ib-row:last-child { border-bottom: 0; }
+.ib-row dt { color: var(--muted); font-weight: 700; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; padding-top: 3px; }
+.ib-row dd { margin: 0; min-width: 0; }
+.vchip-inline { color: var(--chip-text); font-weight: 650; text-decoration: underline dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+.views { display: grid; gap: 8px; margin: 2px 0 6px; }
+.view { background: var(--bg); border-radius: 12px; padding: 10px 13px; font-size: 0.95rem; line-height: 1.45; }
+.view strong { display: block; margin-bottom: 2px; }

@@ -573,24 +573,70 @@
     const title = itemTitle(sec, item);
     let body;
     if (sec === "objections") {
-      // Study-notes layout: quick Say/Ask card, a contents list, then numbered sections
-      const sections = [{ h: "The 30-second answer", body: item.short }, ...splitNotes(item.deep)].filter((x) => x.body && x.body.trim());
+      // Two views of one answer: Talk (what to say, fast) and Study (the full article)
+      const tab = store.get("answerTab", "study") === "talk" ? "talk" : "study";
+      const views = (item.otherViews || []).length
+        ? `<div class="views">${item.otherViews.map((v) => `<div class="view"><strong>${esc(v.name)}</strong>${inline(v.text)}</div>`).join("")}</div>`
+        : "";
+      const sections = [
+        { h: "The 30-second answer", body: item.short },
+        ...splitNotes(item.deep),
+      ].filter((x) => x.body && x.body.trim());
+      // Other views go before a closing "Study" reading list
+      if (views) {
+        const last = sections[sections.length - 1];
+        sections.splice(last && /^(study|further reading)/i.test(last.h) ? sections.length - 1 : sections.length, 0, { h: "Other views", html: views });
+      }
       const verseList = (item.verses || []).map(getVerse).filter(Boolean);
-      body = `
-        <div class="quick">${boxes("say", "Say", item.oneLiner)}${boxes("ask", "Ask back", item.askBack)}</div>
+      const verseRows = verseList.length ? `<div class="list">${verseList.map((v) => verseRow(v)).join("")}</div>` : "";
+      const related = item.related && item.related.length ? `<div class="list">${item.related.map(relatedRow).join("")}</div>` : "";
+      const ibRow = (label, html) => (html ? `<div class="ib-row"><dt>${label}</dt><dd>${html}</dd></div>` : "");
+      const seeAlso = (item.related || [])
+        .map((r) => {
+          const [rs, rid] = r.split("/");
+          const it = getItem(rs, rid);
+          return it ? `<a class="ilink" href="#/${r}">${esc(plain(itemTitle(rs, it)))}</a>` : "";
+        })
+        .filter(Boolean)
+        .join(", ");
+      const talk = `
+        ${boxes("say", "Say", item.oneLiner, " big")}
+        ${boxes("ask", "Ask back", item.askBack)}
+        ${item.tip ? `<p class="notice"><b>Before you answer:</b> ${inline(item.tip)}</p>` : ""}
         ${talkCard(sec, id)}
-        <div class="overview"><span class="label">In these notes</span><ol>${sections
+        <section class="part summary-part"><span class="label">The 30-second answer</span><div class="prose">${md(item.short)}</div></section>
+        ${verseRows ? `<h2 class="section-label">Verses to use</h2>${verseRows}` : ""}
+        ${related ? `<h2 class="section-label">Where to go next</h2>${related}` : ""}
+        <button class="swap" data-answer-tab="study">Read the full study notes</button>`;
+      const study = `
+        ${item.lead ? `<p class="lead">${inline(item.lead)}</p>` : ""}
+        <div class="infobox"><dl>
+          ${ibRow("Also asked", (item.alsoAsked || []).map((q) => `“${esc(q)}”`).join(" "))}
+          ${ibRow("In brief", item.inBrief ? inline(item.inBrief) : "")}
+          ${ibRow("Key verses", verseList.map((v, k) => `<span class="nw"><button class="vchip-inline" data-ref="${esc(v.ref)}">${esc(v.ref)}</button>${k < verseList.length - 1 ? "," : ""}</span>`).join(" "))}
+          ${ibRow("Sources", esc((item.sources || []).join(", ")))}
+          ${ibRow("See also", seeAlso)}
+        </dl></div>
+        <div class="overview"><span class="label">Contents</span><ol>${sections
           .map((x, i) => `<li><button data-jump="note-${i + 1}">${inline(x.h)}</button></li>`)
           .join("")}</ol></div>
         ${sections
           .map(
             (x, i) => `<section class="part${i === 0 ? " summary-part" : ""}" id="note-${i + 1}">
               <h3><span class="step-num">${i + 1}</span><span>${inline(x.h)}</span></h3>
-              <div class="prose">${md(x.body)}</div></section>`
+              ${x.html || `<div class="prose">${md(x.body)}</div>`}</section>`
           )
           .join("")}
-        ${verseList.length ? `<h2 class="section-label">Verses to know</h2><div class="list">${verseList.map((v) => verseRow(v)).join("")}</div>` : ""}
-        ${item.related && item.related.length ? `<h2 class="section-label">Related</h2><div class="list">${item.related.map(relatedRow).join("")}</div>` : ""}`;
+        ${verseRows ? `<h2 class="section-label">Verses to know</h2>${verseRows}` : ""}
+        ${related ? `<h2 class="section-label">Related</h2>${related}` : ""}`;
+      body = `
+        ${item.topic ? `<p class="theysay"><span class="label">They say</span><b>“${esc(item.title)}”</b></p>` : ""}
+        <div class="segs mode">
+          <button class="seg${tab === "talk" ? " on" : ""}" data-answer-tab="talk">${svg('<path d="M4 5h16v11H10l-4.5 3.5V16H4z" stroke-linejoin="round"/>', 18, 2)}Talk</button>
+          <button class="seg${tab === "study" ? " on" : ""}" data-answer-tab="study">${svg('<path d="M12 6.5C10 5 7 4.5 4 5v13c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5V5c-3-.5-6 0-8 1.5zM12 6.5V19.5" stroke-linejoin="round"/>', 18, 2)}Study</button>
+        </div>
+        <div data-pane="talk"${tab === "talk" ? "" : " hidden"}>${talk}</div>
+        <div data-pane="study"${tab === "study" ? "" : " hidden"}>${study}</div>`;
     } else {
       body = `
         ${item.summary ? `<div class="prose summary">${md(item.summary)}</div>` : ""}
@@ -616,7 +662,7 @@
     }
     app.innerHTML = `
       ${item.category ? `<p class="kicker">${esc(item.category)}</p>` : ""}
-      <div class="item-head"><h1 class="page-title">${esc(title)}</h1>${favButton(`${sec}/${id}`)}</div>
+      <div class="item-head"><h1 class="page-title">${esc(sec === "objections" && item.topic ? item.topic : title)}</h1>${favButton(`${sec}/${id}`)}</div>
       ${sourcePills(item.sources)}
       ${body}`;
     let scrollTo = null;
@@ -1396,6 +1442,15 @@
       if (!topics.length) return (document.getElementById("mix-note").hidden = false);
       session.set("quiz", null);
       location.hash = "#/quiz/mixed";
+      return;
+    }
+    const at = t.closest("[data-answer-tab]");
+    if (at) {
+      const tab = at.dataset.answerTab;
+      store.set("answerTab", tab);
+      app.querySelectorAll("[data-pane]").forEach((p) => (p.hidden = p.dataset.pane !== tab));
+      app.querySelectorAll(".mode [data-answer-tab]").forEach((b) => b.classList.toggle("on", b.dataset.answerTab === tab));
+      if (at.classList.contains("swap")) window.scrollTo(0, 0);
       return;
     }
     const qp = t.closest("[data-quiz-pick]");
