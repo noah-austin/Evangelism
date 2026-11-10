@@ -732,6 +732,36 @@ In those cases, the innocent spouse is free to remarry. Otherwise, believers sho
 
   // --- Book Notes ---
   {
+    id: "story-of-reality",
+    title: "The Story of Reality (Greg Koukl)",
+    category: "Book Notes",
+    sources: ["Greg Koukl"],
+    summary: `Started November 2026. Koukl tells the Christian worldview as one true story, from beginning to end. Notes are added as I read.`,
+    parts: [
+      {
+        heading: "Why I'm reading it",
+        body: `- Follow-up to {{Tactics|convictions/tactics}}: the big picture behind the arguments.
+- Learn to explain Christianity as one story, not a list of rules or doctrines.`,
+      },
+      {
+        heading: "The story in five words",
+        body: `Koukl organizes the story around five words: **God, Man, Jesus, Cross, Resurrection.** (Confirm against the book as I read.)`,
+      },
+      {
+        heading: "Where I am",
+        body: `Just started.`,
+      },
+      {
+        heading: "Chapter notes",
+        body: `No notes yet. For each section: the main idea, key verses, and anything worth remembering.`,
+      },
+      {
+        heading: "My takeaways",
+        body: `None yet.`,
+      },
+    ],
+  },
+  {
     id: "school-of-biblical-evangelism",
     title: "School of Biblical Evangelism (Ray Comfort & Kirk Cameron)",
     category: "Book Notes",
