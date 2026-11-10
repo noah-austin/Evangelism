@@ -482,3 +482,12 @@ a.seg { display: block; text-align: center; text-decoration: none; color: inheri
 .mix-row { display: flex; align-items: center; gap: 12px; cursor: pointer; }
 .mix-row input { width: 22px; height: 22px; flex: none; accent-color: var(--accent); }
 .mix-note { color: var(--accent); font-weight: 650; margin: 10px 0 0; }
+
+/* Answer pages: study-notes layout */
+.quick { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 4px 12px; margin: 0 0 12px; box-shadow: var(--shadow); }
+.quick .say, .quick .ask { margin: 8px 0; }
+.overview li { margin-bottom: 6px; }
+.part h3 { align-items: flex-start; }
+.part h3 .step-num + span { padding-top: 2px; }
+.summary-part { border-color: var(--accent); }
+.overview button { vertical-align: top; }

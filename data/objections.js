@@ -1104,7 +1104,7 @@ The only other option is that He was telling the truth. And then we have to do w
     short: `A handful of facts are accepted by most scholars, even skeptical ones: Jesus died by crucifixion, His followers believed they saw Him alive, and even enemies like Paul and skeptics like His brother James became believers.
 
 Every alternative theory struggles to explain all of those facts together. The resurrection explains all of them. And if Jesus rose, He's the One we'll answer to.`,
-    deep: `See {{The Resurrection: Minimal Facts|evidence/resurrection}} for the full outline.
+    deep: `**Full outline:** See {{The Resurrection: Minimal Facts|evidence/resurrection}}.
 
 **Why it matters:** Paul said if Christ wasn't raised, Christianity is worthless ([[1 Corinthians 15:17]]). Christianity invites investigation.
 

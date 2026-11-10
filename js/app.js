@@ -555,19 +555,41 @@
       <span class="tile-blurb">Step by step: ${esc(plain(t.title))}</span></span>${chevron}</a>`;
   }
 
+  function splitNotes(text) {
+    const secs = [];
+    for (const b of String(text || "").trim().split(/\n\s*\n/)) {
+      // A bold phrase is a heading only when it ends with ":" or "." (inside or right after the bold)
+      const m = b.match(/^\*\*(.{2,90}?)\*\*\s*(\([^)]{1,40}\))?([:.])?\s*/);
+      const isHead = m && (/[:.][”"']?$/.test(m[1]) || m[3]);
+      if (isHead) secs.push({ h: m[1].replace(/[:.,]\s*$/, "") + (m[2] ? " " + m[2] : ""), body: b.slice(m[0].length) });
+      else if (secs.length) secs[secs.length - 1].body += "\n\n" + b;
+      else secs.push({ h: "Overview", body: b });
+    }
+    return secs;
+  }
   function pageItem(sec, id, step) {
     const item = getItem(sec, id);
     if (!item || !sectionById[sec]) return pageNotFound();
     const title = itemTitle(sec, item);
     let body;
     if (sec === "objections") {
+      // Study-notes layout: quick Say/Ask card, a contents list, then numbered sections
+      const sections = [{ h: "The 30-second answer", body: item.short }, ...splitNotes(item.deep)].filter((x) => x.body && x.body.trim());
+      const verseList = (item.verses || []).map(getVerse).filter(Boolean);
       body = `
-        ${boxes("say", "Say", item.oneLiner, " big")}
-        ${boxes("ask", "Ask back", item.askBack)}
+        <div class="quick">${boxes("say", "Say", item.oneLiner)}${boxes("ask", "Ask back", item.askBack)}</div>
         ${talkCard(sec, id)}
-        <details class="fold" open><summary>30-second answer</summary><div class="prose">${md(item.short)}</div></details>
-        ${item.verses && item.verses.length ? `<span class="label verse-label">Key verses</span>${chips(item.verses)}` : ""}
-        <details class="fold"><summary>Deeper study</summary><div class="prose">${md(item.deep)}</div></details>
+        <div class="overview"><span class="label">In these notes</span><ol>${sections
+          .map((x, i) => `<li><button data-jump="note-${i + 1}">${inline(x.h)}</button></li>`)
+          .join("")}</ol></div>
+        ${sections
+          .map(
+            (x, i) => `<section class="part${i === 0 ? " summary-part" : ""}" id="note-${i + 1}">
+              <h3><span class="step-num">${i + 1}</span><span>${inline(x.h)}</span></h3>
+              <div class="prose">${md(x.body)}</div></section>`
+          )
+          .join("")}
+        ${verseList.length ? `<h2 class="section-label">Verses to know</h2><div class="list">${verseList.map((v) => verseRow(v)).join("")}</div>` : ""}
         ${item.related && item.related.length ? `<h2 class="section-label">Related</h2><div class="list">${item.related.map(relatedRow).join("")}</div>` : ""}`;
     } else {
       body = `
