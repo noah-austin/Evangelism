@@ -258,6 +258,13 @@ DATA.claims = [
     next: "objections/good-life",
   },
   {
+    id: "god-should-stop-evil",
+    claim: "If God were good, He'd stop evil right now.",
+    ask: "Would you want Him to remove every rapist right now? How about every liar?",
+    why: "If God judged all evil today, none of us would be left. He's showing mercy, giving time to repent (2 Peter 3:9).",
+    next: "objections/ot-vs-nt-god",
+  },
+  {
     id: "womans-right",
     claim: "Abortion is a woman's right.",
     ask: "What is the unborn?",

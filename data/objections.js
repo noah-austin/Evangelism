@@ -254,6 +254,13 @@ What changed is the cross. God poured out His judgment on Jesus, and now He's pa
 3. **Israel's history is condensed.** The Old Testament covers thousands of years; the judgments stand out, but long stretches of patience sit between them.
 4. **How God judges now:** He still restrains evil through civil government ([[Romans 13:4]]), and every sin will be dealt with at the final judgment.
 
+**Turn it around with questions:**
+- “Would you want God to judge every rapist right now?” (Most say yes.)
+- “How about every murderer?” (Yes.)
+- “How about every liar?” (Pause.)
+- “Have you ever told a lie? Then if God judged everyone right now, where would that leave you?”
+- “His patience isn't weakness. He's showing mercy right now, giving you time to repent.”
+
 **Both are true in every age:** “Behold then the kindness and severity of God” ([[Romans 11:22]]).
 
 **Turn it to the gospel:** “God's patience right now is His kindness to you. Can I ask how you'd do on Judgment Day?” ({{Way of the Master|paths/way-of-the-master/2}})`,
