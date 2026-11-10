@@ -1023,6 +1023,22 @@ DATA.verses = [
     verified: true,
   },
   {
+    ref: "Mark 14:61-62",
+    tag: "Claim before the high priest",
+    text: "But He kept silent and did not answer. Again the high priest was questioning Him, and saying to Him, “Are You the Christ, the Son of the Blessed One?” And Jesus said, “I am; and you shall see the Son of Man sitting at the right hand of Power, and coming with the clouds of heaven.”",
+    topics: ["Deity of Christ"],
+    note: "Jesus affirms He is the Christ, the Son of God, at His trial.",
+    verified: true,
+  },
+  {
+    ref: "John 4:13-14",
+    tag: "Never thirst again",
+    text: "Jesus answered and said to her, “Everyone who drinks of this water will thirst again; but whoever drinks of the water that I will give him shall never thirst; but the water that I will give him will become in him a well of water springing up to eternal life.”",
+    topics: ["Grace"],
+    note: "Jesus offers water that satisfies forever.",
+    verified: true,
+  },
+  {
     ref: "Revelation 20:14",
     tag: "The second death",
     text: "Then death and Hades were thrown into the lake of fire. This is the second death, the lake of fire.",
