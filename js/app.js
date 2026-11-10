@@ -673,6 +673,37 @@
         </div>
         <div data-pane="talk"${tab === "talk" ? "" : " hidden"}>${talk}</div>
         <div data-pane="study"${tab === "study" ? "" : " hidden"}>${study}</div>`;
+    } else if (sec === "evidence" && (item.lead || item.facts)) {
+      // Reasons to Believe: Study (reference) and Talk (how to use it)
+      const tab = store.get("answerTab", "study") === "talk" ? "talk" : "study";
+      const parts = (item.parts || []).filter((p) => p.body || (p.verses && p.verses.length));
+      const tips = splitNotes(item.tips).filter((x) => x.body && x.body.trim());
+      const study = `
+        ${item.lead ? `<p class="lead">${inline(item.lead)}</p>` : ""}
+        ${(item.facts || []).length ? `<div class="infobox"><dl>${item.facts
+          .map((f) => `<div class="ib-row"><dt>${esc(f.label)}</dt><dd>${inline(f.text)}</dd></div>`)
+          .join("")}</dl></div>` : ""}
+        <div class="overview"><span class="label">Contents</span><ol>${parts
+          .map((p, k) => `<li><button data-jump="note-${k + 1}">${inline(p.heading || "")}</button></li>`)
+          .join("")}</ol></div>
+        ${parts
+          .map(
+            (p, k) => `<section class="part" id="note-${k + 1}">
+              <h3><span class="step-num">${k + 1}</span><span>${inline(p.heading || "")}</span></h3>
+              ${p.body ? `<div class="prose">${md(p.body)}</div>` : ""}
+              ${chips((p.verses || []).filter((r) => !(p.body || "").includes(`[[${r}]]`)))}</section>`
+          )
+          .join("")}`;
+      const talk = `
+        ${tips.map((x) => `<section class="part talk-note"><h3><span>${inline(x.h)}</span></h3><div class="prose">${md(x.body)}</div></section>`).join("")}
+        <button class="swap" data-answer-tab="study">Read the full study notes</button>`;
+      body = `
+        ${tips.length ? `<div class="segs mode">
+          <button class="seg${tab === "talk" ? " on" : ""}" data-answer-tab="talk">${svg('<path d="M4 5h16v11H10l-4.5 3.5V16H4z" stroke-linejoin="round"/>', 18, 2)}Talk</button>
+          <button class="seg${tab === "study" ? " on" : ""}" data-answer-tab="study">${svg('<path d="M12 6.5C10 5 7 4.5 4 5v13c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5V5c-3-.5-6 0-8 1.5zM12 6.5V19.5" stroke-linejoin="round"/>', 18, 2)}Study</button>
+        </div>` : ""}
+        <div data-pane="talk"${tips.length && tab === "talk" ? "" : " hidden"}>${talk}</div>
+        <div data-pane="study"${tips.length && tab === "talk" ? " hidden" : ""}>${study}</div>`;
     } else {
       body = `
         ${item.summary ? `<div class="prose summary">${md(item.summary)}</div>` : ""}
