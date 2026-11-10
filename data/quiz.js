@@ -439,6 +439,8 @@ DATA.quizBanks = [
       {"q": "The last book of the Bible is called Revelations.", "a": "False", "explain": "It's Revelation, singular: the revelation of Jesus Christ (Revelation 1:1)."},
       {"q": "A Christian who still struggles with sin can't be truly saved.", "a": "False", "explain": "We all still sin (1 John 1:8). The question is whether we fight it or embrace it.", "link": "objections/living-in-sin"},
       {"q": "The Bible teaches that saving faith and repentance go together.", "a": "True", "explain": "“Repent and believe in the gospel” (Mark 1:15).", "link": "objections/living-in-sin"},
+      {"q": "God describes Himself in the Old Testament as “slow to anger.”", "a": "True", "explain": "Exodus 34:6.", "link": "objections/ot-vs-nt-god"},
+      {"q": "God never judges anyone directly in the New Testament.", "a": "False", "explain": "Ananias and Sapphira (Acts 5) and Herod (Acts 12:23).", "link": "objections/ot-vs-nt-god"},
     ],
   },
 ];

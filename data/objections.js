@@ -225,6 +225,41 @@ But breaking one law still makes you a lawbreaker. A shoplifter isn't a murderer
     verses: ["Luke 12:47-48", "James 2:10", "Ezekiel 18:4", "Revelation 20:12"],
     related: ["objections/hell-unfair", "objections/good-person"],
   },
+  {
+    id: "ot-vs-nt-god",
+    category: "God & Suffering",
+    title: "Why does God seem so much harsher in the Old Testament?",
+    sources: ["Ray Comfort", "Greg Koukl"],
+    oneLiner: "Same God, same justice. The difference is the cross, and His patience before the final judgment.",
+    askBack: "What would you expect a just God to do with evil?",
+    short: `God doesn't change. The Old Testament is full of mercy: He calls Himself “slow to anger,” spared Nineveh, and waited centuries before judging Canaan. And the New Testament has judgment too: Ananias and Sapphira, Herod, and Jesus' warnings about hell.
+
+What changed is the cross. God poured out His judgment on Jesus, and now He's patiently calling everyone to repent before the day He has fixed for judgment. His patience now isn't a softer God; it's time to be saved.`,
+    deep: `**Same God:** “I, the LORD, do not change” ([[Malachi 3:6]]). Jesus is the same yesterday, today, and forever (Hebrews 13:8).
+
+**Mercy in the Old Testament:**
+- God's own description: compassionate, gracious, slow to anger, yet He punishes the guilty ([[Exodus 34:6-7]]).
+- Jonah fled because he knew God would forgive Nineveh ([[Jonah 4:2]]).
+- God waited centuries before judging the Canaanites ([[Genesis 15:16]]).
+- He takes no pleasure in the death of the wicked ([[Ezekiel 33:11]]).
+
+**Judgment in the New Testament:**
+- Ananias and Sapphira (Acts 5), Herod struck down ([[Acts 12:23]]).
+- Jesus spoke about hell more than anyone else in the Bible.
+- Revelation describes the final judgment.
+
+**Why it looks different now:**
+1. **The cross.** God passed over sins in His patience, then showed His justice at the cross, so He could be just and forgive ([[Romans 3:25-26]]).
+2. **A season of patience.** God isn't slow; He's patient, not wanting anyone to perish ([[2 Peter 3:9]]). He now commands everyone to repent because He has fixed a day of judgment ([[Acts 17:30-31]]). Judgment is delayed, not cancelled. Now is the day of salvation ([[2 Corinthians 6:2]]).
+3. **Israel's history is condensed.** The Old Testament covers thousands of years; the judgments stand out, but long stretches of patience sit between them.
+4. **How God judges now:** He still restrains evil through civil government ([[Romans 13:4]]), and every sin will be dealt with at the final judgment.
+
+**Both are true in every age:** “Behold then the kindness and severity of God” ([[Romans 11:22]]).
+
+**Turn it to the gospel:** “God's patience right now is His kindness to you. Can I ask how you'd do on Judgment Day?” ({{Way of the Master|paths/way-of-the-master/2}})`,
+    verses: ["Malachi 3:6", "Exodus 34:6-7", "Romans 3:25-26", "2 Peter 3:9", "Romans 11:22"],
+    related: ["objections/ot-cruel", "objections/hell-unfair"],
+  },
 
   {
     id: "never-heard",
