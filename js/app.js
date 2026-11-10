@@ -1170,6 +1170,16 @@
         })),
     },
     {
+      id: "topics", title: "Topics", blurb: "Match the short answer to its topic",
+      build: () => {
+        const list = D.objections.filter((o) => o.topic && o.inBrief);
+        return list.map((o) => ({
+          q: o.inBrief, sub: "Which topic is this?", a: o.topic, link: `objections/${o.id}`, explain: `They say: “${o.title}”`,
+          choices: shuffle([o.topic, ...wrongs(o.topic, list.map((x) => x.topic))]),
+        }));
+      },
+    },
+    {
       id: "columbo", title: "Columbo Questions", blurb: "Pick the best question to ask back",
       build: () =>
         (D.claims || []).map((c) => ({
