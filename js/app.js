@@ -480,21 +480,54 @@
     const w = getItem("people", id);
     if (!w) return pageNotFound();
     const t = getItem("talking", w.talk);
-    tab = tab === "talk" && t ? "talk" : "about";
-    pageItem("worldviews", id);
-    const about = app.innerHTML.replace(/<a class="wide-card live-start" href="#\/talking[^]*?<\/a>/, "");
-    let talk = "";
-    if (t) {
-      pageItem("talking", t.id);
-      talk = app.innerHTML;
-    }
+    const hasTalk = !!(t || w.tips);
+    tab = tab === "talk" && hasTalk ? "talk" : "about";
     const strip = (h) => h.replace(/<p class="kicker">[^]*?<\/p>/, "").replace(/<div class="item-head">[^]*?<\/div>/, "");
+    let body;
+    if (tab === "about") {
+      if (w.lead || w.facts) {
+        // Reference layout: lead, fact box, contents, numbered sections
+        const parts = (w.parts || []).filter((p) => p.body || (p.verses && p.verses.length));
+        body = `
+          ${sourcePills(w.sources)}
+          ${w.lead ? `<p class="lead">${inline(w.lead)}</p>` : ""}
+          ${(w.facts || []).length ? `<div class="infobox"><dl>${w.facts
+            .map((f) => `<div class="ib-row"><dt>${esc(f.label)}</dt><dd>${inline(f.text)}</dd></div>`)
+            .join("")}</dl></div>` : ""}
+          <div class="overview"><span class="label">Contents</span><ol>${parts
+            .map((p, i) => `<li><button data-jump="note-${i + 1}">${inline(p.heading || "")}</button></li>`)
+            .join("")}</ol></div>
+          ${parts
+            .map(
+              (p, i) => `<section class="part" id="note-${i + 1}">
+                <h3><span class="step-num">${i + 1}</span><span>${inline(p.heading || "")}</span></h3>
+                ${p.body ? `<div class="prose">${md(p.body)}</div>` : ""}
+                ${chips((p.verses || []).filter((r) => !(p.body || "").includes(`[[${r}]]`)))}</section>`
+            )
+            .join("")}`;
+      } else {
+        pageItem("worldviews", id);
+        body = strip(app.innerHTML.replace(/<a class="wide-card live-start" href="#\/talking[^]*?<\/a>/, ""));
+      }
+    } else {
+      const tips = splitNotes(w.tips).filter((x) => x.body && x.body.trim());
+      let path = "";
+      if (t) {
+        pageItem("talking", t.id);
+        path = strip(app.innerHTML);
+      }
+      body = `
+        ${tips.length ? `<div class="tips-box"><span class="label">Before you start</span>${tips
+          .map((x) => `<section class="tip-sec"><h3>${inline(x.h)}</h3><div class="prose">${md(x.body)}</div></section>`)
+          .join("")}</div>` : ""}
+        ${t ? `<h2 class="section-label">Step by step</h2>${path}` : ""}`;
+    }
     app.innerHTML = `
       <p class="kicker">People</p>
       <div class="item-head"><h1 class="page-title">${esc(w.title)}</h1>${favButton(`worldviews/${id}`)}</div>
-      ${t ? `<div class="segs"><a class="seg${tab === "about" ? " on" : ""}" href="#/people/${id}">Background</a><a class="seg${tab === "talk" ? " on" : ""}" href="#/people/${id}/talk">Conversation</a></div>` : ""}
-      ${tab === "about" ? strip(about) : strip(talk)}
-      ${t ? `<a class="wide-card live-start" href="#/practice/rehearse/${t.id}">
+      ${hasTalk ? `<div class="segs mode"><a class="seg${tab === "about" ? " on" : ""}" href="#/people/${id}" data-replace>${svg('<path d="M12 6.5C10 5 7 4.5 4 5v13c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5V5c-3-.5-6 0-8 1.5zM12 6.5V19.5" stroke-linejoin="round"/>', 18, 2)}Background</a><a class="seg${tab === "talk" ? " on" : ""}" href="#/people/${id}/talk" data-replace>${svg('<path d="M4 5h16v11H10l-4.5 3.5V16H4z" stroke-linejoin="round"/>', 18, 2)}Conversation</a></div>` : ""}
+      ${body}
+      ${t && tab === "talk" ? `<a class="wide-card live-start" href="#/practice/rehearse/${t.id}">
         <span class="tile-icon">${svg(ICON.practice, 24)}</span>
         <span class="wide-main"><span class="tile-title">Practice this</span>
         <span class="tile-blurb">Rehearse this conversation with flashcards</span></span>${chevron}</a>` : ""}`;

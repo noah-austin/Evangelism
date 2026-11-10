@@ -514,3 +514,10 @@ a.seg { display: block; text-align: center; text-decoration: none; color: inheri
 .view strong { display: block; margin-bottom: 2px; }
 
 .talk-note h3 { font-size: 1rem; }
+
+/* People pages */
+a.seg { display: flex; align-items: center; justify-content: center; gap: 7px; }
+.tips-box { background: var(--accent-bg); border-radius: 16px; padding: 10px 15px 4px; margin: 0 0 14px; }
+.tips-box > .label { display: block; color: var(--accent); margin-bottom: 4px; }
+.tip-sec h3 { font-size: 0.98rem; margin: 8px 0 2px; }
+.tip-sec .prose p { margin: 0 0 8px; }
