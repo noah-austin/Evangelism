@@ -173,21 +173,48 @@ The Ten Commandments are the clearest summary of that standard, like a mirror th
     id: "all-religions",
     category: "Other Religions",
     title: "All religions lead to God",
+    topic: "Religious Pluralism",
+    lead: "Religious pluralism is the view that all religions are equally valid paths to God or ultimate reality. It matters because the major religions make conflicting claims, especially about who Jesus is.",
+    alsoAsked: ["Aren't all religions basically the same?", "Isn't it arrogant to say only one religion is true?", "There are many paths up the same mountain"],
+    inBrief: "The religions contradict each other about Jesus, so they cannot all be true; Jesus claimed to be the only way to God.",
+    tip: "ask what they mean first. Many mean “all religions teach being good.”",
+    otherViews: [
+      { name: "Religious pluralism", text: "Each religion is a culturally shaped response to the same ultimate reality, and none has the whole truth." },
+      { name: "Hinduism", text: "Many traditions see different religions as different paths suited to different people, all leading to the same goal." },
+      { name: "Islam", text: "Earlier prophets brought true messages, but Islam is God's final and complete revelation." },
+      { name: "Christianity", text: "Salvation is found only in Jesus Christ, who is God in the flesh and the one mediator between God and people." },
+    ],
     sources: ["Greg Koukl", "Cliff Knechtle"],
     oneLiner: "That sounds kind, but they can't all be true. They disagree about who Jesus is.",
     askBack: "What do you mean by that?",
     short: `Christianity says Jesus is God and rose from the dead. Islam says He wasn't God and didn't die on the cross. Judaism says He wasn't the Messiah. They can't all be right.
 
 And saying “all religions lead to God” takes a side too. It says every religion that claims to be the only way is *wrong*. So the real question is: who is right about Jesus? He said He was the only way.`,
-    deep: `**Use Columbo first** ({{Columbo|skills/columbo}}): “What do you mean by that?” Often they mean “all religions are basically about being good.” That's not what Christianity teaches at all. It says you *can't* be good enough ([[Ephesians 2:8-9]]).
+    deep: `**The claim:** Pluralism holds that all religions lead to God. In everyday conversation it often means that all religions are basically about being good.
 
-**Self-defeating claim** ({{Suicide|skills/suicide}}): “All religions are true” rules out every religion that says it's exclusive, including Christianity. So it isn't open-minded. It's its own exclusive view.
+**The religions disagree:** Christianity teaches that Jesus is God and rose from the dead. Islam teaches that He was not God and did not die on the cross. Judaism teaches that He was not the Messiah. These claims contradict each other, so they cannot all be true.
 
-**Jesus' own claim:** He didn't claim to be one way among many ([[John 14:6]], [[Acts 4:12]]). So either He was right, or He wasn't a good teacher at all. (See {{Liar, Lunatic, or Lord|evidence/trilemma}}.)
+**A self-defeating claim:** The statement “all religions are true” rules out every religion that claims to be exclusive, including Christianity. It is therefore not neutral or open-minded; it is its own exclusive view and takes a side. See {{Suicide|skills/suicide}}.
 
-**Tone:** Knechtle often agrees first (“I appreciate that you want to be fair to everyone”), then asks why they believe it.
+**Christianity is not about being good enough:** Most religions teach a path of effort toward God. Christianity teaches that no one can be good enough and that salvation is a gift of grace ([[Ephesians 2:8-9]]).
 
-**Then go to the Law:** “Let's set other religions aside. Do you think *you're* a good person?” ({{Way of the Master|paths/way-of-the-master}})`,
+**Jesus' own claim:** Jesus did not present Himself as one way among many. He said He is the only way to the Father ([[John 14:6]]), and the apostles taught that there is salvation in no one else ([[Acts 4:12]]). Either He was right, or He was not a good teacher at all. See {{Liar, Lunatic, or Lord|evidence/trilemma}}.
+
+**Further reading:** Greg Koukl, *Tactics* ({{Tactics|convictions/tactics}}). Cliff Knechtle's open-air dialogues on other religions.`,
+    talk: `**Questions to ask:**
+- “What do you mean by that?” ({{Columbo|skills/columbo}})
+- “Do you mean all religions teach being good?”
+- “Who do you think Jesus was?”
+
+**How to say it:** Agree first, the way Knechtle often does: “I appreciate that you want to be fair to everyone.” Then ask why they believe it.
+
+**If they mean “all religions teach being good”:** “Christianity actually says the opposite. You *can't* be good enough” ([[Ephesians 2:8-9]]).
+
+**If they say “It's arrogant to say one is right”:** “Saying all are right takes a side too. It says every religion that claims to be the only way is wrong.”
+
+**If they say “They're all basically the same”:** “They disagree about Jesus. Was He God, a prophet, or not the Messiah? They can't all be right.”
+
+**Bridge to the gospel:** Set other religions aside: “Let's talk about you. Do you think you're a good person?” ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["John 14:6", "Acts 4:12", "Ephesians 2:8-9"],
     related: ["skills/columbo", "skills/suicide", "evidence/trilemma"],
   },
@@ -1090,21 +1117,35 @@ Many people saw Jesus' miracles and still rejected Him. The issue usually isn't 
     id: "hypocrites",
     category: "Church & Christians",
     title: "Christians are hypocrites",
+    topic: "Hypocrisy in the Church",
+    lead: "Hypocrisy is claiming to hold standards one does not live by. The behavior of some who call themselves Christians is one of the most common reasons people give for rejecting Christianity.",
+    alsoAsked: ["Church people are the worst", "Christians don't practice what they preach", "Why would I go to church with a bunch of fakes?"],
+    inBrief: "Some professing Christians are hypocrites, and Jesus condemned them; but counterfeits don't disprove the real thing, and each person answers to God.",
+    tip: "agree first. It's often true, and it lowers their guard.",
     sources: ["Ray Comfort", "Cliff Knechtle"],
     oneLiner: "You're right, some are. Jesus was hard on hypocrites too. They'll answer to God.",
     askBack: `Would you let a hypocrite keep you out of heaven?`,
     short: `I agree. Some people who call themselves Christians are hypocrites, and Jesus condemned that more strongly than anyone.
 
 But a hypocrite doesn't make Christianity false. If someone uses a counterfeit $100 bill, you don't throw out real money. And on Judgment Day, God won't ask about other people's sins. He'll ask about yours.`,
-    deep: `**Agree first.** It's true, and it disarms people. Jesus said the same ([[Matthew 23:28]]).
+    deep: `**Jesus on hypocrisy:** Jesus condemned religious hypocrisy more strongly than anyone, describing leaders who looked righteous outwardly but were full of hypocrisy and lawlessness inside ([[Matthew 23:28]]).
 
-**Not everyone who says “Lord, Lord” is His** ([[Matthew 7:21]]). Fake Christians will face God.
+**False believers:** Not everyone who says “Lord, Lord” belongs to Christ ([[Matthew 7:21]]). Scripture expects that some who claim the name will prove false, and they will answer to God.
 
-**Counterfeit illustration:** Counterfeits exist because the real thing is valuable.
+**Counterfeits and the real thing:** A counterfeit $100 bill does not make real money worthless. Counterfeits exist because the genuine article is valuable. A hypocrite does not make Christianity false.
 
-**Turn it back gently:** “Have you ever said one thing and done another?” That's hypocrisy too, and it leads naturally into the Law ({{Way of the Master|paths/way-of-the-master}}).
+**Judging the faith by its founder:** Christianity is properly judged by Christ, not by its worst followers.
 
-**Point to Jesus, not Christians.** Judge Christianity by Christ, not by His worst followers.`,
+**Hypocrisy is universal:** Saying one thing and doing another is common to all people, not only to churchgoers. Everyone has sinned ([[Romans 3:23]]). On Judgment Day each person gives an account for his own sins, not for other people's.`,
+    talk: `**How to say it:** “You're right. Some are. Jesus was hard on them too.” Agreeing disarms people.
+
+**Questions to ask:**
+- “Would you let a hypocrite keep you out of heaven?”
+- “Have you ever said one thing and done another?”
+
+**If they say “That's why I don't go to church”:** “Judge Christianity by Jesus, not by His worst followers.” “Fakes exist because the real thing is worth copying.”
+
+**Bridge to the gospel:** Gently turn it back. Hypocrisy is lying, and lying breaks God's Law. “God won't ask about their sins. He'll ask about yours. Have you ever lied?” ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["Matthew 23:28", "Matthew 7:21", "Romans 3:23"],
     related: ["paths/way-of-the-master", "objections/hurt-by-church"],
   },
@@ -1112,23 +1153,44 @@ But a hypocrite doesn't make Christianity false. If someone uses a counterfeit $
     id: "hate-gay",
     category: "Church & Christians",
     title: "Christians hate gay people",
+    topic: "Christianity and Homosexuality",
+    lead: "Many people see the Christian teaching that homosexual behavior is sin as hateful toward gay people. The Bible places homosexual sin alongside many other sins and offers every sinner the same forgiveness.",
+    alsoAsked: ["Christians are homophobic", "Why do Christians care who people love?", "Isn't the church anti-gay?"],
+    inBrief: "Disagreeing isn't hating. The Bible calls every person a sinner, homosexual sin among many, and offers all the same forgiveness in Christ.",
+    tip: "find out if they've been hurt. Listen before you explain.",
+    otherViews: [
+      { name: "Secular view", text: "Sexual orientation is part of identity, and calling homosexual behavior sin is seen as rejecting the person." },
+      { name: "Affirming churches", text: "The biblical passages are read as condemning exploitation or pagan practices rather than committed same-sex relationships." },
+      { name: "Historic Christianity", text: "God designed sex for marriage between a man and a woman; homosexual behavior is sin, and the gospel offers the same forgiveness to all." },
+    ],
     sources: ["Ray Comfort", "Greg Koukl"],
     oneLiner: "Disagreeing isn't hating. The Bible says we're all sinners, me included.",
     askBack: "What makes you say that? Has someone treated you badly?",
     short: `Some Christians have been cruel, and that's wrong. But disagreeing with someone isn't hating them.
 
 The Bible lists homosexual sin right next to lying, stealing, and greed. It puts all of us in the same boat. Then it says, “Such were some of you; but you were washed.” The gospel is for everyone, and that includes me.`,
-    deep: `**Listen first.** If they've been hurt by Christians, say you're sorry. Don't defend bad behavior.
+    deep: `**Disagreement and hatred:** Disagreeing with a person's beliefs or conduct is not the same as hating the person. Some Christians have been cruel to gay people, and that cruelty is wrong.
 
-**Same list, same need:** [[1 Corinthians 6:9-10]] names many sins, including ones most people have done. Then [[1 Corinthians 6:11]]: God washed and changed people like that. No one is singled out, and no one is beyond hope.
+**God's design:** Scripture presents sex as designed for marriage between one man and one woman ([[Genesis 2:24]], [[Matthew 19:4-6]]), and describes homosexual behavior as sin ([[Romans 1:26-27]]).
 
-**Include yourself.** “I've lied and lusted. I needed forgiveness too.” Everyone has sinned ([[Romans 3:23]]).
+**Same list, same need:** [[1 Corinthians 6:9-10]] names homosexual sin alongside theft, greed, drunkenness, and other sins most people have committed. No one is singled out. Then [[1 Corinthians 6:11]]: “Such were some of you; but you were washed.” God forgave and changed people like that, so no one is beyond hope.
 
-**Love tells the truth.** If a bridge were out, the loving thing is to warn people. God showed His love while we were still sinners ([[Romans 5:8]]).
+**All have sinned:** Everyone has sinned ([[Romans 3:23]]), Christians included. Any one sin makes a person guilty before God ([[James 2:10]]).
 
-**Stay on the gospel.** Don't let it become a debate about one sin. Take them to the Ten Commandments, where all of us are guilty ({{Way of the Master|paths/way-of-the-master/3}}).
+**Love tells the truth:** If a bridge is out, the loving thing is to warn people. God showed His love while people were still sinners ([[Romans 5:8]]).
 
 **My view:** {{Homosexuality|convictions/homosexuality}} and {{Equality of Sin|convictions/equality-of-sin}}.`,
+    talk: `**If they've been hurt by Christians:** Listen first. Say you're sorry. Don't defend bad behavior.
+
+**How to say it:** “Disagreeing isn't hating.” “I've lied and lusted. I needed forgiveness too.” Always include yourself.
+
+**If they say “You think gay people are going to hell”:** “The Bible says every sinner is in trouble, including me. Lying and lust are on the same list.”
+
+**If they say “Love is love”:** “Love tells the truth. If a bridge were out, I'd warn you.”
+
+**Stay on the gospel:** Don't let it become a debate about one sin. Everyone is guilty under the same Law.
+
+**Bridge to the gospel:** “Can I ask you a few questions about the Ten Commandments? I failed them too.” ({{Way of the Master|paths/way-of-the-master/3}})`,
     verses: ["Romans 3:23", "1 Corinthians 6:9-10", "1 Corinthians 6:11", "Romans 5:8"],
     related: ["convictions/homosexuality", "objections/dont-judge"],
   },
@@ -1136,30 +1198,47 @@ The Bible lists homosexual sin right next to lying, stealing, and greed. It puts
     id: "blind-faith",
     category: "Church & Christians",
     title: "Christianity teaches you to believe blindly and never question",
+    topic: "Faith and Reason",
+    lead: "Faith and reason concerns whether Christian belief rests on evidence or on belief without evidence. Many assume faith means believing something without good reasons, or being forbidden to ask questions.",
+    alsoAsked: ["Faith is believing without evidence", "Christians aren't allowed to ask questions", "You just believe what you're told"],
+    inBrief: "Biblical faith is trust based on good reasons; Scripture invites testing and stakes Christianity on a checkable event, the resurrection.",
+    tip: "ask what they mean by faith before you answer.",
+    otherViews: [
+      { name: "Popular skepticism", text: "Faith is belief without evidence, and so it stands opposed to reason and science." },
+      { name: "Fideism", text: "Some religious thinkers hold that faith does not need or rest on rational argument." },
+      { name: "Christianity", text: "Faith is active trust in what there is good reason to believe, and loving God includes the mind." },
+    ],
     sources: ["Greg Koukl", "Lee Strobel", "C.S. Lewis"],
     oneLiner: "The Bible says “examine everything carefully.” Faith is trust based on good reasons.",
     askBack: "What do you mean by faith?",
     short: `Some Christians have discouraged questions, and that's a mistake. But the Bible itself invites testing. Paul praised people who checked his teaching against Scripture. Luke investigated carefully before he wrote. Jesus showed Himself alive with “many convincing proofs.”
 
 Christianity even stakes everything on a fact you can check: if Jesus didn't rise, Paul says our faith is worthless. That's not blind faith. It's trust based on evidence.`,
-    deep: `**Define faith:** Biblical faith is active trust in what you have good reason to believe is true. It's a step into the light, not a leap in the dark. Ask what they mean by faith first ({{Be Precise|skills/be-precise}}).
+    deep: `**Defining faith:** Biblical faith is active trust in what there is good reason to believe is true. It is a step into the light, not a leap in the dark. Some Christians have discouraged questions, but that is not the Bible's teaching.
 
 **The Bible invites questions:**
 - “Examine everything carefully” ([[1 Thessalonians 5:21]])
-- The Bereans checked Paul against Scripture and were called noble-minded ([[Acts 17:11]])
+- The Bereans checked Paul's teaching against Scripture and were called noble-minded ([[Acts 17:11]])
 - Luke investigated everything carefully so readers could know the truth ([[Luke 1:3-4]])
-- Jesus gave “many convincing proofs” over forty days ([[Acts 1:3]])
+- Jesus showed Himself alive with “many convincing proofs” over forty days ([[Acts 1:3]])
 - John wrote down the signs so people could believe ([[John 20:30-31]])
 
-**It can be tested:** If Christ has not been raised, our faith is worthless ([[1 Corinthians 15:17]]). Few religions put everything on one checkable event. (See {{The Resurrection|evidence/resurrection}}.)
+**A testable faith:** Paul wrote that if Christ has not been raised, faith is worthless ([[1 Corinthians 15:17]]). Few religions stake everything on one checkable historical event. See {{The Resurrection|evidence/resurrection}}.
 
-**Love God with your mind** ([[Matthew 22:37-38]]). Thinking is part of worship, not a threat to it.
+**Loving God with the mind:** Jesus commanded loving God with all the mind ([[Matthew 22:37-38]]). Thinking is part of worship, not a threat to it.
 
-**People who questioned hard:** Lee Strobel investigated as an atheist journalist. C.S. Lewis was an atheist who reasoned his way to faith.
+**Skeptics who investigated:** Lee Strobel examined the evidence for Christ as an atheist journalist and became a Christian. C.S. Lewis was an atheist who reasoned his way to faith.`,
+    talk: `**Questions to ask:**
+- “What do you mean by faith?” ({{Be Precise|skills/be-precise}})
+- “Have you questioned your own view as hard?”
 
-**If they were told not to question:** agree that was wrong. Then gently ask: “Have you questioned your own view as hard?”
+**How to say it:** “Faith is trust based on good reasons.” “It's a step into the light, not a leap in the dark.”
 
-**Then the conscience:** “Can I ask you a few questions about the Ten Commandments?” ({{Way of the Master|paths/way-of-the-master/2}})`,
+**If they were told not to question:** Agree that was wrong. The Bible says to examine everything.
+
+**If they say “Faith is believing without evidence”:** “Not in the Bible. Paul said if Jesus didn't rise, our faith is worthless. That's checkable.”
+
+**Bridge to the gospel:** “Can I ask you a few questions about the Ten Commandments?” ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["1 Thessalonians 5:21", "Acts 17:11", "Luke 1:3-4", "Acts 1:3", "1 Corinthians 15:17"],
     related: ["evidence/resurrection", "skills/be-precise"],
   },
@@ -1168,21 +1247,35 @@ Christianity even stakes everything on a fact you can check: if Jesus didn't ris
     id: "hurt-by-church",
     category: "Church & Christians",
     title: "I was hurt by the church",
+    topic: "Church Hurt",
+    lead: "Church hurt is harm done to a person by a church, its leaders, or its members, ranging from unkindness to abuse. It often shapes how a person sees God, not only how they see Christians.",
+    alsoAsked: ["Church people hurt me", "I left the church because of how I was treated", "Christians burned me"],
+    inBrief: "Churches are made of sinners who sometimes do real harm; Jesus Himself is gentle with the hurting and invites them to come to Him.",
+    tip: "listen first. This isn't an argument to win.",
     sources: [],
     oneLiner: `I'm really sorry that happened. Can I ask what happened?`,
     askBack: `Has what happened changed how you see God, or just how you see Christians?`,
     short: `I'm sorry. That's real, and it shouldn't have happened. Churches are full of sinners, and sometimes they hurt people badly.
 
 But Jesus isn't the one who hurt you. He invites the hurting and the worn out to come to Him. Don't let what people did keep you from Him.`,
-    deep: `**Listen first.** This isn't an argument to win. Let them talk. Don't defend the church that hurt them.
+    deep: `**Real harm:** Churches are full of sinners, and sometimes they hurt people badly. Abuse and mistreatment are sin, and God hates them too.
 
-**Separate Jesus from His followers.** Jesus is gentle with the broken ([[Matthew 11:28]], [[Psalm 34:18]]).
+**Jesus and His followers:** The harm done by Christians is distinct from the character of Christ. Jesus invites the weary and burdened to come to Him for rest ([[Matthew 11:28]]). The Lord is near to the brokenhearted ([[Psalm 34:18]]). Jesus promised never to cast out anyone who comes to Him ([[John 6:37]]).
 
-**Name sin as sin.** If someone was abused or mistreated, say clearly that it was wrong. God hates it too.
+**Everyone needs forgiveness:** All have sinned ([[Romans 3:23]]), both those who caused the hurt and those who were hurt. Everyone needs the same forgiveness in Christ.`,
+    talk: `**How to say it:** “I'm really sorry that happened.” Let them talk. Don't defend the church that hurt them.
 
-**Then, when appropriate, the gospel.** We've all sinned, including the people who hurt them, and including them. Everyone needs the same forgiveness ([[Romans 3:23]]).
+**Questions to ask:**
+- “Can I ask what happened?”
+- “Has it changed how you see God, or just how you see Christians?”
 
-**Offer a next step:** a healthy church, or even just reading the Gospel of John on their own.`,
+**If they were abused or mistreated:** Say clearly that it was wrong. God hates it too.
+
+**How to separate Jesus from His followers:** “Jesus isn't the one who hurt you. Don't let what people did keep you from Him.”
+
+**Bridge to the gospel:** Only when appropriate. “We've all sinned, them and us. We all need the same forgiveness.” ({{Way of the Master|paths/way-of-the-master/2}})
+
+**Offer a next step:** A healthy church, or reading the Gospel of John on their own.`,
     verses: ["Matthew 11:28", "Psalm 34:18", "John 6:37"],
     related: ["objections/hypocrites"],
   },
@@ -1191,44 +1284,79 @@ But Jesus isn't the one who hurt you. He invites the hurting and the worn out to
     id: "dont-judge",
     category: "Church & Christians",
     title: "Jesus said don't judge",
+    topic: "Judging in the Bible",
+    lead: "Matthew 7:1, “Do not judge,” is one of the most quoted verses in the Bible, often used to say no one may call another's actions wrong. The wider passage and the rest of Scripture distinguish hypocritical judging from right judgment.",
+    alsoAsked: ["Who are you to judge?", "Only God can judge me", "Judge not, lest ye be judged"],
+    inBrief: "Jesus forbade hypocritical judging, not moral judgment itself; He commanded righteous judgment and told His followers to help others with sin.",
+    tip: "stay humble. Include yourself before you say anything about them.",
     sources: ["Greg Koukl", "Ray Comfort"],
     oneLiner: "He meant hypocritical judging. In the same passage, He said to help others with sin.",
     askBack: `Isn't “you shouldn't judge” a judgment too?`,
     short: `In Matthew 7, Jesus said not to judge hypocritically: take the log out of your own eye *first*, then help your brother with the speck. He also said to “judge with righteous judgment.”
 
 I'm not saying I'm better than you. I've broken God's Law too. I'm telling you what God says so you can be forgiven, the same way I was.`,
-    deep: `**Read the whole passage.** [[Matthew 7:1]] is followed by [[Matthew 7:5]]: remove the log, then help with the speck. Jesus also commands right judgment ([[John 7:24]]).
+    deep: `**The whole passage:** [[Matthew 7:1]] (“Do not judge”) is followed by [[Matthew 7:5]]: first take the log out of one's own eye, then help a brother with the speck. Jesus forbade hypocritical judging, not helping others with sin.
 
-**Self-defeating** ({{Suicide|skills/suicide}}): “You shouldn't judge” is itself a judgment.
+**Righteous judgment:** Jesus also commanded, “judge with righteous judgment” ([[John 7:24]]).
 
-**Include yourself.** Comfort models this: “I'm a liar and a thief too. I'm not judging you. God's Law judges both of us.”
+**Self-defeating:** The statement “You shouldn't judge” is itself a judgment. See {{Suicide|skills/suicide}}.
 
-**Telling the truth isn't hate.** If a bridge is out, warning drivers is love.`,
+**God's Law as judge:** In biblical evangelism the Christian does not stand above the hearer. God's Law judges both, and both need the same forgiveness.
+
+**Truth and love:** Telling the truth is not hate. If a bridge is out, warning drivers is love.`,
+    talk: `**How to say it:** “I'm not saying I'm better than you. I've broken God's Law too.” Ray Comfort models this: “I'm a liar and a thief too. God's Law judges both of us.”
+
+**Questions to ask:**
+- “Isn't ‘you shouldn't judge’ a judgment too?”
+- “Have you read the rest of that passage?”
+
+**If they quote Matthew 7:1:** “Read on to verse 5. He said take the log out first, then help with the speck.”
+
+**Bridge to the gospel:** “I'm telling you what God says so you can be forgiven, the same way I was.” ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["Matthew 7:1", "Matthew 7:5", "John 7:24"],
     related: ["skills/suicide", "objections/morality-relative", "paths/way-of-the-master"],
   },  {
     id: "religion-evil",
     category: "Church & Christians",
     title: "Religion is man-made and evil",
+    topic: "Religion and Violence",
+    lead: "Many people see religion as a human invention responsible for wars and oppression. The question touches on the history of religion, the source of human evil, and the difference between religion and the gospel.",
+    alsoAsked: ["Religion causes all the wars", "Religion is just a way to control people", "Look at the Crusades"],
+    inBrief: "People have done evil in religion's name, but the root is the human heart, and the gospel is God's rescue, not human effort.",
+    tip: "agree that terrible things were done. Then separate Jesus from them.",
+    otherViews: [
+      { name: "New Atheism", text: "Religion is a human invention that breeds division and violence, and the world would be better without it." },
+      { name: "Marxism", text: "Religion is a tool the powerful use to keep people content with oppression." },
+      { name: "Christianity", text: "Evil comes from the human heart; man-made religion cannot fix it, but God can give a new heart through Christ." },
+    ],
     sources: ["Ray Comfort", "C.S. Lewis", "Cliff Knechtle"],
     oneLiner: "Jesus was the harshest critic of man-made religion. The gospel is God reaching down.",
     askBack: `Is your problem with Jesus, or with people who claimed to follow Him?`,
     short: `I agree that people have done terrible things in the name of religion, and Jesus condemned religious hypocrites more strongly than anyone.
 
 But every man-made religion says “do this to earn God's favor.” The gospel says Jesus did it for us, because we can't. And when people do evil in Jesus' name, they're disobeying Him, not following Him. The question isn't what religious people have done. It's what you'll do with Jesus.`,
-    deep: `**Jesus against man-made religion:** He called the religious leaders “whitewashed tombs” ([[Matthew 23:27-28]]) and condemned “teaching as doctrines the precepts of men” ([[Mark 7:6-7]]).
+    deep: `**Jesus against man-made religion:** Jesus was the harshest critic of empty religion. He called the religious leaders “whitewashed tombs” ([[Matthew 23:27-28]]) and condemned “teaching as doctrines the precepts of men” ([[Mark 7:6-7]]).
 
-**Religion says “do,” the gospel says “done”:** Man-made religion tries to earn God's approval. The gospel says no one can, so God provided a Savior ([[Ephesians 2:8-9]]).
+**Religion and the gospel:** Man-made religion says “do this to earn God's favor.” The gospel says no one can, so God provided a Savior who did it for us ([[Ephesians 2:8-9]]). The gospel is God reaching down, not people reaching up.
 
-**Counterfeits prove the real thing:** People who did evil in Jesus' name broke His commands. A counterfeit $20 bill doesn't make real money worthless.
+**Counterfeits and the real thing:** People who did evil in Jesus' name disobeyed His commands rather than following them. A counterfeit $20 bill does not make real money worthless.
 
-**Evil comes from the heart, not just religion:** The 20th century's officially atheist regimes (like Stalin's and Mao's) killed millions. The problem is the human heart ([[Jeremiah 17:9]]), including mine and yours. That's why we need a new heart, not a better religion.
+**The source of evil:** The 20th century's officially atheist regimes, such as Stalin's and Mao's, killed millions. The problem is the human heart ([[Jeremiah 17:9]]), in every person. The need is a new heart, not a better religion.
 
-**Calling it “evil” needs a standard:** If there's no God, “evil” is just an opinion. See {{The Moral Argument|evidence/moral-law}}.
+**A standard for evil:** Calling anything “evil” requires a real moral standard. Without God, “evil” is only an opinion. See {{The Moral Argument|evidence/moral-law}}.
 
-**What real faith does:** Pure religion cares for orphans and widows ([[James 1:27]]). Christians led the way in founding hospitals, caring for the poor, and ending the slave trade.
+**What real faith does:** Pure religion cares for orphans and widows ([[James 1:27]]). Christians led the way in founding hospitals, caring for the poor, and ending the slave trade.`,
+    talk: `**How to say it:** “I agree. Terrible things were done in religion's name.” “Jesus was the harshest critic of man-made religion.”
 
-**Go to the Law:** “Since we both agree people do evil, can I ask about you? Have you ever lied?” ({{Way of the Master|paths/way-of-the-master/3}})`,
+**Questions to ask:**
+- “Is your problem with Jesus, or with people who claimed to follow Him?”
+- “Where does your standard of evil come from?”
+
+**If they say “Religion causes wars”:** “Atheist regimes like Stalin's and Mao's killed millions too. The problem is the human heart.”
+
+**How to frame it:** “Religion says ‘do.’ The gospel says ‘done.’” The question isn't what religious people have done. It's what they'll do with Jesus.
+
+**Bridge to the gospel:** “Since we both agree people do evil, can I ask about you? Have you ever lied?” ({{Way of the Master|paths/way-of-the-master/3}})`,
     verses: ["Matthew 23:27-28", "Mark 7:6-7", "Jeremiah 17:9", "James 1:27", "Ephesians 2:8-9"],
     related: ["objections/hypocrites", "objections/hurt-by-church", "evidence/moral-law", "paths/way-of-the-master"],
   },
@@ -1648,24 +1776,48 @@ Some parts of the Bible are hard to understand. But the main message is not: we'
     id: "jesus-existed",
     category: "Jesus",
     title: "Jesus never existed",
+    topic: "The Historical Jesus",
+    lead: "The historical Jesus refers to what can be known about Jesus of Nazareth from historical sources. Nearly all historians of the ancient world agree that He was a real person.",
+    alsoAsked: ["Isn't Jesus just a legend?", "Is there any evidence outside the Bible?", "Wasn't Jesus made up?"],
+    inBrief: "Nearly all historians, Christian or not, agree Jesus lived and was crucified under Pontius Pilate; non-Christian writers mention Him.",
+    tip: "ask what sources they have read. Most heard it online.",
+    otherViews: [
+      { name: "Christ myth theory", text: "A small minority argue that Jesus never existed and was invented from myth." },
+      { name: "Mainstream historians", text: "Jesus was a real Jewish teacher crucified under Pontius Pilate, whatever one concludes about His miracles." },
+      { name: "Islam", text: "Jesus was a real prophet and Messiah born of a virgin, but not God and not crucified." },
+      { name: "Christianity", text: "Jesus was a real man in history and also God the Son, who died and rose again." },
+    ],
     sources: ["Lee Strobel", "Wes Huff"],
     oneLiner: "Almost no historians believe that, even skeptics. Non-Christian writers mention Him.",
     askBack: "What historians have you read who say He didn't exist?",
     short: `Nearly all historians of the ancient world, Christian or not, agree Jesus was a real person who was crucified under Pontius Pilate.
 
 Roman historian Tacitus and Jewish historian Josephus both mention Him. Even well-known skeptical scholars like Bart Ehrman have written books arguing that Jesus existed. So the real question isn't whether He lived. It's who He was.`,
-    deep: `**Non-Christian sources:**
+    deep: `**Scholarly consensus:** Nearly all historians of the ancient world, Christian or not, agree that Jesus was a real person who was crucified under Pontius Pilate. Bart Ehrman, an agnostic New Testament scholar, wrote *Did Jesus Exist?* (2012) to answer the “myth” theory. His answer is yes.
+
+**Non-Christian sources:**
 - **Tacitus** (Roman historian, early 100s): mentions “Christus” executed by Pontius Pilate during the reign of Tiberius
 - **Josephus** (Jewish historian, late first century): mentions “James, the brother of Jesus who was called Christ,” and has a longer passage about Jesus (part of which was likely added to by later Christian copyists, but most scholars think the core is authentic)
 - **Pliny the Younger** (early 100s): describes Christians worshiping Christ “as to a god”
 
-**Christian sources are historical sources too:** The Gospels and Paul's letters were written within decades of Jesus' life. Paul's letters date to the 50s, and he passes on an early creed ([[1 Corinthians 15:3-4]]).
+**Christian sources are historical sources too:** The Gospels and Paul's letters were written within decades of Jesus' life. Paul's letters date to the 50s, and he passes on an early creed ([[1 Corinthians 15:3-4]]). Luke wrote as a careful investigator ([[Luke 1:3-4]]), and Peter claimed to be an eyewitness ([[2 Peter 1:16]]).
 
-**Scholarly consensus:** Bart Ehrman, an agnostic New Testament scholar, wrote *Did Jesus Exist?* (2012) to answer the “myth” theory. His answer is yes.
+**The next question:** If Jesus existed, the question becomes who He was. See {{Liar, Lunatic, or Lord|evidence/trilemma}}.
 
-**Next step:** If Jesus existed, the question becomes: who was He? (See {{Liar, Lunatic, or Lord|evidence/trilemma}}.)
+**Further reading:** Lee Strobel, *The Case for Christ*, chapter on corroborating evidence (Edwin Yamauchi). Wes Huff also covers the historical evidence for Jesus. See also {{The Resurrection: Minimal Facts|evidence/resurrection}}.`,
+    talk: `**Questions to ask:**
+- “What historians have you read who say He didn't exist?”
+- “What would count as evidence for you?”
 
-**Study:** *The Case for Christ*, chapter on corroborating evidence (Edwin Yamauchi). Wes Huff also covers the historical evidence for Jesus.`,
+**How to say it:** “Almost no historians believe that, even skeptics. Non-Christian writers mention Him.”
+
+**If they say “There's no evidence outside the Bible”:** “Tacitus and Josephus both mention Him. Neither was a Christian.”
+
+**If they say “The Bible doesn't count”:** “The Gospels and Paul's letters are ancient sources too, written within decades.”
+
+**If they say “Christians made it up”:** “Even Bart Ehrman, an agnostic, wrote a book arguing Jesus existed.”
+
+**Bridge to the gospel:** “So the real question isn't whether He lived. It's who He was.” ({{Liar, Lunatic, or Lord|evidence/trilemma}}, then {{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["1 Corinthians 15:3-4", "Luke 1:3-4", "2 Peter 1:16"],
     related: ["evidence/trilemma", "evidence/resurrection"],
   },
@@ -1674,13 +1826,26 @@ Roman historian Tacitus and Jewish historian Josephus both mention Him. Even wel
     id: "jesus-good-teacher",
     category: "Jesus",
     title: "Jesus was just a good teacher",
+    topic: "Jesus as Moral Teacher",
+    lead: "Many people respect Jesus as a wise moral teacher while denying that He is God. This view must account for His claims about Himself.",
+    alsoAsked: ["Jesus was a great moral example, nothing more", "Jesus was a prophet, not God", "I like Jesus' teachings, not the religion"],
+    inBrief: "Jesus claimed to be God; a mere good teacher would not, so He is either a liar, a lunatic, or Lord.",
+    tip: "agree He was a good teacher, then look at what He taught.",
+    otherViews: [
+      { name: "Secular view", text: "Jesus was a wise ethical teacher whose followers later turned Him into a god." },
+      { name: "Islam", text: "Jesus was a great prophet and the Messiah, but only a man and not the Son of God." },
+      { name: "Judaism", text: "Jesus was a Jewish teacher, but not the Messiah and not divine." },
+      { name: "Christianity", text: "Jesus is a good teacher because He is God the Son, and His claims about Himself are true." },
+    ],
     sources: ["C.S. Lewis", "Ray Comfort"],
     oneLiner: "A good teacher doesn't claim to be God. Jesus did.",
     askBack: "What would you think of a teacher today who said he was God?",
     short: `Jesus claimed to forgive sins, to be one with the Father, and to be the only way to God. If those claims were false, He wasn't a good teacher. He was either lying or deluded.
 
 The only other option is that He was telling the truth. And then we have to do what He said.`,
-    deep: `**Lewis's trilemma:** Liar, lunatic, or Lord. See {{Liar, Lunatic, or Lord|evidence/trilemma}}.
+    deep: `**The problem:** Jesus claimed to forgive sins, to be one with the Father, and to be the only way to God. If those claims were false, He was not a good teacher; He was either lying or deluded. The only other option is that He was telling the truth, and then His words must be obeyed.
+
+**Lewis's trilemma:** C.S. Lewis argued that Jesus is either liar, lunatic, or Lord, and that “great moral teacher” is not an option He left open. See {{Liar, Lunatic, or Lord|evidence/trilemma}}.
 
 **His claims:**
 - Forgave sins against God ([[Mark 2:5-7]])
@@ -1689,9 +1854,20 @@ The only other option is that He was telling the truth. And then we have to do w
 - The only way to the Father ([[John 14:6]])
 - Accepted worship ([[John 20:28]])
 
-**Take His teaching seriously:** If they respect His teaching, show them what He taught, like lust being adultery of the heart ([[Matthew 5:27-28]]). That leads right into the Law.
+**What He taught:** Jesus' moral teaching reaches the heart; for example, lust is adultery of the heart ([[Matthew 5:27-28]]). He also spoke about judgment and hell more than anyone else in the Bible ([[Matthew 10:28]]).
 
-**Ray Comfort's angle:** “What did this good teacher say about hell?” Jesus spoke about judgment more than anyone else in the Bible.`,
+**Further reading:** C.S. Lewis, *Mere Christianity*. See also {{Jesus never claimed to be God|objections/jesus-not-god}}.`,
+    talk: `**Questions to ask:**
+- “What would you think of a teacher today who said he was God?”
+- “What did this good teacher say about hell?” (Ray Comfort's angle)
+
+**How to say it:** “A good teacher doesn't claim to be God. Jesus did.”
+
+**If they respect His teaching:** Show them what He taught, like lust being adultery of the heart ([[Matthew 5:27-28]]). That leads right into the Law.
+
+**If they say “He never claimed to be God”:** Point to “Before Abraham was born, I am” ([[John 8:58]]). See {{Jesus never claimed to be God|objections/jesus-not-god}}.
+
+**Bridge to the gospel:** “Jesus said lust is adultery of the heart. Have you ever looked with lust?” ({{Way of the Master|paths/way-of-the-master/3}})`,
     verses: ["Mark 2:5-7", "John 8:58", "John 10:30", "John 14:6"],
     related: ["evidence/trilemma", "objections/jesus-not-god", "paths/way-of-the-master"],
   },
@@ -1700,24 +1876,53 @@ The only other option is that He was telling the truth. And then we have to do w
     id: "resurrection-myth",
     category: "Jesus",
     title: "The resurrection didn't happen",
+    topic: "The Resurrection of Jesus",
+    lead: "The resurrection is the Christian claim that Jesus rose bodily from the dead three days after His crucifixion. Christianity stands or falls on whether it happened.",
+    alsoAsked: ["Dead people don't come back to life", "The disciples just hallucinated", "Someone stole the body"],
+    inBrief: "The resurrection best explains the facts most scholars accept: Jesus' death, the empty tomb, and the appearances to followers, skeptics, and enemies.",
+    tip: "ask what they think happened to the body.",
+    otherViews: [
+      { name: "Naturalism", text: "Dead people do not rise, so the appearances must have been visions, legends, or mistakes." },
+      { name: "Islam", text: "Jesus was not crucified or killed; God raised Him to heaven alive." },
+      { name: "Judaism", text: "Jesus died and did not rise; the empty tomb is traditionally explained as the body being stolen." },
+      { name: "Christianity", text: "Jesus rose bodily from the dead, proving He is Lord and the coming Judge." },
+    ],
     sources: ["Lee Strobel"],
     oneLiner: "Then what explains the empty tomb, and disciples dying for saying they saw Him alive?",
     askBack: "What do you think happened to the body?",
     short: `A handful of facts are accepted by most scholars, even skeptical ones: Jesus died by crucifixion, His followers believed they saw Him alive, and even enemies like Paul and skeptics like His brother James became believers.
 
 Every alternative theory struggles to explain all of those facts together. The resurrection explains all of them. And if Jesus rose, He's the One we'll answer to.`,
-    deep: `**Full outline:** See {{The Resurrection: Minimal Facts|evidence/resurrection}}.
+    deep: `**Why it matters:** Paul said that if Christ has not been raised, Christian faith is worthless ([[1 Corinthians 15:17]]). Christianity invites investigation.
 
-**Why it matters:** Paul said if Christ wasn't raised, Christianity is worthless ([[1 Corinthians 15:17]]). Christianity invites investigation.
+**The minimal facts:** A handful of facts are accepted by most scholars, even skeptical ones:
+- Jesus died by crucifixion
+- His followers believed they saw Him alive ([[1 Corinthians 15:3-4]])
+- Even an enemy, Paul, and a skeptic, Jesus' brother James, became believers
 
-**Ask about alternatives:**
+**The alternatives:** Every alternative theory struggles to explain all of these facts together.
+- **The disciples lied:** they were willing to suffer and die for the claim, and people do not die for something they know is false.
+- **Hallucinations:** Jesus appeared to more than five hundred people at once ([[1 Corinthians 15:6]]), and groups do not share the same hallucination.
+- **The body was stolen or lost:** the authorities could have ended the movement by producing the body, and did not.
+
+The resurrection explains all the facts together. See {{The Resurrection: Minimal Facts|evidence/resurrection}}.
+
+**What it means:** God has given proof that He will judge the world through Jesus by raising Him from the dead ([[Acts 17:30-31]]).
+
+**Further reading:** Lee Strobel, *The Case for Christ*. Gary Habermas and Michael Licona, *The Case for the Resurrection of Jesus*.`,
+    talk: `**Questions to ask:**
+- “What do you think happened to the body?”
 - “Do you think the disciples lied? Would they die for something they knew was false?”
 - “Could hundreds of people share the same hallucination?” ([[1 Corinthians 15:6]])
 - “Why didn't the authorities just produce the body?”
 
-**Steer back:** God has proven He will judge the world by raising Jesus from the dead ([[Acts 17:30-31]]). That leads straight to the Law and repentance.
+**How to say it:** “Then what explains the empty tomb, and disciples dying for saying they saw Him alive?”
 
-**Study:** *The Case for Christ*; *The Case for the Resurrection of Jesus* (Habermas and Licona).`,
+**If they say “Dead people don't rise”:** “Normally, no. That's why it would mean something if one did.”
+
+**Steer back:** God proved He will judge the world by raising Jesus ([[Acts 17:30-31]]). “If Jesus rose, He's the One we'll answer to.”
+
+**Bridge to the gospel:** That leads straight to the Law and repentance ({{Way of the Master|paths/way-of-the-master/2}}).`,
     verses: ["1 Corinthians 15:3-4", "1 Corinthians 15:6", "1 Corinthians 15:17", "Acts 17:30-31"],
     related: ["evidence/resurrection", "paths/way-of-the-master"],
   },
@@ -1726,24 +1931,48 @@ Every alternative theory struggles to explain all of those facts together. The r
     id: "jesus-not-god",
     category: "Jesus",
     title: "Jesus never claimed to be God",
+    topic: "The Deity of Christ",
+    lead: "The deity of Christ is the teaching that Jesus is God the Son, fully divine as well as fully human. A common challenge is that Jesus never claimed this Himself.",
+    alsoAsked: ["Where did Jesus ever say “I am God”?", "Wasn't Jesus' divinity invented later by the church?", "Jesus was just a prophet"],
+    inBrief: "Jesus claimed divine authority, God's own name, and worship; His enemies understood this and sought His death for blasphemy.",
+    tip: "ask why His enemies wanted Him dead.",
+    otherViews: [
+      { name: "Islam", text: "Jesus was a great prophet and the Messiah but only a man; calling Him God is a serious error." },
+      { name: "Jehovah's Witnesses", text: "Jesus is God's first creation, a mighty spirit being, but not God Almighty." },
+      { name: "Skeptical scholarship", text: "Belief in Jesus' divinity developed among His followers after His death." },
+      { name: "Christianity", text: "Jesus is God the Son, who claimed divine identity and proved it by rising from the dead." },
+    ],
     sources: ["Lee Strobel", "Cliff Knechtle"],
     oneLiner: "He did, and His hearers understood. That's why they tried to stone Him for blasphemy.",
     askBack: "Why do you think the religious leaders wanted Him executed?",
     short: `Jesus didn't usually say the words “I am God,” but He said and did things only God could. He forgave sins, claimed God's own name, “I am,” and accepted worship.
 
 His enemies understood. At His trial, the high priest called His claim blasphemy, and that's why they sought His death.`,
-    deep: `**What He claimed:**
+    deep: `**The claim:** Jesus did not usually say the words “I am God,” but He said and did things only God could do. His hearers understood, which is why they tried to stone Him for blasphemy.
+
+**What He claimed:**
 - Forgave sins: “who can forgive sins but God alone?” ([[Mark 2:5-7]])
 - Used God's name: “Before Abraham was born, I am” ([[John 8:58]]). They picked up stones.
 - “I and the Father are one” ([[John 10:30]]). Again they picked up stones, because He made Himself out to be God.
-- Claimed to be the divine Son of Man of Daniel 7 at His trial ([[Mark 14:62]])
+- Claimed to be the divine Son of Man of Daniel 7 at His trial ([[Mark 14:62]]). The high priest called this blasphemy, and the council sought His death.
 - Accepted worship from Thomas ([[John 20:28]])
 
-**Why He spoke this way:** Jesus revealed who He was through His actions and Old Testament titles His Jewish audience would recognize.
+**Why He spoke this way:** Jesus revealed who He was through His actions and through Old Testament titles His Jewish audience would recognize.
 
-**Ask:** “If Jesus wasn't claiming to be God, why did His enemies keep accusing Him of blasphemy?”
+**The next question:** If Jesus claimed to be God, He was liar, lunatic, or Lord. See {{Liar, Lunatic, or Lord|evidence/trilemma}}.
 
-**Next step:** {{Liar, Lunatic, or Lord|evidence/trilemma}}.`,
+**Further reading:** Lee Strobel, *The Case for Christ*. See also {{Jesus was just a good teacher|objections/jesus-good-teacher}}.`,
+    talk: `**Questions to ask:**
+- “Why do you think the religious leaders wanted Him executed?”
+- “If Jesus wasn't claiming to be God, why did His enemies keep accusing Him of blasphemy?”
+
+**How to say it:** “He did, and His hearers understood. That's why they tried to stone Him.”
+
+**If they say “He never said the words ‘I am God’”:** “He forgave sins, took God's name ‘I am,’ and accepted worship. Those say it louder.”
+
+**If they're Muslim or a Jehovah's Witness:** Go slowly through [[John 8:58]] and [[John 20:28]]. See {{Muslim|people/muslim}} and {{Jehovah's Witness|people/jw}}.
+
+**Bridge to the gospel:** “If He is God, He's the One who will judge us.” ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["Mark 2:5-7", "John 8:58", "John 10:30", "Mark 14:62", "John 20:28"],
     related: ["evidence/trilemma", "objections/jesus-good-teacher"],
   },
@@ -1753,26 +1982,49 @@ His enemies understood. At His trial, the high priest called His claim blasphemy
     id: "science-disproves-god",
     category: "Science",
     title: "Science disproves God",
+    topic: "Science and God",
+    lead: "The relationship between science and belief in God is often framed as a conflict. Many of the founders of modern science believed in God, and several scientific findings raise questions that science alone cannot answer.",
+    alsoAsked: ["Science has replaced God", "Isn't religion anti-science?", "There's no scientific evidence for God"],
+    inBrief: "Science explains how nature works but cannot explain why anything exists; its findings, such as a beginning and fine-tuning, point toward a Creator.",
+    tip: "ask which discovery they mean. Often it's a general impression.",
+    otherViews: [
+      { name: "Scientism", text: "Only what science can test counts as knowledge, so God is at best unknowable." },
+      { name: "Conflict thesis", text: "Science and religion have always been at war, and science keeps winning ground." },
+      { name: "Christianity", text: "God made an orderly world that can be studied, so science explores His work and points to Him." },
+    ],
     sources: ["Lee Strobel", "Greg Koukl"],
     oneLiner: "Science explains how things work. It can't explain why there's anything at all.",
     askBack: "What scientific discovery do you think disproved God?",
     short: `Science and God aren't competitors. Explaining how a car engine works doesn't disprove that someone built the car.
 
 Many of the founders of modern science, like Kepler, Boyle, Newton and Faraday, believed in God. They studied nature because they expected an orderly universe made by a rational Creator. And no experiment can erase a guilty conscience.`,
-    deep: `**Self-defeating:** “Only science can tell us what's true” can't be proven by science. See {{Suicide|skills/suicide}}.
+    deep: `**Mechanism and agent:** Science explains how things work. Explaining how a car engine works does not disprove that someone built the car. Knowing how gravity works does not say why there is gravity, or why there is a universe at all.
+
+**Self-defeating claim:** “Only science can tell us what's true” cannot itself be proven by science. See {{Suicide|skills/suicide}}.
+
+**The founders of modern science:** Kepler, Boyle, Newton, and Faraday, among others, believed in God. They studied nature because they expected an orderly universe made by a rational Creator.
 
 **Science points toward God:**
-- The universe had a beginning. What caused it? ({{The Cosmological Argument|evidence/cosmological}})
-- The laws of physics are finely balanced for life ({{Fine-Tuning|evidence/fine-tuning}})
-- The universe is orderly and understandable. Why?
+- The universe had a beginning ([[Genesis 1:1]]). What caused it? See {{The Cosmological Argument|evidence/cosmological}}.
+- The laws of physics are finely balanced for life. See {{Fine-Tuning|evidence/fine-tuning}}.
+- The universe is orderly and understandable, which needs an explanation.
 
-**Mechanism vs. agent:** Knowing how gravity works doesn't tell you why there is gravity or why there's a universe at all.
+**The Bible's view:** Creation reveals God ([[Psalm 19:1]], [[Romans 1:20]]). People know God exists but suppress the truth ([[Romans 1:18]]).
 
-**The Bible's view:** Creation reveals God ([[Psalm 19:1]], [[Romans 1:20]]). People know God exists but suppress it ([[Romans 1:18]]).
+**The conscience:** No experiment removes a guilty conscience. The moral witness within each person is a separate testimony to God.
 
-**Steer back:** Even if they're unconvinced by the arguments, their conscience still testifies against them. Move to the Law.
+**Further reading:** Lee Strobel, *The Case for a Creator*. John Lennox, *God's Undertaker*.`,
+    talk: `**Questions to ask:**
+- “What scientific discovery do you think disproved God?”
+- “Can science prove that only science gives truth?” ({{Suicide|skills/suicide}})
 
-**Study:** Lee Strobel, *The Case for a Creator*; John Lennox, *God's Undertaker*.`,
+**How to say it:** “Science explains how things work. It can't explain why there's anything at all.” “Knowing how an engine works doesn't mean no one built the car.”
+
+**If they say “Scientists don't believe in God”:** “Newton, Kepler, Boyle and Faraday did. They expected order because they believed in a Creator.”
+
+**Steer back:** Don't get stuck. Even if they're unconvinced by the arguments, their conscience still speaks.
+
+**Bridge to the gospel:** “No experiment can erase a guilty conscience. Can I ask you about the Ten Commandments?” ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["Psalm 19:1", "Romans 1:20", "Genesis 1:1", "Romans 1:18"],
     related: ["evidence/cosmological", "evidence/fine-tuning", "skills/suicide", "paths/way-of-the-master"],
   },
@@ -1781,26 +2033,49 @@ Many of the founders of modern science, like Kepler, Boyle, Newton and Faraday, 
     id: "evolution",
     category: "Science",
     title: "Evolution explains everything",
+    topic: "Evolution and Origins",
+    lead: "The theory of evolution describes how living things change over generations, and it is often presented as a full account of origins without God. Several of the largest questions about origins lie outside what it explains.",
+    alsoAsked: ["Evolution proves there's no God", "We just evolved", "Darwin explained everything"],
+    inBrief: "Evolution cannot explain why anything exists, how life began from non-life, the information in DNA, consciousness, or real moral obligation.",
+    tip: "don't get stuck in a biology debate. Keep it short.",
+    otherViews: [
+      { name: "Naturalism", text: "Unguided natural processes account for life's origin and diversity, with no need for a Creator." },
+      { name: "Theistic evolution", text: "Some Christians hold that God used evolutionary processes to create life." },
+      { name: "Creationism", text: "God created living things according to their kinds, and change within kinds does not produce new kinds." },
+    ],
     sources: ["Ray Comfort", "Living Waters", "Lee Strobel"],
     oneLiner: "It can't explain where the universe came from, how life began, or right from wrong.",
     askBack: "Where did the first living thing come from?",
     short: `Whatever someone thinks about evolution, it doesn't touch the biggest questions: why is there a universe, how did life begin from non-life, where does the information in DNA come from, and why do we have a conscience?
 
 And no theory of biology changes the fact that we've all broken God's Law and will stand before Him.`,
-    deep: `**Don't get stuck:** Christians hold a range of views on the age of the earth and on how God created. Keep the focus on God as Creator and on the gospel, not on winning a biology debate.
-
-**What evolution doesn't explain:**
+    deep: `**What evolution doesn't explain:**
 - Why anything exists at all ([[Genesis 1:1]])
 - The origin of the first life from non-living chemicals
 - The origin of the information coded in DNA
 - Consciousness and reason
 - Real moral obligation (see {{The Moral Law|evidence/moral-law}})
 
-**Ray Comfort's approach** (*Evolution vs. God*): Ask for observable evidence of one kind of creature becoming a different kind. Then pivot: “Can I ask you a different question? Do you think you're a good person?”
+**Observable change:** Ray Comfort's film *Evolution vs. God* presses for observable evidence of one kind of creature becoming a different kind, as distinct from variation within a kind.
 
-**The heart issue:** People love darkness rather than light ([[John 3:19]]). Sometimes evolution is a refuge from accountability.
+**Creation and the Creator:** Creation itself shows God's power and nature, so that people are without excuse ([[Romans 1:20]]).
 
-**Study:** Lee Strobel, *The Case for a Creator*; Living Waters' film *Evolution vs. God*.`,
+**Christian views:** Christians hold a range of views on the age of the earth and on how God created, while affirming God as Creator. See {{Creation & Literal Days|convictions/creation}}.
+
+**The heart issue:** People love darkness rather than light ([[John 3:19]]). For some, evolution can serve as a refuge from accountability to God.
+
+**Accountability remains:** No theory of biology changes the fact that everyone has broken God's Law and will stand before Him.
+
+**Further reading:** Lee Strobel, *The Case for a Creator*. Living Waters' film *Evolution vs. God*.`,
+    talk: `**Questions to ask:**
+- “Where did the first living thing come from?”
+- “Can you give me observable evidence of one kind becoming another kind?”
+
+**How to say it:** “Evolution can't explain where the universe came from, how life began, or right from wrong.”
+
+**Don't get stuck:** Keep the focus on God as Creator and on the gospel, not on winning a biology debate.
+
+**Bridge to the gospel:** Ray Comfort's pivot: “Can I ask you a different question? Do you think you're a good person?” ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["Genesis 1:1", "Romans 1:20", "John 3:19"],
     related: ["objections/science-disproves-god", "evidence/moral-law", "paths/way-of-the-master"],
   },
@@ -1808,25 +2083,48 @@ And no theory of biology changes the fact that we've all broken God's Law and wi
     id: "dinosaurs-age",
     category: "Science",
     title: "What about dinosaurs and the age of the earth?",
+    topic: "Dinosaurs and the Age of the Earth",
+    lead: "Fossils and modern dating methods are often taken to show an earth billions of years old with dinosaurs living long before humans. Christians differ on how this fits with Genesis, though all affirm God as Creator.",
+    alsoAsked: ["How old is the earth?", "Where do dinosaurs fit in the Bible?", "Doesn't carbon dating disprove the Bible?"],
+    inBrief: "God made everything in six days, dinosaurs with people on day six; dating assumes the past, and God may have made a mature creation.",
+    tip: "answer briefly. Then bring it back to the Law.",
+    otherViews: [
+      { name: "Naturalism", text: "The earth is about 4.5 billion years old, and dinosaurs died out tens of millions of years before humans appeared." },
+      { name: "Old-earth Christians", text: "The days of Genesis are read as long ages, a gap, or a literary framework, while still affirming God as Creator." },
+      { name: "Young-earth Christians", text: "God created in six literal days a few thousand years ago, and land animals, dinosaurs included, were made alongside people." },
+    ],
     sources: ["Ray Comfort", "Living Waters"],
     oneLiner: "Dinosaurs were made on day six, with people. The bigger question is who made them.",
     askBack: "If the earth is old, does that change whether you've broken God's Law?",
     short: `The Bible says God made everything in six days, including land animals like dinosaurs. Dating methods depend on assumptions about the past, and God may have made a mature earth, just as Adam was created a grown man.
 
 Christians do differ on the age of the earth, but none doubt that God made it. And either way, you'll still stand before Him one day.`,
-    deep: `**Six days:** “In six days the LORD made the heavens and the earth” ([[Exodus 20:11]]). Land animals and people were made on day six.
+    deep: `**Six days:** “In six days the LORD made the heavens and the earth” ([[Exodus 20:11]]). Land animals, including dinosaurs, and people were made on day six.
 
 **People from the beginning:** Jesus said God made them male and female “from the beginning of creation” ([[Mark 10:6]]).
 
 **Death came through sin** ([[Romans 5:12]]), so death and fossils came after the fall.
 
-**Mature creation:** Adam, trees, and starlight could have been made already “grown.” Apparent age isn't proof of actual age.
+**Dating methods:** Dating methods depend on assumptions about conditions in the unobserved past.
+
+**Mature creation:** God may have made a mature earth. Adam was created a grown man ([[Genesis 2:7]]), trees were made already bearing fruit ([[Genesis 1:11-12]]), and starlight could have been made already “grown.” Apparent age is not proof of actual age.
 
 **Job's Behemoth** (Job 40:15) is described as a huge animal with a tail like a cedar. Some think it was a dinosaur.
 
-**Don't get sidetracked.** Answer briefly, then bring it back to God's Law and the cross. Creation itself shows there's a Creator ([[Romans 1:20]]).
+**How Christians differ:** Christians differ on the age of the earth, but none doubt that God made it. Creation itself shows there is a Creator ([[Romans 1:20]]).
 
 **My view:** {{Creation & Literal Days|convictions/creation}}.`,
+    talk: `**How to say it:** “Dinosaurs were made on day six, with people.” “Adam was made a grown man. The earth could be made mature too.”
+
+**Questions to ask:**
+- “If the earth is old, does that change whether you've broken God's Law?”
+- “Who made the dinosaurs?”
+
+**If they say “Carbon dating proves millions of years”:** “Dating depends on assumptions about the past nobody saw.”
+
+**Don't get sidetracked:** Answer briefly. Either way, they'll still stand before God one day.
+
+**Bridge to the gospel:** “The bigger question is who made them, and whether you're ready to meet Him.” ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["Exodus 20:11", "Mark 10:6", "Romans 5:12", "Romans 1:20"],
     related: ["convictions/creation", "objections/evolution"],
   },
@@ -1835,21 +2133,43 @@ Christians do differ on the age of the earth, but none doubt that God made it. A
     id: "miracles",
     category: "Science",
     title: "Miracles are impossible",
+    topic: "The Possibility of Miracles",
+    lead: "A miracle is an act of God in the natural world that nature alone would not produce. Whether miracles are possible depends largely on whether God exists.",
+    alsoAsked: ["Science shows miracles can't happen", "Dead people don't rise", "Miracles are just stories from a superstitious age"],
+    inBrief: "If God exists, miracles are possible; ruling them out assumes there is no God, and Christianity rests on one investigable miracle, the resurrection.",
+    otherViews: [
+      { name: "Naturalism", text: "Nature is a closed system of cause and effect, so miracles cannot occur." },
+      { name: "David Hume", text: "The Scottish skeptic argued that testimony can never outweigh the uniform experience against miracles." },
+      { name: "Christianity", text: "God made nature's laws and is free to act within His creation, as He did supremely in raising Jesus." },
+    ],
     sources: ["C.S. Lewis", "Lee Strobel"],
     oneLiner: "If God exists, miracles aren't impossible at all. The real question is whether God exists.",
     askBack: "Do you believe the universe had a beginning?",
     short: `A miracle is God acting in the world He made. If there's a God who created the universe from nothing, raising a man from the dead is not hard for Him.
 
 Saying miracles can't happen assumes there's no God, which is the very question we're asking. And Christianity rests on one miracle you can investigate: the resurrection.`,
-    deep: `**C.S. Lewis, *Miracles*:** Nature has regular patterns, which is exactly why a miracle stands out. Regular laws don't forbid the Lawgiver from acting.
+    deep: `**Definition:** A miracle is God acting in the world He made.
 
-**Circular reasoning:** “Miracles never happen, so any report of a miracle must be false” assumes the conclusion.
+**Regular laws and the Lawgiver** (C.S. Lewis, *Miracles*): Nature has regular patterns, which is exactly why a miracle stands out. Regular laws do not forbid the Lawgiver from acting.
 
-**The biggest miracle:** [[Genesis 1:1]]. If the universe came from nothing by God's power, the resurrection is a small thing by comparison.
+**Circular reasoning:** “Miracles never happen, so any report of a miracle must be false” assumes the conclusion. Saying miracles can't happen assumes there is no God, which is the question under discussion.
 
-**Test the claim:** Christianity rests on one checkable miracle, the resurrection ({{Minimal Facts|evidence/resurrection}}).
+**The biggest miracle:** [[Genesis 1:1]]. If the universe came from nothing by God's power, raising a man from the dead is a small thing by comparison. See {{The Cosmological Argument|evidence/cosmological}}.
 
-**Study:** C.S. Lewis, *Miracles*; Lee Strobel, *The Case for Miracles*.`,
+**A testable miracle:** Christianity rests on one investigable miracle, the resurrection. If Christ has not been raised, faith is worthless ([[1 Corinthians 15:17]]). See {{Minimal Facts|evidence/resurrection}}.
+
+**The resurrection and judgment:** God has fixed a day to judge the world, and He gave proof of it by raising Jesus from the dead ([[Acts 17:30-31]]).
+
+**Further reading:** C.S. Lewis, *Miracles*. Lee Strobel, *The Case for Miracles*.`,
+    talk: `**Questions to ask:**
+- “Do you believe the universe had a beginning?”
+- “If God exists, could He do a miracle?”
+
+**How to say it:** “If God exists, miracles aren't impossible at all.” “The real question is whether God exists.”
+
+**If they say “Science shows the dead don't rise”:** “Agreed, not naturally. That's why it would be a miracle.”
+
+**Bridge to the gospel:** The resurrection means a day of judgment is coming ([[Acts 17:30-31]]). “Are you ready for that day?” ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["Genesis 1:1", "1 Corinthians 15:17", "Acts 17:30-31"],
     related: ["evidence/resurrection", "evidence/cosmological"],
   },
@@ -1859,21 +2179,44 @@ Saying miracles can't happen assumes there's no God, which is the very question 
     id: "sincere-religions",
     category: "Other Religions",
     title: "What about sincere people of other religions?",
+    topic: "Sincerity and Religious Truth",
+    lead: "This question asks whether devout and sincere followers of other religions can be saved through their own faith. It raises the relationship between sincerity, truth, and God's fairness.",
+    alsoAsked: ["Won't God accept people who sincerely follow their religion?", "What about a devout Muslim or Buddhist?", "Isn't it enough to be sincere?"],
+    inBrief: "Sincerity does not remove sin; everyone has broken God's Law, and only Christ's payment, not religious effort, can save.",
+    tip: "bring it back to the person in front of you, not other people.",
+    otherViews: [
+      { name: "Religious pluralism", text: "Sincere devotion within any tradition is a valid response to the divine." },
+      { name: "Inclusivism", text: "Some Christians hold that people may be saved through Christ without knowing Him, if they respond to the light they have." },
+      { name: "Christianity", text: "Salvation comes by grace through faith in Christ, and the gospel is to be preached to all people so they can repent and believe." },
+    ],
     sources: ["Ray Comfort", "Cliff Knechtle"],
     oneLiner: "Sincere doesn't mean true. You can sincerely take the wrong medicine.",
     askBack: "Can someone be sincere and still be wrong?",
     short: `Being sincere doesn't remove our sin. Every religion tries to reach God through good works, but we've all broken God's Law, and no amount of good deeds can erase that.
 
 Christianity is different: God came to us. Jesus paid the penalty we owe. That's why He is the only way.`,
-    deep: `**Sincerely wrong:** A way can seem right and still end in death ([[Proverbs 14:12]]). Paul described sincere religious people who had zeal without knowledge ([[Romans 10:2-3]]).
+    deep: `**Sincerely wrong:** Sincerity does not make a belief true; a person can sincerely take the wrong medicine. Scripture says a way can seem right and still end in death ([[Proverbs 14:12]]). Paul described sincere religious people who had zeal for God without knowledge, seeking to establish their own righteousness ([[Romans 10:2-3]]).
 
-**Every religion vs. the gospel:** Most religions say “do.” Christianity says “done.” No one can earn heaven ([[Ephesians 2:8-9]]).
+**The problem of sin:** Sincerity does not remove sin. All have broken God's Law ([[Romans 3:23]]), and no amount of good deeds can erase that.
 
-**Avoid arguing about other people:** Bring it back to the person in front of you: “Let's talk about you. Do you think you're a good person?” ({{I'm a good person|objections/good-person}})
+**Every religion and the gospel:** Most religions try to reach God through good works; they say “do.” Christianity says “done”: God came to people, and Jesus paid the penalty they owe. No one can earn heaven ([[Ephesians 2:8-9]]). This is why Jesus is the only way ([[John 14:6]]).
 
-**God is fair:** He commands all people everywhere to repent ([[Acts 17:30-31]]) and is patient so they can ([[2 Peter 3:9]]).
+**God is fair:** God commands all people everywhere to repent ([[Acts 17:30-31]]) and is patient, not wishing for any to perish ([[2 Peter 3:9]]).
 
-**See also:** {{All religions lead to God|objections/all-religions}}.`,
+**Further reading:** Ray Comfort and Living Waters on the Law and grace. See also {{All religions lead to God|objections/all-religions}} and {{I'm a good person|objections/good-person}}.`,
+    talk: `**How to say it:** “Sincere doesn't mean true. You can sincerely take the wrong medicine.”
+
+**Questions to ask:**
+- “Can someone be sincere and still be wrong?”
+- “What does that religion say you have to do to reach God?”
+
+**Avoid arguing about other people.** Bring it back to the person in front of you: “Let's talk about you. Do you think you're a good person?” ({{I'm a good person|objections/good-person}})
+
+**If they say “That's not fair to them”:** “God commands everyone to repent, and He's patient so they can” ([[2 Peter 3:9]]).
+
+**If they say “All religions are trying to be good”:** “Most religions say ‘do.’ Christianity says ‘done.’”
+
+**Bridge to the gospel:** Take them through the Law questions ({{Way of the Master|paths/way-of-the-master/3}}).`,
     verses: ["Proverbs 14:12", "Romans 10:2-3", "John 14:6", "Ephesians 2:8-9"],
     related: ["objections/all-religions", "objections/good-person", "paths/way-of-the-master"],
   },
@@ -1882,23 +2225,42 @@ Christianity is different: God came to us. Jesus paid the penalty we owe. That's
     id: "western-religion",
     category: "Other Religions",
     title: "Christianity is a Western, white man's religion",
+    topic: "Christianity as a Global Faith",
+    lead: "Some people regard Christianity as a European or Western religion tied to colonialism and race. Its origins in the Middle East and its global spread bear on that claim.",
+    alsoAsked: ["Isn't Christianity the white man's religion?", "Wasn't Christianity forced on people by colonizers?", "Why should I follow a European religion?"],
+    inBrief: "Christianity began in the Middle East, spread early through Asia and Africa, and today most Christians live outside the West.",
+    tip: "acknowledge real wrongs done in Christ's name before giving history.",
     sources: ["Cliff Knechtle"],
     oneLiner: "It began in the Middle East. Most Christians now live in Africa, Asia, and Latin America.",
     askBack: "Where do you think Christianity started?",
     short: `Jesus was a Jewish man from the Middle East. The early church spread across Asia and Africa (Egypt, Ethiopia, Syria) long before it reached most of Europe.
 
 Today, most of the world's Christians live in the Global South. The gospel is for every nation, and heaven will include people from every tribe and language. That includes you.`,
-    deep: `**History:**
-- Christianity began in Jerusalem
+    deep: `**Origins:** Jesus was a Jewish man from the Middle East, and Christianity began in Jerusalem.
+
+**Early spread:** The church spread across Asia and Africa long before it reached most of Europe.
 - One of the first converts recorded in Acts was an Ethiopian official (Acts 8)
 - Early centers of the church included Antioch (Syria), Alexandria (Egypt) and North Africa, the home of Augustine
-- Christians have been in Africa and Asia for many centuries
+- Christians have been in Africa and Asia, including Egypt, Ethiopia and Syria, for many centuries
 
-**Today:** Most Christians live in Africa, Latin America and Asia, and that share keeps growing.
+**Today:** Most of the world's Christians live in the Global South: Africa, Latin America and Asia. That share keeps growing.
 
-**The Bible's view:** One human family ([[Acts 17:26]]). In Christ there is no racial division ([[Galatians 3:28]]). Heaven is from every nation ([[Revelation 7:9]]).
+**The Bible's view:** God made one human family ([[Acts 17:26]]). In Christ there is no racial division ([[Galatians 3:28]]). The gospel is for every nation ([[Matthew 28:19]]), and heaven will include people from every nation, tribe and language ([[Revelation 7:9]]).
 
-**Acknowledge wrongs:** Some who called themselves Christians have used the faith to justify racism and oppression. That contradicts the Bible's teaching rather than following it.`,
+**Wrongs done in Christ's name:** Some who called themselves Christians have used the faith to justify racism and oppression. That contradicts the Bible's teaching rather than following it.
+
+**Further reading:** Cliff Knechtle's campus dialogues on this question.`,
+    talk: `**Questions to ask:**
+- “Where do you think Christianity started?”
+- “Where do most Christians live today?”
+
+**How to say it:** “It began in the Middle East. Most Christians now live in Africa, Asia, and Latin America.”
+
+**If they bring up racism or colonialism:** Agree that it was wrong. “People who used the faith that way went against the Bible, not with it” ([[Galatians 3:28]]).
+
+**If they say “It's not for people like me”:** “Heaven will have people from every tribe and language. That includes you” ([[Revelation 7:9]]).
+
+**Bridge to the gospel:** “The gospel is for every nation. The question is whether it's true for you.” Then move to the Law ({{Way of the Master|paths/way-of-the-master/2}}).`,
     verses: ["Acts 17:26", "Galatians 3:28", "Revelation 7:9"],
     related: ["objections/all-religions"],
   },
@@ -1907,24 +2269,51 @@ Today, most of the world's Christians live in the Global South. The gospel is fo
     id: "pagan-myths",
     category: "Other Religions",
     title: "Christianity copied pagan myths",
+    topic: "The Pagan Copycat Theory",
+    lead: "The copycat theory claims that the story of Jesus was borrowed from earlier pagan myths, such as those of Horus or Mithras. It bears on whether the Gospels are history or legend.",
+    alsoAsked: ["Wasn't Jesus copied from Horus?", "Didn't Mithras have the same story?", "Isn't the resurrection just a dying-and-rising god myth?"],
+    inBrief: "The supposed parallels are mostly invented, exaggerated, or later than the Gospels, which read as history written within living memory.",
+    tip: "ask which myth and where they heard it.",
+    otherViews: [
+      { name: "Christ myth theory", text: "Jesus was a mythical figure built from pagan and Jewish religious ideas rather than a historical person." },
+      { name: "Mainstream historians", text: "Jesus was a real first-century Jew, and the copycat parallels are not supported by the ancient sources." },
+      { name: "Christianity", text: "The Gospels record real events, attested by eyewitnesses, within living memory of Jesus' life." },
+    ],
     sources: ["Lee Strobel"],
     oneLiner: "Historians don't take that seriously. Most parallels are exaggerated or came later.",
     askBack: "Which myth do you think it copied?",
     short: `Claims that Jesus was copied from gods like Horus or Mithras usually fall apart when you check the ancient sources. Many “parallels” are invented, stretched, or come from later centuries.
 
 The Gospels read as history, not myth. They name real places, real rulers and real people, and they were written within living memory of the events.`,
-    deep: `**Check the sources:** Ask where the claim comes from. Many trace back to popular books and videos rather than ancient texts.
+    deep: `**The claim:** Jesus was copied from earlier gods such as Horus or Mithras. Historians do not take this seriously.
+
+**Where the claim comes from:** Many versions trace back to popular books and videos rather than to ancient texts.
 
 **Common problems with the parallels:**
 - Details like “born of a virgin on December 25 with 12 disciples” are not found in the ancient sources for Horus or Mithras
-- Much of what we know about Mithras worship comes from after the New Testament was written
+- Many “parallels” are invented, stretched, or come from later centuries
+- Much of what is known about Mithras worship comes from after the New Testament was written
 - Pagan “dying and rising” gods tied to the seasons are very different from a real man executed under Pontius Pilate and seen alive by named witnesses
+
+**History, not myth:** The Gospels name real places, real rulers and real people, and they were written within living memory of the events ([[Luke 1:3-4]]). Paul passes on an early creed about Jesus' death and resurrection ([[1 Corinthians 15:3-4]]).
 
 **Jewish roots:** The first Christians were devout Jews who hated pagan idolatry. They were unlikely to borrow from pagan myths.
 
-**Eyewitnesses:** The apostles said they were not following “cleverly devised tales” ([[2 Peter 1:16]]).
+**Eyewitnesses:** The apostles said they were not following “cleverly devised tales” but were eyewitnesses ([[2 Peter 1:16]]).
 
-**Study:** Lee Strobel, *The Case for the Real Jesus*.`,
+**Further reading:** Lee Strobel, *The Case for the Real Jesus*. See also {{Did Jesus exist?|objections/jesus-existed}} and {{The Resurrection: Minimal Facts|evidence/resurrection}}.`,
+    talk: `**Questions to ask:**
+- “Which myth do you think it copied?”
+- “Where did you hear that?”
+- “Have you seen the ancient source for that detail?”
+
+**How to say it:** “Historians don't take that seriously. Most parallels are exaggerated or came later.”
+
+**If they say “Horus was born of a virgin on December 25”:** “That's not in the ancient sources. It comes from modern books.”
+
+**If they say “Other gods died and rose again”:** “Those were seasonal myths. Jesus was a real man, executed under Pilate, seen alive by named people.”
+
+**Bridge to the gospel:** “If Jesus really rose, He's the One we'll answer to” ([[Acts 17:30-31]]). Then move to the Law ({{Way of the Master|paths/way-of-the-master/2}}).`,
     verses: ["2 Peter 1:16", "Luke 1:3-4", "1 Corinthians 15:3-4"],
     related: ["objections/jesus-existed", "evidence/resurrection"],
   },
@@ -1933,6 +2322,17 @@ The Gospels read as history, not myth. They name real places, real rulers and re
     id: "abortion",
     category: "Abortion",
     title: "Abortion is a woman's right",
+    topic: "Abortion and the Unborn",
+    lead: "Abortion is the deliberate ending of a pregnancy by killing the developing child. The debate turns on one question: whether the unborn is a living human being who bears God's image.",
+    alsoAsked: ["Shouldn't abortion be legal?", "Isn't abortion health care?", "Who are you to tell a woman what to do?"],
+    inBrief: "From fertilization the unborn is a human being made in God's image, so deliberately killing them is murder, and the gospel offers forgiveness.",
+    tip: "ask what the unborn is before anything else.",
+    otherViews: [
+      { name: "Pro-choice", text: "A woman's right to decide about her pregnancy outweighs any claim of the unborn, at least before viability." },
+      { name: "Personhood theories", text: "Some philosophers argue a human being becomes a person only with consciousness, self-awareness, or the ability to survive outside the womb." },
+      { name: "Incremental pro-life", text: "Abortion is wrong, but laws should restrict it in steps, often with exceptions, until it can be ended." },
+      { name: "Christianity (abolitionist)", text: "Every unborn child is made in God's image, abortion is murder, and it should be abolished now with equal protection for all." },
+    ],
     sources: ["Russell Hunter", "Abolitionist Rising", "Greg Koukl"],
     oneLiner: "One question: what is the unborn? If it's a human being, no one has the right to kill it.",
     askBack: "If you knew for sure the unborn was a human being, would that change your view?",
@@ -1941,25 +2341,46 @@ The Gospels read as history, not myth. They name real places, real rulers and re
 God made every human being in His image ([[Genesis 9:6]]) and knits each child together in the womb ([[Psalm 139:13]]). Deliberately killing an innocent human being is murder ([[Exodus 20:13]]).
 
 So abortion isn't first a political issue. It's sin, and the answer is the gospel.`,
-    deep: `**The one question** (Koukl): If the unborn is not human, no justification for abortion is needed. If it *is* human, no justification is adequate. Keep coming back to this.
+    deep: `**The basic facts:** From fertilization, the unborn is a living, whole, distinct human being. That is basic embryology, not religion.
 
-**The abolitionist emphasis** (Russell Hunter, Abolitionist Rising):
+**What the Bible teaches:** God made every human being in His image ([[Genesis 9:6]]). He knits each child together in the womb ([[Psalm 139:13]]) and knew Jeremiah before he was formed ([[Jeremiah 1:5]]). Deliberately killing an innocent human being is murder ([[Exodus 20:13]]), and God hates “hands that shed innocent blood” ([[Proverbs 6:16-17]]).
+
+**The central question** (Koukl): If the unborn is not human, no justification for abortion is needed. If it *is* human, no justification is adequate. Every other argument depends on the answer to this one.
+
+**The abolitionist position** (Russell Hunter, Abolitionist Rising):
 - Abortion is murder, and it should be treated that way in law
-- It should be abolished *immediately*, not reduced step by step (see {{incrementalism|objections/incrementalism}})
+- It should be abolished *immediately*, not reduced step by step (see {{Incrementalism|objections/incrementalism}})
 - Every child deserves equal protection, with no exceptions
 - The root problem is sin, so the real answer is the gospel and repentance
 - The church is called to act and rescue ([[Proverbs 24:11]], [[Proverbs 31:8-9]]), not leave it to politicians
 
-**Common follow-ups:**
+**Abortion as sin:** Abortion is not first a political issue. It is one sin among many that every person must answer for to God, and its remedy is the gospel. See {{Abortion|convictions/abortion}}.
+
+**People personally affected:** Many people have had or been involved in an abortion. Scripture names the sin honestly and also offers full forgiveness in Christ ([[1 John 1:9]]). See {{“I've had an abortion”|objections/had-abortion}}.
+
+**Common follow-up objections:**
 - {{“It's just a clump of cells”|objections/clump-of-cells}}
 - {{“My body, my choice”|objections/my-body}}
 - {{“What about rape?”|objections/rape-incest}}
 - {{“What if the mother's life is at risk?”|objections/mothers-life}}
 - {{“Men don't get a say”|objections/men-opinion}}
 
-**Be ready for someone who has had an abortion.** Many people have been personally affected. Tell the truth about sin, then hold out full forgiveness in Christ (see {{“I've had an abortion”|objections/had-abortion}}).
+**Further reading:** Russell Hunter and Abolitionist Rising on abolition. Greg Koukl, *Tactics*. See also {{Capital Punishment|convictions/capital-punishment}} and {{God's Law & Civil Government|convictions/theonomy}}.`,
+    talk: `**Questions to ask:**
+- “What is the unborn?”
+- “If you knew for sure it was a human being, would that change your view?”
 
-**Bring it to the gospel.** Abortion is one sin among many that every person must answer for. Moving to the Law shows everyone, including you, needs mercy: {{Way of the Master|paths/way-of-the-master}}.`,
+Keep coming back to that one question ({{Columbo|skills/columbo}}).
+
+**How to say it:** “That's basic embryology, not religion.” “If it's a human being, no one has the right to kill it.”
+
+**If they give a reason** (money, timing, career): Ask, “Would that reason justify killing a two-year-old?” If not, the question is still what the unborn is.
+
+**If they say “It's not a person yet”:** See {{“It's just a clump of cells”|objections/clump-of-cells}}.
+
+**If they've had an abortion:** Slow down. Tell the truth about sin, then hold out full forgiveness in Christ ({{“I've had an abortion”|objections/had-abortion}}).
+
+**Bridge to the gospel:** Abortion is one sin among many. Move to the Law so they see everyone, including you, needs mercy. “Can I ask you a few questions about God's standard?” ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["Genesis 9:6", "Exodus 20:13", "Psalm 139:13", "Jeremiah 1:5", "Proverbs 24:11", "Proverbs 6:16-17"],
     related: [
       "objections/clump-of-cells",
@@ -1976,21 +2397,50 @@ So abortion isn't first a political issue. It's sin, and the answer is the gospe
     id: "clump-of-cells",
     category: "Abortion",
     title: "It's just a clump of cells",
+    topic: "The Humanity of the Unborn",
+    lead: "This question concerns what kind of being the embryo or fetus is. Whether the unborn is a living human being determines whether killing it is morally different from removing tissue.",
+    alsoAsked: ["It's not a person yet", "It's just tissue", "It's only a potential life"],
+    inBrief: "From fertilization the unborn is a distinct, living human being; size, development, location, and dependency don't change what someone is.",
+    tip: "ask when they think it becomes human, and why then.",
+    otherViews: [
+      { name: "Personhood theories", text: "Some philosophers grant the unborn is biologically human but argue personhood begins later, with consciousness or self-awareness." },
+      { name: "Gradualist view", text: "The unborn gains moral value gradually as it develops, so early abortion is less serious than late abortion." },
+      { name: "Christianity", text: "Every human being is made in God's image from the beginning, so value doesn't depend on size or ability." },
+    ],
     sources: ["Greg Koukl", "Abolitionist Rising"],
     oneLiner: "So are you and I. The question is what kind of thing it is: a living human being.",
     askBack: "At what point do you think it becomes a human being, and why then?",
     short: `From fertilization, the unborn has its own DNA, its own body, and is growing as a human being. It isn't a potential human. It's a human with potential.
 
 The differences between the unborn and you are differences of size and stage, not of kind. None of those make someone less human.`,
-    deep: `**SLED** (from philosopher Stephen Schwarz, popularized by Scott Klusendorf). The only differences between an embryo and an adult are:
-- **Size:** it's smaller. But a toddler is smaller than you, and we don't think that makes them less valuable.
-- **Level of development:** it's less developed. So is a 4-year-old compared to a teenager.
-- **Environment:** it's inside the womb. Moving 8 inches down the birth canal doesn't change what you are.
-- **Degree of dependency:** it depends on its mother. So do newborns, and people on insulin or a pacemaker.
+    deep: `**The biology:** From fertilization, the unborn has its own DNA, its own body, and is growing as a human being. It is not a potential human but a human with potential. In that sense every person is a “clump of cells”; the question is what kind of thing it is.
 
-**Ask where they draw the line** (heartbeat, viability, birth). Then ask why that line, and not a week earlier. Every line besides fertilization is arbitrary.
+**SLED** (from philosopher Stephen Schwarz, popularized by Scott Klusendorf). The only differences between an embryo and an adult are:
+- **Size:** it is smaller. A toddler is smaller than an adult, and that does not make the toddler less valuable.
+- **Level of development:** it is less developed. So is a 4-year-old compared with a teenager.
+- **Environment:** it is inside the womb. Moving a few inches down the birth canal does not change what someone is.
+- **Degree of dependency:** it depends on its mother. So do newborns, and people who rely on insulin or a pacemaker.
 
-**Scripture** treats the unborn as persons: John leaped in Elizabeth's womb ([[Luke 1:44]]), and God knew Jeremiah before he was born ([[Jeremiah 1:5]]).`,
+These are differences of size and stage, not of kind. None of them makes someone less human.
+
+**Drawing a line:** Proposed starting points for human value include a heartbeat, viability, and birth. Each of these is arbitrary, since nothing about the being changes in kind from one week to the next. Fertilization is the only non-arbitrary beginning.
+
+**Scripture:** The unborn are treated as persons. John leaped in Elizabeth's womb ([[Luke 1:44]]), God knew Jeremiah before he was born ([[Jeremiah 1:5]]), and He forms each child in the womb ([[Psalm 139:13]]). Every human being is made in His image ([[Genesis 1:27]]).
+
+**Further reading:** Scott Klusendorf, *The Case for Life*. Greg Koukl, *Tactics*.`,
+    talk: `**How to say it:** “So are you and I.” “It's not a potential human. It's a human with potential.”
+
+**Questions to ask:**
+- “At what point do you think it becomes a human being?”
+- “Why then, and not a week earlier?”
+
+Every answer besides fertilization is an arbitrary line ({{Columbo|skills/columbo}}).
+
+**If they say “It's smaller” or “It can't survive on its own”:** Walk through SLED. “A newborn can't survive on its own either.”
+
+**If they say “It's not conscious”:** “Neither is someone asleep or in a coma. Do they lose their value?”
+
+**Bridge to the gospel:** If every human being bears God's image, then everyone, including you, will answer to Him. “Can I ask how you'd do by God's standard?” ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["Psalm 139:13", "Jeremiah 1:5", "Luke 1:44", "Genesis 1:27"],
     related: ["objections/abortion", "skills/columbo"],
   },
@@ -1999,17 +2449,41 @@ The differences between the unborn and you are differences of size and stage, no
     id: "my-body",
     category: "Abortion",
     title: "My body, my choice",
+    topic: "Bodily Autonomy and Abortion",
+    lead: "Bodily autonomy is the principle that each person has the right to decide what happens to their own body. In the abortion debate it raises the question of whether the unborn child is part of the mother's body or a separate body.",
+    alsoAsked: ["Keep your laws off my body", "No one can force me to stay pregnant", "It's my decision, not yours"],
+    inBrief: "The child has a distinct body of their own, and no one's freedom includes the right to kill an innocent person.",
+    tip: "many saying this are scared or hurt. Win the person, not the point.",
+    otherViews: [
+      { name: "Bodily autonomy view", text: "Even if the unborn is a person, no one can be required to use their body to sustain another." },
+      { name: "Christianity", text: "Both mother and child are made in God's image, and our bodies ultimately belong to God, not to ourselves." },
+    ],
     sources: ["Abolitionist Rising", "Greg Koukl"],
     oneLiner: "You have rights over your body. But there are two bodies here, and one is a child.",
     askBack: "Does your right to your body include the right to end someone else's life?",
     short: `The unborn child has their own body: their own DNA, heartbeat, blood type, and often a different sex from the mother. Being inside someone doesn't make you part of them.
 
 No one's freedom includes the right to kill an innocent person.`,
-    deep: `**Test the slogan.** Would “my body, my choice” justify a mother taking a drug in pregnancy that she knows will harm her baby? Most people say no. So they already agree the child has a body worth protecting.
+    deep: `**Two bodies:** The unborn child has their own body: their own DNA, heartbeat, and blood type (which can differ from the mother's), and often a different sex from the mother. Being inside someone does not make a person part of them.
 
-**For Christians:** our bodies aren't ultimately our own. We were bought with a price ([[1 Corinthians 6:19-20]]).
+**The limits of freedom:** No one's freedom includes the right to kill an innocent person ([[Genesis 9:6]], [[Exodus 20:13]]).
 
-**Tone:** Many people saying this are scared, angry, or hurt. Don't win the point and lose the person. Ask questions ({{Columbo|skills/columbo}}) and move toward the gospel.`,
+**Testing the slogan:** Few people would say “my body, my choice” justifies a mother taking a drug in pregnancy that she knows will harm her baby. That reaction shows a shared intuition that the child has a body worth protecting.
+
+**For Christians:** The body is not ultimately one's own. Believers were bought with a price ([[1 Corinthians 6:19-20]]).
+
+**Further reading:** Greg Koukl, *Tactics*. Abolitionist Rising on equal protection. See also {{“It's just a clump of cells”|objections/clump-of-cells}}.`,
+    talk: `**How to say it:** “You have rights over your body. But there are two bodies here.” “Being inside someone doesn't make you part of them.”
+
+**Questions to ask:**
+- “Does your right to your body include ending someone else's life?”
+- “Should a pregnant mother be free to take a drug she knows will harm her baby?”
+
+If they say no, they already agree the child's body matters.
+
+**Tone:** Many people who say this are scared, angry, or hurt. Don't win the point and lose the person. Ask questions ({{Columbo|skills/columbo}}).
+
+**Bridge to the gospel:** “We all want to be in charge of our own lives. The Bible says we'll each answer to God for how we've lived. Can I ask you a few questions?” ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["Genesis 9:6", "Exodus 20:13", "1 Corinthians 6:19-20"],
     related: ["objections/abortion", "objections/clump-of-cells"],
   },
@@ -2018,21 +2492,50 @@ No one's freedom includes the right to kill an innocent person.`,
     id: "rape-incest",
     category: "Abortion",
     title: "What about rape or incest?",
+    topic: "Abortion in Cases of Rape",
+    lead: "This question asks whether abortion is justified when a pregnancy results from rape or incest. It involves both a real victim of a grave crime and the child conceived.",
+    alsoAsked: ["Should a rape victim be forced to carry the baby?", "What about a pregnancy from incest?", "Surely there should be exceptions"],
+    inBrief: "Rape is evil and deserves justice, but the child is equally human and should not die for the crime of the father.",
+    tip: "you may be talking to a survivor. Listen first.",
+    otherViews: [
+      { name: "Pro-choice", text: "Forcing a rape victim to continue a pregnancy adds to the violation she has already suffered." },
+      { name: "Pro-life with exceptions", text: "Abortion is wrong, but laws may allow exceptions for rape and incest as a compromise or out of compassion." },
+      { name: "Christianity (abolitionist)", text: "The woman deserves care and justice, the rapist deserves punishment, and the child deserves the same protection as every child." },
+    ],
     sources: ["Russell Hunter", "Abolitionist Rising"],
     oneLiner: "Rape is evil and the rapist should be punished. The child shouldn't die for his crime.",
     askBack: "If the child is a human being, should how they were conceived decide whether they live?",
     short: `Rape is a horrible crime. The woman is a real victim, and she deserves care, protection, and justice.
 
 But abortion doesn't undo the rape. It adds a second victim. The child is just as human and just as made in God's image as any other. God's law says children are not put to death for the sins of their fathers ([[Deuteronomy 24:16]]).`,
-    deep: `**Start with compassion.** You may be talking to a survivor. Listen first.
+    deep: `**The crime:** Rape is a horrible crime. The woman is a real victim, and she deserves care, protection, and justice. God sees, and He will bring perfect justice to the rapist. He is near to the brokenhearted ([[Psalm 34:18]]) and heals.
 
-**Abolitionists reject exceptions.** If abortion is murder, it's murder in every case. A child conceived in rape is just as human and just as made in God's image. Laws with a rape exception treat some children as less worthy of protection based on who their father is.
+**Where God's law places the penalty:** In God's law the rapist bears the penalty, while the woman has done nothing deserving punishment ([[Deuteronomy 22:25-26]]). See {{Capital Punishment|convictions/capital-punishment}}.
 
-**Check the real question.** Ask: “If I could show you abortion is wrong in this case, would you agree it's wrong in the others?” If yes, the hard case isn't really their reason. Most abortions aren't for rape or incest.
+**The child:** Abortion does not undo the rape. It adds a second victim. A child conceived in rape is just as human and just as made in God's image as any other ([[Genesis 9:6]], [[Psalm 139:13]]). God's law says children are not put to death for the sins of their fathers ([[Deuteronomy 24:16]]), and He forbids killing the innocent ([[Exodus 23:7]]).
 
-**Point to God.** He sees, He will bring perfect justice to the rapist, and He heals.
+**Why abolitionists reject exceptions** (Russell Hunter, Abolitionist Rising): If abortion is murder, it is murder in every case. Laws with a rape exception treat some children as less worthy of protection based on who their father is.
 
-**Real stories:** Many people conceived in rape are alive today and glad to be.`,
+**How often it happens:** Pregnancies from rape or incest account for a small fraction of abortions. Most abortions are for other reasons.
+
+**Real lives:** Many people conceived in rape are alive today and glad to be.
+
+**Further reading:** Abolitionist Rising on equal protection. See also {{Abortion|convictions/abortion}}.`,
+    talk: `**Start with compassion:** You may be talking to a survivor, or to someone who loves one. Listen first. Say how sorry you are. Arguments can wait.
+
+**How to say it:** “Rape is evil, and the rapist should be punished.” “The child shouldn't die for his crime.”
+
+**Questions to ask:**
+- “If the child is a human being, should how they were conceived decide whether they live?”
+- “If I could show you abortion is wrong in this case, would you agree it's wrong in the others?”
+
+If yes, the hard case isn't really their reason ({{Columbo|skills/columbo}}).
+
+**If they say “You'd force her to relive it”:** “She deserves every kind of help. But killing her child doesn't take the rape away.”
+
+**If they've had an abortion after rape:** Be very gentle. See {{“I've had an abortion”|objections/had-abortion}}.
+
+**Bridge to the gospel:** God will judge the rapist perfectly. That justice reaches all of us, so we all need mercy. ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["Deuteronomy 24:16", "Genesis 9:6", "Psalm 139:13", "Exodus 23:7"],
     related: ["objections/abortion", "objections/had-abortion"],
   },
@@ -2041,19 +2544,52 @@ But abortion doesn't undo the rape. It adds a second victim. The child is just a
     id: "mothers-life",
     category: "Abortion",
     title: "What if the mother's life is at risk?",
+    topic: "Abortion and the Mother's Life",
+    lead: "This question asks whether abortion is justified when a pregnancy threatens the mother's life. It turns on the difference between treating a mother and intentionally killing her child.",
+    alsoAsked: ["What about ectopic pregnancies?", "Should a woman have to die for her baby?", "Isn't abortion sometimes medically necessary?"],
+    inBrief: "Doctors should try to save both lives; treating a mother when the child dies unintentionally differs from intentionally killing the child.",
+    tip: "show you care about the mother too. Then explain intent.",
+    otherViews: [
+      { name: "Pro-choice", text: "Abortion is health care, and a woman's life and health always come before the pregnancy." },
+      { name: "Pro-life with exceptions", text: "Abortion is wrong, but laws should allow an exception when the mother's life is at risk." },
+      { name: "Christianity (abolitionist)", text: "Both lives are precious; life-saving treatment is right, but intentionally killing the child is never necessary." },
+    ],
     sources: ["Abolitionist Rising"],
     oneLiner: "Doctors should try to save both. Saving the mother isn't the same as killing the child.",
     askBack: "Is treating a sick mother the same as intentionally killing her child?",
     short: `The goal in any medical emergency should be to save both patients. When a mother is treated for a life-threatening condition and the child dies as an unintended result, that isn't abortion.
 
 Abortion is the intentional killing of the child. That's never medically necessary.`,
-    deep: `**The key distinction is intent.** Treating an ectopic pregnancy or performing an emergency early delivery aims to save life. The child's death, if it happens, is a tragedy, not the goal. Abortion aims to end the child's life.
+    deep: `**The goal is two patients:** In any medical emergency in pregnancy, the goal should be to save both mother and child.
 
-**Abolitionist bills** (such as model legislation from Free the States) generally protect life-saving medical care while still treating intentional killing of the child as murder.
+**The key distinction is intent:** When a mother is treated for a life-threatening condition and the child dies as an unintended result, that is not abortion. Abortion is the intentional killing of the child, and that is never medically necessary.
 
-**This is a small fraction of cases.** Don't let a rare hard case become a reason to permit every abortion.
+**Examples:**
+- **Ectopic pregnancy:** the embryo implants outside the womb, usually in a fallopian tube, where it cannot survive, and left untreated it can threaten the mother's life. Treatment aims to save her life.
+- **Emergency early delivery:** when a serious condition threatens the mother, delivering the baby early aims to save life. Later in pregnancy the child may survive with intensive care.
 
-*Note: confirm the details of current abolitionist bill language before quoting it.*`,
+In both cases the child's death, if it happens, is a tragedy, not the goal.
+
+**Abolitionist bills:** Model legislation promoted by abolitionists (such as Free the States) generally protects life-saving medical care while still treating the intentional killing of the child as murder. Bill language varies and changes over time.
+
+**How often it happens:** Cases where the mother's life is truly at risk are a small fraction of abortions. A rare hard case does not justify permitting every abortion.
+
+**The principle:** Both mother and child bear God's image ([[Genesis 9:6]]), and deliberately killing the innocent is forbidden ([[Exodus 20:13]]).
+
+**Further reading:** Abolitionist Rising and Free the States on model legislation. See also {{Abortion|convictions/abortion}}.`,
+    talk: `**How to say it:** “Doctors should try to save both.” “Saving the mother isn't the same as killing the child.”
+
+**Questions to ask:**
+- “Is treating a sick mother the same as intentionally killing her child?”
+- “If we agree on the rare emergency, what about the other cases?”
+
+**If they say “So women should just die?”:** “No. Treat her. Life-saving care is right. Aiming to kill the child is the difference.”
+
+**If they bring up ectopic pregnancy:** “Treating that saves the mother's life. The child can't survive there, and no one is aiming to kill.”
+
+**If they ask about a specific law:** Check current abolitionist bill language before quoting it.
+
+**Bridge to the gospel:** “Every life is precious to God, yours included. Can I ask whether you're ready to meet Him?” ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["Exodus 20:13", "Genesis 9:6"],
     related: ["objections/abortion", "objections/rape-incest"],
   },
@@ -2062,17 +2598,41 @@ Abortion is the intentional killing of the child. That's never medically necessa
     id: "men-opinion",
     category: "Abortion",
     title: "Men can't have an opinion on abortion",
+    topic: "Men and the Abortion Debate",
+    lead: "This objection claims that men should not speak about abortion because they cannot become pregnant. It raises the question of whether an argument's truth depends on who makes it.",
+    alsoAsked: ["No uterus, no opinion", "You'll never be pregnant, so it's not your business", "Why do men get to decide?"],
+    inBrief: "An argument stands or falls on its own merits, and God calls everyone to speak up for those who can't.",
+    tip: "stay calm. Don't take the bait.",
     sources: ["Abolitionist Rising"],
     oneLiner: "Whether killing an innocent person is wrong doesn't depend on who says it.",
     askBack: "Would you say a man can't speak against slavery or child abuse unless he's personally affected?",
     short: `An argument stands or falls on its own, not on the speaker. And half the babies killed by abortion are boys, so men aren't outsiders to this.
 
 God calls everyone, men included, to speak up for those who can't ([[Proverbs 31:8-9]]).`,
-    deep: `**Apply it consistently.** If only women may speak, then pro-choice men must stay silent too. Most people who say this don't hold that.
+    deep: `**Arguments, not speakers:** An argument stands or falls on its own, not on who makes it. Rejecting a claim because of the speaker's identity is a logical fallacy (an *ad hominem*).
 
-**Many women are pro-life and abolitionist.** The issue is not men versus women. It's whether the unborn is a human being.
+**Men are not outsiders:** About half the babies killed by abortion are boys, and every child has a father.
 
-**Fathers matter.** Men are called to protect their children and to support the mothers of their children. Men who pressure women into abortion share in the guilt.`,
+**Applied consistently:** If only women may speak, then pro-choice men must stay silent too, and the men who decided *Roe v. Wade* had no right to rule on it. Most people who make this objection do not hold that. The claim undermines itself ({{Suicide|skills/suicide}}).
+
+**Not men versus women:** Many women are pro-life and abolitionist. The issue is not men versus women but whether the unborn is a human being.
+
+**The duty to speak:** God calls everyone, men included, to open their mouths for those who cannot speak ([[Proverbs 31:8-9]]) and to rescue those being led away to death ([[Proverbs 24:11]]). Knowing the right thing and not doing it is sin ([[James 4:17]]).
+
+**Fathers matter:** Men are called to protect their children and to support the mothers of their children. Men who pressure women into abortion share in the guilt.
+
+**Further reading:** Abolitionist Rising on the duty to speak. See also {{Abortion|convictions/abortion}}.`,
+    talk: `**How to say it:** “Whether killing an innocent person is wrong doesn't depend on who says it.” “Half the babies killed are boys.”
+
+**Questions to ask:**
+- “Would you say a man can't speak against slavery or child abuse?”
+- “So should pro-choice men stay silent too?”
+
+**If they say “You'll never understand”:** “That's fair. I'll never carry a child. But I can still ask whether the child is a human being.”
+
+**Then return to the main question:** “What is the unborn?” ({{Abortion|objections/abortion}})
+
+**Bridge to the gospel:** “I'm not speaking as someone better than you. I've broken God's law too. Can I show you what I mean?” ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["Proverbs 31:8-9", "Proverbs 24:11", "James 4:17"],
     related: ["objections/abortion", "skills/suicide"],
   },
@@ -2081,23 +2641,51 @@ God calls everyone, men included, to speak up for those who can't ([[Proverbs 31
     id: "had-abortion",
     category: "Abortion",
     title: "I've had an abortion",
+    topic: "Forgiveness After Abortion",
+    lead: "Many women and men carry guilt and grief after being involved in an abortion. The Bible treats abortion as a serious sin and also offers complete forgiveness through Christ.",
+    alsoAsked: ["Can God forgive me for an abortion?", "I paid for my girlfriend's abortion", "I don't think I can be forgiven for what I did"],
+    inBrief: "Abortion is a serious sin, but it is not beyond the blood of Christ; those who repent and trust Him are fully forgiven.",
+    tip: "thank them for telling you. Slow down and listen.",
     sources: ["Living Waters", "Abolitionist Rising"],
     oneLiner: "Thank you for telling me. It was wrong, but Jesus fully forgives, even this.",
     askBack: "Can I tell you how God can completely forgive and clean someone's conscience?",
     short: `I'm not going to pretend it was nothing, and I'm not going to pile on either. I'm a sinner too.
 
 Abortion is a serious sin, but it is not beyond the blood of Christ. Jesus took the punishment for sinners who repent and trust Him, and He removes their sin completely ([[Psalm 103:12]], [[Isaiah 1:18]]). You can be fully forgiven and clean before God.`,
-    deep: `**Don't minimize it, and don't pile on.** Most people who've had an abortion already carry guilt.
+    deep: `**A serious sin:** Abortion takes the life of a human being made in God's image, and Scripture does not treat it lightly. Most people who have been involved in one already carry guilt.
 
-**Truth and grace together.** If you only give truth, you crush. If you only give comfort, you leave them guilty before God. Name the sin honestly, then point straight to the cross.
+**Not beyond forgiveness:** Abortion is not beyond the blood of Christ. Jesus took the punishment for sinners who repent and trust Him, and He removes their sin completely ([[Psalm 103:12]], [[Isaiah 1:18]]). “If we confess our sins, He is faithful and righteous to forgive us our sins” ([[1 John 1:9]]).
 
-**Don't make it the only sin.** Walk through the Law like you would with anyone ({{Way of the Master|paths/way-of-the-master}}). Everyone needs the same Savior.
+**Truth and grace together:** Truth without grace crushes. Comfort without truth leaves a person guilty before God. The gospel names the sin honestly and then points to the cross.
 
-**Paul was a murderer** of Christians, and God saved him and used him. The church in Corinth was full of people with ugly pasts: “such were some of you; but you were washed” ([[1 Corinthians 6:11]]).
+**One sin among many:** Abortion is not the only sin that separates people from God. Everyone has broken His Law and needs the same Savior ({{Way of the Master|paths/way-of-the-master}}).
 
-**After they turn to Christ:** there is no condemnation ([[Romans 8:1]]). Many find help in a post-abortion recovery ministry at a Bible-believing church.
+**Former murderers forgiven:** Paul persecuted and helped kill Christians, and God saved him and used him. The church in Corinth was full of people with ugly pasts: “such were some of you; but you were washed” ([[1 Corinthians 6:11]]).
 
-**Men too.** Fathers who encouraged or paid for an abortion carry guilt as well and need the same forgiveness.`,
+**After coming to Christ:** There is no condemnation for those in Christ Jesus ([[Romans 8:1]]). Many find help in a post-abortion recovery ministry at a Bible-believing church.
+
+**Men too:** Fathers who encouraged or paid for an abortion carry guilt as well and need the same forgiveness.
+
+**Further reading:** Living Waters resources on the gospel and forgiveness. See also {{Equality of Sin|convictions/equality-of-sin}} and {{Abortion|convictions/abortion}}.`,
+    talk: `**Start here:** “Thank you for telling me.” Listen. Don't rush to the next point.
+
+**Don't minimize it, and don't pile on:** “I'm not going to pretend it was nothing. And I'm a sinner too.”
+
+**How to say it:** “It was wrong. But Jesus fully forgives, even this.” “You can be completely clean before God.”
+
+**Questions to ask:**
+- “Can I tell you how God can completely forgive someone?”
+- “Do you feel like God could never forgive you?”
+
+**If they say “God could never forgive me”:** “Paul helped kill Christians, and God forgave him” ([[1 Corinthians 6:11]]). “The cross is big enough.”
+
+**Don't make it the only sin:** Walk through the Law like you would with anyone, so they see you need the same Savior.
+
+**If they're a man:** Fathers who pushed for or paid for an abortion need the same forgiveness. Say so gently.
+
+**After they turn to Christ:** “There is no condemnation” ([[Romans 8:1]]). Point them to a Bible-believing church and a post-abortion recovery ministry.
+
+**Bridge to the gospel:** Go straight to the cross and repentance ({{Way of the Master|paths/way-of-the-master/6}}).`,
     verses: ["1 John 1:9", "Psalm 103:12", "Isaiah 1:18", "1 Corinthians 6:11", "Romans 8:1"],
     related: ["paths/way-of-the-master", "objections/abortion"],
   },
@@ -2106,23 +2694,50 @@ Abortion is a serious sin, but it is not beyond the blood of Christ. Jesus took 
     id: "incrementalism",
     category: "Abortion",
     title: "We should reduce abortion step by step",
+    topic: "Abolition and Incrementalism",
+    lead: "Incrementalism is the strategy of restricting abortion step by step, through limits such as heartbeat bills or gestational bans. Abolitionism calls instead for abortion to be ended immediately, with equal protection for every child.",
+    alsoAsked: ["Isn't saving some babies better than none?", "Shouldn't we take what we can get politically?", "Why not support heartbeat bills?"],
+    inBrief: "If abortion is murder, laws should not permit any of it; abolitionists call for immediate equal protection for every child from fertilization.",
+    tip: "often this is a fellow believer. Disagree charitably.",
+    otherViews: [
+      { name: "Incremental pro-life", text: "Laws that restrict abortion in steps save lives now and move culture toward ending abortion." },
+      { name: "Abolitionist", text: "Laws that regulate abortion still permit murder; Christians should demand immediate, total abolition." },
+    ],
     sources: ["Russell Hunter", "Abolitionist Rising"],
     oneLiner: "If abortion is murder, laws shouldn't allow some of it. We should call for it to end now.",
     askBack: "Would we pass a law that says child abuse is legal until a certain age?",
     short: `Abolitionists believe laws like heartbeat bills or 15-week bans, while well meant, still permit killing before that point and regulate murder instead of ending it. God condemns unjust laws ([[Isaiah 10:1-2]]).
 
 The call is immediate abolition: equal protection under the law for every child, from fertilization.`,
-    deep: `**What abolitionists mean by this** (Russell Hunter, Abolitionist Rising, Free the States):
-- Laws should treat abortion as homicide, with equal protection for the unborn
+    deep: `**The two approaches:**
+- **Incrementalism:** pass laws that restrict abortion in steps (heartbeat bills, 15-week bans, regulations), often with exceptions, hoping to reduce abortion over time
+- **Abolition:** call for abortion to be treated as homicide now, with equal protection under the law for every child from fertilization
+
+**The abolitionist case** (Russell Hunter, Abolitionist Rising, Free the States):
+- Laws like heartbeat bills or 15-week bans, while well meant, still permit killing before that point and regulate murder instead of ending it
 - Pro-life laws that set conditions on abortion end up implying the rest is allowed
-- The model is the abolition of slavery: activists demanded it end, not that it be regulated
+- God condemns those who enact unjust decrees ([[Isaiah 10:1-2]]) and those who justify the wicked ([[Proverbs 17:15]])
+- The church is called to rescue those being led to death ([[Proverbs 24:11]])
 - Christians should obey God rather than men ([[Acts 5:29]]), including judges who allow abortion
 
-**Equal protection** also means the law should not grant blanket immunity to anyone who intentionally kills a child, though abolitionists emphasize mercy and the gospel for the mothers involved.
+**The historical model:** The abolition of slavery. Many abolitionists demanded that slavery end immediately rather than be regulated or phased out.
 
-**Be aware:** many pro-life Christians disagree with this approach and support incremental laws. Disagree charitably. Keep the focus on the child and on the gospel, not on attacking other believers.
+**Equal protection:** In the abolitionist view, the law should not grant blanket immunity to anyone who intentionally kills a child. Abolitionists also emphasize mercy and the gospel for the mothers involved.
 
-*Note: we can refine this page to match exactly how Abolitionist Rising presents it.*`,
+**How Christians differ:** Many pro-life Christians disagree with this approach and support incremental laws and exceptions as steps toward ending abortion. See {{Abortion|convictions/abortion}}.
+
+**Further reading:** Russell Hunter and Abolitionist Rising on abolition and immediatism. Free the States on model legislation. See also {{God's Law & Civil Government|convictions/theonomy}}.`,
+    talk: `**How to say it:** “If abortion is murder, laws shouldn't allow some of it.” “We should call for it to end now.”
+
+**Questions to ask:**
+- “Would we pass a law saying child abuse is legal until a certain age?”
+- “What does a 15-week ban say about the child at 14 weeks?”
+
+**If they say “Saving some is better than none”:** “Every child saved matters. But the law should protect all of them, not decide which ones.”
+
+**If they're a pro-life Christian:** Disagree charitably. Keep the focus on the child and on the gospel, not on attacking other believers.
+
+**Bridge to the gospel:** The deepest problem isn't a law. It's sin in every heart, ours included. ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["Isaiah 10:1-2", "Proverbs 17:15", "Proverbs 24:11", "Acts 5:29"],
     related: ["objections/abortion"],
   },
@@ -2132,19 +2747,49 @@ The call is immediate abolition: equal protection under the law for every child,
     id: "keep-it-to-yourself",
     category: "About Evangelism",
     title: "Keep your religion to yourself",
+    topic: "Evangelism and Religious Privacy",
+    lead: "Many people hold that religious faith is a private matter that should not be shared uninvited. Christianity has always understood the gospel as public news meant for every person.",
+    alsoAsked: ["Religion is a private thing", "Don't push your religion on people", "I don't talk about religion"],
+    inBrief: "Jesus commanded His followers to share the gospel with everyone; sharing in love, while respecting the hearer's freedom, is not imposing.",
+    tip: "stay friendly. Agree that respect matters, then explain why you speak.",
+    otherViews: [
+      { name: "Secular privatism", text: "Religion is a personal matter best kept out of public conversation and public life." },
+      { name: "Judaism", text: "Most Jewish communities do not actively seek converts, though they accept sincere ones." },
+      { name: "Islam", text: "Muslims are encouraged to invite others to Islam, a practice called da'wah." },
+      { name: "Christianity", text: "The gospel is good news for everyone, so believers are commanded to make it known, gently and openly." },
+    ],
     sources: ["Ray Comfort", "Cliff Knechtle"],
     oneLiner: "I get that. But if I believed you were in danger and said nothing, would that be loving?",
     askBack: "Is there anything you think is true enough that everyone should hear it?",
     short: `I understand why it can feel pushy. But I'm not trying to win an argument. If what Jesus said is true, everyone will stand before God one day, and I'd be a terrible friend to keep quiet about that.
 
 You're free to disagree, and I'll respect that. I'd just rather tell you and be wrong than stay silent and be right.`,
-    deep: `**Everyone shares what matters to them.** People talk freely about politics, health, sports, and causes they care about. Faith isn't the only private subject.
+    deep: `**The claim:** Faith belongs to private life, and raising it with others is intrusive or rude.
 
-**It defeats itself.** “Keep your beliefs to yourself” is a belief, shared out loud. See {{Suicide|skills/suicide}}.
+**Everyone shares what matters to them:** People talk freely about politics, health, sports, and causes they care about. Faith is not the only subject that touches deeply held beliefs, and it is not uniquely private.
 
-**Jesus commanded it.** We're told to go into all the world ([[Mark 16:15]]). Keeping it private would be disobedience.
+**The claim defeats itself:** “Keep your beliefs to yourself” is itself a belief, shared out loud with someone else. A statement that breaks its own rule is self-defeating ({{Suicide|skills/suicide}}).
 
-**Respect the person.** Ask permission, listen, and leave when they want to leave. Sharing isn't forcing. See {{“You're forcing your beliefs on me”|objections/forcing-beliefs}}.`,
+**A command, not a hobby:** Jesus told His followers to go into all the world and preach the gospel ([[Mark 16:15]]). For a Christian, keeping it private would be disobedience.
+
+**The apostles' example:** When the authorities ordered Peter and John to stop speaking in Jesus' name, they answered that they could not stop speaking about what they had seen and heard ([[Acts 4:19-20]]).
+
+**The motive:** “The love of Christ controls us” ([[2 Corinthians 5:14]]). If what Jesus said is true, everyone will stand before God one day, and silence would not be kindness.
+
+**Sharing is not forcing:** Offering a message leaves the hearer free to disagree or walk away. See {{“You're forcing your beliefs on me”|objections/forcing-beliefs}}.
+
+**Further reading:** {{The Biblical Case for Evangelism|skills/why-evangelize}}.`,
+    talk: `**How to say it:** Agree that it can feel pushy. Make clear you aren't trying to win an argument: “I'd rather tell you and be wrong than stay silent and be right.”
+
+**Respect the person:** Ask permission, listen, and leave when they want to leave. Sharing isn't forcing. See {{“You're forcing your beliefs on me”|objections/forcing-beliefs}}.
+
+**Questions to ask:**
+- “Is there anything you think is true enough that everyone should hear it?”
+- “If you knew someone was in danger, would you say something?”
+
+**If they say “Religion is private”:** Gently point out that “keep it to yourself” is a belief too, shared out loud ({{Suicide|skills/suicide}}). Keep it light, not a gotcha.
+
+**Bridge to the gospel:** “You're free to disagree. Can I ask you one question? Do you think you're a good person?” ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["Mark 16:15", "Acts 4:19-20", "2 Corinthians 5:14"],
     related: ["objections/forcing-beliefs", "skills/why-evangelize"],
   },
@@ -2153,19 +2798,43 @@ You're free to disagree, and I'll respect that. I'd just rather tell you and be 
     id: "forcing-beliefs",
     category: "About Evangelism",
     title: "You're forcing your beliefs on me",
+    topic: "Persuasion and Coercion",
+    lead: "The charge that Christians force their beliefs on others raises the difference between persuading someone and compelling them. The New Testament pattern of evangelism is open persuasion that leaves the hearer free.",
+    alsoAsked: ["Stop shoving religion down my throat", "Don't push your beliefs on me", "You're trying to convert me"],
+    inBrief: "Forcing means coercion; the gospel is offered by persuasion, and genuine faith can only be freely received, never compelled.",
+    tip: "check your tone first. If they feel pushed, slow down.",
     sources: ["Greg Koukl", "Ray Comfort"],
     oneLiner: "I'm not forcing anything. You're free to walk away. I'm offering what I think is true.",
     askBack: "What would forcing look like, compared to just telling you?",
     short: `Forcing would mean making you believe, or punishing you if you don't. I can't do that, and I wouldn't want to. Faith has to be your own.
 
 All I'm doing is telling you what I believe and why. You get to decide what to do with it. Can I ask you one question before you go?`,
-    deep: `**Persuading isn't forcing.** Paul “persuaded men” ([[2 Corinthians 5:11]]), but he never coerced anyone. Conversation is how free people share ideas.
+    deep: `**Definitions:** Forcing (coercion) means making someone believe or act through pressure, threat, or punishment. Persuasion means offering reasons and leaving the other person free to accept or reject them.
 
-**Turn it around gently** (Koukl): telling me not to share my view is sharing your view about what I should do. That's fine; it's what we're both doing.
+**The New Testament pattern:** Paul “persuaded men” ([[2 Corinthians 5:11]]) and reasoned in the marketplace every day ([[Acts 17:17]]), but he never coerced anyone. Conversation is how free people share ideas.
 
-**Watch your tone.** If someone feels pushed, slow down, ask questions, and let them lead. Be kind, not quarrelsome ([[2 Timothy 2:24-25]]).
+**Faith cannot be forced:** Saving faith is a person's own trust in Christ. Pressure can produce outward conformity, but not genuine belief.
 
-**Know when to stop.** If they're done, thank them, offer a tract, and go. See {{Wrapping Up|openers/wrapping-up}}.`,
+**The messenger's character:** The Lord's servant must not be quarrelsome but kind, correcting opponents with gentleness ([[2 Timothy 2:24-25]]). Believers are to act wisely toward outsiders, with speech that is gracious ([[Colossians 4:5-6]]).
+
+**The objection turned around** (Koukl): Telling someone not to share a view is itself sharing a view about what that person should do. Both sides are doing the same thing: making a case.
+
+**A historical note:** At times in history, Christians used the power of the state to compel religious conformity. Such coercion departs from the New Testament, where the apostles persuaded others and suffered rather than compelling anyone.
+
+**Further reading:** Greg Koukl, *Tactics*. See {{Tactics|convictions/tactics}}.`,
+    talk: `**How to say it:** “Forcing would mean making you believe, or punishing you if you don't. I can't do that, and I wouldn't want to. Faith has to be your own.”
+
+**Questions to ask:**
+- “What would forcing look like, compared to just telling you?”
+- “Can I ask you one question before you go?”
+
+**Turn it around gently** (Koukl): “When you tell me not to share my view, you're sharing yours about what I should do. That's fine. It's what we're both doing.”
+
+**Watch your tone:** If someone feels pushed, slow down, ask questions, and let them lead. Be kind, not quarrelsome ([[2 Timothy 2:24-25]]). See {{Staying Calm|skills/staying-calm}}.
+
+**Know when to stop:** If they're done, thank them, offer a tract, and go. See {{Wrapping Up|openers/wrapping-up}}.
+
+**Bridge to the gospel:** If they're willing to keep talking, ask whether they think they're a good person ({{Way of the Master|paths/way-of-the-master/2}}).`,
     verses: ["2 Corinthians 5:11", "2 Timothy 2:24-25", "Colossians 4:5-6"],
     related: ["objections/keep-it-to-yourself", "skills/staying-calm"],
   },
@@ -2174,19 +2843,41 @@ All I'm doing is telling you what I believe and why. You get to decide what to d
     id: "use-words-if-necessary",
     category: "About Evangelism",
     title: "Preach the gospel; use words if necessary",
+    topic: "The Necessity of Verbal Witness",
+    lead: "“Preach the gospel at all times; use words if necessary” is a popular saying that suggests a Christian's example is witness enough. The question is whether the gospel can be communicated without being spoken.",
+    alsoAsked: ["I just let my life do the talking", "I witness by how I live", "Actions speak louder than words"],
+    inBrief: "The gospel is news about what Christ did, so it must be told; a godly life supports the message but cannot replace it.",
+    tip: "usually from a fellow Christian. Agree that example matters first.",
     sources: ["Ray Comfort", "Living Waters"],
     oneLiner: "A good life matters, but nobody can see the gospel. It has to be told.",
     askBack: "How would someone learn that Jesus died for their sins just by watching you?",
     short: `I agree our lives should match what we say. But the gospel is news: Jesus died for sinners and rose again. People can see that you're kind, but they can't see that from your kindness.
 
 The Bible says faith comes from hearing ([[Romans 10:17]]). How will they hear without someone telling them?`,
-    deep: `**The quote isn't from Scripture,** and there's no record that Francis of Assisi said it. He was known as a preacher.
+    deep: `**The saying:** It is commonly attributed to Francis of Assisi, but it is not from Scripture, and there is no record that he said it. Francis was known as a preacher.
 
-**Faith comes by hearing** ([[Romans 10:14]], [[Romans 10:17]]). God chose the message preached to save people ([[1 Corinthians 1:21]]).
+**The gospel is news:** The gospel is a message about events: Christ died for our sins, was buried, and rose again ([[1 Corinthians 15:3-4]]). Kindness can be seen, but no one can learn from kindness alone that Jesus died for sinners.
 
-**Both, not either.** Live a life that adorns the gospel ([[Matthew 5:16]]) and open your mouth. Good works without words point to *you*; words without good works sound empty.
+**Faith comes by hearing:** Paul asks how people will believe in One they have not heard of, and how they will hear without a preacher ([[Romans 10:14]]). Faith comes from hearing the word of Christ ([[Romans 10:17]]). God chose the message preached to save those who believe ([[1 Corinthians 1:21]]).
 
-**Many good people never hear the gospel** from Christian friends who assumed their example was enough.`,
+**Both, not either:** Believers are to let their light shine so that others see their good works and glorify the Father ([[Matthew 5:16]]), and they are also to speak. Good works without words point to the believer; words without good works sound empty.
+
+**The cost of silence:** Many good people never hear the gospel from Christian friends who assumed their example was enough.
+
+**Further reading:** {{The Biblical Case for Evangelism|skills/why-evangelize}}. See also {{“Shouldn't you build a relationship first?”|objections/relationship-first}}.`,
+    talk: `**Who says it:** Usually a fellow Christian, often sincerely. Agree first: our lives should match what we say.
+
+**How to say it:** “People can see that you're kind. They can't see from your kindness that Jesus died for their sins.”
+
+**Questions to ask:**
+- “How would someone learn that Jesus died for their sins just by watching you?”
+- “How will they hear without someone telling them?” ([[Romans 10:14]])
+
+**If they say “Actions speak louder than words”:** “They do. But actions can't explain the cross. Faith comes from hearing” ([[Romans 10:17]]).
+
+**If they say “Francis of Assisi said it”:** “There's no record he did. He was known as a preacher.”
+
+**Encourage, don't scold:** Many believers are simply afraid. Offer to go out together, or suggest an easy start like {{Handing Out Tracts|skills/handing-out-tracts}}.`,
     verses: ["Romans 10:14", "Romans 10:17", "1 Corinthians 1:21", "Matthew 5:16"],
     related: ["skills/why-evangelize", "objections/relationship-first"],
   },
@@ -2195,25 +2886,57 @@ The Bible says faith comes from hearing ([[Romans 10:17]]). How will they hear w
     id: "street-preaching-turns-off",
     category: "About Evangelism",
     title: "Street preaching doesn't work / turns people off",
+    topic: "Open-Air Preaching",
+    lead: "Open-air or street preaching is proclaiming the gospel in public to passersby. Critics, including some Christians, argue that it does not work or that it drives people away from the faith.",
+    alsoAsked: ["Nobody gets saved from street preachers", "Street preachers give Christians a bad name", "Isn't that just yelling at people?"],
+    inBrief: "Public preaching is modeled throughout Scripture; done with love and clarity it reaches people churches don't, and the results belong to God.",
+    tip: "find out if the method bothers them, or a bad example.",
     sources: ["Ray Comfort", "Living Waters", "Cliff Knechtle"],
     oneLiner: "Some are turned off, but Jesus and the apostles preached in public, and people were saved.",
     askBack: "Is it the message that bothers you, or the way you've seen it done?",
     short: `Bad street preaching does turn people off: angry, condemning, or showy. But the method itself is biblical. Jesus preached on hillsides, Peter preached to a crowd and three thousand were saved, and Paul reasoned in the marketplace every day.
 
 Done with love and clarity, it reaches people who would never set foot in a church.`,
-    deep: `**It's biblical:** Noah ([[2 Peter 2:5]]), Jonah ([[Jonah 3:4]]), John the Baptist, Jesus ([[Matthew 4:17]]), Peter at Pentecost, Paul in the marketplace ([[Acts 17:17]]). See {{The Biblical Case for Evangelism|skills/why-evangelize}}.
+    deep: `**The concern:** Bad street preaching does turn people off: angry, condemning, or showy. The question is whether the method itself is the problem.
 
-**Results belong to God.** God's Word doesn't return empty ([[Isaiah 55:11]]). One plants, another waters, God gives the growth ([[1 Corinthians 3:6]]).
+**Biblical precedent:**
+- Noah, a preacher of righteousness ([[2 Peter 2:5]])
+- Jonah, crying out through Nineveh ([[Jonah 3:4]])
+- John the Baptist, preaching to crowds in the wilderness
+- Jesus, preaching repentance in public ([[Matthew 4:17]]) and teaching on hillsides
+- Peter at Pentecost, where about three thousand were saved
+- Paul, reasoning in the marketplace every day ([[Acts 17:17]])
 
-**It reaches people churches don't.** Many will never visit a church or read a Bible, but they'll walk past you.
+See {{The Biblical Case for Evangelism|skills/why-evangelize}}.
 
-**Do it well:**
-- Be friendly and clear, not angry
-- Use the Law to show sin, then the cross (see {{Way of the Master|paths/way-of-the-master}})
-- Stay calm with hecklers ({{Staying Calm|skills/staying-calm}})
-- Know your rights ({{Your Rights in Public|skills/your-rights}})
+**Church history:** In the 1700s, George Whitefield and John Wesley preached in open fields to large crowds, reaching many people who never attended church.
 
-**Some offense is unavoidable.** The cross itself offends. Make sure it's the message that offends, not you.`,
+**Results belong to God:** God's Word does not return empty ([[Isaiah 55:11]]). One plants, another waters, and God gives the growth ([[1 Corinthians 3:6]]). Visible responses on the spot are not the only measure.
+
+**Reaching people churches don't:** Many people will never visit a church or read a Bible, but they will walk past a preacher.
+
+**Some offense is unavoidable:** The cross itself offends (1 Corinthians 1:23). The goal is that the message offends, not the messenger.
+
+**Marks of sound open-air preaching:**
+- Friendly and clear, not angry
+- Uses the Law to show sin, then the cross ({{Way of the Master|paths/way-of-the-master}})
+- Calm with hecklers ({{Staying Calm|skills/staying-calm}})
+- Aware of legal rights in public ({{Your Rights in Public|skills/your-rights}})
+
+**Further reading:** Living Waters open-air preaching training. Ray Comfort, *Hell's Best Kept Secret*. Cliff and Stuart Knechtle's campus Q&A videos.`,
+    talk: `**If they're a Christian:** Be respectful. Not everyone is called to open-air preaching. “We may do it differently, but we're both called to tell people about Jesus.”
+
+**If they've seen it done badly:** Agree. “I've seen angry preachers too. That's not how Jesus did it.”
+
+**Questions to ask:**
+- “Is it the message that bothers you, or the way you've seen it done?”
+- “Where else would people who never go to church hear the gospel?”
+
+**If they say “Nobody gets saved that way”:** “Peter preached to a crowd and three thousand were saved. And God gives the growth, not us” ([[1 Corinthians 3:6]]).
+
+**Let your tone answer the critics:** Be friendly and clear, not angry. Make sure it's the message that offends, not you.
+
+**Bridge to the gospel:** If they aren't a believer: “Can I ask what a preacher would ask? Do you think you're a good person?” ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["Acts 17:17", "Isaiah 55:11", "1 Corinthians 3:6", "Jonah 3:4"],
     related: ["skills/why-evangelize", "skills/your-rights", "skills/staying-calm"],
   },
@@ -2222,19 +2945,45 @@ Done with love and clarity, it reaches people who would never set foot in a chur
     id: "relationship-first",
     category: "About Evangelism",
     title: "Shouldn't you build a relationship first?",
+    topic: "Friendship and Stranger Evangelism",
+    lead: "Some Christians hold that the gospel should be shared only after a relationship has been built. The question is whether sharing with strangers is appropriate, and how friendship and urgency fit together.",
+    alsoAsked: ["You have to earn the right to be heard", "People don't care how much you know until they know how much you care", "Isn't it rude to talk to strangers about God?"],
+    inBrief: "Friendships matter, but Scripture shows the gospel shared with strangers too, and no one is promised tomorrow.",
+    tip: "usually a fellow Christian. Affirm sharing with friends first.",
     sources: ["Ray Comfort", "Living Waters"],
     oneLiner: "I share with friends too. But Jesus talked to strangers, and no one is promised tomorrow.",
     askBack: "If you knew a stranger was about to step into traffic, would you wait until you were friends to warn them?",
     short: `It's not either-or. I want to share with people I know well. But many people I meet I'll only see once. Jesus talked to a stranger at a well, Philip ran up to a stranger in a chariot, and both conversations changed lives.
 
 Nobody is promised tomorrow, so I'd rather say something today than wait for a perfect moment that may never come.`,
-    deep: `**Strangers in Scripture:** the woman at the well ([[John 4:7]]), the Ethiopian official ([[Acts 8:36-38]]), the crowds at Pentecost, the marketplace in Athens ([[Acts 17:17]]).
+    deep: `**Not either-or:** Scripture shows the gospel shared both with people the messenger knew well and with people met only once.
 
-**Urgency:** no one knows what tomorrow brings ([[Proverbs 27:1]]). Now is the day of salvation ([[2 Corinthians 6:2]]).
+**Strangers in Scripture:**
+- Jesus and the woman at the well ([[John 4:7]])
+- Philip and the Ethiopian official in the chariot ([[Acts 8:36-38]])
+- Peter and the crowds at Pentecost
+- Paul in the marketplace in Athens ([[Acts 17:17]])
 
-**Long-term friendships matter too.** Keep sharing with family and coworkers. See {{Workplace and Friends|openers/workplace-friends}}.
+The conversations at the well and the chariot both changed lives.
 
-**The danger:** “relationship first” can quietly become “relationship only,” and the gospel never comes up.`,
+**Friends and family in Scripture:** Jesus sent a man He had healed home to tell his own people what the Lord had done for him ([[Mark 5:19]]). Paul taught publicly and from house to house ([[Acts 20:20]]).
+
+**Urgency:** No one knows what tomorrow will bring ([[Proverbs 27:1]]). Now is the day of salvation ([[2 Corinthians 6:2]]). Many people met in passing will never be seen again.
+
+**Long-term friendships:** Ongoing witness to family and coworkers matters. See {{Coworkers and Friends|openers/workplace-friends}}.
+
+**The danger:** “Relationship first” can quietly become “relationship only,” and the gospel never comes up. See also {{“Use words if necessary”|objections/use-words-if-necessary}}.`,
+    talk: `**How to say it:** “It's not either-or. I share with friends too. But Jesus talked to a stranger at a well.”
+
+**Questions to ask:**
+- “If you knew a stranger was about to step into traffic, would you wait until you were friends to warn them?”
+- “Is there a friend you've been meaning to tell? What's holding you back?”
+
+**If they say “You have to earn the right to be heard”:** “Kindness earns a hearing fast. Philip didn't know the man in the chariot.”
+
+**If they say “It's rude to talk to strangers”:** “It depends how you do it. A friendly question isn't rude.” See {{Starting a Conversation|openers/starting}}.
+
+**Keep the urgency kind:** “Nobody is promised tomorrow, so I'd rather say something today than wait for a perfect moment that may never come.”`,
     verses: ["John 4:7", "Acts 8:36-38", "Proverbs 27:1", "2 Corinthians 6:2"],
     related: ["objections/use-words-if-necessary", "openers/workplace-friends"],
   },
@@ -2243,19 +2992,41 @@ Nobody is promised tomorrow, so I'd rather say something today than wait for a p
     id: "why-do-you-care",
     category: "About Evangelism",
     title: "Why do you even care what I believe?",
+    topic: "The Motive for Evangelism",
+    lead: "People often ask why Christians care what others believe. The question goes to the motive behind evangelism, which Scripture locates in love for God and for people who will face judgment.",
+    alsoAsked: ["What's it to you?", "Why can't you just leave people alone?", "Do you get points for converts?"],
+    inBrief: "Christians share because they believe everyone will face God's judgment, and love does not stay silent when someone is in danger.",
+    tip: "answer warmly. Your tone should show that you care.",
     sources: ["Ray Comfort", "Cliff Knechtle"],
     oneLiner: "Because if this is true, your eternity is at stake, and I'd want someone to tell me.",
     askBack: "If you saw someone's house on fire, would you knock on the door even if they were a stranger?",
     short: `I care because I believe what the Bible says about death, judgment, and forgiveness. If I'm right, nothing matters more. If I'm wrong, you've lost five minutes.
 
 I'm not out here to win points. Someone cared enough to tell me, and I'm grateful.`,
-    deep: `**Love is the motive.** “The love of Christ controls us” ([[2 Corinthians 5:14]]). Jesus came to seek and save the lost ([[Luke 19:10]]).
+    deep: `**The motive is love:** “The love of Christ controls us” ([[2 Corinthians 5:14]]). Jesus came to seek and to save the lost ([[Luke 19:10]]).
 
-**The burning building:** you'd shout a warning to a stranger without asking permission first. Scripture calls us to rescue ([[Proverbs 24:11]]) and to snatch people from the fire ([[Jude 1:23]]).
+**What is at stake:** Christians believe what the Bible says about death, judgment, and forgiveness: people die once and then face judgment ([[Hebrews 9:27]]). If that is true, nothing matters more. If it is false, the listener has lost a few minutes.
 
-**The watchman:** God warned Ezekiel that silence isn't neutral ([[Ezekiel 33:8]]). See {{The Biblical Case for Evangelism|skills/why-evangelize}}.
+**The burning building:** A person who sees a house on fire shouts a warning to a stranger without asking permission first. Scripture calls believers to rescue those being taken away to death ([[Proverbs 24:11]]) and to snatch others out of the fire ([[Jude 1:23]]).
 
-**Let them see it.** Your tone should make it obvious that you care.`,
+**The watchman:** God warned Ezekiel that a watchman who sees danger and stays silent is held responsible ([[Ezekiel 33:8]]). Silence is not neutral. See {{The Biblical Case for Evangelism|skills/why-evangelize}}.
+
+**Gratitude:** Many Christians share because someone once cared enough to tell them.
+
+**Not about winning:** The aim is not to win points or arguments but to rescue people.`,
+    talk: `**How to say it:** “If I'm right, nothing matters more. If I'm wrong, you've lost five minutes.”
+
+**Make it personal:** “Someone cared enough to tell me, and I'm grateful.”
+
+**Questions to ask:**
+- “If you saw someone's house on fire, would you knock on the door even if they were a stranger?”
+- “If you believed what I believe, would you keep quiet?”
+
+**If they say “You just want converts”:** “I'm not out here to win points. You're free to say no.”
+
+**Let them see it:** Your tone should make it obvious that you care. Smile, listen, and don't argue to win.
+
+**Bridge to the gospel:** “Can I show you why I think it matters? Do you think you're a good person?” ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["2 Corinthians 5:14", "Proverbs 24:11", "Jude 1:23", "Luke 19:10"],
     related: ["skills/why-evangelize", "paths/way-of-the-master"],
   },
@@ -2264,22 +3035,47 @@ I'm not out here to win points. Someone cared enough to tell me, and I'm gratefu
     id: "not-your-place",
     category: "About Evangelism",
     title: "Only pastors should do that",
+    topic: "Every Believer as a Witness",
+    lead: "Some believe evangelism is the work of pastors, missionaries, or specially gifted Christians. The New Testament presents sharing the gospel as the calling of every believer, with church leaders equipping the rest.",
+    alsoAsked: ["I'm not gifted at evangelism", "Leave that to the professionals", "That's what missionaries are for"],
+    inBrief: "Every Christian is Christ's ambassador; pastors equip the church, but ordinary believers have carried the gospel from the start.",
+    tip: "be humble. This often comes from fear, not theology.",
     sources: ["Ray Comfort", "Living Waters"],
     oneLiner: "Every Christian is called to share. In Acts, ordinary believers spread it everywhere.",
     askBack: "Where in the Bible does it say evangelism is only for pastors?",
     short: `Pastors have an important role, but they aren't the only ones sent. When persecution scattered the early church, the apostles stayed in Jerusalem and ordinary believers went everywhere preaching the word ([[Acts 8:4]]).
 
 Every believer is an ambassador for Christ ([[2 Corinthians 5:20]]) and called to proclaim Him ([[1 Peter 2:9]]).`,
-    deep: `**Ordinary believers spread the gospel** in Acts 8:1-4, while the apostles stayed behind.
+    deep: `**Ordinary believers spread the gospel:** When persecution scattered the church in Jerusalem, the apostles stayed behind, and those who were scattered went about preaching the word (Acts 8:1-4; [[Acts 8:4]]).
 
-**Every believer:**
-- An ambassador ([[2 Corinthians 5:20]])
-- A royal priesthood called to proclaim ([[1 Peter 2:9]])
-- Ready to give an answer ([[1 Peter 3:15]])
+**Every believer is:**
+- An ambassador for Christ ([[2 Corinthians 5:20]])
+- Part of a royal priesthood called to proclaim God's excellencies ([[1 Peter 2:9]])
+- Ready to give an answer for the hope within ([[1 Peter 3:15]])
+- A witness, starting where they live ([[Acts 1:8]])
 
-**Pastors equip; believers do the work** of service ([[Ephesians 4:11-12]]).
+**Pastors equip; believers do the work:** Christ gave pastors and teachers to equip the saints for the work of service ([[Ephesians 4:11-12]]).
 
-**Stay humble and teachable.** Get trained, go with others, and stay accountable to your church.`,
+**Men and women:** Women shared the gospel in the New Testament too. The Samaritan woman told her town about Jesus (John 4:28-30), and Priscilla helped explain the way of God more accurately to Apollos ([[Acts 18:26]]). Evangelism is distinct from the office of pastor or elder ({{Women in Ministry|convictions/women-in-ministry}}).
+
+**Gifts and settings differ:** Not every believer is called to open-air preaching, but every believer is called to share in some way.
+
+**Within the church:** Evangelism is best done connected to a local church, with training, partners, and accountability ({{The Church|convictions/church}}).
+
+**Further reading:** {{The Biblical Case for Evangelism|skills/why-evangelize}}.`,
+    talk: `**Who says it:** Usually a fellow Christian, often one who feels unqualified or afraid. Be gentle.
+
+**How to say it:** “Pastors have an important role, but they aren't the only ones sent. In Acts, ordinary believers spread it everywhere.”
+
+**Questions to ask:**
+- “Where in the Bible does it say evangelism is only for pastors?”
+- “Who first told you about Jesus? Were they a pastor?”
+
+**If they say “I'm not gifted”:** “You don't need a special gift to tell someone what Jesus did. Start small.” A tract is an easy first step ({{Handing Out Tracts|skills/handing-out-tracts}}).
+
+**Stay humble and teachable:** Get trained, go with others, and stay accountable to your church.
+
+**Invite them:** “Want to come with me sometime? You can just watch.”`,
     verses: ["Acts 8:4", "2 Corinthians 5:20", "1 Peter 2:9", "Ephesians 4:11-12"],
     related: ["skills/why-evangelize", "objections/keep-it-to-yourself"],
   },
