@@ -12,6 +12,7 @@ No build step — it's plain HTML/CSS/JS. Open `index.html` through any static s
 | `data/paths.js` | Way of the Master, Romans Road |
 | `data/objections.js` | Objections by category: one-liner, ask-back, 30-second answer, deeper study |
 | `data/skills.js` | Tactics (Koukl), Knechtle-style questions |
+| `data/books.js` | Books of the Bible: author, date, setting, chapters, theme, summary for all 66 (Books page and quiz) |
 | `data/quiz.js` | Quiz question banks: Who Believes This?, Name That Tactic, Bible Basics, Bible Knowledge, Gospel Basics, Reasons to Believe, Fact Check |
 | `data/claims.js` | Claims to question back: Columbo drill and the Self-Defeating Claims page |
 | `data/evidence.js` | Reasons to Believe: resurrection, the Bible, prophecy, creation, Lewis |

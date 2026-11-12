@@ -27,6 +27,7 @@
     talking: '<path d="M6 4v6a4 4 0 0 0 4 4h8M14 10l4 4-4 4M6 20v-2" stroke-linecap="round" stroke-linejoin="round"/>',
     cheat: '<rect x="5" y="3.5" width="14" height="17" rx="2"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4" stroke-linecap="round"/>',
     convictions: '<path d="M6 21V4M6 4.5c4-2 6 2 12 0v8c-6 2-8-2-12 0" stroke-linecap="round" stroke-linejoin="round"/>',
+    books: '<path d="M5 4.5h4v15H5zM10 4.5h4v15h-4zM15.3 5.2l3.8-1 3.4 14.6-3.8 1z" stroke-linejoin="round"/>',
     quiz: '<rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12.5l2.6 2.6L16 9.5" stroke-linecap="round" stroke-linejoin="round"/>',
     star: '<path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.8l-5.2 2.8 1-5.8-4.3-4.1 5.9-.8z" stroke-linejoin="round"/>',
     people: '<circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5" stroke-linecap="round"/><circle cx="16.5" cy="9" r="2.6"/><path d="M15.5 14.2c2.6-.3 4.6 1.3 5 4.3" stroke-linecap="round"/>',
@@ -60,6 +61,8 @@
       intro: "The positive case for Christianity, to study ahead of time. Answers cover what people say in the moment; this is the deeper evidence behind them." },
     { id: "worldviews", group: "hidden", title: "People", blurb: "Atheists, Muslims, Mormons, and more",
       intro: "What different groups believe, where they differ from the gospel, and good questions to ask." },
+    { id: "books", group: "learn", title: "Books of the Bible", blurb: "All 66 books: author, setting, and what each is about",
+      intro: "Every book of the Bible: who wrote it, when, where it's set, and how it points to Jesus. Grouped the way most Bibles arrange them." },
     { id: "convictions", group: "learn", title: "My Convictions", blurb: "Where I stand, and notes from what I read",
       intro: "My positions on topics like creation, baptism, and sexuality, worked out from Scripture, plus Book Notes: a log of what I read and the ideas I want to keep." },
   ];
@@ -427,6 +430,7 @@
     objections: D.objectionCategories || [],
     talking: ["Doubting God", "Other Faiths", "Christians", "Issues"],
     skills: ["Mindset", "Asking Questions", "Sharing the Gospel", "Hard Moments"],
+    books: ["Law", "History", "Poetry and Wisdom", "Major Prophets", "Minor Prophets", "Gospels", "Church History", "Paul's Letters", "General Letters", "Prophecy"],
     convictions: ["Scripture & Creation", "Salvation", "Church & Christian Living", "Ethics & Society", "Last Things", "Book Notes"],
   };
 
@@ -673,6 +677,25 @@
         </div>
         <div data-pane="talk"${tab === "talk" ? "" : " hidden"}>${talk}</div>
         <div data-pane="study"${tab === "study" ? "" : " hidden"}>${study}</div>`;
+    } else if (sec === "books") {
+      const row = (label, html) => (html ? `<div class="ib-row"><dt>${label}</dt><dd>${html}</dd></div>` : "");
+      const all = D.books, k = all.indexOf(item);
+      const nav = (b, label) => (b ? `<a class="row" href="#/books/${b.id}"><span class="row-main"><span class="row-kicker">${label}</span><span class="row-title">${esc(b.title)}</span></span>${chevron}</a>` : "");
+      body = `
+        <p class="lead">${inline(item.summary)}</p>
+        <div class="infobox"><dl>
+          ${row("Testament", esc(item.testament))}
+          ${row("Section", esc(item.category))}
+          ${row("Author", esc(item.author))}
+          ${row("Written", esc(item.written))}
+          ${row("Setting", esc(item.setting))}
+          ${row("Chapters", String(item.chapters))}
+          ${row("Theme", esc(item.theme))}
+          ${row("Key people", esc((item.keyPeople || []).join(", ")))}
+          ${row("Key verse", item.keyVerse ? (getVerse(item.keyVerse) ? `<button class="vchip-inline" data-ref="${esc(item.keyVerse)}">${esc(item.keyVerse)}</button>` : esc(item.keyVerse)) : "")}
+        </dl></div>
+        ${item.christ ? `<section class="part"><h3><span>Pointing to Jesus</span></h3><div class="prose"><p>${inline(item.christ)}</p></div></section>` : ""}
+        <div class="list">${nav(all[k - 1], "Previous book")}${nav(all[k + 1], "Next book")}</div>`;
     } else if (sec === "evidence" && (item.lead || item.facts)) {
       // Reasons to Believe: Study (reference) and Talk (how to use it)
       const tab = store.get("answerTab", "study") === "talk" ? "talk" : "study";
@@ -1168,6 +1191,27 @@
           q: `They say: “${o.title}”`, a: o.oneLiner, link: `objections/${o.id}`, explain: `Then ask: “${o.askBack}”`,
           choices: shuffle([o.oneLiner, ...wrongs(o.oneLiner, D.objections.map((x) => x.oneLiner))]),
         })),
+    },
+    {
+      id: "books", title: "Books of the Bible", blurb: "Authors, settings, themes, and order of all 66 books",
+      build: () => {
+        const B = D.books || [];
+        const qs = [];
+        const pick = (right, pool) => shuffle([right, ...wrongs(right, pool)]);
+        B.forEach((b, k) => {
+          const link = `books/${b.id}`;
+          if (b.author && !/^unknown/i.test(b.author))
+            qs.push({ q: `Who wrote ${b.title}?`, sub: "Traditional author", a: b.author, choices: pick(b.author, B.map((x) => x.author).filter((x) => !/^unknown/i.test(x))), link, explain: b.theme });
+          // Blank out the book's own name so the summary doesn't give it away
+          const names = [b.title, b.title.replace(/^\d\s+/, ""), b.title.split(" ").pop()].filter((x) => x.length > 2);
+          const masked = names.reduce((t, n) => t.replace(new RegExp(`\\b${n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "g"), "____"), b.summary);
+          qs.push({ q: masked, sub: "Which book is this?", a: b.title, choices: pick(b.title, B.filter((x) => x.testament === b.testament).map((x) => x.title)), link, explain: `${b.title}: ${b.theme}` });
+          qs.push({ q: `Which section of the Bible is ${b.title} in?`, a: b.category, choices: pick(b.category, B.map((x) => x.category)), link, explain: `${b.testament} Testament, ${b.category}` });
+          if (B[k + 1]) qs.push({ q: `Which book comes right after ${b.title}?`, a: B[k + 1].title, choices: pick(B[k + 1].title, B.slice(Math.max(0, k - 4), k + 6).map((x) => x.title).filter((x) => x !== b.title)), link: `books/${B[k + 1].id}` });
+          if (b.setting) qs.push({ q: `${b.title}: where is it set, or who was it written to?`, a: b.setting, choices: pick(b.setting, B.filter((x) => x.testament === b.testament).map((x) => x.setting)), link });
+        });
+        return qs;
+      },
     },
     {
       id: "topics", title: "Topics", blurb: "Match the short answer to its topic",
