@@ -3996,4 +3996,55 @@ The Bible is different. It's many authors over many centuries, and its central c
     verses: ["1 Corinthians 15:6", "1 Corinthians 15:17", "Acts 26:26", "2 Peter 1:16", "Galatians 1:8"],
     related: ["people/muslim", "people/mormon", "evidence/resurrection"],
   },
+  {
+    id: "self-defense",
+    category: "Church & Christians",
+    title: "Can a Christian use force to defend themselves?",
+    topic: "Self-Defense and the Christian",
+    lead: "Christians have long asked whether Jesus' command to turn the other cheek forbids using force to protect yourself or others. Most Christians through history have held that defending innocent life is allowed, while revenge and retaliation are not.",
+    alsoAsked: ["Doesn't Jesus say to turn the other cheek?", "Should a Christian own a gun?", "Would you kill an intruder to protect your family?"],
+    inBrief: "Yes, to protect life when necessary: Scripture forbids revenge, not defending the innocent. But Christians accept suffering for the gospel itself without retaliating.",
+    tip: "separate revenge, insults, and persecution from a real threat to life.",
+    otherViews: [
+      { name: "Christian pacifism", text: "Some Christians, such as many Anabaptists and Quakers, believe Jesus forbids all violence, even in self-defense." },
+      { name: "Just defense", text: "Most Christians historically hold that protecting innocent life with proportionate force is right, while revenge is forbidden." },
+      { name: "Secular law", text: "Many legal systems allow reasonable force against an immediate threat, but not retaliation after the danger has passed." },
+    ],
+    sources: [],
+    oneLiner: "Protecting life is right; revenge isn't. And we accept persecution for Jesus.",
+    askBack: "Do you think protecting someone from harm is the same as getting revenge?",
+    short: `Jesus said to turn the other cheek, but a slap on the cheek was an insult, not a threat to your life. He was forbidding personal revenge, not protecting the innocent. The Law even allowed a homeowner to defend his house against a thief at night.
+
+Life is precious because people are made in God's image, so protecting it matters. But Christians don't retaliate, and when we suffer for the gospel itself, we follow Jesus, who didn't fight back.`,
+    deep: `**The question:** Jesus taught, “Do not resist an evil person; but whoever slaps you on your right cheek, turn the other to him also” ([[Matthew 5:39]]). Some read this as forbidding all force. Others read it as forbidding personal revenge, while still allowing the defense of life.
+
+**Turn the other cheek:** A backhanded slap on the right cheek was an insult, not a threat to life. The surrounding verses deal with personal retaliation (“an eye for an eye”) and wrongs done to a person's honor or property. The command forbids paying back insult with insult, not protecting someone from being killed.
+
+**Revenge belongs to God:** Christians are never to pay back evil for evil or take their own revenge ([[Romans 12:17-19]]). God repays, and He has given civil government the sword to punish evildoers ([[Romans 13:4]]). Revenge looks back at a wrong already done; defense stops a harm that is happening now.
+
+**The Law allowed defense:** A homeowner who struck a thief breaking in at night was not guilty of bloodshed. After sunrise, when the danger and the confusion were less, he was ([[Exodus 22:2-3]]). Force is limited to what the danger requires.
+
+**Protecting others:** Scripture calls God's people to rescue the weak from the wicked ([[Psalm 82:3-4]], [[Proverbs 24:11]]) and to provide for their households ([[1 Timothy 5:8]]). Nehemiah told the people to fight for their families and homes ([[Nehemiah 4:14]]). Because people are made in God's image, human life is worth protecting ([[Genesis 9:6]]).
+
+**The swords in Luke 22:** Before His arrest, Jesus told the disciples to buy a sword ([[Luke 22:36]]). Christians debate whether this was literal provision for travel or a picture of coming danger. When Peter used one to stop Jesus' arrest, Jesus told him to put it away ([[Matthew 26:52]]), because the cross was the Father's plan.
+
+**Persecution for the gospel:** When Christians suffer for Christ Himself, the New Testament pattern is to endure without retaliating, as Jesus did (1 Peter 2:21-23). Stephen prayed for those killing him (Acts 7). Laying down one's life can be the greatest love ([[John 15:13]]).
+
+**Further reading:** See {{Capital Punishment|convictions/capital-punishment}} and {{God's Law & Civil Government|convictions/theonomy}}.`,
+    talk: `**Questions to ask:**
+- “If someone attacked your child, would stopping them be revenge or protection?”
+- “When Jesus said turn the other cheek, do you think He meant a slap or a threat to your life?”
+
+**If they say “Jesus said turn the other cheek”:** “Right. A slap is an insult, and I shouldn't retaliate when insulted. But protecting someone's life isn't revenge. Even the Law allowed a man to defend his home at night.”
+
+**If they say “Christians are hypocrites for owning guns”:** Agree that Christians should be slow to anger and quick to forgive. Then distinguish defense from aggression. Keep it calm; this is rarely the main issue.
+
+**If they're a Christian pacifist:** Respect their conviction. Many faithful believers hold it. Point to Romans 12 and 13 together: no personal revenge, but God does give the sword to government to restrain evil.
+
+**Keep the gospel central:** Don't let this become a political debate. Bring it back: “The bigger question is what God will do with the evil in our own hearts.”
+
+**Bridge to the gospel:** Jesus could have defended Himself, but He chose to lay down His life for sinners. “He didn't fight back, so He could take our place. Can I ask you how you'd do on Judgment Day?” ({{Way of the Master|paths/way-of-the-master/2}})`,
+    verses: ["Matthew 5:39", "Romans 12:17-19", "Exodus 22:2-3", "Psalm 82:3-4", "John 15:13"],
+    related: ["convictions/capital-punishment", "objections/dont-judge"],
+  },
 ];
