@@ -3365,6 +3365,8 @@ The question is: have you truly repented, turned from your sin, and trusted Jesu
 
 **Kept by God:** Those who are truly Christ's are kept by Him; no one can snatch them from His hand ([[John 10:28-29]]), and He finishes what He began ([[Philippians 1:6]]). See {{Can You Lose Your Salvation?|convictions/eternal-security}}.
 
+**Doubts and assurance:** A believer can doubt and still be saved. Salvation rests on Christ; assurance is the confidence in it, which can grow or weaken (see {{If I doubt my salvation...|objections/doubting-salvation}}).
+
 **Imperfect but growing:** Assurance does not require sinlessness. Believers still sin and confess ([[1 John 1:8]], [[1 John 1:9]]), but they do not settle into a life of unrepentant sin.
 
 **Further reading:** See {{Nominal Christians|people/nominal}} and the {{Way of the Master|paths/way-of-the-master}} path on repentance and faith.`,
@@ -3380,6 +3382,8 @@ The question is: have you truly repented, turned from your sin, and trusted Jesu
 - “If you died tonight, why should God let you into heaven?”
 
 **How to say it:** “You can know. Not because of what you did, but because of what Jesus did, and because you've turned to Him.” ([[1 John 5:13]])
+
+**If a believer is doubting:** Point them to Christ, not their feelings. “Are you trusting Jesus alone, and do you hate your sin? Then rest in His promise” ([[John 10:28-29]]). See {{If I doubt my salvation...|objections/doubting-salvation}}.
 
 **Be careful:** Don't tell someone they're saved, and don't tell a struggling believer they're lost. Point them to Christ and to Scripture ([[2 Corinthians 13:5]]).
 
@@ -4046,5 +4050,57 @@ Life is precious because people are made in God's image, so protecting it matter
 **Bridge to the gospel:** Jesus could have defended Himself, but He chose to lay down His life for sinners. “He didn't fight back, so He could take our place. Can I ask you how you'd do on Judgment Day?” ({{Way of the Master|paths/way-of-the-master/2}})`,
     verses: ["Matthew 5:39", "Romans 12:17-19", "Exodus 22:2-3", "Psalm 82:3-4", "John 15:13"],
     related: ["convictions/capital-punishment", "objections/dont-judge"],
+  },
+  {
+    id: "doubting-salvation",
+    category: "The Gospel & Salvation",
+    title: "If I doubt my salvation, does that mean I'm not saved?",
+    topic: "Doubt and Assurance",
+    lead: "Many Christians go through seasons of doubting whether they are truly saved. Scripture distinguishes salvation, which rests on Christ's work, from assurance, the believer's confidence in it, which can grow or weaken.",
+    alsoAsked: ["How do I know I'm really saved?", "A pastor said if you doubt, you're not saved. Is that true?"],
+    inBrief: "No. Doubt and being lost are different. Salvation rests on Christ; assurance grows by looking to Him, while self-examination is commanded, not a sign of being lost.",
+    tip: "find out what's behind the doubt: sin, fear, a hard season, or never having trusted Christ.",
+    sources: ["Ray Comfort", "Living Waters"],
+    oneLiner: "Doubt doesn't mean you're lost. Look to Christ, not your feelings.",
+    askBack: "Are you trusting Jesus alone to save you, and do you hate your sin?",
+    short: `Being saved and feeling sure aren't the same thing. Salvation rests on what Jesus did. Assurance is our confidence in it, and that can go up and down. John wrote his letter so believers could know they have eternal life, which means some didn't feel sure yet.
+
+People in the Bible doubted too: the father who said, “I do believe; help my unbelief.” The question isn't how strong your feelings are, but whether you're trusting Christ and turning from sin.`,
+    deep: `**Salvation and assurance:** Salvation depends on Christ's finished work, not on the strength of a person's feelings ([[Ephesians 2:8-9]]). Assurance is the believer's confidence in that salvation. John wrote so that believers “may know” they have eternal life ([[1 John 5:13]]), which shows that true believers can lack that confidence and grow in it.
+
+**Doubting believers in Scripture:**
+- A father seeking healing for his son cried out, “I do believe; help my unbelief” ([[Mark 9:24]]).
+- John the Baptist, in prison, sent to ask Jesus whether He was the Expected One ([[Matthew 11:3]]).
+- Psalmists wrote from seasons of discouragement while still hoping in God ([[Psalm 42:5]]).
+
+**The Spirit's witness:** The Holy Spirit testifies with the believer's spirit that they are God's children ([[Romans 8:16]]). This inner witness can feel stronger or weaker at different times.
+
+**Self-examination is commanded:** Paul told the church to test themselves to see if they are in the faith ([[2 Corinthians 13:5]]). Asking the question is part of obedience, not proof of being lost.
+
+**The overconfident were warned:** Those Jesus warned were not doubters but people sure of themselves: “Lord, Lord, did we not...?” ([[Matthew 7:22-23]]).
+
+**When doubt is a warning:** Doubt that comes with no love for God, no fight against sin, and no change of life is a reason to examine whether one has truly repented and believed ([[1 John 2:3-4]]).
+
+**Common causes of doubt:** unconfessed sin, anxiety or depression, poor teaching, hard seasons, or looking at one's own performance instead of at Christ.
+
+**Kept by God:** Those who belong to Christ are kept by Him ([[John 10:28-29]]), and He finishes what He began ([[Philippians 1:6]]). See {{Can You Lose Your Salvation?|convictions/eternal-security}}.
+
+**Further reading:** See {{How can I know I'm going to heaven?|objections/assurance}}.`,
+    talk: `**Questions to ask:**
+- “What are you trusting in to be saved?”
+- “Do you hate your sin and want to follow Jesus?”
+- “When did this doubt start? Did something happen?”
+
+**If they're trusting Christ and fighting sin:** Point them away from their feelings to Christ's promise. “He keeps those who are His. Rest in what He did, not in how sure you feel today” ([[John 10:28-29]]).
+
+**If there's unconfessed sin:** Encourage confession. God is faithful to forgive ([[1 John 1:9]]).
+
+**If they've never truly repented:** Don't give false comfort. Take them through the Law and call them to repent and trust Christ today ({{Way of the Master|paths/way-of-the-master/7}}).
+
+**If someone says doubt proves you're lost:** “John wrote so believers could know. That means some didn't feel sure yet. The ones Jesus warned were the overconfident.”
+
+**How to say it:** “Doubt doesn't cancel what Jesus did. Look to Him, not to your feelings.”`,
+    verses: ["1 John 5:13", "Mark 9:24", "Romans 8:16", "2 Corinthians 13:5", "John 10:28-29"],
+    related: ["objections/assurance", "convictions/eternal-security"],
   },
 ];
