@@ -455,6 +455,12 @@
     } else {
       body = `<div class="list">${items.map((x) => itemRow(sec, x)).join("")}</div>`;
     }
+    if (sec === "books") {
+      body = `<a class="wide-card live-start" href="#/practice/books">
+        <span class="tile-icon">${svg(ICON.practice, 24)}</span>
+        <span class="wide-main"><span class="tile-title">Memorize the order</span>
+        <span class="tile-blurb">Learn and drill the books, section by section</span></span>${chevron}</a>` + body;
+    }
     if (sec === "people") {
       const topics = D.talking.filter((t) => !D.people.some((x) => x.talk === t.id));
       body += `<h2 class="section-label">Topics</h2><p class="intro">Step-by-step conversations on an issue instead of a group.</p>
@@ -1002,7 +1008,9 @@
       </a>
       <div class="list">${rows}
         <a class="row" href="#/quiz"><span class="row-main"><span class="row-title">Quizzes</span>
-        <span class="row-sub">Multiple-choice tests with a score at the end.</span></span>${chevron}</a></div>
+        <span class="row-sub">Multiple-choice tests with a score at the end.</span></span>${chevron}</a>
+        <a class="row" href="#/practice/books"><span class="row-main"><span class="row-title">Books in Order</span>
+        <span class="row-sub">Memorize the 66 books, one section at a time.</span></span>${chevron}</a></div>
       <button class="text-btn" data-reset-practice>Reset practice progress</button>`;
     return { title: "Practice" };
   }
@@ -1150,6 +1158,134 @@
     pickCard();
     renderCard();
     window.scrollTo(0, 0);
+  }
+
+  // ── Books in order ──────────────────────────────────
+  // Learn: reveal one book at a time. Game: tap the next book from a few choices.
+  const slug = (t) => t.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  function bookSets() {
+    const B = D.books || [];
+    const sets = [
+      { id: "all", title: "All 66 books", list: B },
+      { id: "old", title: "Old Testament", list: B.filter((b) => b.testament === "Old") },
+      { id: "new", title: "New Testament", list: B.filter((b) => b.testament === "New") },
+    ];
+    for (const c of CATEGORY_ORDER.books) {
+      const list = B.filter((b) => b.category === c);
+      if (list.length >= 3) sets.push({ id: slug(c), title: c, list, section: true });
+    }
+    return sets;
+  }
+  const booksBest = () => store.get("booksBest", {});
+  const mmss = (ms) => `${Math.floor(ms / 60000)}:${String(Math.floor((ms % 60000) / 1000)).padStart(2, "0")}`;
+  let bo = null;
+
+  function pageBooksOrder(setId, mode) {
+    const sets = bookSets();
+    if (!setId) {
+      const best = booksBest();
+      const row = (x) => {
+        const b = best[x.id];
+        return `<div class="card bo-set">
+          <div class="bo-set-head"><span class="row-title">${esc(x.title)}</span><span class="row-sub">${x.list.length} books${b ? ` · Best: ${b.misses} ${b.misses === 1 ? "miss" : "misses"}, ${mmss(b.ms)}` : ""}</span></div>
+          <div class="bo-set-actions"><a class="btn" href="#/practice/books/${x.id}/learn">Learn</a><a class="btn primary" href="#/practice/books/${x.id}/game">Play</a></div>
+        </div>`;
+      };
+      app.innerHTML = `
+        <p class="kicker">Practice</p>
+        <h1 class="page-title">Books in Order</h1>
+        <p class="summary">Start with one section. Learn it, then play until you get it with no misses. Then try a whole testament.</p>
+        <div class="notice"><b>Memory aid.</b> Old Testament: <b>5 · 12 · 5 · 5 · 12</b> (Law, History, Poetry, Major Prophets, Minor Prophets). New Testament: <b>4 · 1 · 13 · 8 · 1</b> (Gospels, Acts, Paul, General Letters, Revelation).</div>
+        <h2 class="section-label">By section</h2>
+        ${sets.filter((x) => x.section).map(row).join("")}
+        <h2 class="section-label">Bigger challenges</h2>
+        ${sets.filter((x) => !x.section).map(row).join("")}`;
+      return { title: "Books in Order" };
+    }
+    const set = sets.find((x) => x.id === setId);
+    if (!set) return pageNotFound();
+    if (mode === "learn") {
+      if (!bo || bo.set !== set.id || bo.mode !== "learn") bo = { set: set.id, mode: "learn", shown: 1 };
+      renderBooksLearn(set);
+    } else {
+      if (!bo || bo.set !== set.id || bo.mode !== "game" || bo.done) startBooksGame(set);
+      renderBooksGame(set);
+    }
+    return { title: set.title };
+  }
+
+  function renderBooksLearn(set) {
+    const n = set.list.length;
+    const shown = set.list.slice(0, bo.shown);
+    app.innerHTML = `
+      <p class="kicker">Books in Order · Learn</p>
+      <h1 class="page-title">${esc(set.title)}</h1>
+      <p class="summary">Say the next book out loud, then tap to check.</p>
+      <div class="practice-progress"><span>${bo.shown} of ${n}</span><span></span></div>
+      <div class="bar"><span style="width:${((bo.shown / n) * 100).toFixed(1)}%"></span></div>
+      <ol class="bo-learn">${shown.map((b, k) => `<li class="${k === bo.shown - 1 ? "new" : ""}"><span class="bo-name">${esc(b.title)}</span><span class="bo-sec">${esc(b.category)}</span></li>`).join("")}</ol>
+      <div class="card-actions">${bo.shown < n
+        ? `<button class="btn" data-bo-learn="restart">Start over</button><button class="btn primary" data-bo-learn="next">Show next</button>`
+        : `<button class="btn" data-bo-learn="restart">Start over</button><a class="btn primary" href="#/practice/books/${set.id}/game">Play this set</a>`}</div>`;
+    const last = app.querySelector(".bo-learn li.new");
+    if (last && bo.shown > 6) last.scrollIntoView({ block: "center" });
+  }
+
+  function startBooksGame(set) {
+    bo = { set: set.id, mode: "game", placed: 0, misses: 0, start: Date.now(), done: false, wrong: null, opts: null };
+    pickBooksOptions(set);
+  }
+  function pickBooksOptions(set) {
+    // The next book plus a few others still to come (all of them for short sets)
+    const rest = set.list.slice(bo.placed);
+    const k = Math.min(rest.length, set.list.length <= 8 ? rest.length : 6);
+    const others = shuffle(rest.slice(1)).slice(0, k - 1);
+    bo.opts = shuffle([rest[0], ...others]).map((b) => b.title);
+  }
+  function renderBooksGame(set) {
+    const n = set.list.length;
+    if (bo.done) {
+      const best = booksBest()[set.id];
+      app.innerHTML = `
+        <p class="kicker">Books in Order</p>
+        <h1 class="page-title">${esc(set.title)}: done</h1>
+        <p class="summary">${bo.misses === 0 ? "Perfect, no misses." : `${bo.misses} ${bo.misses === 1 ? "miss" : "misses"}.`} Time: ${mmss(bo.ms)}.${bo.newBest ? " New best." : best ? ` Best: ${best.misses} ${best.misses === 1 ? "miss" : "misses"}, ${mmss(best.ms)}.` : ""}</p>
+        <ol class="bo-learn">${set.list.map((b) => `<li><span class="bo-name">${esc(b.title)}</span><span class="bo-sec">${esc(b.category)}</span></li>`).join("")}</ol>
+        <div class="card-actions"><a class="btn" href="#/practice/books">All sets</a><button class="btn primary" data-bo-again>Play again</button></div>`;
+      return;
+    }
+    const placed = set.list.slice(0, bo.placed);
+    app.innerHTML = `
+      <p class="kicker">Books in Order · Play</p>
+      <h1 class="page-title">${esc(set.title)}</h1>
+      <div class="practice-progress"><span>${bo.placed} of ${n}</span><span class="status">${bo.misses} ${bo.misses === 1 ? "miss" : "misses"}</span></div>
+      <div class="bar"><span style="width:${((bo.placed / n) * 100).toFixed(1)}%"></span></div>
+      <div class="bo-chain">${placed.length ? placed.slice(-8).map((b, k, a) => `<span class="bo-chip${k === a.length - 1 ? " last" : ""}">${esc(b.title)}</span>`).join("") : `<span class="bo-hint">Tap the first book${set.id === "all" || set.id === "old" ? " of the Bible" : set.id === "new" ? " of the New Testament" : ` in ${esc(set.title)}`}.</span>`}</div>
+      <p class="card-hint">What comes next?</p>
+      <div class="bo-tiles">${bo.opts.map((t) => `<button class="bo-tile${bo.wrong === t ? " wrong" : ""}" data-bo-pick="${esc(t)}">${esc(t)}</button>`).join("")}</div>`;
+  }
+  function booksPick(title) {
+    const set = bookSets().find((x) => x.id === bo.set);
+    if (!set || bo.done) return;
+    if (set.list[bo.placed].title === title) {
+      bo.placed++;
+      bo.wrong = null;
+      if (bo.placed >= set.list.length) {
+        bo.done = true;
+        bo.ms = Date.now() - bo.start;
+        const best = booksBest();
+        const prev = best[set.id];
+        bo.newBest = !prev || bo.misses < prev.misses || (bo.misses === prev.misses && bo.ms < prev.ms);
+        if (bo.newBest) {
+          best[set.id] = { misses: bo.misses, ms: bo.ms };
+          store.set("booksBest", best);
+        }
+      } else pickBooksOptions(set);
+    } else {
+      bo.misses++;
+      bo.wrong = title;
+    }
+    renderBooksGame(set);
   }
 
   // ── Quizzes ─────────────────────────────────────────
@@ -1548,6 +1684,21 @@
       location.replace(repl.getAttribute("href"));
       return;
     }
+    const bp = t.closest("[data-bo-pick]");
+    if (bp && bo && bo.mode === "game") return booksPick(bp.dataset.boPick);
+    if (t.closest("[data-bo-again]") && bo) {
+      const set = bookSets().find((x) => x.id === bo.set);
+      startBooksGame(set);
+      renderBooksGame(set);
+      return window.scrollTo(0, 0);
+    }
+    const bl = t.closest("[data-bo-learn]");
+    if (bl && bo && bo.mode === "learn") {
+      const set = bookSets().find((x) => x.id === bo.set);
+      bo.shown = bl.dataset.boLearn === "restart" ? 1 : Math.min(bo.shown + 1, set.list.length);
+      if (bl.dataset.boLearn === "restart") window.scrollTo(0, 0);
+      return renderBooksLearn(set);
+    }
     const ml = t.closest("[data-mix-len]");
     if (ml) {
       app.querySelectorAll("[data-mix-len]").forEach((b) => b.classList.toggle("on", b === ml));
@@ -1667,6 +1818,7 @@
     if (parts[0] === "live") return pageLive(parts[1], parts[2]);
     if (parts[0] === "cheat") return pageCheat();
     if (parts[0] === "favorites") return pageFavorites();
+    if (parts[0] === "practice" && parts[1] === "books") return pageBooksOrder(parts[2], parts[3]);
     if (parts[0] === "practice") return pagePractice(parts[1], parts[2]);
     if (parts[0] === "quiz") return parts[1] ? pageQuiz(parts[1]) : pageQuizMenu();
     if (parts[0] === "people" && parts[1]) return pagePerson(parts[1], parts[2]);

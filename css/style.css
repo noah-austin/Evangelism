@@ -521,3 +521,25 @@ a.seg { display: flex; align-items: center; justify-content: center; gap: 7px; }
 .tips-box > .label { display: block; color: var(--accent); margin-bottom: 4px; }
 .tip-sec h3 { font-size: 0.98rem; margin: 8px 0 2px; }
 .tip-sec .prose p { margin: 0 0 8px; }
+
+/* Books in order */
+.bo-set { margin-bottom: 10px; padding: 12px 14px; display: flex; align-items: center; gap: 10px; justify-content: space-between; }
+.bo-set-head { display: flex; flex-direction: column; min-width: 0; }
+.bo-set-actions { display: flex; gap: 6px; flex: none; }
+.bo-set-actions .btn { min-height: 38px; padding: 0 12px; font-size: 0.9rem; text-decoration: none; display: flex; align-items: center; }
+.bo-learn { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 8px 14px 8px 2.4em; margin: 12px 0; }
+.bo-learn li { padding: 5px 0; display: flex; justify-content: space-between; gap: 10px; }
+.bo-learn li + li { border-top: 1px solid var(--line); }
+.bo-learn li.new .bo-name { color: var(--accent); font-weight: 750; }
+.bo-name { font-weight: 650; }
+.bo-sec { color: var(--muted); font-size: 0.8rem; text-align: right; }
+.bo-chain { display: flex; flex-wrap: wrap; gap: 6px; min-height: 44px; margin: 14px 0 6px; align-items: center; }
+.bo-chip { background: var(--chip); color: var(--chip-text); border-radius: 999px; padding: 5px 11px; font-size: 0.88rem; font-weight: 650; }
+.bo-chip.last { background: var(--ask-bg); color: var(--ask); }
+.bo-hint { color: var(--muted); }
+.bo-tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin: 8px 0 16px; }
+.bo-tile { padding: 15px 8px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--card); color: var(--text); font: inherit; font-weight: 700; font-size: 1rem; cursor: pointer; }
+.bo-tile:active { border-color: var(--accent); }
+.bo-tile.wrong { border-color: var(--accent); background: var(--accent-bg); animation: bo-shake 0.3s; }
+@keyframes bo-shake { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
+@media (prefers-reduced-motion: reduce) { .bo-tile.wrong { animation: none; } }
